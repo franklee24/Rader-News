@@ -1,0 +1,13 @@
+{
+  "product": "雷达新闻",
+  "generated_at": "2026-09-08T03:40:54.566806+00:00",
+  "timezone": "Asia/Shanghai",
+  "window": "past 24 hours",
+  "events": [],
+  "global_top": [],
+  "counts": {
+    "events": 0,
+    "countries": 31
+  },
+  "note": "等待第一次 GitHub Actions 运行生成真实数据。"
+}

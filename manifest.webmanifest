@@ -1,0 +1,8 @@
+{
+  "name": "雷达新闻",
+  "short_name": "雷达新闻",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071018",
+  "theme_color": "#071018"
+}
