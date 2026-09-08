@@ -1,4 +1,4 @@
-# 雷达新闻 V14 · 多源稳定运营版
+# 雷达新闻 V15.0 · 多源真实新闻生产版
 
 这版的目标不是继续“修 GDELT”，而是把**每天自动产出、手机浏览器可访问、单一数据源失败不阻断**真正闭环。
 
@@ -19,7 +19,17 @@ GitHub Actions（每天北京时间 08:00）
 
 **GDELT 不再是关键依赖。**
 
-本版优先使用 Google News RSS；如果请求失败，自动切换 Bing News RSS；如果某个国家源失败，只记录失败，不让整次任务失败；如果整轮没有拿到有效数据，则保留上一份成功快照，不发布空白数据。
+V15 改为“直接媒体 RSS 优先 + Google/Bing 聚合补充”的结构。原因是 Google News/Bing RSS 都不应作为唯一生产数据源；公开资料也显示这些 RSS/search feed 存在返回空结果的情况。citeturn0search9turn0search23
+
+当前优先读取 BBC、DW、NPR、Guardian、Al Jazeera，以及部分国家的 NHK、TASS、SCMP、France24、ABC、CBC、The Hindu 等直接媒体 RSS；国家专属源失败后，再用全球媒体源和 Google/Bing 新闻搜索补充。
+
+**V15 最重要的变化：**
+- 不再允许“Actions 绿色 + 新闻 0 条”的假成功；
+- 每个国家打印各数据源的原始条目数、24h 有效条目数；
+- 自动兼容 RSS 2.0、RDF/RSS、Atom、ISO-8601 时间；
+- 直接媒体来源优先于聚合链接；
+- 如果 Tier1 最终为 0，Workflow 明确失败，而不是发布空页面；
+- 如果已经存在上一份成功日报，则异常时保留上一份，不覆盖成空数据。
 
 尤其是 HTTP 429：
 - 不再几十秒、几分钟反复重试；
@@ -272,3 +282,21 @@ V14 先把“稳定运营”跑通。
 随后程序在 `name=c[0]` 崩溃。原因是当前 `config.json` 的国家条目是对象（dict），例如 `{"name":"美国","en":"United States","code":"US","min":20,"max":30}`，旧代码却把它当作位置列表。Python 对不存在的字典键 `0` 会抛出 `KeyError`。citeturn0search1
 
 本版统一通过 `normalize_country()` 读取，并兼容旧列表格式；同时增加启动前配置结构校验。
+
+
+## V15.0 本次修复
+
+本次针对 GitHub Actions 已成功但网站显示 `Tier 1=0 / 全部国家=0 / GLOBAL TOP=0` 的问题进行重构。
+
+根因不是 GitHub Pages，而是新闻采集层过度依赖单一 Google News RSS 查询；即使 HTTP 请求没有报错，也可能得到空 RSS，因此旧版本会“正常结束”并生成空日报。
+
+V15.0 改为多源直连：国家专属媒体 RSS → 全球媒体 RSS → Google News RSS → Bing News RSS，并加入真实数据质量门禁。
+
+首次运行时请重点查看 Actions 的 `Build daily news` 日志。每个国家都会出现类似：
+
+```text
+[美国] sources=NPR World:xx | BBC US:xx | ... | Google:xx | pool24h=xx
+[tier1] 美国: xx candidates
+```
+
+其中 `pool24h` 是通过 24 小时过滤后的真实候选新闻数。

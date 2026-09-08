@@ -71,9 +71,17 @@ HIGH_IMPACT = ["war","strike","attack","sanction","tariff","election","rate","de
                "战争","袭击","制裁","关税","选举","利率","核","导弹","地震","洪水","停火","入侵"]
 
 def parse_date(s):
-    if not s: return None
+    if not s:
+        return None
+    s = str(s).strip()
     try:
         return email.utils.parsedate_to_datetime(s).astimezone(dt.timezone.utc)
+    except Exception:
+        pass
+    # Atom / ISO-8601 timestamps used by several first-party feeds.
+    try:
+        x=s.replace("Z","+00:00")
+        return dt.datetime.fromisoformat(x).astimezone(dt.timezone.utc)
     except Exception:
         return None
 
@@ -88,54 +96,159 @@ def fetch(url):
             status=getattr(r,"status",200)
             body=r.read()
             if status == 429: return None,"429"
-            if status >= 500: return None,str(status)
+            if status >= 400: return None,str(status)
             return body,None
     except Exception as e:
         msg=str(e)
         if "429" in msg: return None,"429"
-        return None,msg[:100]
+        return None,msg[:140]
 
-def google_rss(query):
-    url="https://news.google.com/rss/search?q="+quote_plus(query)+"&hl=en-US&gl=US&ceid=US:en"
-    body,err=fetch(url)
-    if not body:
-        return [],err
+def parse_rss(body, fallback_source="RSS"):
     try:
         root=ET.fromstring(body)
     except Exception as e:
-        return [],"XML:"+str(e)[:80]
+        return [],"XML:"+str(e)[:100]
     items=[]
-    for it in root.findall(".//item"):
-        title=clean(it.findtext("title"))
+    # RSS 2.0, RDF/RSS and Atom are all handled.
+    nodes=root.findall(".//item")
+    if not nodes:
+        nodes=root.findall(".//{http://www.w3.org/2005/Atom}entry")
+    for it in nodes:
+        title=clean(it.findtext("title") or it.findtext("{http://www.w3.org/2005/Atom}title"))
         link=(it.findtext("link") or "").strip()
-        pub=parse_date(it.findtext("pubDate"))
-        desc=clean(it.findtext("description"))
+        if not link:
+            for le in it.findall("{http://www.w3.org/2005/Atom}link"):
+                href=le.get("href")
+                if href:
+                    link=href.strip(); break
+        pub=(it.findtext("pubDate") or it.findtext("published") or it.findtext("updated") or
+             it.findtext("{http://www.w3.org/2005/Atom}published") or
+             it.findtext("{http://www.w3.org/2005/Atom}updated"))
+        desc=(it.findtext("description") or it.findtext("summary") or
+              it.findtext("{http://www.w3.org/2005/Atom}summary") or "")
         src_el=it.find("source")
         source=(src_el.text.strip() if src_el is not None and src_el.text else "")
         source_url=(src_el.get("url","") if src_el is not None else "")
+        # Dublin Core creator is useful for some feeds.
+        if not source:
+            creator=it.findtext("{http://purl.org/dc/elements/1.1/}creator")
+            source=clean(creator) if creator else fallback_source
+        p=parse_date(pub)
         if title and link:
-            items.append({"title":title,"link":link,"published_at":pub.isoformat() if pub else None,
-                          "source":source or "Google News","source_url":source_url,"description":desc})
+            items.append({"title":title,"link":link,"published_at":p.isoformat() if p else None,
+                          "source":source or fallback_source,"source_url":source_url,"description":clean(desc)})
     return items,None
 
+def rss_feed(url, source):
+    body,err=fetch(url)
+    if not body:
+        return [],err
+    return parse_rss(body, source)
+
+def google_rss(query):
+    url="https://news.google.com/rss/search?q="+quote_plus(query)+"&hl=en-US&gl=US&ceid=US:en"
+    return rss_feed(url,"Google News")
 
 def bing_rss(query):
     url="https://www.bing.com/news/search?q="+quote_plus(query)+"&format=rss"
-    body,err=fetch(url)
-    if not body: return [],err
-    try:
-        root=ET.fromstring(body)
-    except Exception as e:
-        return [],"XML:"+str(e)[:80]
-    items=[]
-    for it in root.findall(".//item"):
-        title=clean(it.findtext("title")); link=(it.findtext("link") or "").strip()
-        pub=parse_date(it.findtext("pubDate")); desc=clean(it.findtext("description"))
-        src_el=it.find("source"); source=(src_el.text.strip() if src_el is not None and src_el.text else "")
-        if title and link:
-            items.append({"title":title,"link":link,"published_at":pub.isoformat() if pub else None,
-                          "source":source or "Bing News","source_url":"","description":desc})
-    return items,None
+    return rss_feed(url,"Bing News")
+
+# First-party / major publisher feeds are the primary fallback.  They are deliberately
+# redundant: one dead feed must never make a country empty.
+GLOBAL_FEEDS = [
+    ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
+    ("BBC Technology", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
+    ("BBC UK", "https://feeds.bbci.co.uk/news/uk/rss.xml"),
+    ("DW", "https://rss.dw.com/rdf/rss-en-all"),
+    ("The Guardian World", "https://www.theguardian.com/world/rss"),
+    ("The Guardian Business", "https://www.theguardian.com/business/rss"),
+    ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+    ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
+]
+COUNTRY_FEEDS = {
+    "美国": [
+        ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+        ("NPR Business", "https://feeds.npr.org/1006/rss.xml"),
+        ("NPR Technology", "https://feeds.npr.org/1019/rss.xml"),
+        ("BBC US", "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"),
+    ],
+    "中国": [
+        ("SCMP China", "https://www.scmp.com/rss/91/feed"),
+        ("BBC China", "https://feeds.bbci.co.uk/news/world/asia/china/rss.xml"),
+        ("The Guardian China", "https://www.theguardian.com/world/china/rss"),
+    ],
+    "英国": [
+        ("BBC UK", "https://feeds.bbci.co.uk/news/uk/rss.xml"),
+        ("The Guardian UK", "https://www.theguardian.com/uk/rss"),
+    ],
+    "法国": [
+        ("France24 France", "https://www.france24.com/en/france/rss"),
+        ("The Guardian France", "https://www.theguardian.com/world/france/rss"),
+    ],
+    "德国": [
+        ("DW Germany", "https://rss.dw.com/rdf/rss-en-ger"),
+        ("The Guardian Germany", "https://www.theguardian.com/world/germany/rss"),
+    ],
+    "俄罗斯": [
+        ("TASS", "https://tass.com/rss/v2.xml"),
+        ("The Guardian Russia", "https://www.theguardian.com/world/russia/rss"),
+    ],
+    "日本": [
+        ("NHK", "https://www3.nhk.or.jp/rss/news/cat0.xml"),
+        ("The Guardian Japan", "https://www.theguardian.com/world/japan/rss"),
+        ("BBC Japan", "https://feeds.bbci.co.uk/news/world/asia/rss.xml"),
+    ],
+    "印度": [("The Hindu National", "https://www.thehindu.com/news/national/feeder/default.rss")],
+    "加拿大": [("CBC World", "https://www.cbc.ca/cmlink/rss-world")],
+    "澳大利亚": [("ABC Australia", "https://www.abc.net.au/news/feed/2942460/rss.xml")],
+    "意大利": [("The Guardian Italy", "https://www.theguardian.com/world/italy/rss")],
+    "西班牙": [("The Guardian Spain", "https://www.theguardian.com/world/spain/rss")],
+    "以色列": [("The Guardian Israel", "https://www.theguardian.com/world/israel/rss")],
+    "乌克兰": [("The Guardian Ukraine", "https://www.theguardian.com/world/ukraine/rss")],
+}
+
+FEED_CACHE={}
+
+def get_feed(url, source):
+    key=(url,source)
+    if key not in FEED_CACHE:
+        FEED_CACHE[key]=rss_feed(url,source)
+    return FEED_CACHE[key]
+
+COUNTRY_ALIASES={
+    "美国":["united states","u.s.","u.s","america","washington"],
+    "中国":["china","chinese","beijing"],
+    "英国":["united kingdom","u.k.","uk","britain","london"],
+    "法国":["france","french","paris"],
+    "德国":["germany","german","berlin"],
+    "俄罗斯":["russia","russian","moscow"],
+    "日本":["japan","japanese","tokyo"],
+    "印度":["india","indian","new delhi"],
+    "巴西":["brazil","brazilian","brasilia"],
+    "沙特阿拉伯":["saudi","saudi arabia","riyadh"],
+    "韩国":["south korea","korea","seoul"],
+    "加拿大":["canada","canadian","ottawa"],
+    "澳大利亚":["australia","australian","canberra"],
+    "乌克兰":["ukraine","ukrainian","kyiv","kiev"],
+    "意大利":["italy","italian","rome"],
+    "印度尼西亚":["indonesia","indonesian","jakarta"],
+    "土耳其":["turkey","turkish","ankara","istanbul"],
+    "阿联酋":["united arab emirates","uae","dubai","abu dhabi"],
+    "墨西哥":["mexico","mexican","mexico city"],
+    "伊朗":["iran","iranian","tehran"],
+    "瑞士":["switzerland","swiss","bern","geneva"],
+    "新加坡":["singapore","singaporean"],
+    "南非":["south africa","south african","pretoria","johannesburg"],
+    "荷兰":["netherlands","dutch","amsterdam"],
+    "以色列":["israel","israeli","jerusalem","tel aviv"],
+    "西班牙":["spain","spanish","madrid"],
+    "埃及":["egypt","egyptian","cairo"],
+    "尼日利亚":["nigeria","nigerian","abuja"],
+    "阿根廷":["argentina","argentine","buenos aires"],
+    "波兰":["poland","polish","warsaw"],
+    "越南":["vietnam","vietnamese","hanoi","ho chi minh"],
+}
 
 def normalize_title(t):
     t=t.lower()
@@ -193,30 +306,87 @@ def normalize_country(c):
         }
     raise TypeError(f"Unsupported country config entry: {c!r}")
 
-def collect_country(c):
-    # One broad query per country. It is deliberately not retried on 429.
-    c = normalize_country(c)
-    name,en,code,mi,ma = c["name"],c["en"],c["code"],c["min"],c["max"]
-    q=f'"{en}" (government OR economy OR technology OR defense OR diplomacy OR business OR energy OR society) when:1d'
-    items,err=google_rss(q)
-    if not items:
-        print(f"[{name}] Google News unavailable ({err}), fallback -> Bing News")
-        items,err2=bing_rss(q)
-        if items: err=None
-        else: err=err2 or err
-    now=dt.datetime.now(dt.timezone.utc)
-    cutoff=now-dt.timedelta(hours=25)
-    clean_items=[]
-    for it in items[:MAX_PER_COUNTRY]:
+def recent_items(items, hours=26):
+    cutoff=dt.datetime.now(dt.timezone.utc)-dt.timedelta(hours=hours)
+    out=[]
+    for it in items:
         p=parse_date(it.get("published_at"))
-        if p and p < cutoff: continue
+        if p is not None and p < cutoff:
+            continue
+        # If a feed omits the date, keep it for the later ranking rather than silently deleting it.
+        if p is None:
+            it["date_unknown"]=True
+        out.append(it)
+    return out
+
+def title_matches_country(title, country):
+    low=(title or "").lower()
+    aliases=COUNTRY_ALIASES.get(country,[])
+    return any(a in low for a in aliases)
+
+def dedupe_articles(items):
+    seen=set(); out=[]
+    for x in sorted(items,key=lambda z:z.get("published_at") or "",reverse=True):
+        key=normalize_title(x.get("title",""))
+        if not key or key in seen: continue
+        seen.add(key); out.append(x)
+    return out
+
+def collect_country(c):
+    c=normalize_country(c)
+    name,en,code,mi,ma=c["name"],c["en"],c["code"],c["min"],c["max"]
+    pool=[]; diagnostics=[]
+
+    # 1) Country-specific first-party/major publisher feeds.
+    feeds=COUNTRY_FEEDS.get(name,[])
+    for source,url in feeds:
+        items,err=get_feed(url,source)
+        diagnostics.append(f"{source}:{len(items)}" + (f"({err})" if err else ""))
+        for x in items:
+            x["source_kind"]="publisher"
+            x["feed_country"]=name
+            pool.append(x)
+
+    # 2) Global feeds: only retain items that clearly mention the country.
+    for source,url in GLOBAL_FEEDS:
+        items,err=get_feed(url,source)
+        diagnostics.append(f"{source}:{len(items)}" + (f"({err})" if err else ""))
+        for x in items:
+            if title_matches_country(x.get("title","")+" "+x.get("description","") ,name):
+                x=x.copy(); x["source_kind"]="publisher"; x["feed_country"]=name; pool.append(x)
+
+    # 3) Search aggregators are supplementary only, and the query is deliberately broad.
+    queries=[f'"{en}" when:1d', f'{en} news when:1d']
+    for q in queries:
+        items,err=google_rss(q)
+        diagnostics.append(f"Google:{len(items)}" + (f"({err})" if err else ""))
+        for x in items:
+            x=x.copy(); x["source_kind"]="aggregator"; pool.append(x)
+        if len(pool)>=max(50,mi*2): break
+    if len(pool)<max(10,mi):
+        q=f'{en} news when:1d'
+        items,err=bing_rss(q)
+        diagnostics.append(f"Bing:{len(items)}" + (f"({err})" if err else ""))
+        for x in items:
+            x=x.copy(); x["source_kind"]="aggregator"; pool.append(x)
+
+    pool=recent_items(dedupe_articles(pool),26)
+    # For country-specific feeds, the feed itself is evidence of event-country relevance.
+    for it in pool:
         it.update(event_country=name,event_country_en=en,code=code,tier=None)
-        clean_items.append(it)
-    return clean_items,err
+    print(f"[{name}] sources="+" | ".join(diagnostics[:12])+f" | pool24h={len(pool)}")
+    return pool[:MAX_PER_COUNTRY],None if pool else "; ".join(diagnostics[:6])
 
 def collect_supplement():
-    q='("world" OR "global" OR "summit" OR "war" OR "market" OR "technology") when:1d'
-    return google_rss(q)
+    pool=[]
+    for source,url in GLOBAL_FEEDS:
+        items,err=get_feed(url,source)
+        for x in items:
+            x=x.copy(); x["source_kind"]="publisher"; x["event_country"]="国际/全球"; x["event_country_en"]="Global"; x["code"]="GLOBAL"; pool.append(x)
+    items,err=google_rss('world global major news when:1d')
+    pool.extend(items)
+    pool=recent_items(dedupe_articles(pool),26)
+    return pool[:60],None if pool else (err or "no supplement items" )
 
 def cluster(items):
     events=[]
@@ -234,8 +404,10 @@ def cluster(items):
     for e in events:
         srcs=e["sources"]
         uniq={}
-        for s in srcs: uniq[s.get("source","Google News")]=s
-        best=sorted(srcs,key=lambda x:(x.get("published_at") or "",x.get("source","")),reverse=True)[0]
+        for s in srcs:
+            key=s.get("link") or s.get("source","Google News")
+            uniq[key]=s
+        best=sorted(srcs,key=lambda x:(x.get("source_kind")!="publisher", x.get("published_at") or "", x.get("source","")),reverse=False)[0]
         e["sources"] = list(uniq.values())[:8]
         e["source_count"]=len(e["sources"])
         e["source_names"]=[x.get("source","") for x in e["sources"]]
@@ -266,7 +438,7 @@ def validate_country_config():
 
 def main():
     validate_country_config()
-    print("雷达新闻 V14.3：多源稳定模式（GDELT 已移出主链）")
+    print("雷达新闻 V15.0：多源真实新闻生产模式（聚合源仅作补充）")
     print("目标：Tier1 20-30 / Tier2 ≤20 / Tier3 ≤15 / Tier4 ≤10 / Supplement 10")
     results={}
     all_items=[]
@@ -301,7 +473,7 @@ def main():
     # Build per-country event sets
     report={"generated_at":dt.datetime.now(dt.timezone.utc).isoformat(),
             "generated_beijing":dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
-            "window_hours":24,"version":"V14.3","source_mode":"multi-rss",
+            "window_hours":24,"version":"V15.0","source_mode":"multi-rss",
             "source_policy":"GDELT removed from critical path; 429 never blocks publication.",
             "failures":failures,"tiers":{},"global_top":[],"supplement":[]}
     all_events=[]
@@ -329,18 +501,21 @@ def main():
         "supplement_events":len(sup),
         "failed_sources":len(failures)
     }
-    # If live collection returned nothing, preserve last good snapshot rather than publishing a blank page.
-    if report["stats"]["events"] == 0 and os.path.exists(DAILY):
-        old=json.load(open(DAILY,encoding="utf-8"))
-        old["generated_at"]=report["generated_at"]; old["stale_fallback"]=True
-        old["current_run_failures"]=failures
-        report=old
-        print("本轮没有取得有效新闻，已保留上一份成功快照，不发布空数据。")
-    else:
-        report["stale_fallback"]=False
-        json.dump(report,open(DAILY,"w",encoding="utf-8"),ensure_ascii=False,indent=2)
-        date=report["generated_beijing"][:10]
-        json.dump(report,open(os.path.join(HISTORY,date+".json"),"w",encoding="utf-8"),ensure_ascii=False,indent=2)
+    # Never publish a blank snapshot. If this is the first run and no source produced data,
+    # fail loudly so the workflow is red instead of pretending the daily product succeeded.
+    if report["stats"]["events"] == 0:
+        if os.path.exists(DAILY):
+            old=json.load(open(DAILY,encoding="utf-8"))
+            old["stale_fallback"]=True
+            old["current_run_failures"]=failures
+            json.dump(old,open(DAILY,"w",encoding="utf-8"),ensure_ascii=False,indent=2)
+        raise RuntimeError("NO_NEWS_DATA: all configured feeds/searches returned no usable 24h events")
+    if report["stats"]["tier1_events"] == 0:
+        raise RuntimeError("NO_TIER1_DATA: Tier1 produced zero events; refusing to publish a false-success snapshot")
+    report["stale_fallback"]=False
+    json.dump(report,open(DAILY,"w",encoding="utf-8"),ensure_ascii=False,indent=2)
+    date=report["generated_beijing"][:10]
+    json.dump(report,open(os.path.join(HISTORY,date+".json"),"w",encoding="utf-8"),ensure_ascii=False,indent=2)
     print("完成：",report["stats"])
     if failures: print("部分源失败（不阻断）：",failures[:10])
 
