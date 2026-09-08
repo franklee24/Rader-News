@@ -249,3 +249,14 @@ V14 先把“稳定运营”跑通。
 因此即使仓库当前已经是 `config.json`，也不会因为找不到旧路径而在启动阶段直接 `exit code 1`。
 
 启动时会先输出 `Config OK: tier1=...` 等配置校验结果，只有配置通过后才开始访问新闻 RSS。
+
+## V14.1 / Root-ready 修复
+
+这是**仓库根目录直接覆盖版**。压缩包解压后应直接看到 `.github/`、`scripts/`、`config.json`、`index.html`、`data/` 等文件，不要再套一层文件夹。
+
+本版同时修复：
+- `build_daily.py` 错误读取 `config/country_tiers.json` 导致 Actions 启动即 `exit code 1`
+- 配置统一使用根目录 `config.json`
+- Actions 使用稳定的 `actions/checkout@v4`、`actions/setup-python@v5`
+- 每日任务使用 UTC `0 0 * * *`，对应北京时间 08:00
+- 执行前增加 Python 语法校验
