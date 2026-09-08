@@ -176,9 +176,27 @@ def domestic_score(title,country):
 def event_key(t):
     return hashlib.sha1(normalize_title(t).encode("utf-8")).hexdigest()[:16]
 
+def normalize_country(c):
+    """Normalize current dict config and legacy list config to one dict shape."""
+    if isinstance(c, dict):
+        return {
+            "name": c.get("name") or c.get("country") or c.get("zh") or c.get("en"),
+            "en": c.get("en") or c.get("english") or c.get("name"),
+            "code": c.get("code") or c.get("iso") or "",
+            "min": int(c.get("min", 1)),
+            "max": int(c.get("max", 20)),
+        }
+    if isinstance(c, (list, tuple)) and len(c) >= 5:
+        return {
+            "name": c[0], "en": c[1], "code": c[2],
+            "min": int(c[3]), "max": int(c[4])
+        }
+    raise TypeError(f"Unsupported country config entry: {c!r}")
+
 def collect_country(c):
     # One broad query per country. It is deliberately not retried on 429.
-    name,en,code,mi,ma=c
+    c = normalize_country(c)
+    name,en,code,mi,ma = c["name"],c["en"],c["code"],c["min"],c["max"]
     q=f'"{en}" (government OR economy OR technology OR defense OR diplomacy OR business OR energy OR society) when:1d'
     items,err=google_rss(q)
     if not items:
@@ -233,8 +251,22 @@ def cluster(items):
         out.append(e)
     return sorted(out,key=lambda x:x["importance"],reverse=True)
 
+def validate_country_config():
+    for tier in ("tier1", "tier2", "tier3", "tier4"):
+        arr = CONFIG["tiers"].get(tier)
+        if not isinstance(arr, list) or not arr:
+            raise ValueError(f"Invalid config: {tier} must be a non-empty list")
+        for idx, item in enumerate(arr):
+            c = normalize_country(item)
+            if not c["name"] or not c["en"] or not c["code"]:
+                raise ValueError(f"Invalid config: {tier}[{idx}] missing name/en/code")
+            if c["min"] < 0 or c["max"] < 1 or c["min"] > c["max"]:
+                raise ValueError(f"Invalid config limits: {tier}[{idx}]")
+    print("Country config structure OK")
+
 def main():
-    print("雷达新闻 V14：多源稳定模式（GDELT 已移出主链）")
+    validate_country_config()
+    print("雷达新闻 V14.3：多源稳定模式（GDELT 已移出主链）")
     print("目标：Tier1 20-30 / Tier2 ≤20 / Tier3 ≤15 / Tier4 ≤10 / Supplement 10")
     results={}
     all_items=[]
@@ -250,7 +282,8 @@ def main():
         futs=[ex.submit(worker,tier,c) for tier,c in countries_flat]
         for fut in as_completed(futs):
             tier,c,items,err=fut.result()
-            name=c[0]
+            c = normalize_country(c)
+            name = c["name"]
             if err: failures.append({"country":name,"error":err})
             for x in items:
                 x["tier"]=tier
@@ -268,18 +301,20 @@ def main():
     # Build per-country event sets
     report={"generated_at":dt.datetime.now(dt.timezone.utc).isoformat(),
             "generated_beijing":dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
-            "window_hours":24,"version":"V14.0","source_mode":"multi-rss",
+            "window_hours":24,"version":"V14.3","source_mode":"multi-rss",
             "source_policy":"GDELT removed from critical path; 429 never blocks publication.",
             "failures":failures,"tiers":{},"global_top":[],"supplement":[]}
     all_events=[]
     for tier,arr in CONFIG["tiers"].items():
         report["tiers"][tier]={}
         for c in arr:
-            name=c[0]; ev=cluster(results.get(name,[]))
+            c = normalize_country(c)
+            name = c["name"]
+            ev=cluster(results.get(name,[]))
             # target minimum only for tier1; others use available, capped.
-            ev=ev[:c[4]]
-            report["tiers"][tier][name]={"country":name,"country_en":c[1],"code":c[2],
-                                         "target_min":c[3],"target_max":c[4],
+            ev=ev[:c["max"]]
+            report["tiers"][tier][name]={"country":name,"country_en":c["en"],"code":c["code"],
+                                         "target_min":c["min"],"target_max":c["max"],
                                          "count":len(ev),"events":ev}
             all_events += ev
     sup=cluster(supplement)[:10]

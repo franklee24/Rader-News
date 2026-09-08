@@ -260,3 +260,15 @@ V14 先把“稳定运营”跑通。
 - Actions 使用稳定的 `actions/checkout@v4`、`actions/setup-python@v5`
 - 每日任务使用 UTC `0 0 * * *`，对应北京时间 08:00
 - 执行前增加 Python 语法校验
+
+## V14.3 修复说明
+
+修复 GitHub Actions 实际运行时的 `KeyError: 0`。
+
+日志显示配置加载已经成功：
+
+`Config OK: tier1=7, tier2=6, tier3=8, tier4=10`
+
+随后程序在 `name=c[0]` 崩溃。原因是当前 `config.json` 的国家条目是对象（dict），例如 `{"name":"美国","en":"United States","code":"US","min":20,"max":30}`，旧代码却把它当作位置列表。Python 对不存在的字典键 `0` 会抛出 `KeyError`。citeturn0search1
+
+本版统一通过 `normalize_country()` 读取，并兼容旧列表格式；同时增加启动前配置结构校验。
