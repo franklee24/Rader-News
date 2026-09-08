@@ -1,4 +1,4 @@
-# 雷达新闻 V15.0 · 多源真实新闻生产版
+# 雷达新闻 V15.1 · 多源真实新闻生产版
 
 这版的目标不是继续“修 GDELT”，而是把**每天自动产出、手机浏览器可访问、单一数据源失败不阻断**真正闭环。
 
@@ -223,7 +223,7 @@ python scripts/build_daily.py
 
 ## 后续升级方向
 
-V14 先把“稳定运营”跑通。
+V15.1 先把“稳定运营”跑通。
 
 之后再增加：
 
@@ -248,19 +248,19 @@ V14 先把“稳定运营”跑通。
 
 第一次 Actions 成功以后，它会被真实新闻覆盖。
 
-## V14.1 修复说明
+## V15.1.1 修复说明
 
 本版本修复 GitHub Actions 中可能出现的 `config/country_tiers.json` 路径错误。
 
 `build_daily.py` 现在按以下顺序读取配置：
 1. `config.json`（当前 Rader-News 仓库布局）
-2. `config/country_tiers.json`（V14 原始布局）
+2. `config/country_tiers.json`（V15.1 原始布局）
 
 因此即使仓库当前已经是 `config.json`，也不会因为找不到旧路径而在启动阶段直接 `exit code 1`。
 
 启动时会先输出 `Config OK: tier1=...` 等配置校验结果，只有配置通过后才开始访问新闻 RSS。
 
-## V14.1 / Root-ready 修复
+## V15.1.1 / Root-ready 修复
 
 这是**仓库根目录直接覆盖版**。压缩包解压后应直接看到 `.github/`、`scripts/`、`config.json`、`index.html`、`data/` 等文件，不要再套一层文件夹。
 
@@ -271,7 +271,7 @@ V14 先把“稳定运营”跑通。
 - 每日任务使用 UTC `0 0 * * *`，对应北京时间 08:00
 - 执行前增加 Python 语法校验
 
-## V14.3 修复说明
+## V15.1.3 修复说明
 
 修复 GitHub Actions 实际运行时的 `KeyError: 0`。
 
@@ -284,13 +284,13 @@ V14 先把“稳定运营”跑通。
 本版统一通过 `normalize_country()` 读取，并兼容旧列表格式；同时增加启动前配置结构校验。
 
 
-## V15.0 本次修复
+## V15.1 本次修复
 
 本次针对 GitHub Actions 已成功但网站显示 `Tier 1=0 / 全部国家=0 / GLOBAL TOP=0` 的问题进行重构。
 
 根因不是 GitHub Pages，而是新闻采集层过度依赖单一 Google News RSS 查询；即使 HTTP 请求没有报错，也可能得到空 RSS，因此旧版本会“正常结束”并生成空日报。
 
-V15.0 改为多源直连：国家专属媒体 RSS → 全球媒体 RSS → Google News RSS → Bing News RSS，并加入真实数据质量门禁。
+V15.1 改为多源直连：国家专属媒体 RSS → 全球媒体 RSS → Google News RSS → Bing News RSS，并加入真实数据质量门禁。
 
 首次运行时请重点查看 Actions 的 `Build daily news` 日志。每个国家都会出现类似：
 
@@ -300,3 +300,13 @@ V15.0 改为多源直连：国家专属媒体 RSS → 全球媒体 RSS → Googl
 ```
 
 其中 `pool24h` 是通过 24 小时过滤后的真实候选新闻数。
+
+## V15.1 本次修复重点
+
+1. **不再把空的 bootstrap 快照当成成功结果**：首次真实采集如果没有任何事件，`build_daily.py` 直接返回失败，Actions 会显示红色，而不会提交“0 条新闻”的假成功。
+2. **Tier 1 零数据直接阻止发布**：美国、中国、英国、法国、德国、俄罗斯、日本全部没有可用事件时，不允许生成成功日报。
+3. **多源采集**：国家专属媒体 RSS + 全球媒体 RSS + Google News RSS + Bing News RSS；聚合源只作为补充。
+4. **Google News 按国家本地化参数请求**，避免所有国家都使用美国英文区域。
+5. **保留来源诊断**：每个国家的源数量、抓取结果和失败信息写入 `source_diagnostics`，方便在 Actions 日志定位。
+6. **Pages 独立部署工作流**：`deploy.yml` 在“每日更新”成功后再发布 Pages，避免数据提交和网页部署时序问题。
+7. **前端状态**：bootstrap 显示 `WAITING`，异常快照显示 `STALE`，真正成功才显示 `LIVE`，不再把 0 条数据伪装成 LIVE。

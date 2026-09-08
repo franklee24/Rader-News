@@ -145,8 +145,28 @@ def rss_feed(url, source):
         return [],err
     return parse_rss(body, source)
 
-def google_rss(query):
-    url="https://news.google.com/rss/search?q="+quote_plus(query)+"&hl=en-US&gl=US&ceid=US:en"
+GOOGLE_LOCALES = {
+    "美国": ("en-US","US","US:en"), "中国": ("zh-CN","CN","CN:zh-Hans"),
+    "英国": ("en-GB","GB","GB:en"), "法国": ("fr-FR","FR","FR:fr"),
+    "德国": ("de-DE","DE","DE:de"), "俄罗斯": ("ru-RU","RU","RU:ru"),
+    "日本": ("ja-JP","JP","JP:ja"), "印度": ("en-IN","IN","IN:en"),
+    "巴西": ("pt-BR","BR","BR:pt-419"), "沙特阿拉伯": ("ar-SA","SA","SA:ar"),
+    "韩国": ("ko-KR","KR","KR:ko"), "加拿大": ("en-CA","CA","CA:en"),
+    "澳大利亚": ("en-AU","AU","AU:en"), "乌克兰": ("uk-UA","UA","UA:uk"),
+    "意大利": ("it-IT","IT","IT:it"), "印度尼西亚": ("id-ID","ID","ID:id"),
+    "土耳其": ("tr-TR","TR","TR:tr"), "阿联酋": ("ar-AE","AE","AE:ar"),
+    "墨西哥": ("es-MX","MX","MX:es"), "伊朗": ("fa-IR","IR","IR:fa"),
+    "瑞士": ("de-CH","CH","CH:de"), "新加坡": ("en-SG","SG","SG:en"),
+    "南非": ("en-ZA","ZA","ZA:en"), "荷兰": ("nl-NL","NL","NL:nl"),
+    "以色列": ("he-IL","IL","IL:he"), "西班牙": ("es-ES","ES","ES:es"),
+    "埃及": ("ar-EG","EG","EG:ar"), "尼日利亚": ("en-NG","NG","NG:en"),
+    "阿根廷": ("es-AR","AR","AR:es"), "波兰": ("pl-PL","PL","PL:pl"),
+    "越南": ("vi-VN","VN","VN:vi")
+}
+
+def google_rss(query, country=None):
+    hl, gl, ceid = GOOGLE_LOCALES.get(country, ("en-US","US","US:en"))
+    url="https://news.google.com/rss/search?q="+quote_plus(query)+f"&hl={quote_plus(hl)}&gl={gl}&ceid={quote_plus(ceid)}"
     return rss_feed(url,"Google News")
 
 def bing_rss(query):
@@ -358,7 +378,7 @@ def collect_country(c):
     # 3) Search aggregators are supplementary only, and the query is deliberately broad.
     queries=[f'"{en}" when:1d', f'{en} news when:1d']
     for q in queries:
-        items,err=google_rss(q)
+        items,err=google_rss(q,name)
         diagnostics.append(f"Google:{len(items)}" + (f"({err})" if err else ""))
         for x in items:
             x=x.copy(); x["source_kind"]="aggregator"; pool.append(x)
@@ -375,7 +395,8 @@ def collect_country(c):
     for it in pool:
         it.update(event_country=name,event_country_en=en,code=code,tier=None)
     print(f"[{name}] sources="+" | ".join(diagnostics[:12])+f" | pool24h={len(pool)}")
-    return pool[:MAX_PER_COUNTRY],None if pool else "; ".join(diagnostics[:6])
+    err = None if pool else "; ".join(diagnostics[:8])
+    return pool[:MAX_PER_COUNTRY], err, diagnostics
 
 def collect_supplement():
     pool=[]
@@ -383,7 +404,7 @@ def collect_supplement():
         items,err=get_feed(url,source)
         for x in items:
             x=x.copy(); x["source_kind"]="publisher"; x["event_country"]="国际/全球"; x["event_country_en"]="Global"; x["code"]="GLOBAL"; pool.append(x)
-    items,err=google_rss('world global major news when:1d')
+    items,err=google_rss('world global major news when:1d', None)
     pool.extend(items)
     pool=recent_items(dedupe_articles(pool),26)
     return pool[:60],None if pool else (err or "no supplement items" )
@@ -443,20 +464,22 @@ def main():
     results={}
     all_items=[]
     failures=[]
+    source_diagnostics=[]
     countries_flat=[]
     for tier, arr in CONFIG["tiers"].items():
         for c in arr:
             countries_flat.append((tier,c))
     def worker(tier,c):
-        items,err=collect_country(c)
-        return tier,c,items,err
+        items,err,diagnostics=collect_country(c)
+        return tier,c,items,err,diagnostics
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         futs=[ex.submit(worker,tier,c) for tier,c in countries_flat]
         for fut in as_completed(futs):
-            tier,c,items,err=fut.result()
+            tier,c,items,err,diagnostics=fut.result()
             c = normalize_country(c)
             name = c["name"]
             if err: failures.append({"country":name,"error":err})
+            source_diagnostics.append({"country":name,"tier":tier,"items":len(items),"details":diagnostics})
             for x in items:
                 x["tier"]=tier
             results[name]=items
@@ -475,7 +498,7 @@ def main():
             "generated_beijing":dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
             "window_hours":24,"version":"V15.0","source_mode":"multi-rss",
             "source_policy":"GDELT removed from critical path; 429 never blocks publication.",
-            "failures":failures,"tiers":{},"global_top":[],"supplement":[]}
+            "failures":failures,"source_diagnostics":source_diagnostics,"tiers":{},"global_top":[],"supplement":[]}
     all_events=[]
     for tier,arr in CONFIG["tiers"].items():
         report["tiers"][tier]={}
