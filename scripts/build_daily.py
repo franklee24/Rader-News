@@ -107,37 +107,54 @@ def similarity(a,b):
     if not sa or not sb:return 0
     return len(sa&sb)/len(sa|sb)
 
-def fetch(query,maxrecords=250):
-    params={"query":query,"mode":"ArtList","format":"json","maxrecords":str(maxrecords),
-            "timespan":"24h","sort":"DateDesc"}
+def fetch(query,maxrecords=160):
+    """Rate-limited GDELT request with 429/empty/invalid-response protection."""
+    params={
+        "query":query,
+        "mode":"ArtList",
+        "format":"json",
+        "maxrecords":str(maxrecords),
+        "timespan":"24h",
+        "sort":"DateDesc"
+    }
     url=API+"?"+urlencode(params)
-    retries=int(CFG["collection"].get("retries",4))
-    backoffs=CFG["collection"].get("backoff_seconds",[20,40,80,120])
+    retries=int(CFG["collection"].get("retries",3))
+    backoffs=CFG["collection"].get("backoff_seconds",[30,60,120])
+
     for attempt in range(retries+1):
         try:
             req=Request(url,headers={
-                "User-Agent":"Mozilla/5.0 (compatible; LeidaNews/12.0; +https://github.com/franklee24/Rader-News)",
-                "Accept":"application/json,text/plain,*/*"
+                "User-Agent":"LeidaNews/Final-Daily-Radar (+https://github.com/franklee24/Rader-News)",
+                "Accept":"application/json"
             })
-            with urlopen(req,timeout=60) as r:
-                body=r.read().decode("utf-8","replace")
-                if not body.strip(): raise RuntimeError("GDELT returned empty response")
-                try: return json.loads(body)
-                except json.JSONDecodeError as e:
-                    raise RuntimeError(f"GDELT invalid JSON: {e}; body={body[:160]!r}")
+            with urlopen(req,timeout=75) as r:
+                body=r.read().decode("utf-8","replace").strip()
+                if not body:
+                    raise RuntimeError("GDELT returned an empty response")
+                if not body.startswith("{"):
+                    raise RuntimeError(f"GDELT returned non-JSON content: {body[:180]!r}")
+                data=json.loads(body)
+                if not isinstance(data,dict):
+                    raise RuntimeError("GDELT JSON root is not an object")
+                return data
+
         except HTTPError as e:
-            if e.code==429 and attempt<retries:
+            retry_after=e.headers.get("Retry-After")
+            if e.code == 429 and attempt < retries:
                 wait=backoffs[min(attempt,len(backoffs)-1)]
-                retry_after=e.headers.get("Retry-After")
-                if retry_after and retry_after.isdigit(): wait=max(wait,int(retry_after))
-                print(f"429 rate limited; sleep {wait}s (attempt {attempt+1}/{retries})",flush=True)
-                time.sleep(wait); continue
+                if retry_after and retry_after.isdigit():
+                    wait=max(wait,int(retry_after))
+                print(f"429 rate limited; waiting {wait}s ({attempt+1}/{retries})",flush=True)
+                time.sleep(wait)
+                continue
             raise
-        except (URLError, TimeoutError, RuntimeError) as e:
-            if attempt<retries:
+
+        except (URLError, TimeoutError, RuntimeError, json.JSONDecodeError) as e:
+            if attempt < retries:
                 wait=backoffs[min(attempt,len(backoffs)-1)]
-                print(f"retryable error: {e}; sleep {wait}s",flush=True)
-                time.sleep(wait); continue
+                print(f"retryable GDELT error: {e}; waiting {wait}s ({attempt+1}/{retries})",flush=True)
+                time.sleep(wait)
+                continue
             raise
 
 def eventize(articles,country):
@@ -174,25 +191,33 @@ def eventize(articles,country):
 
 def main():
     all_events=[]; errors=[]
-    gap=float(CFG["collection"].get("request_gap_seconds",6))
+    country_success=0
+    country_failed=0
+    country_total=sum(len(v) for v in CFG["tiers"].values())
+    gap=float(CFG["collection"].get("request_gap_seconds",10))
+
     for tier,countries in CFG["tiers"].items():
         for country in countries:
             slug=SOURCE_COUNTRY[country]
-            # Domestic-first: use local press plus broad national-policy terms.
             terms=["government","economy","finance","business","technology","energy","military","diplomacy",
                    "health","education","disaster","election","central bank","policy"]
             query=f"sourcecountry:{slug} ("+" OR ".join(terms)+")"
+
             try:
-                raw=fetch(query,CFG["collection"].get("per_country_maxrecords",250))
+                raw=fetch(query,CFG["collection"].get("per_country_maxrecords",160))
                 arts=raw.get("articles",[]) if isinstance(raw,dict) else []
                 ev=eventize(arts,country)
                 target=30 if tier=="Tier 1" else 20 if tier=="Tier 2" else 15 if tier=="Tier 3" else 10
                 ev=sorted(ev,key=lambda x:(x["importance"],x["domestic_score"]),reverse=True)[:target]
                 all_events.extend(ev)
+                country_success += 1
                 print(f"{tier}/{country}: {len(arts)} articles -> {len(ev)} events",flush=True)
             except Exception as ex:
+                country_failed += 1
                 errors.append(f"{tier}/{country}: {type(ex).__name__}: {ex}")
-                print("ERROR",tier,country,ex,flush=True)
+                print(f"ERROR {tier}/{country}: {ex}",flush=True)
+
+            # Spread requests evenly; GDELT explicitly rate-limits its hosted APIs.
             time.sleep(gap)
 
     # Global supplement: one additional broad request only.
@@ -227,7 +252,7 @@ def main():
       "quality":{
         "event_count":len(final),
         "errors":errors,
-        "summary":f"已生成 {len(final)} 个独立事件；数据来自 GDELT 过去24小时 ArticleList。"+
+        "summary":f"已生成 {len(final)} 个独立事件；31个国家采集成功 {country_success} 个、失败 {country_failed} 个；数据来自 GDELT 过去24小时 ArticleList。"+
                   (f" 有 {len(errors)} 个采集错误。" if errors else " 本次采集全部成功。")
       }
     }

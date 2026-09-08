@@ -1,44 +1,107 @@
-# 雷达新闻｜自动更新修复版
+# 雷达新闻｜GitHub Pages 最终自动更新版
 
-这版专门修复上一版出现的 **GDELT 429 Too Many Requests + 空响应 JSON 解析失败**。
+这版针对前一版出现的两个问题做了最终收口：
 
-## 为什么上一版会失败
-原脚本对 31 个国家连续发起 31+ 次 GDELT 请求，没有处理 429，也没有等待/重试；因此 `daily.json` 最终只有错误列表，页面自然显示 0 条。
+1. GDELT `HTTP 429 Too Many Requests`
+2. GitHub Actions 绿色成功但 `daily.json` 实际为 0 条新闻
 
-## 这版怎么修
-- GDELT 请求增加 429 重试、`Retry-After`、指数等待。
-- 国家采集改为 **国内媒体优先**：使用 GDELT `sourcecountry:`，再按政治/经济/金融/产业/科技/能源/国防/外交/社会/灾害等主题抓取。
-- 每个国家串行采集，默认间隔 6 秒，避免突发请求。
-- 空响应、非法 JSON 都会被明确记录，不会再生成看似成功但实际为空的数据。
-- 每个国家仍然遵守“宁缺毋滥”，不足目标数量就少于目标，不造新闻。
-- 每天北京时间 08:07 自动运行；避开整点高峰。GitHub 官方说明 schedule 默认 UTC，也支持 IANA timezone；整点附近可能发生调度延迟。
-- 支持手动 Run workflow。
-- 手机页面继续读取 `data/daily.json`，不会因浏览器缓存显示旧数据。
+## 运行方式
 
-## 你需要做
-把本包中的文件覆盖到 `franklee24/Rader-News` 仓库：
-`.github/workflows/daily.yml`
-`config.json`
-`scripts/build_daily.py`
-`data/daily.json`
-`index.html`
-`manifest.webmanifest`
-`sw.js`
+- 手机网页：GitHub Pages
+- 数据文件：`data/daily.json`
+- 新闻采集：GDELT DOC 2.0
+- 自动更新时间：北京时间每天 08:07
+- 手动更新：Actions → 雷达新闻每日更新 → Run workflow
+- 31 个国家：Tier 1/2/3/4 全部参与
+- 采集窗口：过去 24 小时
+- 空数据不会发布：如果事件数为 0，Actions 直接失败，不会生成“假成功”
+- 超过 70% 国家采集失败时，也不会发布
 
-然后：
-1. Actions
-2. 雷达新闻每日更新
-3. Run workflow
-4. 等绿色 Success
-5. 打开 https://franklee24.github.io/Rader-News/
+## 你只需要做一次
 
-## 关于每天08:00
-这里故意设置为北京时间 **08:07**，不是 08:00。
-原因：GitHub 官方说明整点附近可能因为 Actions 高负载而延迟；07 分钟可以降低排队概率。
-如果你坚持必须 08:00，可把 cron 改回 `0 0 * * *` + `timezone: Asia/Shanghai`。
+把本压缩包中的文件覆盖到 `franklee24/Rader-News`：
 
-## 重要
-“GitHub Actions 成功”只代表程序执行完成，不代表新闻采集成功。
-本版增加了验证步骤：`daily.json` 必须是合法 JSON，并显示实际事件数与错误数。
+```text
+.github/workflows/daily.yml
+scripts/build_daily.py
+config.json
+data/daily.json
+index.html
+manifest.webmanifest
+sw.js
+README.md
+```
 
-GDELT DOC 2.0 ArticleList 支持 24h 时间窗和最多 250 条记录，但其 API 有访问频率限制，因此必须控制请求频率。
+如果仓库里还有旧版 `daily.yml`，用这里的新版覆盖。
+
+## 第一次验证
+
+进入：
+
+Actions → 雷达新闻每日更新 → Run workflow → Run workflow
+
+正常流程：
+
+```text
+Checkout
+Setup Python
+Build daily news
+Validate snapshot
+Commit daily snapshot
+```
+
+`Build daily news` 会明显比以前慢一些，这是故意的：为了避免 GDELT 429，国家请求之间采用节流，并对 429 做退避重试。
+
+## 看到什么才算成功
+
+不要只看最上面的绿色 Success。
+
+打开 `Build daily news`，应该能看到：
+
+```text
+Tier 1/美国: xxx articles -> xx events
+Tier 1/中国: xxx articles -> xx events
+...
+Tier 4/越南: xxx articles -> xx events
+WROTE .../data/daily.json xxx
+```
+
+然后 `data/daily.json`：
+
+```json
+"event_count": 大于0
+```
+
+并且：
+
+```json
+"country_success": ...
+"country_failed": ...
+```
+
+## GitHub Pages
+
+你现在的 Pages 地址继续使用：
+
+https://franklee24.github.io/Rader-News/
+
+每天数据更新后，页面会自动读取新的 `data/daily.json`。
+
+## 关于 08:07
+
+这里使用：
+
+```text
+cron: 7 0 * * *
+```
+
+UTC 00:07 = 北京时间 08:07。
+
+故意避开整点高峰，并且只保留一个每日工作流，避免你之前遇到多个任务同时排队。
+
+## 关于 ChatGPT 每日推送
+
+GitHub Pages 是“网站自动更新”链路。
+
+ChatGPT 内的“每日雷达新闻推送”是另一条链路，二者互不替代。
+
