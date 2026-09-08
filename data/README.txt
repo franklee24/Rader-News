@@ -1,0 +1,1 @@
+首次 GitHub Actions 成功运行后，daily.json 会被真实 24h 新闻快照覆盖；不要手工删除。

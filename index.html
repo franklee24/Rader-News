@@ -1,88 +1,49 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07111f"><link rel="manifest" href="manifest.webmanifest">
-<title>雷达新闻｜GLOBAL RADAR</title>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0f18"><meta name="description" content="雷达新闻：全球新闻事件雷达">
+<link rel="manifest" href="manifest.webmanifest"><title>雷达新闻 · GLOBAL RADAR</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#07111f;color:#dbe7f5;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
-header{position:sticky;top:0;z-index:5;background:#0a1627ee;backdrop-filter:blur(14px);border-bottom:1px solid #203149}
-.top{max-width:1280px;margin:auto;padding:14px 18px;display:flex;align-items:center;gap:14px}.brand{font-size:22px;font-weight:800;letter-spacing:.5px}.sub{color:#6f829b;font-size:12px}.status{margin-left:auto;color:#6de2c3;font-size:12px}
-nav{max-width:1280px;margin:auto;padding:0 18px 12px;display:flex;gap:7px;overflow:auto}.tab{border:1px solid #263a53;background:#0d1c30;color:#aebed0;border-radius:8px;padding:7px 11px;white-space:nowrap;cursor:pointer}.tab.active{background:#14364a;color:#fff;border-color:#2c7f83}
-main{max-width:1280px;margin:auto;padding:18px}.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.search{flex:1;min-width:220px;background:#0d1c30;border:1px solid #263a53;border-radius:9px;padding:10px 12px;color:#fff;outline:none}.meta{color:#73869e;font-size:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}.card{background:#0b192b;border:1px solid #203149;border-radius:12px;padding:14px;cursor:pointer}.card:hover{border-color:#38617d}.kicker{display:flex;justify-content:space-between;gap:8px;color:#7f94aa;font-size:11px}.title{font-size:16px;font-weight:700;margin:8px 0;color:#f1f6fb}.desc{color:#9fb0c2}.pill{display:inline-block;padding:3px 7px;border-radius:5px;background:#132a40;color:#8fd8d0;margin-right:5px}.score{font-weight:800;color:#ffcc75}.empty{padding:40px;text-align:center;color:#778ba4}
-.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;margin-bottom:18px}.panel{background:#0b192b;border:1px solid #203149;border-radius:12px;padding:16px}.big{font-size:34px;font-weight:800}.smallgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.stat{background:#0f2136;border-radius:8px;padding:10px}.stat b{display:block;font-size:19px}.country{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #172a40}.muted{color:#6f829b}.danger{color:#ff9d8c}.fresh{color:#70e0b5}
-.modal{position:fixed;inset:0;background:#0009;display:none;z-index:10;padding:20px;overflow:auto}.modal.on{display:block}.modalbox{max-width:820px;margin:4vh auto;background:#0b192b;border:1px solid #2b425e;border-radius:14px;padding:20px}.close{float:right;border:0;background:none;color:#9fb0c2;font-size:25px;cursor:pointer}.source{padding:9px 0;border-top:1px solid #203149}.source a{color:#6ed9ff;text-decoration:none}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.smallgrid{grid-template-columns:repeat(2,1fr)}main{padding:12px}.grid{grid-template-columns:1fr}.brand{font-size:19px}}
+:root{--bg:#070b12;--panel:#0d131d;--panel2:#111a26;--line:#223044;--text:#edf3fb;--muted:#8e9bad;--accent:#4da3ff;--hot:#ffb454;--good:#55d6a2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% -10%,#17263a 0,#070b12 35%);color:var(--text);font:14px/1.5 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+header{position:sticky;top:0;z-index:10;background:rgba(7,11,18,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.top{max-width:1450px;margin:auto;padding:14px 18px;display:flex;align-items:center;gap:18px}.brand{font-weight:800;font-size:20px;letter-spacing:.5px}.brand span{color:var(--accent)}.status{margin-left:auto;color:var(--muted);font-size:12px}.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer}.btn:hover{border-color:#3c5573}
+.nav{max-width:1450px;margin:auto;padding:0 18px 12px;display:flex;gap:8px;overflow:auto}.nav button{white-space:nowrap}
+main{max-width:1450px;margin:20px auto;padding:0 18px}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin-bottom:16px}.card{background:linear-gradient(180deg,rgba(17,26,38,.96),rgba(10,16,25,.96));border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 12px 40px #0003}.kicker{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:1.4px}.headline{font-size:28px;font-weight:800;margin:8px 0}.sub{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{background:#0a1019;border:1px solid var(--line);border-radius:10px;padding:13px}.stat b{display:block;font-size:24px}.stat span{color:var(--muted);font-size:11px}
+.section{display:none}.section.active{display:block}.sectionTitle{display:flex;align-items:end;justify-content:space-between;margin:22px 0 10px}.sectionTitle h2{margin:0;font-size:18px}.sectionTitle span{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.event{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;transition:.15s}.event:hover{transform:translateY(-1px);border-color:#365275}.meta{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:11px;margin-bottom:8px}.badge{border:1px solid #2d4865;border-radius:99px;padding:2px 7px;color:#a9d3ff}.score{margin-left:auto;color:var(--hot);font-weight:700}.event h3{font-size:15px;line-height:1.45;margin:0 0 9px}.event p{margin:0;color:var(--muted);font-size:12px}.countryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.country{padding:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;cursor:pointer}.country b{font-size:16px}.country small{display:block;color:var(--muted);margin-top:4px}.country strong{float:right;color:var(--accent)}
+.search{width:280px;max-width:55vw;background:#0a1019;border:1px solid var(--line);color:var(--text);padding:9px 12px;border-radius:8px}
+#modal{display:none;position:fixed;inset:0;background:#000b;z-index:30;padding:30px;overflow:auto}.modalbox{max-width:900px;margin:30px auto;background:#0d131d;border:1px solid var(--line);border-radius:16px;padding:22px}.modalbox h2{font-size:23px}.close{float:right}.source{border-top:1px solid var(--line);padding:10px 0}.source a{color:#8ec8ff;text-decoration:none}.empty{padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.countryGrid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.headline{font-size:22px}}
 </style></head>
 <body>
-<header><div class="top"><div><div class="brand">◉ 雷达新闻</div><div class="sub">GLOBAL RADAR · 全球事件级新闻情报</div></div><div id="status" class="status">正在读取快照…</div></div>
-<nav id="nav"></nav></header>
-<main>
-<div class="bar"><input id="search" class="search" placeholder="搜索国家、事件、来源、关键词…"><select id="country" class="tab"><option value="">全部国家</option></select><select id="category" class="tab"><option value="">全部类别</option></select><span id="updated" class="meta"></span><button class="tab" onclick="load(true)">↻ 刷新</button></div>
-<section class="hero"><div class="panel"><div class="muted">GLOBAL TOP</div><div id="topTitle" class="big">—</div><div id="topMeta" class="desc">读取中</div><div class="smallgrid"><div class="stat"><b id="eventCount">0</b><span class="muted">事件</span></div><div class="stat"><b id="countryCount">0</b><span class="muted">国家</span></div><div class="stat"><b id="freshCount">0</b><span class="muted">新鲜数据</span></div><div class="stat"><b>24h</b><span class="muted">时间窗口</span></div></div></div>
-<div class="panel"><div class="muted">数据状态</div><div id="health" style="margin-top:10px"></div><div class="muted" style="margin-top:14px">规则：同一事件多来源合并；宁缺毋滥；国内事件优先补强。</div></div></section>
-<div id="content"></div>
+<header><div class="top"><div class="brand">雷达新闻 <span>GLOBAL RADAR</span></div><input id="search" class="search" placeholder="搜索新闻事件…"><div id="status" class="status">正在加载…</div><button class="btn" onclick="loadData(true)">↻ 刷新</button></div>
+<div class="nav" id="nav"><button class="btn" onclick="show('top')">GLOBAL TOP</button><button class="btn" onclick="show('tier1')">第一梯队</button><button class="btn" onclick="show('tier2')">第二梯队</button><button class="btn" onclick="show('tier3')">第三梯队</button><button class="btn" onclick="show('tier4')">第四梯队</button><button class="btn" onclick="show('supplement')">全球补充</button></div></header>
+<main><div class="hero"><div class="card"><div class="kicker">Daily Intelligence Brief</div><div class="headline">全球重要新闻 · 24H 雷达</div><div class="sub" id="updated">数据加载中…</div></div><div class="card"><div class="stats"><div class="stat"><b id="s1">—</b><span>Tier 1 事件</span></div><div class="stat"><b id="s2">—</b><span>全部国家事件</span></div><div class="stat"><b id="s3">—</b><span>全球 TOP</span></div><div class="stat"><b id="s4">—</b><span>失败源</span></div></div></div></div>
+<section id="top" class="section active"><div class="sectionTitle"><h2>GLOBAL TOP</h2><span>跨国家综合排序</span></div><div id="topgrid" class="grid"></div></section>
+<section id="tier1" class="section"><div class="sectionTitle"><h2>第一梯队</h2><span>美国 · 中国 · 英国 · 法国 · 德国 · 俄罗斯 · 日本</span></div><div id="tier1countries" class="countryGrid"></div><div id="tier1events"></div></section>
+<section id="tier2" class="section"><div class="sectionTitle"><h2>第二梯队</h2></div><div id="tier2countries" class="countryGrid"></div><div id="tier2events"></div></section>
+<section id="tier3" class="section"><div class="sectionTitle"><h2>第三梯队</h2></div><div id="tier3countries" class="countryGrid"></div><div id="tier3events"></div></section>
+<section id="tier4" class="section"><div class="sectionTitle"><h2>第四梯队</h2></div><div id="tier4countries" class="countryGrid"></div><div id="tier4events"></div></section>
+<section id="supplement" class="section"><div class="sectionTitle"><h2>全球补充</h2><span>其他国家、地区与国际组织</span></div><div id="supgrid" class="grid"></div></section>
 </main>
-<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div id="detail"></div></div></div>
+<div id="modal"><div class="modalbox"><button class="btn close" onclick="closeModal()">关闭</button><div id="modalbody"></div></div></div>
 <script>
-let DATA=null, mode="global";
-const tiers={tier1:"第一梯队",tier2:"第二梯队",tier3:"第三梯队",tier4:"第四梯队",supplement:"全球补充"};
-const cats=["政治/政府","宏观经济/金融","产业/商业","科技","能源","国防/安全","外交/国际","社会/灾害","其他"];
-async function load(force=false){
-  try{
-    const r=await fetch("data/daily.json?ts="+Date.now(),{cache:"no-store"}); DATA=await r.json();
-    const csel=document.getElementById("country"), ksel=document.getElementById("category");
-    const oldc=csel.value, oldk=ksel.value;
-    csel.innerHTML='<option value="">全部国家</option>'+DATA.countries.map(c=>`<option value="${esc(c.country)}">${esc(c.country)}</option>`).join("");
-    ksel.innerHTML='<option value="">全部类别</option>'+cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
-    csel.value=oldc; ksel.value=oldk;
-    render();
-    document.getElementById("status").textContent=DATA.version.includes("demo")?"演示数据":"LIVE · 自动更新";
-    document.getElementById("updated").textContent="更新："+DATA.generated_at.replace("T"," ").slice(0,16)+"（北京时间）";
-  }catch(e){document.getElementById("status").textContent="读取失败";document.getElementById("content").innerHTML='<div class="empty">无法读取 data/daily.json</div>'}
+let DATA=null,all=[];
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function card(e){return `<article class="event" onclick='openEvent(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${e.importance||0}</span></div><h3>${esc(e.title)}</h3><p>${esc(e.source_names?.join(' · ')||e.source||'')}</p></article>`}
+function render(){if(!DATA)return; document.getElementById('updated').textContent=`更新于 ${DATA.generated_beijing||''} · 统计窗口 ${DATA.window_hours||24} 小时 · ${DATA.stale_fallback?'本轮采集异常，显示上一份成功快照':'实时采集快照'}`;
+let st=DATA.stats||{};['s1','s2','s3','s4'].forEach((id,i)=>document.getElementById(id).textContent=[st.tier1_events||0,st.events||0,(DATA.global_top||[]).length,st.failed_sources||0][i]);
+document.getElementById('topgrid').innerHTML=(DATA.global_top||[]).map(card).join('')||'<div class="empty">暂无数据</div>';
+['tier1','tier2','tier3','tier4'].forEach(t=>{let box=document.getElementById(t+'countries'), evbox=document.getElementById(t+'events');let entries=Object.values(DATA.tiers?.[t]||{});box.innerHTML=entries.map(x=>`<div class="country" onclick="document.getElementById('${t}events').scrollIntoView({behavior:'smooth'})"><b>${esc(x.country)}</b><strong>${x.count}</strong><small>${x.target_min?`目标 ${x.target_min}-${x.target_max} · `:''}${x.count<x.target_min?'本轮不足，宁缺毋滥':'已达到目标'}</small></div>`).join('');evbox.innerHTML=entries.map(x=>`<div class="sectionTitle"><h2>${esc(x.country)}</h2><span>${x.count} 条</span></div><div class="grid">${x.events.map(card).join('')||'<div class="empty">24h 内无足够高价值独立事件</div>'}</div>`).join('')});
+document.getElementById('supgrid').innerHTML=(DATA.supplement||[]).map(card).join('')||'<div class="empty">暂无补充事件</div>';
+all=[];Object.values(DATA.tiers||{}).forEach(t=>Object.values(t).forEach(c=>all.push(...c.events)));all.push(...(DATA.supplement||[]));
 }
-function nav(){
- const n=document.getElementById("nav"); n.innerHTML='<button class="tab '+(mode==="global"?"active":"")+'" onclick="mode=\'global\';render()">Global TOP</button>'+
- Object.entries(tiers).map(([k,v])=>'<button class="tab '+(mode===k?"active":"")+'" onclick="mode=\''+k+'\';render()">'+v+'</button>').join("");
-}
-function render(){
- nav();
- const q=document.getElementById("search").value.trim().toLowerCase();
- let events=[];
- if(mode==="global") events=DATA.global_top||[];
- else if(mode==="supplement") events=(DATA.supplement?.events||[]);
- else events=DATA.countries.filter(x=>x.tier===mode).flatMap(x=>x.events.map(e=>({...e,_country:x.country,_status:x.status})));
- const cv=document.getElementById("country").value, kv=document.getElementById("category").value;
- if(cv) events=events.filter(e=>(e.event_country||e._country)===cv);
- if(kv) events=events.filter(e=>(e.category||"其他")===kv);
- if(q) events=events.filter(e=>(e.title+" "+(e.event_country||e._country||"")+" "+(e.category||"")+" "+(e.source||"")).toLowerCase().includes(q));
- events=events.sort((a,b)=>(b.importance||0)-(a.importance||0));
- document.getElementById("topTitle").textContent=events[0]?.title||"暂无事件";
- document.getElementById("topMeta").textContent=events[0]?`${events[0].event_country||events[0]._country||"全球"} · ${events[0].category} · 重要度 ${events[0].importance}`:"";
- const countries=DATA.countries||[]; document.getElementById("countryCount").textContent=countries.length;
- document.getElementById("eventCount").textContent=countries.reduce((n,c)=>n+(c.events?.length||0),0)+(DATA.supplement?.count||0);
- document.getElementById("freshCount").textContent=countries.filter(c=>c.status==="fresh").length;
- const er=DATA.quality?.errors||[]; document.getElementById("health").innerHTML=`<div class="fresh">${DATA.quality?.fresh_country_count||0}/${countries.length} 个国家本次成功抓取</div>`+(er.length?`<div class="danger" style="margin-top:8px">部分源/国家失败：${er.length} 项，失败时保留上一快照。</div>`:'<div class="fresh" style="margin-top:8px">本次抓取完整</div>');
- const title=mode==="global"?"全球重要事件":tiers[mode]||"事件";
- document.getElementById("content").innerHTML='<div class="panel" style="margin-bottom:12px"><b>'+title+'</b><span class="muted"> · '+events.length+' 个事件</span></div><div class="grid">'+events.map(card).join("")+'</div>';
-}
-function card(e){
- return `<article class="card" onclick='openModal(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="kicker"><span>${e.event_country||e._country||"全球"} · ${e.category||"其他"}</span><span class="score">${e.importance||0}</span></div><div class="title">${esc(e.title)}</div><div class="desc">${e.source||"多来源"} · ${e.sources?.length||1} 个来源 · 国内度 ${(e.domestic_score??0).toFixed(2)}</div></article>`;
-}
-function openModal(e){
- const sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.domain||"source")}</b><br><a href="${s.url}" target="_blank" rel="noopener">${esc(s.title||s.url)}</a></div>`).join("");
- document.getElementById("detail").innerHTML=`<div class="muted">${e.event_country||"全球"} · ${e.category||"其他"} · 重要度 ${e.importance||0}</div><h2>${esc(e.title)}</h2><p>事件级合并：该卡片把同一事件的多家报道合并为一个事件槽位，避免重复占位。</p><p><b>为什么重要：</b>${importanceText(e)}</p><p><b>可能影响：</b>${impactText(e)}</p><p><b>未来72小时：</b>${nextText(e)}</p><p>国内事件度：${e.domestic_score??0}；主来源：${esc(e.source||"—")}；来源国：${esc(e.source_country||"—")}；发布时间：${esc(e.published_at||"—")}</p><h3>相关来源</h3>${sources}<p style="margin-top:18px"><a href="${e.url}" target="_blank" rel="noopener" style="color:#6ed9ff">打开主来源 →</a></p>`;
- document.getElementById("modal").classList.add("on");
-}
-function closeModal(){document.getElementById("modal").classList.remove("on")}
-function importanceText(e){let s=e.importance||0;return s>=90?"全球核心事件，可能跨越多个国家/市场或产生政策与安全外溢。":s>=75?"重大事件，预计对本国政策、市场或地区安全产生明显影响。":s>=60?"重要事件，值得持续跟踪。":"一般重要事件，纳入雷达以便后续观察。"}
-function impactText(e){const c=e.category||"";if(c.includes("金融"))return"关注利率、汇率、债券及资本市场反应。";if(c.includes("国防"))return"关注军事行动、制裁、军力部署及地区安全外溢。";if(c.includes("科技"))return"关注产业链、企业竞争、监管及技术扩散。";if(c.includes("能源"))return"关注油气、电力、供应链与通胀传导。";return"关注政策执行、市场反应、后续表态及跨境外溢。"}
-function nextText(e){return "关注未来72小时内的官方后续公告、政策落地、市场反馈以及是否出现新的独立事件。"}
-function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
-document.getElementById("search").addEventListener("input",render);
-document.getElementById("country").addEventListener("change",render);
-document.getElementById("category").addEventListener("change",render);
-if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
-load();
+function show(id){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');scrollTo({top:0,behavior:'smooth'})}
+function openEvent(e){let sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.source||'来源')}</b><br><a target="_blank" rel="noopener" href="${esc(s.link)}">打开报道</a></div>`).join('');
+document.getElementById('modalbody').innerHTML=`<div class="kicker">${esc(e.event_country||'全球')} · ${esc(e.category||'')}</div><h2>${esc(e.title)}</h2><p><b>重要性：</b>${e.importance||0}　<b>国内性：</b>${e.domestic_score||0}</p><p><b>为什么重要：</b>${esc(e.why_important)}</p><p><b>影响：</b>${esc(e.impact)}</p><p><b>未来72小时：</b>${esc(e.next_72h)}</p><h3>相关来源</h3>${sources||'<p class="sub">暂无多源记录</p>'}`;document.getElementById('modal').style.display='block'}
+function closeModal(){document.getElementById('modal').style.display='none'}
+async function loadData(force=false){try{let u='data/daily.json?ts='+Date.now();let r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error(r.status);DATA=await r.json();render();document.getElementById('status').textContent=DATA.stale_fallback?'备用快照':'LIVE';}catch(e){document.getElementById('status').textContent='数据读取失败';}}
+document.getElementById('search').addEventListener('input',e=>{let q=e.target.value.trim().toLowerCase();if(!q){render();return}let found=all.filter(x=>(x.title+' '+x.event_country+' '+x.category).toLowerCase().includes(q));document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById('top').classList.add('active');document.getElementById('topgrid').innerHTML=found.slice(0,100).map(card).join('')||'<div class="empty">没有匹配事件</div>'});
+loadData(); if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script></body></html>

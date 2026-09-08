@@ -1,0 +1,243 @@
+{
+  "tiers": {
+    "tier1": [
+      {
+        "name": "美国",
+        "en": "United States",
+        "code": "US",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "中国",
+        "en": "China",
+        "code": "CN",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "英国",
+        "en": "United Kingdom",
+        "code": "GB",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "法国",
+        "en": "France",
+        "code": "FR",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "德国",
+        "en": "Germany",
+        "code": "DE",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "俄罗斯",
+        "en": "Russia",
+        "code": "RU",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "name": "日本",
+        "en": "Japan",
+        "code": "JP",
+        "min": 20,
+        "max": 30
+      }
+    ],
+    "tier2": [
+      {
+        "name": "印度",
+        "en": "India",
+        "code": "IN",
+        "min": 1,
+        "max": 20
+      },
+      {
+        "name": "巴西",
+        "en": "Brazil",
+        "code": "BR",
+        "min": 1,
+        "max": 20
+      },
+      {
+        "name": "沙特阿拉伯",
+        "en": "Saudi Arabia",
+        "code": "SA",
+        "min": 1,
+        "max": 20
+      },
+      {
+        "name": "韩国",
+        "en": "South Korea",
+        "code": "KR",
+        "min": 1,
+        "max": 20
+      },
+      {
+        "name": "加拿大",
+        "en": "Canada",
+        "code": "CA",
+        "min": 1,
+        "max": 20
+      },
+      {
+        "name": "澳大利亚",
+        "en": "Australia",
+        "code": "AU",
+        "min": 1,
+        "max": 20
+      }
+    ],
+    "tier3": [
+      {
+        "name": "乌克兰",
+        "en": "Ukraine",
+        "code": "UA",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "意大利",
+        "en": "Italy",
+        "code": "IT",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "印度尼西亚",
+        "en": "Indonesia",
+        "code": "ID",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "土耳其",
+        "en": "Turkey",
+        "code": "TR",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "阿联酋",
+        "en": "United Arab Emirates",
+        "code": "AE",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "墨西哥",
+        "en": "Mexico",
+        "code": "MX",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "伊朗",
+        "en": "Iran",
+        "code": "IR",
+        "min": 1,
+        "max": 15
+      },
+      {
+        "name": "瑞士",
+        "en": "Switzerland",
+        "code": "CH",
+        "min": 1,
+        "max": 15
+      }
+    ],
+    "tier4": [
+      {
+        "name": "新加坡",
+        "en": "Singapore",
+        "code": "SG",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "南非",
+        "en": "South Africa",
+        "code": "ZA",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "荷兰",
+        "en": "Netherlands",
+        "code": "NL",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "以色列",
+        "en": "Israel",
+        "code": "IL",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "西班牙",
+        "en": "Spain",
+        "code": "ES",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "埃及",
+        "en": "Egypt",
+        "code": "EG",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "尼日利亚",
+        "en": "Nigeria",
+        "code": "NG",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "阿根廷",
+        "en": "Argentina",
+        "code": "AR",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "波兰",
+        "en": "Poland",
+        "code": "PL",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "name": "越南",
+        "en": "Vietnam",
+        "code": "VN",
+        "min": 1,
+        "max": 10
+      }
+    ]
+  },
+  "categories": [
+    "政治",
+    "宏观经济",
+    "金融",
+    "产业/商业",
+    "科技",
+    "能源",
+    "国防安全",
+    "外交",
+    "社会",
+    "灾害"
+  ],
+  "daily_time": "08:00 Asia/Shanghai",
+  "window_hours": 24
+}

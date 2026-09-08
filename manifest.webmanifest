@@ -1,10 +1,17 @@
 {
-  "name":"雷达新闻",
-  "short_name":"雷达新闻",
-  "start_url":".",
-  "display":"standalone",
-  "background_color":"#07111f",
-  "theme_color":"#0b1526",
-  "lang":"zh-CN",
-  "icons":[{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "name": "雷达新闻",
+  "short_name": "雷达新闻",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#070b12",
+  "theme_color": "#0a0f18",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

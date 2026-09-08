@@ -1,53 +1,239 @@
-# 雷达新闻 V13｜GitHub Pages 稳定生产版
+# 雷达新闻 V14 · 多源稳定运营版
 
-这一版针对 V11 的实际运行问题进行了重构：
+这版的目标不是继续“修 GDELT”，而是把**每天自动产出、手机浏览器可访问、单一数据源失败不阻断**真正闭环。
 
-- GitHub-hosted runner，不需要自托管 Runner
-- 31 个国家/地区抓取任务
-- 最多 3 路并发
-- 全局请求间隔控制，降低 GDELT 429 风险
-- 单请求 25 秒硬超时
-- 429 / 408 / 425 / 500 / 502 / 503 / 504 自动退避
-- 每个国家独立失败，不阻塞其他国家
-- 国家失败时自动使用上一份成功快照
-- 每个国家实时输出进度日志
-- 生成前 24 小时独立事件
-- Global TOP
-- GitHub Pages 自动部署
-- 每天北京时间 08:00 自动运行
-- 支持 Actions → Run workflow 手动运行
+## 运行链路
 
-## 你只需要做
+GitHub Actions（每天北京时间 08:00）
+→ 多源 RSS
+→ 国家/梯队
+→ 24h 过滤
+→ 事件去重
+→ 分类
+→ 重要性排序
+→ `data/daily.json`
+→ GitHub Pages
+→ 手机浏览器打开
 
-1. 取消当前卡住的旧 workflow。
-2. 解压本 ZIP，覆盖 `Rader-News` 仓库根目录。
-3. 保持 Settings → Actions → General → Workflow permissions 为：
-   **Read and write permissions**
-4. Settings → Pages：
-   **Build and deployment → Source → GitHub Actions**
-5. Actions → 雷达新闻每日更新 → Run workflow。
+### 与之前版本最大的区别
 
-## 正常运行时
+**GDELT 不再是关键依赖。**
 
-Build daily news 日志会逐国显示：
+本版优先使用 Google News RSS；如果请求失败，自动切换 Bing News RSS；如果某个国家源失败，只记录失败，不让整次任务失败；如果整轮没有拿到有效数据，则保留上一份成功快照，不发布空白数据。
 
-`▶ tier1/美国 开始`
-`[tier1/美国] request 1/4`
-`[tier1/美国] HTTP 200, xxx articles, xx.xs`
-`✓ tier1/美国 完成：xx 个独立事件`
+尤其是 HTTP 429：
+- 不再几十秒、几分钟反复重试；
+- 直接进入备用源；
+- 单国家失败不影响其他国家；
+- 全部源失败时保留上一版。
 
-某国失败不会导致整次日报失败；若有上一份成功数据，会显示：
+## 你的仓库应该保持这个结构
 
-`↩ tier1/美国 使用上一份成功快照：xx 个事件`
+```text
+Rader-News/
+├── index.html
+├── manifest.webmanifest
+├── sw.js
+├── icon.svg
+├── data/
+│   ├── daily.json
+│   └── history/
+├── config/
+│   └── country_tiers.json
+├── scripts/
+│   └── build_daily.py
+└── .github/
+    └── workflows/
+        └── daily.yml
+```
 
-## 手机访问
+## 第一次部署
 
-GitHub Pages 成功部署后：
+### 1. 把本包全部文件上传到 `franklee24/Rader-News`
 
-`https://franklee24.github.io/Rader-News/`
+不要只上传 HTML。
 
-手机浏览器直接打开即可。页面读取仓库中的 `data/daily.json`。
+### 2. 确认 Actions 权限
 
-## 说明
+你之前已经保存好的：
 
-初始 `data/daily.json` 仍然只是可展示的种子数据；第一次 GitHub Actions 成功执行后才会替换成实时 GDELT 数据。
+`Settings → Actions → General → Workflow permissions`
+
+保持：
+
+**Read and write permissions**
+
+本工作流显式声明了：
+
+```yaml
+permissions:
+  contents: write
+```
+
+因此 Actions 才能把每日 `daily.json` 提交回仓库。
+
+### 3. 手动运行一次
+
+进入：
+
+`Actions → 雷达新闻每日更新 → Run workflow`
+
+然后等待：
+
+```text
+Checkout              ✓
+Setup Python          ✓
+Build daily news      ✓
+Commit daily snapshot ✓
+```
+
+成功后，仓库中的：
+
+```text
+data/daily.json
+```
+
+会发生变化。
+
+### 4. 开启 GitHub Pages
+
+进入：
+
+`Settings → Pages`
+
+选择：
+
+```text
+Build and deployment
+Source: Deploy from a branch
+Branch: main
+Folder: / (root)
+Save
+```
+
+GitHub Pages 会直接把仓库根目录作为网站。
+
+网站地址通常是：
+
+```text
+https://franklee24.github.io/Rader-News/
+```
+
+### 5. 手机直接打开
+
+手机浏览器打开上面的地址即可。
+
+也可以：
+
+**添加到主屏幕**
+
+这样基本就是一个轻量 App。
+
+## 每天什么时候更新？
+
+工作流：
+
+```yaml
+cron: "0 0 * * *"
+```
+
+GitHub Actions 使用 UTC，因此对应：
+
+**北京时间每天 08:00。**
+
+另外保留 `workflow_dispatch`，你可以随时手动更新。
+
+## 新闻数量
+
+按照产品规则：
+
+- 第一梯队：美国、中国、英国、法国、德国、俄罗斯、日本，每国目标 20–30
+- 第二梯队：印度、巴西、沙特、韩国、加拿大、澳大利亚，每国最多 20
+- 第三梯队：乌克兰、意大利、印度尼西亚、土耳其、阿联酋、墨西哥、伊朗、瑞士，每国最多 15
+- 第四梯队：新加坡、南非、荷兰、以色列、西班牙、埃及、尼日利亚、阿根廷、波兰、越南，每国最多 10
+- 全球补充：10 条
+
+注意：
+
+**数量是上限/目标，不是虚构填充。**
+
+如果 24 小时内没有足够的独立高价值事件，页面会显示实际数量，而不是为了凑 20 条制造重复新闻。
+
+## 事件处理
+
+同一事件由多个媒体报道时，会尝试聚合成一个事件：
+
+```text
+事件
+├── 来源 A
+├── 来源 B
+├── 来源 C
+└── 来源 D
+```
+
+而不是：
+
+```text
+A 报道一次
+B 报道一次
+C 报道一次
+```
+
+这样 Global TOP 才是真正的“事件排名”。
+
+## 失败保护
+
+### 情况 A：一个国家请求失败
+
+继续其他国家。
+
+### 情况 B：Google News RSS 429
+
+立即切 Bing News RSS。
+
+### 情况 C：Google + Bing 都失败
+
+记录失败，不阻断整个任务。
+
+### 情况 D：整轮没有拿到任何有效新闻
+
+保留上一份成功 `daily.json`。
+
+**绝不会因为一次网络异常把线上页面刷成空白。**
+
+## 本地测试
+
+不需要安装第三方 Python 包：
+
+```bash
+python scripts/build_daily.py
+```
+
+生产环境 GitHub Actions 使用 Python 3.12。
+
+## 后续升级方向
+
+V14 先把“稳定运营”跑通。
+
+之后再增加：
+
+1. Reuters / AP / BBC / DW / NHK / FT 等来源的直接 RSS/站点适配
+2. 来源权威度评分
+3. 多语言语义事件聚类
+4. 国内新闻专项源
+5. 突发新闻 15 分钟监测
+6. Telegram / 邮件 / PWA Push
+7. Android APK
+8. 历史趋势
+9. 事件时间线
+10. AI 摘要与“为什么重要”
+
+---
+
+## 重要
+
+首次运行前 `data/daily.json` 是**空的启动快照**，这是故意的：
+
+**不使用假新闻充数。**
+
+第一次 Actions 成功以后，它会被真实新闻覆盖。
