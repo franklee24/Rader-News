@@ -1,30 +1,88 @@
-<!doctype html><html lang="zh-CN"><head>
+<!doctype html>
+<html lang="zh-CN">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#06101c"><meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="manifest" href="./manifest.webmanifest"><title>雷达新闻｜全球新闻情报</title>
+<meta name="theme-color" content="#07111f"><link rel="manifest" href="manifest.webmanifest">
+<title>雷达新闻｜GLOBAL RADAR</title>
 <style>
-:root{--bg:#06101c;--p:#0b1827;--line:#20384f;--text:#e9f2fa;--muted:#8ca3b8;--blue:#43b9ff;--green:#35d19b;--yellow:#ffc65a}
-*{box-sizing:border-box}body{margin:0;background:#040a11;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}.top{position:sticky;top:0;z-index:10;background:#06101ceb;backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:13px 16px}.brand{display:flex;align-items:center;gap:10px}.logo{width:39px;height:39px;border-radius:12px;background:linear-gradient(145deg,#45c4ff,#2768ff);display:grid;place-items:center}.ring{width:24px;height:24px;border:2px solid #fff;border-radius:50%}h1{font-size:20px;margin:0}.brand small{color:var(--muted);font-size:10px}.status{margin-left:auto;color:var(--muted);font-size:10px;text-align:right}.status b{color:var(--green)}.nav,.chips,.tabs{display:flex;gap:7px;overflow:auto;margin-top:12px}.nav button,.chip,.tab{border:1px solid var(--line);background:#091725;color:#a9bfd2;border-radius:999px;padding:7px 12px;white-space:nowrap}.active{color:#fff!important;background:#123753!important;border-color:#2b739c!important}.main{max-width:1280px;margin:auto;padding:14px}.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:10px}.card{background:linear-gradient(180deg,#0c1a2a,#091522);border:1px solid var(--line);border-radius:15px;padding:14px}.hero h2{font-size:25px;margin:5px 0}.muted{color:var(--muted);line-height:1.65}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.metric{background:#081421;border:1px solid var(--line);border-radius:10px;padding:9px}.metric b{font-size:20px;display:block}.metric span{font-size:10px;color:var(--muted)}.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.tier{cursor:pointer}.tier small{display:block;color:var(--muted);margin-top:5px}.progress{height:4px;background:#13283b;border-radius:9px;margin-top:8px}.progress i{display:block;height:100%;background:linear-gradient(90deg,#267cff,#48d1ff);border-radius:9px}.toolbar{display:flex;gap:8px;margin:15px 0 9px;flex-wrap:wrap}.search{flex:1;min-width:220px;border:1px solid var(--line);background:#07131f;color:#fff;border-radius:999px;padding:10px 14px}.section{display:flex;justify-content:space-between;margin:15px 2px 9px}.section h3{margin:0}.section span{color:var(--muted);font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.event{cursor:pointer}.event h4{font-size:14px;line-height:1.5;margin:9px 0}.badge{font-size:10px;color:#68c7ff;background:#102e45;padding:3px 6px;border-radius:5px}.score{float:right;color:var(--yellow);font-weight:700}.meta{font-size:10px;color:var(--muted);display:flex;gap:9px;flex-wrap:wrap}.empty{text-align:center;color:var(--muted);padding:30px}.error{color:#ff9baa;border-color:#6e2c38}.drawer{display:none;position:fixed;inset:0;background:#0009;z-index:30}.drawer.show{display:block}.detail{position:absolute;right:0;top:0;width:min(680px,95%);height:100%;overflow:auto;background:#081421;padding:20px}.source{display:block;color:#62c6ff;border:1px solid var(--line);border-radius:9px;padding:9px;margin:7px 0;text-decoration:none}.close{float:right;background:none;border:0;color:#9fb2c5;font-size:28px}@media(max-width:760px){.hero{grid-template-columns:1fr}.tiers{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
-</style></head><body><header class="top"><div class="brand"><div class="logo"><div class="ring"></div></div><div><h1>雷达新闻</h1><small>GLOBAL RADAR · LIVE DAILY</small></div><div class="status">DAILY SNAPSHOT<br><b id="updated">加载中</b></div></div><nav class="nav" id="nav"></nav></header>
-<main class="main"><section class="hero"><div class="card"><span class="badge" id="badge">读取日报</span><h2>全球重要新闻雷达</h2><p class="muted">以独立新闻事件为最小单位；同一事件的多家报道合并。覆盖各国国内政治、经济、金融、产业、科技、能源、国防、外交、社会与灾害。</p></div><div class="card"><div class="metrics"><div class="metric"><b id="total">0</b><span>独立事件</span></div><div class="metric"><b id="countries">0</b><span>覆盖国家</span></div><div class="metric"><b id="sources">0</b><span>来源数</span></div><div class="metric"><b>10</b><span>Global TOP</span></div></div><p class="muted" style="font-size:11px" id="quality">等待数据……</p></div></section>
-<div class="section"><h3>国家梯队</h3><span>目标：独立事件 / 国</span></div><section class="tiers" id="tiers"></section>
-<div class="toolbar"><input class="search" id="search" placeholder="搜索国家、事件、来源、分类……"><div class="chips" id="cats"></div></div><div class="tabs" id="tabs"></div>
-<div class="section"><h3 id="title">Global TOP</h3><span id="count"></span></div><section class="grid" id="events"></section></main>
-<div class="drawer" id="drawer"><article class="detail"><button class="close" onclick="closeDetail()">×</button><div id="detail"></div></article></div>
+*{box-sizing:border-box}body{margin:0;background:#07111f;color:#dbe7f5;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
+header{position:sticky;top:0;z-index:5;background:#0a1627ee;backdrop-filter:blur(14px);border-bottom:1px solid #203149}
+.top{max-width:1280px;margin:auto;padding:14px 18px;display:flex;align-items:center;gap:14px}.brand{font-size:22px;font-weight:800;letter-spacing:.5px}.sub{color:#6f829b;font-size:12px}.status{margin-left:auto;color:#6de2c3;font-size:12px}
+nav{max-width:1280px;margin:auto;padding:0 18px 12px;display:flex;gap:7px;overflow:auto}.tab{border:1px solid #263a53;background:#0d1c30;color:#aebed0;border-radius:8px;padding:7px 11px;white-space:nowrap;cursor:pointer}.tab.active{background:#14364a;color:#fff;border-color:#2c7f83}
+main{max-width:1280px;margin:auto;padding:18px}.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.search{flex:1;min-width:220px;background:#0d1c30;border:1px solid #263a53;border-radius:9px;padding:10px 12px;color:#fff;outline:none}.meta{color:#73869e;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}.card{background:#0b192b;border:1px solid #203149;border-radius:12px;padding:14px;cursor:pointer}.card:hover{border-color:#38617d}.kicker{display:flex;justify-content:space-between;gap:8px;color:#7f94aa;font-size:11px}.title{font-size:16px;font-weight:700;margin:8px 0;color:#f1f6fb}.desc{color:#9fb0c2}.pill{display:inline-block;padding:3px 7px;border-radius:5px;background:#132a40;color:#8fd8d0;margin-right:5px}.score{font-weight:800;color:#ffcc75}.empty{padding:40px;text-align:center;color:#778ba4}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;margin-bottom:18px}.panel{background:#0b192b;border:1px solid #203149;border-radius:12px;padding:16px}.big{font-size:34px;font-weight:800}.smallgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.stat{background:#0f2136;border-radius:8px;padding:10px}.stat b{display:block;font-size:19px}.country{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #172a40}.muted{color:#6f829b}.danger{color:#ff9d8c}.fresh{color:#70e0b5}
+.modal{position:fixed;inset:0;background:#0009;display:none;z-index:10;padding:20px;overflow:auto}.modal.on{display:block}.modalbox{max-width:820px;margin:4vh auto;background:#0b192b;border:1px solid #2b425e;border-radius:14px;padding:20px}.close{float:right;border:0;background:none;color:#9fb0c2;font-size:25px;cursor:pointer}.source{padding:9px 0;border-top:1px solid #203149}.source a{color:#6ed9ff;text-decoration:none}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.smallgrid{grid-template-columns:repeat(2,1fr)}main{padding:12px}.grid{grid-template-columns:1fr}.brand{font-size:19px}}
+</style></head>
+<body>
+<header><div class="top"><div><div class="brand">◉ 雷达新闻</div><div class="sub">GLOBAL RADAR · 全球事件级新闻情报</div></div><div id="status" class="status">正在读取快照…</div></div>
+<nav id="nav"></nav></header>
+<main>
+<div class="bar"><input id="search" class="search" placeholder="搜索国家、事件、来源、关键词…"><select id="country" class="tab"><option value="">全部国家</option></select><select id="category" class="tab"><option value="">全部类别</option></select><span id="updated" class="meta"></span><button class="tab" onclick="load(true)">↻ 刷新</button></div>
+<section class="hero"><div class="panel"><div class="muted">GLOBAL TOP</div><div id="topTitle" class="big">—</div><div id="topMeta" class="desc">读取中</div><div class="smallgrid"><div class="stat"><b id="eventCount">0</b><span class="muted">事件</span></div><div class="stat"><b id="countryCount">0</b><span class="muted">国家</span></div><div class="stat"><b id="freshCount">0</b><span class="muted">新鲜数据</span></div><div class="stat"><b>24h</b><span class="muted">时间窗口</span></div></div></div>
+<div class="panel"><div class="muted">数据状态</div><div id="health" style="margin-top:10px"></div><div class="muted" style="margin-top:14px">规则：同一事件多来源合并；宁缺毋滥；国内事件优先补强。</div></div></section>
+<div id="content"></div>
+</main>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div id="detail"></div></div></div>
 <script>
-const tiers={"Tier 1":{target:"20–30",countries:["美国","中国","英国","法国","德国","俄罗斯","日本"]},"Tier 2":{target:"≤20",countries:["印度","巴西","沙特阿拉伯","韩国","加拿大","澳大利亚"]},"Tier 3":{target:"≤15",countries:["乌克兰","意大利","印度尼西亚","土耳其","阿联酋","墨西哥","伊朗","瑞士"]},"Tier 4":{target:"≤10",countries:["新加坡","南非","荷兰","以色列","西班牙","埃及","尼日利亚","阿根廷","波兰","越南"]}};
-const cats=["全部","政治","经济","金融","产业","科技","能源","国防","外交","社会","灾害"];let data=[],snap=null,tier="全部",country="全部",cat="全部";const $=x=>document.getElementById(x);
-function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
-function tierOf(c){for(const[t,v]of Object.entries(tiers))if(v.countries.includes(c))return t;return"全球补充"}
-function renderNav(){$("nav").innerHTML=["Global TOP","Tier 1","Tier 2","Tier 3","Tier 4","全球补充"].map(x=>`<button class="${(x==="Global TOP"&&tier==="全部")||x===tier?"active":""}" onclick="setTier('${x}')">${x}</button>`).join("")}
-function setTier(x){tier=x==="Global TOP"?"全部":x;country="全部";render()}
-function renderTiers(){$("tiers").innerHTML=Object.entries(tiers).map(([t,v])=>{let n=data.filter(e=>tierOf(e.event_country)===t).length,target=t==="Tier 1"?30:t==="Tier 2"?20:t==="Tier 3"?15:10;return`<div class="card tier" onclick="setTier('${t}')"><b>${t}</b><small>${v.countries.length} 个国家 · ${v.target} / 国 · 当前 ${n} 条</small><div class="progress"><i style="width:${Math.min(100,n/(v.countries.length*target)*100)}%"></i></div></div>`}).join("")}
-function renderCats(){$("cats").innerHTML=cats.map(x=>`<button class="chip ${cat===x?"active":""}" onclick="setCat('${x}')">${x}</button>`).join("")}function setCat(x){cat=x;render()}
-function renderTabs(){let cs=tier==="全部"?Object.values(tiers).flatMap(x=>x.countries):tiers[tier]?.countries||[];$("tabs").innerHTML=["全部",...cs].map(x=>`<button class="tab ${country===x?"active":""}" onclick="setCountry('${x}')">${x}</button>`).join("")}function setCountry(x){country=x;render()}
-function filtered(){let q=$("search").value.trim().toLowerCase();return data.filter(e=>(tier==="全部"||tierOf(e.event_country)===tier)&&(country==="全部"||e.event_country===country)&&(cat==="全部"||e.category===cat)&&(!q||[e.title,e.event_country,e.category,e.source_names].join(" ").toLowerCase().includes(q)))}
-function card(e){return`<article class="card event" onclick="openDetail('${e.id}')"><span class="badge">${esc(tierOf(e.event_country))} · ${esc(e.event_country)} · ${esc(e.category)}</span><span class="score">${Number(e.importance||0).toFixed(0)}</span><h4>${esc(e.title)}</h4><div class="meta"><span>${esc(e.published_at||"")}</span><span>${(e.sources||[]).length} 个来源</span><span>国内重要度 ${Number(e.domestic_score||0).toFixed(0)}</span></div></article>`}
-function render(){renderNav();renderTiers();renderCats();renderTabs();let arr=filtered();$("title").textContent=country!=="全部"?`Global TOP · ${country}`:tier==="全部"?"Global TOP":tier;$("count").textContent=`${arr.length} 个独立事件`;$("events").innerHTML=arr.length?arr.map(card).join(""):`<div class="card empty ${snap?.quality?.errors?.length?"error":""}" style="grid-column:1/-1">${esc(snap?.quality?.summary||"当前条件没有独立事件。")}</div>`}
-function openDetail(id){let e=data.find(x=>x.id===id);if(!e)return;$("detail").innerHTML=`<span class="badge">${esc(tierOf(e.event_country))} · ${esc(e.event_country)} · ${esc(e.category)} · ${Number(e.importance||0).toFixed(0)}</span><h2>${esc(e.title)}</h2><h3>为什么重要</h3><p class="muted">${esc(e.why_important)}</p><h3>潜在影响</h3><p class="muted">${esc(e.impact)}</p><h3>未来72小时</h3><p class="muted">${esc(e.next_72h)}</p><h3>原始来源</h3>${(e.sources||[]).map(s=>`<a class="source" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a>`).join("")}`;$("drawer").classList.add("show")}function closeDetail(){$("drawer").classList.remove("show")}
-async function load(){try{let r=await fetch("./data/daily.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);snap=await r.json();data=Array.isArray(snap.events)?snap.events:[];$("updated").textContent=snap.updated_at||"已更新";$("badge").textContent="LIVE DAILY · "+(snap.report_date||"");$("quality").textContent=snap.quality?.summary||"数据已加载";$("total").textContent=data.length;$("countries").textContent=new Set(data.map(e=>e.event_country)).size;$("sources").textContent=new Set(data.flatMap(e=>(e.sources||[]).map(s=>s.name))).size;render()}catch(e){snap={quality:{summary:"新闻数据读取失败："+e.message+"。"}};data=[];$("badge").textContent="DATA ERROR";$("quality").textContent=snap.quality.summary;render()}}
-$("search").addEventListener("input",render);load();
+let DATA=null, mode="global";
+const tiers={tier1:"第一梯队",tier2:"第二梯队",tier3:"第三梯队",tier4:"第四梯队",supplement:"全球补充"};
+const cats=["政治/政府","宏观经济/金融","产业/商业","科技","能源","国防/安全","外交/国际","社会/灾害","其他"];
+async function load(force=false){
+  try{
+    const r=await fetch("data/daily.json?ts="+Date.now(),{cache:"no-store"}); DATA=await r.json();
+    const csel=document.getElementById("country"), ksel=document.getElementById("category");
+    const oldc=csel.value, oldk=ksel.value;
+    csel.innerHTML='<option value="">全部国家</option>'+DATA.countries.map(c=>`<option value="${esc(c.country)}">${esc(c.country)}</option>`).join("");
+    ksel.innerHTML='<option value="">全部类别</option>'+cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+    csel.value=oldc; ksel.value=oldk;
+    render();
+    document.getElementById("status").textContent=DATA.version.includes("demo")?"演示数据":"LIVE · 自动更新";
+    document.getElementById("updated").textContent="更新："+DATA.generated_at.replace("T"," ").slice(0,16)+"（北京时间）";
+  }catch(e){document.getElementById("status").textContent="读取失败";document.getElementById("content").innerHTML='<div class="empty">无法读取 data/daily.json</div>'}
+}
+function nav(){
+ const n=document.getElementById("nav"); n.innerHTML='<button class="tab '+(mode==="global"?"active":"")+'" onclick="mode=\'global\';render()">Global TOP</button>'+
+ Object.entries(tiers).map(([k,v])=>'<button class="tab '+(mode===k?"active":"")+'" onclick="mode=\''+k+'\';render()">'+v+'</button>').join("");
+}
+function render(){
+ nav();
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ let events=[];
+ if(mode==="global") events=DATA.global_top||[];
+ else if(mode==="supplement") events=(DATA.supplement?.events||[]);
+ else events=DATA.countries.filter(x=>x.tier===mode).flatMap(x=>x.events.map(e=>({...e,_country:x.country,_status:x.status})));
+ const cv=document.getElementById("country").value, kv=document.getElementById("category").value;
+ if(cv) events=events.filter(e=>(e.event_country||e._country)===cv);
+ if(kv) events=events.filter(e=>(e.category||"其他")===kv);
+ if(q) events=events.filter(e=>(e.title+" "+(e.event_country||e._country||"")+" "+(e.category||"")+" "+(e.source||"")).toLowerCase().includes(q));
+ events=events.sort((a,b)=>(b.importance||0)-(a.importance||0));
+ document.getElementById("topTitle").textContent=events[0]?.title||"暂无事件";
+ document.getElementById("topMeta").textContent=events[0]?`${events[0].event_country||events[0]._country||"全球"} · ${events[0].category} · 重要度 ${events[0].importance}`:"";
+ const countries=DATA.countries||[]; document.getElementById("countryCount").textContent=countries.length;
+ document.getElementById("eventCount").textContent=countries.reduce((n,c)=>n+(c.events?.length||0),0)+(DATA.supplement?.count||0);
+ document.getElementById("freshCount").textContent=countries.filter(c=>c.status==="fresh").length;
+ const er=DATA.quality?.errors||[]; document.getElementById("health").innerHTML=`<div class="fresh">${DATA.quality?.fresh_country_count||0}/${countries.length} 个国家本次成功抓取</div>`+(er.length?`<div class="danger" style="margin-top:8px">部分源/国家失败：${er.length} 项，失败时保留上一快照。</div>`:'<div class="fresh" style="margin-top:8px">本次抓取完整</div>');
+ const title=mode==="global"?"全球重要事件":tiers[mode]||"事件";
+ document.getElementById("content").innerHTML='<div class="panel" style="margin-bottom:12px"><b>'+title+'</b><span class="muted"> · '+events.length+' 个事件</span></div><div class="grid">'+events.map(card).join("")+'</div>';
+}
+function card(e){
+ return `<article class="card" onclick='openModal(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="kicker"><span>${e.event_country||e._country||"全球"} · ${e.category||"其他"}</span><span class="score">${e.importance||0}</span></div><div class="title">${esc(e.title)}</div><div class="desc">${e.source||"多来源"} · ${e.sources?.length||1} 个来源 · 国内度 ${(e.domestic_score??0).toFixed(2)}</div></article>`;
+}
+function openModal(e){
+ const sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.domain||"source")}</b><br><a href="${s.url}" target="_blank" rel="noopener">${esc(s.title||s.url)}</a></div>`).join("");
+ document.getElementById("detail").innerHTML=`<div class="muted">${e.event_country||"全球"} · ${e.category||"其他"} · 重要度 ${e.importance||0}</div><h2>${esc(e.title)}</h2><p>事件级合并：该卡片把同一事件的多家报道合并为一个事件槽位，避免重复占位。</p><p><b>为什么重要：</b>${importanceText(e)}</p><p><b>可能影响：</b>${impactText(e)}</p><p><b>未来72小时：</b>${nextText(e)}</p><p>国内事件度：${e.domestic_score??0}；主来源：${esc(e.source||"—")}；来源国：${esc(e.source_country||"—")}；发布时间：${esc(e.published_at||"—")}</p><h3>相关来源</h3>${sources}<p style="margin-top:18px"><a href="${e.url}" target="_blank" rel="noopener" style="color:#6ed9ff">打开主来源 →</a></p>`;
+ document.getElementById("modal").classList.add("on");
+}
+function closeModal(){document.getElementById("modal").classList.remove("on")}
+function importanceText(e){let s=e.importance||0;return s>=90?"全球核心事件，可能跨越多个国家/市场或产生政策与安全外溢。":s>=75?"重大事件，预计对本国政策、市场或地区安全产生明显影响。":s>=60?"重要事件，值得持续跟踪。":"一般重要事件，纳入雷达以便后续观察。"}
+function impactText(e){const c=e.category||"";if(c.includes("金融"))return"关注利率、汇率、债券及资本市场反应。";if(c.includes("国防"))return"关注军事行动、制裁、军力部署及地区安全外溢。";if(c.includes("科技"))return"关注产业链、企业竞争、监管及技术扩散。";if(c.includes("能源"))return"关注油气、电力、供应链与通胀传导。";return"关注政策执行、市场反应、后续表态及跨境外溢。"}
+function nextText(e){return "关注未来72小时内的官方后续公告、政策落地、市场反馈以及是否出现新的独立事件。"}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+document.getElementById("search").addEventListener("input",render);
+document.getElementById("country").addEventListener("change",render);
+document.getElementById("category").addEventListener("change",render);
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+load();
 </script></body></html>

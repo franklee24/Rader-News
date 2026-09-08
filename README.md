@@ -1,107 +1,62 @@
-# 雷达新闻｜GitHub Pages 最终自动更新版
+# 雷达新闻｜GitHub Pages 自动更新版 V11
 
-这版针对前一版出现的两个问题做了最终收口：
+这是可直接放进 `franklee24/Rader-News` 的生产版网页项目。
 
-1. GDELT `HTTP 429 Too Many Requests`
-2. GitHub Actions 绿色成功但 `daily.json` 实际为 0 条新闻
+## 目标
 
-## 运行方式
+- 手机浏览器直接打开，无需 APK。
+- 每天北京时间 08:00 自动生成最近 24 小时全球新闻快照。
+- Tier 1：美国、中国、英国、法国、德国、俄罗斯、日本，目标 20–30 条/国。
+- Tier 2：印度、巴西、沙特阿拉伯、韩国、加拿大、澳大利亚，最多 20 条/国。
+- Tier 3：乌克兰、意大利、印度尼西亚、土耳其、阿联酋、墨西哥、伊朗、瑞士，最多 15 条/国。
+- Tier 4：新加坡、南非、荷兰、以色列、西班牙、埃及、尼日利亚、阿根廷、波兰、越南，最多 10 条/国。
+- Supplement：其他国家/地区/国际组织重大事件，最多 10 条。
+- 同一事件多媒体报道合并为一个事件卡，保留多个来源。
+- 国内新闻权重：政治/政府、宏观经济/金融、产业/科技、能源、社会/灾害、国防安全、外交等。
+- 新闻时间窗口严格限定最近 24 小时。
+- GDELT 429 自动重试、退避、限速；单国采用宽查询减少请求次数。
+- 如果某国本次抓取失败，不用空数据覆盖已有快照；页面会显示该国数据状态。
+- 手动运行与每天定时运行共用同一工作流。
 
-- 手机网页：GitHub Pages
-- 数据文件：`data/daily.json`
-- 新闻采集：GDELT DOC 2.0
-- 自动更新时间：北京时间每天 08:07
-- 手动更新：Actions → 雷达新闻每日更新 → Run workflow
-- 31 个国家：Tier 1/2/3/4 全部参与
-- 采集窗口：过去 24 小时
-- 空数据不会发布：如果事件数为 0，Actions 直接失败，不会生成“假成功”
-- 超过 70% 国家采集失败时，也不会发布
+## GitHub 设置
 
-## 你只需要做一次
+你已经把 Actions 的 Workflow permissions 改成了 Read and write，这正是本项目自动提交 `data/daily.json` 所需要的权限。
 
-把本压缩包中的文件覆盖到 `franklee24/Rader-News`：
+另外开启 GitHub Pages：
 
-```text
-.github/workflows/daily.yml
-scripts/build_daily.py
-config.json
-data/daily.json
-index.html
-manifest.webmanifest
-sw.js
-README.md
-```
+`Settings → Pages → Build and deployment → Source: GitHub Actions`
 
-如果仓库里还有旧版 `daily.yml`，用这里的新版覆盖。
+然后到：
 
-## 第一次验证
+`Actions → 雷达新闻每日更新 → Run workflow`
 
-进入：
+第一次建议手动运行。完成后访问：
 
-Actions → 雷达新闻每日更新 → Run workflow → Run workflow
+`https://franklee24.github.io/Rader-News/`
 
-正常流程：
+## 自动时间
 
-```text
-Checkout
-Setup Python
-Build daily news
-Validate snapshot
-Commit daily snapshot
-```
+工作流使用 `Asia/Shanghai` 的 08:00。GitHub Actions 当前支持带 IANA timezone 的 schedule；也可以改成 UTC 00:00。见官方文档。
 
-`Build daily news` 会明显比以前慢一些，这是故意的：为了避免 GDELT 429，国家请求之间采用节流，并对 429 做退避重试。
+## 数据源
 
-## 看到什么才算成功
+本项目使用 GDELT DOC 2.0 ArticleList/JSON。GDELT 支持 `timespan=24h`、ArticleList、JSON，并允许 `maxrecords` 提高到 250。
 
-不要只看最上面的绿色 Success。
+注意：GDELT 是新闻覆盖聚合源，不等于所有事件都来自官方原始发布机构。因此页面保留文章直链，并按来源权威度、来源多样性、事件独立性排序。
 
-打开 `Build daily news`，应该能看到：
+## 文件
 
-```text
-Tier 1/美国: xxx articles -> xx events
-Tier 1/中国: xxx articles -> xx events
-...
-Tier 4/越南: xxx articles -> xx events
-WROTE .../data/daily.json xxx
-```
+- `index.html`：手机端雷达新闻界面
+- `data/daily.json`：每日静态数据快照
+- `scripts/build_daily.py`：抓取、去重、事件聚类、排序、生成快照
+- `.github/workflows/daily.yml`：每日 08:00 + 手动运行
+- `manifest.webmanifest` / `sw.js`：PWA
+- `assets/icon.svg`：雷达图标
 
-然后 `data/daily.json`：
+## 重要
 
-```json
-"event_count": 大于0
-```
+第一次运行如果 GDELT 临时返回 429，脚本会自动退避重试，并限制请求速率。若仍失败，保留上一份有效快照，不会用空数据把页面清空。
 
-并且：
 
-```json
-"country_success": ...
-"country_failed": ...
-```
-
-## GitHub Pages
-
-你现在的 Pages 地址继续使用：
-
-https://franklee24.github.io/Rader-News/
-
-每天数据更新后，页面会自动读取新的 `data/daily.json`。
-
-## 关于 08:07
-
-这里使用：
-
-```text
-cron: 7 0 * * *
-```
-
-UTC 00:07 = 北京时间 08:07。
-
-故意避开整点高峰，并且只保留一个每日工作流，避免你之前遇到多个任务同时排队。
-
-## 关于 ChatGPT 每日推送
-
-GitHub Pages 是“网站自动更新”链路。
-
-ChatGPT 内的“每日雷达新闻推送”是另一条链路，二者互不替代。
-
+## Pages
+工作流会在每日生成后直接把仓库根目录发布到 GitHub Pages，因此不要再配置 `Deploy from branch`。进入 `Settings → Pages`，将 Source 设为 `GitHub Actions`。

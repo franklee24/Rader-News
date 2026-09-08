@@ -1,262 +1,224 @@
-import json, re, time, hashlib, sys
-from datetime import datetime, timezone
-from pathlib import Path
+#!/usr/bin/env python3
+import json, os, re, time, random, hashlib
+from datetime import datetime, timezone, timedelta
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
-ROOT = Path(__file__).resolve().parents[1]
-CFG = json.loads((ROOT/"config.json").read_text(encoding="utf-8"))
-OUT = ROOT/"data/daily.json"
-API = "https://api.gdeltproject.org/api/v2/doc/doc"
+ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA=os.path.join(ROOT,"data","daily.json")
+CFG=os.path.join(ROOT,"config.json")
+API="https://api.gdeltproject.org/api/v2/doc/doc"
 
-# GDELT sourcecountry operator: outlet country, useful for domestic coverage.
-SOURCE_COUNTRY = {
-    "美国":"unitedstates","中国":"china","英国":"unitedkingdom","法国":"france",
-    "德国":"germany","俄罗斯":"russia","日本":"japan","印度":"india","巴西":"brazil",
-    "沙特阿拉伯":"saudiarabia","韩国":"southkorea","加拿大":"canada","澳大利亚":"australia",
-    "乌克兰":"ukraine","意大利":"italy","印度尼西亚":"indonesia","土耳其":"turkey",
-    "阿联酋":"unitedarabemirates","墨西哥":"mexico","伊朗":"iran","瑞士":"switzerland",
-    "新加坡":"singapore","南非":"southafrica","荷兰":"netherlands","以色列":"israel",
-    "西班牙":"spain","埃及":"egypt","尼日利亚":"nigeria","阿根廷":"argentina",
-    "波兰":"poland","越南":"vietnam"
+CATEGORIES={
+"政治/政府":["government","president","prime minister","parliament","election","cabinet","minister","congress","senate","policy","政","政府","总统","总理","议会","选举","内阁","部长"],
+"宏观经济/金融":["central bank","interest rate","inflation","gdp","economy","economic","bond","currency","market","rate cut","rate hike","央行","利率","通胀","GDP","经济","国债","货币","金融"],
+"产业/商业":["company","corporate","business","industry","merger","acquisition","factory","manufacturing","trade","tariff","企业","商业","产业","制造","贸易","关税"],
+"科技":["technology","tech","AI","artificial intelligence","chip","semiconductor","software","space","robot","科技","人工智能","芯片","半导体","软件","航天","机器人"],
+"能源":["oil","gas","energy","power","electricity","nuclear","renewable","OPEC","石油","天然气","能源","电力","核能","可再生"],
+"国防/安全":["military","defense","defence","missile","weapon","army","navy","air force","security","war","attack","drone","国防","军事","导弹","武器","军队","安全","战争","袭击","无人机"],
+"外交/国际":["diplomatic","diplomacy","foreign","summit","treaty","sanction","NATO","UN","EU","外交","峰会","条约","制裁","北约","联合国","欧盟"],
+"社会/灾害":["society","social","health","hospital","disease","crime","protest","fire","flood","earthquake","storm","disaster","社会","卫生","医院","疾病","犯罪","抗议","火灾","洪水","地震","灾害"]
 }
-ALIASES={
-"美国":["United States","USA","US","Washington","Trump","Federal Reserve","Congress"],
-"中国":["China","Chinese","Beijing","Shanghai","PBOC","Xi Jinping"],
-"英国":["United Kingdom","UK","Britain","British","London","Starmer","Bank of England"],
-"法国":["France","French","Paris","Macron","Elysee"],
-"德国":["Germany","German","Berlin","Scholz","Merz","Bundesbank"],
-"俄罗斯":["Russia","Russian","Moscow","Kremlin","Putin"],
-"日本":["Japan","Japanese","Tokyo","Nikkei","BOJ","Ishiba"],
-"印度":["India","Indian","New Delhi","Modi","RBI"],
-"巴西":["Brazil","Brazilian","Brasilia","Lula","central bank"],
-"沙特阿拉伯":["Saudi Arabia","Saudi","Riyadh","Crown Prince","Aramco"],
-"韩国":["South Korea","Korea","Seoul","Yonhap","Bank of Korea"],
-"加拿大":["Canada","Canadian","Ottawa","Trudeau","Carney","Bank of Canada"],
-"澳大利亚":["Australia","Australian","Canberra","Albanese","RBA"],
-"乌克兰":["Ukraine","Ukrainian","Kyiv","Kiev","Zelensky"],
-"意大利":["Italy","Italian","Rome","Meloni","Bank of Italy"],
-"印度尼西亚":["Indonesia","Indonesian","Jakarta","Prabowo","Bank Indonesia"],
-"土耳其":["Turkey","Turkish","Ankara","Istanbul","Erdogan","central bank"],
-"阿联酋":["United Arab Emirates","UAE","Dubai","Abu Dhabi"],
-"墨西哥":["Mexico","Mexican","Mexico City","Sheinbaum","Banxico"],
-"伊朗":["Iran","Iranian","Tehran","Khamenei","central bank"],
-"瑞士":["Switzerland","Swiss","Bern","Zurich","SNB"],
-"新加坡":["Singapore","Singaporean","Singapore government","MAS"],
-"南非":["South Africa","South African","Pretoria","Johannesburg","SARB"],
-"荷兰":["Netherlands","Dutch","Amsterdam","The Hague","ECB"],
-"以色列":["Israel","Israeli","Jerusalem","Tel Aviv","Netanyahu"],
-"西班牙":["Spain","Spanish","Madrid","Sanchez","Bank of Spain"],
-"埃及":["Egypt","Egyptian","Cairo","Sisi","central bank"],
-"尼日利亚":["Nigeria","Nigerian","Abuja","Lagos","CBN"],
-"阿根廷":["Argentina","Argentine","Buenos Aires","Milei","central bank"],
-"波兰":["Poland","Polish","Warsaw","Tusk","central bank"],
-"越南":["Vietnam","Vietnamese","Hanoi","Ho Chi Minh","State Bank"]
+DOMESTIC={
+"政治/政府":1.0,"宏观经济/金融":1.0,"产业/商业":0.9,"科技":0.85,"能源":0.85,
+"国防/安全":0.9,"外交/国际":0.65,"社会/灾害":0.9
 }
-CAT={
-"政治":["election","government","president","prime minister","parliament","minister","politics","vote","cabinet","law","court","policy","选举","政府","总统","总理","议会","部长","政治","法律"],
-"经济":["economy","economic","growth","inflation","GDP","jobs","employment","fiscal","budget","trade","tariff","经济","通胀","增长","就业","财政","预算","贸易","关税"],
-"金融":["central bank","interest rate","rate cut","rate hike","bank","bond","currency","stock","market","finance","Fed","ECB","BoJ","央行","利率","降息","加息","银行","债券","汇率","股市","金融"],
-"产业":["company","business","investment","factory","manufacturing","automotive","airline","industry","merger","acquisition","企业","投资","工厂","制造","汽车","航空","产业","并购"],
-"科技":["AI","artificial intelligence","chip","semiconductor","quantum","software","technology","cyber","data","科技","人工智能","芯片","半导体","量子","软件","网络安全"],
-"能源":["oil","gas","energy","electricity","nuclear","OPEC","solar","wind","能源","石油","天然气","电力","核能"],
-"国防":["military","defense","defence","missile","army","navy","air force","weapon","NATO","军方","国防","导弹","军队","海军","空军","武器"],
-"外交":["diplomatic","diplomacy","summit","foreign","sanction","treaty","embassy","bilateral","外交","峰会","制裁","条约","使馆"],
-"社会":["society","health","education","protest","strike","population","crime","social","school","hospital","社会","卫生","教育","抗议","罢工","人口","犯罪","学校","医院"],
-"灾害":["earthquake","flood","fire","storm","hurricane","typhoon","disaster","eruption","地震","洪水","火灾","风暴","飓风","台风","灾害","火山"]
+AUTH={
+"reuters.com":1.0,"apnews.com":1.0,"bbc.com":0.98,"ft.com":0.98,"wsj.com":0.98,
+"nytimes.com":0.96,"bloomberg.com":0.98,"theguardian.com":0.9,"economist.com":0.96,
+"aljazeera.com":0.9,"cnn.com":0.86,"cnbc.com":0.88,"dw.com":0.9,"france24.com":0.9,
+"nikkei.com":0.92,"nhk.or.jp":0.94,"japantimes.co.jp":0.84,"scmp.com":0.84,
+"tass.com":0.78,"rt.com":0.62,"xinhuanet.com":0.94,"english.news.cn":0.94,
+"people.com.cn":0.9,"chinadaily.com.cn":0.88,"globaltimes.cn":0.72,
+"indiatimes.com":0.72,"thehindu.com":0.88,"abc.net.au":0.88,"abcnews.go.com":0.9,
+"cbc.ca":0.9,"theglobeandmail.com":0.86,"arabnews.com":0.82,"spa.gov.sa":0.9,
+"yonhapnews.co.kr":0.92,"koreaherald.com":0.82,"elpais.com":0.88
 }
-AUTH={"reuters.com":1.0,"apnews.com":0.95,"bbc.com":0.9,"nytimes.com":0.9,"ft.com":0.95,"bloomberg.com":0.95,
-"theguardian.com":0.85,"cnn.com":0.8,"npr.org":0.8,"nhk.or.jp":0.9,"yonhapnews.co.kr":0.9,
-"xinhua.net":0.9,"gov.cn":1.0,"gov.uk":1.0,"elysee.fr":1.0,"bundesregierung.de":1.0,
-"kremlin.ru":1.0,"japan.go.jp":1.0}
+COUNTRY_DATA=json.load(open(CFG,encoding="utf-8"))
+TARGETS=COUNTRY_DATA["targets"]
 
 def norm(s):
-    s=re.sub(r"https?://\S+"," ",s.lower())
-    s=re.sub(r"[^a-z0-9\u4e00-\u9fff]+"," ",s)
-    return " ".join(s.split())
+    s=(s or "").lower()
+    s=re.sub(r"https?://"," ",s)
+    s=re.sub(r"[^a-z0-9\u4e00-\u9fff ]+"," ",s)
+    return re.sub(r"\s+"," ",s).strip()
+
+def tokens(s):
+    n=norm(s)
+    en=set(x for x in n.split() if len(x)>2)
+    zh=set(n[i:i+2] for i in range(max(0,len(n)-1)) if "\u4e00"<=n[i]<="\u9fff")
+    return en|zh
+
+def sim(a,b):
+    A=tokens(a); B=tokens(b)
+    return len(A&B)/max(1,len(A|B))
 
 def domain_score(domain):
-    d=(domain or "").lower()
+    d=(domain or "").lower().split(":")[0]
     for k,v in AUTH.items():
-        if d.endswith(k) or k in d: return v
-    return 0.35
+        if d==k or d.endswith("."+k): return v
+    return 0.45
 
-def category(title):
-    low=title.lower()
-    scores={c:sum(1 for k in ks if k.lower() in low) for c,ks in CAT.items()}
-    return max(scores,key=scores.get) if max(scores.values()) else "政治"
+def classify(title):
+    t=norm(title)
+    scores={}
+    for c,words in CATEGORIES.items():
+        scores[c]=sum(1 for w in words if norm(w) in t)
+    return max(scores,key=scores.get) if max(scores.values()) else "其他"
 
-def domestic_score(a,country):
-    title=(a.get("title") or "").lower()
-    aliases=[x.lower() for x in ALIASES.get(country,[])]
-    hit=sum(x in title for x in aliases)
-    terms=["government","president","parliament","minister","central bank","budget","election","policy","court",
-           "央行","政府","总统","议会","部长","预算","选举","政策","法院"]
-    return min(100,35+20*min(hit,2)+8*sum(x in title for x in terms))
-
-def importance(a,country):
-    d=domain_score(a.get("domain"))
-    high=sum(x.lower() in (a.get("title") or "").lower() for x in
-             ["war","sanction","tariff","rate","election","missile","nuclear","crisis","treaty","strike","earthquake",
-              "战争","制裁","关税","利率","选举","导弹","核","危机","条约","地震"])
-    return round(min(100,35+d*25+high*7+domestic_score(a,country)*0.28),1)
-
-def similarity(a,b):
-    sa=set(norm(a).split()); sb=set(norm(b).split())
-    if not sa or not sb:return 0
-    return len(sa&sb)/len(sa|sb)
-
-def fetch(query,maxrecords=160):
-    """Rate-limited GDELT request with 429/empty/invalid-response protection."""
-    params={
-        "query":query,
-        "mode":"ArtList",
-        "format":"json",
-        "maxrecords":str(maxrecords),
-        "timespan":"24h",
-        "sort":"DateDesc"
-    }
+def fetch(query, retries=5):
+    params={"query":f"({query})","mode":"artlist","maxrecords":"250","timespan":"24h","sort":"datedesc","format":"json"}
     url=API+"?"+urlencode(params)
-    retries=int(CFG["collection"].get("retries",3))
-    backoffs=CFG["collection"].get("backoff_seconds",[30,60,120])
-
-    for attempt in range(retries+1):
+    last=None
+    for attempt in range(retries):
         try:
-            req=Request(url,headers={
-                "User-Agent":"LeidaNews/Final-Daily-Radar (+https://github.com/franklee24/Rader-News)",
-                "Accept":"application/json"
-            })
-            with urlopen(req,timeout=75) as r:
-                body=r.read().decode("utf-8","replace").strip()
-                if not body:
-                    raise RuntimeError("GDELT returned an empty response")
-                if not body.startswith("{"):
-                    raise RuntimeError(f"GDELT returned non-JSON content: {body[:180]!r}")
-                data=json.loads(body)
-                if not isinstance(data,dict):
-                    raise RuntimeError("GDELT JSON root is not an object")
-                return data
-
+            req=Request(url,headers={"User-Agent":"Radar-News/11.0 (news research)"})
+            with urlopen(req,timeout=45) as r:
+                raw=r.read()
+            if not raw: raise ValueError("empty response")
+            return json.loads(raw)
         except HTTPError as e:
-            retry_after=e.headers.get("Retry-After")
-            if e.code == 429 and attempt < retries:
-                wait=backoffs[min(attempt,len(backoffs)-1)]
-                if retry_after and retry_after.isdigit():
-                    wait=max(wait,int(retry_after))
-                print(f"429 rate limited; waiting {wait}s ({attempt+1}/{retries})",flush=True)
-                time.sleep(wait)
-                continue
-            raise
+            last=f"HTTP {e.code}"
+            if e.code==429:
+                wait=20*(2**attempt)+random.uniform(1,6)
+            elif e.code in (500,502,503,504):
+                wait=8*(2**attempt)+random.uniform(1,4)
+            else: raise
+            time.sleep(min(wait,120))
+        except (URLError,TimeoutError,ValueError,json.JSONDecodeError) as e:
+            last=str(e)
+            time.sleep(min(8*(2**attempt)+random.uniform(1,3),90))
+    raise RuntimeError(last or "fetch failed")
 
-        except (URLError, TimeoutError, RuntimeError, json.JSONDecodeError) as e:
-            if attempt < retries:
-                wait=backoffs[min(attempt,len(backoffs)-1)]
-                print(f"retryable GDELT error: {e}; waiting {wait}s ({attempt+1}/{retries})",flush=True)
-                time.sleep(wait)
-                continue
-            raise
+def article_time(a):
+    s=a.get("seendate") or ""
+    try:
+        return datetime.strptime(s,"%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+    except: return datetime.now(timezone.utc)
 
-def eventize(articles,country):
-    events=[]
+def make_events(articles,country):
+    raw=[]
     for a in articles:
         title=(a.get("title") or "").strip()
-        url=a.get("url") or a.get("url_mobile") or ""
-        if len(title)<12 or not url: continue
-        item={"title":title,"url":url,"domain":a.get("domain") or "unknown",
-              "published_at":a.get("seendate") or "","source_country":a.get("sourcecountry") or ""}
-        placed=None
-        for e in events:
-            if similarity(title,e["title"])>=0.42:
-                placed=e; break
-        if placed:
-            if all(s["url"]!=url for s in placed["sources"]):
-                placed["sources"].append({"name":item["domain"],"url":url})
-            if importance(a,country)>placed["importance"]:
-                placed["title"]=title
+        url=(a.get("url") or "").strip()
+        if not title or not url: continue
+        raw.append({
+            "title":title,"url":url,"domain":a.get("domain",""),
+            "source_country":a.get("sourcecountry",""),
+            "published_at":article_time(a).isoformat(),
+            "category":classify(title)
+        })
+    raw.sort(key=lambda x:(domain_score(x["domain"]),x["published_at"]),reverse=True)
+    groups=[]
+    for a in raw:
+        hit=None
+        for g in groups[:180]:
+            if sim(a["title"],g["title"])>=0.55:
+                hit=g; break
+        if hit: hit["sources"].append(a)
         else:
-            events.append({
-                "title":title,"url":url,"event_country":country,"category":category(title),
-                "importance":importance(a,country),"domestic_score":domestic_score(a,country),
-                "published_at":item["published_at"],
-                "sources":[{"name":item["domain"],"url":url}],
-                "why_important":"该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-                "impact":"可能影响相关国家的政策预期、市场情绪、产业链或地区局势，具体影响取决于后续官方措施。",
-                "next_72h":"重点观察后续官方公告、议会/央行行动、市场反应以及其他权威媒体的独立确认。"
-            })
-    for e in events:
-        e["source_names"]=" / ".join(x["name"] for x in e["sources"][:4])
-        e["id"]=hashlib.sha1((country+"|"+norm(e["title"])).encode()).hexdigest()[:16]
+            groups.append({"title":a["title"],"sources":[a],"category":a["category"]})
+    events=[]
+    for g in groups:
+        ss=g["sources"]
+        ss.sort(key=lambda x:(domain_score(x["domain"]),x["published_at"]),reverse=True)
+        primary=ss[0]
+        cats=[x["category"] for x in ss]
+        cat=max(set(cats),key=cats.count)
+        source_domains=list(dict.fromkeys(x["domain"] for x in ss if x["domain"]))
+        domestic=sum(1 for x in ss if x["source_country"]==country["code"])/max(1,len(ss))
+        title=primary["title"]
+        novelty=min(1.0,0.35+0.12*len(ss))
+        authority=domain_score(primary["domain"])
+        diversity=min(1.0,len(source_domains)/4)
+        impact_terms=["war","attack","sanction","rate","election","earthquake","missile","tariff","核","战争","袭击","制裁","利率","选举","地震","导弹"]
+        impact=min(1.0,sum(1 for w in impact_terms if norm(w) in norm(title))/3)
+        score=round(100*(0.20*authority+0.20*diversity+0.25*novelty+0.20*domestic+0.15*impact))
+        events.append({
+            "id":hashlib.sha1((country["name"]+"|"+norm(title)).encode()).hexdigest()[:12],
+            "event_country":country["name"],
+            "country_code":country["code"],
+            "title":title,
+            "category":cat,
+            "domestic_score":round(domestic,2),
+            "importance":score,
+            "published_at":primary["published_at"],
+            "source":primary["domain"],
+            "url":primary["url"],
+            "sources":[{"domain":x["domain"],"url":x["url"],"title":x["title"]} for x in ss[:6]]
+        })
+    events.sort(key=lambda x:(x["importance"],x["published_at"]),reverse=True)
     return events
 
+def supplement_events():
+    # One broad global pass; only used if it succeeds.
+    data=fetch('"United Nations" OR "NATO" OR "European Union" OR "IMF" OR "World Bank" OR "G7" OR "global economy" OR "international security"')
+    arts=data.get("articles",[]) if isinstance(data,dict) else []
+    fake={"name":"国际组织/全球","english":"Global","code":"GLOBAL"}
+    return make_events(arts,fake)
+
+def load_old():
+    try:return json.load(open(DATA,encoding="utf-8"))
+    except:return None
+
 def main():
-    all_events=[]; errors=[]
-    country_success=0
-    country_failed=0
-    country_total=sum(len(v) for v in CFG["tiers"].values())
-    gap=float(CFG["collection"].get("request_gap_seconds",10))
-
-    for tier,countries in CFG["tiers"].items():
-        for country in countries:
-            slug=SOURCE_COUNTRY[country]
-            terms=["government","economy","finance","business","technology","energy","military","diplomacy",
-                   "health","education","disaster","election","central bank","policy"]
-            query=f"sourcecountry:{slug} ("+" OR ".join(terms)+")"
-
+    old=load_old()
+    all_events=[]; countries_out=[]; errors=[]
+    # 6 sec between calls materially reduces burst rate-limit pressure.
+    for tier,items in COUNTRY_DATA["countries"].items():
+        maxn=TARGETS[tier]["max"]
+        for idx,c in enumerate(items):
+            if idx>0 or tier!="tier1": time.sleep(6)
             try:
-                raw=fetch(query,CFG["collection"].get("per_country_maxrecords",160))
-                arts=raw.get("articles",[]) if isinstance(raw,dict) else []
-                ev=eventize(arts,country)
-                target=30 if tier=="Tier 1" else 20 if tier=="Tier 2" else 15 if tier=="Tier 3" else 10
-                ev=sorted(ev,key=lambda x:(x["importance"],x["domestic_score"]),reverse=True)[:target]
+                data=fetch(c["query"])
+                arts=data.get("articles",[]) if isinstance(data,dict) else []
+                ev=make_events(arts,c)
+                ev=ev[:maxn]
+                countries_out.append({"tier":tier,"country":c["name"],"code":c["code"],"count":len(ev),"target_max":maxn,"events":ev,"status":"fresh"})
                 all_events.extend(ev)
-                country_success += 1
-                print(f"{tier}/{country}: {len(arts)} articles -> {len(ev)} events",flush=True)
-            except Exception as ex:
-                country_failed += 1
-                errors.append(f"{tier}/{country}: {type(ex).__name__}: {ex}")
-                print(f"ERROR {tier}/{country}: {ex}",flush=True)
-
-            # Spread requests evenly; GDELT explicitly rate-limits its hosted APIs.
-            time.sleep(gap)
-
-    # Global supplement: one additional broad request only.
+            except Exception as e:
+                errors.append(f"{tier}/{c['name']}: {e}")
+                oldc=next((x for x in (old or {}).get("countries",[]) if x.get("country")==c["name"]),None)
+                fallback=oldc.get("events",[]) if oldc else []
+                countries_out.append({"tier":tier,"country":c["name"],"code":c["code"],"count":len(fallback),"target_max":maxn,"events":fallback,"status":"stale_fallback" if fallback else "failed"})
+                all_events.extend(fallback)
     try:
-        raw=fetch('(war OR election OR "central bank" OR tariff OR "interest rate" OR AI OR earthquake)',250)
-        sup=eventize(raw.get("articles",[]),"全球补充")
-        for e in sup: e["event_country"]="全球补充"
-        all_events.extend(sorted(sup,key=lambda x:x["importance"],reverse=True)[:10])
-    except Exception as ex:
-        errors.append(f"supplement: {type(ex).__name__}: {ex}")
+        time.sleep(6)
+        sup=supplement_events()[:TARGETS["supplement"]["max"]]
+        supplement={"count":len(sup),"events":sup,"status":"fresh"}
+        all_events.extend(sup)
+    except Exception as e:
+        errors.append(f"supplement: {e}")
+        oldsup=(old or {}).get("supplement",{})
+        supplement={"count":len(oldsup.get("events",[])),"events":oldsup.get("events",[]),"status":"stale_fallback" if oldsup.get("events") else "failed"}
 
-    # Cross-country duplicate protection: same title similarity only when same country.
-    final=[]
-    for e in sorted(all_events,key=lambda x:x["importance"],reverse=True):
-        dup=False
-        for f in final:
-            if e["event_country"]==f["event_country"] and similarity(e["title"],f["title"])>=0.55:
-                for s in e["sources"]:
-                    if s["url"] and all(x["url"]!=s["url"] for x in f["sources"]):
-                        f["sources"].append(s)
-                f["source_names"]=" / ".join(x["name"] for x in f["sources"][:4])
-                dup=True; break
-        if not dup: final.append(e)
-
-    now=datetime.now(timezone.utc).astimezone()
-    report={
-      "report_date":now.strftime("%Y-%m-%d"),
-      "updated_at":now.strftime("%Y-%m-%d %H:%M %Z"),
-      "window":"过去24小时",
-      "events":final,
-      "global_top":[e["id"] for e in final[:10]],
-      "quality":{
-        "event_count":len(final),
-        "errors":errors,
-        "summary":f"已生成 {len(final)} 个独立事件；31个国家采集成功 {country_success} 个、失败 {country_failed} 个；数据来自 GDELT 过去24小时 ArticleList。"+
-                  (f" 有 {len(errors)} 个采集错误。" if errors else " 本次采集全部成功。")
-      }
+    # Global TOP is event-level, not article-level.
+    uniq={}
+    for e in all_events:
+        uniq[e["id"]]=e
+    top=sorted(uniq.values(),key=lambda x:(x.get("importance",0),x.get("domestic_score",0)),reverse=True)[:30]
+    now=datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8)))
+    fresh=sum(1 for c in countries_out if c["status"]=="fresh")
+    out={
+      "version":"11.0",
+      "generated_at":now.isoformat(),
+      "window":"past_24h",
+      "source":"GDELT DOC 2.0",
+      "quality":{"country_count":len(countries_out),"fresh_country_count":fresh,"failed_or_stale":len(countries_out)-fresh,"errors":errors[:80]},
+      "global_top":top,
+      "countries":countries_out,
+      "supplement":supplement,
+      "summary":f"北京时间 {now:%Y-%m-%d %H:%M} 生成；最近24小时；Tier1优先20–30条/国，其余按上限输出。"
     }
-    OUT.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
-    print("WROTE",OUT,len(final),flush=True)
+    tmp=DATA+".tmp"
+    os.makedirs(os.path.dirname(DATA),exist_ok=True)
+    with open(tmp,"w",encoding="utf-8") as f: json.dump(out,f,ensure_ascii=False,indent=2)
+    os.replace(tmp,DATA)
+    history=os.path.join(ROOT,"data","history")
+    os.makedirs(history,exist_ok=True)
+    with open(os.path.join(history,now.strftime("%Y-%m-%d")+".json"),"w",encoding="utf-8") as f:
+        json.dump(out,f,ensure_ascii=False)
+    print(json.dumps(out["quality"],ensure_ascii=False))
 
 if __name__=="__main__": main()

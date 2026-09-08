@@ -1,86 +1,220 @@
 {
-  "tiers": {
-    "Tier 1": [
-      "美国",
-      "中国",
-      "英国",
-      "法国",
-      "德国",
-      "俄罗斯",
-      "日本"
-    ],
-    "Tier 2": [
-      "印度",
-      "巴西",
-      "沙特阿拉伯",
-      "韩国",
-      "加拿大",
-      "澳大利亚"
-    ],
-    "Tier 3": [
-      "乌克兰",
-      "意大利",
-      "印度尼西亚",
-      "土耳其",
-      "阿联酋",
-      "墨西哥",
-      "伊朗",
-      "瑞士"
-    ],
-    "Tier 4": [
-      "新加坡",
-      "南非",
-      "荷兰",
-      "以色列",
-      "西班牙",
-      "埃及",
-      "尼日利亚",
-      "阿根廷",
-      "波兰",
-      "越南"
-    ]
-  },
   "targets": {
-    "Tier 1": [
-      20,
-      30
-    ],
-    "Tier 2": [
-      1,
-      20
-    ],
-    "Tier 3": [
-      1,
-      15
-    ],
-    "Tier 4": [
-      1,
-      10
-    ]
+    "tier1": {
+      "min": 20,
+      "max": 30
+    },
+    "tier2": {
+      "min": 0,
+      "max": 20
+    },
+    "tier3": {
+      "min": 0,
+      "max": 15
+    },
+    "tier4": {
+      "min": 0,
+      "max": 10
+    },
+    "supplement": {
+      "min": 0,
+      "max": 10
+    }
   },
-  "categories": [
-    "政治",
-    "经济",
-    "金融",
-    "产业",
-    "科技",
-    "能源",
-    "国防",
-    "外交",
-    "社会",
-    "灾害"
-  ],
-  "daily_run_beijing": "08:07",
-  "gdelt_timespan": "24h",
-  "collection": {
-    "per_country_maxrecords": 160,
-    "request_gap_seconds": 10,
-    "retries": 3,
-    "backoff_seconds": [
-      30,
-      60,
-      120
+  "countries": {
+    "tier1": [
+      {
+        "name": "美国",
+        "english": "United States",
+        "code": "USA",
+        "query": "United States|US|America|Washington|Trump|Fed|Congress"
+      },
+      {
+        "name": "中国",
+        "english": "China",
+        "code": "CHN",
+        "query": "China|Chinese|Beijing|Shanghai|PBOC|China government"
+      },
+      {
+        "name": "英国",
+        "english": "United Kingdom",
+        "code": "GBR",
+        "query": "United Kingdom|Britain|British|London|UK|Starmer|Bank of England"
+      },
+      {
+        "name": "法国",
+        "english": "France",
+        "code": "FRA",
+        "query": "France|French|Paris|Macron"
+      },
+      {
+        "name": "德国",
+        "english": "Germany",
+        "code": "DEU",
+        "query": "Germany|German|Berlin|Scholz|Merz"
+      },
+      {
+        "name": "俄罗斯",
+        "english": "Russia",
+        "code": "RUS",
+        "query": "Russia|Russian|Moscow|Putin|Kremlin"
+      },
+      {
+        "name": "日本",
+        "english": "Japan",
+        "code": "JPN",
+        "query": "Japan|Japanese|Tokyo|Takaichi|BOJ"
+      }
     ],
-    "max_total_runtime_minutes": 35
+    "tier2": [
+      {
+        "name": "印度",
+        "english": "India",
+        "code": "IND",
+        "query": "India|Indian|New Delhi|Modi|RBI"
+      },
+      {
+        "name": "巴西",
+        "english": "Brazil",
+        "code": "BRA",
+        "query": "Brazil|Brazilian|Brasilia|Lula|Central Bank of Brazil"
+      },
+      {
+        "name": "沙特阿拉伯",
+        "english": "Saudi Arabia",
+        "code": "SAU",
+        "query": "Saudi Arabia|Saudi|Riyadh|MBS|Aramco"
+      },
+      {
+        "name": "韩国",
+        "english": "South Korea",
+        "code": "KOR",
+        "query": "South Korea|Korean|Seoul|Lee Jae-myung|Bank of Korea"
+      },
+      {
+        "name": "加拿大",
+        "english": "Canada",
+        "code": "CAN",
+        "query": "Canada|Canadian|Ottawa|Carney|Bank of Canada"
+      },
+      {
+        "name": "澳大利亚",
+        "english": "Australia",
+        "code": "AUS",
+        "query": "Australia|Australian|Canberra|Albanese|RBA"
+      }
+    ],
+    "tier3": [
+      {
+        "name": "乌克兰",
+        "english": "Ukraine",
+        "code": "UKR",
+        "query": "Ukraine|Ukrainian|Kyiv|Zelensky"
+      },
+      {
+        "name": "意大利",
+        "english": "Italy",
+        "code": "ITA",
+        "query": "Italy|Italian|Rome|Meloni|Bank of Italy"
+      },
+      {
+        "name": "印度尼西亚",
+        "english": "Indonesia",
+        "code": "IDN",
+        "query": "Indonesia|Indonesian|Jakarta|Prabowo|Bank Indonesia"
+      },
+      {
+        "name": "土耳其",
+        "english": "Turkey",
+        "code": "TUR",
+        "query": "Turkey|Turkish|Ankara|Istanbul|Erdogan"
+      },
+      {
+        "name": "阿联酋",
+        "english": "United Arab Emirates",
+        "code": "ARE",
+        "query": "United Arab Emirates|UAE|Dubai|Abu Dhabi"
+      },
+      {
+        "name": "墨西哥",
+        "english": "Mexico",
+        "code": "MEX",
+        "query": "Mexico|Mexican|Mexico City|Sheinbaum|Banxico"
+      },
+      {
+        "name": "伊朗",
+        "english": "Iran",
+        "code": "IRN",
+        "query": "Iran|Iranian|Tehran|Pezeshkian"
+      },
+      {
+        "name": "瑞士",
+        "english": "Switzerland",
+        "code": "CHE",
+        "query": "Switzerland|Swiss|Bern|Zurich|SNB"
+      }
+    ],
+    "tier4": [
+      {
+        "name": "新加坡",
+        "english": "Singapore",
+        "code": "SGP",
+        "query": "Singapore|Singaporean|Lee Hsien Loong|Lawrence Wong|MAS"
+      },
+      {
+        "name": "南非",
+        "english": "South Africa",
+        "code": "ZAF",
+        "query": "South Africa|South African|Pretoria|Johannesburg|Ramaphosa"
+      },
+      {
+        "name": "荷兰",
+        "english": "Netherlands",
+        "code": "NLD",
+        "query": "Netherlands|Dutch|Amsterdam|The Hague"
+      },
+      {
+        "name": "以色列",
+        "english": "Israel",
+        "code": "ISR",
+        "query": "Israel|Israeli|Jerusalem|Tel Aviv|Netanyahu"
+      },
+      {
+        "name": "西班牙",
+        "english": "Spain",
+        "code": "ESP",
+        "query": "Spain|Spanish|Madrid|Sanchez"
+      },
+      {
+        "name": "埃及",
+        "english": "Egypt",
+        "code": "EGY",
+        "query": "Egypt|Egyptian|Cairo|Sisi"
+      },
+      {
+        "name": "尼日利亚",
+        "english": "Nigeria",
+        "code": "NGA",
+        "query": "Nigeria|Nigerian|Abuja|Lagos|Tinubu"
+      },
+      {
+        "name": "阿根廷",
+        "english": "Argentina",
+        "code": "ARG",
+        "query": "Argentina|Argentine|Buenos Aires|Milei"
+      },
+      {
+        "name": "波兰",
+        "english": "Poland",
+        "code": "POL",
+        "query": "Poland|Polish|Warsaw|Tusk"
+      },
+      {
+        "name": "越南",
+        "english": "Vietnam",
+        "code": "VNM",
+        "query": "Vietnam|Vietnamese|Hanoi|Ho Chi Minh City"
+      }
+    ]
   }
 }

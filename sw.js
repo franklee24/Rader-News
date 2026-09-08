@@ -1,1 +1,9 @@
-const CACHE='leida-v12';self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','./index.html','./manifest.webmanifest']))));self.addEventListener('fetch',e=>{if(e.request.url.includes('/data/daily.json'))return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))})
+const CACHE='leida-news-v11';
+self.addEventListener('install',e=>self.skipWaiting());
+self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',e=>{
+  const u=new URL(e.request.url);
+  if(u.pathname.endsWith('/data/daily.json')){
+    e.respondWith(fetch(e.request,{cache:'no-store'}).catch(()=>caches.match(e.request)));
+  }
+});
