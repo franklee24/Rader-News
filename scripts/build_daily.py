@@ -199,7 +199,14 @@ def main():
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
-   ev=cluster(raw.get(c['code'],[]))[:c['max']]
+   pool=raw.get(c['code'],[])
+   # 中文优先：当一个国家有足够中文报道时，英文事件最多占该国展示量约20%。
+   cn_items=[x for x in pool if x.get('language')=='cn']
+   en_items=[x for x in pool if x.get('language')!='cn']
+   if len(cn_items)>=5 and en_items:
+    en_cap=max(2,int(c['max']*0.20))
+    pool=cn_items+sorted(en_items,key=lambda x:x.get('published_at') or '',reverse=True)[:en_cap]
+   ev=cluster(pool)[:c['max']]
    report['tiers'][tier][c['name']]={'country':c['name'],'country_en':c['en'],'code':c['code'],'target_min':c['min'],'target_max':c['max'],'count':len(ev),'events':ev}
    all_events.extend(ev)
  report['supplement']=cluster(global_rows)[:10]
