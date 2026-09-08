@@ -239,8 +239,8 @@ V14 先把“稳定运营”跑通。
 第一次 Actions 成功以后，它会被真实新闻覆盖。
 
 
-## V15 最终部署链
+## V16 最终部署链
 
-V15 将“每日抓取/生成”和“GitHub Pages 发布”合并到同一个 Workflow。这样即使每日更新使用 `GITHUB_TOKEN` 提交 `daily.json`，也不会依赖另一个 push workflow 来触发 Pages。Workflow 会在生成有效事件后直接上传 Pages artifact 并部署。
+V16 将“每日抓取/生成”和“GitHub Pages 发布”合并到同一个 Workflow。这样即使每日更新使用 `GITHUB_TOKEN` 提交 `daily.json`，也不会依赖另一个 push workflow 来触发 Pages。Workflow 会在生成有效事件后直接上传 Pages artifact 并部署。
 
 发布保护：如果本轮 `data/daily.json` 的有效事件数为 0，Workflow 会失败并阻止空数据发布；如果构建脚本本身保留上一份成功快照，则该快照可继续发布。

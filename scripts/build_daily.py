@@ -39,10 +39,18 @@ HIGH_IMPACT = ["war","strike","attack","sanction","tariff","election","rate","de
 
 def parse_date(s):
     if not s: return None
+    if isinstance(s, dt.datetime):
+        return s.astimezone(dt.timezone.utc) if s.tzinfo else s.replace(tzinfo=dt.timezone.utc)
+    text=str(s).strip()
     try:
-        return email.utils.parsedate_to_datetime(s).astimezone(dt.timezone.utc)
+        return email.utils.parsedate_to_datetime(text).astimezone(dt.timezone.utc)
     except Exception:
-        return None
+        try:
+            value=text.replace("Z", "+00:00")
+            parsed=dt.datetime.fromisoformat(value)
+            return parsed.astimezone(dt.timezone.utc) if parsed.tzinfo else parsed.replace(tzinfo=dt.timezone.utc)
+        except Exception:
+            return None
 
 def clean(s):
     s = html.unescape(re.sub(r"<[^>]+>"," ",s or ""))
@@ -145,7 +153,7 @@ def event_key(t):
 
 def collect_country(c):
     # One broad query per country. It is deliberately not retried on 429.
-    name,en,code,mi,ma=c
+    name,en,code,mi,ma=c["name"],c["en"],c["code"],c["min"],c["max"]
     q=f'"{en}" (government OR economy OR technology OR defense OR diplomacy OR business OR energy OR society) when:1d'
     items,err=google_rss(q)
     if not items:
@@ -201,7 +209,7 @@ def cluster(items):
     return sorted(out,key=lambda x:x["importance"],reverse=True)
 
 def main():
-    print("雷达新闻 V14：多源稳定模式（GDELT 已移出主链）")
+    print("雷达新闻 V16：多源 RSS 生产模式（修复 country_tiers JSON 结构适配）")
     print("目标：Tier1 20-30 / Tier2 ≤20 / Tier3 ≤15 / Tier4 ≤10 / Supplement 10")
     results={}
     all_items=[]
@@ -217,7 +225,7 @@ def main():
         futs=[ex.submit(worker,tier,c) for tier,c in countries_flat]
         for fut in as_completed(futs):
             tier,c,items,err=fut.result()
-            name=c[0]
+            name=c["name"]
             if err: failures.append({"country":name,"error":err})
             for x in items:
                 x["tier"]=tier
@@ -235,18 +243,18 @@ def main():
     # Build per-country event sets
     report={"generated_at":dt.datetime.now(dt.timezone.utc).isoformat(),
             "generated_beijing":dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
-            "window_hours":24,"version":"V14.0","source_mode":"multi-rss",
-            "source_policy":"GDELT removed from critical path; 429 never blocks publication.",
+            "window_hours":24,"version":"V16.0","source_mode":"multi-rss",
+            "source_policy":"Google News RSS primary; Bing News RSS fallback; GDELT removed from critical path.",
             "failures":failures,"tiers":{},"global_top":[],"supplement":[]}
     all_events=[]
     for tier,arr in CONFIG["tiers"].items():
         report["tiers"][tier]={}
         for c in arr:
-            name=c[0]; ev=cluster(results.get(name,[]))
+            name=c["name"]; ev=cluster(results.get(name,[]))
             # target minimum only for tier1; others use available, capped.
-            ev=ev[:c[4]]
-            report["tiers"][tier][name]={"country":name,"country_en":c[1],"code":c[2],
-                                         "target_min":c[3],"target_max":c[4],
+            ev=ev[:c["max"]]
+            report["tiers"][tier][name]={"country":name,"country_en":c["en"],"code":c["code"],
+                                         "target_min":c["min"],"target_max":c["max"],
                                          "count":len(ev),"events":ev}
             all_events += ev
     sup=cluster(supplement)[:10]
