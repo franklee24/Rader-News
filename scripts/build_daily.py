@@ -11,7 +11,40 @@ from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CONFIG = json.load(open(os.path.join(ROOT,"config/country_tiers.json"),encoding="utf-8"))
+def load_config():
+    """Load country configuration from the current repo layout, with backward compatibility."""
+    candidates = [
+        os.path.join(ROOT, "config.json"),
+        os.path.join(ROOT, "config", "country_tiers.json"),
+    ]
+    for path in candidates:
+        if os.path.isfile(path):
+            with open(path, encoding="utf-8") as f:
+                raw = json.load(f)
+            # Current repository format:
+            # {"countries": {"tier1": [...], ...}}
+            if isinstance(raw, dict) and isinstance(raw.get("countries"), dict):
+                return {"tiers": raw["countries"]}
+            # Original V14 package format:
+            # {"tiers": {"tier1": [...], ...}}
+            if isinstance(raw, dict) and isinstance(raw.get("tiers"), dict):
+                return raw
+            raise ValueError(f"Unsupported config schema: {path}")
+    raise FileNotFoundError(
+        "No country configuration found. Expected config.json or config/country_tiers.json"
+    )
+
+CONFIG = load_config()
+# Fail fast with a clear message before any network requests.
+_REQUIRED_TIERS = ("tier1", "tier2", "tier3", "tier4")
+for _tier in _REQUIRED_TIERS:
+    if _tier not in CONFIG["tiers"] or not isinstance(CONFIG["tiers"][_tier], list):
+        raise ValueError(f"Invalid country configuration: missing list for {_tier}")
+print(
+    "Config OK:",
+    ", ".join(f"{k}={len(CONFIG['tiers'][k])}" for k in _REQUIRED_TIERS)
+)
+
 OUT = os.path.join(ROOT,"data")
 DAILY = os.path.join(OUT,"daily.json")
 HISTORY = os.path.join(OUT,"history")

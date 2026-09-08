@@ -1,219 +1,236 @@
 {
   "targets": {
-    "tier1": {
-      "min": 20,
-      "max": 30
-    },
-    "tier2": {
-      "min": 0,
-      "max": 20
-    },
-    "tier3": {
-      "min": 0,
-      "max": 15
-    },
-    "tier4": {
-      "min": 0,
-      "max": 10
-    },
-    "supplement": {
-      "min": 0,
-      "max": 10
-    }
+    "tier1_min": 20,
+    "tier1_max": 30,
+    "tier2_max": 20,
+    "tier3_max": 15,
+    "tier4_max": 10,
+    "supplement_max": 10
   },
   "countries": {
     "tier1": [
       {
         "name": "美国",
-        "english": "United States",
-        "code": "USA",
-        "query": "United States|US|America|Washington|Trump|Fed|Congress"
+        "en": "United States",
+        "code": "US",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "中国",
-        "english": "China",
-        "code": "CHN",
-        "query": "China|Chinese|Beijing|Shanghai|PBOC|China government"
+        "en": "China",
+        "code": "CN",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "英国",
-        "english": "United Kingdom",
-        "code": "GBR",
-        "query": "United Kingdom|Britain|British|London|UK|Starmer|Bank of England"
+        "en": "United Kingdom",
+        "code": "GB",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "法国",
-        "english": "France",
-        "code": "FRA",
-        "query": "France|French|Paris|Macron"
+        "en": "France",
+        "code": "FR",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "德国",
-        "english": "Germany",
-        "code": "DEU",
-        "query": "Germany|German|Berlin|Scholz|Merz"
+        "en": "Germany",
+        "code": "DE",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "俄罗斯",
-        "english": "Russia",
-        "code": "RUS",
-        "query": "Russia|Russian|Moscow|Putin|Kremlin"
+        "en": "Russia",
+        "code": "RU",
+        "min": 20,
+        "max": 30
       },
       {
         "name": "日本",
-        "english": "Japan",
-        "code": "JPN",
-        "query": "Japan|Japanese|Tokyo|Takaichi|BOJ"
+        "en": "Japan",
+        "code": "JP",
+        "min": 20,
+        "max": 30
       }
     ],
     "tier2": [
       {
         "name": "印度",
-        "english": "India",
-        "code": "IND",
-        "query": "India|Indian|New Delhi|Modi|RBI"
+        "en": "India",
+        "code": "IN",
+        "min": 1,
+        "max": 20
       },
       {
         "name": "巴西",
-        "english": "Brazil",
-        "code": "BRA",
-        "query": "Brazil|Brazilian|Brasilia|Lula|Central Bank of Brazil"
+        "en": "Brazil",
+        "code": "BR",
+        "min": 1,
+        "max": 20
       },
       {
         "name": "沙特阿拉伯",
-        "english": "Saudi Arabia",
-        "code": "SAU",
-        "query": "Saudi Arabia|Saudi|Riyadh|MBS|Aramco"
+        "en": "Saudi Arabia",
+        "code": "SA",
+        "min": 1,
+        "max": 20
       },
       {
         "name": "韩国",
-        "english": "South Korea",
-        "code": "KOR",
-        "query": "South Korea|Korean|Seoul|Lee Jae-myung|Bank of Korea"
+        "en": "South Korea",
+        "code": "KR",
+        "min": 1,
+        "max": 20
       },
       {
         "name": "加拿大",
-        "english": "Canada",
-        "code": "CAN",
-        "query": "Canada|Canadian|Ottawa|Carney|Bank of Canada"
+        "en": "Canada",
+        "code": "CA",
+        "min": 1,
+        "max": 20
       },
       {
         "name": "澳大利亚",
-        "english": "Australia",
-        "code": "AUS",
-        "query": "Australia|Australian|Canberra|Albanese|RBA"
+        "en": "Australia",
+        "code": "AU",
+        "min": 1,
+        "max": 20
       }
     ],
     "tier3": [
       {
         "name": "乌克兰",
-        "english": "Ukraine",
-        "code": "UKR",
-        "query": "Ukraine|Ukrainian|Kyiv|Zelensky"
+        "en": "Ukraine",
+        "code": "UA",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "意大利",
-        "english": "Italy",
-        "code": "ITA",
-        "query": "Italy|Italian|Rome|Meloni|Bank of Italy"
+        "en": "Italy",
+        "code": "IT",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "印度尼西亚",
-        "english": "Indonesia",
-        "code": "IDN",
-        "query": "Indonesia|Indonesian|Jakarta|Prabowo|Bank Indonesia"
+        "en": "Indonesia",
+        "code": "ID",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "土耳其",
-        "english": "Turkey",
-        "code": "TUR",
-        "query": "Turkey|Turkish|Ankara|Istanbul|Erdogan"
+        "en": "Turkey",
+        "code": "TR",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "阿联酋",
-        "english": "United Arab Emirates",
-        "code": "ARE",
-        "query": "United Arab Emirates|UAE|Dubai|Abu Dhabi"
+        "en": "United Arab Emirates",
+        "code": "AE",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "墨西哥",
-        "english": "Mexico",
-        "code": "MEX",
-        "query": "Mexico|Mexican|Mexico City|Sheinbaum|Banxico"
+        "en": "Mexico",
+        "code": "MX",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "伊朗",
-        "english": "Iran",
-        "code": "IRN",
-        "query": "Iran|Iranian|Tehran|Pezeshkian"
+        "en": "Iran",
+        "code": "IR",
+        "min": 1,
+        "max": 15
       },
       {
         "name": "瑞士",
-        "english": "Switzerland",
-        "code": "CHE",
-        "query": "Switzerland|Swiss|Bern|Zurich|SNB"
+        "en": "Switzerland",
+        "code": "CH",
+        "min": 1,
+        "max": 15
       }
     ],
     "tier4": [
       {
         "name": "新加坡",
-        "english": "Singapore",
-        "code": "SGP",
-        "query": "Singapore|Singaporean|Lee Hsien Loong|Lawrence Wong|MAS"
+        "en": "Singapore",
+        "code": "SG",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "南非",
-        "english": "South Africa",
-        "code": "ZAF",
-        "query": "South Africa|South African|Pretoria|Johannesburg|Ramaphosa"
+        "en": "South Africa",
+        "code": "ZA",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "荷兰",
-        "english": "Netherlands",
-        "code": "NLD",
-        "query": "Netherlands|Dutch|Amsterdam|The Hague"
+        "en": "Netherlands",
+        "code": "NL",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "以色列",
-        "english": "Israel",
-        "code": "ISR",
-        "query": "Israel|Israeli|Jerusalem|Tel Aviv|Netanyahu"
+        "en": "Israel",
+        "code": "IL",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "西班牙",
-        "english": "Spain",
-        "code": "ESP",
-        "query": "Spain|Spanish|Madrid|Sanchez"
+        "en": "Spain",
+        "code": "ES",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "埃及",
-        "english": "Egypt",
-        "code": "EGY",
-        "query": "Egypt|Egyptian|Cairo|Sisi"
+        "en": "Egypt",
+        "code": "EG",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "尼日利亚",
-        "english": "Nigeria",
-        "code": "NGA",
-        "query": "Nigeria|Nigerian|Abuja|Lagos|Tinubu"
+        "en": "Nigeria",
+        "code": "NG",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "阿根廷",
-        "english": "Argentina",
-        "code": "ARG",
-        "query": "Argentina|Argentine|Buenos Aires|Milei"
+        "en": "Argentina",
+        "code": "AR",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "波兰",
-        "english": "Poland",
-        "code": "POL",
-        "query": "Poland|Polish|Warsaw|Tusk"
+        "en": "Poland",
+        "code": "PL",
+        "min": 1,
+        "max": 10
       },
       {
         "name": "越南",
-        "english": "Vietnam",
-        "code": "VNM",
-        "query": "Vietnam|Vietnamese|Hanoi|Ho Chi Minh City"
+        "en": "Vietnam",
+        "code": "VN",
+        "min": 1,
+        "max": 10
       }
     ]
   }

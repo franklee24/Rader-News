@@ -237,3 +237,15 @@ V14 先把“稳定运营”跑通。
 **不使用假新闻充数。**
 
 第一次 Actions 成功以后，它会被真实新闻覆盖。
+
+## V14.1 修复说明
+
+本版本修复 GitHub Actions 中可能出现的 `config/country_tiers.json` 路径错误。
+
+`build_daily.py` 现在按以下顺序读取配置：
+1. `config.json`（当前 Rader-News 仓库布局）
+2. `config/country_tiers.json`（V14 原始布局）
+
+因此即使仓库当前已经是 `config.json`，也不会因为找不到旧路径而在启动阶段直接 `exit code 1`。
+
+启动时会先输出 `Config OK: tier1=...` 等配置校验结果，只有配置通过后才开始访问新闻 RSS。
