@@ -1,26 +1,35 @@
-# 雷达新闻｜GitHub Pages 自动更新版
+# 雷达新闻｜GitHub Pages 自动更新修复版
 
-手机浏览器直接打开即可，不需要 APK。
+## 这版解决什么
+- 手机浏览器直接访问 GitHub Pages。
+- 页面固定读取 `./data/daily.json`，并使用 `cache:no-store` + 时间戳防止旧缓存。
+- GitHub Actions 每天北京时间 08:00 自动运行。
+- 支持手动 `Run workflow` 立即测试。
+- GDELT DOC 2.0 ArticleList 作为新闻入口；程序按国家梯队采集过去 24 小时数据、分类、去重、评分后生成日报。
+- 页面即使数据加载失败，也会明确显示 DATA ERROR，而不是静默显示 0 条。
 
-## 自动更新
-每天 **08:00（北京时间）**，GitHub Actions 自动运行 `scripts/build_daily.py`：
-GDELT DOC 2.0 → 过去24小时候选新闻 → 国家/类别多轮抓取 → URL去重 → 事件聚类 → 多来源合并 → 重要性排序 → `data/daily.json`。
+## 你现在要做的
+1. 把本目录中的文件上传到 `Rader-News` 仓库根目录，覆盖原来的同名文件。
+2. 重点确保：
+   `.github/workflows/daily.yml`
+   `index.html`
+   `data/daily.json`
+   `scripts/build_daily.py`
+   `config.json`
+   `manifest.webmanifest`
+   `sw.js`
+   都在仓库根目录对应位置。
+3. GitHub → Actions → `雷达新闻每日更新` → `Run workflow` → `Run workflow`。
+4. 等运行完成并显示绿色。
+5. 打开：
+   https://franklee24.github.io/Rader-News/
+6. 手机浏览器刷新页面。第一次运行后会出现真实新闻。
 
-GitHub Actions 支持定时 workflow，并可直接指定 IANA 时区；GDELT DOC 2.0 支持 ArticleList/JSON、timespan 和每次最多 250 条记录，因此这里采用多轮国家/类别查询提高覆盖。
+## 每日更新
+GitHub Actions 的 cron 使用 UTC；`0 0 * * *` 对应北京时间每天 08:00。
+如果某天 GitHub 调度延迟，手动运行仍可立即更新。
 
-## 部署
-1. 新建 GitHub Repository，例如 `leida-news`。
-2. 上传本目录全部文件。
-3. `Settings → Actions → General`：允许 Actions。
-4. `Settings → Pages`：Source 选择 **GitHub Actions**。
-5. `Actions → 雷达新闻每日更新 → Run workflow` 手动先跑一次。
-6. Pages 发布后，用手机浏览器访问 `https://你的用户名.github.io/leida-news/`。
-
-## 新闻范围
-Tier 1：美国、中国、英国、法国、德国、俄罗斯、日本；每国目标20–30。
-Tier 2：印度、巴西、沙特阿拉伯、韩国、加拿大、澳大利亚；最多20。
-Tier 3：乌克兰、意大利、印度尼西亚、土耳其、阿联酋、墨西哥、伊朗、瑞士；最多15。
-Tier 4：新加坡、南非、荷兰、以色列、西班牙、埃及、尼日利亚、阿根廷、波兰、越南；最多10。
-分类：政治、宏观经济、金融、产业/商业、科技、能源、国防安全、外交、社会、灾害。
-
-不足目标数量时宁缺毋滥，不生成虚假新闻。
+## 注意
+- 当前环境不能替你执行 GitHub 上的真实 GDELT 网络请求，所以首次真实数据采集必须在 GitHub Actions runner 上运行。
+- 新闻数量是“目标上限”，不是硬造数量；如果过去 24 小时独立高价值事件不足，程序会少于目标。
+- 原始来源链接来自 GDELT 返回的文章 URL，点击事件可查看来源。

@@ -1,8 +1,10 @@
 {
-  "name": "雷达新闻",
+  "name": "雷达新闻｜全球新闻情报",
   "short_name": "雷达新闻",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#071018",
-  "theme_color": "#071018"
+  "background_color": "#06101c",
+  "theme_color": "#06101c",
+  "lang": "zh-CN",
+  "icons": []
 }

@@ -1,13 +1,12 @@
 {
-  "product": "雷达新闻",
-  "generated_at": "2026-09-08T03:40:54.566806+00:00",
-  "timezone": "Asia/Shanghai",
-  "window": "past 24 hours",
+  "report_date": "首次运行前",
+  "updated_at": "等待 GitHub Actions 首次更新",
+  "window": "过去24小时",
   "events": [],
   "global_top": [],
-  "counts": {
-    "events": 0,
-    "countries": 31
-  },
-  "note": "等待第一次 GitHub Actions 运行生成真实数据。"
+  "quality": {
+    "event_count": 0,
+    "errors": [],
+    "summary": "尚未执行首次新闻采集。请在 GitHub Actions 中手动运行“雷达新闻每日更新”。"
+  }
 }
