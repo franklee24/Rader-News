@@ -8,10 +8,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar-production
+  cancel-in-progress: false
 
 jobs:
-  update:
+  update-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -25,10 +34,39 @@ jobs:
       - name: Build daily news
         run: python scripts/build_daily.py
 
+      - name: Validate daily data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/daily.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          stats = d.get('stats', {})
+          events = int(stats.get('events', 0))
+          tier1 = int(stats.get('tier1_events', 0))
+          if events < 20:
+              raise SystemExit(f'QUALITY GATE FAILED: only {events} events')
+          if tier1 < 10:
+              raise SystemExit(f'QUALITY GATE FAILED: only {tier1} Tier1 events')
+          print(f'QUALITY GATE PASSED: events={events}, tier1={tier1}')
+          PY
+
       - name: Commit daily snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily.json
+          git add data/daily.json data/history/
           git diff --cached --quiet || git commit -m "data: update daily radar"
           git push
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
