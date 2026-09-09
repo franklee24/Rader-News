@@ -3,7 +3,8 @@ name: 雷达新闻每日更新
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
+    - cron: '0 0 * * *'
 
 permissions:
   contents: write
