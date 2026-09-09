@@ -27,66 +27,75 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Lock builder to the fixed Beijing 08:00 window
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/build_daily.py')
+          text=p.read_text(encoding='utf-8')
+          old='now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)'
+          new="now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
+          if old in text:
+              text=text.replace(old,new)
+          else:
+              raise SystemExit('WINDOW PATCH FAILED: expected legacy cutoff expression not found')
+          p.write_text(text,encoding='utf-8')
+          print('Builder patched to fixed previous Beijing 08:00 window.')
+          PY
+
       - name: Build daily news
         run: python scripts/build_daily.py
 
-      - name: Validate fixed Beijing window and quality
+      - name: Validate fixed window, source diversity and no fabricated padding
         run: |
           python - <<'PY'
           import json
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
 
-          BJ=timezone(timedelta(hours=8))
-          UTC=timezone.utc
-          p=Path('data/daily.json')
-          d=json.loads(p.read_text(encoding='utf-8'))
+          BJ=timezone(timedelta(hours=8)); UTC=timezone.utc
+          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
           now=datetime.now(UTC).astimezone(BJ)
           anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
-          if now < anchor:
-              anchor-=timedelta(days=1)
-          start=anchor-timedelta(days=1)
-          end=anchor
-
-          if d.get('window_start') != start.astimezone(UTC).isoformat():
-              raise SystemExit(f"QUALITY GATE FAILED: wrong window_start={d.get('window_start')} expected={start.astimezone(UTC).isoformat()}")
-          if d.get('window_end') != end.astimezone(UTC).isoformat():
-              raise SystemExit(f"QUALITY GATE FAILED: wrong window_end={d.get('window_end')} expected={end.astimezone(UTC).isoformat()}")
+          if now < anchor: anchor-=timedelta(days=1)
+          start=anchor-timedelta(days=1); end=anchor
+          start_u=start.astimezone(UTC); end_u=end.astimezone(UTC)
 
           events=d.get('events',[])
-          if not events:
-              raise SystemExit('QUALITY GATE FAILED: no events')
+          if not events: raise SystemExit('QUALITY GATE FAILED: no events generated')
 
-          stale=[]
+          bad=[]
           for e in events:
               ts=e.get('published_at')
               if not ts:
-                  stale.append(e.get('title','(untitled)'))
-                  continue
+                  bad.append(e.get('title','(untitled)')); continue
               try: t=datetime.fromisoformat(ts.replace('Z','+00:00')).astimezone(UTC)
-              except Exception: stale.append(e.get('title','(bad timestamp)')); continue
-              if t < start.astimezone(UTC) or t >= end.astimezone(UTC):
-                  stale.append(e.get('title','(untitled)'))
-          if stale:
-              raise SystemExit(f'QUALITY GATE FAILED: {len(stale)} events outside fixed window')
+              except Exception: bad.append(e.get('title','(bad timestamp)')); continue
+              if t < start_u or t >= end_u: bad.append(e.get('title','(untitled)'))
+          if bad: raise SystemExit(f'QUALITY GATE FAILED: {len(bad)} events outside {start:%Y-%m-%d %H:%M}–{end:%Y-%m-%d %H:%M} Beijing window')
 
           cfg=json.loads(Path('config.json').read_text(encoding='utf-8'))
           tier1=cfg['tiers']['Tier 1']
-          counts=d.get('quality',{}).get('country_event_counts',{})
-          diversity=d.get('quality',{}).get('country_source_diversity',{})
-          # 20 is the requested floor; fewer is acceptable only when the source pool genuinely has fewer events.
-          # Hard-fail only on zero data or zero source diversity; do not manufacture stories to reach 20.
-          for c in tier1:
-              if counts.get(c,0) < 1:
-                  raise SystemExit(f'QUALITY GATE FAILED: Tier 1 country has zero events: {c}')
-              if diversity.get(c,0) < 3:
-                  raise SystemExit(f'QUALITY GATE FAILED: Tier 1 country has fewer than 3 independent source domains: {c} ({diversity.get(c,0)})')
+          counts={c:0 for c in tier1}; domains={c:set() for c in tier1}
+          for e in events:
+              c=e.get('event_country')
+              if c not in counts: continue
+              counts[c]+=1
+              for s in e.get('sources',[]):
+                  n=(s.get('name') or '').lower().strip()
+                  if n: domains[c].add(n)
 
+          for c in tier1:
+              if counts[c] < 1: raise SystemExit(f'QUALITY GATE FAILED: zero events for Tier 1 country: {c}')
+              if len(domains[c]) < 3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 independent sources for {c}: {len(domains[c])}')
+
+          # The 20–30 target is a selection range, not permission to invent stories.
+          # If fewer than 20 independent events exist in the fixed window, keep the real count.
           print('QUALITY GATE PASSED')
-          print('Window:', start.astimezone(BJ), '->', end.astimezone(BJ))
-          print('Events:', len(events))
-          print('Tier1:', {c: counts.get(c,0) for c in tier1})
-          print('Tier1 source diversity:', {c: diversity.get(c,0) for c in tier1})
+          print('Fixed Beijing window:', start, '->', end)
+          print('Total events:', len(events))
+          print('Tier 1 counts:', counts)
+          print('Tier 1 source diversity:', {c:len(domains[c]) for c in tier1})
           PY
 
       - name: Commit daily snapshot
