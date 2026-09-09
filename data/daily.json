@@ -2,7 +2,7 @@
   "generated_at": "2026-09-09T01:42:33.205885+00:00",
   "generated_beijing": "2026-09-09 09:42",
   "window_hours": 24,
-  "version": "V18.0",
+  "version": "V20.0",
   "source_mode": "chinese-first-direct-rss",
   "source_total": 31,
   "source_ok": 22,
@@ -64,6 +64,43 @@
         "count": 14,
         "events": [
           {
+            "id": "074a07087673c347",
+            "title": "Hegseth is shaking up the Pentagon as the US wages war - but at what cost?",
+            "published_at": "2026-09-08T23:11:41+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Hegseth is shaking up the Pentagon as the US wages war - but at what cost?",
+                "link": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-09-08T23:11:41+00:00",
+                "source": "BBC World",
+                "source_url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
+                "description": "The upheaval in the military could shape the legacy of Trump's second term, writes the BBC's Tom Bateman.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "BBC World",
+            "url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC World"
+            ],
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 75,
+            "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
             "id": "84d00ef9e3ef4954",
             "title": "美媒：美军在伊朗哈尔克岛附近袭击多艘伊朗油轮",
             "published_at": "2026-09-08T22:22:46+00:00",
@@ -107,10 +144,123 @@
             ],
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 62,
+            "importance": 65,
             "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "1a24b26b7ba00f04",
+            "title": "美国对伊朗实施新一轮制裁 重点针对伊朗航空业",
+            "published_at": "2026-09-08T23:42:39+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "美国对伊朗实施新一轮制裁 重点针对伊朗航空业",
+                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
+                "published_at": "2026-09-08T23:42:39+00:00",
+                "source": "中新网-国际",
+                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
+                "description": "中新网9月9日电 据路透社报道，当地时间9月8日，美国财政部宣布对伊朗实施新一轮制裁，共涉及36个制裁对象，重点针对伊朗航空业及相关企业。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "中新网-国际",
+            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
+            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-国际"
+            ],
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 55,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "d2b767b398d19470",
+            "title": "贸易争端加剧 特朗普称加产品将被排除出美政府采购计划",
+            "published_at": "2026-09-08T23:18:55+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "贸易争端加剧 特朗普称加产品将被排除出美政府采购计划",
+                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
+                "published_at": "2026-09-08T23:18:55+00:00",
+                "source": "中新网-国际",
+                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
+                "description": "中新网9月9日电 据路透社报道，当地时间9月8日，美国总统特朗普在社交媒体上发文称，他已指示美国总务管理局与美国贸易代表办公室合作，采取一切必要措施把加拿大产品排除出美政府采购计划，直至加方对美农民和企业恢复“公平的互惠”。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "中新网-国际",
+            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
+            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-国际"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 53,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "8ae1639c51b8d3c8",
+            "title": "俄美总统通话就乌克兰问题交换意见",
+            "published_at": "2026-09-08T16:00:34+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "俄美总统通话就乌克兰问题交换意见",
+                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
+                "published_at": "2026-09-08T16:00:34+00:00",
+                "source": "中新网-国际",
+                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
+                "description": "中新社莫斯科9月8日电 俄罗斯总统助理乌沙科夫8日表示，俄总统普京与美国总统特朗普当天再次通话，“内容富有建设性且十分坦诚”。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "中新网-国际",
+            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
+            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-国际"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 50,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "6af22bf0b763be69",
@@ -156,80 +306,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 57,
+            "importance": 49,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "1a24b26b7ba00f04",
-            "title": "美国对伊朗实施新一轮制裁 重点针对伊朗航空业",
-            "published_at": "2026-09-08T23:42:39+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "美国对伊朗实施新一轮制裁 重点针对伊朗航空业",
-                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
-                "published_at": "2026-09-08T23:42:39+00:00",
-                "source": "中新网-国际",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
-                "description": "中新网9月9日电 据路透社报道，当地时间9月8日，美国财政部宣布对伊朗实施新一轮制裁，共涉及36个制裁对象，重点针对伊朗航空业及相关企业。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "中新网-国际",
-            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692992.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-国际"
-            ],
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "074a07087673c347",
-            "title": "Hegseth is shaking up the Pentagon as the US wages war - but at what cost?",
-            "published_at": "2026-09-08T23:11:41+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Hegseth is shaking up the Pentagon as the US wages war - but at what cost?",
-                "link": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-09-08T23:11:41+00:00",
-                "source": "BBC World",
-                "source_url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
-                "description": "The upheaval in the military could shape the legacy of Trump's second term, writes the BBC's Tom Bateman.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "BBC World",
-            "url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cd94j8e9n12o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC World"
-            ],
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "9414a9725511d26f",
@@ -261,45 +343,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "d2b767b398d19470",
-            "title": "贸易争端加剧 特朗普称加产品将被排除出美政府采购计划",
-            "published_at": "2026-09-08T23:18:55+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "贸易争端加剧 特朗普称加产品将被排除出美政府采购计划",
-                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
-                "published_at": "2026-09-08T23:18:55+00:00",
-                "source": "中新网-国际",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
-                "description": "中新网9月9日电 据路透社报道，当地时间9月8日，美国总统特朗普在社交媒体上发文称，他已指示美国总务管理局与美国贸易代表办公室合作，采取一切必要措施把加拿大产品排除出美政府采购计划，直至加方对美农民和企业恢复“公平的互惠”。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "中新网-国际",
-            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692986.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-国际"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "ea0a77c362ca6a72",
@@ -331,10 +380,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "9b232ab38bd7071a",
@@ -366,10 +417,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "71346e4067a2c6f5",
@@ -401,10 +454,12 @@
             ],
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 45,
             "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "a028bb85b217eb90",
@@ -436,45 +491,12 @@
             ],
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "8ae1639c51b8d3c8",
-            "title": "俄美总统通话就乌克兰问题交换意见",
-            "published_at": "2026-09-08T16:00:34+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "俄美总统通话就乌克兰问题交换意见",
-                "link": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
-                "published_at": "2026-09-08T16:00:34+00:00",
-                "source": "中新网-国际",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
-                "description": "中新社莫斯科9月8日电 俄罗斯总统助理乌沙科夫8日表示，俄总统普京与美国总统特朗普当天再次通话，“内容富有建设性且十分坦诚”。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "中新网-国际",
-            "url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/09-09/10692968.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-国际"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "a0c6db9649bc73e8",
@@ -506,45 +528,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "2e30fedd1a9d3b78",
-            "title": "U.K. accuses Israeli settlers of 'ethnic cleansing' in West Bank and bans their goods",
-            "published_at": "2026-09-08T13:05:20+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "U.K. accuses Israeli settlers of 'ethnic cleansing' in West Bank and bans their goods",
-                "link": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
-                "published_at": "2026-09-08T13:05:20+00:00",
-                "source": "NPR",
-                "source_url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
-                "description": "France, Canada and other countries joined the U.K. in banning goods from Israeli settlements in the occupied West Bank. Israel said it would close the British Consulate among other measures.",
-                "feed_country": "US",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "NPR",
-            "url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
-            "source_url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
-            "source_count": 1,
-            "source_names": [
-              "NPR"
-            ],
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "d1f82163b8c2139b",
@@ -576,10 +565,49 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "2e30fedd1a9d3b78",
+            "title": "U.K. accuses Israeli settlers of 'ethnic cleansing' in West Bank and bans their goods",
+            "published_at": "2026-09-08T13:05:20+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "U.K. accuses Israeli settlers of 'ethnic cleansing' in West Bank and bans their goods",
+                "link": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
+                "published_at": "2026-09-08T13:05:20+00:00",
+                "source": "NPR",
+                "source_url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
+                "description": "France, Canada and other countries joined the U.K. in banning goods from Israeli settlements in the occupied West Bank. Israel said it would close the British Consulate among other measures.",
+                "feed_country": "US",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
+            "source_url": "https://www.npr.org/2026/09/08/nx-s1-5961044/uk-occcupied-west-bank-goods-israel",
+            "source_count": 1,
+            "source_names": [
+              "NPR"
+            ],
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -621,10 +649,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 48,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "33c83c33d25bd8b5",
@@ -656,255 +686,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "cf23e1ba372e583b",
-            "title": "报告称，中国工业数据治理“领跑者”企业呈现四大新特征",
-            "published_at": "2026-09-08T15:24:33+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "报告称，中国工业数据治理“领跑者”企业呈现四大新特征",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
-                "published_at": "2026-09-08T15:24:33+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
-                "description": "中新社沈阳9月8日电 (记者 李晛)中国工业经济联合会8日发布2026中国工业数据治理“领跑者”企业工作研究成果。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "产业/商业",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "051f21d2ca438346",
-            "title": "（活力中国调研行）无人驾驶拖拉机能在耕地上“绣花”",
-            "published_at": "2026-09-08T14:42:35+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "（活力中国调研行）无人驾驶拖拉机能在耕地上“绣花”",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
-                "published_at": "2026-09-08T14:42:35+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
-                "description": "中新网洛阳9月8日电(卢岩 赵梦阳)当下，无人机乃至无人驾驶汽车正在越来越多地走入普通百姓生活，而无人驾驶拖拉机这种大型专业装备，却依然带着不少神秘色彩。8日，在洛阳国家农机装备创新中心暨洛阳智能农业装备研究院有限公司院内，记者们见到了这头高科技“铁牛”的硬核实力。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "c4fa3591f12b84c4",
-            "title": "WIPO首席经济学家：中国创新推动全球科技前沿不断拓展",
-            "published_at": "2026-09-08T14:03:09+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "WIPO首席经济学家：中国创新推动全球科技前沿不断拓展",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
-                "published_at": "2026-09-08T14:03:09+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
-                "description": "中新社北京9月8日电 (记者 孙自法)世界知识产权组织(WIPO)首席经济学家卡斯滕·芬克8日在北京表示，中国创新正在越来越多领域推动全球科技前沿不断拓展，世界各国也越来越多地从中国创新中受益。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "宏观经济",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "ddfa26aa5c5ca604",
-            "title": "第四届中国工业高质量发展论坛在沈阳举办",
-            "published_at": "2026-09-08T14:00:52+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "第四届中国工业高质量发展论坛在沈阳举办",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
-                "published_at": "2026-09-08T14:00:52+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
-                "description": "中新网沈阳9月8日电 (记者 李晛)中国工业经济联合会(以下简称“中国工经联”)8日在辽宁沈阳举办第四届中国工业高质量发展论坛。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "7e811c59e07938ab",
-            "title": "海上“秋耕忙” “中国紫菜之乡”迎来紫菜采苗下苗窗口期",
-            "published_at": "2026-09-08T13:59:56+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "海上“秋耕忙” “中国紫菜之乡”迎来紫菜采苗下苗窗口期",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
-                "published_at": "2026-09-08T13:59:56+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
-                "description": "中新网温州9月8日电(周健 沈灿辉 庄稼人)眼下正是紫菜采苗下苗的黄金窗口期，在素有“中国紫菜之乡”美誉的浙江温州洞头区霓屿街道，海上码头一派繁忙景象。养殖户抢抓有利时节，忙着紫菜采苗、张挂网帘等作业，洞头新一季紫菜生产的序幕在“海上田园”开启。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "976d3582a742c0de",
-            "title": "泰国罗勇府冀深化泰中“双向旅游”合作",
-            "published_at": "2026-09-08T13:59:26+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "泰国罗勇府冀深化泰中“双向旅游”合作",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
-                "published_at": "2026-09-08T13:59:26+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
-                "description": "中新社成都9月8日电 (王利文)“成都是中国西部重要的经济中心和旅游门户城市，拥有巨大的旅游消费潜力和广阔的市场空间。”泰国罗勇府副府尹莎拉丽婉·塔塔维8日在成都表示，希望与中国旅游业界建立长期稳定的合作伙伴关系，共同开发符合中国游客需求的旅游产品和线路。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "7bbd7410c8952be3",
-            "title": "“小个子”何以构筑AI大生态？从中博会透视浙江实践",
-            "published_at": "2026-09-08T13:58:58+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "“小个子”何以构筑AI大生态？从中博会透视浙江实践",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
-                "published_at": "2026-09-08T13:58:58+00:00",
-                "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
-                "description": "中新网杭州9月8日电(蓝伊旎 林祥玉)近日，第二十一届中国国际中小企业博览会(下称“中博会”)在广州举办，在省区市专精特新展区1166家参展企业当中，浙江33家企业组成的创新方阵集中亮相。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-财经"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "3dd6c1f4a809396b",
@@ -936,25 +723,27 @@
             ],
             "category": "能源",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
-            "id": "6b1c4cbcaf120c01",
-            "title": "中国·泰来胚芽米产业联盟成立 产学研联手打通“种源到餐桌”",
-            "published_at": "2026-09-08T13:04:59+00:00",
+            "id": "051f21d2ca438346",
+            "title": "（活力中国调研行）无人驾驶拖拉机能在耕地上“绣花”",
+            "published_at": "2026-09-08T14:42:35+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "中国·泰来胚芽米产业联盟成立 产学研联手打通“种源到餐桌”",
-                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
-                "published_at": "2026-09-08T13:04:59+00:00",
+                "title": "（活力中国调研行）无人驾驶拖拉机能在耕地上“绣花”",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
+                "published_at": "2026-09-08T14:42:35+00:00",
                 "source": "中新网-财经",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
-                "description": "中新网天津9月8日电 (记者 周亚强)一粒胚芽米，正在黑土地上撬动一个产业。记者从总部位于天津的荣程集团获悉，中国·泰来胚芽米(留胚米)产业联盟近日正式揭牌，“中国·泰来全谷物健康稻米产业创新园”同步落地。",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
+                "description": "中新网洛阳9月8日电(卢岩 赵梦阳)当下，无人机乃至无人驾驶汽车正在越来越多地走入普通百姓生活，而无人驾驶拖拉机这种大型专业装备，却依然带着不少神秘色彩。8日，在洛阳国家农机装备创新中心暨洛阳智能农业装备研究院有限公司院内，记者们见到了这头高科技“铁牛”的硬核实力。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -963,18 +752,168 @@
               }
             ],
             "source": "中新网-财经",
-            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692961.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-财经"
             ],
-            "category": "产业/商业",
+            "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
+            "importance": 45,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "c4fa3591f12b84c4",
+            "title": "WIPO首席经济学家：中国创新推动全球科技前沿不断拓展",
+            "published_at": "2026-09-08T14:03:09+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "WIPO首席经济学家：中国创新推动全球科技前沿不断拓展",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
+                "published_at": "2026-09-08T14:03:09+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
+                "description": "中新社北京9月8日电 (记者 孙自法)世界知识产权组织(WIPO)首席经济学家卡斯滕·芬克8日在北京表示，中国创新正在越来越多领域推动全球科技前沿不断拓展，世界各国也越来越多地从中国创新中受益。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692943.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "宏观经济",
+            "domestic_score": 30,
+            "importance": 44,
+            "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "ddfa26aa5c5ca604",
+            "title": "第四届中国工业高质量发展论坛在沈阳举办",
+            "published_at": "2026-09-08T14:00:52+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "第四届中国工业高质量发展论坛在沈阳举办",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
+                "published_at": "2026-09-08T14:00:52+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
+                "description": "中新网沈阳9月8日电 (记者 李晛)中国工业经济联合会(以下简称“中国工经联”)8日在辽宁沈阳举办第四届中国工业高质量发展论坛。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692938.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 44,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "7e811c59e07938ab",
+            "title": "海上“秋耕忙” “中国紫菜之乡”迎来紫菜采苗下苗窗口期",
+            "published_at": "2026-09-08T13:59:56+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "海上“秋耕忙” “中国紫菜之乡”迎来紫菜采苗下苗窗口期",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
+                "published_at": "2026-09-08T13:59:56+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
+                "description": "中新网温州9月8日电(周健 沈灿辉 庄稼人)眼下正是紫菜采苗下苗的黄金窗口期，在素有“中国紫菜之乡”美誉的浙江温州洞头区霓屿街道，海上码头一派繁忙景象。养殖户抢抓有利时节，忙着紫菜采苗、张挂网帘等作业，洞头新一季紫菜生产的序幕在“海上田园”开启。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692925.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 44,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "976d3582a742c0de",
+            "title": "泰国罗勇府冀深化泰中“双向旅游”合作",
+            "published_at": "2026-09-08T13:59:26+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "泰国罗勇府冀深化泰中“双向旅游”合作",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
+                "published_at": "2026-09-08T13:59:26+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
+                "description": "中新社成都9月8日电 (王利文)“成都是中国西部重要的经济中心和旅游门户城市，拥有巨大的旅游消费潜力和广阔的市场空间。”泰国罗勇府副府尹莎拉丽婉·塔塔维8日在成都表示，希望与中国旅游业界建立长期稳定的合作伙伴关系，共同开发符合中国游客需求的旅游产品和线路。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692935.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 44,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "b14f5d2460d842c9",
@@ -1006,10 +945,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "72b5ce234f7812eb",
@@ -1041,10 +982,123 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 43,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "7bbd7410c8952be3",
+            "title": "“小个子”何以构筑AI大生态？从中博会透视浙江实践",
+            "published_at": "2026-09-08T13:58:58+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "“小个子”何以构筑AI大生态？从中博会透视浙江实践",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
+                "published_at": "2026-09-08T13:58:58+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
+                "description": "中新网杭州9月8日电(蓝伊旎 林祥玉)近日，第二十一届中国国际中小企业博览会(下称“中博会”)在广州举办，在省区市专精特新展区1166家参展企业当中，浙江33家企业组成的创新方阵集中亮相。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692927.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "cf23e1ba372e583b",
+            "title": "报告称，中国工业数据治理“领跑者”企业呈现四大新特征",
+            "published_at": "2026-09-08T15:24:33+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "报告称，中国工业数据治理“领跑者”企业呈现四大新特征",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
+                "published_at": "2026-09-08T15:24:33+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
+                "description": "中新社沈阳9月8日电 (记者 李晛)中国工业经济联合会8日发布2026中国工业数据治理“领跑者”企业工作研究成果。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692963.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "6b1c4cbcaf120c01",
+            "title": "中国·泰来胚芽米产业联盟成立 产学研联手打通“种源到餐桌”",
+            "published_at": "2026-09-08T13:04:59+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "中国·泰来胚芽米产业联盟成立 产学研联手打通“种源到餐桌”",
+                "link": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
+                "published_at": "2026-09-08T13:04:59+00:00",
+                "source": "中新网-财经",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
+                "description": "中新网天津9月8日电 (记者 周亚强)一粒胚芽米，正在黑土地上撬动一个产业。记者从总部位于天津的荣程集团获悉，中国·泰来胚芽米(留胚米)产业联盟近日正式揭牌，“中国·泰来全谷物健康稻米产业创新园”同步落地。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-财经",
+            "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/09-08/10692886.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-财经"
+            ],
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 39,
+            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -1086,80 +1140,12 @@
             ],
             "category": "科技",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 47,
             "why_important": "涉及科技，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "9ebcda0b42f75f2b",
-            "title": "More flight delays expected after hundreds cancelled by air traffic control glitch",
-            "published_at": "2026-09-08T23:18:39+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "More flight delays expected after hundreds cancelled by air traffic control glitch",
-                "link": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-09-08T23:18:39+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
-                "description": "Departures from a number of airports are affected by a technical problem affecting air traffic control provider Nats.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "fad3bceb2787e092",
-            "title": "Police investigation of Creswell indecent exposure allegation 'failed victim'",
-            "published_at": "2026-09-08T23:01:26+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Police investigation of Creswell indecent exposure allegation 'failed victim'",
-                "link": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-09-08T23:01:26+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
-                "description": "The Police Ombudsman finds that \"police failed the complainant, both as a woman and as a victim\".",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "dad98462b58258cf",
@@ -1191,10 +1177,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "075f420607f76a99",
@@ -1226,10 +1214,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "0b9c26c1c6d8b86f",
@@ -1261,10 +1251,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "cdedaa5268b5960d",
@@ -1296,10 +1288,86 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "9ebcda0b42f75f2b",
+            "title": "More flight delays expected after hundreds cancelled by air traffic control glitch",
+            "published_at": "2026-09-08T23:18:39+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "More flight delays expected after hundreds cancelled by air traffic control glitch",
+                "link": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-09-08T23:18:39+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
+                "description": "Departures from a number of airports are affected by a technical problem affecting air traffic control provider Nats.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "fad3bceb2787e092",
+            "title": "Police investigation of Creswell indecent exposure allegation 'failed victim'",
+            "published_at": "2026-09-08T23:01:26+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Police investigation of Creswell indecent exposure allegation 'failed victim'",
+                "link": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-09-08T23:01:26+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
+                "description": "The Police Ombudsman finds that \"police failed the complainant, both as a woman and as a victim\".",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cge4rjd2vx0o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -1311,6 +1379,43 @@
         "target_max": 30,
         "count": 7,
         "events": [
+          {
+            "id": "3dbea2c15635c9e7",
+            "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
+            "published_at": "2026-09-08T21:02:48+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
+                "link": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
+                "published_at": "2026-09-08T21:02:48+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
+                "description": "Israel said on Tuesday it was closing Britain's consulate in East Jerusalem in response to plans by the UK, France and Canada to block imports from Israeli settlements in the West Bank. FRANCE 24's Sharon Gaffney speaks with Julie Norman, Associate Fellow with the Middle East and North Africa Programme at Chatham House and Director of UCL’s Israel-Palestine Initiative.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
+            "source_url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "category": "金融",
+            "domestic_score": 38,
+            "importance": 51,
+            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
           {
             "id": "0f62a3bb0d032d69",
             "title": "英法加发表联合声明谴责以色列 呼吁落实“两国方案”",
@@ -1355,10 +1460,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 57,
+            "importance": 49,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "12785e7694672067",
@@ -1390,80 +1497,12 @@
             ],
             "category": "科技",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 47,
             "why_important": "涉及科技，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "3dbea2c15635c9e7",
-            "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
-            "published_at": "2026-09-08T21:02:48+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
-                "link": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
-                "published_at": "2026-09-08T21:02:48+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
-                "description": "Israel said on Tuesday it was closing Britain's consulate in East Jerusalem in response to plans by the UK, France and Canada to block imports from Israeli settlements in the West Bank. FRANCE 24's Sharon Gaffney speaks with Julie Norman, Associate Fellow with the Middle East and North Africa Programme at Chatham House and Director of UCL’s Israel-Palestine Initiative.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
-            "source_url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "category": "金融",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "7fbb6877cc62bed4",
-            "title": "‘Was this a state visit?’ Indian opposition leader raises serious questions over Paris BAPS temple",
-            "published_at": "2026-09-08T22:43:43+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "‘Was this a state visit?’ Indian opposition leader raises serious questions over Paris BAPS temple",
-                "link": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
-                "published_at": "2026-09-08T22:43:43+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
-                "description": "François Picard is pleased to welcome Anish Gawande. He sees the controversy surrounding the inauguration of the BAPS temple near Paris as more than an isolated dispute over the treatment of female staff at the Eiffel Tower. From his perspective, the incident exposes a broader and insufficiently scrutinized intersection of religion, diplomacy, political power, labor practices, and diaspora politics. At the center of his argument is an ambiguity over the boundary between private religious and state-sanctioned activity.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
-            "source_url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "bc5c024766741d83",
@@ -1495,10 +1534,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "e30a0f7e1565f2c6",
@@ -1530,10 +1571,12 @@
             ],
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 46,
             "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "6c223fcec7644aee",
@@ -1565,10 +1608,49 @@
             ],
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "7fbb6877cc62bed4",
+            "title": "‘Was this a state visit?’ Indian opposition leader raises serious questions over Paris BAPS temple",
+            "published_at": "2026-09-08T22:43:43+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "‘Was this a state visit?’ Indian opposition leader raises serious questions over Paris BAPS temple",
+                "link": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
+                "published_at": "2026-09-08T22:43:43+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
+                "description": "François Picard is pleased to welcome Anish Gawande. He sees the controversy surrounding the inauguration of the BAPS temple near Paris as more than an isolated dispute over the treatment of female staff at the Eiffel Tower. From his perspective, the incident exposes a broader and insufficiently scrutinized intersection of religion, diplomacy, political power, labor practices, and diaspora politics. At the center of his argument is an ambiguity over the boundary between private religious and state-sanctioned activity.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
+            "source_url": "https://www.france24.com/en/tv-shows/spotlight/20260908-was-this-a-state-visit-indian-opposition-leader-raises-serious-questions-over-paris-baps-temple",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -1580,76 +1662,6 @@
         "target_max": 30,
         "count": 6,
         "events": [
-          {
-            "id": "9423a977dbc84d88",
-            "title": "US strikes oil tankers off coast of Iran",
-            "published_at": "2026-09-08T21:56:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "US strikes oil tankers off coast of Iran",
-                "link": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-09-08T21:56:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The US attacked four oil-carrying vessels in the Gulf of Oman and one in the Strait of Hormuz. Iran's Revolutionary Guard said it would strike ships off Bahrain and Kuwait in retaliation.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "category": "能源",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及能源，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "f37987f063d81dbe",
-            "title": "German economy frets about Saxony-Anhalt election results",
-            "published_at": "2026-09-08T18:35:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "German economy frets about Saxony-Anhalt election results",
-                "link": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-09-08T18:35:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The AfD won the election in the eastern German state by a wide margin. While politicians and election analysts are still debating the reasons for the far-right party's popularity, economists are sounding the alarm.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
           {
             "id": "8f67fdf52e69627f",
             "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
@@ -1683,7 +1695,83 @@
             "importance": 56,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "9423a977dbc84d88",
+            "title": "US strikes oil tankers off coast of Iran",
+            "published_at": "2026-09-08T21:56:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "US strikes oil tankers off coast of Iran",
+                "link": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-09-08T21:56:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "The US attacked four oil-carrying vessels in the Gulf of Oman and one in the Strait of Hormuz. Iran's Revolutionary Guard said it would strike ships off Bahrain and Kuwait in retaliation.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/us-strikes-oil-tankers-off-coast-of-iran/a-79194562?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "category": "能源",
+            "domestic_score": 38,
+            "importance": 49,
+            "why_important": "涉及能源，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "f37987f063d81dbe",
+            "title": "German economy frets about Saxony-Anhalt election results",
+            "published_at": "2026-09-08T18:35:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "German economy frets about Saxony-Anhalt election results",
+                "link": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-09-08T18:35:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "The AfD won the election in the eastern German state by a wide margin. While politicians and election analysts are still debating the reasons for the far-right party's popularity, economists are sounding the alarm.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/german-economy-frets-about-saxony-anhalt-election-results/a-79162871?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 49,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "33690f65d886b6d7",
@@ -1715,10 +1803,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 45,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "4ab4d4e2e84840af",
@@ -1750,10 +1840,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 45,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "d10c1f78d17651f8",
@@ -1785,10 +1877,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -1833,42 +1927,9 @@
             "importance": 61,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "cd11424157fde197",
-            "title": "US Central Command claims to have destroyed five Iranian oil tankers",
-            "published_at": "2026-09-08T22:41:25+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "US Central Command claims to have destroyed five Iranian oil tankers",
-                "link": "https://tass.com/world/2184523",
-                "published_at": "2026-09-08T22:41:25+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/world/2184523",
-                "description": "According to the US military, this was a response to IRGC attacks on US Navy warships twice over the past two days",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2184523",
-            "source_url": "https://tass.com/world/2184523",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "category": "科技",
-            "domestic_score": 38,
-            "importance": 56,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "cc2d4bc6c36329c0",
@@ -1900,115 +1961,12 @@
             ],
             "category": "科技",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 58,
             "why_important": "涉及科技，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "ec74933e709ee197",
-            "title": "General Assembly session kicks off at UN headquarters",
-            "published_at": "2026-09-08T23:55:14+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "General Assembly session kicks off at UN headquarters",
-                "link": "https://tass.com/world/2184535",
-                "published_at": "2026-09-08T23:55:14+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/world/2184535",
-                "description": "During the meeting, which lasted just under an hour, UN General Assembly President Khalilur Rahman addressed delegations on the session’s priorities",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2184535",
-            "source_url": "https://tass.com/world/2184535",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "817c4cfedbbb7d19",
-            "title": "Top US diplomat describes Ukraine talks in Moscow, Kiev as substantive",
-            "published_at": "2026-09-08T22:58:29+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "Top US diplomat describes Ukraine talks in Moscow, Kiev as substantive",
-                "link": "https://tass.com/world/2184527",
-                "published_at": "2026-09-08T22:58:29+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/world/2184527",
-                "description": "Marco Rubio commented on a trip to Russia and Ukraine by US Special Presidential Envoy Steve Witkoff and US President Donald Trump’s son-in-law Jared Kushner",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2184527",
-            "source_url": "https://tass.com/world/2184527",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-          },
-          {
-            "id": "1abf29e2aaa12d05",
-            "title": "US strikes targets near Iran’s Kharg Island, Jask — reporter",
-            "published_at": "2026-09-08T21:30:26+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "US strikes targets near Iran’s Kharg Island, Jask — reporter",
-                "link": "https://tass.com/world/2184505",
-                "published_at": "2026-09-08T21:30:26+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/world/2184505",
-                "description": "According to Jennifer Griffin, the targets included Iranian oil tankers",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2184505",
-            "source_url": "https://tass.com/world/2184505",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "93c82891ebf8593d",
@@ -2040,10 +1998,12 @@
             ],
             "category": "外交",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及外交，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "84a5e5ca59fff38a",
@@ -2075,10 +2035,123 @@
             ],
             "category": "外交",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及外交，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "cd11424157fde197",
+            "title": "US Central Command claims to have destroyed five Iranian oil tankers",
+            "published_at": "2026-09-08T22:41:25+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "US Central Command claims to have destroyed five Iranian oil tankers",
+                "link": "https://tass.com/world/2184523",
+                "published_at": "2026-09-08T22:41:25+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/world/2184523",
+                "description": "According to the US military, this was a response to IRGC attacks on US Navy warships twice over the past two days",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2184523",
+            "source_url": "https://tass.com/world/2184523",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "category": "科技",
+            "domestic_score": 38,
+            "importance": 47,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "ec74933e709ee197",
+            "title": "General Assembly session kicks off at UN headquarters",
+            "published_at": "2026-09-08T23:55:14+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "General Assembly session kicks off at UN headquarters",
+                "link": "https://tass.com/world/2184535",
+                "published_at": "2026-09-08T23:55:14+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/world/2184535",
+                "description": "During the meeting, which lasted just under an hour, UN General Assembly President Khalilur Rahman addressed delegations on the session’s priorities",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2184535",
+            "source_url": "https://tass.com/world/2184535",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 46,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "1abf29e2aaa12d05",
+            "title": "US strikes targets near Iran’s Kharg Island, Jask — reporter",
+            "published_at": "2026-09-08T21:30:26+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "US strikes targets near Iran’s Kharg Island, Jask — reporter",
+                "link": "https://tass.com/world/2184505",
+                "published_at": "2026-09-08T21:30:26+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/world/2184505",
+                "description": "According to Jennifer Griffin, the targets included Iranian oil tankers",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2184505",
+            "source_url": "https://tass.com/world/2184505",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 46,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "5bfd4b06a42eb552",
@@ -2110,10 +2183,49 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "817c4cfedbbb7d19",
+            "title": "Top US diplomat describes Ukraine talks in Moscow, Kiev as substantive",
+            "published_at": "2026-09-08T22:58:29+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "Top US diplomat describes Ukraine talks in Moscow, Kiev as substantive",
+                "link": "https://tass.com/world/2184527",
+                "published_at": "2026-09-08T22:58:29+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/world/2184527",
+                "description": "Marco Rubio commented on a trip to Russia and Ukraine by US Special Presidential Envoy Steve Witkoff and US President Donald Trump’s son-in-law Jared Kushner",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2184527",
+            "source_url": "https://tass.com/world/2184527",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2166,10 +2278,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 40,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2220,10 +2334,12 @@
             ],
             "category": "能源",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 52,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "1178833264762df3",
@@ -2255,10 +2371,12 @@
             ],
             "category": "能源",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 52,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2300,10 +2418,12 @@
             ],
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 40,
             "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2354,10 +2474,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 40,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       }
@@ -2401,10 +2523,12 @@
             ],
             "category": "科技",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 31,
             "why_important": "涉及科技，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2446,10 +2570,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 33,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2527,10 +2653,12 @@
             ],
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 49,
             "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "a9d7b06df62094a8",
@@ -2562,10 +2690,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 38,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2627,10 +2757,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 30,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "38d9381f61efad37",
@@ -2662,10 +2794,12 @@
             ],
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 30,
             "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2716,10 +2850,12 @@
             ],
             "category": "金融",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 34,
             "why_important": "涉及金融，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "31e92d609ab882d2",
@@ -2751,10 +2887,12 @@
             ],
             "category": "金融",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 34,
             "why_important": "涉及金融，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "075f420607f76a99",
@@ -2786,10 +2924,12 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 30,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "900e26f87938893a",
@@ -2821,10 +2961,12 @@
             ],
             "category": "金融",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 28,
             "why_important": "涉及金融，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2893,10 +3035,12 @@
             ],
             "category": "产业/商业",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 27,
             "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -2938,10 +3082,12 @@
             ],
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 28,
             "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -4654,5 +4800,16 @@
     "previous_date": "2026-09-08",
     "removed": 6,
     "undated_removed": 214
+  },
+  "importance_model": {
+    "version": "V20",
+    "principle": "事件本身优先；国家权重只作背景修正",
+    "levels": {
+      "90-100": "全球重大",
+      "80-89": "国家重大",
+      "70-79": "重要事件",
+      "60-69": "值得关注",
+      "0-59": "一般动态"
+    }
   }
 }
