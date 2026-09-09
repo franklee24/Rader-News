@@ -2,9 +2,6 @@ name: 雷达新闻每日更新
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/daily.yml'
   schedule:
     # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
     - cron: '0 0 * * *'
