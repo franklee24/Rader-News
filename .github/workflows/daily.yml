@@ -3,7 +3,7 @@ name: 雷达新闻每日更新
 on:
   workflow_dispatch:
   schedule:
-    # GitHub Actions cron 使用 UTC；北京时间 08:00 = UTC 00:00
+    # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
     - cron: '0 0 * * *'
 
 permissions:
@@ -18,10 +18,6 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -31,73 +27,73 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Lock news window to Beijing 08:00
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path('scripts/build_daily.py')
-          text = p.read_text(encoding='utf-8')
-          old = "now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
-          new = "now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
-          if old not in text:
-              raise SystemExit('STRICT WINDOW PATCH FAILED: expected cutoff code not found')
-          p.write_text(text.replace(old, new), encoding='utf-8')
-          print('News window locked to the previous Beijing 08:00.')
-          PY
-
       - name: Build daily news
         run: python scripts/build_daily.py
 
-      - name: Validate strict 24h window
+      - name: Validate fixed Beijing window and quality
         run: |
           python - <<'PY'
           import json
+          from datetime import datetime, timezone, timedelta
           from pathlib import Path
-          import datetime as dt
 
-          p = Path('data/daily.json')
-          d = json.loads(p.read_text(encoding='utf-8'))
-          generated = dt.datetime.fromisoformat(d['generated_at'].replace('Z', '+00:00'))
-          bj = dt.datetime.now(dt.timezone(dt.timedelta(hours=8)))
-          anchor = bj.replace(hour=8, minute=0, second=0, microsecond=0)
-          if bj < anchor:
-              anchor -= dt.timedelta(days=1)
-          cutoff = anchor.astimezone(dt.timezone.utc) - dt.timedelta(days=1)
+          BJ=timezone(timedelta(hours=8))
+          UTC=timezone.utc
+          p=Path('data/daily.json')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          now=datetime.now(UTC).astimezone(BJ)
+          anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
+          if now < anchor:
+              anchor-=timedelta(days=1)
+          start=anchor-timedelta(days=1)
+          end=anchor
 
-          all_events=[]
-          for tier in d.get('tiers', {}).values():
-              for country in tier.values():
-                  all_events.extend(country.get('events', []))
+          if d.get('window_start') != start.astimezone(UTC).isoformat():
+              raise SystemExit(f"QUALITY GATE FAILED: wrong window_start={d.get('window_start')} expected={start.astimezone(UTC).isoformat()}")
+          if d.get('window_end') != end.astimezone(UTC).isoformat():
+              raise SystemExit(f"QUALITY GATE FAILED: wrong window_end={d.get('window_end')} expected={end.astimezone(UTC).isoformat()}")
 
-          if generated < cutoff:
-              raise SystemExit(f'QUALITY GATE FAILED: generated_at={generated.isoformat()} is before cutoff={cutoff.isoformat()}')
-          if not all_events:
-              raise SystemExit('QUALITY GATE FAILED: no valid events')
+          events=d.get('events',[])
+          if not events:
+              raise SystemExit('QUALITY GATE FAILED: no events')
 
           stale=[]
-          for e in all_events:
+          for e in events:
               ts=e.get('published_at')
               if not ts:
-                  stale.append((e.get('title','')[:60], 'missing timestamp'))
+                  stale.append(e.get('title','(untitled)'))
                   continue
-              t=dt.datetime.fromisoformat(ts.replace('Z','+00:00'))
-              if t < cutoff or t > generated + dt.timedelta(minutes=10):
-                  stale.append((e.get('title','')[:60], ts))
+              try: t=datetime.fromisoformat(ts.replace('Z','+00:00')).astimezone(UTC)
+              except Exception: stale.append(e.get('title','(bad timestamp)')); continue
+              if t < start.astimezone(UTC) or t >= end.astimezone(UTC):
+                  stale.append(e.get('title','(untitled)'))
           if stale:
-              print('STALE EVENTS DETECTED:')
-              for x in stale[:20]: print(x)
-              raise SystemExit(f'QUALITY GATE FAILED: {len(stale)} events outside Beijing 08:00 window')
+              raise SystemExit(f'QUALITY GATE FAILED: {len(stale)} events outside fixed window')
 
-          stats=d.get('stats',{})
-          print(f"QUALITY GATE PASSED: events={len(all_events)}, generated={generated.isoformat()}, cutoff={cutoff.isoformat()}")
-          print(f"Tier1={stats.get('tier1_events','n/a')}; no artificial minimum-count gate is applied.")
+          cfg=json.loads(Path('config.json').read_text(encoding='utf-8'))
+          tier1=cfg['tiers']['Tier 1']
+          counts=d.get('quality',{}).get('country_event_counts',{})
+          diversity=d.get('quality',{}).get('country_source_diversity',{})
+          # 20 is the requested floor; fewer is acceptable only when the source pool genuinely has fewer events.
+          # Hard-fail only on zero data or zero source diversity; do not manufacture stories to reach 20.
+          for c in tier1:
+              if counts.get(c,0) < 1:
+                  raise SystemExit(f'QUALITY GATE FAILED: Tier 1 country has zero events: {c}')
+              if diversity.get(c,0) < 3:
+                  raise SystemExit(f'QUALITY GATE FAILED: Tier 1 country has fewer than 3 independent source domains: {c} ({diversity.get(c,0)})')
+
+          print('QUALITY GATE PASSED')
+          print('Window:', start.astimezone(BJ), '->', end.astimezone(BJ))
+          print('Events:', len(events))
+          print('Tier1:', {c: counts.get(c,0) for c in tier1})
+          print('Tier1 source diversity:', {c: diversity.get(c,0) for c in tier1})
           PY
 
       - name: Commit daily snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily.json data/history/
+          git add data/daily.json
           git diff --cached --quiet || git commit -m "data: update daily radar"
           git push
 
