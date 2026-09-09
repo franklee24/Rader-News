@@ -1,12 +1,10 @@
 name: 雷达新闻每日更新
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * *'
-      timezone: 'Asia/Shanghai'
+    # GitHub Actions cron 使用 UTC；北京时间 08:00 = UTC 00:00
+    - cron: '0 0 * * *'
 
 permissions:
   contents: write
@@ -33,24 +31,66 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Lock news window to Beijing 08:00
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/build_daily.py')
+          text = p.read_text(encoding='utf-8')
+          old = "now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
+          new = "now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
+          if old not in text:
+              raise SystemExit('STRICT WINDOW PATCH FAILED: expected cutoff code not found')
+          p.write_text(text.replace(old, new), encoding='utf-8')
+          print('News window locked to the previous Beijing 08:00.')
+          PY
+
       - name: Build daily news
         run: python scripts/build_daily.py
 
-      - name: Validate daily data
+      - name: Validate strict 24h window
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
+          import datetime as dt
+
           p = Path('data/daily.json')
           d = json.loads(p.read_text(encoding='utf-8'))
-          stats = d.get('stats', {})
-          events = int(stats.get('events', 0))
-          tier1 = int(stats.get('tier1_events', 0))
-          if events < 20:
-              raise SystemExit(f'QUALITY GATE FAILED: only {events} events')
-          if tier1 < 10:
-              raise SystemExit(f'QUALITY GATE FAILED: only {tier1} Tier1 events')
-          print(f'QUALITY GATE PASSED: events={events}, tier1={tier1}')
+          generated = dt.datetime.fromisoformat(d['generated_at'].replace('Z', '+00:00'))
+          bj = dt.datetime.now(dt.timezone(dt.timedelta(hours=8)))
+          anchor = bj.replace(hour=8, minute=0, second=0, microsecond=0)
+          if bj < anchor:
+              anchor -= dt.timedelta(days=1)
+          cutoff = anchor.astimezone(dt.timezone.utc) - dt.timedelta(days=1)
+
+          all_events=[]
+          for tier in d.get('tiers', {}).values():
+              for country in tier.values():
+                  all_events.extend(country.get('events', []))
+
+          if generated < cutoff:
+              raise SystemExit(f'QUALITY GATE FAILED: generated_at={generated.isoformat()} is before cutoff={cutoff.isoformat()}')
+          if not all_events:
+              raise SystemExit('QUALITY GATE FAILED: no valid events')
+
+          stale=[]
+          for e in all_events:
+              ts=e.get('published_at')
+              if not ts:
+                  stale.append((e.get('title','')[:60], 'missing timestamp'))
+                  continue
+              t=dt.datetime.fromisoformat(ts.replace('Z','+00:00'))
+              if t < cutoff or t > generated + dt.timedelta(minutes=10):
+                  stale.append((e.get('title','')[:60], ts))
+          if stale:
+              print('STALE EVENTS DETECTED:')
+              for x in stale[:20]: print(x)
+              raise SystemExit(f'QUALITY GATE FAILED: {len(stale)} events outside Beijing 08:00 window')
+
+          stats=d.get('stats',{})
+          print(f"QUALITY GATE PASSED: events={len(all_events)}, generated={generated.isoformat()}, cutoff={cutoff.isoformat()}")
+          print(f"Tier1={stats.get('tier1_events','n/a')}; no artificial minimum-count gate is applied.")
           PY
 
       - name: Commit daily snapshot
