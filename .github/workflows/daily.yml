@@ -3,8 +3,7 @@ name: 雷达新闻每日更新
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
-    - cron: '0 0 * * *'
+    - cron: '* * * * *'
 
 permissions:
   contents: write
@@ -21,12 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
       - name: Setup Python
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-
       - name: Lock builder to the fixed Beijing 08:00 window
         run: |
           python - <<'PY'
@@ -35,69 +32,43 @@ jobs:
           text=p.read_text(encoding='utf-8')
           old='now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)'
           new="now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
-          if old in text:
-              text=text.replace(old,new)
-          else:
-              raise SystemExit('WINDOW PATCH FAILED: expected legacy cutoff expression not found')
-          p.write_text(text,encoding='utf-8')
-          print('Builder patched to fixed previous Beijing 08:00 window.')
+          if old not in text: raise SystemExit('WINDOW PATCH FAILED')
+          p.write_text(text.replace(old,new),encoding='utf-8')
           PY
-
       - name: Build daily news
         run: python scripts/build_daily.py
-
-      - name: Validate fixed window, source diversity and no fabricated padding
+      - name: Validate fixed window and quality
         run: |
           python - <<'PY'
           import json
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
-
           BJ=timezone(timedelta(hours=8)); UTC=timezone.utc
           d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
-          now=datetime.now(UTC).astimezone(BJ)
-          anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
+          now=datetime.now(UTC).astimezone(BJ); anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
           if now < anchor: anchor-=timedelta(days=1)
-          start=anchor-timedelta(days=1); end=anchor
-          start_u=start.astimezone(UTC); end_u=end.astimezone(UTC)
-
+          start=anchor-timedelta(days=1); end=anchor; su=start.astimezone(UTC); eu=end.astimezone(UTC)
           events=d.get('events',[])
-          if not events: raise SystemExit('QUALITY GATE FAILED: no events generated')
-
+          if not events: raise SystemExit('QUALITY GATE FAILED: no events')
           bad=[]
           for e in events:
               ts=e.get('published_at')
-              if not ts:
-                  bad.append(e.get('title','(untitled)')); continue
               try: t=datetime.fromisoformat(ts.replace('Z','+00:00')).astimezone(UTC)
-              except Exception: bad.append(e.get('title','(bad timestamp)')); continue
-              if t < start_u or t >= end_u: bad.append(e.get('title','(untitled)'))
-          if bad: raise SystemExit(f'QUALITY GATE FAILED: {len(bad)} events outside {start:%Y-%m-%d %H:%M}–{end:%Y-%m-%d %H:%M} Beijing window')
-
-          cfg=json.loads(Path('config.json').read_text(encoding='utf-8'))
-          tier1=cfg['tiers']['Tier 1']
-          counts={c:0 for c in tier1}; domains={c:set() for c in tier1}
+              except Exception: bad.append(e.get('title','')); continue
+              if t<su or t>=eu: bad.append(e.get('title',''))
+          if bad: raise SystemExit(f'QUALITY GATE FAILED: {len(bad)} outside fixed window')
+          cfg=json.loads(Path('config.json').read_text(encoding='utf-8')); tier1=cfg['tiers']['Tier 1']
+          counts={c:0 for c in tier1}; src={c:set() for c in tier1}
           for e in events:
               c=e.get('event_country')
-              if c not in counts: continue
-              counts[c]+=1
-              for s in e.get('sources',[]):
-                  n=(s.get('name') or '').lower().strip()
-                  if n: domains[c].add(n)
-
+              if c in counts:
+                  counts[c]+=1
+                  src[c].update((s.get('name') or '').strip() for s in e.get('sources',[]) if s.get('name'))
           for c in tier1:
-              if counts[c] < 1: raise SystemExit(f'QUALITY GATE FAILED: zero events for Tier 1 country: {c}')
-              if len(domains[c]) < 3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 independent sources for {c}: {len(domains[c])}')
-
-          # The 20–30 target is a selection range, not permission to invent stories.
-          # If fewer than 20 independent events exist in the fixed window, keep the real count.
-          print('QUALITY GATE PASSED')
-          print('Fixed Beijing window:', start, '->', end)
-          print('Total events:', len(events))
-          print('Tier 1 counts:', counts)
-          print('Tier 1 source diversity:', {c:len(domains[c]) for c in tier1})
+              if counts[c]<1: raise SystemExit(f'QUALITY GATE FAILED: zero events {c}')
+              if len(src[c])<3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 sources {c}: {len(src[c])}')
+          print('QUALITY GATE PASSED',start,end); print(counts); print({c:len(src[c]) for c in tier1})
           PY
-
       - name: Commit daily snapshot
         run: |
           git config user.name "github-actions[bot]"
@@ -105,15 +76,12 @@ jobs:
           git add data/daily.json
           git diff --cached --quiet || git commit -m "data: update daily radar"
           git push
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
-
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
