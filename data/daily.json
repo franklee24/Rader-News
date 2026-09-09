@@ -760,7 +760,7 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 45,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1288,7 +1288,7 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 46,
+            "importance": 45,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1380,6 +1380,102 @@
         "count": 10,
         "events": [
           {
+            "id": "583cd5393451705c",
+            "title": "USA und Russland : „ Konstruktiv und ziemlich offen  – So war das Telefonat zwischen Trump und Putin",
+            "published_at": "20260909T043000Z",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "USA und Russland : „ Konstruktiv und ziemlich offen  – So war das Telefonat zwischen Trump und Putin",
+                "link": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
+                "published_at": "20260909T043000Z",
+                "source": "welt.de",
+                "source_url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
+                "language": "german"
+              }
+            ],
+            "source": "welt.de",
+            "url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
+            "source_url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
+            "source_count": 1,
+            "source_names": [
+              "welt.de"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 67,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "a0ee6e0054d8e999",
+            "title": "Australia considers new Israel sanctions but wont join united kingdom in banning trade with  settler terrorist | Australian politics",
+            "published_at": "20260909T033000Z",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Australia considers new Israel sanctions but wont join united kingdom in banning trade with  settler terrorist | Australian politics",
+                "link": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
+                "published_at": "20260909T033000Z",
+                "source": "theguardian.com",
+                "source_url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
+                "language": "english"
+              }
+            ],
+            "source": "theguardian.com",
+            "url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
+            "source_url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
+            "source_count": 1,
+            "source_names": [
+              "theguardian.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 57,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "4607880e0299dad2",
+            "title": "Trump hits Canada with import bans , 50 % tariffs",
+            "published_at": "20260909T040000Z",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Trump hits Canada with import bans , 50 % tariffs",
+                "link": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
+                "published_at": "20260909T040000Z",
+                "source": "dw.com",
+                "source_url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
+                "language": "english"
+              }
+            ],
+            "source": "dw.com",
+            "url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
+            "source_url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
+            "source_count": 1,
+            "source_names": [
+              "dw.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 53,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
             "id": "3dbea2c15635c9e7",
             "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
             "published_at": "2026-09-08T21:02:48+00:00",
@@ -1409,7 +1505,7 @@
             ],
             "category": "金融",
             "domestic_score": 38,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及金融，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1534,7 +1630,7 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 46,
+            "importance": 45,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1571,7 +1667,7 @@
             ],
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 46,
+            "importance": 45,
             "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1651,102 +1747,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
-          },
-          {
-            "id": "a0ee6e0054d8e999",
-            "title": "Australia considers new Israel sanctions but wont join united kingdom in banning trade with  settler terrorist | Australian politics",
-            "published_at": "20260909T033000Z",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Australia considers new Israel sanctions but wont join united kingdom in banning trade with  settler terrorist | Australian politics",
-                "link": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
-                "published_at": "20260909T033000Z",
-                "source": "theguardian.com",
-                "source_url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
-                "language": "english"
-              }
-            ],
-            "source": "theguardian.com",
-            "url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
-            "source_url": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
-            "source_count": 1,
-            "source_names": [
-              "theguardian.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 63.2,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "值得关注",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "583cd5393451705c",
-            "title": "USA und Russland : „ Konstruktiv und ziemlich offen  – So war das Telefonat zwischen Trump und Putin",
-            "published_at": "20260909T043000Z",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "USA und Russland : „ Konstruktiv und ziemlich offen  – So war das Telefonat zwischen Trump und Putin",
-                "link": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
-                "published_at": "20260909T043000Z",
-                "source": "welt.de",
-                "source_url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
-                "language": "german"
-              }
-            ],
-            "source": "welt.de",
-            "url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
-            "source_url": "https://www.welt.de/politik/ausland/article6aa0c934240b302c8a83e197/usa-und-russland-konstruktiv-und-ziemlich-offen-so-war-das-telefonat-zwischen-trump-und-putin.html",
-            "source_count": 1,
-            "source_names": [
-              "welt.de"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "4607880e0299dad2",
-            "title": "Trump hits Canada with import bans , 50 % tariffs",
-            "published_at": "20260909T040000Z",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Trump hits Canada with import bans , 50 % tariffs",
-                "link": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
-                "published_at": "20260909T040000Z",
-                "source": "dw.com",
-                "source_url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
-                "language": "english"
-              }
-            ],
-            "source": "dw.com",
-            "url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
-            "source_url": "https://www.dw.com/en/trump-escalates-trade-war-with-canada-with-import-bans-50-tariffs/a-79195010",
-            "source_count": 1,
-            "source_names": [
-              "dw.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
           }
         ]
       },
@@ -1936,7 +1936,7 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 45,
+            "importance": 44,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2020,7 +2020,7 @@
             ],
             "category": "能源",
             "domestic_score": 46,
-            "importance": 61,
+            "importance": 60,
             "why_important": "涉及能源，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2401,6 +2401,134 @@
         "count": 8,
         "events": [
           {
+            "id": "233459aeb688f5a5",
+            "title": "The Latest : US destroys 5 Iranian crude oil tankers following attacks on US warship",
+            "published_at": "20260909T041500Z",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "title": "The Latest : US destroys 5 Iranian crude oil tankers following attacks on US warship",
+                "link": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
+                "published_at": "20260909T041500Z",
+                "source": "wfmj.com",
+                "source_url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
+                "language": "english"
+              }
+            ],
+            "source": "wfmj.com",
+            "url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
+            "source_url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
+            "source_count": 1,
+            "source_names": [
+              "wfmj.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 65,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "0b4c550e6b2080d7",
+            "title": "Not an aggressive agreement : Asif warns Makkah pact could be activated after Houthi strikes",
+            "published_at": "20260909T034500Z",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "title": "Not an aggressive agreement : Asif warns Makkah pact could be activated after Houthi strikes",
+                "link": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
+                "published_at": "20260909T034500Z",
+                "source": "moneycontrol.com",
+                "source_url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
+                "language": "english"
+              }
+            ],
+            "source": "moneycontrol.com",
+            "url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
+            "source_url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
+            "source_count": 1,
+            "source_names": [
+              "moneycontrol.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 61,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "d6fe758d175bfe7d",
+            "title": "Trumps Atompakt mit Saudi - Arabien ist in der Warteschleife",
+            "published_at": "20260909T034500Z",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "title": "Trumps Atompakt mit Saudi - Arabien ist in der Warteschleife",
+                "link": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
+                "published_at": "20260909T034500Z",
+                "source": "derstandard.at",
+                "source_url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
+                "language": "german"
+              }
+            ],
+            "source": "derstandard.at",
+            "url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
+            "source_url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
+            "source_count": 1,
+            "source_names": [
+              "derstandard.at"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 61,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "a5d2055f85edef1e",
+            "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
+            "published_at": "20260909T030000Z",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
+                "link": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+                "published_at": "20260909T030000Z",
+                "source": "asiaone.com",
+                "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+                "language": "english"
+              }
+            ],
+            "source": "asiaone.com",
+            "url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+            "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+            "source_count": 1,
+            "source_names": [
+              "asiaone.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 61,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
             "id": "38a90a75e708ec30",
             "title": "Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
             "published_at": "2026-09-08T13:58:32+00:00",
@@ -2475,38 +2603,6 @@
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
-            "id": "0b4c550e6b2080d7",
-            "title": "Not an aggressive agreement : Asif warns Makkah pact could be activated after Houthi strikes",
-            "published_at": "20260909T034500Z",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "Not an aggressive agreement : Asif warns Makkah pact could be activated after Houthi strikes",
-                "link": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
-                "published_at": "20260909T034500Z",
-                "source": "moneycontrol.com",
-                "source_url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
-                "language": "english"
-              }
-            ],
-            "source": "moneycontrol.com",
-            "url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
-            "source_url": "https://www.moneycontrol.com/world/not-an-aggressive-agreement-asif-warns-makkah-pact-could-be-activated-after-houthi-strikes-article-14025658.html",
-            "source_count": 1,
-            "source_names": [
-              "moneycontrol.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 57.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
             "id": "0ce63b42ab36eb72",
             "title": "The Latest : Canada strikes back with tariffs on about $20 billion worth of US goods",
             "published_at": "20260909T033000Z",
@@ -2531,44 +2627,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 57.8,
+            "importance": 47,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "a5d2055f85edef1e",
-            "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
-            "published_at": "20260909T030000Z",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
-                "link": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
-                "published_at": "20260909T030000Z",
-                "source": "asiaone.com",
-                "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
-                "language": "english"
-              }
-            ],
-            "source": "asiaone.com",
-            "url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
-            "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
-            "source_count": 1,
-            "source_names": [
-              "asiaone.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 57.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "87b4b799bdb082d0",
@@ -2595,76 +2659,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 41,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "233459aeb688f5a5",
-            "title": "The Latest : US destroys 5 Iranian crude oil tankers following attacks on US warship",
-            "published_at": "20260909T041500Z",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "The Latest : US destroys 5 Iranian crude oil tankers following attacks on US warship",
-                "link": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
-                "published_at": "20260909T041500Z",
-                "source": "wfmj.com",
-                "source_url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
-                "language": "english"
-              }
-            ],
-            "source": "wfmj.com",
-            "url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
-            "source_url": "https://www.wfmj.com/news/national/the-latest-us-destroys-5-iranian-crude-oil-tankers-following-attacks-on-us-warship/article_2f659a23-473b-5985-b235-96d90d5e0de3.html",
-            "source_count": 1,
-            "source_names": [
-              "wfmj.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "d6fe758d175bfe7d",
-            "title": "Trumps Atompakt mit Saudi - Arabien ist in der Warteschleife",
-            "published_at": "20260909T034500Z",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "Trumps Atompakt mit Saudi - Arabien ist in der Warteschleife",
-                "link": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
-                "published_at": "20260909T034500Z",
-                "source": "derstandard.at",
-                "source_url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
-                "language": "german"
-              }
-            ],
-            "source": "derstandard.at",
-            "url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
-            "source_url": "https://www.derstandard.at/consent/tcf/story/3000000338219/trumps-atompakt-mit-saudi-arabien-ist-in-der-warteschleife",
-            "source_count": 1,
-            "source_names": [
-              "derstandard.at"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -3007,102 +3007,6 @@
         "count": 8,
         "events": [
           {
-            "id": "0927e4118d544e62",
-            "title": "Amplitude strikes gas at latest exploration well",
-            "published_at": "20260909T043000Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Amplitude strikes gas at latest exploration well",
-                "link": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
-                "published_at": "20260909T043000Z",
-                "source": "upstreamonline.com",
-                "source_url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
-                "language": "english"
-              }
-            ],
-            "source": "upstreamonline.com",
-            "url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
-            "source_url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
-            "source_count": 1,
-            "source_names": [
-              "upstreamonline.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "51007134205507a4",
-            "title": "Xi , Putin pledge closer  strategic  ties with N . Korea in founding anniv . messages",
-            "published_at": "20260909T041500Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Xi , Putin pledge closer  strategic  ties with N . Korea in founding anniv . messages",
-                "link": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
-                "published_at": "20260909T041500Z",
-                "source": "koreatimes.co.kr",
-                "source_url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
-                "language": "english"
-              }
-            ],
-            "source": "koreatimes.co.kr",
-            "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
-            "source_url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
-            "source_count": 1,
-            "source_names": [
-              "koreatimes.co.kr"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "812f701bdc89b07e",
-            "title": "Alliance to End Plastic Waste Merilis Laporan Kemajuan 2025 , Menyoroti Kemajuan Tahun Pertama dalam Strategy 2030",
-            "published_at": "20260909T041500Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Alliance to End Plastic Waste Merilis Laporan Kemajuan 2025 , Menyoroti Kemajuan Tahun Pertama dalam Strategy 2030",
-                "link": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
-                "published_at": "20260909T041500Z",
-                "source": "antaranews.com",
-                "source_url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
-                "language": "indonesian"
-              }
-            ],
-            "source": "antaranews.com",
-            "url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
-            "source_url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
-            "source_count": 1,
-            "source_names": [
-              "antaranews.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
             "id": "5c84e18a7c51b4ff",
             "title": "ZUS Tea Giveaway Turns Everyday Tea Runs Into Life - Changing Rewards",
             "published_at": "20260909T041500Z",
@@ -3127,108 +3031,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "524a35dffa6e80c9",
-            "title": "Crisis educativa mundial : los países que mejor resistieron la caída en las pruebas PISA",
-            "published_at": "20260909T034500Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Crisis educativa mundial : los países que mejor resistieron la caída en las pruebas PISA",
-                "link": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
-                "published_at": "20260909T034500Z",
-                "source": "expreso.ec",
-                "source_url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
-                "language": "spanish"
-              }
-            ],
-            "source": "expreso.ec",
-            "url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
-            "source_url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
-            "source_count": 1,
-            "source_names": [
-              "expreso.ec"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "50f6a248d38258db",
-            "title": "Gold holds decline as Mideast tensions bolster rate hike case",
-            "published_at": "20260909T031500Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Gold holds decline as Mideast tensions bolster rate hike case",
-                "link": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
-                "published_at": "20260909T031500Z",
-                "source": "businesstimes.com.sg",
-                "source_url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
-                "language": "english"
-              }
-            ],
-            "source": "businesstimes.com.sg",
-            "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
-            "source_url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
-            "source_count": 1,
-            "source_names": [
-              "businesstimes.com.sg"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "f794041077264e6b",
-            "title": "Nepal jolted by 5 . 0 earthquake amid ongoing flood rescue efforts as death toll reaches 1 , 366",
-            "published_at": "20260909T031500Z",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "title": "Nepal jolted by 5 . 0 earthquake amid ongoing flood rescue efforts as death toll reaches 1 , 366",
-                "link": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
-                "published_at": "20260909T031500Z",
-                "source": "southeastasiapost.com",
-                "source_url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
-                "language": "english"
-              }
-            ],
-            "source": "southeastasiapost.com",
-            "url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
-            "source_url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
-            "source_count": 1,
-            "source_names": [
-              "southeastasiapost.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "856e866d974c255a",
@@ -3255,12 +3063,204 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 37,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "0927e4118d544e62",
+            "title": "Amplitude strikes gas at latest exploration well",
+            "published_at": "20260909T043000Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Amplitude strikes gas at latest exploration well",
+                "link": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
+                "published_at": "20260909T043000Z",
+                "source": "upstreamonline.com",
+                "source_url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
+                "language": "english"
+              }
+            ],
+            "source": "upstreamonline.com",
+            "url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
+            "source_url": "https://www.upstreamonline.com/exploration/amplitude-strikes-gas-at-latest-exploration-well/2-1-2040415",
+            "source_count": 1,
+            "source_names": [
+              "upstreamonline.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 35,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "51007134205507a4",
+            "title": "Xi , Putin pledge closer  strategic  ties with N . Korea in founding anniv . messages",
+            "published_at": "20260909T041500Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Xi , Putin pledge closer  strategic  ties with N . Korea in founding anniv . messages",
+                "link": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
+                "published_at": "20260909T041500Z",
+                "source": "koreatimes.co.kr",
+                "source_url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
+                "language": "english"
+              }
+            ],
+            "source": "koreatimes.co.kr",
+            "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
+            "source_url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260909/xi-putin-pledge-closer-strategic-ties-with-n-korea-in-founding-anniv-messages",
+            "source_count": 1,
+            "source_names": [
+              "koreatimes.co.kr"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "812f701bdc89b07e",
+            "title": "Alliance to End Plastic Waste Merilis Laporan Kemajuan 2025 , Menyoroti Kemajuan Tahun Pertama dalam Strategy 2030",
+            "published_at": "20260909T041500Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Alliance to End Plastic Waste Merilis Laporan Kemajuan 2025 , Menyoroti Kemajuan Tahun Pertama dalam Strategy 2030",
+                "link": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
+                "published_at": "20260909T041500Z",
+                "source": "antaranews.com",
+                "source_url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
+                "language": "indonesian"
+              }
+            ],
+            "source": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
+            "source_url": "https://www.antaranews.com/berita/5732569/alliance-to-end-plastic-waste-merilis-laporan-kemajuan-2025-menyoroti-kemajuan-tahun-pertama-dalam-strategy-2030",
+            "source_count": 1,
+            "source_names": [
+              "antaranews.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "524a35dffa6e80c9",
+            "title": "Crisis educativa mundial : los países que mejor resistieron la caída en las pruebas PISA",
+            "published_at": "20260909T034500Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Crisis educativa mundial : los países que mejor resistieron la caída en las pruebas PISA",
+                "link": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
+                "published_at": "20260909T034500Z",
+                "source": "expreso.ec",
+                "source_url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
+                "language": "spanish"
+              }
+            ],
+            "source": "expreso.ec",
+            "url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
+            "source_url": "https://www.expreso.ec/sociedad/crisis-educativa-mundial-paises-mejor-resistieron-caida-pruebas-pisa-295075.html",
+            "source_count": 1,
+            "source_names": [
+              "expreso.ec"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "50f6a248d38258db",
+            "title": "Gold holds decline as Mideast tensions bolster rate hike case",
+            "published_at": "20260909T031500Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Gold holds decline as Mideast tensions bolster rate hike case",
+                "link": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
+                "published_at": "20260909T031500Z",
+                "source": "businesstimes.com.sg",
+                "source_url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
+                "language": "english"
+              }
+            ],
+            "source": "businesstimes.com.sg",
+            "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
+            "source_url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/gold-holds-decline-mideast-tensions-bolster-rate-hike-case",
+            "source_count": 1,
+            "source_names": [
+              "businesstimes.com.sg"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "f794041077264e6b",
+            "title": "Nepal jolted by 5 . 0 earthquake amid ongoing flood rescue efforts as death toll reaches 1 , 366",
+            "published_at": "20260909T031500Z",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Nepal jolted by 5 . 0 earthquake amid ongoing flood rescue efforts as death toll reaches 1 , 366",
+                "link": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
+                "published_at": "20260909T031500Z",
+                "source": "southeastasiapost.com",
+                "source_url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
+                "language": "english"
+              }
+            ],
+            "source": "southeastasiapost.com",
+            "url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
+            "source_url": "http://www.southeastasiapost.com/news/279294809/nepal-jolted-by-50-earthquake-amid-ongoing-flood-rescue-efforts-as-death-toll-reaches-1366",
+            "source_count": 1,
+            "source_names": [
+              "southeastasiapost.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -3381,140 +3381,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 57.8,
+            "importance": 56,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "6bbbe0096c4f2ac2",
-            "title": "Mao Zedongun ölümünün 50 . yılı : Z kuşağı  Öğretmene neden bu kadar ilgi duyuyor ?",
-            "published_at": "20260909T013000Z",
-            "code": "NL",
-            "event_country": "荷兰",
-            "sources": [
-              {
-                "title": "Mao Zedongun ölümünün 50 . yılı : Z kuşağı  Öğretmene neden bu kadar ilgi duyuyor ?",
-                "link": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
-                "published_at": "20260909T013000Z",
-                "source": "bbc.com",
-                "source_url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
-                "language": "turkish"
-              }
-            ],
-            "source": "bbc.com",
-            "url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
-            "source_url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
-            "source_count": 1,
-            "source_names": [
-              "bbc.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 57.5,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "af075a564eb5dc4c",
-            "title": "¿ Quién es la mexicana Scarlett Camberos y por qué hace historia con su nominación al Balón de Oro 2026 ?",
-            "published_at": "20260909T044500Z",
-            "code": "NL",
-            "event_country": "荷兰",
-            "sources": [
-              {
-                "title": "¿ Quién es la mexicana Scarlett Camberos y por qué hace historia con su nominación al Balón de Oro 2026 ?",
-                "link": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
-                "published_at": "20260909T044500Z",
-                "source": "cnnespanol.cnn.com",
-                "source_url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
-                "language": "spanish"
-              }
-            ],
-            "source": "cnnespanol.cnn.com",
-            "url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
-            "source_url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
-            "source_count": 1,
-            "source_names": [
-              "cnnespanol.cnn.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 55.0,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "4c1822ec594d2d98",
-            "title": "Social reading with hundreds of strangers is happening across the world",
-            "published_at": "20260909T033000Z",
-            "code": "NL",
-            "event_country": "荷兰",
-            "sources": [
-              {
-                "title": "Social reading with hundreds of strangers is happening across the world",
-                "link": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
-                "published_at": "20260909T033000Z",
-                "source": "edition.cnn.com",
-                "source_url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
-                "language": "english"
-              }
-            ],
-            "source": "edition.cnn.com",
-            "url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
-            "source_url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
-            "source_count": 1,
-            "source_names": [
-              "edition.cnn.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 55.0,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "09e4b052caa69564",
-            "title": "Australia breaks from international pack on Palestine by not adopting trade sanctions",
-            "published_at": "20260909T044500Z",
-            "code": "NL",
-            "event_country": "荷兰",
-            "sources": [
-              {
-                "title": "Australia breaks from international pack on Palestine by not adopting trade sanctions",
-                "link": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
-                "published_at": "20260909T044500Z",
-                "source": "abc.net.au",
-                "source_url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
-                "language": "english"
-              }
-            ],
-            "source": "abc.net.au",
-            "url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
-            "source_url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
-            "source_count": 1,
-            "source_names": [
-              "abc.net.au"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "b1ffc7b046383260",
@@ -3541,12 +3413,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "f56bedeeeb4a486e",
@@ -3573,12 +3445,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "7cb5624db69ed0c5",
@@ -3605,12 +3477,140 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "09e4b052caa69564",
+            "title": "Australia breaks from international pack on Palestine by not adopting trade sanctions",
+            "published_at": "20260909T044500Z",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "Australia breaks from international pack on Palestine by not adopting trade sanctions",
+                "link": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
+                "published_at": "20260909T044500Z",
+                "source": "abc.net.au",
+                "source_url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
+                "language": "english"
+              }
+            ],
+            "source": "abc.net.au",
+            "url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
+            "source_url": "https://www.abc.net.au/news/2026-09-09/australia-not-joining-israel-west-bank-sanction/107132396",
+            "source_count": 1,
+            "source_names": [
+              "abc.net.au"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 41,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "af075a564eb5dc4c",
+            "title": "¿ Quién es la mexicana Scarlett Camberos y por qué hace historia con su nominación al Balón de Oro 2026 ?",
+            "published_at": "20260909T044500Z",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "¿ Quién es la mexicana Scarlett Camberos y por qué hace historia con su nominación al Balón de Oro 2026 ?",
+                "link": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
+                "published_at": "20260909T044500Z",
+                "source": "cnnespanol.cnn.com",
+                "source_url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
+                "language": "spanish"
+              }
+            ],
+            "source": "cnnespanol.cnn.com",
+            "url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
+            "source_url": "https://cnnespanol.cnn.com/2026/09/08/deportes/mexicana-scarlett-camberos-nominacion-balon-oro-trax",
+            "source_count": 1,
+            "source_names": [
+              "cnnespanol.cnn.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "4c1822ec594d2d98",
+            "title": "Social reading with hundreds of strangers is happening across the world",
+            "published_at": "20260909T033000Z",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "Social reading with hundreds of strangers is happening across the world",
+                "link": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
+                "published_at": "20260909T033000Z",
+                "source": "edition.cnn.com",
+                "source_url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
+                "language": "english"
+              }
+            ],
+            "source": "edition.cnn.com",
+            "url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
+            "source_url": "https://edition.cnn.com/world/social-reading-book-doofs-hnk-spc",
+            "source_count": 1,
+            "source_names": [
+              "edition.cnn.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "6bbbe0096c4f2ac2",
+            "title": "Mao Zedongun ölümünün 50 . yılı : Z kuşağı  Öğretmene neden bu kadar ilgi duyuyor ?",
+            "published_at": "20260909T013000Z",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "Mao Zedongun ölümünün 50 . yılı : Z kuşağı  Öğretmene neden bu kadar ilgi duyuyor ?",
+                "link": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
+                "published_at": "20260909T013000Z",
+                "source": "bbc.com",
+                "source_url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
+                "language": "turkish"
+              }
+            ],
+            "source": "bbc.com",
+            "url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
+            "source_url": "https://www.bbc.com/turkce/articles/c5y7k59r7dzo",
+            "source_count": 1,
+            "source_names": [
+              "bbc.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -3790,132 +3790,36 @@
         "count": 8,
         "events": [
           {
-            "id": "7a4318082ae40f38",
-            "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
+            "id": "148e69ad3386ef52",
+            "title": "Netanyahu Dismissed Pre - Oct . 7 Hamas Warning , Never Told Top Security Officials",
             "published_at": "20260909T030000Z",
             "code": "EG",
             "event_country": "埃及",
             "sources": [
               {
-                "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
-                "link": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+                "title": "Netanyahu Dismissed Pre - Oct . 7 Hamas Warning , Never Told Top Security Officials",
+                "link": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
                 "published_at": "20260909T030000Z",
-                "source": "asiaone.com",
-                "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+                "source": "dailycaller.com",
+                "source_url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
                 "language": "english"
               }
             ],
-            "source": "asiaone.com",
-            "url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
-            "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+            "source": "dailycaller.com",
+            "url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
+            "source_url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
             "source_count": 1,
             "source_names": [
-              "asiaone.com"
+              "dailycaller.com"
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 57.8,
+            "importance": 53,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "1fbea63f6403fb03",
-            "title": "Middle East war expands as Houthis strike Saudi cities | Honolulu Star - Advertiser",
-            "published_at": "20260909T010000Z",
-            "code": "EG",
-            "event_country": "埃及",
-            "sources": [
-              {
-                "title": "Middle East war expands as Houthis strike Saudi cities | Honolulu Star - Advertiser",
-                "link": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
-                "published_at": "20260909T010000Z",
-                "source": "staradvertiser.com",
-                "source_url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
-                "language": "english"
-              }
-            ],
-            "source": "staradvertiser.com",
-            "url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
-            "source_url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
-            "source_count": 1,
-            "source_names": [
-              "staradvertiser.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 57.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "172d4800d89327cc",
-            "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
-            "published_at": "20260909T044500Z",
-            "code": "EG",
-            "event_country": "埃及",
-            "sources": [
-              {
-                "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
-                "link": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
-                "published_at": "20260909T044500Z",
-                "source": "epochtimes.com",
-                "source_url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
-                "language": "chinese"
-              }
-            ],
-            "source": "epochtimes.com",
-            "url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
-            "source_url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
-            "source_count": 1,
-            "source_names": [
-              "epochtimes.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "5c4b5eb028317ec1",
-            "title": "400 Factories to Operate in Egypt Suez Canal Economic Zone by 2028",
-            "published_at": "20260909T044500Z",
-            "code": "EG",
-            "event_country": "埃及",
-            "sources": [
-              {
-                "title": "400 Factories to Operate in Egypt Suez Canal Economic Zone by 2028",
-                "link": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
-                "published_at": "20260909T044500Z",
-                "source": "cairoscene.com",
-                "source_url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
-                "language": "english"
-              }
-            ],
-            "source": "cairoscene.com",
-            "url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
-            "source_url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
-            "source_count": 1,
-            "source_names": [
-              "cairoscene.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "a9d3221e885ec4eb",
@@ -3942,76 +3846,44 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
-            "id": "def366d17021ff44",
-            "title": "伊朗多线释放强硬信号 美军基地因移动设备陷  暴露  危机 - 华侨网",
-            "published_at": "20260909T040000Z",
-            "code": "EG",
-            "event_country": "埃及",
-            "sources": [
-              {
-                "title": "伊朗多线释放强硬信号 美军基地因移动设备陷  暴露  危机 - 华侨网",
-                "link": "https://www.chinesepress.com/2026/204849.html",
-                "published_at": "20260909T040000Z",
-                "source": "chinesepress.com",
-                "source_url": "https://www.chinesepress.com/2026/204849.html",
-                "language": "chinese"
-              }
-            ],
-            "source": "chinesepress.com",
-            "url": "https://www.chinesepress.com/2026/204849.html",
-            "source_url": "https://www.chinesepress.com/2026/204849.html",
-            "source_count": 1,
-            "source_names": [
-              "chinesepress.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "148e69ad3386ef52",
-            "title": "Netanyahu Dismissed Pre - Oct . 7 Hamas Warning , Never Told Top Security Officials",
+            "id": "7a4318082ae40f38",
+            "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
             "published_at": "20260909T030000Z",
             "code": "EG",
             "event_country": "埃及",
             "sources": [
               {
-                "title": "Netanyahu Dismissed Pre - Oct . 7 Hamas Warning , Never Told Top Security Officials",
-                "link": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
+                "title": "War expands as Houthis attack Saudi cities and US strikes Iranian tankers",
+                "link": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
                 "published_at": "20260909T030000Z",
-                "source": "dailycaller.com",
-                "source_url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
+                "source": "asiaone.com",
+                "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
                 "language": "english"
               }
             ],
-            "source": "dailycaller.com",
-            "url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
-            "source_url": "https://dailycaller.com/2026/09/08/benjamin-netanyahu-dismissed-pre-oct-7-hamas-warning-top-security-officials/",
+            "source": "asiaone.com",
+            "url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
+            "source_url": "https://www.asiaone.com/world/war-expands-houthis-attack-saudi-cities-and-us-strikes-iranian-tankers",
             "source_count": 1,
             "source_names": [
-              "dailycaller.com"
+              "asiaone.com"
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "ed7018b6b1399382",
@@ -4038,29 +3910,51 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          }
-        ]
-      },
-      "尼日利亚": {
-        "country": "尼日利亚",
-        "country_en": "Nigeria",
-        "code": "NG",
-        "target_min": 1,
-        "target_max": 10,
-        "count": 8,
-        "events": [
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
           {
-            "id": "d0eebb6272f57ca2",
+            "id": "1fbea63f6403fb03",
+            "title": "Middle East war expands as Houthis strike Saudi cities | Honolulu Star - Advertiser",
+            "published_at": "20260909T010000Z",
+            "code": "EG",
+            "event_country": "埃及",
+            "sources": [
+              {
+                "title": "Middle East war expands as Houthis strike Saudi cities | Honolulu Star - Advertiser",
+                "link": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
+                "published_at": "20260909T010000Z",
+                "source": "staradvertiser.com",
+                "source_url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
+                "language": "english"
+              }
+            ],
+            "source": "staradvertiser.com",
+            "url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
+            "source_url": "https://www.staradvertiser.com/2026/09/08/breaking-news/middle-east-war-expands-as-houthis-strike-saudi-cities/",
+            "source_count": 1,
+            "source_names": [
+              "staradvertiser.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 50,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "172d4800d89327cc",
             "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
             "published_at": "20260909T044500Z",
-            "code": "NG",
-            "event_country": "尼日利亚",
+            "code": "EG",
+            "event_country": "埃及",
             "sources": [
               {
                 "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
@@ -4080,45 +3974,87 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 31,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
-            "id": "697b040438733072",
-            "title": "Osun governorship election 2026 ( 3 )",
-            "published_at": "20260909T043000Z",
-            "code": "NG",
-            "event_country": "尼日利亚",
+            "id": "5c4b5eb028317ec1",
+            "title": "400 Factories to Operate in Egypt Suez Canal Economic Zone by 2028",
+            "published_at": "20260909T044500Z",
+            "code": "EG",
+            "event_country": "埃及",
             "sources": [
               {
-                "title": "Osun governorship election 2026 ( 3 )",
-                "link": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
-                "published_at": "20260909T043000Z",
-                "source": "thenationonlineng.net",
-                "source_url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+                "title": "400 Factories to Operate in Egypt Suez Canal Economic Zone by 2028",
+                "link": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
+                "published_at": "20260909T044500Z",
+                "source": "cairoscene.com",
+                "source_url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
                 "language": "english"
               }
             ],
-            "source": "thenationonlineng.net",
-            "url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
-            "source_url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+            "source": "cairoscene.com",
+            "url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
+            "source_url": "https://cairoscene.com/News/400-Factories-to-Operate-in-Egypt-s-Suez-Canal-Economic-Zone-by-2028",
             "source_count": 1,
             "source_names": [
-              "thenationonlineng.net"
+              "cairoscene.com"
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 31,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
+          {
+            "id": "def366d17021ff44",
+            "title": "伊朗多线释放强硬信号 美军基地因移动设备陷  暴露  危机 - 华侨网",
+            "published_at": "20260909T040000Z",
+            "code": "EG",
+            "event_country": "埃及",
+            "sources": [
+              {
+                "title": "伊朗多线释放强硬信号 美军基地因移动设备陷  暴露  危机 - 华侨网",
+                "link": "https://www.chinesepress.com/2026/204849.html",
+                "published_at": "20260909T040000Z",
+                "source": "chinesepress.com",
+                "source_url": "https://www.chinesepress.com/2026/204849.html",
+                "language": "chinese"
+              }
+            ],
+            "source": "chinesepress.com",
+            "url": "https://www.chinesepress.com/2026/204849.html",
+            "source_url": "https://www.chinesepress.com/2026/204849.html",
+            "source_count": 1,
+            "source_names": [
+              "chinesepress.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          }
+        ]
+      },
+      "尼日利亚": {
+        "country": "尼日利亚",
+        "country_en": "Nigeria",
+        "code": "NG",
+        "target_min": 1,
+        "target_max": 10,
+        "count": 8,
+        "events": [
           {
             "id": "0de743c564e66078",
             "title": "Oyedeji warns after DTigres World Cup exit",
@@ -4144,44 +4080,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "73612dbce54ae2b1",
-            "title": "How Bradford fertility rate compares to other areas of united kingdom | Bradford Telegraph and Argus",
-            "published_at": "20260909T041500Z",
-            "code": "NG",
-            "event_country": "尼日利亚",
-            "sources": [
-              {
-                "title": "How Bradford fertility rate compares to other areas of united kingdom | Bradford Telegraph and Argus",
-                "link": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
-                "published_at": "20260909T041500Z",
-                "source": "thetelegraphandargus.co.uk",
-                "source_url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
-                "language": "english"
-              }
-            ],
-            "source": "thetelegraphandargus.co.uk",
-            "url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
-            "source_url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
-            "source_count": 1,
-            "source_names": [
-              "thetelegraphandargus.co.uk"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "56416041ede72d03",
@@ -4208,12 +4112,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "32febd28fbaa6440",
@@ -4240,44 +4144,12 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
-          },
-          {
-            "id": "93a1de497653b642",
-            "title": "NFF crisis : On FIFA normalisation committee for Nigeria",
-            "published_at": "20260909T030000Z",
-            "code": "NG",
-            "event_country": "尼日利亚",
-            "sources": [
-              {
-                "title": "NFF crisis : On FIFA normalisation committee for Nigeria",
-                "link": "https://punchng.com/on-fifas-normalisation-committee/",
-                "published_at": "20260909T030000Z",
-                "source": "punchng.com",
-                "source_url": "https://punchng.com/on-fifas-normalisation-committee/",
-                "language": "english"
-              }
-            ],
-            "source": "punchng.com",
-            "url": "https://punchng.com/on-fifas-normalisation-committee/",
-            "source_url": "https://punchng.com/on-fifas-normalisation-committee/",
-            "source_count": 1,
-            "source_names": [
-              "punchng.com"
-            ],
-            "category": "政治",
-            "domestic_score": 35,
-            "importance": 50.8,
-            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
-            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
-            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
             "id": "e9a965218bfc3c2f",
@@ -4304,12 +4176,140 @@
             ],
             "category": "政治",
             "domestic_score": 35,
-            "importance": 50.8,
+            "importance": 51,
             "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
             "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
             "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
             "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；覆盖扩展补充"
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "697b040438733072",
+            "title": "Osun governorship election 2026 ( 3 )",
+            "published_at": "20260909T043000Z",
+            "code": "NG",
+            "event_country": "尼日利亚",
+            "sources": [
+              {
+                "title": "Osun governorship election 2026 ( 3 )",
+                "link": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+                "published_at": "20260909T043000Z",
+                "source": "thenationonlineng.net",
+                "source_url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+                "language": "english"
+              }
+            ],
+            "source": "thenationonlineng.net",
+            "url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+            "source_url": "https://thenationonlineng.net/osun-governorship-election-2026-3/",
+            "source_count": 1,
+            "source_names": [
+              "thenationonlineng.net"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 35,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "d0eebb6272f57ca2",
+            "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
+            "published_at": "20260909T044500Z",
+            "code": "NG",
+            "event_country": "尼日利亚",
+            "sources": [
+              {
+                "title": "杨威 ： 吉隆灾情 中共危机公关变公关危机",
+                "link": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
+                "published_at": "20260909T044500Z",
+                "source": "epochtimes.com",
+                "source_url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
+                "language": "chinese"
+              }
+            ],
+            "source": "epochtimes.com",
+            "url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
+            "source_url": "https://www.epochtimes.com/gb/26/9/7/n14844564.htm",
+            "source_count": 1,
+            "source_names": [
+              "epochtimes.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "73612dbce54ae2b1",
+            "title": "How Bradford fertility rate compares to other areas of united kingdom | Bradford Telegraph and Argus",
+            "published_at": "20260909T041500Z",
+            "code": "NG",
+            "event_country": "尼日利亚",
+            "sources": [
+              {
+                "title": "How Bradford fertility rate compares to other areas of united kingdom | Bradford Telegraph and Argus",
+                "link": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
+                "published_at": "20260909T041500Z",
+                "source": "thetelegraphandargus.co.uk",
+                "source_url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
+                "language": "english"
+              }
+            ],
+            "source": "thetelegraphandargus.co.uk",
+            "url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
+            "source_url": "https://www.thetelegraphandargus.co.uk/news/26533410.bradfords-fertility-rate-compares-areas-uk/",
+            "source_count": 1,
+            "source_names": [
+              "thetelegraphandargus.co.uk"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
+          },
+          {
+            "id": "93a1de497653b642",
+            "title": "NFF crisis : On FIFA normalisation committee for Nigeria",
+            "published_at": "20260909T030000Z",
+            "code": "NG",
+            "event_country": "尼日利亚",
+            "sources": [
+              {
+                "title": "NFF crisis : On FIFA normalisation committee for Nigeria",
+                "link": "https://punchng.com/on-fifas-normalisation-committee/",
+                "published_at": "20260909T030000Z",
+                "source": "punchng.com",
+                "source_url": "https://punchng.com/on-fifas-normalisation-committee/",
+                "language": "english"
+              }
+            ],
+            "source": "punchng.com",
+            "url": "https://punchng.com/on-fifas-normalisation-committee/",
+            "source_url": "https://punchng.com/on-fifas-normalisation-committee/",
+            "source_count": 1,
+            "source_names": [
+              "punchng.com"
+            ],
+            "category": "政治",
+            "domestic_score": 35,
+            "importance": 31,
+            "why_important": "该事件在过去24小时内形成具有实际政策、经济、安全、产业或社会影响的新闻信号。",
+            "impact": "关注相关政策、市场、产业链、安全局势及国际关系的后续影响。",
+            "next_72h": "关注官方公告、市场反应及其他权威媒体的独立确认。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           }
         ]
       },
@@ -4398,7 +4398,7 @@
             ],
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 28,
+            "importance": 27,
             "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
