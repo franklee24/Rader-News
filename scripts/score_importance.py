@@ -1,92 +1,44 @@
 #!/usr/bin/env python3
-# 雷达新闻 V19 importance model
-# 事件重要性：影响范围25 + 严重性20 + 战略/政策影响20 + 国家战略地位15 + 72小时影响10 + 多源验证5 + 时效性5
-import json
-import re
+# 雷达新闻 V20 importance model
+# 目标：让同一国家的普通新闻不再全部同分；分数反映事件本身，而不是国家标签。
+import json,re,datetime as dt
 from pathlib import Path
-
-ROOT=Path(__file__).resolve().parents[1]
-DAILY=ROOT/'data'/'daily.json'
+ROOT=Path(__file__).resolve().parents[1]; DAILY=ROOT/'data'/'daily.json'
 CONFIG=json.loads((ROOT/'config'/'country_tiers.json').read_text(encoding='utf-8'))
-TIER_BY_COUNTRY={c['name']:i for i,tier in enumerate(['tier1','tier2','tier3','tier4'],1) for c in CONFIG['tiers'].get(tier,[])}
-
-SEVERE={
-    '战争':10,'war':10,'入侵':10,'invasion':10,'核武':10,'核打击':10,'nuclear strike':10,
-    '导弹':8,'missile':8,'大规模袭击':9,'mass attack':9,'恐袭':9,'terrorist attack':9,
-    '空袭':8,'airstrike':8,'袭击':7,'attack':7,'战斗':7,'battle':7,'冲突':6,'conflict':6,
-    '停火':6,'ceasefire':6,'制裁':5,'sanction':5,'关税':5,'tariff':5,'封锁':7,'blockade':7,
-    '紧急状态':6,'state of emergency':6,'死亡':3,'dead':3,'伤亡':4,'casualties':4,
-}
-STRATEGIC={
-    '总统':7,'president':7,'总理':6,'prime minister':6,'政府':5,'government':5,'议会':4,'parliament':4,
-    '选举':6,'election':6,'央行':7,'central bank':7,'利率':7,'interest rate':7,'降息':7,'加息':7,
-    '关税':8,'tariff':8,'贸易':5,'trade':5,'制裁':8,'sanction':8,'外交':5,'diplomacy':5,
-    '峰会':5,'summit':5,'条约':7,'treaty':7,'核':9,'nuclear':9,'军队':6,'military':6,
-    '国防':7,'defense':7,'pentagon':7,'能源':5,'energy':5,'石油':6,'oil':6,'天然气':5,'gas':5,
-    '芯片':5,'semiconductor':5,'人工智能':4,'artificial intelligence':4,
-}
-
-CATEGORY_BASE={'国防安全':18,'外交':17,'政治':16,'宏观经济':16,'金融':14,'能源':14,'科技':13,'产业/商业':11,'社会':9,'灾害':12}
-
-def text(e):
-    return ((e.get('title') or '')+' '+(e.get('description') or '')).lower()
-
-def hits(t, table):
-    return [k for k in table if k.lower() in t]
-
-def tier_score(country):
-    n=TIER_BY_COUNTRY.get(country,5)
-    return {1:15,2:12,3:9,4:6}.get(n,4)
-
+TIER_BY_COUNTRY={c['name']:i for i,t in enumerate(['tier1','tier2','tier3','tier4'],1) for c in CONFIG['tiers'].get(t,[])}
+SEVERE={'战争':20,'war':20,'入侵':19,'invasion':19,'核打击':20,'nuclear strike':20,'核武':18,'nuclear':16,'大规模袭击':17,'mass attack':17,'恐袭':16,'terrorist attack':16,'导弹':15,'missile':15,'空袭':14,'airstrike':14,'袭击':12,'attack':12,'战斗':11,'battle':11,'冲突':10,'conflict':10,'封锁':12,'blockade':12,'停火':9,'ceasefire':9,'紧急状态':9,'state of emergency':9,'死亡':5,'dead':5,'伤亡':7,'casualties':7}
+STRATEGIC={'总统':10,'president':10,'总理':9,'prime minister':9,'政府':7,'government':7,'议会':6,'parliament':6,'选举':9,'election':9,'央行':10,'central bank':10,'利率':10,'interest rate':10,'降息':10,'加息':10,'关税':12,'tariff':12,'贸易':8,'trade':8,'制裁':12,'sanction':12,'外交':8,'diplomacy':8,'峰会':8,'summit':8,'条约':11,'treaty':11,'核':13,'nuclear':13,'军队':9,'military':9,'国防':10,'defense':10,'pentagon':10,'能源':7,'energy':7,'石油':9,'oil':9,'天然气':8,'gas':8,'芯片':8,'semiconductor':8,'人工智能':6,'artificial intelligence':6}
+CATEGORY={'国防安全':9,'外交':8,'政治':7,'宏观经济':7,'金融':6,'能源':6,'科技':5,'产业/商业':4,'灾害':7,'社会':3}
+ACTION={'宣布':4,'正式':4,'签署':5,'通过':5,'批准':5,'生效':5,'取消':4,'暂停':4,'启动':3,'升级':4,'降息':5,'加息':5,'禁运':6,'制裁':6,'announced':4,'official':4,'signed':5,'approved':5,'effective':5,'launch':3}
+def text(e): return ((e.get('title') or '')+' '+(e.get('description') or '')).lower()
+def hits(t,d): return [k for k in d if k.lower() in t]
+def parse_time(s):
+    try:return dt.datetime.fromisoformat(s.replace('Z','+00:00'))
+    except:return None
+def freshness(e):
+    p=parse_time(e.get('published_at','')); now=dt.datetime.now(dt.timezone.utc)
+    if not p:return 0
+    h=max(0,(now-p).total_seconds()/3600)
+    return 5 if h<=4 else 4 if h<=8 else 3 if h<=14 else 2 if h<=20 else 1
 def score(e):
-    t=text(e)
-    category=e.get('category','政治')
-    # 1) 影响范围 25：全球事件/核心国家/其他国家
-    country=e.get('event_country','')
-    scope=25 if e.get('code')=='GLOBAL' or country in ('国际/全球','全球') else 22 if TIER_BY_COUNTRY.get(country)==1 else 18 if TIER_BY_COUNTRY.get(country)==2 else 14
-    # 2) 严重性 20：最高命中项封顶20，避免关键词堆叠刷分
-    sev_hits=hits(t,SEVERE)
-    severity=min(20, max([SEVERE[k] for k in sev_hits], default=0)+min(8,max(0,len(sev_hits)-1)*2))
-    # 3) 战略/政策影响 20
-    strategic_hits=hits(t,STRATEGIC)
-    strategic=min(20, CATEGORY_BASE.get(category,10)+min(8, sum(STRATEGIC[k] for k in strategic_hits)//4))
-    # 4) 国家战略地位 15
-    national=tier_score(country)
-    # 5) 未来72小时影响 10：政策、军事、金融、外交天然具有连续影响
-    horizon=8 if category in ('国防安全','外交','政治','宏观经济','金融') else 6 if category in ('能源','科技','灾害') else 4
-    if any(k.lower() in t for k in ('宣布','announced','effective','立即','immediate','deadline','正式','official')):
-        horizon=min(10,horizon+2)
-    # 6) 多源验证 5：只奖励独立来源，不让媒体数量主导评分
-    source_count=e.get('source_count',len(e.get('sources',[])))
-    verification=min(5,max(0,source_count-1)*2)
-    # 7) 时效性 5：日报窗口内越新越高；无时间不给分
-    freshness=5 if e.get('published_at') else 0
-    total=max(0,min(100,scope+severity+strategic+national+horizon+verification+freshness))
-    if total>=90: level='全球重大'
-    elif total>=80: level='国家重大'
-    elif total>=70: level='重要事件'
-    elif total>=60: level='值得关注'
-    else: level='一般动态'
-    e['importance']=total
-    e['importance_level']=level
-    e['importance_model']='V19：影响范围25/严重性20/战略政策20/国家战略15/72小时影响10/多源验证5/时效5'
+    t=text(e); country=e.get('event_country',''); tier=TIER_BY_COUNTRY.get(country,0); cat=e.get('category','')
+    scope={'global':20,0:8,1:17,2:14,3:11,4:8}.get(tier,8)
+    sev=max([SEVERE[k] for k in hits(t,SEVERE)] or [0])
+    strategic=min(20,CATEGORY.get(cat,3)+min(11,sum(STRATEGIC[k] for k in hits(t,STRATEGIC))//2))
+    national={1:12,2:9,3:7,4:5}.get(tier,4)
+    horizon={'国防安全':8,'外交':7,'政治':6,'宏观经济':6,'金融':6,'能源':6,'科技':5,'灾害':6,'产业/商业':4,'社会':3}.get(cat,4)
+    ah=hits(t,ACTION)
+    if ah:horizon=min(10,horizon+max(ACTION[k] for k in ah)//2)
+    source_count=e.get('source_count',len(e.get('sources',[]))); verify=0 if source_count<=1 else 3 if source_count==2 else 5
+    total=max(0,min(100,scope+sev+strategic+national+horizon+verify+freshness(e)))
+    level='全球重大' if total>=90 else '国家重大' if total>=80 else '重要事件' if total>=70 else '值得关注' if total>=60 else '一般动态'
+    e['importance']=int(total); e['importance_level']=level; e['importance_model']='V20：事件级动态评分；国家权重仅作背景，不决定分数'
     return e
-
 def main():
     d=json.loads(DAILY.read_text(encoding='utf-8'))
     for tier in d.get('tiers',{}).values():
-        for country in tier.values():
-            country['events']=[score(e) for e in country.get('events',[])]
-            country['events'].sort(key=lambda e:(e.get('importance',0),e.get('published_at','')),reverse=True)
-            country['count']=len(country['events'])
-    # 兼容页面可能读取的 global_top / top_events 字段
-    for key in ('global_top','top_events'):
-        if isinstance(d.get(key),list):
-            d[key]=[score(e) for e in d[key]]
-            d[key].sort(key=lambda e:(e.get('importance',0),e.get('published_at','')),reverse=True)
-    d['importance_model']={'version':'V19','dimensions':{'影响范围':25,'严重性':20,'战略政策影响':20,'国家战略地位':15,'未来72小时影响':10,'多源验证':5,'时效性':5},'levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}
-    d['version']='V19.0'
+        for c in tier.values():
+            c['events']=[score(e) for e in c.get('events',[])]; c['events'].sort(key=lambda e:(e.get('importance',0),e.get('published_at','')),reverse=True); c['count']=len(c['events'])
+    d['importance_model']={'version':'V20','principle':'事件本身优先；国家权重只作背景修正','levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}; d['version']='V20.0'
     DAILY.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
-    print('Importance scoring upgraded to V19.')
-
-if __name__=='__main__': main()
+if __name__=='__main__':main()
