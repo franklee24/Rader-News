@@ -45,58 +45,14 @@ jobs:
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
           text=text.replace(old2,new2)
 
-          # Existing extra high-quality feeds.
           marker=" # English secondary"
-          additions="""
- ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),
- ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),
- ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),
- ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),
- ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),
- ('AP US','US','https://apnews.com/hub/us-news?format=rss','en'),
- ('CNN US','US','https://rss.cnn.com/rss/edition_us.rss','en'),
- ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),
- ('TASS Politics','RU','https://tass.com/politics/?cmd=rss&ver=1.0','en'),
- ('TASS Economy','RU','https://tass.com/economy/?cmd=rss&ver=1.0','en'),
-"""
+          additions=" ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),\n ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),\n ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),\n ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),\n ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),\n ('AP US','US','https://apnews.com/hub/us-news?format=rss','en'),\n ('CNN US','US','https://rss.cnn.com/rss/edition_us.rss','en'),\n ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),\n ('TASS Politics','RU','https://tass.com/politics/?cmd=rss&ver=1.0','en'),\n ('TASS Economy','RU','https://tass.com/economy/?cmd=rss&ver=1.0','en'),\n"
           if "('NPR Politics','US'" not in text:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
 
-          # Dedicated fallback search feeds for every configured country.
-          coverage="""
- ('Coverage-India','IN','https://news.google.com/rss/search?q=India+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Brazil','BR','https://news.google.com/rss/search?q=Brazil+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Saudi Arabia','SA','https://news.google.com/rss/search?q=Saudi+Arabia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-South Korea','KR','https://news.google.com/rss/search?q=South+Korea+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Canada','CA','https://news.google.com/rss/search?q=Canada+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Australia','AU','https://news.google.com/rss/search?q=Australia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Ukraine','UA','https://news.google.com/rss/search?q=Ukraine+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Italy','IT','https://news.google.com/rss/search?q=Italy+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Indonesia','ID','https://news.google.com/rss/search?q=Indonesia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Turkey','TR','https://news.google.com/rss/search?q=Turkey+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-United Arab Emirates','AE','https://news.google.com/rss/search?q=United+Arab+Emirates+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Mexico','MX','https://news.google.com/rss/search?q=Mexico+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Iran','IR','https://news.google.com/rss/search?q=Iran+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Switzerland','CH','https://news.google.com/rss/search?q=Switzerland+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Singapore','SG','https://news.google.com/rss/search?q=Singapore+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-South Africa','ZA','https://news.google.com/rss/search?q=South+Africa+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Netherlands','NL','https://news.google.com/rss/search?q=Netherlands+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Israel','IL','https://news.google.com/rss/search?q=Israel+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Spain','ES','https://news.google.com/rss/search?q=Spain+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Egypt','EG','https://news.google.com/rss/search?q=Egypt+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Nigeria','NG','https://news.google.com/rss/search?q=Nigeria+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Argentina','AR','https://news.google.com/rss/search?q=Argentina+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Poland','PL','https://news.google.com/rss/search?q=Poland+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Vietnam','VN','https://news.google.com/rss/search?q=Vietnam+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-United States','US','https://news.google.com/rss/search?q=United+States+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-China','CN','https://news.google.com/rss/search?q=China+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-United Kingdom','GB','https://news.google.com/rss/search?q=United+Kingdom+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-France','FR','https://news.google.com/rss/search?q=France+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Germany','DE','https://news.google.com/rss/search?q=Germany+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Russia','RU','https://news.google.com/rss/search?q=Russia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
- ('Coverage-Japan','JP','https://news.google.com/rss/search?q=Japan+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
-"""
+          countries={'IN':'India','BR':'Brazil','SA':'Saudi Arabia','KR':'South Korea','CA':'Canada','AU':'Australia','UA':'Ukraine','IT':'Italy','ID':'Indonesia','TR':'Turkey','AE':'United Arab Emirates','MX':'Mexico','IR':'Iran','CH':'Switzerland','SG':'Singapore','ZA':'South Africa','NL':'Netherlands','IL':'Israel','ES':'Spain','EG':'Egypt','NG':'Nigeria','AR':'Argentina','PL':'Poland','VN':'Vietnam','US':'United States','CN':'China','GB':'United Kingdom','FR':'France','DE':'Germany','RU':'Russia','JP':'Japan'}
+          coverage=''.join(f" ('Coverage-{name}','{code}','https://news.google.com/rss/search?q={name.replace(' ','+')}+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),\n" for code,name in countries.items())
           if "('Coverage-India','IN'" not in text:
               if marker not in text: raise SystemExit('COVERAGE INSERT FAILED')
               text=text.replace(marker, coverage+marker)
@@ -171,7 +127,6 @@ jobs:
           for tier_name,countries in cfg['tiers'].items():
               for c in countries:
                   ev=[e for e in events if e.get('event_country')==c['name']]
-                  src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
                   if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")
           if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
           tier1=[c['name'] for c in cfg['tiers']['tier1']]
