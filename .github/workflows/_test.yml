@@ -1,0 +1,10 @@
+name: Workflow Syntax Test
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/_test.yml']
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo workflow-ok
