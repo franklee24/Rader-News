@@ -1,0 +1,54 @@
+name: 修复雷达导航交互
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '.github/workflows/fix-radar-ui.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  fix-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Fix radar pointer events
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          old='.radar-ui{position:fixed;right:18px;bottom:18px;width:380px;height:380px;z-index:50;pointer-events:none}'
+          new='.radar-ui{position:fixed;right:18px;bottom:18px;width:380px;height:380px;z-index:9999;pointer-events:auto;touch-action:none}'
+          if old not in s: raise SystemExit('RADAR CONTAINER PATCH TARGET NOT FOUND')
+          s=s.replace(old,new,1)
+          old2='.radar-ui:before{content:"";position:absolute;'
+          new2='.radar-ui:before{pointer-events:none;content:"";position:absolute;'
+          if old2 not in s: raise SystemExit('RADAR PSEUDO PATCH TARGET NOT FOUND')
+          s=s.replace(old2,new2,1)
+          old3='.radar-item{position:absolute;'
+          new3='.radar-item{position:absolute;z-index:2;touch-action:manipulation;'
+          if old3 not in s: raise SystemExit('RADAR ITEM PATCH TARGET NOT FOUND')
+          s=s.replace(old3,new3,1)
+          old4='.radar-launcher{position:absolute;'
+          new4='.radar-launcher{position:absolute;z-index:3;touch-action:manipulation;'
+          if old4 not in s: raise SystemExit('RADAR LAUNCHER PATCH TARGET NOT FOUND')
+          s=s.replace(old4,new4,1)
+          p.write_text(s,encoding='utf-8')
+          print('Radar pointer-event fix applied')
+          PY
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy Pages
+        uses: actions/deploy-pages@v4
