@@ -2,8 +2,10 @@ name: 雷达新闻每日更新
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/daily.yml'
   schedule:
-    # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
     - cron: '0 0 * * *'
 
 permissions:
@@ -25,19 +27,76 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Lock builder to the fixed Beijing 08:00 window
+
+      - name: Lock builder to exact Beijing 08:00 window
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('scripts/build_daily.py')
           text=p.read_text(encoding='utf-8')
-          old='now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)'
+          old="now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
           new="now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
-          if old not in text: raise SystemExit('WINDOW PATCH FAILED')
-          p.write_text(text.replace(old,new),encoding='utf-8')
+          if old not in text: raise SystemExit('WINDOW PATCH FAILED: cutoff expression not found')
+          text=text.replace(old,new)
+          old2='if p and p<cutoff:continue'
+          new2='if p and (p<cutoff or p>=anchor):continue'
+          if old2 not in text: raise SystemExit('WINDOW PATCH FAILED: upper-bound expression not found')
+          text=text.replace(old2,new2)
+          p.write_text(text,encoding='utf-8')
+          print('Exact window:', cutoff.isoformat() if False else 'previous Beijing 08:00 -> current Beijing 08:00')
           PY
+
       - name: Build daily news
         run: python scripts/build_daily.py
+
+      - name: Remove events already shown in the previous daily edition
+        run: |
+          python - <<'PY'
+          import json, re
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          BJ=timezone(timedelta(hours=8)); UTC=timezone.utc
+          root=Path('.')
+          daily=root/'data/daily.json'
+          d=json.loads(daily.read_text(encoding='utf-8'))
+          now=datetime.now(UTC).astimezone(BJ)
+          anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
+          if now < anchor: anchor-=timedelta(days=1)
+          prev_date=(anchor.date()-timedelta(days=1)).isoformat()
+          prev_path=root/'data/history'/f'{prev_date}.json'
+          prev=json.loads(prev_path.read_text(encoding='utf-8')) if prev_path.exists() else {}
+          old_ids=set(); old_urls=set(); old_titles=set()
+          def norm(s): return re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
+          def collect(x):
+              if not isinstance(x,dict): return
+              if x.get('id'): old_ids.add(x['id'])
+              if x.get('url'): old_urls.add(x['url'])
+              if x.get('source_url'): old_urls.add(x['source_url'])
+              if x.get('title'): old_titles.add(norm(x['title']))
+          for tier in prev.get('tiers',{}).values():
+              for country in tier.values():
+                  for e in country.get('events',[]): collect(e)
+          for e in prev.get('supplement',[]): collect(e)
+          removed=0
+          for tier in d.get('tiers',{}).values():
+              for country in tier.values():
+                  keep=[]
+                  for e in country.get('events',[]):
+                      duplicate=e.get('id') in old_ids or e.get('url') in old_urls or norm(e.get('title')) in old_titles
+                      if duplicate: removed+=1
+                      else: keep.append(e)
+                  country['events']=keep
+                  country['count']=len(keep)
+          d['global_top']=[e['id'] for tier in d.get('tiers',{}).values() for country in tier.values() for e in country.get('events',[])][:20]
+          d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
+          d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
+          d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed}
+          daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+          hist=root/'data/history'/f'{anchor.date().isoformat()}.json'
+          hist.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Removed previous-edition duplicates:',removed)
+          PY
+
       - name: Validate fixed window and quality
         run: |
           python - <<'PY'
@@ -46,37 +105,41 @@ jobs:
           from pathlib import Path
           BJ=timezone(timedelta(hours=8)); UTC=timezone.utc
           d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
-          now=datetime.now(UTC).astimezone(BJ); anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
+          now=datetime.now(UTC).astimezone(BJ)
+          anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
           if now < anchor: anchor-=timedelta(days=1)
           start=anchor-timedelta(days=1); end=anchor; su=start.astimezone(UTC); eu=end.astimezone(UTC)
-          events=d.get('events',[])
+          events=[e for tier in d.get('tiers',{}).values() for country in tier.values() for e in country.get('events',[])]
           if not events: raise SystemExit('QUALITY GATE FAILED: no events')
           bad=[]
           for e in events:
-              ts=e.get('published_at')
-              try: t=datetime.fromisoformat(ts.replace('Z','+00:00')).astimezone(UTC)
+              try: t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
               except Exception: bad.append(e.get('title','')); continue
               if t<su or t>=eu: bad.append(e.get('title',''))
-          if bad: raise SystemExit(f'QUALITY GATE FAILED: {len(bad)} outside fixed window')
-          cfg=json.loads(Path('config.json').read_text(encoding='utf-8')); tier1=cfg['tiers']['Tier 1']
-          counts={c:0 for c in tier1}; src={c:set() for c in tier1}
-          for e in events:
-              c=e.get('event_country')
-              if c in counts:
-                  counts[c]+=1
-                  src[c].update((s.get('name') or '').strip() for s in e.get('sources',[]) if s.get('name'))
+          if bad: raise SystemExit(f'QUALITY GATE FAILED: {len(bad)} events outside fixed window')
+          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
+          tier1=[c['name'] for c in cfg['tiers']['tier1']]
           for c in tier1:
-              if counts[c]<1: raise SystemExit(f'QUALITY GATE FAILED: zero events {c}')
-              if len(src[c])<3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 sources {c}: {len(src[c])}')
-          print('QUALITY GATE PASSED',start,end); print(counts); print({c:len(src[c]) for c in tier1})
+              ev=[e for e in events if e.get('event_country')==c]
+              if not ev: raise SystemExit(f'QUALITY GATE FAILED: zero events: {c}')
+              sources=set(s.get('source','') for e in ev for s in e.get('sources',[]) if s.get('source'))
+              if len(sources)<3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 sources for {c}: {len(sources)}')
+          ids=[(e.get('event_country'),e.get('id')) for e in events]
+          if len(ids)!=len(set(ids)): raise SystemExit('QUALITY GATE FAILED: duplicate event IDs remain')
+          print('QUALITY GATE PASSED')
+          print('Window:',start,'->',end)
+          print('Events:',len(events))
+          print('Tier1:',{c:sum(1 for e in events if e.get('event_country')==c) for c in tier1})
           PY
+
       - name: Commit daily snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily.json
+          git add data/daily.json data/history/
           git diff --cached --quiet || git commit -m "data: update daily radar"
           git push
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
