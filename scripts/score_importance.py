@@ -42,3 +42,4 @@ def main():
     d['importance_model']={'version':'V20','principle':'事件本身优先；国家权重只作背景修正','levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}; d['version']='V20.0'
     DAILY.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()
+# V20 hotfix: trigger the standalone rescore workflow for the current snapshot.
