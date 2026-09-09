@@ -11,6 +11,7 @@ AUTH={'reuters.com':1.0,'apnews.com':.95,'bbc.com':.9,'bbc.co.uk':.9,'nytimes.co
 ALIASES={'美国':['United States','USA','Washington','Trump','White House'],'中国':['China','Chinese','Beijing','Shanghai','PBOC'],'英国':['United Kingdom','UK','Britain','London','Starmer'],'法国':['France','French','Paris','Macron'],'德国':['Germany','German','Berlin','Merz'],'俄罗斯':['Russia','Russian','Moscow','Kremlin','Putin'],'日本':['Japan','Japanese','Tokyo','Nikkei','BOJ'],'印度':['India','Indian','New Delhi','Modi'],'巴西':['Brazil','Brazilian','Brasilia'],'沙特阿拉伯':['Saudi Arabia','Saudi','Riyadh'],'韩国':['South Korea','Korea','Seoul','Yonhap'],'加拿大':['Canada','Canadian','Ottawa'],'澳大利亚':['Australia','Australian','Canberra'],'乌克兰':['Ukraine','Ukrainian','Kyiv','Zelensky'],'意大利':['Italy','Italian','Rome'],'印度尼西亚':['Indonesia','Indonesian','Jakarta'],'土耳其':['Turkey','Turkish','Ankara','Istanbul'],'阿联酋':['United Arab Emirates','UAE','Dubai','Abu Dhabi'],'墨西哥':['Mexico','Mexican','Mexico City'],'伊朗':['Iran','Iranian','Tehran'],'瑞士':['Switzerland','Swiss','Geneva','Zurich'],'新加坡':['Singapore','Singaporean'],'南非':['South Africa','South African','Pretoria','Johannesburg'],'荷兰':['Netherlands','Dutch','Amsterdam','The Hague'],'以色列':['Israel','Israeli','Jerusalem','Tel Aviv'],'西班牙':['Spain','Spanish','Madrid'],'埃及':['Egypt','Egyptian','Cairo'],'尼日利亚':['Nigeria','Nigerian','Abuja','Lagos'],'阿根廷':['Argentina','Argentine','Buenos Aires'],'波兰':['Poland','Polish','Warsaw'],'越南':['Vietnam','Vietnamese','Hanoi','Ho Chi Minh']}
 TOPICS=['(government OR president OR election OR parliament OR minister OR policy)','(economy OR economic OR inflation OR GDP OR trade OR tariff OR market OR company OR industry)','(military OR defense OR missile OR war OR diplomacy OR summit OR sanction OR energy OR technology OR AI)']
 HIGH=['war','sanction','tariff','election','rate','missile','nuclear','crisis','treaty','strike','earthquake','战争','制裁','关税','利率','选举','导弹','核','危机','条约','地震']
+ALLOWED_LANGS={'en','english','cn','chinese','zh','zh-cn','zh-hans'}
 def norm(s):
     s=re.sub(r'https?://\S+',' ',(s or '').lower()); s=re.sub(r'[^\w]+',' ',s,flags=re.UNICODE); return ' '.join(s.split())
 def sim(a,b):
@@ -27,7 +28,12 @@ def fetch(query,start,end,maxrecords=160):
 def main():
     data=json.loads(DAILY.read_text(encoding='utf-8')); bj=timezone(timedelta(hours=8)); now=datetime.now(timezone.utc).astimezone(bj); anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
     if now<anchor: anchor-=timedelta(days=1)
-    start=anchor-timedelta(days=1); end=anchor; tier_targets={'tier1':10,'tier2':8,'tier3':8,'tier4':8}; added=0
+    start=anchor-timedelta(days=1); end=anchor; tier_targets={'tier1':10,'tier2':8,'tier3':8,'tier4':8}; added=0; removed=0
+    # 清掉本轮扩展产生的旧结果，重新严格归属，避免错误国家新闻被永久保留。
+    for tier,bucket in data.get('tiers',{}).items():
+        for name,current in bucket.items():
+            old=current.get('events',[]); clean=[e for e in old if '覆盖扩展补充' not in str(e.get('importance_model',''))]
+            removed += len(old)-len(clean); current['events']=clean; current['count']=len(clean)
     for tier,countries in CFG['countries'].items():
         bucket=data.get('tiers',{}).get(tier,{})
         for c in countries:
@@ -37,7 +43,9 @@ def main():
             for q in [f'({alias_q})']+[f'({alias_q}) AND {t}' for t in TOPICS]:
                 try:
                     for a in fetch(q,start,end):
-                        url=a.get('url') or a.get('url_mobile') or ''; title=(a.get('title') or '').strip()
+                        url=a.get('url') or a.get('url_mobile') or ''; title=(a.get('title') or '').strip(); desc=(a.get('snippet') or a.get('description') or '').strip(); lang=(a.get('language') or '').lower(); text=(title+' '+desc).lower()
+                        if not any(alias.lower() in text for alias in aliases): continue
+                        if lang and lang not in ALLOWED_LANGS: continue
                         if url and len(title)>=12: candidates[url]=a
                 except Exception as ex: print('coverage query error',name,ex)
             ranked=[]
@@ -54,5 +62,5 @@ def main():
         data.setdefault('tiers',{})[tier]=bucket
     if 'stats' in data:
         data['stats']['events']=sum(len(c.get('events',[])) for t in data.get('tiers',{}).values() for c in t.values()); data['stats']['tier1_events']=sum(len(c.get('events',[])) for c in data.get('tiers',{}).get('tier1',{}).values())
-    data['coverage_expand']={'target_tier1':10,'target_other_tiers':8,'added':added,'window_start':start.isoformat(),'window_end':end.isoformat()}; DAILY.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); HISTORY.mkdir(parents=True,exist_ok=True); (HISTORY/f'{anchor.date().isoformat()}.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); print('coverage expansion added',added,'events')
+    data['coverage_expand']={'target_tier1':10,'target_other_tiers':8,'added':added,'removed_bad_expansion':removed,'window_start':start.isoformat(),'window_end':end.isoformat()}; DAILY.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); HISTORY.mkdir(parents=True,exist_ok=True); (HISTORY/f'{anchor.date().isoformat()}.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); print('coverage expansion added',added,'events; removed old expansion',removed)
 if __name__=='__main__': main()
