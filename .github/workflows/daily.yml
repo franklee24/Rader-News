@@ -147,6 +147,7 @@ jobs:
             echo "No snapshot changes to commit"
           else
             git commit -m "data: update daily radar"
+            git restore scripts/build_daily.py
             git fetch origin main
             GIT_EDITOR=true git rebase -X theirs origin/main
             git push origin HEAD:main
