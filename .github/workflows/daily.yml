@@ -32,64 +32,47 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-
-      - name: Expand source coverage and lock Beijing 08:00 window
+      - name: Lock builder to exact Beijing 08:00 window and expand source coverage
         run: |
           python - <<'PY'
           from pathlib import Path
-          p=Path('scripts/build_daily.py')
-          text=p.read_text(encoding='utf-8')
-
-          # 严格锁定：上一自然日北京时间08:00 → 当前自然日北京时间08:00
+          p=Path('scripts/build_daily.py'); text=p.read_text(encoding='utf-8')
           old="now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
           new="now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
           if old not in text: raise SystemExit('WINDOW PATCH FAILED')
           text=text.replace(old,new)
-          old2='if p and p<cutoff:continue'
-          new2='if p and (p<cutoff or p>=anchor):continue'
+          old2='if p and p<cutoff:continue'; new2='if p and (p<cutoff or p>=anchor):continue'
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
           text=text.replace(old2,new2)
-
-          # 扩充一线国家本地/专业媒体，解决“有新闻但抓不到”的问题。
           marker=" # English secondary"
           additions="""
+ ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),
+ ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),
  ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),
  ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),
  ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),
  ('AP US','US','https://apnews.com/hub/us-news?format=rss','en'),
  ('CNN US','US','https://rss.cnn.com/rss/edition_us.rss','en'),
  ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),
- ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),
  ('TASS Politics','RU','https://tass.com/politics/?cmd=rss&ver=1.0','en'),
  ('TASS Economy','RU','https://tass.com/economy/?cmd=rss&ver=1.0','en'),
- ('NHK World','JP','https://www3.nhk.or.jp/nhkworld/en/news/feeds/','en'),
 """
           if "('NPR Politics','US'" not in text:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
-
-          # 英文源不再只允许20%，避免一个国家被中文源占满；仍优先中文/本地源。
-          old3="en_cap=max(2,int(c['max']*0.20))"
-          new3="en_cap=max(4,int(c['max']*0.50))"
+          old3="en_cap=max(2,int(c['max']*0.20))"; new3="en_cap=max(4,int(c['max']*0.50))"
           if old3 not in text: raise SystemExit('EN CAP PATCH FAILED')
           text=text.replace(old3,new3)
-
-          # 展示来源优先级：本国媒体 > 中文媒体 > 英文国际媒体。
           old4="zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]"
           new4="local=[s for s in srcs if s.get('feed_country')==e.get('code')]; zh=[s for s in srcs if s.get('language')=='cn']; en=[s for s in srcs if s.get('language')=='en']; best=(local or zh or en or srcs)[0]"
-          if old4 in text:
-              text=text.replace(old4,new4)
-
+          if old4 in text: text=text.replace(old4,new4)
           p.write_text(text,encoding='utf-8')
           PY
-
       - name: Build daily news
         run: python scripts/build_daily.py
-
       - name: Apply V20 importance scoring
         run: python scripts/score_importance.py
-
-      - name: Remove repeats from previous edition and undated events
+      - name: Remove repeats and undated events
         run: |
           python - <<'PY'
           import json,re
@@ -117,8 +100,7 @@ jobs:
                   keep=[]
                   for e in c.get('events',[]):
                       if not e.get('published_at'): undated+=1; continue
-                      if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles:
-                          removed+=1
+                      if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles: removed+=1
                       else: keep.append(e)
                   c['events']=keep; c['count']=len(keep)
           d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
@@ -128,15 +110,13 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
-
-      - name: Validate window and coverage
+      - name: Validate fixed window and quality
         run: |
           python - <<'PY'
           import json
           from datetime import datetime,timezone,timedelta
           from pathlib import Path
-          BJ=timezone(timedelta(hours=8)); UTC=timezone.utc
-          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          BJ=timezone(timedelta(hours=8)); UTC=timezone.utc; d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
           now=datetime.now(UTC).astimezone(BJ); anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
           if now<anchor: anchor-=timedelta(days=1)
           start=anchor-timedelta(days=1); end=anchor; su=start.astimezone(UTC); eu=end.astimezone(UTC)
@@ -145,25 +125,21 @@ jobs:
           for e in events:
               t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
               if t<su or t>=eu: raise SystemExit('QUALITY GATE FAILED: event outside fixed window: '+e.get('title',''))
-          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
+          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8')); tier1=[c['name'] for c in cfg['tiers']['tier1']]
           warnings={}
-          for country in cfg['tiers']['tier1']:
-              ev=[e for e in events if e.get('event_country')==country['name']]
+          for country in tier1:
+              ev=[e for e in events if e.get('event_country')==country]
               src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
-              if len(ev)<country['min'] or len(src)<3:
-                  warnings[country['name']]={'events':len(ev),'target_min':country['min'],'sources':len(src)}
+              if len(ev)<8 or len(src)<3: warnings[country]={'events':len(ev),'sources':len(src)}
           print('QUALITY GATE PASSED',start,end)
           if warnings: print('TIER1 COVERAGE WARNINGS:',warnings)
           PY
-
       - name: Commit daily snapshot
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/daily.json data/history/
           git diff --cached --quiet || git commit -m "data: update daily radar"
           git push
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
