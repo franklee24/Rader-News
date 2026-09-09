@@ -1,0 +1,31 @@
+name: Rescore Radar Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/score_importance.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rescore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Apply V20 scoring
+        run: python scripts/score_importance.py
+      - name: Commit rescored data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily.json
+          git diff --cached --quiet || git commit -m "data: apply V20 importance scoring"
+          git push
