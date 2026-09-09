@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Lock builder window and expand country coverage
+      - name: Lock builder window, expand country coverage and set source priority
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -51,6 +51,13 @@ jobs:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
 
+          # International Chinese sources: prefer these over mainland Chinese media when no suitable local/Western source exists.
+          intl_marker=" ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),"
+          intl_add=" ('纽约时报中文网','GLOBAL','https://cn.nytimes.com/rss/','cn'),\n"
+          if "('纽约时报中文网','GLOBAL'" not in text:
+              if intl_marker not in text: raise SystemExit('NYT CHINESE SOURCE PATCH FAILED')
+              text=text.replace(intl_marker, intl_marker+"\n"+intl_add)
+
           countries={'IN':'India','BR':'Brazil','SA':'Saudi Arabia','KR':'South Korea','CA':'Canada','AU':'Australia','UA':'Ukraine','IT':'Italy','ID':'Indonesia','TR':'Turkey','AE':'United Arab Emirates','MX':'Mexico','IR':'Iran','CH':'Switzerland','SG':'Singapore','ZA':'South Africa','NL':'Netherlands','IL':'Israel','ES':'Spain','EG':'Egypt','NG':'Nigeria','AR':'Argentina','PL':'Poland','VN':'Vietnam','US':'United States','CN':'China','GB':'United Kingdom','FR':'France','DE':'Germany','RU':'Russia','JP':'Japan'}
           coverage=''.join(f" ('Coverage-{name}','{code}','https://news.google.com/rss/search?q={name.replace(' ','+')}+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),\n" for code,name in countries.items())
           if "('Coverage-India','IN'" not in text:
@@ -60,9 +67,18 @@ jobs:
           old3="en_cap=max(2,int(c['max']*0.20))"; new3="en_cap=max(4,int(c['max']*0.50))"
           if old3 not in text: raise SystemExit('EN CAP PATCH FAILED')
           text=text.replace(old3,new3)
+
+          # Source hierarchy:
+          # 1) the country's own credible outlet;
+          # 2) US/UK/France/Germany major outlets;
+          # 3) international Chinese editions (BBC Chinese, NYT Chinese, Reuters Chinese, RFI Chinese, Zaobao);
+          # 4) other English international sources;
+          # 5) mainland Chinese outlets only as last resort.
           old4="zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]"
-          new4="local=[s for s in srcs if s.get('feed_country')==e.get('code')]; zh=[s for s in srcs if s.get('language')=='cn']; en=[s for s in srcs if s.get('language')=='en']; best=(local or zh or en or srcs)[0]"
-          if old4 in text: text=text.replace(old4,new4)
+          new4="local=[s for s in srcs if s.get('feed_country')==e.get('code') and s.get('source') not in {'Coverage-'+str(e.get('event_country',''))}]; western=[s for s in srcs if s.get('source') in {'Reuters World','BBC World','AP World','Guardian UK','NPR','NPR Politics','NPR Economy','NPR Technology','AP US','CNN US','NYT US','BBC UK','France24','DW','TASS','TASS Politics','TASS Economy','NHK','Moscow Times'}]; intl_zh=[s for s in srcs if s.get('source') in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; other_en=[s for s in srcs if s.get('language')=='en']; mainland=[s for s in srcs if s.get('language')=='cn' and s.get('source') not in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; best=(local or western or intl_zh or other_en or mainland or srcs)[0]"
+          if old4 not in text: raise SystemExit('SOURCE PRIORITY PATCH FAILED')
+          text=text.replace(old4,new4)
+
           p.write_text(text,encoding='utf-8')
           PY
       - name: Build daily news
