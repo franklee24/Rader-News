@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Lock builder to exact Beijing 08:00 window and expand source coverage
+      - name: Lock builder window and expand country coverage
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -44,6 +44,8 @@ jobs:
           old2='if p and p<cutoff:continue'; new2='if p and (p<cutoff or p>=anchor):continue'
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
           text=text.replace(old2,new2)
+
+          # Existing extra high-quality feeds.
           marker=" # English secondary"
           additions="""
  ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),
@@ -60,6 +62,45 @@ jobs:
           if "('NPR Politics','US'" not in text:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
+
+          # Dedicated fallback search feeds for every configured country.
+          coverage="""
+ ('Coverage-India','IN','https://news.google.com/rss/search?q=India+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Brazil','BR','https://news.google.com/rss/search?q=Brazil+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Saudi Arabia','SA','https://news.google.com/rss/search?q=Saudi+Arabia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-South Korea','KR','https://news.google.com/rss/search?q=South+Korea+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Canada','CA','https://news.google.com/rss/search?q=Canada+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Australia','AU','https://news.google.com/rss/search?q=Australia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Ukraine','UA','https://news.google.com/rss/search?q=Ukraine+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Italy','IT','https://news.google.com/rss/search?q=Italy+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Indonesia','ID','https://news.google.com/rss/search?q=Indonesia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Turkey','TR','https://news.google.com/rss/search?q=Turkey+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-United Arab Emirates','AE','https://news.google.com/rss/search?q=United+Arab+Emirates+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Mexico','MX','https://news.google.com/rss/search?q=Mexico+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Iran','IR','https://news.google.com/rss/search?q=Iran+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Switzerland','CH','https://news.google.com/rss/search?q=Switzerland+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Singapore','SG','https://news.google.com/rss/search?q=Singapore+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-South Africa','ZA','https://news.google.com/rss/search?q=South+Africa+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Netherlands','NL','https://news.google.com/rss/search?q=Netherlands+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Israel','IL','https://news.google.com/rss/search?q=Israel+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Spain','ES','https://news.google.com/rss/search?q=Spain+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Egypt','EG','https://news.google.com/rss/search?q=Egypt+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Nigeria','NG','https://news.google.com/rss/search?q=Nigeria+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Argentina','AR','https://news.google.com/rss/search?q=Argentina+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Poland','PL','https://news.google.com/rss/search?q=Poland+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Vietnam','VN','https://news.google.com/rss/search?q=Vietnam+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-United States','US','https://news.google.com/rss/search?q=United+States+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-China','CN','https://news.google.com/rss/search?q=China+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-United Kingdom','GB','https://news.google.com/rss/search?q=United+Kingdom+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-France','FR','https://news.google.com/rss/search?q=France+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Germany','DE','https://news.google.com/rss/search?q=Germany+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Russia','RU','https://news.google.com/rss/search?q=Russia+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Coverage-Japan','JP','https://news.google.com/rss/search?q=Japan+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),
+"""
+          if "('Coverage-India','IN'" not in text:
+              if marker not in text: raise SystemExit('COVERAGE INSERT FAILED')
+              text=text.replace(marker, coverage+marker)
+
           old3="en_cap=max(2,int(c['max']*0.20))"; new3="en_cap=max(4,int(c['max']*0.50))"
           if old3 not in text: raise SystemExit('EN CAP PATCH FAILED')
           text=text.replace(old3,new3)
@@ -110,7 +151,7 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
-      - name: Validate fixed window and quality
+      - name: Validate fixed window and country coverage
         run: |
           python - <<'PY'
           import json
@@ -125,7 +166,15 @@ jobs:
           for e in events:
               t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
               if t<su or t>=eu: raise SystemExit('QUALITY GATE FAILED: event outside fixed window: '+e.get('title',''))
-          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8')); tier1=[c['name'] for c in cfg['tiers']['tier1']]
+          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
+          coverage=[]
+          for tier_name,countries in cfg['tiers'].items():
+              for c in countries:
+                  ev=[e for e in events if e.get('event_country')==c['name']]
+                  src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
+                  if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")
+          if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
+          tier1=[c['name'] for c in cfg['tiers']['tier1']]
           warnings={}
           for country in tier1:
               ev=[e for e in events if e.get('event_country')==country]
