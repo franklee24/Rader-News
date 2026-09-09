@@ -16,7 +16,7 @@ def parse_time(s):
     try:return dt.datetime.fromisoformat(s.replace('Z','+00:00'))
     except:return None
 def freshness(e):
-    p=parse_time(e.get('published_at','')); now=dt.datetime.now(dt.timezone.utc)
+    p=parse_time(e.get('published_at') or ''); now=dt.datetime.now(dt.timezone.utc)
     if not p:return 0
     h=max(0,(now-p).total_seconds()/3600)
     return 5 if h<=4 else 4 if h<=8 else 3 if h<=14 else 2 if h<=20 else 1
@@ -38,8 +38,8 @@ def main():
     d=json.loads(DAILY.read_text(encoding='utf-8'))
     for tier in d.get('tiers',{}).values():
         for c in tier.values():
-            c['events']=[score(e) for e in c.get('events',[])]; c['events'].sort(key=lambda e:(e.get('importance',0),e.get('published_at','')),reverse=True); c['count']=len(c['events'])
+            c['events']=[score(e) for e in c.get('events',[])]; c['events'].sort(key=lambda e:(e.get('importance',0),e.get('published_at') or ''),reverse=True); c['count']=len(c['events'])
     d['importance_model']={'version':'V20','principle':'事件本身优先；国家权重只作背景修正','levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}; d['version']='V20.0'
     DAILY.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()
-# V20 hotfix: trigger the standalone rescore workflow for the current snapshot.
+# V20 hotfix: tolerate undated events during scoring; final workflow still removes them before publication.
