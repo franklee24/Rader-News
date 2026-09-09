@@ -2,6 +2,13 @@ name: 雷达新闻每日更新
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'config/**'
+      - 'index.html'
+      - '.github/workflows/daily.yml'
   schedule:
     # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
     - cron: '0 0 * * *'
@@ -52,7 +59,7 @@ jobs:
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
-      - name: Apply V19 importance scoring
+      - name: Apply V20 importance scoring
         run: python scripts/score_importance.py
       - name: Remove repeats and undated events
         run: |
