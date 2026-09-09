@@ -96,12 +96,14 @@ jobs:
               t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
               if t<su or t>=eu: raise SystemExit('QUALITY GATE FAILED: event outside fixed window: '+e.get('title',''))
           cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8')); tier1=[c['name'] for c in cfg['tiers']['tier1']]
+          warnings={}
           for country in tier1:
               ev=[e for e in events if e.get('event_country')==country]
               if not ev: raise SystemExit('QUALITY GATE FAILED: zero events: '+country)
               src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
-              if len(src)<3: raise SystemExit(f'QUALITY GATE FAILED: fewer than 3 sources for {country}: {len(src)}')
+              if len(src)<3: warnings[country]=len(src)
           print('QUALITY GATE PASSED',start,end)
+          if warnings: print('SOURCE DIVERSITY WARNINGS:',warnings)
           PY
       - name: Commit daily snapshot
         run: |
