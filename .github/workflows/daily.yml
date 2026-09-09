@@ -42,7 +42,7 @@ jobs:
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
-      - name: Remove events already shown in previous daily edition
+      - name: Remove repeats and undated events
         run: |
           python - <<'PY'
           import json,re
@@ -54,8 +54,7 @@ jobs:
           if now<anchor: anchor-=timedelta(days=1)
           prev_date=(anchor.date()-timedelta(days=1)).isoformat(); pp=root/'data/history'/f'{prev_date}.json'
           prev=json.loads(pp.read_text(encoding='utf-8')) if pp.exists() else {}
-          ids=set(); urls=set(); titles=set()
-          norm=lambda s: re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
+          ids=set(); urls=set(); titles=set(); norm=lambda s: re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
           def add(e):
               if e.get('id'): ids.add(e['id'])
               if e.get('url'): urls.add(e['url'])
@@ -65,20 +64,21 @@ jobs:
               for c in tier.values():
                   for e in c.get('events',[]): add(e)
           for e in prev.get('supplement',[]): add(e)
-          removed=0
+          removed=0; undated=0
           for tier in d.get('tiers',{}).values():
               for c in tier.values():
                   keep=[]
                   for e in c.get('events',[]):
+                      if not e.get('published_at'): undated+=1; continue
                       if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles: removed+=1
                       else: keep.append(e)
                   c['events']=keep; c['count']=len(keep)
           d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
           d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
-          d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed}
+          d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed,'undated_removed':undated}
           daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
-          print('Removed previous-edition duplicates:',removed)
+          print('Removed repeats:',removed,'undated:',undated)
           PY
       - name: Validate fixed window and quality
         run: |
@@ -113,7 +113,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
-        with: {path: .}
+        with:
+          path: .
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
