@@ -36,7 +36,22 @@ jobs:
           text=text.replace(old,new)
           old2='if p and p<cutoff:continue'; new2='if p and (p<cutoff or p>=anchor):continue'
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
-          p.write_text(text.replace(old2,new2),encoding='utf-8')
+          text=text.replace(old2,new2)
+          # Foreign-country local media: English only, except when a Chinese edition is actually available.
+          marker=" # English secondary"
+          additions="""
+ ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),
+ ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),
+"""
+          if "('Guardian UK','GB'" not in text:
+              if marker not in text: raise SystemExit('SOURCE PATCH FAILED: marker not found')
+              text=text.replace(marker, additions+marker)
+          old3="zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]"
+          new3="local=[s for s in srcs if s.get('feed_country')==e.get('code')]; zh=[s for s in srcs if s.get('language')=='cn']; en=[s for s in srcs if s.get('language')=='en']; best=(local or zh or en or srcs)[0]"
+          if old3 not in text: raise SystemExit('SOURCE PRIORITY PATCH FAILED')
+          text=text.replace(old3,new3)
+          p.write_text(text,encoding='utf-8')
+          print('Source policy: local English media first for foreign countries; Chinese edition first only when present; other languages excluded.')
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
