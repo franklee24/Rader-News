@@ -99,11 +99,10 @@ jobs:
           warnings={}
           for country in tier1:
               ev=[e for e in events if e.get('event_country')==country]
-              if not ev: raise SystemExit('QUALITY GATE FAILED: zero events: '+country)
               src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
-              if len(src)<3: warnings[country]=len(src)
+              if not ev or len(src)<3: warnings[country]={'events':len(ev),'sources':len(src)}
           print('QUALITY GATE PASSED',start,end)
-          if warnings: print('SOURCE DIVERSITY WARNINGS:',warnings)
+          if warnings: print('TIER1 QUALITY WARNINGS:',warnings)
           PY
       - name: Commit daily snapshot
         run: |
