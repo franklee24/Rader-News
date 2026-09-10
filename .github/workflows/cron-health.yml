@@ -1,14 +1,19 @@
 name: 雷达新闻每日调度守护
 
 # UTC cron is intentional: it avoids timezone-parser ambiguity. The watchdog
-# retries several times around 08:00 Beijing and dispatches the production
-# workflow through workflow_dispatch, which GitHub permits from GITHUB_TOKEN.
+# retries several times around 08:00 Beijing and can dispatch the production
+# workflow through workflow_dispatch.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cron-health.yml'
+      - '.github/workflows/daily.yml'
+      - 'scripts/**'
+      - 'config/**'
   schedule:
     - cron: '7,17,27,37,47,57 0 * * *'
-    # One-time live validation today: 06:07 UTC = 14:07 Beijing.
-    - cron: '7 6 10 9 *'
 
 permissions:
   actions: write
@@ -37,7 +42,6 @@ jobs:
           now=datetime.now(timezone.utc).astimezone(bj)
           event='${{ github.event_name }}'
           force=event in {'push','workflow_dispatch'}
-          scheduled_validation=(event=='schedule' and now.date().isoformat()=='2026-09-10' and now.hour==14 and now.minute<20)
           try:
               d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
               generated=d.get('generated_beijing','')
@@ -45,7 +49,7 @@ jobs:
           except Exception:
               generated=''
               complete=False
-          run_production=force or scheduled_validation or (now.hour == 8 and not complete)
+          run_production=force or (now.hour == 8 and not complete)
           print('NOW_BEIJING=',now.isoformat())
           print('EVENT=',event)
           print('DAILY_GENERATED_BEIJING=',generated)
