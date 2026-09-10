@@ -34,3 +34,4 @@ jobs:
           git add .github/workflows/daily.yml
           git commit -m "fix: discard future-dated radar events" || exit 0
           git push origin HEAD:main
+# second trigger to execute the repair
