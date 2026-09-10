@@ -1,17 +1,12 @@
 {
-  "generated_at": "2026-09-10T01:51:33.928470+00:00",
-  "generated_beijing": "2026-09-10 09:51",
+  "generated_at": "2026-09-10T01:52:25.974181+00:00",
+  "generated_beijing": "2026-09-10 09:52",
   "window_hours": 24,
   "version": "V20.0",
   "source_mode": "chinese-first-direct-rss",
   "source_total": 73,
   "source_ok": 60,
   "failures": [
-    {
-      "source": "央视-财经",
-      "country": "GLOBAL",
-      "error": "XML multi-byte encodings are not supported"
-    },
     {
       "source": "央视-国内",
       "country": "GLOBAL",
@@ -23,9 +18,14 @@
       "error": "XML multi-byte encodings are not supported"
     },
     {
-      "source": "央视-国际",
+      "source": "央视-财经",
       "country": "GLOBAL",
       "error": "XML multi-byte encodings are not supported"
+    },
+    {
+      "source": "第一财经",
+      "country": "CN",
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source": "AP US",
@@ -58,19 +58,14 @@
       "error": "XML not well-formed (invalid token): line 1, column 2864"
     },
     {
-      "source": "新浪财经",
-      "country": "CN",
-      "error": "XML not well-formed (invalid token): line 1, column 0"
+      "source": "Reuters World",
+      "country": "GLOBAL",
+      "error": "<urlopen error [Errno -2] Name or service not known>"
     },
     {
       "source": "AP World",
       "country": "GLOBAL",
       "error": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "source": "Reuters World",
-      "country": "GLOBAL",
-      "error": "<urlopen error [Errno -2] Name or service not known>"
     }
   ],
   "tiers": {
@@ -83,44 +78,6 @@
         "target_max": 20,
         "count": 18,
         "events": [
-          {
-            "id": "2fbd3bb00a7baa87",
-            "title": "DOW Hosts 2nd Interagency Summit to Strengthen Counter-Drone Defense - U.S. Department of War (.gov)",
-            "published_at": "2026-09-09T23:00:20+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "DOW Hosts 2nd Interagency Summit to Strengthen Counter-Drone Defense - U.S. Department of War (.gov)",
-                "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUUJaOVV5NUpuWWRHWW1LN3g0SDJYeGlyclRTcUF0ek9pRW43OW4zdjBjVWJBV08yakRwNFFWREZQa3IxV0dBN1pyeGdldUFZMUxoWTd5Q2N6QTBBWEhUcVA3cXQ4TnQzZ0haQ21VT0ZqRWVXaDJCY0otSmctT2FEdzBQVXFUcXUxYmE2YWpqMjFXZFRRMjVLUjByd3lYVW95OWduWTFQWEhTN1ptcUFpSzRkbkVVOVQ0a05Za2wyUHRVNEgzR242QWtsQQ?oc=5",
-                "published_at": "2026-09-09T23:00:20+00:00",
-                "source": "Coverage-United States",
-                "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUUJaOVV5NUpuWWRHWW1LN3g0SDJYeGlyclRTcUF0ek9pRW43OW4zdjBjVWJBV08yakRwNFFWREZQa3IxV0dBN1pyeGdldUFZMUxoWTd5Q2N6QTBBWEhUcVA3cXQ4TnQzZ0haQ21VT0ZqRWVXaDJCY0otSmctT2FEdzBQVXFUcXUxYmE2YWpqMjFXZFRRMjVLUjByd3lYVW95OWduWTFQWEhTN1ptcUFpSzRkbkVVOVQ0a05Za2wyUHRVNEgzR242QWtsQQ?oc=5",
-                "description": "DOW Hosts 2nd Interagency Summit to Strengthen Counter-Drone Defense U.S. Department of War (.gov)",
-                "feed_country": "US",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "Coverage-United States",
-            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUUJaOVV5NUpuWWRHWW1LN3g0SDJYeGlyclRTcUF0ek9pRW43OW4zdjBjVWJBV08yakRwNFFWREZQa3IxV0dBN1pyeGdldUFZMUxoWTd5Q2N6QTBBWEhUcVA3cXQ4TnQzZ0haQ21VT0ZqRWVXaDJCY0otSmctT2FEdzBQVXFUcXUxYmE2YWpqMjFXZFRRMjVLUjByd3lYVW95OWduWTFQWEhTN1ptcUFpSzRkbkVVOVQ0a05Za2wyUHRVNEgzR242QWtsQQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUUJaOVV5NUpuWWRHWW1LN3g0SDJYeGlyclRTcUF0ek9pRW43OW4zdjBjVWJBV08yakRwNFFWREZQa3IxV0dBN1pyeGdldUFZMUxoWTd5Q2N6QTBBWEhUcVA3cXQ4TnQzZ0haQ21VT0ZqRWVXaDJCY0otSmctT2FEdzBQVXFUcXUxYmE2YWpqMjFXZFRRMjVLUjByd3lYVW95OWduWTFQWEhTN1ptcUFpSzRkbkVVOVQ0a05Za2wyUHRVNEgzR242QWtsQQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-United States"
-            ],
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 80,
-            "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "国家重大",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "DOW 举办第二届跨机构峰会以加强反无人机防御 - 美国战争部 (.gov)"
-          },
           {
             "id": "20e6adc38659b08b",
             "title": "Iran war won't end until after US midterm elections, says Trump - bbc.com",
@@ -195,11 +152,49 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "达拉斯共和党中期大会上，伊朗战争笼罩着特朗普 - aljazeera.com"
+            "title_zh": "达拉斯共和党中期大会上，伊朗战争笼罩着特朗普 - 半岛电视台"
           },
           {
-            "id": "6564860df9008374",
-            "title": "US announces $45m in security funding, additional naval vessels for Ecuador - aljazeera.com",
+            "id": "5046ae72a9210e6a",
+            "title": "Iran Launches Massive Attack on Global Shipping - Foreign Policy",
+            "published_at": "2026-09-09T22:53:48+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Iran Launches Massive Attack on Global Shipping - Foreign Policy",
+                "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTzZhTndacEt2akVXYmk1S2pOYW1xMDVZQTRhc0JaYllQT3gyUXR5OTlXVUtJQjJoU1RibGlSZ3RZSE02d2JSVDQ5Q3dMcE1TM1pqQ3RlU1RsbVpPQzBMa1FtR093bGRTTzJzSDRBX3o4RVRZNndKWDIzeTdHbm5nSFBhUUp4MGhscVk1S3drYjFGcURfQXpNTDJR?oc=5",
+                "published_at": "2026-09-09T22:53:48+00:00",
+                "source": "Coverage-United States",
+                "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTzZhTndacEt2akVXYmk1S2pOYW1xMDVZQTRhc0JaYllQT3gyUXR5OTlXVUtJQjJoU1RibGlSZ3RZSE02d2JSVDQ5Q3dMcE1TM1pqQ3RlU1RsbVpPQzBMa1FtR093bGRTTzJzSDRBX3o4RVRZNndKWDIzeTdHbm5nSFBhUUp4MGhscVk1S3drYjFGcURfQXpNTDJR?oc=5",
+                "description": "Iran Launches Massive Attack on Global Shipping Foreign Policy",
+                "feed_country": "US",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "Coverage-United States",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTzZhTndacEt2akVXYmk1S2pOYW1xMDVZQTRhc0JaYllQT3gyUXR5OTlXVUtJQjJoU1RibGlSZ3RZSE02d2JSVDQ5Q3dMcE1TM1pqQ3RlU1RsbVpPQzBMa1FtR093bGRTTzJzSDRBX3o4RVRZNndKWDIzeTdHbm5nSFBhUUp4MGhscVk1S3drYjFGcURfQXpNTDJR?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTzZhTndacEt2akVXYmk1S2pOYW1xMDVZQTRhc0JaYllQT3gyUXR5OTlXVUtJQjJoU1RibGlSZ3RZSE02d2JSVDQ5Q3dMcE1TM1pqQ3RlU1RsbVpPQzBMa1FtR093bGRTTzJzSDRBX3o4RVRZNndKWDIzeTdHbm5nSFBhUUp4MGhscVk1S3drYjFGcURfQXpNTDJR?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-United States"
+            ],
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 64,
+            "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "伊朗对全球航运发动大规模袭击 - 外交政策"
+          },
+          {
+            "id": "788161a13ebc9d6c",
+            "title": "US announces $45m in security funding, additional naval vessels for Ecuador - Al Jazeera",
             "published_at": "2026-09-09T23:42:13+00:00",
             "code": "US",
             "event_country": "美国",
@@ -233,7 +228,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "美国宣布向厄瓜多尔提供 4500 万美元安全资金并增设海军舰艇 - aljazeera.com"
+            "title_zh": "美国宣布向厄瓜多尔提供 4500 万美元安全资金和增建海军舰艇"
           },
           {
             "id": "a22d1f23956ce1c9",
@@ -271,7 +266,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "特朗普对盟友对以色列定居点的制裁不持立场"
+            "title_zh": "特朗普对盟友制裁以色列定居点不持立场"
           },
           {
             "id": "13792ca406bba37e",
@@ -284,7 +279,7 @@
                 "title": "美媒：特朗普专机突发状况 应急滑梯因误操作意外弹出",
                 "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
                 "published_at": "2026-09-09T23:29:38+00:00",
-                "source": "中新网-要闻",
+                "source": "中新网-国际",
                 "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
                 "description": "中新网9月10日电 据美国广播公司(ABC)报道，当地时间9月9日下午，美国总统特朗普准备搭乘“空军一号”专机前往达拉斯出席共和党中期选举集会之际，该专机的应急滑梯却处于弹出状态。",
                 "feed_country": "GLOBAL",
@@ -297,7 +292,7 @@
                 "title": "美媒：特朗普专机突发状况 应急滑梯因误操作意外弹出",
                 "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
                 "published_at": "2026-09-09T23:29:38+00:00",
-                "source": "中新网-国际",
+                "source": "中新网-要闻",
                 "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
                 "description": "中新网9月10日电 据美国广播公司(ABC)报道，当地时间9月9日下午，美国总统特朗普准备搭乘“空军一号”专机前往达拉斯出席共和党中期选举集会之际，该专机的应急滑梯却处于弹出状态。",
                 "feed_country": "GLOBAL",
@@ -307,13 +302,13 @@
                 "event_country_en": "United States"
               }
             ],
-            "source": "中新网-要闻",
+            "source": "中新网-国际",
             "url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
             "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
             "source_count": 2,
             "source_names": [
-              "中新网-要闻",
-              "中新网-国际"
+              "中新网-国际",
+              "中新网-要闻"
             ],
             "category": "政治",
             "domestic_score": 30,
@@ -335,7 +330,7 @@
                 "title": "美伊战事何时结束？特朗普给出时间表",
                 "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
                 "published_at": "2026-09-09T22:29:59+00:00",
-                "source": "中新网-要闻",
+                "source": "中新网-国际",
                 "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
                 "description": "中新网9月10日电 据美国有线电视新闻网(CNN)报道，当地时间9日，美国总统特朗普表示，他认为美国同伊朗的战事将在11月美国国会中期选举完成后“立即结束”。",
                 "feed_country": "GLOBAL",
@@ -348,7 +343,7 @@
                 "title": "美伊战事何时结束？特朗普给出时间表",
                 "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
                 "published_at": "2026-09-09T22:29:59+00:00",
-                "source": "中新网-国际",
+                "source": "中新网-要闻",
                 "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
                 "description": "中新网9月10日电 据美国有线电视新闻网(CNN)报道，当地时间9日，美国总统特朗普表示，他认为美国同伊朗的战事将在11月美国国会中期选举完成后“立即结束”。",
                 "feed_country": "GLOBAL",
@@ -358,13 +353,13 @@
                 "event_country_en": "United States"
               }
             ],
-            "source": "中新网-要闻",
+            "source": "中新网-国际",
             "url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
             "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
             "source_count": 2,
             "source_names": [
-              "中新网-要闻",
-              "中新网-国际"
+              "中新网-国际",
+              "中新网-要闻"
             ],
             "category": "政治",
             "domestic_score": 30,
@@ -562,7 +557,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "伊朗可能对捕获的美国水下无人机进行逆向工程 - 路透中文网"
+            "title_zh": "新墨西哥人以嘲笑和愤怒回应特朗普改变州名的威胁 - 《卫报》"
           },
           {
             "id": "c72364f1fffa5f09",
@@ -920,7 +915,7 @@
                 "title": "免费飞机餐是否取消？多家航司回应",
                 "link": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
                 "published_at": "2026-09-09T14:17:10+00:00",
-                "source": "中新网-财经",
+                "source": "中新网-要闻",
                 "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
                 "description": "中新网北京9月9日电 据媒体报道，近日，多家航空公司布局付费定制飞机餐。有报道称，付费餐食价格不等，有亲民价格也有较高价格的餐食。报道提到，东方航空、四川航空、祥鹏航空等国内多家航司都布局了付费餐食赛道。",
                 "feed_country": "GLOBAL",
@@ -933,7 +928,7 @@
                 "title": "免费飞机餐是否取消？多家航司回应",
                 "link": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
                 "published_at": "2026-09-09T14:17:10+00:00",
-                "source": "中新网-要闻",
+                "source": "中新网-财经",
                 "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
                 "description": "中新网北京9月9日电 据媒体报道，近日，多家航空公司布局付费定制飞机餐。有报道称，付费餐食价格不等，有亲民价格也有较高价格的餐食。报道提到，东方航空、四川航空、祥鹏航空等国内多家航司都布局了付费餐食赛道。",
                 "feed_country": "GLOBAL",
@@ -943,13 +938,13 @@
                 "event_country_en": "China"
               }
             ],
-            "source": "中新网-财经",
+            "source": "中新网-要闻",
             "url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
             "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
             "source_count": 2,
             "source_names": [
-              "中新网-财经",
-              "中新网-要闻"
+              "中新网-要闻",
+              "中新网-财经"
             ],
             "category": "政治",
             "domestic_score": 30,
@@ -1275,19 +1270,19 @@
             "title_zh": "臭名昭著的厄瓜多尔犯罪团伙被美国认定为恐怖组织"
           },
           {
-            "id": "97948ead54b164dd",
-            "title": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? - Українські Національні Новини (УНН)",
+            "id": "baedce61bd885cbd",
+            "title": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? - unn.ua",
             "published_at": "2026-09-09T22:05:48+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? - Українські Національні Новини (УНН)",
+                "title": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? - unn.ua",
                 "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNb21LMEFLeG9QaV9pWUkzM21aMkl5bUdab2tad21XX3dUbkRvR2MwUmc0djhyMV8wLU04dUxMN21Vd19xTEZxaHo5X09hTHNmMmtlaUt5T2ExdTZiRHJpRldqbkFHemZFcWRzVjVnTkFWOTJid09rcHQ3MDRfSXFCcE05c0IwZEZQWGx0dTFNajN4UVk4SUN6LWY2S0pNLW1jdnRsYlplM0JfYUMzTjUzV9IBrwFBVV95cUxQTDdNR2dmeUV5ZTlVam43WHBTRlVTZFg5RjVNbzJkTHNEdFBHc3ZwdncxRG1uV19VWmZyY2x2VTFkMlR2U00zRlgyWmZ3NWRaREM1Ulp4OTV4aUZSYjBCajFUSzhfd1A4eHJPMEZwTmdpSEFEdGo1RlBQTlJZbXowOUN3YW55YW42YUJvNDQ3V2gyYmZJbE5jZTE2a1lPanBma1lQVnI1bHIzOVBNYk5Z?oc=5",
                 "published_at": "2026-09-09T22:05:48+00:00",
                 "source": "Coverage-United Kingdom",
                 "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNb21LMEFLeG9QaV9pWUkzM21aMkl5bUdab2tad21XX3dUbkRvR2MwUmc0djhyMV8wLU04dUxMN21Vd19xTEZxaHo5X09hTHNmMmtlaUt5T2ExdTZiRHJpRldqbkFHemZFcWRzVjVnTkFWOTJid09rcHQ3MDRfSXFCcE05c0IwZEZQWGx0dTFNajN4UVk4SUN6LWY2S0pNLW1jdnRsYlplM0JfYUMzTjUzV9IBrwFBVV95cUxQTDdNR2dmeUV5ZTlVam43WHBTRlVTZFg5RjVNbzJkTHNEdFBHc3ZwdncxRG1uV19VWmZyY2x2VTFkMlR2U00zRlgyWmZ3NWRaREM1Ulp4OTV4aUZSYjBCajFUSzhfd1A4eHJPMEZwTmdpSEFEdGo1RlBQTlJZbXowOUN3YW55YW42YUJvNDQ3V2gyYmZJbE5jZTE2a1lPanBma1lQVnI1bHIzOVBNYk5Z?oc=5",
-                "description": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? Українські Національні Новини (УНН)",
+                "description": "Have Prince Harry and King Charles III reconciled after his return to the United Kingdom? unn.ua",
                 "feed_country": "GB",
                 "language": "en",
                 "code": "GB",
@@ -1310,7 +1305,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "哈里王子返回英国后与国王查理三世和解了吗？ - 乌克兰国家新闻 (UNN)"
+            "title_zh": "哈里王子返回英国后与国王查理三世和解了吗？ - unn.ua"
           },
           {
             "id": "684a6e86cd554679",
@@ -1385,7 +1380,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "沙特阿拉伯、阿拉伯和穆斯林国家欢迎英国对以色列定居点货物实施贸易禁令 - 阿拉伯新闻"
+            "title_zh": "沙特阿拉伯、阿拉伯和穆斯林国家欢迎英国对以色列定居点货物的贸易禁令 - arabnews.jp"
           },
           {
             "id": "795d995c81f34f85",
@@ -1460,7 +1455,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "泰特兄弟因反对引渡到英国而仍被拘留 - 2news.com"
+            "title_zh": "泰特兄弟因抗争引渡至英国而仍被拘留 - KTVN"
           }
         ]
       },
@@ -1547,44 +1542,6 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "卢比奥将为厄瓜多尔寻求4500万美元的额外安全资金"
-          },
-          {
-            "id": "68f20f8fb332bb4f",
-            "title": "Morocco adds a French route to three European power links already in negotiation - Energy News Network",
-            "published_at": "2026-09-09T21:06:04+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Morocco adds a French route to three European power links already in negotiation - Energy News Network",
-                "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzdxMmhuVGlDZWhZaHdicUZPd3B4Tk05bm10WFhiMnVXMGNTSDJYUk5Oa1VEZWJ6dnFpbzA5Q3pSXzF1SFA4X1daLTFVdnVYS3FfWkdMc2EwSjB4Wk9RRWlJR0g5cGFXaGg2NTNPZmRuOGhmSzFwLW5xQWZrZ2p0dWQxR1hzTW15RW5kcFlSbHVyV1ZfMWV0RldURU9jLVBRbmRSdFRpSQ?oc=5",
-                "published_at": "2026-09-09T21:06:04+00:00",
-                "source": "Coverage-France",
-                "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzdxMmhuVGlDZWhZaHdicUZPd3B4Tk05bm10WFhiMnVXMGNTSDJYUk5Oa1VEZWJ6dnFpbzA5Q3pSXzF1SFA4X1daLTFVdnVYS3FfWkdMc2EwSjB4Wk9RRWlJR0g5cGFXaGg2NTNPZmRuOGhmSzFwLW5xQWZrZ2p0dWQxR1hzTW15RW5kcFlSbHVyV1ZfMWV0RldURU9jLVBRbmRSdFRpSQ?oc=5",
-                "description": "Morocco adds a French route to three European power links already in negotiation Energy News Network",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "Coverage-France",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzdxMmhuVGlDZWhZaHdicUZPd3B4Tk05bm10WFhiMnVXMGNTSDJYUk5Oa1VEZWJ6dnFpbzA5Q3pSXzF1SFA4X1daLTFVdnVYS3FfWkdMc2EwSjB4Wk9RRWlJR0g5cGFXaGg2NTNPZmRuOGhmSzFwLW5xQWZrZ2p0dWQxR1hzTW15RW5kcFlSbHVyV1ZfMWV0RldURU9jLVBRbmRSdFRpSQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzdxMmhuVGlDZWhZaHdicUZPd3B4Tk05bm10WFhiMnVXMGNTSDJYUk5Oa1VEZWJ6dnFpbzA5Q3pSXzF1SFA4X1daLTFVdnVYS3FfWkdMc2EwSjB4Wk9RRWlJR0g5cGFXaGg2NTNPZmRuOGhmSzFwLW5xQWZrZ2p0dWQxR1hzTW15RW5kcFlSbHVyV1ZfMWV0RldURU9jLVBRbmRSdFRpSQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-France"
-            ],
-            "category": "能源",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及能源，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "摩洛哥为已在谈判的三个欧洲电力线路增加一条法国线路 - 能源新闻网"
           },
           {
             "id": "fdc8818263b84aa0",
@@ -1698,7 +1655,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "主教们：教宗访问法国将是“重要时刻” - cathnews.com"
+            "title_zh": "主教们：教宗访问法国将是“重要时刻” - CathNews"
           },
           {
             "id": "d833a5f0cd09625a",
@@ -1853,6 +1810,44 @@
             "title_zh": "特朗普声称 9/11“发生后”消防队员将他带到安全地带，但他的说法存在争议"
           },
           {
+            "id": "bc597904d6d4e182",
+            "title": "Aid cuts force clinic closures across Sudan",
+            "published_at": "2026-09-09T20:32:55+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Aid cuts force clinic closures across Sudan",
+                "link": "https://www.france24.com/en/aid-cuts-force-clinic-closures-across-sudan",
+                "published_at": "2026-09-09T20:32:55+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/aid-cuts-force-clinic-closures-across-sudan",
+                "description": "In tonight's edition, funding cuts are forcing dozens of health clinics in Sudan to close, aid groups warn. Also, an AI and Africa conference has kicked off in South Korea's capital. And we have a poke around the Rwanda Space Agency as Paris hosts its very first international space summit.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/aid-cuts-force-clinic-closures-across-sudan",
+            "source_url": "https://www.france24.com/en/aid-cuts-force-clinic-closures-across-sudan",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "援助减少迫使苏丹各地诊所关闭"
+          },
+          {
             "id": "f410bf79f75e1648",
             "title": "中国贸易顺差连续第四个月突破千亿美元",
             "published_at": "2026-09-09T00:44:43+00:00",
@@ -1935,7 +1930,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "尽管美国外交推动，德国总理默茨对结束乌克兰战争的前景持悲观态度 - aa.com.tr"
+            "title_zh": "尽管美国外交推动，德国默茨对结束乌克兰战争的前景持悲观态度 - Anadolu Ajansı"
           },
           {
             "id": "27f2ddf2ee883741",
@@ -1973,7 +1968,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "北约秘书长马克·吕特将访问柏林与德国外长梅扎举行会谈。乌克兰新闻。"
+            "title_zh": "北约秘书长马克·吕特将访问柏林与德国外长举行会谈 - mezha.net"
           },
           {
             "id": "097a6a99462a0f10",
@@ -2476,7 +2471,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "波罗的海国家呼吁面对俄罗斯威胁保持冷静 - wsj.com"
+            "title_zh": "波罗的海国家呼吁面对俄罗斯威胁保持冷静 - 华尔街日报"
           },
           {
             "id": "2f72761a97b0a216",
@@ -2546,13 +2541,13 @@
             ],
             "category": "政治",
             "domestic_score": 30,
-            "importance": 47,
+            "importance": 46,
             "why_important": "涉及政治，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "挪威总理称泽伦斯基的飞机在飞往奥斯陆的途中“差点被无人机击中” - aljazeera.com"
+            "title_zh": "挪威总理称泽伦斯基的飞机在飞往奥斯陆的途中“差点被无人机击中”"
           },
           {
             "id": "8aba7e5b29c02ebf",
@@ -2830,19 +2825,19 @@
             "title_zh": "有关台湾战俘的电影在东京放映 - UA.NEWS"
           },
           {
-            "id": "5c2add15e83744c7",
-            "title": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. - Sandboxx",
+            "id": "4114f23866971964",
+            "title": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. - sandboxx.us",
             "published_at": "2026-09-09T23:00:15+00:00",
             "code": "JP",
             "event_country": "日本",
             "sources": [
               {
-                "title": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. - Sandboxx",
+                "title": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. - sandboxx.us",
                 "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZFlpX0Z2ZjNaUFVxc1U1XzRlYjFBNHZSVmpEOWVhZ1FGNHNEay05OExxN3JrR2VyTjVXU25GSE5GVFNCWnRYVUk2NENiTnVaTVdGYlQ3ZTBKa1dVdksxdUI0eXJEQ1NPczYwQ21kdWdOUl84ay1XZGFVMWo5ZWw5MHBmQTgwMDJsSzZmeWdqeXVrdzA1LWxIYno3ZVZiTm5veWI0bkR2ZGpGVkdlSXdnc3Zpcw?oc=5",
                 "published_at": "2026-09-09T23:00:15+00:00",
                 "source": "Coverage-Japan",
                 "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZFlpX0Z2ZjNaUFVxc1U1XzRlYjFBNHZSVmpEOWVhZ1FGNHNEay05OExxN3JrR2VyTjVXU25GSE5GVFNCWnRYVUk2NENiTnVaTVdGYlQ3ZTBKa1dVdksxdUI0eXJEQ1NPczYwQ21kdWdOUl84ay1XZGFVMWo5ZWw5MHBmQTgwMDJsSzZmeWdqeXVrdzA1LWxIYno3ZVZiTm5veWI0bkR2ZGpGVkdlSXdnc3Zpcw?oc=5",
-                "description": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. Sandboxx",
+                "description": "Sandboxx News | Military News with Meaning—Where Expertise Meets the Front Lines. sandboxx.us",
                 "feed_country": "JP",
                 "language": "en",
                 "code": "JP",
@@ -2865,7 +2860,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "Sandboxx 新闻 |有意义的军事新闻——专业知识与前线的结合。 - 沙盒x"
+            "title_zh": "Sandboxx 新闻 |有意义的军事新闻——专业知识与前线的结合。 - 沙盒x.us"
           },
           {
             "id": "4ad5ac995ca49a92",
@@ -2982,44 +2977,6 @@
             "title_zh": "日本2014年的策略显示了推动日元走势的强硬选择 - Bloomberg.com"
           },
           {
-            "id": "2def857c18c7ddb0",
-            "title": "Two-thirds of Japan firms support PM Takaichi's economic policies - marketscreener.com",
-            "published_at": "2026-09-09T23:09:22+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Two-thirds of Japan firms support PM Takaichi's economic policies - marketscreener.com",
-                "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMmsybGM2dUpHczh2NXlDdFJENm9Ca3ZGTF92LVp2MVpOQUFRR1lvSUhDdTNJX19HZEhGa1B3bnJaclBGUzBsUFNhQ0szV3pTWnlaY0o1OEpwclN2WmtyZl9DZVBsMTZBT0pLLUl6bkFOcl9adExpNzhxSXRwNVVSdkN5ajRjc3l5NHliMXEtdmlCdVk3aEg0U2ZzTlN2N2ZHSjBsMWhVVDB6NkVqY2t2b2NnWllfYzdUTHc?oc=5",
-                "published_at": "2026-09-09T23:09:22+00:00",
-                "source": "Coverage-Japan",
-                "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMmsybGM2dUpHczh2NXlDdFJENm9Ca3ZGTF92LVp2MVpOQUFRR1lvSUhDdTNJX19HZEhGa1B3bnJaclBGUzBsUFNhQ0szV3pTWnlaY0o1OEpwclN2WmtyZl9DZVBsMTZBT0pLLUl6bkFOcl9adExpNzhxSXRwNVVSdkN5ajRjc3l5NHliMXEtdmlCdVk3aEg0U2ZzTlN2N2ZHSjBsMWhVVDB6NkVqY2t2b2NnWllfYzdUTHc?oc=5",
-                "description": "Two-thirds of Japan firms support PM Takaichi's economic policies marketscreener.com",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Coverage-Japan",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMmsybGM2dUpHczh2NXlDdFJENm9Ca3ZGTF92LVp2MVpOQUFRR1lvSUhDdTNJX19HZEhGa1B3bnJaclBGUzBsUFNhQ0szV3pTWnlaY0o1OEpwclN2WmtyZl9DZVBsMTZBT0pLLUl6bkFOcl9adExpNzhxSXRwNVVSdkN5ajRjc3l5NHliMXEtdmlCdVk3aEg0U2ZzTlN2N2ZHSjBsMWhVVDB6NkVqY2t2b2NnWllfYzdUTHc?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMmsybGM2dUpHczh2NXlDdFJENm9Ca3ZGTF92LVp2MVpOQUFRR1lvSUhDdTNJX19HZEhGa1B3bnJaclBGUzBsUFNhQ0szV3pTWnlaY0o1OEpwclN2WmtyZl9DZVBsMTZBT0pLLUl6bkFOcl9adExpNzhxSXRwNVVSdkN5ajRjc3l5NHliMXEtdmlCdVk3aEg0U2ZzTlN2N2ZHSjBsMWhVVDB6NkVqY2t2b2NnWllfYzdUTHc?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-Japan"
-            ],
-            "category": "宏观经济",
-            "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "三分之二的日本企业支持首相高市的经济政策 - marketscreener.com"
-          },
-          {
             "id": "fe570c441568202f",
             "title": "Bessent on efforts to boost Japan's currency: 'I am the house now' - Modern Ghana",
             "published_at": "2026-09-09T23:26:54+00:00",
@@ -3132,6 +3089,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "日本央行本月将加息至 1.25%，比预期快 1.75% - 路透中文网"
+          },
+          {
+            "id": "b028fbd0a9b2df66",
+            "title": "Ajinomoto to hike prices for mayonnaise, other products by 6-10% - japantoday.com",
+            "published_at": "2026-09-09T21:00:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "title": "Ajinomoto to hike prices for mayonnaise, other products by 6-10% - japantoday.com",
+                "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVKWEpUNmMxR1hoX24zZjlnbXlzTEVtUmsxQjlFaDltbm5Md2Y5OEo0LU5rTFd6cW1NMVZXWUNkTmpHUmVfQ1JKandVbWs5MUpqcnQ5aEZCbVk1THlnZVpjcVdwMW9Fb3VaV3c2UEZEWlk0Yko3YmxCRFg1Q3VwTnFWX1NpZ2l3dC1EdEVzTEhKWlhmUDVEZFBmYTV3aG5pMHIwZUJB?oc=5",
+                "published_at": "2026-09-09T21:00:00+00:00",
+                "source": "Coverage-Japan",
+                "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVKWEpUNmMxR1hoX24zZjlnbXlzTEVtUmsxQjlFaDltbm5Md2Y5OEo0LU5rTFd6cW1NMVZXWUNkTmpHUmVfQ1JKandVbWs5MUpqcnQ5aEZCbVk1THlnZVpjcVdwMW9Fb3VaV3c2UEZEWlk0Yko3YmxCRFg1Q3VwTnFWX1NpZ2l3dC1EdEVzTEhKWlhmUDVEZFBmYTV3aG5pMHIwZUJB?oc=5",
+                "description": "Ajinomoto to hike prices for mayonnaise, other products by 6-10% japantoday.com",
+                "feed_country": "JP",
+                "language": "en",
+                "code": "JP",
+                "event_country": "日本",
+                "event_country_en": "Japan"
+              }
+            ],
+            "source": "Coverage-Japan",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVKWEpUNmMxR1hoX24zZjlnbXlzTEVtUmsxQjlFaDltbm5Md2Y5OEo0LU5rTFd6cW1NMVZXWUNkTmpHUmVfQ1JKandVbWs5MUpqcnQ5aEZCbVk1THlnZVpjcVdwMW9Fb3VaV3c2UEZEWlk0Yko3YmxCRFg1Q3VwTnFWX1NpZ2l3dC1EdEVzTEhKWlhmUDVEZFBmYTV3aG5pMHIwZUJB?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVKWEpUNmMxR1hoX24zZjlnbXlzTEVtUmsxQjlFaDltbm5Md2Y5OEo0LU5rTFd6cW1NMVZXWUNkTmpHUmVfQ1JKandVbWs5MUpqcnQ5aEZCbVk1THlnZVpjcVdwMW9Fb3VaV3c2UEZEWlk0Yko3YmxCRFg1Q3VwTnFWX1NpZ2l3dC1EdEVzTEhKWlhmUDVEZFBmYTV3aG5pMHIwZUJB?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Japan"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "味之素将蛋黄酱和其他产品的价格提高 6-10% - japantoday.com"
           }
         ]
       }
@@ -3257,7 +3252,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "Zoom 超越视频业务，押注印度 - 印度时报"
+            "title_zh": "高级专员阿尼尔·苏卡尔接受采访：“印度现在得到了北半球和南半球的认可” - 《印度快报》"
           },
           {
             "id": "bac2398d0aef49e8",
@@ -3764,8 +3759,46 @@
             "title_zh": "巴西大选 - 斯普林菲尔德新闻-Sun"
           },
           {
-            "id": "5cc9cec9201987be",
-            "title": "Last dance? Inside Lula’s strategy to win a fourth presidency in Brazil - aljazeera.com",
+            "id": "34fd84c0008fa771",
+            "title": "Brazil Election - Journal-News.com",
+            "published_at": "2026-09-09T17:34:44+00:00",
+            "code": "BR",
+            "event_country": "巴西",
+            "sources": [
+              {
+                "title": "Brazil Election - Journal-News.com",
+                "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSlJGX1ZDYTJiZVhZbncwd016V2tvUXF2WkNMendjeFczaTFQNFVqZlo0QU1CUlM1RGMzNEZmNzhlcG90OFlRLWRVdUlWSW1QMDU3azRhcnhOeHdhWk43clNJLTdYc1JzNUVBVl9ucS11amhBc2pLY3B3SklIa3pyV3d3WHNna1pVQUtvdnByV3hwSWRBRGJ5UmdXM3Nsc0xkVHc3THZhWVA?oc=5",
+                "published_at": "2026-09-09T17:31:00+00:00",
+                "source": "Coverage-Brazil",
+                "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSlJGX1ZDYTJiZVhZbncwd016V2tvUXF2WkNMendjeFczaTFQNFVqZlo0QU1CUlM1RGMzNEZmNzhlcG90OFlRLWRVdUlWSW1QMDU3azRhcnhOeHdhWk43clNJLTdYc1JzNUVBVl9ucS11amhBc2pLY3B3SklIa3pyV3d3WHNna1pVQUtvdnByV3hwSWRBRGJ5UmdXM3Nsc0xkVHc3THZhWVA?oc=5",
+                "description": "Brazil Election Journal-News.com",
+                "feed_country": "BR",
+                "language": "en",
+                "code": "BR",
+                "event_country": "巴西",
+                "event_country_en": "Brazil"
+              }
+            ],
+            "source": "Coverage-Brazil",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSlJGX1ZDYTJiZVhZbncwd016V2tvUXF2WkNMendjeFczaTFQNFVqZlo0QU1CUlM1RGMzNEZmNzhlcG90OFlRLWRVdUlWSW1QMDU3azRhcnhOeHdhWk43clNJLTdYc1JzNUVBVl9ucS11amhBc2pLY3B3SklIa3pyV3d3WHNna1pVQUtvdnByV3hwSWRBRGJ5UmdXM3Nsc0xkVHc3THZhWVA?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSlJGX1ZDYTJiZVhZbncwd016V2tvUXF2WkNMendjeFczaTFQNFVqZlo0QU1CUlM1RGMzNEZmNzhlcG90OFlRLWRVdUlWSW1QMDU3azRhcnhOeHdhWk43clNJLTdYc1JzNUVBVl9ucS11amhBc2pLY3B3SklIa3pyV3d3WHNna1pVQUtvdnByV3hwSWRBRGJ5UmdXM3Nsc0xkVHc3THZhWVA?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Brazil"
+            ],
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 43,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "巴西大选 - Journal-News.com"
+          },
+          {
+            "id": "4f3e4cce648a9e00",
+            "title": "Last dance? Inside Lula’s strategy to win a fourth presidency in Brazil - Al Jazeera",
             "published_at": "2026-09-09T17:54:21+00:00",
             "code": "BR",
             "event_country": "巴西",
@@ -3799,7 +3832,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "最后一支舞？卢拉赢得巴西第四任总统的战略内部 - aljazeera.com"
+            "title_zh": "最后一支舞？卢拉赢得巴西第四任总统的战略内部 - 半岛电视台"
           },
           {
             "id": "b5eb69f322659c9d",
@@ -3961,7 +3994,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "分析：胡塞武装对沙特阿拉伯的袭击标志着一次鲁莽的举动 - 阿拉伯新闻"
+            "title_zh": "分析：胡塞武装对沙特阿拉伯的袭击预示着鲁莽的举动 - arabnews.com"
           },
           {
             "id": "79e054e242e4545e",
@@ -3999,7 +4032,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "沙特阿拉伯、阿拉伯和穆斯林国家欢迎英国对以色列定居点货物实施贸易禁令 - 阿拉伯新闻"
+            "title_zh": "沙特阿拉伯、阿拉伯和穆斯林国家欢迎英国对以色列定居点货物的贸易禁令 - arabnews.jp"
           }
         ]
       },
@@ -4085,7 +4118,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "投资者寻求更多资金，三星和 SK 海力士派息考验韩国改革举措 - 路透中文网"
+            "title_zh": "三星、SK海力士派息考验韩国改革动力，投资者寻求更多 - 路透中文网"
           },
           {
             "id": "7281c80956e16cca",
@@ -4321,7 +4354,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "特朗普的关税主管表示，加拿大将与美国的争端称为贸易战是“精神错乱” - CBC.ca"
+            "title_zh": "特朗普的关税主管表示，加拿大将与美国的争端称为贸易战是“精神错乱” - CBC"
           },
           {
             "id": "bb4e6f8a48f32902",
@@ -4473,7 +4506,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "随着贸易战升级，布法罗比尔队主场揭幕战以两首国歌“庆祝”加拿大和美国 - cbc.ca"
+            "title_zh": "随着贸易战升级，布法罗比尔队主场揭幕战以两首国歌“庆祝”加拿大和美国 - CBC"
           },
           {
             "id": "55945f5d356bf02a",
@@ -4511,7 +4544,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "加拿大与美国贸易战升级 - 加拿大广播公司"
+            "title_zh": "加拿大与美国贸易战升级 - CBC"
           },
           {
             "id": "b8e8db80a222f535",
@@ -4549,11 +4582,11 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "加拿大和日本是国际能源署紧急石油释放的主要贡献者 - EnergyNow"
+            "title_zh": "新罕布什尔州民主党人辛德·沃明顿表示，加拿大贸易战正在“压垮我们州的人民” - 哥伦比亚广播公司新闻"
           },
           {
-            "id": "26ee5f49afb52fe4",
-            "title": "Apple's new iPhone Duo costs more in Canada, but not because of tariffs - cbc.ca",
+            "id": "57385387beb31934",
+            "title": "Apple's new iPhone Duo costs more in Canada, but not because of tariffs - CBC",
             "published_at": "2026-09-09T23:43:23+00:00",
             "code": "CA",
             "event_country": "加拿大",
@@ -4587,7 +4620,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "苹果新款 iPhone Duo 在加拿大售价更高，但并非因为关税 - cbc.ca"
+            "title_zh": "苹果新款 iPhone Duo 在加拿大售价更高，但并不是因为关税 - CBC"
           },
           {
             "id": "9b1dbd5ffe748baa",
@@ -4625,7 +4658,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "特朗普的报复性关税将对加拿大经济大局产生什么影响？经济学家预测，不会那么多 - cbc.ca"
+            "title_zh": "特朗普的报复性关税将对加拿大经济大局产生什么影响？经济学家预测不会那么多 - CBC"
           },
           {
             "id": "b4ff97b5faa197b2",
@@ -4666,19 +4699,19 @@
             "title_zh": "苏珊·柯林斯寻求加拿大关税减免 - Punchbowl News"
           },
           {
-            "id": "3263e944ed1f7411",
-            "title": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. - cp24.com",
+            "id": "232d8595aa0e4e5d",
+            "title": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. - CP24",
             "published_at": "2026-09-09T23:24:22+00:00",
             "code": "CA",
             "event_country": "加拿大",
             "sources": [
               {
-                "title": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. - cp24.com",
+                "title": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. - CP24",
                 "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZXozVXZIZWI2bFp5Q1VYMmtSb0E5c2dkY1ZPNk5kdFA5a1JmQjYzNExIVFctcXBOY080YW1OdHlkajJYbERKWEJtYjJ5N3lXSlFpLXp6d2FTWGpMVUc0cFlOZkRmclQzV2kxUFpiRXl4Wjc3aTROVjhuaUl6aTUtQWQ1WVdFdGJOdjJ6MUZQdmt2Z2ZKM3FGSEpaMUpUaC11c19iRTFRWHBMWUM3d0ZvVlphSWVYYlVCRjRZSlNyYXJmTEZMRXYtajhVc0U2MDN4WmE5LWl3SmJXNVRSd3hQdDdn?oc=5",
                 "published_at": "2026-09-09T23:24:22+00:00",
                 "source": "Coverage-Canada",
                 "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZXozVXZIZWI2bFp5Q1VYMmtSb0E5c2dkY1ZPNk5kdFA5a1JmQjYzNExIVFctcXBOY080YW1OdHlkajJYbERKWEJtYjJ5N3lXSlFpLXp6d2FTWGpMVUc0cFlOZkRmclQzV2kxUFpiRXl4Wjc3aTROVjhuaUl6aTUtQWQ1WVdFdGJOdjJ6MUZQdmt2Z2ZKM3FGSEpaMUpUaC11c19iRTFRWHBMWUM3d0ZvVlphSWVYYlVCRjRZSlNyYXJmTEZMRXYtajhVc0U2MDN4WmE5LWl3SmJXNVRSd3hQdDdn?oc=5",
-                "description": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. cp24.com",
+                "description": "Poilievre heads to U.S. with PMO’s blessing as Trump ramps up retaliation against Canada. Live updates here. CP24",
                 "feed_country": "CA",
                 "language": "en",
                 "code": "CA",
@@ -4701,7 +4734,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "随着特朗普加大对加拿大的报复力度，普利耶夫在总理办公室的支持下前往美国。这里实时更新。 - cp24.com"
+            "title_zh": "随着特朗普加大对加拿大的报复力度，普利耶夫在总理办公室的支持下前往美国。这里实时更新。 - CP24"
           },
           {
             "id": "e8edd894a1817f6e",
@@ -4739,7 +4772,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "加拿大安桥公司将以 25.5 亿美元收购 Tallgrass 原油业务 - 路透中文网"
+            "title_zh": "加拿大安桥公司将以25.5亿美元收购Tallgrass原油业务 - 路透中文网"
           }
         ]
       },
@@ -4978,6 +5011,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "早间报告：伤病状况，来自澳大利亚的更多更新🗞️ - 旧金山 49 人队"
+          },
+          {
+            "id": "5c27d4f9a97997a1",
+            "title": "Australia Property Stocks Lag as Bathla Fallout Hits - Bloomberg.com",
+            "published_at": "2026-09-09T23:11:39+00:00",
+            "code": "AU",
+            "event_country": "澳大利亚",
+            "sources": [
+              {
+                "title": "Australia Property Stocks Lag as Bathla Fallout Hits - Bloomberg.com",
+                "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSkhOQmRiRE9uaS11YVVkVFl2dC1sZEEzS1VZWEk2eXo4NXdRbUxkeVpCQ3EtQWxpcURBLWtXakZmbXRINzBuS0ZyLTNxV1FIN2ZCRC1WV3Y3dkxjUWc4SWttcWNJcHN2M01SdEVUMUF3UlNqa3dwOGdQNFBqam5rYjlJQzlvbloxTkhLV2VmYTJSZ1NE?oc=5",
+                "published_at": "2026-09-09T23:11:39+00:00",
+                "source": "Coverage-Australia",
+                "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSkhOQmRiRE9uaS11YVVkVFl2dC1sZEEzS1VZWEk2eXo4NXdRbUxkeVpCQ3EtQWxpcURBLWtXakZmbXRINzBuS0ZyLTNxV1FIN2ZCRC1WV3Y3dkxjUWc4SWttcWNJcHN2M01SdEVUMUF3UlNqa3dwOGdQNFBqam5rYjlJQzlvbloxTkhLV2VmYTJSZ1NE?oc=5",
+                "description": "Australia Property Stocks Lag as Bathla Fallout Hits Bloomberg.com",
+                "feed_country": "AU",
+                "language": "en",
+                "code": "AU",
+                "event_country": "澳大利亚",
+                "event_country_en": "Australia"
+              }
+            ],
+            "source": "Coverage-Australia",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSkhOQmRiRE9uaS11YVVkVFl2dC1sZEEzS1VZWEk2eXo4NXdRbUxkeVpCQ3EtQWxpcURBLWtXakZmbXRINzBuS0ZyLTNxV1FIN2ZCRC1WV3Y3dkxjUWc4SWttcWNJcHN2M01SdEVUMUF3UlNqa3dwOGdQNFBqam5rYjlJQzlvbloxTkhLV2VmYTJSZ1NE?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSkhOQmRiRE9uaS11YVVkVFl2dC1sZEEzS1VZWEk2eXo4NXdRbUxkeVpCQ3EtQWxpcURBLWtXakZmbXRINzBuS0ZyLTNxV1FIN2ZCRC1WV3Y3dkxjUWc4SWttcWNJcHN2M01SdEVUMUF3UlNqa3dwOGdQNFBqam5rYjlJQzlvbloxTkhLV2VmYTJSZ1NE?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Australia"
+            ],
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "受巴斯拉影响，澳大利亚房地产股表现不佳 - Bloomberg.com"
           }
         ]
       }
@@ -5217,7 +5288,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "尽管美国外交推动，德国总理默茨对结束乌克兰战争的前景持悲观态度 - aa.com.tr"
+            "title_zh": "尽管美国外交推动，德国默茨对结束乌克兰战争的前景持悲观态度 - Anadolu Ajansı"
           },
           {
             "id": "46168a1e39f158a5",
@@ -5325,7 +5396,7 @@
             ],
             "category": "科技",
             "domestic_score": 38,
-            "importance": 52,
+            "importance": 51,
             "why_important": "涉及科技，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5493,7 +5564,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "意大利反对派批评政府没有加入对以色列非法定居点的制裁 - aa.com.tr"
+            "title_zh": "意大利反对派抨击政府没有加入对以色列非法定居点的制裁 - Anadolu Ajansı"
           },
           {
             "id": "8ffa0ce07749b38a",
@@ -5534,19 +5605,19 @@
             "title_zh": "意大利呼吁欧洲采取统一行动并对以色列定居者实施制裁 - 阿联酋之声"
           },
           {
-            "id": "62fa6a7ad882b700",
-            "title": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts - uk.finance.yahoo.com",
+            "id": "47f4f683229729ec",
+            "title": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts - Yahoo Finance UK",
             "published_at": "2026-09-09T11:42:06+00:00",
             "code": "IT",
             "event_country": "意大利",
             "sources": [
               {
-                "title": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts - uk.finance.yahoo.com",
+                "title": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts - Yahoo Finance UK",
                 "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY0ljV2ZoN29aallnbnFfdTh5NC1JVHVTQ3BIaHNYcjJiMFN5ajE3anVod3lpWkhrdDFxdGxpVkdULUJMZ0V4cVZXVUs5dkZHem43LVlFU2VwMGU0YVVudzNmRzEtYVZMa1ZQYjk0NWhFY3RuMDRVOUpBZzZqNTZHcG1uTQ?oc=5",
                 "published_at": "2026-09-09T11:42:06+00:00",
                 "source": "Coverage-Italy",
                 "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY0ljV2ZoN29aallnbnFfdTh5NC1JVHVTQ3BIaHNYcjJiMFN5ajE3anVod3lpWkhrdDFxdGxpVkdULUJMZ0V4cVZXVUs5dkZHem43LVlFU2VwMGU0YVVudzNmRzEtYVZMa1ZQYjk0NWhFY3RuMDRVOUpBZzZqNTZHcG1uTQ?oc=5",
-                "description": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts uk.finance.yahoo.com",
+                "description": "Italian lobby group calls for 80% EU tariff on Chinese cars and parts Yahoo Finance UK",
                 "feed_country": "IT",
                 "language": "en",
                 "code": "IT",
@@ -5569,45 +5640,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "意大利游说团体呼吁欧盟对中国汽车和零部件征收80%的关税 - uk.finance.yahoo.com"
-          },
-          {
-            "id": "0b435a642616c117",
-            "title": "Italy grows Reaper fleet - Janes",
-            "published_at": "2026-09-09T22:56:15+00:00",
-            "code": "IT",
-            "event_country": "意大利",
-            "sources": [
-              {
-                "title": "Italy grows Reaper fleet - Janes",
-                "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0MxRGQzMnlsQTR1RDU4dUFoSnZfX1NkNTRMNi1IcTB5cWhXM1lmd2RwOWczSzZuZkRBbThhbXpyYll2RVN1SVNpaTBmV0E2bkZHM1NqTUhCNXpkenBSSWFxVDlESEcyemE3bXlSUVZnQzk4dTd1Y2ZNTGFYWHNfbU9QbjlWZVYzd0FhVjNlR1BWNm5qRnlNSw?oc=5",
-                "published_at": "2026-09-09T22:56:15+00:00",
-                "source": "Coverage-Italy",
-                "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0MxRGQzMnlsQTR1RDU4dUFoSnZfX1NkNTRMNi1IcTB5cWhXM1lmd2RwOWczSzZuZkRBbThhbXpyYll2RVN1SVNpaTBmV0E2bkZHM1NqTUhCNXpkenBSSWFxVDlESEcyemE3bXlSUVZnQzk4dTd1Y2ZNTGFYWHNfbU9QbjlWZVYzd0FhVjNlR1BWNm5qRnlNSw?oc=5",
-                "description": "Italy grows Reaper fleet Janes",
-                "feed_country": "IT",
-                "language": "en",
-                "code": "IT",
-                "event_country": "意大利",
-                "event_country_en": "Italy"
-              }
-            ],
-            "source": "Coverage-Italy",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0MxRGQzMnlsQTR1RDU4dUFoSnZfX1NkNTRMNi1IcTB5cWhXM1lmd2RwOWczSzZuZkRBbThhbXpyYll2RVN1SVNpaTBmV0E2bkZHM1NqTUhCNXpkenBSSWFxVDlESEcyemE3bXlSUVZnQzk4dTd1Y2ZNTGFYWHNfbU9QbjlWZVYzd0FhVjNlR1BWNm5qRnlNSw?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0MxRGQzMnlsQTR1RDU4dUFoSnZfX1NkNTRMNi1IcTB5cWhXM1lmd2RwOWczSzZuZkRBbThhbXpyYll2RVN1SVNpaTBmV0E2bkZHM1NqTUhCNXpkenBSSWFxVDlESEcyemE3bXlSUVZnQzk4dTd1Y2ZNTGFYWHNfbU9QbjlWZVYzd0FhVjNlR1BWNm5qRnlNSw?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-Italy"
-            ],
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 36,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "意大利扩大“收割者”舰队 - Janes"
+            "title_zh": "意大利游说团体呼吁欧盟对中国汽车和零部件征收80%的关税 - 雅虎财经"
           },
           {
             "id": "0f2d2115e3804cd0",
@@ -5724,6 +5757,44 @@
             "title_zh": "意大利-日本：从 160 年的战略友谊到印度-地中海的挑战 - Decode39"
           },
           {
+            "id": "0becc151cd195806",
+            "title": "Innisfail artist a finalist at ‘world renowned’ competition in Italy - thealbertan.com",
+            "published_at": "2026-09-09T23:00:00+00:00",
+            "code": "IT",
+            "event_country": "意大利",
+            "sources": [
+              {
+                "title": "Innisfail artist a finalist at ‘world renowned’ competition in Italy - thealbertan.com",
+                "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGpqS0xoOFh4T2hwbnBNc2NuTk1PdUpoOUxLdWFtNHB6d1hpOFRwLVpfcE9TaTJEbW9IUUFUQ2J6bHNPU1V6Ul9obl9DUUp3WDRxTzZkMEVSVGx0VmlhUVhaTC1EMUx4NHk0M0ZuNmpXSHV6dTB3LW9aTnljOGJhUjNwNDJ6cmdxU3pwMlFDY0JKN1J1ZlB5WDhJT2VZWEliOFNQaEttSUY1bmJFc256NFRLdnh3d3drOFE?oc=5",
+                "published_at": "2026-09-09T23:00:00+00:00",
+                "source": "Coverage-Italy",
+                "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGpqS0xoOFh4T2hwbnBNc2NuTk1PdUpoOUxLdWFtNHB6d1hpOFRwLVpfcE9TaTJEbW9IUUFUQ2J6bHNPU1V6Ul9obl9DUUp3WDRxTzZkMEVSVGx0VmlhUVhaTC1EMUx4NHk0M0ZuNmpXSHV6dTB3LW9aTnljOGJhUjNwNDJ6cmdxU3pwMlFDY0JKN1J1ZlB5WDhJT2VZWEliOFNQaEttSUY1bmJFc256NFRLdnh3d3drOFE?oc=5",
+                "description": "Innisfail artist a finalist at ‘world renowned’ competition in Italy thealbertan.com",
+                "feed_country": "IT",
+                "language": "en",
+                "code": "IT",
+                "event_country": "意大利",
+                "event_country_en": "Italy"
+              }
+            ],
+            "source": "Coverage-Italy",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGpqS0xoOFh4T2hwbnBNc2NuTk1PdUpoOUxLdWFtNHB6d1hpOFRwLVpfcE9TaTJEbW9IUUFUQ2J6bHNPU1V6Ul9obl9DUUp3WDRxTzZkMEVSVGx0VmlhUVhaTC1EMUx4NHk0M0ZuNmpXSHV6dTB3LW9aTnljOGJhUjNwNDJ6cmdxU3pwMlFDY0JKN1J1ZlB5WDhJT2VZWEliOFNQaEttSUY1bmJFc256NFRLdnh3d3drOFE?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGpqS0xoOFh4T2hwbnBNc2NuTk1PdUpoOUxLdWFtNHB6d1hpOFRwLVpfcE9TaTJEbW9IUUFUQ2J6bHNPU1V6Ul9obl9DUUp3WDRxTzZkMEVSVGx0VmlhUVhaTC1EMUx4NHk0M0ZuNmpXSHV6dTB3LW9aTnljOGJhUjNwNDJ6cmdxU3pwMlFDY0JKN1J1ZlB5WDhJT2VZWEliOFNQaEttSUY1bmJFc256NFRLdnh3d3drOFE?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Italy"
+            ],
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 33,
+            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "因尼斯费尔艺术家入围意大利“世界知名”比赛决赛 - thealbertan.com"
+          },
+          {
             "id": "1177be143931c99e",
             "title": "Innisfail artist a finalist at ‘world renowned’ competition in Italy - The Albertan",
             "published_at": "2026-09-09T23:00:00+00:00",
@@ -5759,7 +5830,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "因尼斯费尔艺术家入围意大利“世界知名”比赛决赛 - The Albertan"
+            "title_zh": "阿兹梅里·哈克·巴东 (Azmeri Haque Badhon) 在意大利遭到袭击和骚扰 - 每日星报"
           }
         ]
       },
@@ -5807,7 +5878,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "印尼海军部署3艘军舰搜寻失踪记者 - Tempo.co"
+            "title_zh": "印尼海军部署3艘军舰搜寻失踪记者 - en.tempo.co"
           },
           {
             "id": "c10969fc360e18f4",
@@ -5845,7 +5916,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "2 亿印尼人的银行账户 - Tempo.co"
+            "title_zh": "2 亿印尼人的银行账户 - en.tempo.co"
           },
           {
             "id": "c24b89615b6987b4",
@@ -5921,7 +5992,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "普拉博沃：到 2050 年，印度尼西亚将成为世界第四大经济体 - Tempo.co"
+            "title_zh": "普拉博沃：到 2050 年，印度尼西亚将成为世界第四大经济体 - en.tempo.co"
           },
           {
             "id": "079983f3e2005946",
@@ -6111,7 +6182,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "AI 生成的视频错误地与 2026 年 9 月印度尼西亚火山喷发相关 - malaysia.news.yahoo.com"
+            "title_zh": "AI 生成的视频错误地与 2026 年 9 月印度尼西亚火山喷发相关 - 雅虎"
           }
         ]
       },
@@ -6159,7 +6230,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "以色列担忧华盛顿考虑从土耳其购买军舰 - yaffaps.com"
+            "title_zh": "以色列担忧华盛顿考虑从土耳其购买军舰 - 雅法新闻网"
           },
           {
             "id": "7549909a3d455b90",
@@ -6197,7 +6268,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "土耳其表示与加拿大的第二、第三核电站合作进展迅速 - marketscreener.com"
+            "title_zh": "土耳其称与加拿大的第二、第三核电站合作进展迅速 - marketscreener.com"
           },
           {
             "id": "f80c9b1760edb3a2",
@@ -6235,7 +6306,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "土耳其谴责胡塞武装对沙特阿拉伯的袭击 - 也门观察"
+            "title_zh": "土耳其谴责胡塞武装对沙特阿拉伯的袭击 - yemenmonitor.com"
           },
           {
             "id": "235eaad6f3033f9e",
@@ -6311,7 +6382,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "胡塞武装对沙特阿拉伯的袭击是对沙特-土耳其-巴基斯坦新协议的考验 - 分析 - 《耶路撒冷邮报》"
+            "title_zh": "胡塞武装对沙特阿拉伯的袭击是对沙特-土耳其-巴基斯坦新协议的考验 - 分析 - 耶路撒冷邮报"
           },
           {
             "id": "ea4a7d429ed5be0e",
@@ -6425,7 +6496,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "内阁限制对土耳其的石油换水出口量为每日 3.3 万桶 - iraqinews.com"
+            "title_zh": "内阁限制对土耳其的石油换水出口量为每日 3.3 万桶 - 伊拉克新闻"
           },
           {
             "id": "929fc7bb6c39dfbb",
@@ -6663,7 +6734,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "以色列：内塔尼亚胡将就阿联酋 10 月 7 日袭击前警告的报道起诉国土报 / FIP - 国际记者联合会 - IFJ"
+            "title_zh": "以色列：内塔尼亚胡将就阿联酋 10 月 7 日袭击前警告的报道起诉国土报 / FIP - ifj.org"
           },
           {
             "id": "1da48b06c21e897a",
@@ -6739,7 +6810,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "“重磅炸弹”报告称阿联酋明确警告内塔尼亚胡 10 月 7 日袭击 - alaska-native-news.com"
+            "title_zh": "“重磅炸弹”报告称阿联酋明确警告内塔尼亚胡 10 月 7 日发生袭击 - Alaska Native News"
           },
           {
             "id": "ee8163dc8a0fc31e",
@@ -6904,19 +6975,19 @@
         "count": 9,
         "events": [
           {
-            "id": "68cb8436d895bb4a",
-            "title": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials - Yellowhammer News",
+            "id": "cc9498f3d27cd636",
+            "title": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials - yellowhammernews.com",
             "published_at": "2026-09-09T21:21:27+00:00",
             "code": "MX",
             "event_country": "墨西哥",
             "sources": [
               {
-                "title": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials - Yellowhammer News",
+                "title": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials - yellowhammernews.com",
                 "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQS2xIdmhJdEZHNDVmbTVpM0RVUWRtenFkVlh6c2NQNVFqRktBS1diLXpZRDdadm1WcENNb0xuN0h2a1FycFFDZk9PVnhfdi1wazJNQzVyUVVTbDZLN0NqLXBIc0ZfMDA5T2Y0Mzl4TlBMWVdUOGI5UjVTdThlbUlrX244WEdCZ3RHOHc4Y2t2ZF9fNmo0Q1JpUUVWUm1SRzBRWjR1NFp5eUhfNzZNS19iYks0dFg0WGtseU13MDR0RjRoaGFQWmRKeTFRUnVTXzhMVURnR2ZPUXRFUGFFcVFldGxn?oc=5",
                 "published_at": "2026-09-09T21:21:27+00:00",
                 "source": "Coverage-Mexico",
                 "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQS2xIdmhJdEZHNDVmbTVpM0RVUWRtenFkVlh6c2NQNVFqRktBS1diLXpZRDdadm1WcENNb0xuN0h2a1FycFFDZk9PVnhfdi1wazJNQzVyUVVTbDZLN0NqLXBIc0ZfMDA5T2Y0Mzl4TlBMWVdUOGI5UjVTdThlbUlrX244WEdCZ3RHOHc4Y2t2ZF9fNmo0Q1JpUUVWUm1SRzBRWjR1NFp5eUhfNzZNS19iYks0dFg0WGtseU13MDR0RjRoaGFQWmRKeTFRUnVTXzhMVURnR2ZPUXRFUGFFcVFldGxn?oc=5",
-                "description": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials Yellowhammer News",
+                "description": "'Mexico is 100% guilty': Full tribunal ruling catches Mexican government red-handed in attack on Alabama's Vulcan Materials yellowhammernews.com",
                 "feed_country": "MX",
                 "language": "en",
                 "code": "MX",
@@ -6939,7 +7010,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "“墨西哥100%有罪”：法庭全面裁决，墨西哥政府对阿拉巴马州瓦肯材料的攻击当场被抓获 - Yellowhammer News"
+            "title_zh": "“墨西哥100%有罪”：法庭全面裁决，墨西哥政府在攻击阿拉巴马州瓦肯材料公司时当场被抓获 - Yellowhammernews.com"
           },
           {
             "id": "bf1300837f1d094f",
@@ -7054,44 +7125,6 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "墨西哥8月总体通胀加速，核心压力缓解 - 路透中文网"
-          },
-          {
-            "id": "51d4ad0f57ae3615",
-            "title": "Mexico Inflation Ticks Up Again as Banxico Holds Rates Firm - Bloomberg.com",
-            "published_at": "2026-09-09T13:12:03+00:00",
-            "code": "MX",
-            "event_country": "墨西哥",
-            "sources": [
-              {
-                "title": "Mexico Inflation Ticks Up Again as Banxico Holds Rates Firm - Bloomberg.com",
-                "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFBYXzduTDVXRGUweWZETlNtUW1vb0FfaTFRSWx4Ym9PX2VlQVQyS21oZnVlNzREcTY1bWlzdE5KZHlNUWJobzlNYkdLTkVlVWxHdzd3MW1DOXEwUWJMU25YX0FFcFpMeGFXaXFwbGdNLWt3RXEwWEVVZTM4ZkJwb2VOWHpQQmJFMnoxSC1CS3U3U1ZXbFlKNzBlTTJJOTBWWXNDN3AtelZEZjBhNU5DTXdOZ2d2QQ?oc=5",
-                "published_at": "2026-09-09T13:12:03+00:00",
-                "source": "Coverage-Mexico",
-                "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFBYXzduTDVXRGUweWZETlNtUW1vb0FfaTFRSWx4Ym9PX2VlQVQyS21oZnVlNzREcTY1bWlzdE5KZHlNUWJobzlNYkdLTkVlVWxHdzd3MW1DOXEwUWJMU25YX0FFcFpMeGFXaXFwbGdNLWt3RXEwWEVVZTM4ZkJwb2VOWHpQQmJFMnoxSC1CS3U3U1ZXbFlKNzBlTTJJOTBWWXNDN3AtelZEZjBhNU5DTXdOZ2d2QQ?oc=5",
-                "description": "Mexico Inflation Ticks Up Again as Banxico Holds Rates Firm Bloomberg.com",
-                "feed_country": "MX",
-                "language": "en",
-                "code": "MX",
-                "event_country": "墨西哥",
-                "event_country_en": "Mexico"
-              }
-            ],
-            "source": "Coverage-Mexico",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFBYXzduTDVXRGUweWZETlNtUW1vb0FfaTFRSWx4Ym9PX2VlQVQyS21oZnVlNzREcTY1bWlzdE5KZHlNUWJobzlNYkdLTkVlVWxHdzd3MW1DOXEwUWJMU25YX0FFcFpMeGFXaXFwbGdNLWt3RXEwWEVVZTM4ZkJwb2VOWHpQQmJFMnoxSC1CS3U3U1ZXbFlKNzBlTTJJOTBWWXNDN3AtelZEZjBhNU5DTXdOZ2d2QQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOFBYXzduTDVXRGUweWZETlNtUW1vb0FfaTFRSWx4Ym9PX2VlQVQyS21oZnVlNzREcTY1bWlzdE5KZHlNUWJobzlNYkdLTkVlVWxHdzd3MW1DOXEwUWJMU25YX0FFcFpMeGFXaXFwbGdNLWt3RXEwWEVVZTM4ZkJwb2VOWHpQQmJFMnoxSC1CS3U3U1ZXbFlKNzBlTTJJOTBWWXNDN3AtelZEZjBhNU5DTXdOZ2d2QQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-Mexico"
-            ],
-            "category": "宏观经济",
-            "domestic_score": 38,
-            "importance": 34,
-            "why_important": "涉及宏观经济，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "墨西哥央行维持利率不变，墨西哥通胀再次上升 - Bloomberg.com"
           },
           {
             "id": "e1649776a5dd42dd",
@@ -7244,6 +7277,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "丹佛斯在墨西哥启动无油止回阀生产 - Refindustry"
+          },
+          {
+            "id": "29a13ce9f9473406",
+            "title": "The Affordability Crisis: Reshaping Private Insurance, Alliances - Mexico Business News",
+            "published_at": "2026-09-09T23:05:44+00:00",
+            "code": "MX",
+            "event_country": "墨西哥",
+            "sources": [
+              {
+                "title": "The Affordability Crisis: Reshaping Private Insurance, Alliances - Mexico Business News",
+                "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMko1NFd3SWFic3MwLVY1RHRRd2YtVXdpX0gwMkRNY2FsVVlqSkplNXFzUnRJRHVOdWpJT05FX0hMWDVkVkp4d19VTldZREVNY1RTRHNlM3cyTEh3QkluVEE1dWZTc1BJSjhncFNGUXNxclEtU1BkbUFaZi16NHpLc0JCdzQxOU0xV0NkREp6eVFBSmZQTFhnZWlDRmVyOXM?oc=5",
+                "published_at": "2026-09-09T23:05:44+00:00",
+                "source": "Coverage-Mexico",
+                "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMko1NFd3SWFic3MwLVY1RHRRd2YtVXdpX0gwMkRNY2FsVVlqSkplNXFzUnRJRHVOdWpJT05FX0hMWDVkVkp4d19VTldZREVNY1RTRHNlM3cyTEh3QkluVEE1dWZTc1BJSjhncFNGUXNxclEtU1BkbUFaZi16NHpLc0JCdzQxOU0xV0NkREp6eVFBSmZQTFhnZWlDRmVyOXM?oc=5",
+                "description": "The Affordability Crisis: Reshaping Private Insurance, Alliances Mexico Business News",
+                "feed_country": "MX",
+                "language": "en",
+                "code": "MX",
+                "event_country": "墨西哥",
+                "event_country_en": "Mexico"
+              }
+            ],
+            "source": "Coverage-Mexico",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMko1NFd3SWFic3MwLVY1RHRRd2YtVXdpX0gwMkRNY2FsVVlqSkplNXFzUnRJRHVOdWpJT05FX0hMWDVkVkp4d19VTldZREVNY1RTRHNlM3cyTEh3QkluVEE1dWZTc1BJSjhncFNGUXNxclEtU1BkbUFaZi16NHpLc0JCdzQxOU0xV0NkREp6eVFBSmZQTFhnZWlDRmVyOXM?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMko1NFd3SWFic3MwLVY1RHRRd2YtVXdpX0gwMkRNY2FsVVlqSkplNXFzUnRJRHVOdWpJT05FX0hMWDVkVkp4d19VTldZREVNY1RTRHNlM3cyTEh3QkluVEE1dWZTc1BJSjhncFNGUXNxclEtU1BkbUFaZi16NHpLc0JCdzQxOU0xV0NkREp6eVFBSmZQTFhnZWlDRmVyOXM?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Mexico"
+            ],
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 31,
+            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "负担能力危机：重塑私人保险、联盟 - 墨西哥商业新闻"
           }
         ]
       },
@@ -7443,7 +7514,45 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "伊朗首次发射光电导弹——瞄准美国军舰：报道 - 纽约邮报"
+            "title_zh": "伊朗首次发射光电导弹——瞄准美国军舰：报道 - 《纽约邮报》"
+          },
+          {
+            "id": "ceb1f25932f7f37a",
+            "title": "Sep. 09: More Strikes, Higher Oil Prices in Iran War; Why an Algorithm is Cutting Disability Benefits - NBC News",
+            "published_at": "2026-09-09T23:07:20+00:00",
+            "code": "IR",
+            "event_country": "伊朗",
+            "sources": [
+              {
+                "title": "Sep. 09: More Strikes, Higher Oil Prices in Iran War; Why an Algorithm is Cutting Disability Benefits - NBC News",
+                "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+                "published_at": "2026-09-09T23:07:20+00:00",
+                "source": "Coverage-Iran",
+                "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+                "description": "Sep. 09: More Strikes, Higher Oil Prices in Iran War; Why an Algorithm is Cutting Disability Benefits NBC News",
+                "feed_country": "IR",
+                "language": "en",
+                "code": "IR",
+                "event_country": "伊朗",
+                "event_country_en": "Iran"
+              }
+            ],
+            "source": "Coverage-Iran",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Iran"
+            ],
+            "category": "能源",
+            "domestic_score": 46,
+            "importance": 59,
+            "why_important": "涉及能源，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "9月9日：伊朗战争中更多罢工，油价上涨；为什么算法会削减残疾福利 - NBC 新闻"
           },
           {
             "id": "5996489fbac352db",
@@ -7491,12 +7600,12 @@
             "event_country": "伊朗",
             "sources": [
               {
-                "title": "Trump says oil prices that spiked because of Iran war likely won't come down until after midterms - AP News",
-                "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXltZEtoQUhXVTQ1bWJMekROZWpIeXVtZmljZlVNejktRWE0TlZEdWY3X1hGMnNQRXVUUm9mTGN1RUFYOGh5SlF0LWRnWnZCaV9sYllTLVoyekU3TWlxNTYxenMteGVNSEw2d1ZmMnhOVXdoRGFmS2I5R2ljdTdkN3JwamRjbFJlb2JST2Q5YUgtXzRw?oc=5",
-                "published_at": "2026-09-09T18:46:30+00:00",
+                "title": "Trump says oil prices that spiked because of Iran war likely won't come down until after midterms - audacy.com",
+                "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVk5kTFNOa0FaQ0liR3NuNDMxN0pqRS1TQ3k4X3oxeExvSzhYQzFaNnRWZlFHaDhZd3VkaF9xdGhWTlhxVDRmU1FpMkcwcVFoX29WMWFCZnZxMlpyQ2ViM1VjRmljS2Z6VGNGdU91OWgxNXQ5UmtFdm9jRTMzaUFCMjkxRFUwT3lFa2VEcnBtQnAxT0xzUVU2V3Zjc1lWZ21uVW5j?oc=5",
+                "published_at": "2026-09-09T18:44:00+00:00",
                 "source": "Coverage-Iran",
-                "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXltZEtoQUhXVTQ1bWJMekROZWpIeXVtZmljZlVNejktRWE0TlZEdWY3X1hGMnNQRXVUUm9mTGN1RUFYOGh5SlF0LWRnWnZCaV9sYllTLVoyekU3TWlxNTYxenMteGVNSEw2d1ZmMnhOVXdoRGFmS2I5R2ljdTdkN3JwamRjbFJlb2JST2Q5YUgtXzRw?oc=5",
-                "description": "Trump says oil prices that spiked because of Iran war likely won't come down until after midterms AP News",
+                "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVk5kTFNOa0FaQ0liR3NuNDMxN0pqRS1TQ3k4X3oxeExvSzhYQzFaNnRWZlFHaDhZd3VkaF9xdGhWTlhxVDRmU1FpMkcwcVFoX29WMWFCZnZxMlpyQ2ViM1VjRmljS2Z6VGNGdU91OWgxNXQ5UmtFdm9jRTMzaUFCMjkxRFUwT3lFa2VEcnBtQnAxT0xzUVU2V3Zjc1lWZ21uVW5j?oc=5",
+                "description": "Trump says oil prices that spiked because of Iran war likely won't come down until after midterms audacy.com",
                 "feed_country": "IR",
                 "language": "en",
                 "code": "IR",
@@ -7505,8 +7614,8 @@
               }
             ],
             "source": "Coverage-Iran",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXltZEtoQUhXVTQ1bWJMekROZWpIeXVtZmljZlVNejktRWE0TlZEdWY3X1hGMnNQRXVUUm9mTGN1RUFYOGh5SlF0LWRnWnZCaV9sYllTLVoyekU3TWlxNTYxenMteGVNSEw2d1ZmMnhOVXdoRGFmS2I5R2ljdTdkN3JwamRjbFJlb2JST2Q5YUgtXzRw?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXltZEtoQUhXVTQ1bWJMekROZWpIeXVtZmljZlVNejktRWE0TlZEdWY3X1hGMnNQRXVUUm9mTGN1RUFYOGh5SlF0LWRnWnZCaV9sYllTLVoyekU3TWlxNTYxenMteGVNSEw2d1ZmMnhOVXdoRGFmS2I5R2ljdTdkN3JwamRjbFJlb2JST2Q5YUgtXzRw?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVk5kTFNOa0FaQ0liR3NuNDMxN0pqRS1TQ3k4X3oxeExvSzhYQzFaNnRWZlFHaDhZd3VkaF9xdGhWTlhxVDRmU1FpMkcwcVFoX29WMWFCZnZxMlpyQ2ViM1VjRmljS2Z6VGNGdU91OWgxNXQ5UmtFdm9jRTMzaUFCMjkxRFUwT3lFa2VEcnBtQnAxT0xzUVU2V3Zjc1lWZ21uVW5j?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVk5kTFNOa0FaQ0liR3NuNDMxN0pqRS1TQ3k4X3oxeExvSzhYQzFaNnRWZlFHaDhZd3VkaF9xdGhWTlhxVDRmU1FpMkcwcVFoX29WMWFCZnZxMlpyQ2ViM1VjRmljS2Z6VGNGdU91OWgxNXQ5UmtFdm9jRTMzaUFCMjkxRFUwT3lFa2VEcnBtQnAxT0xzUVU2V3Zjc1lWZ21uVW5j?oc=5",
             "source_count": 1,
             "source_names": [
               "Coverage-Iran"
@@ -7558,44 +7667,6 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "伊朗和美国在战争中最大规模的航运袭击中袭击了油轮 - 檀香山明星广告商"
-          },
-          {
-            "id": "0a9b6370b3b26ef7",
-            "title": "Saudi Oil Exports Plunge as Spread of War Shuts Off Shipping Routes - nytimes.com",
-            "published_at": "2026-09-09T15:30:39+00:00",
-            "code": "IR",
-            "event_country": "伊朗",
-            "sources": [
-              {
-                "title": "Saudi Oil Exports Plunge as Spread of War Shuts Off Shipping Routes - nytimes.com",
-                "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV21kdlFZS0pSTkZWUl85WmZnU3BrYWZsd044REEzVmgxZG1ieS1uVkt3YjB3c1BOYVJSd1lFLUNCN2RWRFRfM2V6aGJkNFZLeXg2ZHJBNEJuTk81UDRGN0JyUVhPRjR4YlVaOGp3VG93Y3I2TFpYODFhdUZxMkNVZXBPckd0MEZINF9YQnZEQnJHNElZ?oc=5",
-                "published_at": "2026-09-09T15:30:39+00:00",
-                "source": "Coverage-Iran",
-                "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV21kdlFZS0pSTkZWUl85WmZnU3BrYWZsd044REEzVmgxZG1ieS1uVkt3YjB3c1BOYVJSd1lFLUNCN2RWRFRfM2V6aGJkNFZLeXg2ZHJBNEJuTk81UDRGN0JyUVhPRjR4YlVaOGp3VG93Y3I2TFpYODFhdUZxMkNVZXBPckd0MEZINF9YQnZEQnJHNElZ?oc=5",
-                "description": "Saudi Oil Exports Plunge as Spread of War Shuts Off Shipping Routes nytimes.com",
-                "feed_country": "IR",
-                "language": "en",
-                "code": "IR",
-                "event_country": "伊朗",
-                "event_country_en": "Iran"
-              }
-            ],
-            "source": "Coverage-Iran",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV21kdlFZS0pSTkZWUl85WmZnU3BrYWZsd044REEzVmgxZG1ieS1uVkt3YjB3c1BOYVJSd1lFLUNCN2RWRFRfM2V6aGJkNFZLeXg2ZHJBNEJuTk81UDRGN0JyUVhPRjR4YlVaOGp3VG93Y3I2TFpYODFhdUZxMkNVZXBPckd0MEZINF9YQnZEQnJHNElZ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV21kdlFZS0pSTkZWUl85WmZnU3BrYWZsd044REEzVmgxZG1ieS1uVkt3YjB3c1BOYVJSd1lFLUNCN2RWRFRfM2V6aGJkNFZLeXg2ZHJBNEJuTk81UDRGN0JyUVhPRjR4YlVaOGp3VG93Y3I2TFpYODFhdUZxMkNVZXBPckd0MEZINF9YQnZEQnJHNElZ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-Iran"
-            ],
-            "category": "能源",
-            "domestic_score": 46,
-            "importance": 57,
-            "why_important": "涉及能源，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "战争蔓延导致航线中断，沙特石油出口暴跌 - nytimes.com"
           },
           {
             "id": "c19fda8853765d10",
@@ -7698,19 +7769,19 @@
             "title_zh": "战争期间瑞士禁止进口苏丹黄金 - Radio Tamazuj"
           },
           {
-            "id": "a159351cc2161b05",
-            "title": "Switzerland joins EU sanctions on Sudan gold trade amid war - aa.com.tr",
+            "id": "ef27c180afdadc61",
+            "title": "Switzerland joins EU sanctions on Sudan gold trade amid war - Anadolu Ajansı",
             "published_at": "2026-09-09T17:37:19+00:00",
             "code": "CH",
             "event_country": "瑞士",
             "sources": [
               {
-                "title": "Switzerland joins EU sanctions on Sudan gold trade amid war - aa.com.tr",
+                "title": "Switzerland joins EU sanctions on Sudan gold trade amid war - Anadolu Ajansı",
                 "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZjBIOGoyZVp2RW5oRlF0Zm5DNUpneFVnZ0FtR2hxaENJTVJHMWVJeUxybkRWbHFHdHhXYkYwMGU3VUN6Ti1zZzBsdm1TU2JucmhXeFp5U2hFMHZrcUN1Slc2cHJLZEoxbE5nUEo5VzhaYmNJWERqUVlJRXQ3WWRENW8yZm1NT0staW1adThTT3NUbG9TcE05YjgyNmpEOGpY?oc=5",
                 "published_at": "2026-09-09T17:37:19+00:00",
                 "source": "Coverage-Switzerland",
                 "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZjBIOGoyZVp2RW5oRlF0Zm5DNUpneFVnZ0FtR2hxaENJTVJHMWVJeUxybkRWbHFHdHhXYkYwMGU3VUN6Ti1zZzBsdm1TU2JucmhXeFp5U2hFMHZrcUN1Slc2cHJLZEoxbE5nUEo5VzhaYmNJWERqUVlJRXQ3WWRENW8yZm1NT0staW1adThTT3NUbG9TcE05YjgyNmpEOGpY?oc=5",
-                "description": "Switzerland joins EU sanctions on Sudan gold trade amid war aa.com.tr",
+                "description": "Switzerland joins EU sanctions on Sudan gold trade amid war Anadolu Ajansı",
                 "feed_country": "CH",
                 "language": "en",
                 "code": "CH",
@@ -7733,7 +7804,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "瑞士加入欧盟对战争期间苏丹黄金贸易的制裁 - aa.com.tr"
+            "title_zh": "瑞士加入欧盟对战争期间苏丹黄金贸易的制裁 - 阿纳多卢通讯社"
           },
           {
             "id": "c96e6f18a922b257",
@@ -8125,7 +8196,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "共和党中期代表大会第一晚的事实核查 - 雅虎新闻"
+            "title_zh": "共和党中期大会第一晚的事实核查 - 雅虎新闻"
           },
           {
             "id": "1230ea70cc9a44d8",
@@ -8163,7 +8234,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "新加坡中医推荐缓解雾霾症状的饮品 - UA.NEWS"
+            "title_zh": "新加坡中医推荐缓解雾霾症状的饮料 - UA.NEWS"
           },
           {
             "id": "255167511b692a00",
@@ -8204,19 +8275,19 @@
             "title_zh": "美国银行最大的利率交易员之一刚刚在新加坡辞职。对于基金 - eFinancialCareers"
           },
           {
-            "id": "c6109a126c5451f9",
-            "title": "SINGAPORE: Accurate Country-of-Origin Declarations for Transhipped Goods Reiterated - HKTDC Research",
-            "published_at": "2026-09-09T08:21:07+00:00",
+            "id": "ad562d2bccf95e20",
+            "title": "New ASEAN Study Reveals Businesses Are Rethinking Hiring and Investment as Growth Priorities Shift - Yahoo Finance Singapore",
+            "published_at": "2026-09-09T23:45:00+00:00",
             "code": "SG",
             "event_country": "新加坡",
             "sources": [
               {
-                "title": "SINGAPORE: Accurate Country-of-Origin Declarations for Transhipped Goods Reiterated - HKTDC Research",
-                "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JSV96TW5QTmpuVWNyRjNaejhhUGFFRWhRWDlHbTRCVmtjb3drd0dYaGVvWnVfNHd4VURpYWRtb3pONnFYT2s0WXJSdkd0dEVlX0V5YktsSzNNckZkVnBMWnZn?oc=5",
-                "published_at": "2026-09-09T08:21:07+00:00",
+                "title": "New ASEAN Study Reveals Businesses Are Rethinking Hiring and Investment as Growth Priorities Shift - Yahoo Finance Singapore",
+                "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemx0YnFLcExpM3pqVnFRYjdoOVRvODlmQ2t4MmZfdFAtOXdmd0ZkUVdSMkxaeGJDaElYR21qaXpwckszcUNMcVltODhmbW9EMzlBem1rRFdIOVYxX2xSV05Ybm40dTB0c04xXzhCQzdwT3R4dzBEZThqVDNWSk5rRDVETHNualVsZm9KRS0zTjhud2No?oc=5",
+                "published_at": "2026-09-09T23:45:00+00:00",
                 "source": "Coverage-Singapore",
-                "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JSV96TW5QTmpuVWNyRjNaejhhUGFFRWhRWDlHbTRCVmtjb3drd0dYaGVvWnVfNHd4VURpYWRtb3pONnFYT2s0WXJSdkd0dEVlX0V5YktsSzNNckZkVnBMWnZn?oc=5",
-                "description": "SINGAPORE: Accurate Country-of-Origin Declarations for Transhipped Goods Reiterated HKTDC Research",
+                "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemx0YnFLcExpM3pqVnFRYjdoOVRvODlmQ2t4MmZfdFAtOXdmd0ZkUVdSMkxaeGJDaElYR21qaXpwckszcUNMcVltODhmbW9EMzlBem1rRFdIOVYxX2xSV05Ybm40dTB0c04xXzhCQzdwT3R4dzBEZThqVDNWSk5rRDVETHNualVsZm9KRS0zTjhud2No?oc=5",
+                "description": "New ASEAN Study Reveals Businesses Are Rethinking Hiring and Investment as Growth Priorities Shift Yahoo Finance Singapore",
                 "feed_country": "SG",
                 "language": "en",
                 "code": "SG",
@@ -8225,21 +8296,21 @@
               }
             ],
             "source": "Coverage-Singapore",
-            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JSV96TW5QTmpuVWNyRjNaejhhUGFFRWhRWDlHbTRCVmtjb3drd0dYaGVvWnVfNHd4VURpYWRtb3pONnFYT2s0WXJSdkd0dEVlX0V5YktsSzNNckZkVnBMWnZn?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JSV96TW5QTmpuVWNyRjNaejhhUGFFRWhRWDlHbTRCVmtjb3drd0dYaGVvWnVfNHd4VURpYWRtb3pONnFYT2s0WXJSdkd0dEVlX0V5YktsSzNNckZkVnBMWnZn?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemx0YnFLcExpM3pqVnFRYjdoOVRvODlmQ2t4MmZfdFAtOXdmd0ZkUVdSMkxaeGJDaElYR21qaXpwckszcUNMcVltODhmbW9EMzlBem1rRFdIOVYxX2xSV05Ybm40dTB0c04xXzhCQzdwT3R4dzBEZThqVDNWSk5rRDVETHNualVsZm9KRS0zTjhud2No?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemx0YnFLcExpM3pqVnFRYjdoOVRvODlmQ2t4MmZfdFAtOXdmd0ZkUVdSMkxaeGJDaElYR21qaXpwckszcUNMcVltODhmbW9EMzlBem1rRFdIOVYxX2xSV05Ybm40dTB0c04xXzhCQzdwT3R4dzBEZThqVDNWSk5rRDVETHNualVsZm9KRS0zTjhud2No?oc=5",
             "source_count": 1,
             "source_names": [
               "Coverage-Singapore"
             ],
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 28,
-            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 30,
+            "why_important": "涉及金融，在过去24小时具有跟踪价值。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "新加坡：重申转运货物准确原产地申报 - 香港贸发局经贸研究"
+            "title_zh": "新的东盟研究显示，随着增长重点的转变，企业正在重新考虑招聘和投资 - 雅虎财经"
           },
           {
             "id": "4a391fdb0bf51aab",
@@ -8328,6 +8399,44 @@
             "title_zh": "2026 年南非百老汇世界奖提名开放 - BroadwayWorld"
           },
           {
+            "id": "3377dc8e47e1bc57",
+            "title": "South Africa’s cable warning: When cheap imports come at a cost - Bizcommunity",
+            "published_at": "2026-09-09T15:33:23+00:00",
+            "code": "ZA",
+            "event_country": "南非",
+            "sources": [
+              {
+                "title": "South Africa’s cable warning: When cheap imports come at a cost - Bizcommunity",
+                "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPckpCb3RoSTRLeWRGZkRjUzA0RkRTa1I3WUZVV1lqR0F1blhZRW14REpySk9TLWVQMF9SLUNpYXdFb0tIeW53eHNDckhyMkVfbmJoQWJFM1NBVXM3bURSeHVwTTRRRTc2RzNEMEJwMXNZckJ4aVZ3eG1fUDhBZElLS2tTYVJvcEtWV1RQN2wzRGh6VUhGUzloVGFEYWxkTzByUTFnNVNhY0tEUQ?oc=5",
+                "published_at": "2026-09-09T15:33:23+00:00",
+                "source": "Coverage-South Africa",
+                "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPckpCb3RoSTRLeWRGZkRjUzA0RkRTa1I3WUZVV1lqR0F1blhZRW14REpySk9TLWVQMF9SLUNpYXdFb0tIeW53eHNDckhyMkVfbmJoQWJFM1NBVXM3bURSeHVwTTRRRTc2RzNEMEJwMXNZckJ4aVZ3eG1fUDhBZElLS2tTYVJvcEtWV1RQN2wzRGh6VUhGUzloVGFEYWxkTzByUTFnNVNhY0tEUQ?oc=5",
+                "description": "South Africa’s cable warning: When cheap imports come at a cost Bizcommunity",
+                "feed_country": "ZA",
+                "language": "en",
+                "code": "ZA",
+                "event_country": "南非",
+                "event_country_en": "South Africa"
+              }
+            ],
+            "source": "Coverage-South Africa",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPckpCb3RoSTRLeWRGZkRjUzA0RkRTa1I3WUZVV1lqR0F1blhZRW14REpySk9TLWVQMF9SLUNpYXdFb0tIeW53eHNDckhyMkVfbmJoQWJFM1NBVXM3bURSeHVwTTRRRTc2RzNEMEJwMXNZckJ4aVZ3eG1fUDhBZElLS2tTYVJvcEtWV1RQN2wzRGh6VUhGUzloVGFEYWxkTzByUTFnNVNhY0tEUQ?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPckpCb3RoSTRLeWRGZkRjUzA0RkRTa1I3WUZVV1lqR0F1blhZRW14REpySk9TLWVQMF9SLUNpYXdFb0tIeW53eHNDckhyMkVfbmJoQWJFM1NBVXM3bURSeHVwTTRRRTc2RzNEMEJwMXNZckJ4aVZ3eG1fUDhBZElLS2tTYVJvcEtWV1RQN2wzRGh6VUhGUzloVGFEYWxkTzByUTFnNVNhY0tEUQ?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-South Africa"
+            ],
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 53,
+            "why_important": "涉及国防安全，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "南非电报警告：当廉价进口产品付出代价时 - Bizcommunity"
+          },
+          {
             "id": "6da5af27d1c5a803",
             "title": "South African mechanic among 11 people missing after Mozambique hunting lodge attack — Watch - CLUB OF MOZAMBIQUE",
             "published_at": "2026-09-09T07:27:43+00:00",
@@ -8402,44 +8511,6 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "历史上的今天：9 月 9 日，里根总统制裁白人统治的南非政府 - 水星报"
-          },
-          {
-            "id": "8072dc8c044bb28b",
-            "title": "Two Foreign Nationals Arrested As South African Police Bust Multimillion-Rand Mandrax Lab In Pretoria - Sahara Reporters",
-            "published_at": "2026-09-09T23:30:28+00:00",
-            "code": "ZA",
-            "event_country": "南非",
-            "sources": [
-              {
-                "title": "Two Foreign Nationals Arrested As South African Police Bust Multimillion-Rand Mandrax Lab In Pretoria - Sahara Reporters",
-                "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR1MxWWplMktLT0Q5aWpXUVpDYUptekU5eWNQVGxzaG9MbkU1YUg4b1JMVlZPdmktMkdXMWFIb3dzZy1NeEJwejZVZ1NxSWhDRnRFeWh4T0tjSXF0LTNhXzdLM2xYTUxMMUZjVjM2N2xheXZnTHFCa1VydVNrbTdXT3FvLUtZUV9jS2NCT0FHQ2ZpYUVsRTlBUXdOYXhRN05fWFBjbnd6Q01RVzZ3Y3RsU1oxS1o1VVc5N1NzdklfU2wtNTA?oc=5",
-                "published_at": "2026-09-09T23:30:28+00:00",
-                "source": "Coverage-South Africa",
-                "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR1MxWWplMktLT0Q5aWpXUVpDYUptekU5eWNQVGxzaG9MbkU1YUg4b1JMVlZPdmktMkdXMWFIb3dzZy1NeEJwejZVZ1NxSWhDRnRFeWh4T0tjSXF0LTNhXzdLM2xYTUxMMUZjVjM2N2xheXZnTHFCa1VydVNrbTdXT3FvLUtZUV9jS2NCT0FHQ2ZpYUVsRTlBUXdOYXhRN05fWFBjbnd6Q01RVzZ3Y3RsU1oxS1o1VVc5N1NzdklfU2wtNTA?oc=5",
-                "description": "Two Foreign Nationals Arrested As South African Police Bust Multimillion-Rand Mandrax Lab In Pretoria Sahara Reporters",
-                "feed_country": "ZA",
-                "language": "en",
-                "code": "ZA",
-                "event_country": "南非",
-                "event_country_en": "South Africa"
-              }
-            ],
-            "source": "Coverage-South Africa",
-            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR1MxWWplMktLT0Q5aWpXUVpDYUptekU5eWNQVGxzaG9MbkU1YUg4b1JMVlZPdmktMkdXMWFIb3dzZy1NeEJwejZVZ1NxSWhDRnRFeWh4T0tjSXF0LTNhXzdLM2xYTUxMMUZjVjM2N2xheXZnTHFCa1VydVNrbTdXT3FvLUtZUV9jS2NCT0FHQ2ZpYUVsRTlBUXdOYXhRN05fWFBjbnd6Q01RVzZ3Y3RsU1oxS1o1VVc5N1NzdklfU2wtNTA?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR1MxWWplMktLT0Q5aWpXUVpDYUptekU5eWNQVGxzaG9MbkU1YUg4b1JMVlZPdmktMkdXMWFIb3dzZy1NeEJwejZVZ1NxSWhDRnRFeWh4T0tjSXF0LTNhXzdLM2xYTUxMMUZjVjM2N2xheXZnTHFCa1VydVNrbTdXT3FvLUtZUV9jS2NCT0FHQ2ZpYUVsRTlBUXdOYXhRN05fWFBjbnd6Q01RVzZ3Y3RsU1oxS1o1VVc5N1NzdklfU2wtNTA?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-South Africa"
-            ],
-            "category": "外交",
-            "domestic_score": 30,
-            "importance": 33,
-            "why_important": "涉及外交，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "南非警方在比勒陀利亚捣毁价值数百万兰特的曼德拉克斯实验室，两名外国人被捕 - 撒哈拉记者"
           },
           {
             "id": "e9abfc051e2439ed",
@@ -8518,44 +8589,6 @@
             "title_zh": "WANDILE SIHLOBO：港口恢复增加了南非农民的收入 - 《金融邮报》"
           },
           {
-            "id": "3c38eba2d640ce0b",
-            "title": "EDITORIAL: Agoa’s unlikely revival comes with a catch for South Africa - Financial Mail",
-            "published_at": "2026-09-09T23:47:56+00:00",
-            "code": "ZA",
-            "event_country": "南非",
-            "sources": [
-              {
-                "title": "EDITORIAL: Agoa’s unlikely revival comes with a catch for South Africa - Financial Mail",
-                "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX3Vnbi16WHNQUTl1X0V3aHd1V2w4RGx3TkpFUFFWUHk5T2lIN3RZR3M5SlVyM2FMV0VXeE9WbXd1MmlMUHBZczZvd2EwQ2NnVlZZUTdXVDJ0NkxzcTZUQzJrX2g5ajBJNzRnblNBcW91cWl2QXhwRDNqdEFHLVp4RWdsdENnenpyUnRZQ3ZRUEV2QjJkSWZoSGZ5NktqRVdXcFRkUWxKV3FmQQ?oc=5",
-                "published_at": "2026-09-09T23:47:56+00:00",
-                "source": "Coverage-South Africa",
-                "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX3Vnbi16WHNQUTl1X0V3aHd1V2w4RGx3TkpFUFFWUHk5T2lIN3RZR3M5SlVyM2FMV0VXeE9WbXd1MmlMUHBZczZvd2EwQ2NnVlZZUTdXVDJ0NkxzcTZUQzJrX2g5ajBJNzRnblNBcW91cWl2QXhwRDNqdEFHLVp4RWdsdENnenpyUnRZQ3ZRUEV2QjJkSWZoSGZ5NktqRVdXcFRkUWxKV3FmQQ?oc=5",
-                "description": "EDITORIAL: Agoa’s unlikely revival comes with a catch for South Africa Financial Mail",
-                "feed_country": "ZA",
-                "language": "en",
-                "code": "ZA",
-                "event_country": "南非",
-                "event_country_en": "South Africa"
-              }
-            ],
-            "source": "Coverage-South Africa",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX3Vnbi16WHNQUTl1X0V3aHd1V2w4RGx3TkpFUFFWUHk5T2lIN3RZR3M5SlVyM2FMV0VXeE9WbXd1MmlMUHBZczZvd2EwQ2NnVlZZUTdXVDJ0NkxzcTZUQzJrX2g5ajBJNzRnblNBcW91cWl2QXhwRDNqdEFHLVp4RWdsdENnenpyUnRZQ3ZRUEV2QjJkSWZoSGZ5NktqRVdXcFRkUWxKV3FmQQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX3Vnbi16WHNQUTl1X0V3aHd1V2w4RGx3TkpFUFFWUHk5T2lIN3RZR3M5SlVyM2FMV0VXeE9WbXd1MmlMUHBZczZvd2EwQ2NnVlZZUTdXVDJ0NkxzcTZUQzJrX2g5ajBJNzRnblNBcW91cWl2QXhwRDNqdEFHLVp4RWdsdENnenpyUnRZQ3ZRUEV2QjJkSWZoSGZ5NktqRVdXcFRkUWxKV3FmQQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-South Africa"
-            ],
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 28,
-            "why_important": "涉及科技，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "社论：Agoa 不太可能的复兴给南非带来了麻烦 - 《金融邮报》"
-          },
-          {
             "id": "304beddc3b7577dc",
             "title": "Netflix South Africa Celebrates 10 Years With Slate Update: 'Blood Legacy' Season 2 and 'How to Ruin Diwali' Dates Set - What's on Netflix",
             "published_at": "2026-09-09T10:30:34+00:00",
@@ -8592,6 +8625,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "Netflix 南非推出更新纪念 10 周年：《血腥遗产》第二季和《如何毁掉排灯节》日期确定 - Netflix 上的节目"
+          },
+          {
+            "id": "8548eb48ccf03c35",
+            "title": "Families of six South Africans missing after floods desperate for answers - The Witness | Your compass in the community",
+            "published_at": "2026-09-09T05:04:06+00:00",
+            "code": "ZA",
+            "event_country": "南非",
+            "sources": [
+              {
+                "title": "Families of six South Africans missing after floods desperate for answers - The Witness | Your compass in the community",
+                "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGtoSW1tWjNPZGZYX3I3eE9TQWFWMjh2Vy1QTDBuMDhtX3F4SDcxRG9IcUtJXy1PZ0lva3ZzNWE5T25MekEtWW1sNDVFNm83UWIyeGF4c0Yyc2dVdEdZSXYwZUI2azRMUzVpaHp6M1VMNG5hdlBEdm1TN2ZtSnUwTWNkd1MxMXkzbV95NHVBUjlCV0hTTVN2MGJ5Zk9pdnFvazUzRWhmR0RlVXJZcUVFbXFR?oc=5",
+                "published_at": "2026-09-09T05:04:06+00:00",
+                "source": "Coverage-South Africa",
+                "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGtoSW1tWjNPZGZYX3I3eE9TQWFWMjh2Vy1QTDBuMDhtX3F4SDcxRG9IcUtJXy1PZ0lva3ZzNWE5T25MekEtWW1sNDVFNm83UWIyeGF4c0Yyc2dVdEdZSXYwZUI2azRMUzVpaHp6M1VMNG5hdlBEdm1TN2ZtSnUwTWNkd1MxMXkzbV95NHVBUjlCV0hTTVN2MGJ5Zk9pdnFvazUzRWhmR0RlVXJZcUVFbXFR?oc=5",
+                "description": "Families of six South Africans missing after floods desperate for answers The Witness | Your compass in the community",
+                "feed_country": "ZA",
+                "language": "en",
+                "code": "ZA",
+                "event_country": "南非",
+                "event_country_en": "South Africa"
+              }
+            ],
+            "source": "Coverage-South Africa",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGtoSW1tWjNPZGZYX3I3eE9TQWFWMjh2Vy1QTDBuMDhtX3F4SDcxRG9IcUtJXy1PZ0lva3ZzNWE5T25MekEtWW1sNDVFNm83UWIyeGF4c0Yyc2dVdEdZSXYwZUI2azRMUzVpaHp6M1VMNG5hdlBEdm1TN2ZtSnUwTWNkd1MxMXkzbV95NHVBUjlCV0hTTVN2MGJ5Zk9pdnFvazUzRWhmR0RlVXJZcUVFbXFR?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSGtoSW1tWjNPZGZYX3I3eE9TQWFWMjh2Vy1QTDBuMDhtX3F4SDcxRG9IcUtJXy1PZ0lva3ZzNWE5T25MekEtWW1sNDVFNm83UWIyeGF4c0Yyc2dVdEdZSXYwZUI2azRMUzVpaHp6M1VMNG5hdlBEdm1TN2ZtSnUwTWNkd1MxMXkzbV95NHVBUjlCV0hTTVN2MGJ5Zk9pdnFvazUzRWhmR0RlVXJZcUVFbXFR?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-South Africa"
+            ],
+            "category": "灾害",
+            "domestic_score": 38,
+            "importance": 27,
+            "why_important": "涉及灾害，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "六名南非人的家人在洪水后失踪，迫切需要答案 - 见证人 |您的社区指南针"
           }
         ]
       },
@@ -8680,44 +8751,6 @@
             "title_zh": "情报监管机构警告新的间谍权力威胁法治 - DutchNews.nl"
           },
           {
-            "id": "c2096b551682888a",
-            "title": "Minister Berendsen visits Lithuania - Netherlands and you",
-            "published_at": "2026-09-09T18:46:31+00:00",
-            "code": "NL",
-            "event_country": "荷兰",
-            "sources": [
-              {
-                "title": "Minister Berendsen visits Lithuania - Netherlands and you",
-                "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYUZtd2ZmR2lLWnVRS1I2Q2pHVVJDZ3hURk1GZ2lqMlZ1Mm9YRnpNM0NITFczMTdZQkNGRGZnd1gwbDlGaVpGaFNIRjUtLXVjbTMxMV9LdHRNeHdyTkNTb2tscE5hR3hxZ2h1NGdfRTFlbzBRMlFzaDBRYTUxX0o3V2toRXF4Y0FsajVTbQ?oc=5",
-                "published_at": "2026-09-09T18:46:31+00:00",
-                "source": "Coverage-Netherlands",
-                "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYUZtd2ZmR2lLWnVRS1I2Q2pHVVJDZ3hURk1GZ2lqMlZ1Mm9YRnpNM0NITFczMTdZQkNGRGZnd1gwbDlGaVpGaFNIRjUtLXVjbTMxMV9LdHRNeHdyTkNTb2tscE5hR3hxZ2h1NGdfRTFlbzBRMlFzaDBRYTUxX0o3V2toRXF4Y0FsajVTbQ?oc=5",
-                "description": "Minister Berendsen visits Lithuania Netherlands and you",
-                "feed_country": "NL",
-                "language": "en",
-                "code": "NL",
-                "event_country": "荷兰",
-                "event_country_en": "Netherlands"
-              }
-            ],
-            "source": "Coverage-Netherlands",
-            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYUZtd2ZmR2lLWnVRS1I2Q2pHVVJDZ3hURk1GZ2lqMlZ1Mm9YRnpNM0NITFczMTdZQkNGRGZnd1gwbDlGaVpGaFNIRjUtLXVjbTMxMV9LdHRNeHdyTkNTb2tscE5hR3hxZ2h1NGdfRTFlbzBRMlFzaDBRYTUxX0o3V2toRXF4Y0FsajVTbQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYUZtd2ZmR2lLWnVRS1I2Q2pHVVJDZ3hURk1GZ2lqMlZ1Mm9YRnpNM0NITFczMTdZQkNGRGZnd1gwbDlGaVpGaFNIRjUtLXVjbTMxMV9LdHRNeHdyTkNTb2tscE5hR3hxZ2h1NGdfRTFlbzBRMlFzaDBRYTUxX0o3V2toRXF4Y0FsajVTbQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Coverage-Netherlands"
-            ],
-            "category": "外交",
-            "domestic_score": 30,
-            "importance": 32,
-            "why_important": "涉及外交，在过去24小时具有跟踪价值。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "贝伦德森部长访问立陶宛 - 荷兰和你"
-          },
-          {
             "id": "ab7a53640fcf12f0",
             "title": "World No. 1 Korda Leads USA's Solheim Cup Bid in Netherlands - golfpost.com",
             "published_at": "2026-09-09T21:35:22+00:00",
@@ -8753,7 +8786,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "世界排名第一的科达领先美国队申办荷兰索尔海姆杯 - Golfpost.com"
+            "title_zh": "世界排名第一的科达带领美国队申办荷兰索尔海姆杯 - Golfpost.com"
           },
           {
             "id": "02d4be32bf95b366",
@@ -8829,7 +8862,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "荷兰 Avantium 与双日 Pla-Net 合作推进日本 PEF - ALCHEMPro"
+            "title_zh": "荷兰 Avantium 与 Sojitz Pla-Net 合作推进日本 PEF - alchempro.com"
           },
           {
             "id": "7224e333ed6a9ea2",
@@ -8906,6 +8939,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "从荷兰到诺福克 110 英里的小艇旅程后，移民发现脱水 - Edp24"
+          },
+          {
+            "id": "9172dbf7f32de561",
+            "title": "India, Netherlands Elevate Bilateral Ties to Strategic Partnership - DD News",
+            "published_at": "2026-09-09T08:59:29+00:00",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "India, Netherlands Elevate Bilateral Ties to Strategic Partnership - DD News",
+                "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
+                "published_at": "2026-09-09T08:59:29+00:00",
+                "source": "Coverage-Netherlands",
+                "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
+                "description": "India, Netherlands Elevate Bilateral Ties to Strategic Partnership DD News",
+                "feed_country": "NL",
+                "language": "en",
+                "code": "NL",
+                "event_country": "荷兰",
+                "event_country_en": "Netherlands"
+              }
+            ],
+            "source": "Coverage-Netherlands",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Netherlands"
+            ],
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 28,
+            "why_important": "涉及政治，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "印度和荷兰将双边关系提升为战略伙伴关系 - DD News"
           }
         ]
       },
@@ -8953,7 +9024,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "以色列的《告诉我一切》夺得奥菲尔奖冠军，成为该国的奥斯卡提名作品 - 截止日期"
+            "title_zh": "以色列的《告诉我一切》荣登奥菲尔奖桂冠，成为该国的奥斯卡提名作品 - 截止日期"
           },
           {
             "id": "ddb1df8d50cb9124",
@@ -8993,19 +9064,19 @@
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数"
           },
           {
-            "id": "0fc41fe10247acd7",
-            "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - nytimes.com",
+            "id": "34f660be1dd88b98",
+            "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - The New York Times",
             "published_at": "2026-09-09T23:48:45+00:00",
             "code": "IL",
             "event_country": "以色列",
             "sources": [
               {
-                "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - nytimes.com",
+                "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - The New York Times",
                 "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZjJiLTVfMllEMFlqaDdYOWwtaGJ6SDIzZUExcUMxYTJjbDNwR09zQkdIeTdkY1NkVTB0eWo1Skc4SW5WU3pBTzdIazZsNExnSTJhNTYzbEJ6TUltUVMwbmdXWExPMVA4bWc0OXphUUxaS3ROc3RHdTN0Wm1oa0lFRmdmTmRINzRIdnNJdlpPaEVfbHpkRWJvdndjdGtiU3BX?oc=5",
                 "published_at": "2026-09-09T23:48:45+00:00",
                 "source": "Coverage-Israel",
                 "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZjJiLTVfMllEMFlqaDdYOWwtaGJ6SDIzZUExcUMxYTJjbDNwR09zQkdIeTdkY1NkVTB0eWo1Skc4SW5WU3pBTzdIazZsNExnSTJhNTYzbEJ6TUltUVMwbmdXWExPMVA4bWc0OXphUUxaS3ROc3RHdTN0Wm1oa0lFRmdmTmRINzRIdnNJdlpPaEVfbHpkRWJvdndjdGtiU3BX?oc=5",
-                "description": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements nytimes.com",
+                "description": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements The New York Times",
                 "feed_country": "IL",
                 "language": "en",
                 "code": "IL",
@@ -9029,6 +9100,44 @@
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
             "title_zh": "特朗普对盟友制裁以色列定居点不持立场 - 纽约时报中文网"
+          },
+          {
+            "id": "b6ba5e3c94ebf4be",
+            "title": "Israeli-based defense company rebrands American subsidiary to Twenty-Six Defense - Defense News",
+            "published_at": "2026-09-09T23:32:12+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "title": "Israeli-based defense company rebrands American subsidiary to Twenty-Six Defense - Defense News",
+                "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeVg2MDhGd29WQkFqRzczWEhTQTlHa3gzM3MtSGtQa29PMFBlT2FIRkJBR055eUp6RnhPc3ViLWx3ZmNldkFFN0czRGdsNlhOdmFlM2hHMmtWcjZFTW5pVjZxbTVkSm5SZFltY2lCbHVGeEphcnZuSUtGd3MyUTU3WkowSXpiUkwyTC1QUDJ0QXc5WU42eW1lekdKaWhqOUFWZVd4SkVvMGxmWnNQaVk1YTEzanZJWktXSXRzb2VNSGwzbC0zbGxjMUpzYk1NUExrXzBGR2tn?oc=5",
+                "published_at": "2026-09-09T23:32:12+00:00",
+                "source": "Coverage-Israel",
+                "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeVg2MDhGd29WQkFqRzczWEhTQTlHa3gzM3MtSGtQa29PMFBlT2FIRkJBR055eUp6RnhPc3ViLWx3ZmNldkFFN0czRGdsNlhOdmFlM2hHMmtWcjZFTW5pVjZxbTVkSm5SZFltY2lCbHVGeEphcnZuSUtGd3MyUTU3WkowSXpiUkwyTC1QUDJ0QXc5WU42eW1lekdKaWhqOUFWZVd4SkVvMGxmWnNQaVk1YTEzanZJWktXSXRzb2VNSGwzbC0zbGxjMUpzYk1NUExrXzBGR2tn?oc=5",
+                "description": "Israeli-based defense company rebrands American subsidiary to Twenty-Six Defense Defense News",
+                "feed_country": "IL",
+                "language": "en",
+                "code": "IL",
+                "event_country": "以色列",
+                "event_country_en": "Israel"
+              }
+            ],
+            "source": "Coverage-Israel",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeVg2MDhGd29WQkFqRzczWEhTQTlHa3gzM3MtSGtQa29PMFBlT2FIRkJBR055eUp6RnhPc3ViLWx3ZmNldkFFN0czRGdsNlhOdmFlM2hHMmtWcjZFTW5pVjZxbTVkSm5SZFltY2lCbHVGeEphcnZuSUtGd3MyUTU3WkowSXpiUkwyTC1QUDJ0QXc5WU42eW1lekdKaWhqOUFWZVd4SkVvMGxmWnNQaVk1YTEzanZJWktXSXRzb2VNSGwzbC0zbGxjMUpzYk1NUExrXzBGR2tn?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeVg2MDhGd29WQkFqRzczWEhTQTlHa3gzM3MtSGtQa29PMFBlT2FIRkJBR055eUp6RnhPc3ViLWx3ZmNldkFFN0czRGdsNlhOdmFlM2hHMmtWcjZFTW5pVjZxbTVkSm5SZFltY2lCbHVGeEphcnZuSUtGd3MyUTU3WkowSXpiUkwyTC1QUDJ0QXc5WU42eW1lekdKaWhqOUFWZVd4SkVvMGxmWnNQaVk1YTEzanZJWktXSXRzb2VNSGwzbC0zbGxjMUpzYk1NUExrXzBGR2tn?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Coverage-Israel"
+            ],
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 31,
+            "why_important": "涉及产业/商业，在过去24小时具有跟踪价值。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
+            "title_zh": "以色列国防公司将美国子公司更名为“二十六防务” - 国防新闻"
           },
           {
             "id": "d8dab72e98a15c09",
@@ -9104,7 +9213,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "以色列国防公司将美国子公司更名为“二十六防务” - 国防新闻"
+            "title_zh": "沙特阿拉伯、阿拉伯和穆斯林国家欢迎英国对以色列定居点货物的贸易禁令 - arabnews.jp"
           }
         ]
       },
@@ -9380,7 +9489,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "英特尔报告警告西班牙大规模进入休达 - 阿拉伯新闻"
+            "title_zh": "英特尔报告警告西班牙大规模进入休达 - arabnews.com"
           },
           {
             "id": "028eb4cf78a5942d",
@@ -9780,7 +9889,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "奥比遇袭是对尼日利亚民主的侮辱——瓦巴拉 - vanguardngr.com"
+            "title_zh": "奥比遇袭是对尼日利亚民主的侮辱——瓦巴拉 - Vanguard News"
           },
           {
             "id": "32539dea51498f09",
@@ -9856,7 +9965,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "据报道尼日利亚与博科圣地达成为期三个月的秘密停火 - aljazeera.com"
+            "title_zh": "据报道尼日利亚与博科圣地达成三个月秘密停火 - 半岛电视台"
           },
           {
             "id": "a1283e642ff78083",
@@ -10135,19 +10244,19 @@
             "title_zh": "阿根廷代表推动法案宣布稀土战略地位 - BNamericas"
           },
           {
-            "id": "807d351f4a974b6d",
-            "title": "Argentina’s rising suicide rate - The Baptist Paper",
+            "id": "22fe48504b55c227",
+            "title": "Argentina’s rising suicide rate - thebaptistpaper.org",
             "published_at": "2026-09-09T20:00:12+00:00",
             "code": "AR",
             "event_country": "阿根廷",
             "sources": [
               {
-                "title": "Argentina’s rising suicide rate - The Baptist Paper",
+                "title": "Argentina’s rising suicide rate - thebaptistpaper.org",
                 "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vQU5KSU11ZE1wOVFGS1EzR21Yb1ZIWEJxd3R2OFZEV3hsWjMzU1hsRHl6c3cyMFRnbFA0UktmQTNPX1VDRTR4TVdjZURMaUJaMXBCQTdwcmRldXUxenA5ZUlnalpXNDRJdlRJ?oc=5",
                 "published_at": "2026-09-09T20:00:12+00:00",
                 "source": "Coverage-Argentina",
                 "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vQU5KSU11ZE1wOVFGS1EzR21Yb1ZIWEJxd3R2OFZEV3hsWjMzU1hsRHl6c3cyMFRnbFA0UktmQTNPX1VDRTR4TVdjZURMaUJaMXBCQTdwcmRldXUxenA5ZUlnalpXNDRJdlRJ?oc=5",
-                "description": "Argentina’s rising suicide rate The Baptist Paper",
+                "description": "Argentina’s rising suicide rate thebaptistpaper.org",
                 "feed_country": "AR",
                 "language": "en",
                 "code": "AR",
@@ -10170,7 +10279,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "阿根廷自杀率上升 - 浸信会报"
+            "title_zh": "阿根廷自杀率上升 - thebaptistpaper.org"
           },
           {
             "id": "945bbd751e81e771",
@@ -10294,7 +10403,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "波兰 WB 集团推出 Warmate 30 喷气式无人机 - UA.NEWS"
+            "title_zh": "波兰 WB 集团推出 Warmate 30 喷气无人机 - UA.NEWS"
           },
           {
             "id": "3d68efdb9127ac07",
@@ -10684,7 +10793,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V20：事件级动态评分；国家权重仅作背景，不决定分数",
-            "title_zh": "普京与卓林签署石油储备协议扩大合作伙伴关系并推出免签证入境俄罗斯 - 基辅邮报"
+            "title_zh": "普京与桃林签署石油储备协议扩大合作伙伴关系并推出免签证入境俄罗斯 - 基辅邮报"
           },
           {
             "id": "7d2c4b52eec7dfa0",
@@ -11085,63 +11194,6 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
-      "id": "393fa82a9c8f306f",
-      "title": "Lula cuts Brazil fuel taxes ahead of election as war drives oil above $100 - India Today",
-      "published_at": "2026-09-09T23:48:27+00:00",
-      "code": "BR",
-      "event_country": "巴西",
-      "sources": [
-        {
-          "id": "393fa82a9c8f306f",
-          "title": "Lula cuts Brazil fuel taxes ahead of election as war drives oil above $100 - India Today",
-          "published_at": "2026-09-09T23:48:27+00:00",
-          "code": "BR",
-          "event_country": "巴西",
-          "sources": [
-            {
-              "title": "Lula cuts Brazil fuel taxes ahead of election as war drives oil above $100 - India Today",
-              "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOREtsZVo5YllIUU45Rzc5SlhzcjBXT3hodHdWOGl6WEVnM09EUVBWanllNFFDZUJXdkdDOGxFRy1Hdzl0bGtkTnZqZkRybDBuQ2tRXzE3VGpiM21qN3dtVW9ZYlVPaURFRk5Ib3RGNzFQbTdQYUZJay1Dc0FrRnNsQVN0N2ZNNFdNQjFteDl5NElvZWJhTG44MGJTVS0wZTFBM241UVJKRmJHX2FTMDVWV3ZxbGpYX3hjTkpkRVV1VGlDUmJydktQZE1uZFJKWGJfOGfSAdIBQVVfeXFMTkRLbGVaOWJZSFFOOUc3OUpYc3IwV094aHR3VjhpelhFZzNPRFFQVmp5ZTRRQ2VCV3ZHQzhsRUctR3c5dGxrZE52amZEcmwwbkNrUV8xN1RqYjNtajd3bVVvWWJVT2lERUZOSG90RjcxUG03UGFGSWstQ3NBa0ZzbEFTdDdmTTRXTUIxbXg5eTRJb2ViYUxuODBiU1UtMGUxQTNuNVFSSkZiR19hUzA1Vld2cWxqWF94Y05KZEVVdVRpQ1JicnZLUGRNbmRSSlhiXzhn?oc=5",
-              "published_at": "2026-09-09T23:48:27+00:00",
-              "source": "Coverage-Brazil",
-              "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOREtsZVo5YllIUU45Rzc5SlhzcjBXT3hodHdWOGl6WEVnM09EUVBWanllNFFDZUJXdkdDOGxFRy1Hdzl0bGtkTnZqZkRybDBuQ2tRXzE3VGpiM21qN3dtVW9ZYlVPaURFRk5Ib3RGNzFQbTdQYUZJay1Dc0FrRnNsQVN0N2ZNNFdNQjFteDl5NElvZWJhTG44MGJTVS0wZTFBM241UVJKRmJHX2FTMDVWV3ZxbGpYX3hjTkpkRVV1VGlDUmJydktQZE1uZFJKWGJfOGfSAdIBQVVfeXFMTkRLbGVaOWJZSFFOOUc3OUpYc3IwV094aHR3VjhpelhFZzNPRFFQVmp5ZTRRQ2VCV3ZHQzhsRUctR3c5dGxrZE52amZEcmwwbkNrUV8xN1RqYjNtajd3bVVvWWJVT2lERUZOSG90RjcxUG03UGFGSWstQ3NBa0ZzbEFTdDdmTTRXTUIxbXg5eTRJb2ViYUxuODBiU1UtMGUxQTNuNVFSSkZiR19hUzA1Vld2cWxqWF94Y05KZEVVdVRpQ1JicnZLUGRNbmRSSlhiXzhn?oc=5",
-              "description": "Lula cuts Brazil fuel taxes ahead of election as war drives oil above $100 India Today",
-              "feed_country": "BR",
-              "language": "en",
-              "code": "BR",
-              "event_country": "巴西",
-              "event_country_en": "Brazil"
-            }
-          ],
-          "source": "Coverage-Brazil",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOREtsZVo5YllIUU45Rzc5SlhzcjBXT3hodHdWOGl6WEVnM09EUVBWanllNFFDZUJXdkdDOGxFRy1Hdzl0bGtkTnZqZkRybDBuQ2tRXzE3VGpiM21qN3dtVW9ZYlVPaURFRk5Ib3RGNzFQbTdQYUZJay1Dc0FrRnNsQVN0N2ZNNFdNQjFteDl5NElvZWJhTG44MGJTVS0wZTFBM241UVJKRmJHX2FTMDVWV3ZxbGpYX3hjTkpkRVV1VGlDUmJydktQZE1uZFJKWGJfOGfSAdIBQVVfeXFMTkRLbGVaOWJZSFFOOUc3OUpYc3IwV094aHR3VjhpelhFZzNPRFFQVmp5ZTRRQ2VCV3ZHQzhsRUctR3c5dGxrZE52amZEcmwwbkNrUV8xN1RqYjNtajd3bVVvWWJVT2lERUZOSG90RjcxUG03UGFGSWstQ3NBa0ZzbEFTdDdmTTRXTUIxbXg5eTRJb2ViYUxuODBiU1UtMGUxQTNuNVFSSkZiR19hUzA1Vld2cWxqWF94Y05KZEVVdVRpQ1JicnZLUGRNbmRSSlhiXzhn?oc=5",
-          "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOREtsZVo5YllIUU45Rzc5SlhzcjBXT3hodHdWOGl6WEVnM09EUVBWanllNFFDZUJXdkdDOGxFRy1Hdzl0bGtkTnZqZkRybDBuQ2tRXzE3VGpiM21qN3dtVW9ZYlVPaURFRk5Ib3RGNzFQbTdQYUZJay1Dc0FrRnNsQVN0N2ZNNFdNQjFteDl5NElvZWJhTG44MGJTVS0wZTFBM241UVJKRmJHX2FTMDVWV3ZxbGpYX3hjTkpkRVV1VGlDUmJydktQZE1uZFJKWGJfOGfSAdIBQVVfeXFMTkRLbGVaOWJZSFFOOUc3OUpYc3IwV094aHR3VjhpelhFZzNPRFFQVmp5ZTRRQ2VCV3ZHQzhsRUctR3c5dGxrZE52amZEcmwwbkNrUV8xN1RqYjNtajd3bVVvWWJVT2lERUZOSG90RjcxUG03UGFGSWstQ3NBa0ZzbEFTdDdmTTRXTUIxbXg5eTRJb2ViYUxuODBiU1UtMGUxQTNuNVFSSkZiR19hUzA1Vld2cWxqWF94Y05KZEVVdVRpQ1JicnZLUGRNbmRSSlhiXzhn?oc=5",
-          "source_count": 1,
-          "source_names": [
-            "Coverage-Brazil"
-          ],
-          "category": "政治",
-          "domestic_score": 54,
-          "importance": 65,
-          "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "Coverage-Brazil",
-      "url": "",
-      "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOREtsZVo5YllIUU45Rzc5SlhzcjBXT3hodHdWOGl6WEVnM09EUVBWanllNFFDZUJXdkdDOGxFRy1Hdzl0bGtkTnZqZkRybDBuQ2tRXzE3VGpiM21qN3dtVW9ZYlVPaURFRk5Ib3RGNzFQbTdQYUZJay1Dc0FrRnNsQVN0N2ZNNFdNQjFteDl5NElvZWJhTG44MGJTVS0wZTFBM241UVJKRmJHX2FTMDVWV3ZxbGpYX3hjTkpkRVV1VGlDUmJydktQZE1uZFJKWGJfOGfSAdIBQVVfeXFMTkRLbGVaOWJZSFFOOUc3OUpYc3IwV094aHR3VjhpelhFZzNPRFFQVmp5ZTRRQ2VCV3ZHQzhsRUctR3c5dGxrZE52amZEcmwwbkNrUV8xN1RqYjNtajd3bVVvWWJVT2lERUZOSG90RjcxUG03UGFGSWstQ3NBa0ZzbEFTdDdmTTRXTUIxbXg5eTRJb2ViYUxuODBiU1UtMGUxQTNuNVFSSkZiR19hUzA1Vld2cWxqWF94Y05KZEVVdVRpQ1JicnZLUGRNbmRSSlhiXzhn?oc=5",
-      "source_count": 1,
-      "source_names": [
-        "Coverage-Brazil"
-      ],
-      "category": "政治",
-      "domestic_score": 54,
-      "importance": 65,
-      "why_important": "涉及政治，在过去24小时具有跟踪价值。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
       "id": "2f591cbe854b8b36",
       "title": "Netanyahu rejects claim he was warned ahead of Oct. 7, as 2023 attack fuels pre-election furor - CBS News",
       "published_at": "2026-09-09T15:50:34+00:00",
@@ -11241,19 +11293,19 @@
           "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
         },
         {
-          "id": "0fc41fe10247acd7",
-          "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - nytimes.com",
+          "id": "34f660be1dd88b98",
+          "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - The New York Times",
           "published_at": "2026-09-09T23:48:45+00:00",
           "code": "IL",
           "event_country": "以色列",
           "sources": [
             {
-              "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - nytimes.com",
+              "title": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements - The New York Times",
               "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZjJiLTVfMllEMFlqaDdYOWwtaGJ6SDIzZUExcUMxYTJjbDNwR09zQkdIeTdkY1NkVTB0eWo1Skc4SW5WU3pBTzdIazZsNExnSTJhNTYzbEJ6TUltUVMwbmdXWExPMVA4bWc0OXphUUxaS3ROc3RHdTN0Wm1oa0lFRmdmTmRINzRIdnNJdlpPaEVfbHpkRWJvdndjdGtiU3BX?oc=5",
               "published_at": "2026-09-09T23:48:45+00:00",
               "source": "Coverage-Israel",
               "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZjJiLTVfMllEMFlqaDdYOWwtaGJ6SDIzZUExcUMxYTJjbDNwR09zQkdIeTdkY1NkVTB0eWo1Skc4SW5WU3pBTzdIazZsNExnSTJhNTYzbEJ6TUltUVMwbmdXWExPMVA4bWc0OXphUUxaS3ROc3RHdTN0Wm1oa0lFRmdmTmRINzRIdnNJdlpPaEVfbHpkRWJvdndjdGtiU3BX?oc=5",
-              "description": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements nytimes.com",
+              "description": "Trump Takes No Position on Allies’ Sanctions Against Israeli Settlements The New York Times",
               "feed_country": "IL",
               "language": "en",
               "code": "IL",
@@ -11863,6 +11915,63 @@
             }
           ],
           "source": "Coverage-Iran",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+          "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+          "source_count": 1,
+          "source_names": [
+            "Coverage-Iran"
+          ],
+          "category": "能源",
+          "domestic_score": 46,
+          "importance": 61,
+          "why_important": "涉及能源，在过去24小时具有跟踪价值。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "Coverage-Iran",
+      "url": "",
+      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSTlVelRSaUx5YTJkZmtodkZiMmNVaEdfRzNiRHV6dWhFTWdGS3diU0NLU1IxWVE2QmNBN1BTaU96d2FUdExOUlY3QUQ5ME5kZ1FBTGhDd3c0VktXbXdjaFRXTVA2WVpvVVhCSEYwQU9IN1RCN3VZQ0NfaFd1X0tLRVZodnhSVEEyd21LMmdxUVRMTlFTYkgydzl2VDZMeUx0MUQ4Q3VvdV94aVBzaDRaN2stcXJtS0kyRWRoMW1ia1NhWHFnOWp1OHNQcmJJcTNncGtQN3dCZw?oc=5",
+      "source_count": 1,
+      "source_names": [
+        "Coverage-Iran"
+      ],
+      "category": "能源",
+      "domestic_score": 46,
+      "importance": 61,
+      "why_important": "涉及能源，在过去24小时具有跟踪价值。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "6204c541885b11cb",
+      "title": "Trump says Iran War will end after the midterm elections - Scripps News",
+      "published_at": "2026-09-09T22:55:34+00:00",
+      "code": "IR",
+      "event_country": "伊朗",
+      "sources": [
+        {
+          "id": "6204c541885b11cb",
+          "title": "Trump says Iran War will end after the midterm elections - Scripps News",
+          "published_at": "2026-09-09T22:55:34+00:00",
+          "code": "IR",
+          "event_country": "伊朗",
+          "sources": [
+            {
+              "title": "Trump says Iran war will end right after U.S. midterm elections - Reuters",
+              "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONUt1ZG9kcVg5Q3VMUjZuM0JScHFocjZZOFNvTjRsYWNRZ1lBQUlLUm45XzBJTEh2dnVLLXVqeDh1dlh2aGFObVVqN09PTHFtck02aUZrX3VZRWFLVURzeUt3eFFXc25NcFoxVFNSMHdLSmQ1alBaWGRsOHBpc2RTTy1ULWUyZEk4TXNKc0FxX3NlWXhYS3hVMERTb2R4RVo2UjJPRzRFN2w0a0hhbHE0d0EyZmZHUQ?oc=5",
+              "published_at": "2026-09-09T20:06:33+00:00",
+              "source": "Coverage-Iran",
+              "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONUt1ZG9kcVg5Q3VMUjZuM0JScHFocjZZOFNvTjRsYWNRZ1lBQUlLUm45XzBJTEh2dnVLLXVqeDh1dlh2aGFObVVqN09PTHFtck02aUZrX3VZRWFLVURzeUt3eFFXc25NcFoxVFNSMHdLSmQ1alBaWGRsOHBpc2RTTy1ULWUyZEk4TXNKc0FxX3NlWXhYS3hVMERTb2R4RVo2UjJPRzRFN2w0a0hhbHE0d0EyZmZHUQ?oc=5",
+              "description": "Trump says Iran war will end right after U.S. midterm elections Reuters",
+              "feed_country": "IR",
+              "language": "en",
+              "code": "IR",
+              "event_country": "伊朗",
+              "event_country_en": "Iran"
+            }
+          ],
+          "source": "Coverage-Iran",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONUt1ZG9kcVg5Q3VMUjZuM0JScHFocjZZOFNvTjRsYWNRZ1lBQUlLUm45XzBJTEh2dnVLLXVqeDh1dlh2aGFObVVqN09PTHFtck02aUZrX3VZRWFLVURzeUt3eFFXc25NcFoxVFNSMHdLSmQ1alBaWGRsOHBpc2RTTy1ULWUyZEk4TXNKc0FxX3NlWXhYS3hVMERTb2R4RVo2UjJPRzRFN2w0a0hhbHE0d0EyZmZHUQ?oc=5",
           "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONUt1ZG9kcVg5Q3VMUjZuM0JScHFocjZZOFNvTjRsYWNRZ1lBQUlLUm45XzBJTEh2dnVLLXVqeDh1dlh2aGFObVVqN09PTHFtck02aUZrX3VZRWFLVURzeUt3eFFXc25NcFoxVFNSMHdLSmQ1alBaWGRsOHBpc2RTTy1ULWUyZEk4TXNKc0FxX3NlWXhYS3hVMERTb2R4RVo2UjJPRzRFN2w0a0hhbHE0d0EyZmZHUQ?oc=5",
           "source_count": 1,
@@ -12006,8 +12115,8 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
-      "id": "6cd4b666d57277cf",
-      "title": "Israel: Netanyahu to sue Haaretz over report on UAE warning ahead of 7 October attack / FIP - International Federation of Journalists - IFJ",
+      "id": "70f113e877e59175",
+      "title": "Israel: Netanyahu to sue Haaretz over report on UAE warning ahead of 7 October attack / FIP - ifj.org",
       "published_at": "2026-09-09T19:54:59+00:00",
       "code": "AE",
       "event_country": "阿联酋",
@@ -12282,7 +12391,7 @@
           "title": "美媒：特朗普专机突发状况 应急滑梯因误操作意外弹出",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
           "published_at": "2026-09-09T23:29:38+00:00",
-          "source": "中新网-要闻",
+          "source": "中新网-国际",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
           "description": "中新网9月10日电 据美国广播公司(ABC)报道，当地时间9月9日下午，美国总统特朗普准备搭乘“空军一号”专机前往达拉斯出席共和党中期选举集会之际，该专机的应急滑梯却处于弹出状态。",
           "feed_country": "GLOBAL",
@@ -12295,7 +12404,7 @@
           "title": "美媒：特朗普专机突发状况 应急滑梯因误操作意外弹出",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
           "published_at": "2026-09-09T23:29:38+00:00",
-          "source": "中新网-国际",
+          "source": "中新网-要闻",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
           "description": "中新网9月10日电 据美国广播公司(ABC)报道，当地时间9月9日下午，美国总统特朗普准备搭乘“空军一号”专机前往达拉斯出席共和党中期选举集会之际，该专机的应急滑梯却处于弹出状态。",
           "feed_country": "GLOBAL",
@@ -12305,13 +12414,13 @@
           "event_country_en": "United States"
         }
       ],
-      "source": "中新网-要闻",
+      "source": "中新网-国际",
       "url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
       "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693679.shtml",
       "source_count": 2,
       "source_names": [
-        "中新网-要闻",
-        "中新网-国际"
+        "中新网-国际",
+        "中新网-要闻"
       ],
       "category": "政治",
       "domestic_score": 30,
@@ -12331,7 +12440,7 @@
           "title": "外媒：伊朗多地传出爆炸声",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
           "published_at": "2026-09-09T22:52:56+00:00",
-          "source": "中新网-要闻",
+          "source": "中新网-国际",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
           "description": "中新网9月10日电 据卡塔尔半岛电视台援引伊朗媒体报道，当地时间9月10日凌晨，伊朗格什姆岛传出巨大爆炸声。此外，锡里克和米纳卜的沿海地区也传出了爆炸声。",
           "feed_country": "GLOBAL",
@@ -12344,7 +12453,7 @@
           "title": "外媒：伊朗多地传出爆炸声",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
           "published_at": "2026-09-09T22:52:56+00:00",
-          "source": "中新网-国际",
+          "source": "中新网-要闻",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
           "description": "中新网9月10日电 据卡塔尔半岛电视台援引伊朗媒体报道，当地时间9月10日凌晨，伊朗格什姆岛传出巨大爆炸声。此外，锡里克和米纳卜的沿海地区也传出了爆炸声。",
           "feed_country": "GLOBAL",
@@ -12354,13 +12463,13 @@
           "event_country_en": "Iran"
         }
       ],
-      "source": "中新网-要闻",
+      "source": "中新网-国际",
       "url": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
       "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693671.shtml",
       "source_count": 2,
       "source_names": [
-        "中新网-要闻",
-        "中新网-国际"
+        "中新网-国际",
+        "中新网-要闻"
       ],
       "category": "政治",
       "domestic_score": 30,
@@ -12380,7 +12489,7 @@
           "title": "美伊战事何时结束？特朗普给出时间表",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
           "published_at": "2026-09-09T22:29:59+00:00",
-          "source": "中新网-要闻",
+          "source": "中新网-国际",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
           "description": "中新网9月10日电 据美国有线电视新闻网(CNN)报道，当地时间9日，美国总统特朗普表示，他认为美国同伊朗的战事将在11月美国国会中期选举完成后“立即结束”。",
           "feed_country": "GLOBAL",
@@ -12393,7 +12502,7 @@
           "title": "美伊战事何时结束？特朗普给出时间表",
           "link": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
           "published_at": "2026-09-09T22:29:59+00:00",
-          "source": "中新网-国际",
+          "source": "中新网-要闻",
           "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
           "description": "中新网9月10日电 据美国有线电视新闻网(CNN)报道，当地时间9日，美国总统特朗普表示，他认为美国同伊朗的战事将在11月美国国会中期选举完成后“立即结束”。",
           "feed_country": "GLOBAL",
@@ -12403,13 +12512,13 @@
           "event_country_en": "United States"
         }
       ],
-      "source": "中新网-要闻",
+      "source": "中新网-国际",
       "url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
       "source_url": "https://www.chinanews.com.cn/gj/2026/09-10/10693658.shtml",
       "source_count": 2,
       "source_names": [
-        "中新网-要闻",
-        "中新网-国际"
+        "中新网-国际",
+        "中新网-要闻"
       ],
       "category": "政治",
       "domestic_score": 30,
@@ -12429,7 +12538,7 @@
           "title": "免费飞机餐是否取消？多家航司回应",
           "link": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
           "published_at": "2026-09-09T14:17:10+00:00",
-          "source": "中新网-财经",
+          "source": "中新网-要闻",
           "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
           "description": "中新网北京9月9日电 据媒体报道，近日，多家航空公司布局付费定制飞机餐。有报道称，付费餐食价格不等，有亲民价格也有较高价格的餐食。报道提到，东方航空、四川航空、祥鹏航空等国内多家航司都布局了付费餐食赛道。",
           "feed_country": "GLOBAL",
@@ -12442,7 +12551,7 @@
           "title": "免费飞机餐是否取消？多家航司回应",
           "link": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
           "published_at": "2026-09-09T14:17:10+00:00",
-          "source": "中新网-要闻",
+          "source": "中新网-财经",
           "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
           "description": "中新网北京9月9日电 据媒体报道，近日，多家航空公司布局付费定制飞机餐。有报道称，付费餐食价格不等，有亲民价格也有较高价格的餐食。报道提到，东方航空、四川航空、祥鹏航空等国内多家航司都布局了付费餐食赛道。",
           "feed_country": "GLOBAL",
@@ -12452,13 +12561,13 @@
           "event_country_en": "China"
         }
       ],
-      "source": "中新网-财经",
+      "source": "中新网-要闻",
       "url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
       "source_url": "https://www.chinanews.com.cn/cj/2026/09-09/10693640.shtml",
       "source_count": 2,
       "source_names": [
-        "中新网-财经",
-        "中新网-要闻"
+        "中新网-要闻",
+        "中新网-财经"
       ],
       "category": "政治",
       "domestic_score": 30,
