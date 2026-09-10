@@ -1,0 +1,20 @@
+name: 雷达新闻 13点定时验证（临时）
+
+on:
+  schedule:
+    # 仅用于验证今天 13:00（北京时间）的定时触发；验证完成后删除本文件。
+    - cron: '0 13 10 9 *'
+      timezone: 'Asia/Shanghai'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  trigger-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger canonical daily production workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run daily.yml --ref main
