@@ -1,5 +1,6 @@
 name: 雷达新闻每日更新
 
+# keepalive: merge this workflow change to force a real push event and verify the production path.
 on:
   workflow_dispatch:
   push:
@@ -72,12 +73,6 @@ jobs:
           if old3 not in text: raise SystemExit('EN CAP PATCH FAILED')
           text=text.replace(old3,new3)
 
-          # Source hierarchy:
-          # 1) the country's own credible outlet;
-          # 2) US/UK/France/Germany major outlets;
-          # 3) international Chinese editions (BBC Chinese, NYT Chinese, Reuters Chinese, RFI Chinese, Zaobao);
-          # 4) other English international sources;
-          # 5) mainland Chinese outlets only as last resort.
           old4="zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]"
           new4="local=[s for s in srcs if s.get('feed_country')==e.get('code') and s.get('source') not in {'Coverage-'+str(e.get('event_country',''))}]; western=[s for s in srcs if s.get('source') in {'Reuters World','BBC World','AP World','Guardian UK','NPR','NPR Politics','NPR Economy','NPR Technology','AP US','CNN US','NYT US','BBC UK','France24','DW','TASS','TASS Politics','TASS Economy','NHK','Moscow Times'}]; intl_zh=[s for s in srcs if s.get('source') in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; other_en=[s for s in srcs if s.get('language')=='en']; mainland=[s for s in srcs if s.get('language')=='cn' and s.get('source') not in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; best=(local or western or intl_zh or other_en or mainland or srcs)[0]"
           if old4 not in text: raise SystemExit('SOURCE PRIORITY PATCH FAILED')
