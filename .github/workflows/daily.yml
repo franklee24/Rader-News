@@ -56,7 +56,6 @@ jobs:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
 
-          # International Chinese sources: prefer these over mainland Chinese media when no suitable local/Western source exists.
           intl_marker=" ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),"
           intl_add=" ('纽约时报中文网','GLOBAL','https://cn.nytimes.com/rss/','cn'),\n"
           if "('纽约时报中文网','GLOBAL'" not in text:
@@ -84,6 +83,8 @@ jobs:
         run: python scripts/build_daily.py
       - name: Apply V20 importance scoring
         run: python scripts/score_importance.py
+      - name: Translate English titles only
+        run: python scripts/translate_titles.py
       - name: Remove repeats and undated events
         run: |
           python - <<'PY'
