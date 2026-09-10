@@ -1,0 +1,36 @@
+name: 临时修复未来日期新闻
+
+on:
+  push:
+    paths:
+      - .github/workflows/fix-future-dates.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Make validation discard future-dated events
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('.github/workflows/daily.yml')
+          text=p.read_text(encoding='utf-8')
+          pattern=r"      - name: Validate rolling 24h window and country coverage\n        run: \|\n(?:.*?)(?=      - name: Commit daily snapshot)"
+          replacement='''      - name: Validate rolling 24h window and country coverage\n        run: |\n          python - <<'PY2'\n          import json\n          from datetime import datetime,timezone,timedelta\n          from pathlib import Path\n          UTC=timezone.utc; root=Path('.')\n          daily=root/'data/daily.json'; d=json.loads(daily.read_text(encoding='utf-8'))\n          now=datetime.now(UTC); start=now-timedelta(hours=24); end=now+timedelta(minutes=5)\n          future=0\n          events=[]\n          for tier_name,tier in d.get('tiers',{}).items():\n              for country,c in tier.items():\n                  keep=[]\n                  for e in c.get('events',[]):\n                      if not e.get('published_at'): continue\n                      t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)\n                      if t<start: raise SystemExit('QUALITY GATE FAILED: event older than rolling 24h: '+e.get('title',''))\n                      if t>=end:\n                          future+=1\n                          continue\n                      keep.append(e); events.append(e)\n                  c['events']=keep; c['count']=len(keep)\n          d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())\n          d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())\n          d['future_dated_removed']=future\n          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))\n          coverage=[]\n          for tier_name,countries in cfg['tiers'].items():\n              for c in countries:\n                  ev=[e for e in events if e.get('event_country')==c['name']]\n                  if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")\n          if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))\n          daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')\n          print('QUALITY GATE PASSED rolling 24h; future removed:',future)\n          PY2\n'''
+          new,n=re.subn(pattern,replacement,text,flags=re.S)
+          if n!=1: raise SystemExit(f'VALIDATION BLOCK REPLACE FAILED: {n}')
+          p.write_text(new,encoding='utf-8')
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/daily.yml
+          git commit -m "fix: discard future-dated radar events" || exit 0
+          git push origin HEAD:main
