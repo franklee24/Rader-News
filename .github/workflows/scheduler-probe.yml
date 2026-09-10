@@ -1,0 +1,21 @@
+name: 雷达新闻调度器探针（临时）
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+      timezone: 'Asia/Shanghai'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify scheduler and trigger production
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "SCHEDULE_PROBE_TRIGGERED=$(date -u +%FT%TZ)"
+          gh workflow run daily.yml --ref main
