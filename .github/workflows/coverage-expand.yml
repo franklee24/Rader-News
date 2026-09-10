@@ -5,8 +5,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/coverage_expand.py'
-  schedule:
-    - cron: '15 0 * * *'
+  # Coverage expansion is kept as a manual/push workflow only.
+  # The single canonical daily production schedule lives in daily.yml,
+  # which builds, translates, validates, commits, and deploys the snapshot.
   workflow_dispatch:
 
 permissions:
