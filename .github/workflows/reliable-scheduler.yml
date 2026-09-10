@@ -12,62 +12,41 @@ permissions:
 
 jobs:
   scheduler:
-    # Only the bootstrap commit starts the daemon. Later self-dispatches continue it.
     if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'chore: bootstrap reliable radar scheduler'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
-      - name: Wait for the next scheduler checkpoint
-        id: wait
+      - name: Wait for checkpoint
         shell: bash
         run: |
           set -euo pipefail
           now=$(date +%s)
-          today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
           if [ "${GITHUB_EVENT_NAME}" = "push" ]; then
-            target=$(TZ=Asia/Shanghai date -d "$today 17:00:00" +%s)
-            if [ "$target" -le "$now" ]; then
-              target=$((target + 86400))
-            fi
+            # Bootstrap verification: do not wait for 17:00; trigger once about 2 minutes after this push.
+            target=$((now + 120))
             echo "BOOTSTRAP_TARGET=$target" >> "$GITHUB_OUTPUT"
           else
-            # Keep every daemon run below GitHub-hosted runner's 6-hour job limit.
-            # Checkpoints are every 4 hours in UTC.
-            current_hour=$(date -u +%H)
-            current_minute=$(date -u +%M)
-            for h in 0 4 8 12 16 20; do
-              target=$(date -u -d "$(date -u +%Y-%m-%d) $h:00:00" +%s)
-              if [ "$target" -gt "$now" ]; then
-                echo "TARGET=$target" >> "$GITHUB_OUTPUT"
-                exit 0
-              fi
-            done
-            target=$(date -u -d "tomorrow 00:00:00" +%s)
+            # After the bootstrap, wake before the next 08:00 Beijing run.
+            today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+            target=$(TZ=Asia/Shanghai date -d "$today 08:00:00" +%s)
+            if [ "$target" -le "$now" ]; then
+              target=$(TZ=Asia/Shanghai date -d "tomorrow 08:00:00" +%s)
+            fi
             echo "TARGET=$target" >> "$GITHUB_OUTPUT"
           fi
-          target=${target:-$(grep -E '^(BOOTSTRAP_TARGET|TARGET)=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2)}
+          target=$(grep -E '^(BOOTSTRAP_TARGET|TARGET)=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2)
           delay=$((target-now))
           echo "Sleeping ${delay}s until $(date -d @$target --iso-8601=seconds)"
           if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
-      - name: Trigger radar update at the checkpoint
+      - name: Trigger radar update
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          local_hour=$(TZ=Asia/Shanghai date +%H)
-          local_minute=$(TZ=Asia/Shanghai date +%M)
-          echo "Checkpoint: Beijing ${local_hour}:${local_minute}"
-          if [ "$local_hour" = "17" ]; then
-            echo "TEST: triggering production radar update for the 17:00 verification."
-            gh workflow run daily.yml --ref main
-          elif [ "$local_hour" = "08" ] && [ "$local_minute" -lt 15 ]; then
-            echo "DAILY: triggering the 08:00 Beijing radar update."
-            gh workflow run daily.yml --ref main
-          else
-            echo "No production update at this checkpoint."
-          fi
-      - name: Continue the scheduler daemon
+          echo "Scheduler checkpoint: Beijing $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')"
+          gh workflow run daily.yml --ref main
+      - name: Continue scheduler daemon
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
