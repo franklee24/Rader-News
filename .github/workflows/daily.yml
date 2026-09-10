@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '7 0 * * *'
     - cron: '37 0 * * *'
-    - cron: '59 6 10 9 *'
+    - cron: '20 7 10 9 *'
 
 permissions:
   contents: write
@@ -32,12 +32,11 @@ jobs:
           from pathlib import Path
           p=Path('scripts/build_daily.py'); text=p.read_text(encoding='utf-8')
           old="now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
-          new="now=dt.datetime.now(dt.timezone.utc); bj=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); anchor=bj.replace(hour=8,minute=0,second=0,microsecond=0); anchor=anchor-dt.timedelta(days=1) if bj < anchor else anchor; cutoff=anchor.astimezone(dt.timezone.utc)-dt.timedelta(days=1)"
+          new="now=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); cutoff=now-dt.timedelta(hours=25)"
           if old not in text: raise SystemExit('WINDOW PATCH FAILED')
           text=text.replace(old,new)
-          old2='if p and p<cutoff:continue'; new2='if p and (p<cutoff or p>=anchor):continue'
+          old2='if p and p<cutoff:continue'; new2='if p and p<cutoff:continue'
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
-          text=text.replace(old2,new2)
           marker=" # English secondary"
           additions=" ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),\n ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),\n ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),\n ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),\n ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),\n ('AP US','US','https://apnews.com/hub/us-news?format=rss','en'),\n ('CNN US','US','https://rss.cnn.com/rss/edition_us.rss','en'),\n ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),\n ('TASS Politics','RU','https://tass.com/politics/?cmd=rss&ver=1.0','en'),\n ('TASS Economy','RU','https://tass.com/economy/?cmd=rss&ver=1.0','en'),\n"
           if "('NPR Politics','US'" not in text:
