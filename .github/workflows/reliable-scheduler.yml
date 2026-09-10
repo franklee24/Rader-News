@@ -48,3 +48,4 @@ jobs:
           set -euo pipefail
           sleep 10
           gh workflow run reliable-scheduler.yml --repo franklee24/Rader-News --ref main
+# validation-repair retrigger
