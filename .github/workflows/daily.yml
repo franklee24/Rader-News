@@ -10,8 +10,12 @@ on:
       - 'index.html'
       - '.github/workflows/daily.yml'
   schedule:
-    # GitHub cron uses UTC: Beijing 08:00 = UTC 00:00
-    - cron: '0 0 * * *'
+    # Use Shanghai timezone explicitly and avoid the top-of-hour load peak.
+    # Primary: 08:07 Beijing. Backup: 08:37 Beijing if the primary scheduled run is delayed/dropped.
+    - cron: '7 8 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '37 8 * * *'
+      timezone: 'Asia/Shanghai'
 
 permissions:
   contents: write
