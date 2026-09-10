@@ -10,6 +10,10 @@ permissions:
   actions: write
   contents: read
 
+concurrency:
+  group: radar-reliable-scheduler
+  cancel-in-progress: true
+
 jobs:
   scheduler:
     runs-on: ubuntu-latest
@@ -20,17 +24,20 @@ jobs:
         run: |
           set -euo pipefail
           now=$(date +%s)
+          today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
           if [ "${GITHUB_EVENT_NAME}" = "push" ]; then
-            target=$((now + 90))
+            target=$(TZ=Asia/Shanghai date -d "$today 19:00:00" +%s)
+            if [ "$target" -le "$now" ]; then
+              target=$(TZ=Asia/Shanghai date -d "tomorrow 08:00:00" +%s)
+            fi
           else
-            today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
             target=$(TZ=Asia/Shanghai date -d "$today 08:00:00" +%s)
             if [ "$target" -le "$now" ]; then
               target=$(TZ=Asia/Shanghai date -d "tomorrow 08:00:00" +%s)
             fi
           fi
           delay=$((target-now))
-          echo "Waiting ${delay}s until $(date -d @$target --iso-8601=seconds)"
+          echo "Waiting ${delay}s until Beijing $(TZ=Asia/Shanghai date -d @$target '+%Y-%m-%d %H:%M:%S')"
           if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
       - name: Trigger radar update
         shell: bash
@@ -48,4 +55,3 @@ jobs:
           set -euo pipefail
           sleep 10
           gh workflow run reliable-scheduler.yml --repo franklee24/Rader-News --ref main
-# final gate repair retrigger
