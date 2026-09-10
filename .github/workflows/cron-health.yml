@@ -1,13 +1,15 @@
 name: 雷达新闻每日调度守护
 
-# This workflow is the scheduler watchdog. It deliberately uses UTC cron
-# to avoid timezone-parser issues, and triggers the production workflow via
-# workflow_dispatch (which GitHub explicitly allows from GITHUB_TOKEN).
+# UTC cron is intentional: it avoids timezone-parser ambiguity. The watchdog
+# retries several times around 08:00 Beijing and dispatches the production
+# workflow through workflow_dispatch, which GitHub permits from GITHUB_TOKEN.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cron-health.yml'
   schedule:
-    # 08:07-08:57 Beijing = 00:07-00:57 UTC. Multiple attempts give GitHub
-    # Actions several chances if one scheduled event is delayed/dropped.
     - cron: '7,17,27,37,47,57 0 * * *'
 
 permissions:
@@ -25,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Decide whether today's production update is already complete
+      - name: Decide whether production should run
         id: gate
         shell: bash
         run: |
@@ -33,23 +35,24 @@ jobs:
           import json
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
-          bj = timezone(timedelta(hours=8))
-          now = datetime.now(timezone.utc).astimezone(bj)
-          if now.hour != 8 and not '${{ github.event_name }}' == 'workflow_dispatch':
-              print('RUN_PRODUCTION=false')
-              raise SystemExit(0)
+          bj=timezone(timedelta(hours=8))
+          now=datetime.now(timezone.utc).astimezone(bj)
+          event='${{ github.event_name }}'
+          force=event in {'push','workflow_dispatch'}
           try:
               d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
               generated=d.get('generated_beijing','')
-              today=now.date().isoformat()
-              complete=generated.startswith(today+' ') and int(generated[11:13]) >= 8
+              complete=generated.startswith(now.date().isoformat()+' ') and int(generated[11:13]) >= 8
           except Exception:
+              generated=''
               complete=False
+          run_production=force or (now.hour == 8 and not complete)
           print('NOW_BEIJING=',now.isoformat())
-          print('DAILY_GENERATED_BEIJING=',generated if 'generated' in locals() else '')
-          print('RUN_PRODUCTION=',not complete)
+          print('EVENT=',event)
+          print('DAILY_GENERATED_BEIJING=',generated)
+          print('RUN_PRODUCTION=',run_production)
           with open('${GITHUB_OUTPUT}','a') as f:
-              f.write('run_production='+str(not complete).lower()+'\n')
+              f.write('run_production='+str(run_production).lower()+'\n')
           PY
 
       - name: Trigger production update
@@ -57,7 +60,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          echo "Triggering production workflow at $(date -u +%FT%TZ)"
+          echo "Triggering daily.yml at $(date -u +%FT%TZ)"
           gh workflow run daily.yml --ref main
 
       - name: Wait for production workflow and fail if it does not succeed
@@ -67,22 +70,22 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "Waiting for daily.yml workflow_dispatch run..."
-          run_id=""
-          for i in $(seq 1 24); do
-            run_id=$(gh run list --workflow daily.yml --event workflow_dispatch --limit 10 --json databaseId,createdAt,status,conclusion --jq '[.[] | select(.createdAt > "'"$(date -u -d "-2 minutes" +%Y-%m-%dT%H:%M:%SZ)'" )] | sort_by(.createdAt) | last | .databaseId // empty')"
+          echo 'Waiting for daily.yml workflow_dispatch run...'
+          run_id=''
+          for i in $(seq 1 36); do
+            run_id=$(gh run list --workflow daily.yml --event workflow_dispatch --limit 10 --json databaseId,createdAt,status,conclusion --jq '[.[] | select(.createdAt > "'"$(date -u -d "-3 minutes" +%Y-%m-%dT%H:%M:%SZ)'" )] | sort_by(.createdAt) | last | .databaseId // empty')
             if [ -n "$run_id" ]; then break; fi
             sleep 5
           done
           if [ -z "$run_id" ]; then
-            echo 'ERROR: production workflow was not created after workflow_dispatch.'
+            echo 'ERROR: daily.yml workflow_dispatch did not create a run.'
             exit 1
           fi
           echo "Production run: $run_id"
           gh run watch "$run_id" --exit-status --interval 10
           echo 'Production workflow succeeded.'
 
-      - name: Verify today's snapshot was produced
+      - name: Verify today's snapshot
         if: steps.gate.outputs.run_production == 'true'
         run: |
           python - <<'PY'
