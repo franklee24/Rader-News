@@ -1,9 +1,10 @@
 name: 雷达新闻调度器探针（临时）
 
 on:
+  workflow_dispatch:
   schedule:
+    # Temporary direct scheduler test: every 5 minutes (UTC), avoiding timezone parsing as a variable.
     - cron: '*/5 * * * *'
-      timezone: 'Asia/Shanghai'
 
 permissions:
   actions: write
