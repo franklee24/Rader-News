@@ -12,7 +12,6 @@ permissions:
 
 jobs:
   scheduler:
-    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message == 'chore: bootstrap reliable radar scheduler'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -22,21 +21,16 @@ jobs:
           set -euo pipefail
           now=$(date +%s)
           if [ "${GITHUB_EVENT_NAME}" = "push" ]; then
-            # Bootstrap verification: do not wait for 17:00; trigger once about 2 minutes after this push.
-            target=$((now + 120))
-            echo "BOOTSTRAP_TARGET=$target" >> "$GITHUB_OUTPUT"
+            target=$((now + 90))
           else
-            # After the bootstrap, wake before the next 08:00 Beijing run.
             today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
             target=$(TZ=Asia/Shanghai date -d "$today 08:00:00" +%s)
             if [ "$target" -le "$now" ]; then
               target=$(TZ=Asia/Shanghai date -d "tomorrow 08:00:00" +%s)
             fi
-            echo "TARGET=$target" >> "$GITHUB_OUTPUT"
           fi
-          target=$(grep -E '^(BOOTSTRAP_TARGET|TARGET)=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2)
           delay=$((target-now))
-          echo "Sleeping ${delay}s until $(date -d @$target --iso-8601=seconds)"
+          echo "Waiting ${delay}s until $(date -d @$target --iso-8601=seconds)"
           if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
       - name: Trigger radar update
         shell: bash
@@ -45,7 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           echo "Scheduler checkpoint: Beijing $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')"
-          gh workflow run daily.yml --ref main
+          gh workflow run daily.yml --repo franklee24/Rader-News --ref main
       - name: Continue scheduler daemon
         shell: bash
         env:
@@ -53,4 +47,4 @@ jobs:
         run: |
           set -euo pipefail
           sleep 10
-          gh workflow run reliable-scheduler.yml --ref main
+          gh workflow run reliable-scheduler.yml --repo franklee24/Rader-News --ref main
