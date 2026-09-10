@@ -1,0 +1,19 @@
+name: Cron Health Check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm scheduled execution
+        run: |
+          echo "SCHEDULED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "EVENT_NAME=${{ github.event_name }}"
+          echo "SCHEDULE=${{ github.event.schedule }}"
