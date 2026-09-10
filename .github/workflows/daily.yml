@@ -2,17 +2,10 @@ name: 雷达新闻每日更新
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/**'
-      - 'config/**'
-      - 'index.html'
-      - '.github/workflows/daily.yml'
   schedule:
     - cron: '7 0 * * *'
     - cron: '37 0 * * *'
-    - cron: '15 6 10 9 *'
+    - cron: '59 6 10 9 *'
 
 permissions:
   contents: write
