@@ -60,28 +60,33 @@ jobs:
 
       - name: Trigger production update
         if: steps.gate.outputs.run_production == 'true'
+        id: trigger
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           echo "Triggering daily.yml at $(date -u +%FT%TZ)"
           gh workflow run daily.yml --ref main
+          echo "triggered_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
       - name: Wait for production workflow and fail if it does not succeed
         if: steps.gate.outputs.run_production == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          TARGET_SHA: ${{ github.sha }}
+          TRIGGERED_AT: ${{ steps.trigger.outputs.triggered_at }}
         shell: bash
         run: |
           set -euo pipefail
-          echo 'Waiting for daily.yml workflow_dispatch run...'
+          echo "Waiting for daily.yml workflow_dispatch run after $TRIGGERED_AT for $TARGET_SHA..."
           run_id=''
           for i in $(seq 1 36); do
-            run_id=$(gh run list --workflow daily.yml --event workflow_dispatch --limit 10 --json databaseId,createdAt,status,conclusion --jq '[.[] | select(.createdAt > "'"$(date -u -d "-3 minutes" +%Y-%m-%dT%H:%M:%SZ)'" )] | sort_by(.createdAt) | last | .databaseId // empty')
+            run_id=$(gh run list --workflow daily.yml --limit 20 --json databaseId,event,createdAt,status,conclusion,headSha --jq '[.[] | select(.event == "workflow_dispatch" and .headSha == env.TARGET_SHA and .createdAt >= env.TRIGGERED_AT)] | sort_by(.createdAt) | last | .databaseId // empty')
             if [ -n "$run_id" ]; then break; fi
             sleep 5
           done
           if [ -z "$run_id" ]; then
-            echo 'ERROR: daily.yml workflow_dispatch did not create a run.'
+            echo 'ERROR: daily.yml workflow_dispatch did not create a matching run.'
             exit 1
           fi
           echo "Production run: $run_id"
