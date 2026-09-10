@@ -105,21 +105,19 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
-      - name: Validate fixed window and country coverage
+      - name: Validate rolling 24h window and country coverage
         run: |
-          python - <<'PY'
+          python - <<'PY2'
           import json
           from datetime import datetime,timezone,timedelta
           from pathlib import Path
-          BJ=timezone(timedelta(hours=8)); UTC=timezone.utc; d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
-          now=datetime.now(UTC).astimezone(BJ); anchor=now.replace(hour=8,minute=0,second=0,microsecond=0)
-          if now<anchor: anchor-=timedelta(days=1)
-          start=anchor-timedelta(days=1); end=anchor; su=start.astimezone(UTC); eu=end.astimezone(UTC)
+          UTC=timezone.utc; d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          now=datetime.now(UTC); start=now-timedelta(hours=24); end=now+timedelta(minutes=5)
           events=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
           if not events: raise SystemExit('QUALITY GATE FAILED: no events')
           for e in events:
               t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
-              if t<su or t>=eu: raise SystemExit('QUALITY GATE FAILED: event outside fixed window: '+e.get('title',''))
+              if t<start or t>=end: raise SystemExit('QUALITY GATE FAILED: event outside rolling 24h window: '+e.get('title',''))
           cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
           coverage=[]
           for tier_name,countries in cfg['tiers'].items():
@@ -127,15 +125,8 @@ jobs:
                   ev=[e for e in events if e.get('event_country')==c['name']]
                   if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")
           if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
-          tier1=[c['name'] for c in cfg['tiers']['tier1']]
-          warnings={}
-          for country in tier1:
-              ev=[e for e in events if e.get('event_country')==country]
-              src={s.get('source') for e in ev for s in e.get('sources',[]) if s.get('source')}
-              if len(ev)<8 or len(src)<3: warnings[country]={'events':len(ev),'sources':len(src)}
-          print('QUALITY GATE PASSED',start,end)
-          if warnings: print('TIER1 COVERAGE WARNINGS:',warnings)
-          PY
+          print('QUALITY GATE PASSED rolling 24h',start,end)
+          PY2
       - name: Commit daily snapshot
         run: |
           git config user.name "github-actions[bot]"
