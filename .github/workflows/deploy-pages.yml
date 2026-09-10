@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: read
   pages: write
   id-token: write
@@ -49,3 +50,9 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: One-time launch of repaired daily pipeline
+        if: github.event_name == 'push' && github.event.head_commit.message == 'test: launch repaired daily pipeline now'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run daily.yml --ref main
