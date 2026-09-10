@@ -1,19 +1,98 @@
-name: Cron Health Check
+name: 雷达新闻每日调度守护
 
+# This workflow is the scheduler watchdog. It deliberately uses UTC cron
+# to avoid timezone-parser issues, and triggers the production workflow via
+# workflow_dispatch (which GitHub explicitly allows from GITHUB_TOKEN).
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
+    # 08:07-08:57 Beijing = 00:07-00:57 UTC. Multiple attempts give GitHub
+    # Actions several chances if one scheduled event is delayed/dropped.
+    - cron: '7,17,27,37,47,57 0 * * *'
 
 permissions:
+  actions: write
   contents: read
 
+concurrency:
+  group: radar-scheduler-watchdog
+  cancel-in-progress: false
+
 jobs:
-  health:
+  schedule-production:
     runs-on: ubuntu-latest
     steps:
-      - name: Confirm scheduled execution
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Decide whether today's production update is already complete
+        id: gate
+        shell: bash
         run: |
-          echo "SCHEDULED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          echo "EVENT_NAME=${{ github.event_name }}"
-          echo "SCHEDULE=${{ github.event.schedule }}"
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          bj = timezone(timedelta(hours=8))
+          now = datetime.now(timezone.utc).astimezone(bj)
+          if now.hour != 8 and not '${{ github.event_name }}' == 'workflow_dispatch':
+              print('RUN_PRODUCTION=false')
+              raise SystemExit(0)
+          try:
+              d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+              generated=d.get('generated_beijing','')
+              today=now.date().isoformat()
+              complete=generated.startswith(today+' ') and int(generated[11:13]) >= 8
+          except Exception:
+              complete=False
+          print('NOW_BEIJING=',now.isoformat())
+          print('DAILY_GENERATED_BEIJING=',generated if 'generated' in locals() else '')
+          print('RUN_PRODUCTION=',not complete)
+          with open('${GITHUB_OUTPUT}','a') as f:
+              f.write('run_production='+str(not complete).lower()+'\n')
+          PY
+
+      - name: Trigger production update
+        if: steps.gate.outputs.run_production == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Triggering production workflow at $(date -u +%FT%TZ)"
+          gh workflow run daily.yml --ref main
+
+      - name: Wait for production workflow and fail if it does not succeed
+        if: steps.gate.outputs.run_production == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Waiting for daily.yml workflow_dispatch run..."
+          run_id=""
+          for i in $(seq 1 24); do
+            run_id=$(gh run list --workflow daily.yml --event workflow_dispatch --limit 10 --json databaseId,createdAt,status,conclusion --jq '[.[] | select(.createdAt > "'"$(date -u -d "-2 minutes" +%Y-%m-%dT%H:%M:%SZ)'" )] | sort_by(.createdAt) | last | .databaseId // empty')"
+            if [ -n "$run_id" ]; then break; fi
+            sleep 5
+          done
+          if [ -z "$run_id" ]; then
+            echo 'ERROR: production workflow was not created after workflow_dispatch.'
+            exit 1
+          fi
+          echo "Production run: $run_id"
+          gh run watch "$run_id" --exit-status --interval 10
+          echo 'Production workflow succeeded.'
+
+      - name: Verify today's snapshot was produced
+        if: steps.gate.outputs.run_production == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          bj=timezone(timedelta(hours=8)); now=datetime.now(timezone.utc).astimezone(bj)
+          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          generated=d.get('generated_beijing','')
+          if not generated.startswith(now.date().isoformat()+' ') or int(generated[11:13]) < 8:
+              raise SystemExit('DAILY SNAPSHOT VERIFICATION FAILED: '+generated)
+          print('DAILY SNAPSHOT VERIFIED:',generated)
+          PY
