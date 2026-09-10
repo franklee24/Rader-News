@@ -35,7 +35,7 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import json
+          import json, os
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
           bj=timezone(timedelta(hours=8))
@@ -54,7 +54,7 @@ jobs:
           print('EVENT=',event)
           print('DAILY_GENERATED_BEIJING=',generated)
           print('RUN_PRODUCTION=',run_production)
-          with open('${GITHUB_OUTPUT}','a') as f:
+          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as f:
               f.write('run_production='+str(run_production).lower()+'\n')
           PY
 
