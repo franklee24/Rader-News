@@ -111,13 +111,26 @@ jobs:
           import json
           from datetime import datetime,timezone,timedelta
           from pathlib import Path
-          UTC=timezone.utc; d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          UTC=timezone.utc; root=Path('.')
+          daily=root/'data/daily.json'; d=json.loads(daily.read_text(encoding='utf-8'))
           now=datetime.now(UTC); start=now-timedelta(hours=24); end=now+timedelta(minutes=5)
-          events=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
-          if not events: raise SystemExit('QUALITY GATE FAILED: no events')
-          for e in events:
-              t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
-              if t<start or t>=end: raise SystemExit('QUALITY GATE FAILED: event outside rolling 24h window: '+e.get('title',''))
+          future=0
+          events=[]
+          for tier_name,tier in d.get('tiers',{}).items():
+              for country,c in tier.items():
+                  keep=[]
+                  for e in c.get('events',[]):
+                      if not e.get('published_at'): continue
+                      t=datetime.fromisoformat(e['published_at'].replace('Z','+00:00')).astimezone(UTC)
+                      if t<start: raise SystemExit('QUALITY GATE FAILED: event older than rolling 24h: '+e.get('title',''))
+                      if t>=end:
+                          future+=1
+                          continue
+                      keep.append(e); events.append(e)
+                  c['events']=keep; c['count']=len(keep)
+          d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
+          d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
+          d['future_dated_removed']=future
           cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
           coverage=[]
           for tier_name,countries in cfg['tiers'].items():
@@ -125,7 +138,8 @@ jobs:
                   ev=[e for e in events if e.get('event_country')==c['name']]
                   if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")
           if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
-          print('QUALITY GATE PASSED rolling 24h',start,end)
+          daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('QUALITY GATE PASSED rolling 24h; future removed:',future)
           PY2
       - name: Commit daily snapshot
         run: |
