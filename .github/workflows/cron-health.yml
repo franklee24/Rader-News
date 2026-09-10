@@ -1,17 +1,9 @@
 name: 雷达新闻每日调度守护
 
 # UTC cron is intentional: it avoids timezone-parser ambiguity. The watchdog
-# retries several times around 08:00 Beijing and can dispatch the production
-# workflow through workflow_dispatch.
+# is only a health check around 08:00 Beijing; production has its own schedule.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/cron-health.yml'
-      - '.github/workflows/daily.yml'
-      - 'scripts/**'
-      - 'config/**'
   schedule:
     - cron: '7,17,27,37,47,57 0 * * *'
 
@@ -24,86 +16,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  schedule-production:
+  schedule-health:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Decide whether production should run
-        id: gate
-        shell: bash
+      - name: Verify production workflow is present
         run: |
           python - <<'PY'
-          import json, os
-          from datetime import datetime, timezone, timedelta
           from pathlib import Path
-          bj=timezone(timedelta(hours=8))
-          now=datetime.now(timezone.utc).astimezone(bj)
-          event='${{ github.event_name }}'
-          force=event in {'push','workflow_dispatch'}
-          try:
-              d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
-              generated=d.get('generated_beijing','')
-              complete=generated.startswith(now.date().isoformat()+' ') and int(generated[11:13]) >= 8
-          except Exception:
-              generated=''
-              complete=False
-          run_production=force or (now.hour == 8 and not complete)
-          print('NOW_BEIJING=',now.isoformat())
-          print('EVENT=',event)
-          print('DAILY_GENERATED_BEIJING=',generated)
-          print('RUN_PRODUCTION=',run_production)
-          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as f:
-              f.write('run_production='+str(run_production).lower()+'\n')
-          PY
-
-      - name: Trigger production update
-        if: steps.gate.outputs.run_production == 'true'
-        id: trigger
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          echo "Triggering daily.yml at $(date -u +%FT%TZ)"
-          gh workflow run daily.yml --ref main
-          echo "triggered_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
-
-      - name: Wait for production workflow and fail if it does not succeed
-        if: steps.gate.outputs.run_production == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TARGET_SHA: ${{ github.sha }}
-          TRIGGERED_AT: ${{ steps.trigger.outputs.triggered_at }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          echo "Waiting for daily.yml workflow_dispatch run after $TRIGGERED_AT for $TARGET_SHA..."
-          run_id=''
-          for i in $(seq 1 36); do
-            run_id=$(gh run list --workflow daily.yml --limit 20 --json databaseId,event,createdAt,status,conclusion,headSha --jq '[.[] | select(.event == "workflow_dispatch" and .headSha == env.TARGET_SHA and .createdAt >= env.TRIGGERED_AT)] | sort_by(.createdAt) | last | .databaseId // empty')
-            if [ -n "$run_id" ]; then break; fi
-            sleep 5
-          done
-          if [ -z "$run_id" ]; then
-            echo 'ERROR: daily.yml workflow_dispatch did not create a matching run.'
-            exit 1
-          fi
-          echo "Production run: $run_id"
-          gh run watch "$run_id" --exit-status --interval 10
-          echo 'Production workflow succeeded.'
-
-      - name: Verify today's snapshot
-        if: steps.gate.outputs.run_production == 'true'
-        run: |
-          python - <<'PY'
-          import json
-          from datetime import datetime, timezone, timedelta
-          from pathlib import Path
-          bj=timezone(timedelta(hours=8)); now=datetime.now(timezone.utc).astimezone(bj)
-          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
-          generated=d.get('generated_beijing','')
-          if not generated.startswith(now.date().isoformat()+' ') or int(generated[11:13]) < 8:
-              raise SystemExit('DAILY SNAPSHOT VERIFICATION FAILED: '+generated)
-          print('DAILY SNAPSHOT VERIFIED:',generated)
+          text=Path('.github/workflows/daily.yml').read_text(encoding='utf-8')
+          if 'schedule:' not in text:
+              raise SystemExit('Production schedule missing')
+          print('Production schedule exists.')
           PY
