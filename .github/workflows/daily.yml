@@ -1,6 +1,5 @@
 name: 雷达新闻每日更新
 
-# keepalive: merge this workflow change to force a real push event and verify the production path.
 on:
   workflow_dispatch:
   push:
@@ -11,14 +10,11 @@ on:
       - 'index.html'
       - '.github/workflows/daily.yml'
   schedule:
-    # Primary: 08:07 Beijing. Backup: 08:37 Beijing.
-    - cron: '7 8 * * *'
-      timezone: 'Asia/Shanghai'
-    - cron: '37 8 * * *'
-      timezone: 'Asia/Shanghai'
-    # One-time validation today: 12:15 Beijing. Remove after verification.
-    - cron: '15 12 * * *'
-      timezone: 'Asia/Shanghai'
+    # 00:07 UTC = 08:07 Beijing; 00:37 UTC = 08:37 Beijing.
+    - cron: '7 0 * * *'
+    - cron: '37 0 * * *'
+    # Temporary live validation: 06:15 UTC = 14:15 Beijing on Sep 10.
+    - cron: '15 6 10 9 *'
 
 permissions:
   contents: write
@@ -138,7 +134,7 @@ jobs:
           coverage=[]
           for tier_name,countries in cfg['tiers'].items():
               for c in countries:
-                  ev=[e for e in events if e.get('event_country')==c['name']]
+                  ev=[e for e in events if e.get('event_country')==country]
                   if len(ev)==0: coverage.append(f"{tier_name}:{c['name']}")
           if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
           tier1=[c['name'] for c in cfg['tiers']['tier1']]
