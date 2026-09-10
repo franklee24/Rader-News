@@ -28,6 +28,27 @@ jobs:
           python-version: '3.12'
       - name: Expand country coverage
         run: python scripts/coverage_expand.py
+      - name: Translate English titles only
+        run: python scripts/translate_titles.py
+      - name: Validate title translations
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          events=[]
+          for tier in d.get('tiers',{}).values():
+              for country in tier.values():
+                  events.extend(country.get('events',[]))
+          events.extend(d.get('supplement',[]))
+          english=[e for e in events if isinstance(e.get('title'),str) and e['title'].strip() and not any('\u3400' <= ch <= '\u9fff' for ch in e['title'])]
+          translated=[e for e in english if e.get('title_zh')]
+          print('English titles:',len(english),'translated:',len(translated))
+          if english and not translated:
+              raise SystemExit('TITLE TRANSLATION GATE FAILED: no English titles were translated')
+          if translated < max(1, int(len(english)*0.5)):
+              raise SystemExit(f'TITLE TRANSLATION GATE FAILED: only {len(translated)}/{len(english)} translated')
+          PY
       - name: Commit expanded snapshot
         run: |
           git config user.name "github-actions[bot]"
