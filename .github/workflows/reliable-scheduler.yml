@@ -28,7 +28,7 @@ jobs:
           hour=$(TZ=Asia/Shanghai date +%H)
           minute=$(TZ=Asia/Shanghai date +%M)
           current_minutes=$((10#$hour * 60 + 10#$minute))
-          checkpoints=(0 240 480 720 780 960 1200)
+          checkpoints=(0 240 480 720 780 840 960 1200)
           target_minutes=""
           for m in "${checkpoints[@]}"; do
             if [ "$m" -gt "$current_minutes" ]; then
