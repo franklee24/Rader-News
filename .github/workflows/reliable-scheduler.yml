@@ -28,7 +28,7 @@ jobs:
           hour=$(TZ=Asia/Shanghai date +%H)
           minute=$(TZ=Asia/Shanghai date +%M)
           current_minutes=$((10#$hour * 60 + 10#$minute))
-          checkpoints=(0 240 480 720 960 1200)
+          checkpoints=(0 240 480 720 780 960 1200)
           target_minutes=""
           for m in "${checkpoints[@]}"; do
             if [ "$m" -gt "$current_minutes" ]; then
@@ -65,9 +65,8 @@ jobs:
           fi
           echo "Today: $today; current generated date: ${generated_date:-unknown}"
 
-          # Run at 08:00 every day. Also catch up at the next 4-hour checkpoint
-          # whenever today's snapshot has not been generated yet. This prevents
-          # a missed 08:00 checkpoint from causing the whole day to be skipped.
+          # Run at 08:00 every day. Also catch up at every later checkpoint
+          # whenever today's snapshot has not been generated yet.
           if { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
             gh workflow run daily.yml --repo franklee24/Rader-News --ref main
             echo "Daily radar update dispatched."
