@@ -23,13 +23,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          now=$(date +%s)
           today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
           hour=$(TZ=Asia/Shanghai date +%H)
           minute=$(TZ=Asia/Shanghai date +%M)
           current_minutes=$((10#$hour * 60 + 10#$minute))
-          # 14:15 is a forced-update verification checkpoint; 08:00 remains the daily production update.
-          checkpoints=(0 240 480 720 735 780 840 960 1200)
+          # 14:30 is the forced-update verification checkpoint. 08:00 remains the daily production update.
+          checkpoints=(0 240 480 720 750 780 840 960 1200)
           target_minutes=""
           for m in "${checkpoints[@]}"; do
             if [ "$m" -gt "$current_minutes" ]; then
@@ -45,9 +44,14 @@ jobs:
             target_minute=$((target_minutes % 60))
             target=$(TZ=Asia/Shanghai date -d "$today $(printf '%02d:%02d:00' "$target_hour" "$target_minute")" +%s)
           fi
-          delay=$((target-now))
-          echo "Waiting ${delay}s until Beijing $(TZ=Asia/Shanghai date -d @$target '+%Y-%m-%d %H:%M:%S')"
-          if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
+          echo "Waiting until Beijing $(TZ=Asia/Shanghai date -d @$target '+%Y-%m-%d %H:%M:%S')"
+          # Poll instead of one long sleep so the runner reliably wakes at the checkpoint.
+          while true; do
+            now=$(date +%s)
+            if [ "$now" -ge "$target" ]; then break; fi
+            remaining=$((target-now))
+            sleep $(( remaining > 15 ? 15 : remaining ))
+          done
 
       - name: Trigger radar update when due
         shell: bash
@@ -67,9 +71,9 @@ jobs:
           fi
           echo "Today: $today; current generated date: ${generated_date:-unknown}"
 
-          # 14:15 is intentionally forced for verification even if today's snapshot already exists.
+          # 14:30 is intentionally forced for verification even if today's snapshot already exists.
           # 08:00 is the normal daily update; later checkpoints catch up if today's snapshot is missing.
-          if [ "$checkpoint_minutes" -eq 855 ] || { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
+          if [ "$checkpoint_minutes" -eq 870 ] || { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
             gh workflow run daily.yml --repo franklee24/Rader-News --ref main
             echo "Daily radar update dispatched."
           else
