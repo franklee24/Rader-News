@@ -44,20 +44,31 @@ jobs:
           echo "Waiting ${delay}s until Beijing $(TZ=Asia/Shanghai date -d @$target '+%Y-%m-%d %H:%M:%S')"
           if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
 
-      - name: Trigger radar update at 08:00
+      - name: Trigger radar update when due
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          today=$(TZ=Asia/Shanghai date +%Y-%m-%d)
           beijing_hour=$(TZ=Asia/Shanghai date +%H)
           beijing_minute=$(TZ=Asia/Shanghai date +%M)
           echo "Checkpoint: Beijing $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')"
-          if [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; then
+
+          generated_date=""
+          if daily_json=$(curl -fsSL --max-time 20 https://raw.githubusercontent.com/franklee24/Rader-News/main/data/daily.json); then
+            generated_date=$(printf '%s' "$daily_json" | python -c 'import json,sys; d=json.load(sys.stdin); print(str(d.get("generated_beijing", ""))[:10])')
+          fi
+          echo "Today: $today; current generated date: ${generated_date:-unknown}"
+
+          # Run at 08:00 every day. Also catch up at the next 4-hour checkpoint
+          # whenever today's snapshot has not been generated yet. This prevents
+          # a missed 08:00 checkpoint from causing the whole day to be skipped.
+          if { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
             gh workflow run daily.yml --repo franklee24/Rader-News --ref main
             echo "Daily radar update dispatched."
           else
-            echo "Not the 08:00 checkpoint; no radar update dispatched."
+            echo "Today's radar snapshot already exists; no update needed at this checkpoint."
           fi
 
       - name: Continue scheduler chain
