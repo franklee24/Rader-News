@@ -1,0 +1,38 @@
+name: Apply bilingual title order fix
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  fix:
+    if: ${{ !contains(github.event.head_commit.message, 'English title primary') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Patch title rendering
+        shell: python
+        run: |
+          import re
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          pat=r'function card\(e,i\)\{.*?\}function render\(\)\{'
+          new='''function card(e,i){const zh=String(e.title_zh||\"\").trim();const en=String(e.title||\"\").trim();return `<article class="card event" onclick="openDetail('${e.id}')"><span class="badge">${esc(tierOf(e.event_country))} · ${esc(e.event_country)} · ${esc(e.category)}</span><span class="score">${Number(e.importance||0).toFixed(0)}</span><h4>${esc(en||zh)}</h4>${zh&&en&&zh!==en?`<div class="original-title">译文：${esc(zh)}</div>`:\"\"}<div class="meta"><span>${esc(e.published_at||\"\")}</span><span>${(e.sources||[]).length} 个来源</span><span>国内重要度 ${Number(e.domestic_score||0).toFixed(0)}</span></div></article>;}function render(){'''
+          s,n=re.subn(pat,new,s,count=1,flags=re.S)
+          if n!=1: raise SystemExit(f'card function replace count={n}')
+          old='(!q||[e.title,e.event_country,e.category,e.source_names,(e.sources||[]).map(s=>s.name).join(" ")].join(" ").toLowerCase().includes(q))'
+          s=s.replace(old,'(!q||[e.title,e.title_zh,e.event_country,e.category,e.source_names,(e.sources||[]).map(s=>s.name).join(" ")].join(" ").toLowerCase().includes(q))')
+          s=s.replace('<h2>${esc(e.title_zh||e.title)}</h2>','<h2>${esc(e.title||e.title_zh)}</h2>${e.title_zh&&e.title&&e.title_zh!==e.title?`<div class="original-title">译文：${esc(e.title_zh)}</div>`:""}')
+          s=s.replace('<h2>${esc(e.title)}</h2>','<h2>${esc(e.title||e.title_zh)}</h2>${e.title_zh&&e.title&&e.title_zh!==e.title?`<div class="original-title">译文：${esc(e.title_zh)}</div>`:""}')
+          p.write_text(s,encoding='utf-8')
+      - name: Commit and remove one-off workflows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git rm .github/workflows/fix-bilingual-order.yml .github/workflows/fix-bilingual-order-run.yml || true
+          git diff --cached --quiet && exit 0
+          git commit -m "fix: English title primary, Chinese translation secondary"
+          git push
