@@ -1,0 +1,43 @@
+name: Apply bilingual title order fix v3
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  fix:
+    if: ${{ !contains(github.event.head_commit.message, 'English title primary') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Patch V8 bilingual renderer
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          old="let title=zh||raw||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class=\"original-title\"><b>原文：</b>${esc(raw)}</div>`:'';"
+          new="let title=raw||zh||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class=\"original-title\"><b>译文：</b>${esc(zh)}</div>`:'';"
+          count=s.count(old)
+          if count<2:
+              raise SystemExit(f'expected 2 bilingual title blocks, found {count}')
+          s=s.replace(old,new)
+          s=s.replace("function displayTitle(e){return e?.title_zh||e?.title||'未命名事件'}", "function displayTitle(e){return e?.title||e?.title_zh||'未命名事件'}")
+          p.write_text(s,encoding='utf-8')
+          print('V8 bilingual title order patched:', count)
+      - name: Verify source
+        run: |
+          grep -q "let title=raw||zh" index.html
+          grep -q "<b>译文：</b>" index.html
+          grep -q "function displayTitle(e){return e?.title||e?.title_zh" index.html
+          echo SOURCE_VERIFY_OK
+      - name: Commit and clean one-off workflows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git rm .github/workflows/fix-bilingual-order.yml .github/workflows/fix-bilingual-order-run.yml .github/workflows/fix-bilingual-order-run2.yml .github/workflows/fix-bilingual-order-run3.yml || true
+          git diff --cached --quiet && exit 0
+          git commit -m "fix: English title primary, Chinese translation secondary"
+          git push
