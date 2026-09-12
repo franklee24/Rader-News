@@ -9,7 +9,6 @@ permissions:
 
 jobs:
   fix:
-    if: github.event.head_commit.message != 'Temporarily automate footer credit update'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,13 +21,15 @@ jobs:
           old = '<button class="btn" onclick="loadData()">↻ 刷新</button>'
           new = '<div style="color:var(--muted);font-size:11px;white-space:nowrap">designed by Lee, powered by ChatGPT</div>'
           if old not in s:
-              raise SystemExit('refresh button pattern not found')
+              print('Footer credit already applied; nothing to do.')
+              raise SystemExit(0)
           p.write_text(s.replace(old, new, 1), encoding='utf-8')
           PY
-      - name: Commit page change and remove one-off workflow
+      - name: Commit page change
         run: |
+          if git diff --quiet -- index.html; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html .github/workflows/fix-footer-once.yml
+          git add index.html
           git commit -m "Replace refresh button with footer credit"
           git push
