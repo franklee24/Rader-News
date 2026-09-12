@@ -21,22 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fix title order in source
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path('index.html')
-          s = p.read_text(encoding='utf-8')
-          old1 = '''function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||'';let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=zh||raw||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>原文：</b>${esc(raw)}</div>`:'';return `<article class="event" ${rank?`data-rank="${rank}"`:''} onclick='openEvent(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${original}<p>${esc((e.source_names||[]).join(' · ')||e.source||'')}</p><div class="importance">${level?`<span class="level ${score>=80?'hot':''}">${esc(level)}</span>`:''}</div></article>`}'''
-          new1 = '''function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||'';let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let translation=raw&&zh&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';return `<article class="event" ${rank?`data-rank="${rank}"`:''} onclick='openEvent(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${translation}<p>${esc((e.source_names||[]).join(' · ')||e.source||'')}</p><div class="importance">${level?`<span class="level ${score>=80?'hot':''}">${esc(level)}</span>`:''}</div></article>`}'''
-          old2 = '''function openEvent(e){let sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.source||'来源')}</b><br><a target="_blank" rel="noopener" href="${esc(s.link||s.url||'#')}">打开报道</a></div>`).join('');let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=zh||raw||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>原文：</b>${esc(raw)}</div>`:'';document.getElementById('modalbody').innerHTML=`<div class="kicker">${esc(e.event_country||'全球')} · ${esc(e.category||'')}</div><h2>${esc(title)}</h2>${original}<p><b>重要性：</b>${Number(e.importance)||0}　<b>等级：</b>${esc(e.importance_level||'')}</p><p><b>为什么重要：</b>${esc(e.why_important||'')}</p><p><b>影响：</b>${esc(e.impact||'')}</p><p><b>未来72小时：</b>${esc(e.next_72h||'')}</p><h3>相关来源</h3>${sources||'<p class="sub">暂无多源记录</p>'}`;document.getElementById('modal').style.display='block'}'''
-          new2 = '''function openEvent(e){let sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.source||'来源')}</b><br><a target="_blank" rel="noopener" href="${esc(s.link||s.url||'#')}">打开报道</a></div>`).join('');let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let translation=raw&&zh&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';document.getElementById('modalbody').innerHTML=`<div class="kicker">${esc(e.event_country||'全球')} · ${esc(e.category||'')}</div><h2>${esc(title)}</h2>${translation}<p><b>重要性：</b>${Number(e.importance)||0}　<b>等级：</b>${esc(e.importance_level||'')}</p><p><b>为什么重要：</b>${esc(e.why_important||'')}</p><p><b>影响：</b>${esc(e.impact||'')}</p><p><b>未来72小时：</b>${esc(e.next_72h||'')}</p><h3>相关来源</h3>${sources||'<p class="sub">暂无多源记录</p>'}`;document.getElementById('modal').style.display='block'}'''
-          if old1 not in s or old2 not in s:
-              raise SystemExit('title rendering pattern not found')
-          s = s.replace(old1, new1).replace(old2, new2)
-          p.write_text(s, encoding='utf-8')
-          PY
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
