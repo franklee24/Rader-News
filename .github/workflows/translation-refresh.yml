@@ -1,0 +1,49 @@
+name: 刷新英文新闻中文翻译
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/translate_titles.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar-translation-refresh
+  cancel-in-progress: false
+
+jobs:
+  translate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Translate English titles
+        run: python scripts/translate_titles.py
+      - name: Commit translated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily.json
+          if git diff --cached --quiet; then
+            echo "No translation changes"
+          else
+            git commit -m "data: refresh Chinese translations"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy Pages
+        uses: actions/deploy-pages@v4
