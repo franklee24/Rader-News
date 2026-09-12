@@ -1,0 +1,53 @@
+name: Fix bilingual title display
+
+on:
+  push:
+    paths:
+      - .github/fix-original-title.trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Patch index.html
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+
+          css_old = '.event h3{font-size:14px;line-height:1.4;margin:0 0 7px}'
+          css_new = css_old + '.original-title{margin:-2px 0 7px;color:var(--muted);font-size:11px;line-height:1.35;font-weight:400;word-break:break-word}.original-title b{font-weight:600;opacity:.85}'
+          if css_old in s and '.original-title{' not in s:
+              s = s.replace(css_old, css_new, 1)
+
+          old_card = 'function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||\'\';return `<article class="event" ${rank?`data-rank="${rank}"`:\'\'} onclick=\'openEvent(${JSON.stringify(e).replace(/\'/g,"&#39;")})\'><div class="meta"><span class="badge">${esc(e.event_country||\'全球\')}</span><span>${esc(e.category||\'\')}</span><span class="score">${score}</span></div><h3>${esc(displayTitle(e))}</h3><p>${esc((e.source_names||[]).join(\' · \')||e.source||\'\')}</p><div class="importance">${level?`<span class="level ${score>=80?\'hot\':\'\'}">${esc(level)}</span>`:\'\'}</div></article>`}'
+          new_card = 'function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||\'\';let zh=e.title_zh?.trim()||\'\',raw=e.title?.trim()||\'\';let title=zh||raw||\'未命名事件\';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>原文：</b>${esc(raw)}</div>`:\'\';return `<article class="event" ${rank?`data-rank="${rank}"`:\'\'} onclick=\'openEvent(${JSON.stringify(e).replace(/\'/g,"&#39;")})\'><div class="meta"><span class="badge">${esc(e.event_country||\'全球\')}</span><span>${esc(e.category||\'\')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${original}<p>${esc((e.source_names||[]).join(\' · \')||e.source||\'\')}</p><div class="importance">${level?`<span class="level ${score>=80?\'hot\':\'\'}">${esc(level)}</span>`:\'\'}</div></article>`}'
+          if old_card in s:
+              s = s.replace(old_card, new_card, 1)
+          elif 'function card(e,rank)' not in s:
+              raise SystemExit('card function not found')
+
+          old_detail = 'document.getElementById(\'modalbody\').innerHTML=`<div class="kicker">${esc(e.event_country||\'全球\')} · ${esc(e.category||\'\')}</div><h2>${esc(displayTitle(e))}</h2>'
+          new_detail = 'let zh=e.title_zh?.trim()||\'\',raw=e.title?.trim()||\'\';let title=zh||raw||\'未命名事件\';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>原文：</b>${esc(raw)}</div>`:\'\';document.getElementById(\'modalbody\').innerHTML=`<div class="kicker">${esc(e.event_country||\'全球\')} · ${esc(e.category||\'\')}</div><h2>${esc(title)}</h2>${original}'
+          if old_detail in s:
+              s = s.replace(old_detail, new_detail, 1)
+          elif 'function openEvent(e)' not in s:
+              raise SystemExit('detail function not found')
+
+          p.write_text(s, encoding='utf-8')
+
+      - name: Commit patched page and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f .github/fix-original-title.trigger .github/workflows/fix-original-title.yml
+          git add index.html
+          git commit -m "fix: show original English titles under Chinese translations"
+          git push
