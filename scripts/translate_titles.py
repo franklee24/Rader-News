@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Translate English-only news titles to Simplified Chinese for display.
 # Keeps the original title unchanged and stores the translation in title_zh.
+# Refresh workflow trigger: 2026-09-12
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -45,7 +46,6 @@ def mymemory_translate(title):
     with urlopen(req, timeout=TIMEOUT) as r:
         payload = json.loads(r.read().decode("utf-8", "replace"))
     result = ((payload.get("responseData") or {}).get("translatedText") or "").strip()
-    # Ignore the service's unchanged English fallback.
     if result and re.search(r"[\u3400-\u9fff]", result):
         return re.sub(r"\s+", " ", result).strip()
     return ""
