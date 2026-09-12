@@ -23,24 +23,28 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
-          old='.radar-ui{position:fixed;right:18px;bottom:18px;width:380px;height:380px;z-index:50;pointer-events:none}'
-          new='.radar-ui{position:fixed;right:18px;bottom:18px;width:380px;height:380px;z-index:9999;pointer-events:auto;touch-action:none}'
-          if old not in s: raise SystemExit('RADAR CONTAINER PATCH TARGET NOT FOUND')
-          s=s.replace(old,new,1)
+
+          # Keep the existing radar UI intact; only make the fixed container reliably clickable.
+          pattern=r'\.radar-ui\{position:fixed;right:18px;bottom:18px;width:\d+px;height:\d+px;z-index:\d+;pointer-events:none(?:;touch-action:none)?\}'
+          replacement='.radar-ui{position:fixed;right:18px;bottom:18px;width:390px;height:390px;z-index:9999;pointer-events:auto;touch-action:none}'
+          s2,n=re.subn(pattern,replacement,s,count=1)
+          if n!=1: raise SystemExit('RADAR CONTAINER PATCH TARGET NOT FOUND')
+          s=s2
+
+          # The decorative sweep must not block clicks on the radar controls.
           old2='.radar-ui:before{content:"";position:absolute;'
           new2='.radar-ui:before{pointer-events:none;content:"";position:absolute;'
-          if old2 not in s: raise SystemExit('RADAR PSEUDO PATCH TARGET NOT FOUND')
-          s=s.replace(old2,new2,1)
-          old3='.radar-item{position:absolute;'
-          new3='.radar-item{position:absolute;z-index:2;touch-action:manipulation;'
-          if old3 not in s: raise SystemExit('RADAR ITEM PATCH TARGET NOT FOUND')
-          s=s.replace(old3,new3,1)
-          old4='.radar-launcher{position:absolute;'
-          new4='.radar-launcher{position:absolute;z-index:3;touch-action:manipulation;'
-          if old4 not in s: raise SystemExit('RADAR LAUNCHER PATCH TARGET NOT FOUND')
-          s=s.replace(old4,new4,1)
+          if old2 in s: s=s.replace(old2,new2,1)
+
+          # Keep the launcher and expanded nodes above the decorative layer.
+          if '.radar-item{position:absolute;' in s:
+              s=s.replace('.radar-item{position:absolute;','.radar-item{position:absolute;z-index:2;',1)
+          if '.radar-launcher{position:absolute;' in s:
+              s=s.replace('.radar-launcher{position:absolute;','.radar-launcher{position:absolute;z-index:3;',1)
+
           p.write_text(s,encoding='utf-8')
           print('Radar pointer-event fix applied')
           PY
