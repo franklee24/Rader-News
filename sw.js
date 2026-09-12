@@ -1,4 +1,4 @@
-const CACHE="leida-v15";
+const CACHE="leida-v16";
 
 self.addEventListener("install",e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(["./","./index.html","./manifest.webmanifest","./icon.svg"])));
