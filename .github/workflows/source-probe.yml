@@ -19,25 +19,18 @@ jobs:
           import xml.etree.ElementTree as ET
 
           feeds = {
-              "联合早报": "https://rsshub.app/zaobao/realtime/world",
+              "联合早报": "https://plink.anyfeeder.com/zaobao/realtime/world",
               "纽约时报": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
               "彭博社": "https://feeds.bloomberg.com/markets/news.rss",
               "华尔街日报": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
           }
-          zaobao_candidates = [
-              "https://rsshub.app/zaobao/realtime/world",
-              "https://rsshub.app/zaobao/realtime/china",
-              "https://feedx.site/rss/zaobao.xml",
-          ]
 
           def probe(name, url):
               req=Request(url,headers={"User-Agent":"LeidaNews/18.0 (+https://github.com/franklee24/Rader-News)"})
               with urlopen(req,timeout=25) as r:
                   body=r.read()
                   root=ET.fromstring(body)
-                  items=root.findall(".//item")
-                  if not items:
-                      items=root.findall(".//{*}item")
+                  items=root.findall(".//item") or root.findall(".//{*}item")
                   if not items:
                       raise RuntimeError("XML parsed but no RSS items")
                   title=items[0].findtext("title") or items[0].findtext("{*}title") or ""
@@ -52,18 +45,6 @@ jobs:
               except Exception as e:
                   print(f"FAIL | {name} | {url} | {type(e).__name__}: {e}")
 
-          print("\nZaobao candidate diagnostics:")
-          zaobao_ok=[]
-          for url in zaobao_candidates:
-              try:
-                  result=probe("联合早报候选",url)
-                  print(f"PASS | {url} | status={result[0]} | items={result[2]} | title={result[3]}")
-                  zaobao_ok.append(url)
-              except Exception as e:
-                  print(f"FAIL | {url} | {type(e).__name__}: {e}")
-
-          if "https://rsshub.app/zaobao/realtime/world" not in zaobao_ok:
-              raise SystemExit("SELECTED ZAOBAO FEED FAILED")
           if ok != 4:
               raise SystemExit(f"NEWS SOURCE PROBE FAILED: {ok}/4 selected feeds passed")
           print("ALL SELECTED NEWS SOURCES PASSED")
