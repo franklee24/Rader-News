@@ -5,9 +5,7 @@
 body.day{--bg:#edf8f2;--panel:#fff;--line:#c9ded3;--text:#18372b;--muted:#668077;--accent:#218b68;--hot:#a86f00;background:radial-gradient(circle at 20% -10%,#d8f1e2 0,#edf8f2 42%,#f9fcfa 100%)}body.day header{background:rgba(248,252,249,.94)}body.day .card{background:linear-gradient(180deg,#fff,#f3faf6);box-shadow:0 5px 18px rgba(38,102,75,.07)}body.day .stat,body.day .search{background:#f7fbf8;color:var(--text)}body.day .event,body.day .country{background:#fff}body.day .theme-picker button{background:#f5faf7;color:#557267}body.day .theme-picker button.active{background:#dff2e7;color:#174d3a;border-color:#7fb89d}body.day .radar-label{color:#3d725f;text-shadow:0 1px 8px #fff}body.day .modalbox{background:#f8fcf9}body.day .btn{background:#f5faf7;color:var(--text)}
 @media(max-width:1100px){.top10{grid-template-columns:repeat(4,minmax(0,1fr))}.top10 .event:nth-child(1){grid-column:span 2}}@media(max-width:900px){.hero{grid-template-columns:1fr}.grid,.top10{grid-template-columns:1fr}.top10 .event:nth-child(1){grid-column:span 1;grid-row:span 1;min-height:180px}.countryGrid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.headline{font-size:21px}.search{max-width:35vw}.theme-picker{margin-left:auto}.theme-picker button{padding:6px 6px}.radar-ui{right:8px;bottom:10px;transform:scale(.82);transform-origin:bottom right}}@media(max-width:520px){.top{flex-wrap:wrap}.search{order:3;width:100%;max-width:none}.theme-picker{margin-left:0}.radar-ui{right:4px;bottom:6px;transform:scale(.68);transform-origin:bottom right}.radar-item .item-text{width:125px;font-size:12px}.radar-item .item-sub{font-size:8px}}
 .control-strip{display:flex;align-items:center;gap:5px;white-space:nowrap}.control-label{font-size:9px;color:var(--muted);letter-spacing:.7px}.control-sep{width:1px;height:22px;background:var(--line);margin:0 3px}.nav-picker{display:flex;gap:4px;align-items:center;white-space:nowrap}.nav-picker button,.theme-picker button{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:5px 7px;border-radius:8px;cursor:pointer;font-size:10px;transition:.2s}.nav-picker button.active,.theme-picker button.active{color:var(--text);border-color:var(--accent);background:#12304d}.theme-picker{display:flex;gap:4px;align-items:center;white-space:nowrap}
-.flip-nav{position:fixed;right:22px;bottom:72px;width:350px;height:430px;z-index:80;pointer-events:none;display:none;perspective:1800px;transform:translate3d(0,0,0);opacity:1;transition:transform .72s cubic-bezier(.16,.88,.2,1),opacity .5s ease;filter:drop-shadow(0 24px 48px rgba(0,0,0,.36));touch-action:none;overscroll-behavior:contain}.flip-nav.show{display:block;pointer-events:auto}.flip-nav.collapsed{transform:translate3d(380px,150px,0) scale(.7) rotate(3deg);opacity:0;pointer-events:none}.flip-nav.dismissed{display:none}.flip-nav:before{content:"";position:absolute;inset:-40px -30px -30px -30px;border-radius:40px;background:radial-gradient(circle at 78% 78%,rgba(69,204,255,.2),transparent 48%);pointer-events:auto;touch-action:none}.flip-nav .flip-hint{position:absolute;right:18px;top:-25px;color:#72c9ff;font-size:10px;white-space:nowrap;letter-spacing:1px;text-shadow:0 0 12px rgba(77,163,255,.4);pointer-events:none}.flip-stack{position:absolute;inset:0;transform-style:preserve-3d;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;pointer-events:auto}.flip-card{position:absolute;right:18px;top:145px;width:292px;height:126px;border:1px solid rgba(77,163,255,.42);border-radius:19px;background:linear-gradient(145deg,rgba(19,48,78,.985),rgba(5,13,24,.985));box-shadow:0 16px 34px rgba(0,0,0,.34),inset 0 1px 0 rgba(170,230,255,.1),inset 0 -12px 28px rgba(0,130,220,.06);color:var(--text);padding:18px 20px;text-align:left;cursor:pointer;overflow:hidden;transform-style:preserve-3d;backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform,opacity;transform-origin:center center;transition:transform .04s linear,opacity .12s linear,filter .12s linear,box-shadow .22s ease,border-color .22s ease;touch-action:none;user-select:none;-webkit-user-select:none}.flip-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#63ddff,#2579ff);box-shadow:0 0 15px rgba(70,205,255,.8);opacity:.7}.flip-card:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 18%,rgba(91,197,255,.14) 45%,transparent 72%);transform:translateX(-130%);transition:transform .8s cubic-bezier(.2,.8,.2,1);pointer-events:none}.flip-card.is-current:after{transform:translateX(130%)}.flip-card .flip-no{font-size:10px;color:#5ed6ff;letter-spacing:1.8px;text-transform:uppercase}.flip-card .flip-title{font-size:21px;font-weight:850;margin-top:6px;letter-spacing:.3px}.flip-card .flip-sub{font-size:11px;color:#8faac2;margin-top:5px}.flip-card.is-current{border-color:#58d5ff;box-shadow:0 26px 58px rgba(0,0,0,.48),0 0 34px rgba(77,163,255,.3),inset 0 1px 0 rgba(190,240,255,.18);filter:none;z-index:10}.flip-card.is-current .flip-title{color:#f4fcff;text-shadow:0 0 18px rgba(94,214,255,.18)}.flip-nav.is-dragging .flip-card{transition:none!important}.flip-nav .flip-controls{display:none}.flip-nav .flip-dots{pointer-events:none}.flip-stack{touch-action:none;user-select:none}0 0 18px rgba(77,163,255,.2)}.flip-card.is-near{z-index:4}.flip-card.is-far{z-index:2}.flip-controls{position:absolute;left:0;bottom:0;display:flex;gap:6px}.flip-controls button{width:32px;height:32px;border-radius:50%;border:1px solid rgba(77,163,255,.38);background:rgba(8,20,34,.9);color:#bdeaff;cursor:pointer;box-shadow:0 0 14px rgba(77,163,255,.12);transition:transform .2s,border-color .2s,box-shadow .2s}.flip-controls button:hover{transform:translateY(-2px);border-color:#63c7ff;box-shadow:0 0 20px rgba(77,163,255,.3)}.flip-dots{position:absolute;right:0;bottom:5px;display:flex;gap:5px}.flip-dot{width:5px;height:5px;border-radius:50%;background:#294158;transition:transform .25s,background .25s,box-shadow .25s}.flip-dot.active{background:#5ed6ff;box-shadow:0 0 10px rgba(94,214,255,.8);transform:scale(1.35)}.flip-reopen{position:fixed;right:18px;bottom:18px;z-index:49;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid rgba(77,163,255,.58);border-radius:15px;background:linear-gradient(145deg,rgba(12,34,56,.96),rgba(5,13,24,.96));color:#bcecff;font-size:16px;letter-spacing:0;cursor:pointer;box-shadow:0 0 24px rgba(77,163,255,.22),inset 0 0 16px rgba(77,163,255,.08);transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,border-color .28s}.flip-reopen.show{display:flex}.flip-reopen:hover{transform:translateY(-3px) scale(1.04);border-color:#63d3ff;box-shadow:0 0 34px rgba(77,163,255,.42),inset 0 0 18px rgba(77,163,255,.1)}.flip-reopen .flip-icon{display:grid;gap:3px}.flip-reopen .flip-icon i{display:block;width:19px;height:2px;border-radius:2px;background:#5ed6ff;box-shadow:0 0 7px rgba(94,214,255,.8)}.flip-reopen .flip-label{position:absolute;right:58px;white-space:nowrap;padding:5px 8px;border:1px solid rgba(77,163,255,.3);border-radius:7px;background:rgba(5,15,27,.92);color:#8fdfff;font-size:9px;letter-spacing:1px;opacity:0;transform:translateX(6px);transition:opacity .2s,transform .2s;pointer-events:none}.flip-reopen:hover .flip-label{opacity:1;transform:translateX(0)}
-body.day .nav-picker button{background:#f5faf7;color:#557267}body.day .nav-picker button.active{background:#dff2e7;color:#174d3a;border-color:#7fb89d}body.day .flip-card{background:linear-gradient(145deg,#ffffff,#e8f7f0);border-color:#93cdb5;box-shadow:0 16px 34px rgba(38,102,75,.14),inset 0 1px 0 #fff}.day .flip-card .flip-no{color:#218b68}.day .flip-card .flip-sub{color:#668077}.day .flip-card.is-current{border-color:#49a47f;box-shadow:0 18px 40px rgba(38,102,75,.18),0 0 20px rgba(33,139,104,.12)}.day .flip-reopen{background:linear-gradient(135deg,#fff,#edf9f3);color:#17694f;border-color:#75b99b;box-shadow:0 8px 24px rgba(38,102,75,.16)}.flip-nav.touching .flip-card{transition:none}
-@media(max-width:900px){.flip-nav{right:12px;bottom:74px;transform:scale(.9);transform-origin:bottom right}.flip-nav.collapsed{transform:translate3d(210px,75px,0) scale(.7)}.flip-reopen{right:10px;bottom:12px}.nav-picker{margin-left:0}.nav-picker button{padding:6px}}@media(max-width:520px){.flip-nav{right:7px;bottom:62px;transform:scale(.78);transform-origin:bottom right}.flip-nav.collapsed{transform:translate3d(190px,58px,0) scale(.62)}.flip-reopen{right:7px;bottom:8px}.nav-picker{width:100%;overflow:auto}.nav-picker button{flex:0 0 auto}}</style></head><body>
+.flip-nav{position:fixed;right:22px;bottom:72px;width:360px;height:470px;z-index:80;display:none;pointer-events:none;opacity:1;touch-action:none;overscroll-behavior:contain;user-select:none;-webkit-user-select:none;filter:drop-shadow(0 24px 48px rgba(0,0,0,.38));transition:opacity .28s ease,transform .55s cubic-bezier(.16,.88,.2,1);transform:translate3d(0,0,0)}.flip-nav.show{display:block;pointer-events:auto}.flip-nav.collapsed{opacity:0;transform:translate3d(390px,150px,0) scale(.72);pointer-events:none}.flip-nav:before{content:"";position:absolute;inset:-42px -34px -28px -34px;border-radius:42px;background:radial-gradient(circle at 82% 78%,rgba(69,204,255,.19),transparent 52%);pointer-events:none}.flip-viewport{position:absolute;inset:44px 0 52px 0;overflow:hidden;border-radius:28px;touch-action:none;pointer-events:auto;cursor:grab}.flip-viewport:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,22,.08),transparent 20%,transparent 80%,rgba(4,12,22,.12));pointer-events:none;z-index:20}.flip-viewport:after{content:"";position:absolute;left:22px;right:22px;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(94,214,255,.18),transparent);box-shadow:0 0 18px rgba(94,214,255,.08);pointer-events:none;z-index:2}.flip-nav.is-dragging .flip-viewport{cursor:grabbing}.flip-track{position:absolute;left:0;right:0;top:0;will-change:transform;touch-action:none;pointer-events:none}.flip-card{position:absolute;left:24px;right:24px;height:126px;border:1px solid rgba(77,163,255,.42);border-radius:20px;background:linear-gradient(145deg,rgba(19,48,78,.985),rgba(5,13,24,.985));box-shadow:0 18px 38px rgba(0,0,0,.34),inset 0 1px 0 rgba(170,230,255,.1),inset 0 -12px 28px rgba(0,130,220,.06);color:var(--text);padding:18px 22px;text-align:left;cursor:pointer;overflow:hidden;touch-action:manipulation;pointer-events:auto;-webkit-tap-highlight-color:transparent;transition:box-shadow .2s,border-color .2s,filter .2s}.flip-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#63ddff,#2579ff);box-shadow:0 0 15px rgba(70,205,255,.8);opacity:.75}.flip-card:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 18%,rgba(91,197,255,.16) 45%,transparent 72%);transform:translateX(-130%);transition:transform .8s cubic-bezier(.2,.8,.2,1);pointer-events:none}.flip-card.is-current{border-color:#58d5ff;box-shadow:0 26px 58px rgba(0,0,0,.5),0 0 34px rgba(77,163,255,.32),inset 0 1px 0 rgba(190,240,255,.18);filter:none}.flip-card.is-current:after{transform:translateX(130%)}.flip-card.is-current .flip-title{color:#f4fcff;text-shadow:0 0 18px rgba(94,214,255,.18)}.flip-card .flip-no{font-size:10px;color:#5ed6ff;letter-spacing:1.8px;text-transform:uppercase}.flip-card .flip-title{font-size:22px;font-weight:850;margin-top:6px;letter-spacing:.3px}.flip-card .flip-sub{font-size:11px;color:#8faac2;margin-top:5px}.flip-card.is-near{filter:none}.flip-card.is-far{filter:blur(.5px)}.flip-hint{position:absolute;right:20px;top:8px;color:#72c9ff;font-size:9px;letter-spacing:1px;text-shadow:0 0 12px rgba(77,163,255,.4);pointer-events:none}.flip-index-line{position:absolute;left:22px;bottom:20px;color:#6688a6;font-size:9px;letter-spacing:1.4px;pointer-events:none}.flip-dots{position:absolute;right:22px;bottom:20px;display:flex;gap:6px;pointer-events:none}.flip-dot{width:5px;height:5px;border-radius:50%;background:#294158;transition:transform .22s,background .22s,box-shadow .22s}.flip-dot.active{background:#5ed6ff;box-shadow:0 0 10px rgba(94,214,255,.8);transform:scale(1.4)}.flip-controls{display:none}.flip-reopen{position:fixed;right:18px;bottom:18px;z-index:79;display:none;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid rgba(77,163,255,.58);border-radius:15px;background:linear-gradient(145deg,rgba(12,34,56,.96),rgba(5,13,24,.96));color:#bcecff;font-size:16px;cursor:pointer;box-shadow:0 0 24px rgba(77,163,255,.22),inset 0 0 16px rgba(77,163,255,.08);transition:transform .28s,box-shadow .28s,border-color .28s}.flip-reopen.show{display:flex}.flip-reopen:hover{transform:translateY(-3px) scale(1.04);border-color:#63d3ff;box-shadow:0 0 34px rgba(77,163,255,.42)}.flip-reopen .flip-icon{display:grid;gap:3px}.flip-reopen .flip-icon i{display:block;width:19px;height:2px;border-radius:2px;background:#5ed6ff;box-shadow:0 0 7px rgba(94,214,255,.8)}.flip-reopen .flip-label{position:absolute;right:58px;white-space:nowrap;padding:5px 8px;border:1px solid rgba(77,163,255,.3);border-radius:7px;background:rgba(5,15,27,.92);color:#8fdfff;font-size:9px;letter-spacing:1px;opacity:0;transform:translateX(6px);transition:opacity .2s,transform .2s;pointer-events:none}.flip-reopen:hover .flip-label{opacity:1;transform:translateX(0)}body.day .flip-card{background:linear-gradient(145deg,#fff,#e8f7f0);border-color:#93cdb5;box-shadow:0 18px 38px rgba(38,102,75,.14),inset 0 1px 0 #fff}body.day .flip-card .flip-no{color:#218b68}body.day .flip-card .flip-sub{color:#668077}body.day .flip-card.is-current{border-color:#49a47f;box-shadow:0 22px 44px rgba(38,102,75,.18),0 0 20px rgba(33,139,104,.12)}body.day .flip-reopen{background:linear-gradient(135deg,#fff,#edf9f3);color:#17694f;border-color:#75b99b;box-shadow:0 8px 24px rgba(38,102,75,.16)}@media(max-width:900px){.flip-nav{right:10px;bottom:70px;transform:scale(.88);transform-origin:bottom right}.flip-nav.collapsed{transform:translate3d(210px,90px,0) scale(.68)}.flip-reopen{right:10px;bottom:12px}}@media(max-width:520px){.flip-nav{right:5px;bottom:58px;width:350px;height:455px;transform:scale(.78);transform-origin:bottom right}.flip-nav.collapsed{transform:translate3d(190px,70px,0) scale(.6)}.flip-reopen{right:7px;bottom:8px}}</style></head><body>
 <header><div class="top"><div class="brand">雷达新闻 <span>GLOBAL RADAR</span></div><input id="search" class="search" placeholder="搜索新闻事件…"><div id="status" class="status">正在加载…</div><div class="control-strip"><div class="control-label">主题</div><div class="theme-picker" aria-label="主题选择"><button id="themeAuto" onclick="setTheme('auto')">自动</button><button id="themeDay" onclick="setTheme('day')">☀ 白天</button><button id="themeNight" onclick="setTheme('night')">☾ 夜间</button></div><i class="control-sep"></i><div class="control-label">导航</div><div class="nav-picker" aria-label="导航方式"><button id="navRadar" onclick="setNavMode('radar')">◉ 五点</button><button id="navFlip" onclick="setNavMode('flip')">▱ 翻页</button></div></div><div style="color:var(--muted);font-size:11px;white-space:nowrap">designed by Lee, powered by ChatGPT</div></div></header>
 <main><div class="hero"><div class="card"><div class="kicker">Daily Intelligence Brief</div><div class="headline">全球重要新闻 · 24H 雷达</div><div class="sub" id="updated">数据加载中…</div></div><div class="card"><div class="stats"><div class="stat"><b id="s1">—</b><span>Tier 1 事件</span></div><div class="stat"><b id="s2">—</b><span>全部国家事件</span></div><div class="stat"><b id="s3">10</b><span>全球 TOP</span></div><div class="stat"><b id="s4">—</b><span>失败源</span></div></div></div></div>
 <section id="top" class="section active"><div class="sectionTitle"><h2>GLOBAL TOP</h2><span>当天全部事件按重要性评分排序 · TOP 10</span></div><div id="topgrid" class="top10"></div></section>
@@ -18,145 +16,164 @@ body.day .nav-picker button{background:#f5faf7;color:#557267}body.day .nav-picke
 <section id="supp" class="section"><div class="sectionTitle"><h2>全球补充</h2></div><div id="supgrid" class="grid"></div></section><div id="searchResults"></div></main>
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="btn close" onclick="closeModal()">关闭</button><div id="modalbody"></div></div></div>
 <div id="radarUI" class="radar-ui" aria-label="全球雷达导航"><button id="radarLauncher" class="radar-launcher" aria-expanded="false" aria-label="打开全球雷达导航"><span class="radar-grid"></span><span class="radar-sweep"></span><span class="radar-core"></span></button><div class="radar-label">RADAR NAV · 全球导航</div><button class="radar-item global" onclick="radarNavigate('top')"><span class="dot-icon">◉</span><span class="item-text">GLOBAL TOP<span class="item-sub">全球重要事件</span></span></button><button class="radar-item t1" onclick="radarNavigate('tier1')"><span class="dot-icon">①</span><span class="item-text">TIER 1<span class="item-sub">核心国家</span></span></button><button class="radar-item t2" onclick="radarNavigate('tier2')"><span class="dot-icon">②</span><span class="item-text">TIER 2<span class="item-sub">重要国家</span></span></button><button class="radar-item t3" onclick="radarNavigate('tier3')"><span class="dot-icon">③</span><span class="item-text">TIER 3<span class="item-sub">重点观察</span></span></button><button class="radar-item t4" onclick="radarNavigate('tier4')"><span class="dot-icon">④</span><span class="item-text">TIER 4<span class="item-sub">全球补充</span></span></button></div>
-<div id="flipNav" class="flip-nav" aria-label="翻页式全球导航"><div class="flip-hint">上下滑动或点击切换类别</div><div id="flipStack" class="flip-stack"></div><div class="flip-controls"><button onclick="flipPrev()" aria-label="上一类">↑</button><button onclick="flipNext()" aria-label="下一类">↓</button></div><div id="flipDots" class="flip-dots"></div></div><button id="flipReopen" class="flip-reopen" onclick="openFlipNav()" aria-label="重新打开翻页导航"><span class="flip-icon"><i></i><i></i><i></i></span><span class="flip-label">翻页导航</span></button><script>
+<div id="flipNav" class="flip-nav" aria-label="翻页式全球导航"><div class="flip-hint">上下滑动预览 · 点击进入</div><div id="flipViewport" class="flip-viewport"><div id="flipTrack" class="flip-track"></div></div><div id="flipIndexLine" class="flip-index-line">PREVIEW · 不会自动跳转</div><div id="flipDots" class="flip-dots"></div></div><button id="flipReopen" class="flip-reopen" onclick="openFlipNav()" aria-label="重新打开翻页导航"><span class="flip-icon"><i></i><i></i><i></i></span><span class="flip-label">翻页导航</span></button><script>
 let DATA=null,all=[];const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function normalizeEvents(){let out=[];Object.values(DATA?.tiers||{}).forEach(t=>Object.values(t||{}).forEach(c=>out.push(...(c?.events||[]))));if(Array.isArray(DATA?.supplement))out.push(...DATA.supplement);if(!out.length&&Array.isArray(DATA?.events))out=DATA.events;return out}function buildAll(){all=normalizeEvents()}
 function displayTitle(e){return e?.title||e?.title_zh||'未命名事件'}
 function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||'';let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';return `<article class="event" ${rank?`data-rank="${rank}"`:''} onclick='openEvent(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${original}<p>${esc((e.source_names||[]).join(' · ')||e.source||'')}</p><div class="importance">${level?`<span class="level ${score>=80?'hot':''}">${esc(level)}</span>`:''}</div></article>`}
 const NAV_ITEMS=[{id:'top',title:'GLOBAL TOP',sub:'全球重要事件'},{id:'tier1',title:'TIER 1',sub:'核心国家'},{id:'tier2',title:'TIER 2',sub:'重要国家'},{id:'tier3',title:'TIER 3',sub:'重点观察'},{id:'tier4',title:'TIER 4',sub:'全球补充'}];
-let flipIndex=0,flipPos=0,flipVelocity=0,flipFrame=0,flipDragging=false,flipWheelTimer=null,flipPointerId=null,flipLastY=0,flipLastTime=0,flipSettleTimer=null;
+let flipIndex=0,flipPos=0,flipVelocity=0,flipFrame=0,flipDragging=false,flipPointerId=null,flipLastY=0,flipLastTime=0,flipSuppressClick=false,flipWasDragged=false;
 
-function show(id){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById('searchResults').innerHTML='';let ni=NAV_ITEMS.findIndex(x=>x.id===id);if(ni>=0){flipIndex=ni;flipPos=ni;renderFlipNav()}window.scrollTo({top:0,behavior:'smooth'})}
-
-function renderFlipNav(){
-  const stack=document.getElementById('flipStack');if(!stack)return;
-  stack.innerHTML=NAV_ITEMS.map((n,i)=>'<button class="flip-card" data-flip-index="'+i+'" onclick="selectFlipCard('+i+')" aria-label="'+esc(n.title)+'"><div class="flip-no">'+String(i+1).padStart(2,'0')+' / '+NAV_ITEMS.length+'</div><div class="flip-title">'+n.title+'</div><div class="flip-sub">'+n.sub+'</div></button>').join('');
-  document.getElementById('flipDots').innerHTML=NAV_ITEMS.map((n,i)=>'<span class="flip-dot '+(i===Math.round(flipPos)?'active':'')+'"></span>').join('');
-  updateFlipTransforms();
+function show(id){
+  document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));
+  document.getElementById(id)?.classList.add('active');
+  document.getElementById('searchResults').innerHTML='';
+  const ni=NAV_ITEMS.findIndex(x=>x.id===id);
+  if(ni>=0){flipIndex=ni;flipPos=ni;renderFlipPosition(ni);}
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function updateFlipTransforms(){
-  const cards=document.querySelectorAll('#flipStack .flip-card');
-  cards.forEach((card,i)=>{
-    const d=i-flipPos,ad=Math.abs(d);
-    const y=d*112;
-    const x=d*22;
-    const z=-Math.min(ad*105,330);
-    const rot=d*34;
-    const scale=ad<1?1-ad*.08:Math.max(.72,1-ad*.16);
-    const opacity=ad>3.2?0:ad>2.2?.12:ad>1.25?.45:1;
-    const blur=ad>1.25?Math.min((ad-1.25)*1.2,3):0;
-    card.classList.toggle('is-current',ad<.5);
-    card.style.zIndex=String(100-Math.round(ad*12));
-    card.style.opacity=String(opacity);
-    card.style.filter=blur?'blur('+blur+'px)':'none';
-    card.style.transform='translate3d('+x+'px,'+y+'px,'+z+'px) rotateY('+rot+'deg) scale('+scale+')';
+function renderFlipNav(){
+  const track=document.getElementById('flipTrack');if(!track)return;
+  const step=148,center=156;
+  track.style.height=(NAV_ITEMS.length*step+220)+'px';
+  track.innerHTML=NAV_ITEMS.map((n,i)=>'<button class="flip-card" data-flip-index="'+i+'" aria-label="'+esc(n.title)+'"><div class="flip-no">'+String(i+1).padStart(2,'0')+' / '+NAV_ITEMS.length+'</div><div class="flip-title">'+n.title+'</div><div class="flip-sub">'+n.sub+'</div></button>').join('');
+  document.getElementById('flipDots').innerHTML=NAV_ITEMS.map((n,i)=>'<span class="flip-dot '+(i===Math.round(flipPos)?'active':'')+'"></span>').join('');
+  document.getElementById('flipIndexLine').textContent='PREVIEW · '+String(Math.round(flipPos)+1).padStart(2,'0')+' / '+NAV_ITEMS.length+' · 点击卡片进入';
+  track.querySelectorAll('.flip-card').forEach(card=>card.addEventListener('click',()=>{const i=Number(card.dataset.flipIndex);if(flipWasDragged){flipWasDragged=false;return}commitFlipSelection(i)}));
+  renderFlipPosition(flipPos);
+}
+
+function renderFlipPosition(p){
+  flipPos=Math.max(0,Math.min(NAV_ITEMS.length-1,p));
+  const track=document.getElementById('flipTrack');if(!track)return;
+  const step=148,center=156;
+  track.style.transform='translate3d(0,'+(center-flipPos*step)+'px,0)';
+  track.querySelectorAll('.flip-card').forEach((card,i)=>{
+    const d=Math.abs(i-flipPos),delta=i-flipPos;
+    card.style.top=(i*step)+'px';
+    card.style.transform='translate3d(0,0,0) scale('+(d<.5?1:d<1.5?.91:d<2.5?.78:.68)+')';
+    card.style.opacity=d>2.35?'0':d>1.55?.34:d>1.05?.68:1;
+    card.style.zIndex=String(100-Math.round(d*10));
+    card.classList.toggle('is-current',d<.5);
+    card.classList.toggle('is-near',d<1.1);
+    card.classList.toggle('is-far',d>1.5);
   });
   document.querySelectorAll('#flipDots .flip-dot').forEach((d,i)=>d.classList.toggle('active',i===Math.round(flipPos)));
+  const line=document.getElementById('flipIndexLine');if(line)line.textContent='PREVIEW · '+String(Math.round(flipPos)+1).padStart(2,'0')+' / '+NAV_ITEMS.length+' · 点击卡片进入';
 }
 
 function clampFlipPos(p){return Math.max(0,Math.min(NAV_ITEMS.length-1,p))}
-function renderFlipPosition(p){flipPos=clampFlipPos(p);updateFlipTransforms()}
-
-function animateFlipTo(target,onDone){
+function animateFlipTo(target){
   target=clampFlipPos(target);cancelAnimationFrame(flipFrame);
-  const from=flipPos,dist=target-from,duration=Math.min(1050,320+Math.abs(dist)*170),t0=performance.now();
-  flipDragging=false;document.getElementById('flipNav').classList.remove('is-dragging');
-  function step(now){
-    const t=Math.min(1,(now-t0)/duration),e=1-Math.pow(1-t,4);
-    renderFlipPosition(from+dist*e);
-    if(t<1)flipFrame=requestAnimationFrame(step);
-    else{flipPos=target;renderFlipPosition(target);if(onDone)onDone()}
-  }
+  const from=flipPos,dist=target-from,duration=Math.min(700,180+Math.abs(dist)*105),t0=performance.now();
+  function step(now){const t=Math.min(1,(now-t0)/duration),e=1-Math.pow(1-t,4);renderFlipPosition(from+dist*e);if(t<1)flipFrame=requestAnimationFrame(step);else{flipPos=target;renderFlipPosition(target)}}
   flipFrame=requestAnimationFrame(step);
 }
 
-/* 滑动只负责预览；只有点击卡片才真正定位新闻。 */
 function commitFlipSelection(index){
-  index=clampFlipPos(index);
-  flipIndex=index;
-  flipPos=index;
-  renderFlipPosition(index);
+  index=clampFlipPos(index);flipIndex=index;flipPos=index;renderFlipPosition(index);
   radarNavigate(NAV_ITEMS[index].id);
   setTimeout(collapseFlipNav,180);
 }
-function selectFlipCard(i){
-  if(flipDragging)return;
-  animateFlipTo(i,()=>commitFlipSelection(i));
-}
 
-/* 松手后的吸附只停在最近的梯队，不执行新闻跳转。 */
 function snapFlip(){
-  const projected=flipPos+flipVelocity*.22;
+  cancelAnimationFrame(flipFrame);
+  const projected=clampFlipPos(flipPos+flipVelocity*.18);
   const target=clampFlipPos(Math.round(projected));
   flipVelocity=0;
-  animateFlipTo(target,()=>{flipPos=target;renderFlipPosition(target)});
+  animateFlipTo(target);
 }
 
 function beginFlipDrag(y){
   cancelAnimationFrame(flipFrame);
-  flipDragging=true;flipLastY=y;flipLastTime=performance.now();flipVelocity=0;
+  flipDragging=true;flipWasDragged=false;flipSuppressClick=false;
+  flipLastY=y;flipLastTime=performance.now();flipVelocity=0;
   document.getElementById('flipNav').classList.add('is-dragging');
 }
+
 function dragFlipTo(y){
   if(!flipDragging)return;
   const now=performance.now(),dy=flipLastY-y,dt=Math.max(8,now-flipLastTime);
-  renderFlipPosition(flipPos+dy/90);
-  flipVelocity=(dy/dt)*.011;
-  flipVelocity=Math.max(-2.8,Math.min(2.8,flipVelocity));
+  if(Math.abs(y-flipLastY)>3)flipWasDragged=true;
+  renderFlipPosition(flipPos+dy/105);
+  flipVelocity=(dy/dt)*.018;
+  flipVelocity=Math.max(-3,Math.min(3,flipVelocity));
   flipLastY=y;flipLastTime=now;
 }
+
 function finishFlipDrag(){
   if(!flipDragging)return;
-  flipDragging=false;document.getElementById('flipNav').classList.remove('is-dragging');
-  const friction=()=>{
-    flipVelocity*=.9;
+  flipDragging=false;
+  document.getElementById('flipNav').classList.remove('is-dragging');
+  const glide=()=>{
+    flipVelocity*=.91;
     if(Math.abs(flipVelocity)<.035){flipVelocity=0;snapFlip();return}
     renderFlipPosition(flipPos+flipVelocity*.018);
-    flipFrame=requestAnimationFrame(friction);
+    flipFrame=requestAnimationFrame(glide);
   };
-  flipFrame=requestAnimationFrame(friction);
+  flipFrame=requestAnimationFrame(glide);
 }
 
-function setFlipIndex(i,navigate=true){
-  i=clampFlipPos(i);
-  if(navigate)selectFlipCard(i);
-  else{flipIndex=i;flipPos=i;renderFlipPosition(i)}
-}
-function flipPrev(){
-  animateFlipTo(clampFlipPos(Math.round(flipPos)-1),()=>{flipPos=clampFlipPos(Math.round(flipPos)-1);renderFlipPosition(flipPos)});
-}
-function flipNext(){
-  animateFlipTo(clampFlipPos(Math.round(flipPos)+1),()=>{flipPos=clampFlipPos(Math.round(flipPos)+1);renderFlipPosition(flipPos)});
+function flipPrev(){animateFlipTo(clampFlipPos(Math.round(flipPos)-1))}
+function flipNext(){animateFlipTo(clampFlipPos(Math.round(flipPos)+1))}
+
+function collapseFlipNav(){
+  const el=document.getElementById('flipNav');
+  el.classList.remove('dismissed');requestAnimationFrame(()=>el.classList.add('collapsed'));
+  document.getElementById('flipReopen').classList.add('show');
+  setTimeout(()=>el.classList.add('dismissed'),620);
 }
 
-function collapseFlipNav(){const el=document.getElementById('flipNav');el.classList.remove('dismissed');requestAnimationFrame(()=>el.classList.add('collapsed'));document.getElementById('flipReopen').classList.add('show');setTimeout(()=>el.classList.add('dismissed'),650)}
-function openFlipNav(){const el=document.getElementById('flipNav');el.classList.remove('dismissed','collapsed');document.getElementById('flipReopen').classList.remove('show');flipDragging=false;flipVelocity=0;renderFlipNav()}
+function openFlipNav(){
+  const el=document.getElementById('flipNav');
+  el.classList.remove('dismissed','collapsed');
+  document.getElementById('flipReopen').classList.remove('show');
+  flipDragging=false;flipVelocity=0;renderFlipNav();
+}
 
-function setNavMode(mode){localStorage.setItem('radar-nav-mode',mode);document.getElementById('navRadar').classList.toggle('active',mode==='radar');document.getElementById('navFlip').classList.toggle('active',mode==='flip');document.getElementById('radarUI').style.display=mode==='radar'?'block':'none';document.getElementById('flipNav').classList.toggle('show',mode==='flip');if(mode==='flip'){openFlipNav();closeRadar()}else{document.getElementById('flipNav').classList.remove('collapsed');document.getElementById('flipReopen').classList.remove('show')}}
-
+function setNavMode(mode){
+  localStorage.setItem('radar-nav-mode',mode);
+  document.getElementById('navRadar').classList.toggle('active',mode==='radar');
+  document.getElementById('navFlip').classList.toggle('active',mode==='flip');
+  document.getElementById('radarUI').style.display=mode==='radar'?'block':'none';
+  document.getElementById('flipNav').classList.toggle('show',mode==='flip');
+  if(mode==='flip'){openFlipNav();closeRadar()}
+  else{document.getElementById('flipNav').classList.remove('collapsed');document.getElementById('flipReopen').classList.remove('show')}
+}
 function initNavMode(){setNavMode(localStorage.getItem('radar-nav-mode')||'radar')}
 
 function globalTop(){return [...all].sort((a,b)=>(Number(b.importance)||0)-(Number(a.importance)||0)||String(b.published_at||'').localeCompare(String(a.published_at||''))).slice(0,10)}
 function render(){if(!DATA)return;buildAll();let st=DATA.stats||{};document.getElementById('updated').textContent=`更新于 ${DATA.generated_beijing||''} · 统计窗口 ${DATA.window_hours||24} 小时 · ${DATA.stale_fallback?'备用快照':'实时采集快照'}`;document.getElementById('s1').textContent=st.tier1_events??0;document.getElementById('s2').textContent=all.length;document.getElementById('s3').textContent=Math.min(10,all.length);document.getElementById('s4').textContent=st.failed_sources??0;document.getElementById('topgrid').innerHTML=globalTop().map((e,i)=>card(e,i+1)).join('')||'<div class="empty topfix">暂无可排序事件</div>';['tier1','tier2','tier3','tier4'].forEach(t=>{let box=document.getElementById(t+'countries'),evbox=document.getElementById(t+'events'),entries=Object.values(DATA.tiers?.[t]||{});box.innerHTML=entries.map(x=>`<div id="tab-${t}-${esc(x.code||x.country)}" class="country" onclick="selectCountry('${t}','${esc(x.code||x.country)}')"><b>${esc(x.country)}</b><strong>${x.count??(x.events||[]).length}</strong><small>${x.target_min?`目标 ${x.target_min}-${x.target_max} · `:''}${x.target_min&&x.count<x.target_min?'本轮不足，宁缺毋滥':'已达到目标'}</small></div>`).join('');evbox.innerHTML=entries.map(x=>`<div id="country-${t}-${esc(x.code||x.country)}" class="sectionTitle"><h2>${esc(x.country)}</h2><span>${x.count??(x.events||[]).length} 条</span></div><div class="grid">${(x.events||[]).map(card).join('')||'<div class="empty topfix">24h 内无足够高价值独立事件</div>'}</div>`).join('')});document.getElementById('supgrid').innerHTML=(DATA.supplement||[]).map(card).join('')||'<div class="empty topfix">暂无补充事件</div>'}
 function selectCountry(t,code){show(t);document.querySelectorAll('.country').forEach(x=>x.classList.remove('selected'));document.getElementById(`tab-${t}-${code}`)?.classList.add('selected');setTimeout(()=>document.getElementById(`country-${t}-${code}`)?.scrollIntoView({behavior:'smooth',block:'start'}),100)}function radarNavigate(id){show(id);closeRadar();setTimeout(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'}),100)}function toggleRadar(){let u=document.getElementById('radarUI'),o=u.classList.toggle('open');document.getElementById('radarLauncher').setAttribute('aria-expanded',String(o))}function closeRadar(){document.getElementById('radarUI').classList.remove('open');document.getElementById('radarLauncher').setAttribute('aria-expanded','false')}document.getElementById('radarLauncher').onclick=toggleRadar;
-const flipEl=document.getElementById('flipNav');
-let flipTouchActive=false,flipSuppressClick=false;
-flipEl.addEventListener('wheel',e=>{if(e.ctrlKey)return;e.preventDefault();e.stopPropagation();if(!flipDragging)beginFlipDrag(flipLastY||0);flipEl.classList.add('is-dragging');if(flipWheelTimer)clearTimeout(flipWheelTimer);renderFlipPosition(flipPos+Math.max(-3,Math.min(3,e.deltaY/180)));flipWheelTimer=setTimeout(()=>finishFlipDrag(),90)},{passive:false,capture:true});
+const flipEl=document.getElementById('flipNav'),flipViewport=document.getElementById('flipViewport');
 
-flipEl.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;e.preventDefault();e.stopPropagation();flipPointerId=e.pointerId;flipEl.setPointerCapture?.(e.pointerId);flipTouchActive=true;flipSuppressClick=false;beginFlipDrag(e.clientY)},{passive:false,capture:true});
-flipEl.addEventListener('pointermove',e=>{if(!flipTouchActive||flipPointerId!==e.pointerId)return;e.preventDefault();e.stopPropagation();if(Math.abs(e.clientY-flipLastY)>8)flipSuppressClick=true;dragFlipTo(e.clientY)},{passive:false,capture:true});
-flipEl.addEventListener('pointerup',e=>{if(flipPointerId!==e.pointerId)return;e.preventDefault();e.stopPropagation();flipEl.releasePointerCapture?.(e.pointerId);flipPointerId=null;flipTouchActive=false;finishFlipDrag()},{passive:false,capture:true});
-flipEl.addEventListener('pointercancel',e=>{if(flipPointerId!==e.pointerId)return;e.preventDefault();e.stopPropagation();flipPointerId=null;flipTouchActive=false;finishFlipDrag()},{passive:false,capture:true});
+function stopEvent(e){e.preventDefault();e.stopPropagation()}
+flipViewport.addEventListener('pointerdown',e=>{
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  stopEvent(e);flipPointerId=e.pointerId;flipViewport.setPointerCapture?.(e.pointerId);beginFlipDrag(e.clientY);
+},{passive:false,capture:true});
+flipViewport.addEventListener('pointermove',e=>{
+  if(flipPointerId!==e.pointerId)return;
+  stopEvent(e);dragFlipTo(e.clientY);
+},{passive:false,capture:true});
+flipViewport.addEventListener('pointerup',e=>{
+  if(flipPointerId!==e.pointerId)return;
+  stopEvent(e);flipViewport.releasePointerCapture?.(e.pointerId);flipPointerId=null;finishFlipDrag();
+},{passive:false,capture:true});
+flipViewport.addEventListener('pointercancel',e=>{
+  if(flipPointerId!==e.pointerId)return;
+  stopEvent(e);flipPointerId=null;finishFlipDrag();
+},{passive:false,capture:true});
 
-flipEl.addEventListener('touchstart',e=>{e.preventDefault();e.stopPropagation();const t=e.touches[0];flipTouchActive=true;beginFlipDrag(t.clientY)},{passive:false,capture:true});
-flipEl.addEventListener('touchmove',e=>{if(!flipTouchActive)return;e.preventDefault();e.stopPropagation();const t=e.touches[0];if(Math.abs(t.clientY-flipLastY)>8)flipSuppressClick=true;dragFlipTo(t.clientY)},{passive:false,capture:true});
-flipEl.addEventListener('touchend',e=>{e.preventDefault();e.stopPropagation();flipTouchActive=false;finishFlipDrag()},{passive:false,capture:true});
-flipEl.addEventListener('touchcancel',e=>{e.preventDefault();e.stopPropagation();flipTouchActive=false;finishFlipDrag()},{passive:false,capture:true});
+flipViewport.addEventListener('touchstart',e=>{stopEvent(e);beginFlipDrag(e.touches[0].clientY)},{passive:false,capture:true});
+flipViewport.addEventListener('touchmove',e=>{stopEvent(e);if(e.touches[0])dragFlipTo(e.touches[0].clientY)},{passive:false,capture:true});
+flipViewport.addEventListener('touchend',e=>{stopEvent(e);finishFlipDrag()},{passive:false,capture:true});
+flipViewport.addEventListener('touchcancel',e=>{stopEvent(e);finishFlipDrag()},{passive:false,capture:true});
+flipViewport.addEventListener('wheel',e=>{stopEvent(e);renderFlipPosition(flipPos+Math.max(-2.8,Math.min(2.8,e.deltaY/160)));clearTimeout(window.__flipWheel);window.__flipWheel=setTimeout(snapFlip,80)},{passive:false,capture:true});
+document.addEventListener('touchmove',e=>{if(flipDragging)e.preventDefault()},{passive:false,capture:true});
 
-flipEl.addEventListener('click',e=>{if(flipSuppressClick){e.preventDefault();e.stopPropagation();flipSuppressClick=false}},{capture:true});
-document.addEventListener('touchmove',e=>{if(flipTouchActive){e.preventDefault()}},{passive:false,capture:true});
-initNavMode();document.addEventListener('click',e=>{let u=document.getElementById('radarUI');if(u.classList.contains('open')&&!u.contains(e.target))closeRadar()});document.addEventListener('keydown',e=>e.key==='Escape'&&closeRadar());
+initNavMode();
 function openEvent(e){let sources=(e.sources||[]).map(s=>`<div class="source"><b>${esc(s.source||'来源')}</b><br><a target="_blank" rel="noopener" href="${esc(s.link||s.url||'#')}">打开报道</a></div>`).join('');let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';document.getElementById('modalbody').innerHTML=`<div class="kicker">${esc(e.event_country||'全球')} · ${esc(e.category||'')}</div><h2>${esc(title)}</h2>${original}<p><b>重要性：</b>${Number(e.importance)||0}　<b>等级：</b>${esc(e.importance_level||'')}</p><p><b>为什么重要：</b>${esc(e.why_important||'')}</p><p><b>影响：</b>${esc(e.impact||'')}</p><p><b>未来72小时：</b>${esc(e.next_72h||'')}</p><h3>相关来源</h3>${sources||'<p class="sub">暂无多源记录</p>'}`;document.getElementById('modal').style.display='block'}function closeModal(){document.getElementById('modal').style.display='none'}
 function doSearch(q){q=q.trim().toLowerCase();let box=document.getElementById('searchResults');if(!q){box.innerHTML='';return}document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));let hits=all.filter(e=>(`${e.title_zh||''} ${e.title||''} ${e.description||''} ${e.event_country||''} ${e.category||''}`).toLowerCase().includes(q)).slice(0,30);box.innerHTML=`<div class="sectionTitle"><h2>搜索结果</h2><span>${hits.length} 条</span></div><div class="grid">${hits.map(card).join('')||'<div class="empty topfix">没有匹配事件</div>'}</div>`}document.getElementById('search').addEventListener('input',e=>doSearch(e.target.value));
 function applyTheme(theme){let day=theme==='day'||(theme==='auto'&&new Date().getHours()>=7&&new Date().getHours()<19);document.body.classList.toggle('day',day);['Auto','Day','Night'].forEach(x=>document.getElementById('theme'+x)?.classList.toggle('active',theme===x.toLowerCase()));document.querySelector('meta[name="theme-color"]').setAttribute('content',day?'#edf8f2':'#070b12')}
