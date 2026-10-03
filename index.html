@@ -62,18 +62,35 @@ function animateFlipTo(target,onDone){
   target=clampFlipPos(target);cancelAnimationFrame(flipFrame);
   const from=flipPos,dist=target-from,duration=Math.min(1050,320+Math.abs(dist)*170),t0=performance.now();
   flipDragging=false;document.getElementById('flipNav').classList.remove('is-dragging');
-  function step(now){const t=Math.min(1,(now-t0)/duration),e=1-Math.pow(1-t,4);renderFlipPosition(from+dist*e);if(t<1)flipFrame=requestAnimationFrame(step);else{flipIndex=target;flipPos=target;if(onDone)onDone()}}
+  function step(now){
+    const t=Math.min(1,(now-t0)/duration),e=1-Math.pow(1-t,4);
+    renderFlipPosition(from+dist*e);
+    if(t<1)flipFrame=requestAnimationFrame(step);
+    else{flipPos=target;renderFlipPosition(target);if(onDone)onDone()}
+  }
   flipFrame=requestAnimationFrame(step);
 }
 
-function commitFlipSelection(index){flipIndex=index;flipPos=index;radarNavigate(NAV_ITEMS[index].id);setTimeout(collapseFlipNav,180)}
-function selectFlipCard(i){if(flipDragging)return;animateFlipTo(i,()=>commitFlipSelection(i))}
+/* 滑动只负责预览；只有点击卡片才真正定位新闻。 */
+function commitFlipSelection(index){
+  index=clampFlipPos(index);
+  flipIndex=index;
+  flipPos=index;
+  renderFlipPosition(index);
+  radarNavigate(NAV_ITEMS[index].id);
+  setTimeout(collapseFlipNav,180);
+}
+function selectFlipCard(i){
+  if(flipDragging)return;
+  animateFlipTo(i,()=>commitFlipSelection(i));
+}
 
+/* 松手后的吸附只停在最近的梯队，不执行新闻跳转。 */
 function snapFlip(){
   const projected=flipPos+flipVelocity*.22;
   const target=clampFlipPos(Math.round(projected));
   flipVelocity=0;
-  animateFlipTo(target,()=>commitFlipSelection(target));
+  animateFlipTo(target,()=>{flipPos=target;renderFlipPosition(target)});
 }
 
 function beginFlipDrag(y){
@@ -84,7 +101,6 @@ function beginFlipDrag(y){
 function dragFlipTo(y){
   if(!flipDragging)return;
   const now=performance.now(),dy=flipLastY-y,dt=Math.max(8,now-flipLastTime);
-  // 90px of physical movement is approximately one navigation position.
   renderFlipPosition(flipPos+dy/90);
   flipVelocity=(dy/dt)*.011;
   flipVelocity=Math.max(-2.8,Math.min(2.8,flipVelocity));
@@ -93,13 +109,26 @@ function dragFlipTo(y){
 function finishFlipDrag(){
   if(!flipDragging)return;
   flipDragging=false;document.getElementById('flipNav').classList.remove('is-dragging');
-  const friction=()=>{flipVelocity*=.9;if(Math.abs(flipVelocity)<.035){flipVelocity=0;snapFlip();return}renderFlipPosition(flipPos+flipVelocity*.018);flipFrame=requestAnimationFrame(friction)};
+  const friction=()=>{
+    flipVelocity*=.9;
+    if(Math.abs(flipVelocity)<.035){flipVelocity=0;snapFlip();return}
+    renderFlipPosition(flipPos+flipVelocity*.018);
+    flipFrame=requestAnimationFrame(friction);
+  };
   flipFrame=requestAnimationFrame(friction);
 }
 
-function setFlipIndex(i,navigate=true){i=clampFlipPos(i);if(navigate)selectFlipCard(i);else{flipIndex=i;flipPos=i;renderFlipPosition(i)}}
-function flipPrev(){animateFlipTo(clampFlipPos(Math.round(flipPos)-1),()=>commitFlipSelection(clampFlipPos(Math.round(flipPos))))}
-function flipNext(){animateFlipTo(clampFlipPos(Math.round(flipPos)+1),()=>commitFlipSelection(clampFlipPos(Math.round(flipPos))))}
+function setFlipIndex(i,navigate=true){
+  i=clampFlipPos(i);
+  if(navigate)selectFlipCard(i);
+  else{flipIndex=i;flipPos=i;renderFlipPosition(i)}
+}
+function flipPrev(){
+  animateFlipTo(clampFlipPos(Math.round(flipPos)-1),()=>{flipPos=clampFlipPos(Math.round(flipPos)-1);renderFlipPosition(flipPos)});
+}
+function flipNext(){
+  animateFlipTo(clampFlipPos(Math.round(flipPos)+1),()=>{flipPos=clampFlipPos(Math.round(flipPos)+1);renderFlipPosition(flipPos)});
+}
 
 function collapseFlipNav(){const el=document.getElementById('flipNav');el.classList.remove('dismissed');requestAnimationFrame(()=>el.classList.add('collapsed'));document.getElementById('flipReopen').classList.add('show');setTimeout(()=>el.classList.add('dismissed'),650)}
 function openFlipNav(){const el=document.getElementById('flipNav');el.classList.remove('dismissed','collapsed');document.getElementById('flipReopen').classList.remove('show');flipDragging=false;flipVelocity=0;renderFlipNav()}
