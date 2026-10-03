@@ -45,7 +45,7 @@ FEEDS=[
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
  ('彭博社','GLOBAL','https://feeds.bloomberg.com/markets/news.rss','en'),
  ('华尔街日报','GLOBAL','https://feeds.a.dj.com/rss/RSSWorldNews.xml','en'),
- ('联合早报','GLOBAL','https://rsshub.app/zaobao/realtime/world','cn'),
+ ('联合早报','GLOBAL','https://plink.anyfeeder.com/zaobao/realtime/world','cn'),
  # English secondary
  ('Reuters World','GLOBAL','https://feeds.reuters.com/reuters/worldNews','en'),
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
