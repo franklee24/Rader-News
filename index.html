@@ -27,7 +27,7 @@ let flipIndex=0,flipPos=0,flipVelocity=0,flipFrame=0,flipDragging=false,flipPoin
 function show(id){
   document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));
   document.getElementById(id)?.classList.add('active');
-  document.getElementById('searchResults').innerHTML='';
+
   const ni=NAV_ITEMS.findIndex(x=>x.id===id);
   if(ni>=0){flipIndex=ni;flipPos=ni;renderFlipPosition(ni);}
   window.scrollTo({top:0,behavior:'smooth'});
