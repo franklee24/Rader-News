@@ -37,7 +37,7 @@ jobs:
           old2='if p and p<cutoff:continue'; new2='if p and p<cutoff:continue'
           if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
           marker=" # English secondary"
-          additions=" ('Guardian UK','GB','https://www.theguardian.com/uk/rss','en'),\n ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),\n ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),\n ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),\n ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),\n ('AP US','US','https://apnews.com/hub/us-news?format=rss','en'),\n ('CNN US','US','https://rss.cnn.com/rss/edition_us.rss','en'),\n ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),\n ('TASS Politics','RU','https://tass.com/politics/?cmd=rss&ver=1.0','en'),\n ('TASS Economy','RU','https://tass.com/economy/?cmd=rss&ver=1.0','en'),\n"
+          additions=" ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),\n ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),\n ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),\n ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),\n ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),\n"
           if "('NPR Politics','US'" not in text:
               if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
               text=text.replace(marker, additions+marker)
