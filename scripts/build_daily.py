@@ -43,6 +43,9 @@ FEEDS=[
  ('卫报','GLOBAL','https://www.theguardian.com/world/rss','en'),
  # English secondary
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
+ ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
+ ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
+ ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
  ('NHK','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
  ('NPR','US','https://feeds.npr.org/1001/rss.xml','en'),
  ('BBC UK','GB','https://feeds.bbci.co.uk/news/uk/rss.xml','en'),
