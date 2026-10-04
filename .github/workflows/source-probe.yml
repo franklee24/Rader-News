@@ -1,0 +1,41 @@
+name: Temporary premium source probe
+
+on:
+  push:
+    paths:
+      - '.github/workflows/source-probe.yml'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe NHK FT Economist
+        run: |
+          python - <<'PY'
+          import urllib.request, xml.etree.ElementTree as ET
+          feeds = [
+              ("NHK World","https://www3.nhk.or.jp/rss/news/cat0.xml"),
+              ("Financial Times","https://www.ft.com/rss/home"),
+              ("The Economist","https://www.economist.com/the-world-this-week/rss.xml"),
+          ]
+          ok=True
+          for name,url in feeds:
+              try:
+                  req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+                  body=urllib.request.urlopen(req,timeout=20).read()
+                  root=ET.fromstring(body)
+                  items=[x for x in root.iter() if x.tag.split("}")[-1].lower() in ("item","entry")]
+                  title=""
+                  for x in items:
+                      for c in x:
+                          if c.tag.split("}")[-1].lower()=="title":
+                              title=(c.text or "").strip(); break
+                      if title: break
+                  print(f"PASS | {name} | status=200 | items={len(items)} | title={title[:140]}")
+              except Exception as e:
+                  ok=False
+                  print(f"FAIL | {name} | {type(e).__name__}: {e}")
+          if not ok:
+              raise SystemExit(1)
+          print("ALL THREE PREMIUM SOURCES PASSED")
+          PY
