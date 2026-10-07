@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# 雷达新闻 V18 - 中文优先、多源直连 RSS
+# 雷达新闻 V21 - 多源事件聚合；不预设中文媒体优先
 import datetime as dt
 import email.utils
 import hashlib
@@ -19,39 +19,29 @@ DAILY=os.path.join(OUT,'daily.json')
 UA='LeidaNews/18.0 (+https://github.com/franklee24/Rader-News)'
 TIMEOUT=18; WORKERS=8; MIN_TOTAL_EVENTS=40; MIN_TIER1_EVENTS=20
 
-# 中文源优先：中央媒体/主流财经媒体；英文源只做补充和交叉验证。
+# 多源直连 RSS：中文媒体与国际媒体一视同仁，由事件覆盖度、媒体权威度和时效共同决定主来源。
 FEEDS=[
  ('中新网-即时','GLOBAL','https://www.chinanews.com.cn/rss/scroll-news.xml','cn'),
- ('中新网-要闻','GLOBAL','https://www.chinanews.com.cn/rss/importnews.xml','cn'),
- ('中新网-国际','GLOBAL','https://www.chinanews.com.cn/rss/world.xml','cn'),
- ('中新网-财经','GLOBAL','https://www.chinanews.com.cn/rss/finance.xml','cn'),
- ('中新网-军事','GLOBAL','https://www.chinanews.com.cn/rss/mil.xml','cn'),
  ('人民网-时政','GLOBAL','http://www.people.com.cn/rss/politics.xml','cn'),
- ('人民网-国际','GLOBAL','http://www.people.com.cn/rss/world.xml','cn'),
- ('人民网-财经','GLOBAL','http://www.people.com.cn/rss/finance.xml','cn'),
- ('人民网-军事','GLOBAL','http://www.people.com.cn/rss/military.xml','cn'),
  ('新华-时政','GLOBAL','http://www.xinhuanet.com/politics/news_politics.xml','cn'),
  ('新华-国际','GLOBAL','http://www.xinhuanet.com/world/news_world.xml','cn'),
- ('新华-军事','GLOBAL','http://www.xinhuanet.com/mil/news_mil.xml','cn'),
- ('新华-金融','GLOBAL','http://www.xinhuanet.com/finance/news_finance.xml','cn'),
- ('新华-科技','GLOBAL','http://www.xinhuanet.com/tech/news_tech.xml','cn'),
  ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
  ('彭博社','GLOBAL','https://feeds.bloomberg.com/markets/news.rss','en'),
  ('华尔街日报','GLOBAL','https://feeds.a.dj.com/rss/RSSWorldNews.xml','en'),
  ('联合早报','GLOBAL','https://plink.anyfeeder.com/zaobao/realtime/world','cn'),
  ('卫报','GLOBAL','https://www.theguardian.com/world/rss','en'),
- # English secondary
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
  ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
  ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
  ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
- ('NHK','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
  ('NPR','US','https://feeds.npr.org/1001/rss.xml','en'),
  ('BBC UK','GB','https://feeds.bbci.co.uk/news/uk/rss.xml','en'),
  ('France24','FR','https://www.france24.com/en/rss','en'),
  ('DW','DE','https://rss.dw.com/xml/rss-en-all','en'),
  ('TASS','RU','https://tass.com/rss/v2.xml','en'),
+ ('华盛顿邮报','GLOBAL','https://feeds.washingtonpost.com/rss/world','en'),
+ ('半岛电视台','GLOBAL','https://www.aljazeera.com/xml/rss/all.xml','en'),
 ]
 
 ALIASES={
@@ -133,6 +123,21 @@ def fetch_feed(feed):
  try:return feed,parse_feed(body,source,country,lang),None
  except Exception as e:return feed,[],'XML '+str(e)[:120]
 
+SOURCE_AUTHORITY={
+ '纽约时报':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'BBC World':94,'卫报':92,'华盛顿邮报':94,
+ '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
+ 'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
+}
+def source_group(name):
+ if name.startswith('中新网'): return '中新网'
+ if name.startswith('人民网'): return '人民网'
+ if name.startswith('新华'): return '新华社'
+ if name in {'NHK','NHK World'}: return 'NHK'
+ if name in {'BBC World','BBC UK','BBC中文'}: return 'BBC'
+ return name
+def source_rank(s):
+ return SOURCE_AUTHORITY.get(s.get('source',''),55)
+
 def norm(s):
  s=re.sub(r'https?://\S+',' ',(s or '').lower()); s=re.sub(r'\[[^\]]+\]|\([^)]*\)',' ',s); s=re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',s); return ' '.join(s.split())
 def similarity(a,b):
@@ -159,13 +164,28 @@ def cluster(items):
   else:events.append({'id':hashlib.sha1(norm(a['title']).encode()).hexdigest()[:16],'title':a['title'],'published_at':a.get('published_at'),'code':a.get('code','GLOBAL'),'event_country':a.get('event_country','国际/全球'),'sources':[a]})
  out=[]
  for e in events:
-  uniq={s.get('source'):s for s in e['sources']}; srcs=list(uniq.values())[:8]
-  zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]
-  e.update(source=best.get('source',''),url=best.get('link',''),source_url=best.get('source_url',''),sources=srcs,source_count=len(srcs),source_names=[s.get('source','') for s in srcs],category=category(e['title']))
+  # 同一媒体的不同栏目不重复计数，避免中新网等单一机构因多个 RSS 被人为放大。
+  grouped={}
+  for s in e['sources']:
+   g=source_group(s.get('source',''))
+   old=grouped.get(g)
+   if old is None or source_rank(s)>source_rank(old) or (source_rank(s)==source_rank(old) and (s.get('published_at') or '')>(old.get('published_at') or '')):
+    grouped[g]=s
+  srcs=sorted(grouped.values(),key=lambda s:(source_rank(s),s.get('published_at') or ''),reverse=True)[:8]
+  best=srcs[0] if srcs else e['sources'][0]
+  summary=clean(best.get('description',''))
+  e.update(
+   source=best.get('source',''),url=best.get('link',''),source_url=best.get('source_url',''),
+   sources=srcs,source_count=len(srcs),source_names=[s.get('source','') for s in srcs],
+   source_authority=source_rank(best),summary=summary[:500],description=summary[:500],
+   category=category(e['title'])
+  )
   impact=sum(1 for k in HIGH if k.lower() in e['title'].lower())
+  authority_bonus=min(12,round(e['source_authority']/12))
+  cross_bonus=min(20,5*max(0,e['source_count']-1))
   e['domestic_score']=min(100,30+impact*8) if e['code']!='GLOBAL' else 12
-  e['importance']=min(100,48+min(20,6*max(0,e['source_count']-1))+min(24,impact*4)+round(e['domestic_score']*.10))
-  e['why_important']='涉及'+e['category']+'，在过去24小时具有跟踪价值。'
+  e['importance']=min(100,42+cross_bonus+authority_bonus+min(24,impact*4)+round(e['domestic_score']*.08))
+  e['why_important']='涉及'+e['category']+'，结合多源报道与时效性评估后值得关注。'
   e['impact']='关注政策、市场、产业、安全及国际关系的后续影响。'
   e['next_72h']='关注官方声明、政策落地、市场反应及相关方后续行动。'
   out.append(e)
@@ -174,7 +194,7 @@ def cluster(items):
 def main():
  now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)
  raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; failures=[]; ok=0
- print('雷达新闻 V18：中文优先多源 RSS')
+ print('雷达新闻 V21：多源事件聚合，不预设中文媒体优先')
  with ThreadPoolExecutor(max_workers=WORKERS) as ex:
   fs=[ex.submit(fetch_feed,f) for f in FEEDS]
   for fut in as_completed(fs):
@@ -194,17 +214,12 @@ def main():
    print('[OK]',source,len(fresh))
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
- all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V18.0','source_mode':'chinese-first-direct-rss','source_total':len(FEEDS),'source_ok':ok,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
+ all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V21.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS),'source_ok':ok,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
    pool=raw.get(c['code'],[])
-   # 中文优先：当一个国家有足够中文报道时，英文事件最多占该国展示量约20%。
-   cn_items=[x for x in pool if x.get('language')=='cn']
-   en_items=[x for x in pool if x.get('language')!='cn']
-   if len(cn_items)>=5 and en_items:
-    en_cap=max(2,int(c['max']*0.20))
-    pool=cn_items+sorted(en_items,key=lambda x:x.get('published_at') or '',reverse=True)[:en_cap]
+   # 不再按语言限制事件；国家页只负责地理组织，主来源由事件聚合模型选择。
    ev=cluster(pool)[:c['max']]
    report['tiers'][tier][c['name']]={'country':c['name'],'country_en':c['en'],'code':c['code'],'target_min':c['min'],'target_max':c['max'],'count':len(ev),'events':ev}
    all_events.extend(ev)
