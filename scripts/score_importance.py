@@ -30,16 +30,17 @@ def score(e):
     ah=hits(t,ACTION)
     if ah:horizon=min(10,horizon+max(ACTION[k] for k in ah)//2)
     source_count=e.get('source_count',len(e.get('sources',[]))); verify=0 if source_count<=1 else 3 if source_count==2 else 5
-    total=max(0,min(100,scope+sev+strategic+national+horizon+verify+freshness(e)))
+    authority=e.get('source_authority',55); authority_bonus=min(8,max(0,round((authority-55)/8)))
+    total=max(0,min(100,scope+sev+strategic+national+horizon+verify+authority_bonus+freshness(e)))
     level='全球重大' if total>=90 else '国家重大' if total>=80 else '重要事件' if total>=70 else '值得关注' if total>=60 else '一般动态'
-    e['importance']=int(total); e['importance_level']=level; e['importance_model']='V20：事件级动态评分；国家权重仅作背景，不决定分数'
+    e['importance']=int(total); e['importance_level']=level; e['importance_model']='V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置'
     return e
 def main():
     d=json.loads(DAILY.read_text(encoding='utf-8'))
     for tier in d.get('tiers',{}).values():
         for c in tier.values():
             c['events']=[score(e) for e in c.get('events',[])]; c['events'].sort(key=lambda e:(e.get('importance',0),e.get('published_at') or ''),reverse=True); c['count']=len(c['events'])
-    d['importance_model']={'version':'V20','principle':'事件本身优先；国家权重只作背景修正','levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}; d['version']='V20.0'
+    d['importance_model']={'version':'V21','principle':'事件本身优先；媒体权威度参与验证，国家权重只作背景修正','levels':{'90-100':'全球重大','80-89':'国家重大','70-79':'重要事件','60-69':'值得关注','0-59':'一般动态'}}; d['version']='V21.0'
     DAILY.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
 if __name__=='__main__':main()
 # V20 hotfix: tolerate undated events during scoring; final workflow still removes them before publication.
