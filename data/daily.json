@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T05:44:08.546970+00:00",
-  "generated_beijing": "2026-10-07 13:44",
+  "generated_at": "2026-10-07T06:24:30.879128+00:00",
+  "generated_beijing": "2026-10-07 14:24",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -98,6 +98,47 @@
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "白宫为特朗普让伊朗“占领”洛杉矶和圣地亚哥的言论辩护"
+          },
+          {
+            "id": "605ae1bcaaa960f0",
+            "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+            "published_at": "2026-10-07T06:02:57+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+                "link": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+                "published_at": "2026-10-07T06:02:57+00:00",
+                "source": "NPR",
+                "source_url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+                "description": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+                "feed_country": "US",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+            "source_url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+            "source_count": 1,
+            "source_names": [
+              "NPR"
+            ],
+            "source_authority": 90,
+            "summary": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+            "description": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 75,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "以色列人哀​​悼 10 月 7 日的周年纪念日，巴勒斯坦人正在努力应对它引发的战争"
           },
           {
             "id": "07aeb1c87d6aae8a",
@@ -428,6 +469,47 @@
             "title_zh": "法国警方发射催泪瓦斯和高压水枪，学校抗议席卷全国"
           },
           {
+            "id": "886fcda54c7fd346",
+            "title": "Trump says he will speak with Putin about pneumonic plague",
+            "published_at": "2026-10-07T05:33:39+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Trump says he will speak with Putin about pneumonic plague",
+                "link": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
+                "published_at": "2026-10-07T05:33:39+00:00",
+                "source": "金融时报",
+                "source_url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
+                "description": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
+            "description": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "特朗普称他将与普京讨论肺鼠疫问题"
+          },
+          {
             "id": "8f1b4653548bba77",
             "title": "David Ellison denies he has ‘politicized’ Skydance despite close Trump links",
             "published_at": "2026-10-07T00:45:45+00:00",
@@ -467,47 +549,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "大卫·埃里森否认他将 Skydance“政治化”，尽管他与特朗普关系密切"
-          },
-          {
-            "id": "886fcda54c7fd346",
-            "title": "Trump says he will speak with Putin about pneumonic plague",
-            "published_at": "2026-10-06T23:18:47+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Trump says he will speak with Putin about pneumonic plague",
-                "link": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
-                "published_at": "2026-10-06T23:18:47+00:00",
-                "source": "金融时报",
-                "source_url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
-                "description": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
-            "description": "Washington increases pressure on Moscow to share more about the incident in which one person has died",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普称他将与普京讨论肺鼠疫问题"
           },
           {
             "id": "23fa8b0e67b47135",
@@ -674,47 +715,6 @@
             "title_zh": "越南警方逮捕12名涉嫌夜间在城市街道徘徊、抢走猫肉的嫌疑人"
           },
           {
-            "id": "e0ecd9eb6cded079",
-            "title": "Ex-spy chief is arrested in Germany on suspicion of trading state secrets and treason",
-            "published_at": "2026-10-06T11:31:48+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Ex-spy chief is arrested in Germany on suspicion of trading state secrets and treason",
-                "link": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets",
-                "published_at": "2026-10-06T11:31:48+00:00",
-                "source": "NPR",
-                "source_url": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets",
-                "description": "A former head of Germany 's foreign intelligence service was arrested on suspicion that he had passed state secrets to a foreign intelligence service, the federal prosecutor's office said.",
-                "feed_country": "US",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "NPR",
-            "url": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets",
-            "source_url": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets",
-            "source_count": 1,
-            "source_names": [
-              "NPR"
-            ],
-            "source_authority": 90,
-            "summary": "A former head of Germany 's foreign intelligence service was arrested on suspicion that he had passed state secrets to a foreign intelligence service, the federal prosecutor's office said.",
-            "description": "A former head of Germany 's foreign intelligence service was arrested on suspicion that he had passed state secrets to a foreign intelligence service, the federal prosecutor's office said.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "前间谍头子因涉嫌交易国家机密和叛国罪在德国被捕"
-          },
-          {
             "id": "81e2be9c901c94bd",
             "title": "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
             "published_at": "2026-10-06T22:45:00+00:00",
@@ -839,53 +839,13 @@
             "description": "Commissioner said Shenzhen Qingcheng, the app maker behind the HeyCyan app in the smartglasses, failed to respond to her inquiries Get our breaking news email , free app or daily news podcast The Australian privacy regulator has opened an investigation into the China-based software company behind the HeyCyan app in Kmart’s $89 smartglasses, following public outrage over the covert use of the devices. In August, Guardian Australia reported Kmart had sold out of the Anko-branded discount version o",
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 68,
+            "importance": 67,
             "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "隐私监管机构对凯马特“变态眼镜”应用背后的中国公司展开调查"
-          },
-          {
-            "id": "8c8cb2bbb766b5e1",
-            "title": "也门政府军与胡塞武装就塔伊兹省战略要地展开争夺",
-            "published_at": "2026-10-07T03:11:40+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "也门政府军与胡塞武装就塔伊兹省战略要地展开争夺",
-                "link": "https://www.chinanews.com.cn/gj/2026/10-07/10708623.shtml",
-                "published_at": "2026-10-07T03:11:40+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/10-07/10708623.shtml",
-                "description": "中新社北京10月7日电 综合消息：当地时间6日，围绕也门第三大城市塔伊兹的激烈战斗仍在持续。据也门政府控制的萨巴通讯社报道，政府军6日夺取了塔伊兹省瓦齐亚区曼苏拉山附近的战略要地。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/gj/2026/10-07/10708623.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/10-07/10708623.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新社北京10月7日电 综合消息：当地时间6日，围绕也门第三大城市塔伊兹的激烈战斗仍在持续。据也门政府控制的萨巴通讯社报道，政府军6日夺取了塔伊兹省瓦齐亚区曼苏拉山附近的战略要地。",
-            "description": "中新社北京10月7日电 综合消息：当地时间6日，围绕也门第三大城市塔伊兹的激烈战斗仍在持续。据也门政府控制的萨巴通讯社报道，政府军6日夺取了塔伊兹省瓦齐亚区曼苏拉山附近的战略要地。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 62,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
             "id": "0d099cae8a3f5cd4",
@@ -967,7 +927,48 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "欧盟谈判代表前往中国希望遏制混合动力汽车的廉价进口"
+            "title_zh": "欧盟谈判代表前往中国希望遏制混合动力电动汽车的廉价进口"
+          },
+          {
+            "id": "71990220f63f6ee4",
+            "title": "MS Capital CEO on China Markets, Investment Strategy",
+            "published_at": "2026-10-07T05:41:53+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "MS Capital CEO on China Markets, Investment Strategy",
+                "link": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+                "published_at": "2026-10-07T05:41:53+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+                "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+            "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+            "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+            "category": "金融",
+            "domestic_score": 38,
+            "importance": 51,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "MS Capital首席执行官谈中国市场、投资策略"
           },
           {
             "id": "aaa01d6e6d1de602",
@@ -1009,6 +1010,46 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "推动中国出口繁荣的隐性政策"
+          },
+          {
+            "id": "67c8911a445a65ed",
+            "title": "《欢迎来龙餐馆》将代表中国内地角逐第99届奥斯卡最佳国际影片",
+            "published_at": "2026-10-07T05:56:22+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "《欢迎来龙餐馆》将代表中国内地角逐第99届奥斯卡最佳国际影片",
+                "link": "https://www.chinanews.com.cn/cul/2026/10-07/10708679.shtml",
+                "published_at": "2026-10-07T05:56:22+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/cul/2026/10-07/10708679.shtml",
+                "description": "中新社北京10月7日电 (记者 高凯)电影《欢迎来龙餐馆》片方10月7日通过社交媒体平台宣布，该片将代表中国内地角逐第99届奥斯卡最佳国际影片。片方称，“以一菜一饭，诉说和平的期盼；借中餐烟火，传递大爱与仁善”。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/cul/2026/10-07/10708679.shtml",
+            "source_url": "https://www.chinanews.com.cn/cul/2026/10-07/10708679.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "中新社北京10月7日电 (记者 高凯)电影《欢迎来龙餐馆》片方10月7日通过社交媒体平台宣布，该片将代表中国内地角逐第99届奥斯卡最佳国际影片。片方称，“以一菜一饭，诉说和平的期盼；借中餐烟火，传递大爱与仁善”。",
+            "description": "中新社北京10月7日电 (记者 高凯)电影《欢迎来龙餐馆》片方10月7日通过社交媒体平台宣布，该片将代表中国内地角逐第99届奥斯卡最佳国际影片。片方称，“以一菜一饭，诉说和平的期盼；借中餐烟火，传递大爱与仁善”。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 50,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
             "id": "9fd0cea0c978c46e",
@@ -1209,46 +1250,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "32c195445b26bd29",
-            "title": "新阶层·新经济丨“海燕博客”理事长段利丽：以社群之力激活青年新经济",
-            "published_at": "2026-10-07T03:10:00+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "新阶层·新经济丨“海燕博客”理事长段利丽：以社群之力激活青年新经济",
-                "link": "https://www.chinanews.com.cn/cj/2026/10-07/10708621.shtml",
-                "published_at": "2026-10-07T03:10:00+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/10-07/10708621.shtml",
-                "description": "中新网上海10月7日电(范宇斌)在上海黄浦，有这样一个深耕新阶层人士服务的公益平台——海燕博客。从线上博客社群起步，如今已孵化20个子社团、年均举办800余场活动、深度链接数十万青年。海燕博客理事长段利丽，也是上海市黄浦区新的社会阶层人士联谊会副会长兼秘书长。她的人生轨迹，恰是中国新阶层人士从“职场个体”到“社会价值创造者”的生动缩影。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/cj/2026/10-07/10708621.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/10-07/10708621.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新网上海10月7日电(范宇斌)在上海黄浦，有这样一个深耕新阶层人士服务的公益平台——海燕博客。从线上博客社群起步，如今已孵化20个子社团、年均举办800余场活动、深度链接数十万青年。海燕博客理事长段利丽，也是上海市黄浦区新的社会阶层人士联谊会副会长兼秘书长。她的人生轨迹，恰是中国新阶层人士从“职场个体”到“社会价值创造者”的生动缩影。",
-            "description": "中新网上海10月7日电(范宇斌)在上海黄浦，有这样一个深耕新阶层人士服务的公益平台——海燕博客。从线上博客社群起步，如今已孵化20个子社团、年均举办800余场活动、深度链接数十万青年。海燕博客理事长段利丽，也是上海市黄浦区新的社会阶层人士联谊会副会长兼秘书长。她的人生轨迹，恰是中国新阶层人士从“职场个体”到“社会价值创造者”的生动缩影。",
-            "category": "宏观经济",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       },
@@ -1425,47 +1426,6 @@
             "title_zh": "巴德诺克表示，英国政治中的思想之战迫在眉睫"
           },
           {
-            "id": "3d8e52ddfb15fb51",
-            "title": "Scotland's first AI subject teacher warns pupils: Don't trust everything it tells you",
-            "published_at": "2026-10-06T04:56:38+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Scotland's first AI subject teacher warns pupils: Don't trust everything it tells you",
-                "link": "https://www.bbc.co.uk/news/articles/c6qjk9n7gge7o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-06T04:56:38+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/c6qjk9n7gge7o?at_medium=RSS&at_campaign=rss",
-                "description": "Jamie Laycock says schools must help youngsters understand both the opportunities and dangers of AI.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c6qjk9n7gge7o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c6qjk9n7gge7o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Jamie Laycock says schools must help youngsters understand both the opportunities and dangers of AI.",
-            "description": "Jamie Laycock says schools must help youngsters understand both the opportunities and dangers of AI.",
-            "category": "科技",
-            "domestic_score": 38,
-            "importance": 65,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "苏格兰第一位人工智能学科老师警告学生：不要相信它告诉你的一切"
-          },
-          {
             "id": "ea0d27b9fbc0d157",
             "title": "Man charged with GP's murder",
             "published_at": "2026-10-07T05:32:07+00:00",
@@ -1587,6 +1547,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "难以置信还是灾难性的？捷豹推出极化电动汽车"
+          },
+          {
+            "id": "135632d794495759",
+            "title": "Metal detectorist finds second Bronze Age hoard in Scottish Borders",
+            "published_at": "2026-10-07T05:03:01+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Metal detectorist finds second Bronze Age hoard in Scottish Borders",
+                "link": "https://www.bbc.co.uk/news/articles/cm62y4j5w149o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-07T05:03:01+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cm62y4j5w149o?at_medium=RSS&at_campaign=rss",
+                "description": "Dubbed the Blyth Hoard, the artefacts dating from between 1150BC to 850BC were found seven miles from the Peebles Hoard.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cm62y4j5w149o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cm62y4j5w149o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Dubbed the Blyth Hoard, the artefacts dating from between 1150BC to 850BC were found seven miles from the Peebles Hoard.",
+            "description": "Dubbed the Blyth Hoard, the artefacts dating from between 1150BC to 850BC were found seven miles from the Peebles Hoard.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "金属探测器在苏格兰边境发现第二个青铜时代宝藏"
           },
           {
             "id": "a5979005675018bf",
@@ -1712,47 +1713,6 @@
             "title_zh": "法庭裁决后，金明斯命令官员“继续进行 A5 升级工作”"
           },
           {
-            "id": "84fdbf4418a71e14",
-            "title": "First minister to face no-confidence vote over Drumcree row",
-            "published_at": "2026-10-06T19:17:17+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "First minister to face no-confidence vote over Drumcree row",
-                "link": "https://www.bbc.co.uk/news/articles/cm93zqwqgdk3o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-06T19:17:17+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cm93zqwqgdk3o?at_medium=RSS&at_campaign=rss",
-                "description": "The motion comes amid a major political row over a planned Orange Order march in Portadown.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cm93zqwqgdk3o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cm93zqwqgdk3o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "The motion comes amid a major political row over a planned Orange Order march in Portadown.",
-            "description": "The motion comes amid a major political row over a planned Orange Order march in Portadown.",
-            "category": "外交",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及外交，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "第一位因德拉姆克里争端而面临不信任投票的部长"
-          },
-          {
             "id": "5ca9af1eac9e80e6",
             "title": "Froyo's made a comeback. But at £12 a tub will it last?",
             "published_at": "2026-10-06T23:01:31+00:00",
@@ -1833,6 +1793,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "收到“Asos hacked”消息后我可以做什么来保护自己？"
+          },
+          {
+            "id": "1d48732c09565c32",
+            "title": "Scientists who put faith in technology less likely to take climate action",
+            "published_at": "2026-10-07T06:00:36+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Scientists who put faith in technology less likely to take climate action",
+                "link": "https://www.theguardian.com/environment/2026/oct/07/scientists-technology-less-likely-climate-crisis-action",
+                "published_at": "2026-10-07T06:00:36+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/environment/2026/oct/07/scientists-technology-less-likely-climate-crisis-action",
+                "description": "‘Techno-optimism’ may lead to reliance on unproven solutions at expense of societal changes needed Scientists who believe technology will largely solve the problems caused by the climate crisis are less likely to engage in civic action on the issue, according to a study. The report from the London School of Economics found they are 23% less likelyto sign petitions or take part in protests than peers who doubt that technology is the answer. They are also 18% less likely to make high-impact lifestyle changes, from reducing flights to changing to a vegan or vegetarian diet. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/environment/2026/oct/07/scientists-technology-less-likely-climate-crisis-action",
+            "source_url": "https://www.theguardian.com/environment/2026/oct/07/scientists-technology-less-likely-climate-crisis-action",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "‘Techno-optimism’ may lead to reliance on unproven solutions at expense of societal changes needed Scientists who believe technology will largely solve the problems caused by the climate crisis are less likely to engage in civic action on the issue, according to a study. The report from the London School of Economics found they are 23% less likelyto sign petitions or take part in protests than peers who doubt that technology is the answer. They are also 18% less likely to make high-impact lifest",
+            "description": "‘Techno-optimism’ may lead to reliance on unproven solutions at expense of societal changes needed Scientists who believe technology will largely solve the problems caused by the climate crisis are less likely to engage in civic action on the issue, according to a study. The report from the London School of Economics found they are 23% less likelyto sign petitions or take part in protests than peers who doubt that technology is the answer. They are also 18% less likely to make high-impact lifest",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 49,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "相信技术的科学家不太可能采取气候行动"
           },
           {
             "id": "5a39878f478dcbd8",
@@ -2132,19 +2133,19 @@
             "title_zh": "内塔尼亚胡如何在 10 月 7 日袭击的政治影响中幸存下来"
           },
           {
-            "id": "9aa6a5b6f8d10b9d",
-            "title": "Paramount completes takeover of Warner Bros, creating media behemoth Skydance",
-            "published_at": "2026-10-06T16:23:17+00:00",
+            "id": "eccde997a31aa9ed",
+            "title": "At least two killed in fire caused by 'massive strikes' on Kyiv",
+            "published_at": "2026-10-07T05:56:19+00:00",
             "code": "FR",
             "event_country": "法国",
             "sources": [
               {
-                "title": "Paramount completes takeover of Warner Bros, creating media behemoth Skydance",
-                "link": "https://www.france24.com/en/americas/20261006-paramount-completes-takeover-of-warner-bros-creating-media-behemoth-skydance",
-                "published_at": "2026-10-06T16:23:17+00:00",
+                "title": "At least two killed in fire caused by 'massive strikes' on Kyiv",
+                "link": "https://www.france24.com/en/europe/20261007-at-least-two-killed-in-fire-caused-by-massive-strikes-on-kyiv",
+                "published_at": "2026-10-07T05:56:19+00:00",
                 "source": "France24",
-                "source_url": "https://www.france24.com/en/americas/20261006-paramount-completes-takeover-of-warner-bros-creating-media-behemoth-skydance",
-                "description": "Paramount completed its acquisition of Warner Bros Discover on Tuesday, after a bidding war against Netflix. The deal closed following federal approval of a settlement between Paramount and 12 US states that tried to block the transaction on antitrust grounds. Opponents in the movie industry warned of job cuts, while media groups said Warner-owned CNN's independence could be compromised.",
+                "source_url": "https://www.france24.com/en/europe/20261007-at-least-two-killed-in-fire-caused-by-massive-strikes-on-kyiv",
+                "description": "At least two people were killed in a fire in Kyiv after what President Volodymyr Zelensky described as\"massive strikes\" on the Ukrainian capital on Wednesday. Ukraine has come under increased attack in recent weeks as Russian attacks have targeted energy infrastructure and rail and road transport.",
                 "feed_country": "FR",
                 "language": "en",
                 "code": "FR",
@@ -2153,24 +2154,24 @@
               }
             ],
             "source": "France24",
-            "url": "https://www.france24.com/en/americas/20261006-paramount-completes-takeover-of-warner-bros-creating-media-behemoth-skydance",
-            "source_url": "https://www.france24.com/en/americas/20261006-paramount-completes-takeover-of-warner-bros-creating-media-behemoth-skydance",
+            "url": "https://www.france24.com/en/europe/20261007-at-least-two-killed-in-fire-caused-by-massive-strikes-on-kyiv",
+            "source_url": "https://www.france24.com/en/europe/20261007-at-least-two-killed-in-fire-caused-by-massive-strikes-on-kyiv",
             "source_count": 1,
             "source_names": [
               "France24"
             ],
             "source_authority": 88,
-            "summary": "Paramount completed its acquisition of Warner Bros Discover on Tuesday, after a bidding war against Netflix. The deal closed following federal approval of a settlement between Paramount and 12 US states that tried to block the transaction on antitrust grounds. Opponents in the movie industry warned of job cuts, while media groups said Warner-owned CNN's independence could be compromised.",
-            "description": "Paramount completed its acquisition of Warner Bros Discover on Tuesday, after a bidding war against Netflix. The deal closed following federal approval of a settlement between Paramount and 12 US states that tried to block the transaction on antitrust grounds. Opponents in the movie industry warned of job cuts, while media groups said Warner-owned CNN's independence could be compromised.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 73,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "summary": "At least two people were killed in a fire in Kyiv after what President Volodymyr Zelensky described as\"massive strikes\" on the Ukrainian capital on Wednesday. Ukraine has come under increased attack in recent weeks as Russian attacks have targeted energy infrastructure and rail and road transport.",
+            "description": "At least two people were killed in a fire in Kyiv after what President Volodymyr Zelensky described as\"massive strikes\" on the Ukrainian capital on Wednesday. Ukraine has come under increased attack in recent weeks as Russian attacks have targeted energy infrastructure and rail and road transport.",
+            "category": "灾害",
+            "domestic_score": 30,
+            "importance": 71,
+            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "派拉蒙完成对华纳兄弟的收购，打造媒体巨头 Skydance"
+            "title_zh": "基辅“大规模袭击”引发火灾 至少两人死亡"
           },
           {
             "id": "2a2114597f51b50b",
@@ -2246,7 +2247,7 @@
             "description": "Israel will mark the third anniversary of the October 7, 2023 Hamas attack on Wednesday with memorial events across the country, as heightened security surrounds the commemorations and voters prepare for an election in which the deadliest day in Israel’s history is expected to remain a central issue.",
             "category": "政治",
             "domestic_score": 46,
-            "importance": 67,
+            "importance": 66,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2308,7 +2309,7 @@
                 "published_at": "2026-10-07T02:46:40+00:00",
                 "source": "France24",
                 "source_url": "https://www.france24.com/en/middle-east/20261007-middle-east-live-houthis-target-airport-in-yemen-as-israel-marks-october-7-anniversary",
-                "description": "Two missiles launched by Yemen's Iran-aligned Houthis targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
+                "description": "Two missiles launched by Yemen's Iran-aligned Houthi rebels targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
                 "feed_country": "FR",
                 "language": "en",
                 "code": "FR",
@@ -2324,8 +2325,8 @@
               "France24"
             ],
             "source_authority": 88,
-            "summary": "Two missiles launched by Yemen's Iran-aligned Houthis targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
-            "description": "Two missiles launched by Yemen's Iran-aligned Houthis targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
+            "summary": "Two missiles launched by Yemen's Iran-aligned Houthi rebels targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
+            "description": "Two missiles launched by Yemen's Iran-aligned Houthi rebels targeted Aden's international airport early Wednesday, with no casualties reported, as Israel prepared to mark the third anniversary of the October 7, 2023 Hamas attacks. Follow our liveblog for the latest developments.",
             "category": "科技",
             "domestic_score": 30,
             "importance": 64,
@@ -2419,19 +2420,19 @@
             "title_zh": "法国学生抗议在财政危机和选举中升级"
           },
           {
-            "id": "edb58f62aaa032f0",
-            "title": "Haiti postpones elections indefinitely as gang violence hampers preparations",
+            "id": "d5908d27c6198adf",
+            "title": "Haiti postpones elections indefinitely amid gang violence",
             "published_at": "2026-10-07T01:06:11+00:00",
             "code": "FR",
             "event_country": "法国",
             "sources": [
               {
-                "title": "Haiti postpones elections indefinitely as gang violence hampers preparations",
+                "title": "Haiti postpones elections indefinitely amid gang violence",
                 "link": "https://www.france24.com/en/americas/20261007-haiti-postpones-elections-indefinitely-as-gang-violence-hampers-preparations",
                 "published_at": "2026-10-07T01:06:11+00:00",
                 "source": "France24",
                 "source_url": "https://www.france24.com/en/americas/20261007-haiti-postpones-elections-indefinitely-as-gang-violence-hampers-preparations",
-                "description": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a vote as authorities struggle to register voters and secure areas needed for the poll.",
+                "description": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a democratic process as authorities struggle to register voters and secure areas needed for the poll.",
                 "feed_country": "FR",
                 "language": "en",
                 "code": "FR",
@@ -2447,8 +2448,8 @@
               "France24"
             ],
             "source_authority": 88,
-            "summary": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a vote as authorities struggle to register voters and secure areas needed for the poll.",
-            "description": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a vote as authorities struggle to register voters and secure areas needed for the poll.",
+            "summary": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a democratic process as authorities struggle to register voters and secure areas needed for the poll.",
+            "description": "Haiti has indefinitely postponed elections scheduled for December and February, the electoral council said Tuesday, citing technical and operational requirements as gang violence continues to disrupt preparations. The delay leaves Haitians without a democratic process as authorities struggle to register voters and secure areas needed for the poll.",
             "category": "政治",
             "domestic_score": 38,
             "importance": 54,
@@ -2457,7 +2458,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "海地无限期推迟选举，因帮派暴力阻碍准备工作"
+            "title_zh": "海地因帮派暴力无限期推迟选举"
           },
           {
             "id": "16a250bdc407d550",
@@ -2583,6 +2584,47 @@
             "title_zh": "法国警察向高中生发射催泪瓦斯手榴弹后被指控"
           },
           {
+            "id": "a260b611798bc7bc",
+            "title": "Lionel Messi scores as Argentina beat Benin for his last international game",
+            "published_at": "2026-10-07T05:42:31+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Lionel Messi scores as Argentina beat Benin for his last international game",
+                "link": "https://www.france24.com/en/tv-shows/sports/20261007-lionel-messi-scores-as-argentina-beat-benin-for-his-last-international-game",
+                "published_at": "2026-10-07T05:42:31+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/tv-shows/sports/20261007-lionel-messi-scores-as-argentina-beat-benin-for-his-last-international-game",
+                "description": "Lionel Messi played his final match for Argentina, a 3-0 victory over Benin. A full tribute was paid to him before and after the match.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/tv-shows/sports/20261007-lionel-messi-scores-as-argentina-beat-benin-for-his-last-international-game",
+            "source_url": "https://www.france24.com/en/tv-shows/sports/20261007-lionel-messi-scores-as-argentina-beat-benin-for-his-last-international-game",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "Lionel Messi played his final match for Argentina, a 3-0 victory over Benin. A full tribute was paid to him before and after the match.",
+            "description": "Lionel Messi played his final match for Argentina, a 3-0 victory over Benin. A full tribute was paid to him before and after the match.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 51,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "莱昂内尔·梅西 (Lionel Messi) 进球，阿根廷队在最后一场国际比赛中击败贝宁"
+          },
+          {
             "id": "5f1ee066a615e5ee",
             "title": "Messi bids farewell to Argentina fans in emotional international finale",
             "published_at": "2026-10-07T01:59:10+00:00",
@@ -2615,7 +2657,7 @@
             "description": "Lionel Messi said farewell to Argentina fans Tuesday in an emotional final international appearance, scoring in a 3-0 win over Benin at Buenos Aires' Monumental Stadium as 85,000 supporters celebrated the end of a career that brought the country its long-awaited 2022 World Cup triumph.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2745,47 +2787,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "德国前间谍头子因涉嫌泄露国家机密被拘留"
-          },
-          {
-            "id": "72a2c2c4d85d76e5",
-            "title": "Russian lab worker’s death sparks plague fears as unverified claims spread online",
-            "published_at": "2026-10-06T20:58:31+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Russian lab worker’s death sparks plague fears as unverified claims spread online",
-                "link": "https://www.france24.com/en/russian-lab-worker-s-death-sparks-plague-fears-as-unverified-claims-spread-online-1",
-                "published_at": "2026-10-06T20:58:31+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/russian-lab-worker-s-death-sparks-plague-fears-as-unverified-claims-spread-online-1",
-                "description": "The death of a 28-year-old Russian lab worker at Siberia’s Irkutsk Anti-Plague Institute has sparked online panic about a ‘plague’, despite the WHO assessing the public health risk in Russia as low. Unverified claims about how she became ill, including a laboratory accident involving a test tube, are circulating online. Misleading posts and out-of-context videos have also fuelled speculation and fear. Vedika Bahl goes through them, and what we know, in Truth or Fake.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/russian-lab-worker-s-death-sparks-plague-fears-as-unverified-claims-spread-online-1",
-            "source_url": "https://www.france24.com/en/russian-lab-worker-s-death-sparks-plague-fears-as-unverified-claims-spread-online-1",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "The death of a 28-year-old Russian lab worker at Siberia’s Irkutsk Anti-Plague Institute has sparked online panic about a ‘plague’, despite the WHO assessing the public health risk in Russia as low. Unverified claims about how she became ill, including a laboratory accident involving a test tube, are circulating online. Misleading posts and out-of-context videos have also fuelled speculation and fear. Vedika Bahl goes through them, and what we know, in Truth or Fake.",
-            "description": "The death of a 28-year-old Russian lab worker at Siberia’s Irkutsk Anti-Plague Institute has sparked online panic about a ‘plague’, despite the WHO assessing the public health risk in Russia as low. Unverified claims about how she became ill, including a laboratory accident involving a test tube, are circulating online. Misleading posts and out-of-context videos have also fuelled speculation and fear. Vedika Bahl goes through them, and what we know, in Truth or Fake.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "未经证实的说法在网上传播，俄罗斯实验室工作人员的死亡引发了鼠疫恐惧"
           },
           {
             "id": "e582fd14bfb1be57",
@@ -2921,6 +2922,88 @@
         "count": 20,
         "events": [
           {
+            "id": "669e83b5171d7790",
+            "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+            "published_at": "2026-10-07T05:50:21+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+                "link": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+                "published_at": "2026-10-07T05:50:21+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+                "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+            "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+            "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 81,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "国家重大",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "圣约公司计划在德国大规模生产巡航导弹"
+          },
+          {
+            "id": "0c47615a4aac3104",
+            "title": "Germany news: Government presents plan for railroad revamp",
+            "published_at": "2026-10-07T06:17:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "Germany news: Government presents plan for railroad revamp",
+                "link": "https://www.dw.com/en/germany-news-government-presents-plan-for-railroad-revamp/live-79570924?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-07T06:17:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/germany-news-government-presents-plan-for-railroad-revamp/live-79570924?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "The Transport Ministry has put forward a five-year plan for improving Germany's ailing railroad infrastructure. Chancellor Merz has voiced solidarity with Israel on the anniversary of the October 7 attacks. DW has more.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/germany-news-government-presents-plan-for-railroad-revamp/live-79570924?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/germany-news-government-presents-plan-for-railroad-revamp/live-79570924?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "source_authority": 89,
+            "summary": "The Transport Ministry has put forward a five-year plan for improving Germany's ailing railroad infrastructure. Chancellor Merz has voiced solidarity with Israel on the anniversary of the October 7 attacks. DW has more.",
+            "description": "The Transport Ministry has put forward a five-year plan for improving Germany's ailing railroad infrastructure. Chancellor Merz has voiced solidarity with Israel on the anniversary of the October 7 attacks. DW has more.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 74,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "德国新闻：政府提出铁路改造计划"
+          },
+          {
             "id": "4c0df9a104574a31",
             "title": "Spain court lifts Puigdemont arrest warrant, clearing way for his return home ahead of November elections",
             "published_at": "2026-10-06T14:06:00+00:00",
@@ -3044,47 +3127,6 @@
             "title_zh": "提格雷战争可能蔓延至厄立特里亚——总理阿比·艾哈迈德的言论助长"
           },
           {
-            "id": "15c6641049785a86",
-            "title": "Germany arrests former intelligence chief in espionage case",
-            "published_at": "2026-10-06T16:19:11+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "Germany arrests former intelligence chief in espionage case",
-                "link": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
-                "published_at": "2026-10-06T16:19:11+00:00",
-                "source": "华盛顿邮报",
-                "source_url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
-                "description": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "华盛顿邮报",
-            "url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
-            "source_url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
-            "source_count": 1,
-            "source_names": [
-              "华盛顿邮报"
-            ],
-            "source_authority": 94,
-            "summary": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
-            "description": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 70,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "德国因间谍案逮捕前情报局长"
-          },
-          {
             "id": "3fc8ad9203dadf06",
             "title": "EU seeks ways to make expansion more palatable to members",
             "published_at": "2026-10-06T18:02:00+00:00",
@@ -3124,6 +3166,47 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "欧盟寻求让成员国更容易接受扩张的方法"
+          },
+          {
+            "id": "15c6641049785a86",
+            "title": "Germany arrests former intelligence chief in espionage case",
+            "published_at": "2026-10-06T16:19:11+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "Germany arrests former intelligence chief in espionage case",
+                "link": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
+                "published_at": "2026-10-06T16:19:11+00:00",
+                "source": "华盛顿邮报",
+                "source_url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
+                "description": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "华盛顿邮报",
+            "url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
+            "source_url": "https://www.washingtonpost.com/world/2026/10/06/germany-arrests-former-intelligence-chief-espionage-case/",
+            "source_count": 1,
+            "source_names": [
+              "华盛顿邮报"
+            ],
+            "source_authority": 94,
+            "summary": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
+            "description": "August Hanning is accused of selling state secrets to at least one foreign state. It could be the worst breach at the German foreign intelligence agency since the Cold War’s end.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 69,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "德国因间谍案逮捕前情报局长"
           },
           {
             "id": "befde854428d9e27",
@@ -3249,6 +3332,47 @@
             "title_zh": "叙利亚大使馆归还被扣押43年的护照"
           },
           {
+            "id": "4f7bc3dd483db3b6",
+            "title": "Germany’s spies face a fresh scandal",
+            "published_at": "2026-10-07T04:00:22+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "Germany’s spies face a fresh scandal",
+                "link": "https://www.ft.com/content/0a64ce3b-d56a-4829-948c-4abc4978b1c9?syn-25a6b1a6=1",
+                "published_at": "2026-10-07T04:00:22+00:00",
+                "source": "金融时报",
+                "source_url": "https://www.ft.com/content/0a64ce3b-d56a-4829-948c-4abc4978b1c9?syn-25a6b1a6=1",
+                "description": "The BND intelligence agency had been seeking a return to the top table. Then prosecutors accused its ex-chief of treachery",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/0a64ce3b-d56a-4829-948c-4abc4978b1c9?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/0a64ce3b-d56a-4829-948c-4abc4978b1c9?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "The BND intelligence agency had been seeking a return to the top table. Then prosecutors accused its ex-chief of treachery",
+            "description": "The BND intelligence agency had been seeking a return to the top table. Then prosecutors accused its ex-chief of treachery",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "德国间谍面临新丑闻"
+          },
+          {
             "id": "aeb786c6809a3f54",
             "title": "Football: Lionel Messi plays final game for Argentina",
             "published_at": "2026-10-07T02:35:00+00:00",
@@ -3363,54 +3487,13 @@
             "description": "After winning a state election last month, the Alternative for Germany is the first far-right party to oversee a state legislature since the Nazi era.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "德国极右派自 1945 年以来任命首位国会议长"
-          },
-          {
-            "id": "5408e618b5bda85a",
-            "title": "France's conundrum: How to cut spending amid protests",
-            "published_at": "2026-10-06T16:49:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "France's conundrum: How to cut spending amid protests",
-                "link": "https://www.dw.com/en/france-s-conundrum-how-to-cut-spending-amid-protests/a-79563475?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-06T16:49:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/france-s-conundrum-how-to-cut-spending-amid-protests/a-79563475?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "Prime Minister Lecornu is pledging to improve schools at a time when the government seeks to save billions. France's dilemma can be seen across the EU: How to cut spending when citizens are demanding more from the state?",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/france-s-conundrum-how-to-cut-spending-amid-protests/a-79563475?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/france-s-conundrum-how-to-cut-spending-amid-protests/a-79563475?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "Prime Minister Lecornu is pledging to improve schools at a time when the government seeks to save billions. France's dilemma can be seen across the EU: How to cut spending when citizens are demanding more from the state?",
-            "description": "Prime Minister Lecornu is pledging to improve schools at a time when the government seeks to save billions. France's dilemma can be seen across the EU: How to cut spending when citizens are demanding more from the state?",
-            "category": "社会",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及社会，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法国的难题：如何在抗议中削减开支"
           },
           {
             "id": "167ca6d33cbb8036",
@@ -3536,47 +3619,6 @@
             "title_zh": "印度新闻：反对派抗议为莫迪25年里程碑蒙上阴影"
           },
           {
-            "id": "c7d62e3120b71dd4",
-            "title": "Southeast Asia's haze crisis: Have lessons been learned?",
-            "published_at": "2026-10-06T13:50:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "Southeast Asia's haze crisis: Have lessons been learned?",
-                "link": "https://www.dw.com/en/southeast-asia-s-haze-crisis-have-lessons-been-learned/a-79564992?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-06T13:50:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/southeast-asia-s-haze-crisis-have-lessons-been-learned/a-79564992?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "Eleven years after catastrophic fires prompted promises of tougher action, Southeast Asia is again choking on transboundary haze, raising questions about whether the region has learned the lessons of 2015.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/southeast-asia-s-haze-crisis-have-lessons-been-learned/a-79564992?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/southeast-asia-s-haze-crisis-have-lessons-been-learned/a-79564992?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "Eleven years after catastrophic fires prompted promises of tougher action, Southeast Asia is again choking on transboundary haze, raising questions about whether the region has learned the lessons of 2015.",
-            "description": "Eleven years after catastrophic fires prompted promises of tougher action, Southeast Asia is again choking on transboundary haze, raising questions about whether the region has learned the lessons of 2015.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "东南亚雾霾危机：吸取教训了吗？"
-          },
-          {
             "id": "f540ed22de557652",
             "title": "Christa Pike awake after failed Tennessee execution: lawyers",
             "published_at": "2026-10-06T23:49:00+00:00",
@@ -3657,47 +3699,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "慕尼黑 2036 年奥运会将面临至少六名参赛者"
-          },
-          {
-            "id": "d364f25c590a1f2f",
-            "title": "UK: Seventh arrest made after air base plot",
-            "published_at": "2026-10-06T15:30:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "UK: Seventh arrest made after air base plot",
-                "link": "https://www.dw.com/en/uk-seventh-arrest-made-after-air-base-plot/a-79566985?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-06T15:30:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/uk-seventh-arrest-made-after-air-base-plot/a-79566985?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The man, a British national in his twenties, was arrested in London in suspicion of \"preparing terrorist acts.\"",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/uk-seventh-arrest-made-after-air-base-plot/a-79566985?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/uk-seventh-arrest-made-after-air-base-plot/a-79566985?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "The man, a British national in his twenties, was arrested in London in suspicion of \"preparing terrorist acts.\"",
-            "description": "The man, a British national in his twenties, was arrested in London in suspicion of \"preparing terrorist acts.\"",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 45,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "英国：空军基地阴谋后第七次被捕"
           },
           {
             "id": "ff4b027fb1560f36",
@@ -3824,7 +3825,7 @@
             "description": "Valentina Matviyenko added that people in EU countries are dissatisfied with this",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 78,
+            "importance": 77,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4240,7 +4241,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "大规模无人机袭击损坏了LPR的七栋房屋和档案馆——当局"
+            "title_zh": "大规模无人机袭击损坏了 LPR 的七栋房屋和档案馆——当局"
           },
           {
             "id": "0d170286365502bb",
@@ -4521,7 +4522,7 @@
             "description": "The official euro rate was increased by 69.64 kopecks to 96.0313 rubles",
             "category": "金融",
             "domestic_score": 38,
-            "importance": 49,
+            "importance": 48,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4578,7 +4579,7 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 3,
+        "count": 2,
         "events": [
           {
             "id": "09085ff3c32a54cd",
@@ -4620,47 +4621,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "SpaceX 瞄准 40B 美元收购 Nvidia 芯片，亚洲股市保持接近历史高位"
-          },
-          {
-            "id": "7216bbac204941c2",
-            "title": "Japanese Beer Maker Shares Drop on Price-Fixing Probe",
-            "published_at": "2026-10-07T03:10:43+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Japanese Beer Maker Shares Drop on Price-Fixing Probe",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/japanse-beer-maker-shares-extend-losses-on-price-fixing-probe",
-                "published_at": "2026-10-07T03:10:43+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/japanse-beer-maker-shares-extend-losses-on-price-fixing-probe",
-                "description": "Shares of Japanese beer makers fell after the nation’s competition authority started investigating them over suspected price fixing.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/japanse-beer-maker-shares-extend-losses-on-price-fixing-probe",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/japanse-beer-maker-shares-extend-losses-on-price-fixing-probe",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Shares of Japanese beer makers fell after the nation’s competition authority started investigating them over suspected price fixing.",
-            "description": "Shares of Japanese beer makers fell after the nation’s competition authority started investigating them over suspected price fixing.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "日本啤酒制造商股价因价格操纵调查而下跌"
           },
           {
             "id": "9bd8537cae7fda6d",
@@ -4713,8 +4673,49 @@
         "code": "IN",
         "target_min": 5,
         "target_max": 12,
-        "count": 6,
+        "count": 4,
         "events": [
+          {
+            "id": "b6f1ebdf7a0f9d0e",
+            "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+            "published_at": "2026-10-07T05:44:03+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+                "link": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+                "published_at": "2026-10-07T05:44:03+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+                "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IN",
+                "event_country": "印度",
+                "event_country_en": "India"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+            "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+            "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+            "category": "宏观经济",
+            "domestic_score": 38,
+            "importance": 56,
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "印度央行将回购利率上调 25 个基点"
+          },
           {
             "id": "968f29cf6e0a31b0",
             "title": "India’s RBI Lifts Rates for First Time in Nearly Four Years",
@@ -4798,129 +4799,6 @@
             "title_zh": "阿曼从霍尔木兹海峡遇袭油轮撤离受伤船员"
           },
           {
-            "id": "c37354ff8a217135",
-            "title": "Indian Opposition Leader Detained After Voter Roll Standoff",
-            "published_at": "2026-10-07T04:05:08+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "title": "Indian Opposition Leader Detained After Voter Roll Standoff",
-                "link": "https://www.bloomberg.com/news/videos/2026-10-07/indian-opposition-leader-detained-video",
-                "published_at": "2026-10-07T04:05:08+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/indian-opposition-leader-detained-video",
-                "description": "Police in New Delhi temporarily detained key opposition leader Rahul Gandhi to end an almost nine-hour standoff during a protest seeking the resignation of the chief election official. (Source: Bloomberg)",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IN",
-                "event_country": "印度",
-                "event_country_en": "India"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/videos/2026-10-07/indian-opposition-leader-detained-video",
-            "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/indian-opposition-leader-detained-video",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Police in New Delhi temporarily detained key opposition leader Rahul Gandhi to end an almost nine-hour standoff during a protest seeking the resignation of the chief election official. (Source: Bloomberg)",
-            "description": "Police in New Delhi temporarily detained key opposition leader Rahul Gandhi to end an almost nine-hour standoff during a protest seeking the resignation of the chief election official. (Source: Bloomberg)",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 49,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "印度反对派领袖在选民登记对峙后被拘留"
-          },
-          {
-            "id": "0632123848538cd8",
-            "title": "Can India Close Its Huge Pension Gap?",
-            "published_at": "2026-10-07T03:41:55+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "title": "Can India Close Its Huge Pension Gap?",
-                "link": "https://www.bloomberg.com/news/videos/2026-10-07/can-india-close-its-huge-pension-gap-video",
-                "published_at": "2026-10-07T03:41:55+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/can-india-close-its-huge-pension-gap-video",
-                "description": "Fewer than 30% of Indians have access to a retirement account, even as the number of people over 60 is set to more than double by 2036. Saikat Das explains India’s pension problem and what the government is doing to fix it. (Source: Bloomberg)",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IN",
-                "event_country": "印度",
-                "event_country_en": "India"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/videos/2026-10-07/can-india-close-its-huge-pension-gap-video",
-            "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/can-india-close-its-huge-pension-gap-video",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Fewer than 30% of Indians have access to a retirement account, even as the number of people over 60 is set to more than double by 2036. Saikat Das explains India’s pension problem and what the government is doing to fix it. (Source: Bloomberg)",
-            "description": "Fewer than 30% of Indians have access to a retirement account, even as the number of people over 60 is set to more than double by 2036. Saikat Das explains India’s pension problem and what the government is doing to fix it. (Source: Bloomberg)",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 49,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "印度能否缩小巨大的养老金缺口？"
-          },
-          {
-            "id": "abf491eda67bd879",
-            "title": "Sanlam’s $1.2 Billion Santam Bet Puts Capital Choices in Focus",
-            "published_at": "2026-10-07T04:00:00+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "title": "Sanlam’s $1.2 Billion Santam Bet Puts Capital Choices in Focus",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/sanlam-s-1-2-billion-santam-bet-puts-capital-choices-in-focus",
-                "published_at": "2026-10-07T04:00:00+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/sanlam-s-1-2-billion-santam-bet-puts-capital-choices-in-focus",
-                "description": "Sanlam Ltd.’s $1.2 billion bid to take full ownership of Santam Ltd. will give Africa’s top insurer more freedom to deploy capital across the continent, India and the Lloyd’s of London market, the latest step in an expansion that will soon include banking.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IN",
-                "event_country": "印度",
-                "event_country_en": "India"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/sanlam-s-1-2-billion-santam-bet-puts-capital-choices-in-focus",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/sanlam-s-1-2-billion-santam-bet-puts-capital-choices-in-focus",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Sanlam Ltd.’s $1.2 billion bid to take full ownership of Santam Ltd. will give Africa’s top insurer more freedom to deploy capital across the continent, India and the Lloyd’s of London market, the latest step in an expansion that will soon include banking.",
-            "description": "Sanlam Ltd.’s $1.2 billion bid to take full ownership of Santam Ltd. will give Africa’s top insurer more freedom to deploy capital across the continent, India and the Lloyd’s of London market, the latest step in an expansion that will soon include banking.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Sanlam 12 亿美元的 Santam 赌注让资本选择成为焦点"
-          },
-          {
             "id": "50097452504ea73b",
             "title": "India Cut 130 Million From Voter Roll, Fueling Protests Against Modi",
             "published_at": "2026-10-06T15:55:46+00:00",
@@ -4953,7 +4831,7 @@
             "description": "Public anger is growing over an exercise that critics say undermines the world’s largest democracy, particularly disenfranchising Muslims under the Hindu nationalist government.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 44,
+            "importance": 43,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5153,7 +5031,7 @@
         "code": "KR",
         "target_min": 5,
         "target_max": 12,
-        "count": 5,
+        "count": 3,
         "events": [
           {
             "id": "456339e2a0d476ca",
@@ -5195,88 +5073,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "韩国调查人工智能的可能使用银行遭受黑客攻击"
-          },
-          {
-            "id": "6aa957a7eb7701fc",
-            "title": "Korean Investors Suffer $1.7 Billion Losses From Leveraged ETFs",
-            "published_at": "2026-10-07T03:00:03+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "title": "Korean Investors Suffer $1.7 Billion Losses From Leveraged ETFs",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/korean-investors-suffer-1-7-billion-losses-from-leveraged-etfs",
-                "published_at": "2026-10-07T03:00:03+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/korean-investors-suffer-1-7-billion-losses-from-leveraged-etfs",
-                "description": "Retail investors are estimated to have lost 2.3 trillion won ($1.7 billion) from leveraged exchange-traded products tracking South Korea’s two chipmaking giants in just months, according to a lawmaker’s office, in the first revelation of the magnitude of risks from such bets.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "KR",
-                "event_country": "韩国",
-                "event_country_en": "South Korea"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/korean-investors-suffer-1-7-billion-losses-from-leveraged-etfs",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/korean-investors-suffer-1-7-billion-losses-from-leveraged-etfs",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Retail investors are estimated to have lost 2.3 trillion won ($1.7 billion) from leveraged exchange-traded products tracking South Korea’s two chipmaking giants in just months, according to a lawmaker’s office, in the first revelation of the magnitude of risks from such bets.",
-            "description": "Retail investors are estimated to have lost 2.3 trillion won ($1.7 billion) from leveraged exchange-traded products tracking South Korea’s two chipmaking giants in just months, according to a lawmaker’s office, in the first revelation of the magnitude of risks from such bets.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "韩国投资者因杠杆 ETF 遭受 17 亿美元损失"
-          },
-          {
-            "id": "950d859094c58b17",
-            "title": "Taiwan Dethrones Korea Atop World Markets as AI Trade Widens",
-            "published_at": "2026-10-07T00:07:35+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "title": "Taiwan Dethrones Korea Atop World Markets as AI Trade Widens",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/taiwan-dethrones-korea-atop-global-markets-as-ai-trade-widens",
-                "published_at": "2026-10-07T00:07:35+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/taiwan-dethrones-korea-atop-global-markets-as-ai-trade-widens",
-                "description": "As equity investors enter the final stretch of a pivotal year that’s propelled South Korea and Taiwan to the forefront of the global AI trade, the latter is emerging as the stronger bet.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "KR",
-                "event_country": "韩国",
-                "event_country_en": "South Korea"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/taiwan-dethrones-korea-atop-global-markets-as-ai-trade-widens",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/taiwan-dethrones-korea-atop-global-markets-as-ai-trade-widens",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "As equity investors enter the final stretch of a pivotal year that’s propelled South Korea and Taiwan to the forefront of the global AI trade, the latter is emerging as the stronger bet.",
-            "description": "As equity investors enter the final stretch of a pivotal year that’s propelled South Korea and Taiwan to the forefront of the global AI trade, the latter is emerging as the stronger bet.",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "随着人工智能贸易的扩大，台湾取代韩国成为世界市场第一"
           },
           {
             "id": "2e93af5c0f2e9b5c",
@@ -5443,7 +5239,7 @@
             "description": "Justice department detained James Codey Bryant and allege he offered ‘technical advice’ to primary suspect A surprise suspected accomplice has been arrested in connection with a mass school shooting in Canada that was made notorious after an 18-year-old allegedly killed six children after discussing it with the AI chatbot ChatGPT. The US Department of Justice said Tuesday it had detained James Codey Bryant, 30, a resident of western Washington state, on a charge of conspiracy to murder persons i",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 45,
+            "importance": 44,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5576,7 +5372,7 @@
             "description": "Ruling on Mount Pleasant coalmine shows ‘we cannot continue to dig up coal … and pretend the consequences have nothing to do with us’, group says Get our breaking news email , free app or daily news podcast A Hunter Valley community group has won Australia’s first high court case to consider climate change, in a ruling advocates say sets a binding national precedent for fossil fuel projects in New South Wales. In a landmark judgment, the nation’s highest court ruled that the approval of MACH Ene",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 46,
+            "importance": 45,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5658,13 +5454,13 @@
             "description": "Campaigners say ruling sets a precedent requiring climate damage be weighed when fossil fuel projects are considered.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 42,
+            "importance": 41,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "澳大利亚最高法院以气候危害为由禁止煤矿扩建"
+            "title_zh": "澳大利亚最高法院以气候危害为由禁止煤矿扩张"
           }
         ]
       }
@@ -5711,7 +5507,7 @@
             "description": "Ukrainians travelling by train are increasingly caught in the crosshairs of Russia's attacks.",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 47,
+            "importance": 46,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5736,50 +5532,8 @@
         "code": "ID",
         "target_min": 3,
         "target_max": 10,
-        "count": 1,
-        "events": [
-          {
-            "id": "288afe228b2cb155",
-            "title": "FTSE Affirms Indonesia’s Emerging Status on Ongoing Reforms",
-            "published_at": "2026-10-06T20:50:56+00:00",
-            "code": "ID",
-            "event_country": "印度尼西亚",
-            "sources": [
-              {
-                "title": "FTSE Affirms Indonesia’s Emerging Status on Ongoing Reforms",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-06/ftse-reiterates-indonesia-s-emerging-status-amid-ongoing-reforms",
-                "published_at": "2026-10-06T20:50:56+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-06/ftse-reiterates-indonesia-s-emerging-status-amid-ongoing-reforms",
-                "description": "FTSE Russell has reaffirmed the emerging-market status of Indonesian equities amid measures taken by local authorities to improve transparency.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "ID",
-                "event_country": "印度尼西亚",
-                "event_country_en": "Indonesia"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-06/ftse-reiterates-indonesia-s-emerging-status-amid-ongoing-reforms",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-06/ftse-reiterates-indonesia-s-emerging-status-amid-ongoing-reforms",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "FTSE Russell has reaffirmed the emerging-market status of Indonesian equities amid measures taken by local authorities to improve transparency.",
-            "description": "FTSE Russell has reaffirmed the emerging-market status of Indonesian equities amid measures taken by local authorities to improve transparency.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 39,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "富时确认印度尼西亚持续改革的新兴地位"
-          }
-        ]
+        "count": 0,
+        "events": []
       },
       "土耳其": {
         "country": "土耳其",
@@ -5856,7 +5610,7 @@
         "code": "IR",
         "target_min": 3,
         "target_max": 10,
-        "count": 7,
+        "count": 6,
         "events": [
           {
             "id": "95673ba546e49262",
@@ -5898,47 +5652,6 @@
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "随着石油和天然气流量的增加，伊朗加大了霍尔木兹船只的袭击力度"
-          },
-          {
-            "id": "af48101e30553395",
-            "title": "QatarEnergy Secures $3 Billion Loan From Four Chinese Banks",
-            "published_at": "2026-10-07T01:31:36+00:00",
-            "code": "IR",
-            "event_country": "伊朗",
-            "sources": [
-              {
-                "title": "QatarEnergy Secures $3 Billion Loan From Four Chinese Banks",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/qatarenergy-secures-3-billion-loan-from-four-chinese-banks",
-                "published_at": "2026-10-07T01:31:36+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/qatarenergy-secures-3-billion-loan-from-four-chinese-banks",
-                "description": "State-owned QatarEnergy has secured a $3 billion loan from Chinese banks, according to people familiar with the matter, another sign that financial firms are still willing to lend to certain Gulf borrowers, despite the protracted US war with Iran.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IR",
-                "event_country": "伊朗",
-                "event_country_en": "Iran"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/qatarenergy-secures-3-billion-loan-from-four-chinese-banks",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/qatarenergy-secures-3-billion-loan-from-four-chinese-banks",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "State-owned QatarEnergy has secured a $3 billion loan from Chinese banks, according to people familiar with the matter, another sign that financial firms are still willing to lend to certain Gulf borrowers, despite the protracted US war with Iran.",
-            "description": "State-owned QatarEnergy has secured a $3 billion loan from Chinese banks, according to people familiar with the matter, another sign that financial firms are still willing to lend to certain Gulf borrowers, despite the protracted US war with Iran.",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 62,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "卡塔尔能源公司从四家中国银行获得 30 亿美元贷款"
           },
           {
             "id": "33950d5111041ba5",
@@ -6055,7 +5768,7 @@
             "description": "Oil gained as traders weighed increased flows through the Strait of Hormuz against a pickup in Iranian attacks against vessels.",
             "category": "金融",
             "domestic_score": 38,
-            "importance": 59,
+            "importance": 58,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6308,8 +6021,50 @@
         "code": "NL",
         "target_min": 2,
         "target_max": 8,
-        "count": 0,
-        "events": []
+        "count": 1,
+        "events": [
+          {
+            "id": "87c042c0baf118e3",
+            "title": "Dutch Government Plans to Halve ABN Amro Stake to 10.5%",
+            "published_at": "2026-10-07T05:47:03+00:00",
+            "code": "NL",
+            "event_country": "荷兰",
+            "sources": [
+              {
+                "title": "Dutch Government Plans to Halve ABN Amro Stake to 10.5%",
+                "link": "https://www.bloomberg.com/news/articles/2026-10-07/dutch-government-plans-to-cut-abn-amro-stake-to-10-5-from-20-7",
+                "published_at": "2026-10-07T05:47:03+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/dutch-government-plans-to-cut-abn-amro-stake-to-10-5-from-20-7",
+                "description": "The Netherlands plans to effectively cut its stake in ABN Amro Bank NV in half, edging the bank closer to full private ownership.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "NL",
+                "event_country": "荷兰",
+                "event_country_en": "Netherlands"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-07/dutch-government-plans-to-cut-abn-amro-stake-to-10-5-from-20-7",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/dutch-government-plans-to-cut-abn-amro-stake-to-10-5-from-20-7",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "The Netherlands plans to effectively cut its stake in ABN Amro Bank NV in half, edging the bank closer to full private ownership.",
+            "description": "The Netherlands plans to effectively cut its stake in ABN Amro Bank NV in half, edging the bank closer to full private ownership.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "荷兰政府计划将荷兰银行股份减半至 10.5%"
+          }
+        ]
       },
       "以色列": {
         "country": "以色列",
@@ -6320,19 +6075,19 @@
         "count": 8,
         "events": [
           {
-            "id": "28997caeddd1f4fc",
-            "title": "Badenoch denies plan for ‘British Iron Dome’ – after Tories use phrase in press release",
-            "published_at": "2026-10-06T21:15:06+00:00",
+            "id": "5bed2c24555f5ab7",
+            "title": "How three years of Israel’s genocidal war have changed Gaza",
+            "published_at": "2026-10-07T05:41:54+00:00",
             "code": "IL",
             "event_country": "以色列",
             "sources": [
               {
-                "title": "Badenoch denies plan for ‘British Iron Dome’ – after Tories use phrase in press release",
-                "link": "https://www.theguardian.com/politics/2026/oct/06/badenoch-british-iron-dome-plan-tory-press-release",
-                "published_at": "2026-10-06T21:15:06+00:00",
-                "source": "卫报",
-                "source_url": "https://www.theguardian.com/politics/2026/oct/06/badenoch-british-iron-dome-plan-tory-press-release",
-                "description": "Leader also says party is ‘not out of the woods’ and she would rather have another election than form coalition with Reform Kemi Badenoch has denied she compared a new air defence system proposed by the Conservative party to Israel’s Iron Dome, despite using the term in her press release and a newspaper article. The Tory leader said the party’s proposed “Britannia Shield” would not be comparable to the missile defence system in Israel, which is primarily designed to counter short-range attacks. Continue reading...",
+                "title": "How three years of Israel’s genocidal war have changed Gaza",
+                "link": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+                "published_at": "2026-10-07T05:41:54+00:00",
+                "source": "半岛电视台",
+                "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+                "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
                 "feed_country": "GLOBAL",
                 "language": "en",
                 "code": "IL",
@@ -6340,25 +6095,25 @@
                 "event_country_en": "Israel"
               }
             ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/politics/2026/oct/06/badenoch-british-iron-dome-plan-tory-press-release",
-            "source_url": "https://www.theguardian.com/politics/2026/oct/06/badenoch-british-iron-dome-plan-tory-press-release",
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
             "source_count": 1,
             "source_names": [
-              "卫报"
+              "半岛电视台"
             ],
-            "source_authority": 92,
-            "summary": "Leader also says party is ‘not out of the woods’ and she would rather have another election than form coalition with Reform Kemi Badenoch has denied she compared a new air defence system proposed by the Conservative party to Israel’s Iron Dome, despite using the term in her press release and a newspaper article. The Tory leader said the party’s proposed “Britannia Shield” would not be comparable to the missile defence system in Israel, which is primarily designed to counter short-range attacks. ",
-            "description": "Leader also says party is ‘not out of the woods’ and she would rather have another election than form coalition with Reform Kemi Badenoch has denied she compared a new air defence system proposed by the Conservative party to Israel’s Iron Dome, despite using the term in her press release and a newspaper article. The Tory leader said the party’s proposed “Britannia Shield” would not be comparable to the missile defence system in Israel, which is primarily designed to counter short-range attacks. ",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 55,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "source_authority": 90,
+            "summary": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+            "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 59,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "保守党在新闻稿中使用这句话后，巴德诺克否认了“英国铁穹”的计划"
+            "title_zh": "以色列三年的种族灭绝战争如何改变了加沙"
           },
           {
             "id": "e7de012c1133d81a",
@@ -6690,7 +6445,7 @@
             "description": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6892,6 +6647,47 @@
             "title_zh": "外交部长表示阿根廷将停止福克兰群岛海上油田的开发"
           },
           {
+            "id": "9d3457c40375d925",
+            "title": "Lionel Messi’s last game for Argentina ends in triumph and tears",
+            "published_at": "2026-10-07T05:54:10+00:00",
+            "code": "AR",
+            "event_country": "阿根廷",
+            "sources": [
+              {
+                "title": "Lionel Messi’s last game for Argentina ends in triumph and tears",
+                "link": "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears?traffic_source=rss",
+                "published_at": "2026-10-07T05:54:10+00:00",
+                "source": "半岛电视台",
+                "source_url": "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears?traffic_source=rss",
+                "description": "Messi scored a goal and created two others as Argentina bid farewell to its most decorated footballer with a 3-0 win.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "AR",
+                "event_country": "阿根廷",
+                "event_country_en": "Argentina"
+              }
+            ],
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears?traffic_source=rss",
+            "source_count": 1,
+            "source_names": [
+              "半岛电视台"
+            ],
+            "source_authority": 90,
+            "summary": "Messi scored a goal and created two others as Argentina bid farewell to its most decorated footballer with a 3-0 win.",
+            "description": "Messi scored a goal and created two others as Argentina bid farewell to its most decorated footballer with a 3-0 win.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 35,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "莱昂内尔·梅西为阿根廷队效力的最后一场比赛以胜利和泪水结束"
+          },
+          {
             "id": "d74ef2df6f0dd40f",
             "title": "Lionel Messi plays final Argentina game to roaring Buenos Aires farewell",
             "published_at": "2026-10-07T03:03:16+00:00",
@@ -6931,47 +6727,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "梅西在阿根廷队最后一场比赛中告别布宜诺斯艾利斯"
-          },
-          {
-            "id": "117f42a639b9154c",
-            "title": "Fans flood Buenos Aires ahead of Messi’s final international match",
-            "published_at": "2026-10-06T22:07:44+00:00",
-            "code": "AR",
-            "event_country": "阿根廷",
-            "sources": [
-              {
-                "title": "Fans flood Buenos Aires ahead of Messi’s final international match",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-7-messi-fans-flock-clip?traffic_source=rss",
-                "published_at": "2026-10-06T22:07:44+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-7-messi-fans-flock-clip?traffic_source=rss",
-                "description": "Thousands of Argentina fans poured into Buenos Aires’ Monumental stadium ahead of Lionel Messi’s final match.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "AR",
-                "event_country": "阿根廷",
-                "event_country_en": "Argentina"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-7-messi-fans-flock-clip?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-7-messi-fans-flock-clip?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "Thousands of Argentina fans poured into Buenos Aires’ Monumental stadium ahead of Lionel Messi’s final match.",
-            "description": "Thousands of Argentina fans poured into Buenos Aires’ Monumental stadium ahead of Lionel Messi’s final match.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 31,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "梅西最后一场国际比赛前，球迷涌入布宜诺斯艾利斯"
           }
         ]
       },
@@ -7501,6 +7256,321 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
+      "id": "605ae1bcaaa960f0",
+      "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+      "published_at": "2026-10-07T06:02:57+00:00",
+      "code": "US",
+      "event_country": "美国",
+      "sources": [
+        {
+          "id": "605ae1bcaaa960f0",
+          "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+          "published_at": "2026-10-07T06:02:57+00:00",
+          "code": "US",
+          "event_country": "美国",
+          "sources": [
+            {
+              "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+              "link": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+              "published_at": "2026-10-07T06:02:57+00:00",
+              "source": "NPR",
+              "source_url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+              "description": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+              "feed_country": "US",
+              "language": "en",
+              "code": "US",
+              "event_country": "美国",
+              "event_country_en": "United States"
+            }
+          ],
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+          "source_url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+          "source_count": 1,
+          "source_names": [
+            "NPR"
+          ],
+          "source_authority": 90,
+          "summary": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+          "description": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+          "category": "国防安全",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "NPR",
+      "url": "",
+      "source_url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+      "source_count": 1,
+      "source_names": [
+        "NPR"
+      ],
+      "source_authority": 90,
+      "summary": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+      "description": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "669e83b5171d7790",
+      "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+      "published_at": "2026-10-07T05:50:21+00:00",
+      "code": "DE",
+      "event_country": "德国",
+      "sources": [
+        {
+          "id": "669e83b5171d7790",
+          "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+          "published_at": "2026-10-07T05:50:21+00:00",
+          "code": "DE",
+          "event_country": "德国",
+          "sources": [
+            {
+              "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+              "link": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+              "published_at": "2026-10-07T05:50:21+00:00",
+              "source": "彭博社",
+              "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+              "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "DE",
+              "event_country": "德国",
+              "event_country_en": "Germany"
+            }
+          ],
+          "source": "彭博社",
+          "url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+          "source_count": 1,
+          "source_names": [
+            "彭博社"
+          ],
+          "source_authority": 96,
+          "summary": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+          "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+          "category": "国防安全",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "彭博社",
+      "url": "",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+      "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "b6f1ebdf7a0f9d0e",
+      "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+      "published_at": "2026-10-07T05:44:03+00:00",
+      "code": "IN",
+      "event_country": "印度",
+      "sources": [
+        {
+          "id": "b6f1ebdf7a0f9d0e",
+          "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+          "published_at": "2026-10-07T05:44:03+00:00",
+          "code": "IN",
+          "event_country": "印度",
+          "sources": [
+            {
+              "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+              "link": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+              "published_at": "2026-10-07T05:44:03+00:00",
+              "source": "彭博社",
+              "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+              "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "IN",
+              "event_country": "印度",
+              "event_country_en": "India"
+            }
+          ],
+          "source": "彭博社",
+          "url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+          "source_count": 1,
+          "source_names": [
+            "彭博社"
+          ],
+          "source_authority": 96,
+          "summary": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+          "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+          "category": "宏观经济",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "彭博社",
+      "url": "",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+      "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+      "category": "宏观经济",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "5bed2c24555f5ab7",
+      "title": "How three years of Israel’s genocidal war have changed Gaza",
+      "published_at": "2026-10-07T05:41:54+00:00",
+      "code": "IL",
+      "event_country": "以色列",
+      "sources": [
+        {
+          "id": "5bed2c24555f5ab7",
+          "title": "How three years of Israel’s genocidal war have changed Gaza",
+          "published_at": "2026-10-07T05:41:54+00:00",
+          "code": "IL",
+          "event_country": "以色列",
+          "sources": [
+            {
+              "title": "How three years of Israel’s genocidal war have changed Gaza",
+              "link": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+              "published_at": "2026-10-07T05:41:54+00:00",
+              "source": "半岛电视台",
+              "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+              "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "IL",
+              "event_country": "以色列",
+              "event_country_en": "Israel"
+            }
+          ],
+          "source": "半岛电视台",
+          "url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+          "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+          "source_count": 1,
+          "source_names": [
+            "半岛电视台"
+          ],
+          "source_authority": 90,
+          "summary": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+          "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+          "category": "国防安全",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "半岛电视台",
+      "url": "",
+      "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+      "source_count": 1,
+      "source_names": [
+        "半岛电视台"
+      ],
+      "source_authority": 90,
+      "summary": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+      "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "71990220f63f6ee4",
+      "title": "MS Capital CEO on China Markets, Investment Strategy",
+      "published_at": "2026-10-07T05:41:53+00:00",
+      "code": "CN",
+      "event_country": "中国",
+      "sources": [
+        {
+          "id": "71990220f63f6ee4",
+          "title": "MS Capital CEO on China Markets, Investment Strategy",
+          "published_at": "2026-10-07T05:41:53+00:00",
+          "code": "CN",
+          "event_country": "中国",
+          "sources": [
+            {
+              "title": "MS Capital CEO on China Markets, Investment Strategy",
+              "link": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+              "published_at": "2026-10-07T05:41:53+00:00",
+              "source": "彭博社",
+              "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+              "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "CN",
+              "event_country": "中国",
+              "event_country_en": "China"
+            }
+          ],
+          "source": "彭博社",
+          "url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+          "source_count": 1,
+          "source_names": [
+            "彭博社"
+          ],
+          "source_authority": 96,
+          "summary": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+          "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+          "category": "金融",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "彭博社",
+      "url": "",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+      "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+      "category": "金融",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
       "id": "d45b52c4e921e676",
       "title": "Flydubai attack investigation widens as alleged hijacker’s training in New Zealand scrutinised",
       "published_at": "2026-10-07T05:25:10+00:00",
@@ -7940,321 +8010,6 @@
       "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "a516552deecc8953",
-      "title": "‘All I want to do is cry’: trauma of 7 October survivors three years after the attacks",
-      "published_at": "2026-10-06T20:00:23+00:00",
-      "code": "IL",
-      "event_country": "以色列",
-      "sources": [
-        {
-          "id": "a516552deecc8953",
-          "title": "‘All I want to do is cry’: trauma of 7 October survivors three years after the attacks",
-          "published_at": "2026-10-06T20:00:23+00:00",
-          "code": "IL",
-          "event_country": "以色列",
-          "sources": [
-            {
-              "title": "‘All I want to do is cry’: trauma of 7 October survivors three years after the attacks",
-              "link": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
-              "published_at": "2026-10-06T20:00:23+00:00",
-              "source": "卫报",
-              "source_url": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
-              "description": "Israeli communities shattered by Hamas massacres are torn between rebuilding their lives and remembering lost friends and relatives Keith Siegel spent many of his long hours in Hamas captivity in Gaza etching everything that happened after 7 October 2023 into his memory. For 484 days, he recited to himself every place he was held, the dates he was moved and every attack or humiliation he endured or witnessed. He aimed to store intelligence that could help Israeli forces free other hostages if he was released, to keep track of time as the days slid by and be able to tell his family what happened to him. Now his body is free, but he cannot loosen those memories. Continue reading...",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "IL",
-              "event_country": "以色列",
-              "event_country_en": "Israel"
-            }
-          ],
-          "source": "卫报",
-          "url": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
-          "source_url": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
-          "source_count": 1,
-          "source_names": [
-            "卫报"
-          ],
-          "source_authority": 92,
-          "summary": "Israeli communities shattered by Hamas massacres are torn between rebuilding their lives and remembering lost friends and relatives Keith Siegel spent many of his long hours in Hamas captivity in Gaza etching everything that happened after 7 October 2023 into his memory. For 484 days, he recited to himself every place he was held, the dates he was moved and every attack or humiliation he endured or witnessed. He aimed to store intelligence that could help Israeli forces free other hostages if he",
-          "description": "Israeli communities shattered by Hamas massacres are torn between rebuilding their lives and remembering lost friends and relatives Keith Siegel spent many of his long hours in Hamas captivity in Gaza etching everything that happened after 7 October 2023 into his memory. For 484 days, he recited to himself every place he was held, the dates he was moved and every attack or humiliation he endured or witnessed. He aimed to store intelligence that could help Israeli forces free other hostages if he",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "卫报",
-      "url": "",
-      "source_url": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
-      "source_count": 1,
-      "source_names": [
-        "卫报"
-      ],
-      "source_authority": 92,
-      "summary": "Israeli communities shattered by Hamas massacres are torn between rebuilding their lives and remembering lost friends and relatives Keith Siegel spent many of his long hours in Hamas captivity in Gaza etching everything that happened after 7 October 2023 into his memory. For 484 days, he recited to himself every place he was held, the dates he was moved and every attack or humiliation he endured or witnessed. He aimed to store intelligence that could help Israeli forces free other hostages if he",
-      "description": "Israeli communities shattered by Hamas massacres are torn between rebuilding their lives and remembering lost friends and relatives Keith Siegel spent many of his long hours in Hamas captivity in Gaza etching everything that happened after 7 October 2023 into his memory. For 484 days, he recited to himself every place he was held, the dates he was moved and every attack or humiliation he endured or witnessed. He aimed to store intelligence that could help Israeli forces free other hostages if he",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "f1a5aad0420d8715",
-      "title": "Seventh person arrested in suspected plot to attack U.S. planes in Britain",
-      "published_at": "2026-10-06T18:48:47+00:00",
-      "code": "IR",
-      "event_country": "伊朗",
-      "sources": [
-        {
-          "id": "f1a5aad0420d8715",
-          "title": "Seventh person arrested in suspected plot to attack U.S. planes in Britain",
-          "published_at": "2026-10-06T18:48:47+00:00",
-          "code": "IR",
-          "event_country": "伊朗",
-          "sources": [
-            {
-              "title": "Seventh person arrested in suspected plot to attack U.S. planes in Britain",
-              "link": "https://www.washingtonpost.com/world/2026/10/06/seventh-suspect-arrested-potential-drone-attack-against-us-planes/",
-              "published_at": "2026-10-06T18:48:47+00:00",
-              "source": "华盛顿邮报",
-              "source_url": "https://www.washingtonpost.com/world/2026/10/06/seventh-suspect-arrested-potential-drone-attack-against-us-planes/",
-              "description": "A 22-year-old British national was detained in connection with the allegedly Iranian-backed plot.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "IR",
-              "event_country": "伊朗",
-              "event_country_en": "Iran"
-            }
-          ],
-          "source": "华盛顿邮报",
-          "url": "https://www.washingtonpost.com/world/2026/10/06/seventh-suspect-arrested-potential-drone-attack-against-us-planes/",
-          "source_url": "https://www.washingtonpost.com/world/2026/10/06/seventh-suspect-arrested-potential-drone-attack-against-us-planes/",
-          "source_count": 1,
-          "source_names": [
-            "华盛顿邮报"
-          ],
-          "source_authority": 94,
-          "summary": "A 22-year-old British national was detained in connection with the allegedly Iranian-backed plot.",
-          "description": "A 22-year-old British national was detained in connection with the allegedly Iranian-backed plot.",
-          "category": "科技",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "华盛顿邮报",
-      "url": "",
-      "source_url": "https://www.washingtonpost.com/world/2026/10/06/seventh-suspect-arrested-potential-drone-attack-against-us-planes/",
-      "source_count": 1,
-      "source_names": [
-        "华盛顿邮报"
-      ],
-      "source_authority": 94,
-      "summary": "A 22-year-old British national was detained in connection with the allegedly Iranian-backed plot.",
-      "description": "A 22-year-old British national was detained in connection with the allegedly Iranian-backed plot.",
-      "category": "科技",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "09723f2f53139cab",
-      "title": "Why Saudi Arabia’s Last War in Yemen Turned Into a Quagmire",
-      "published_at": "2026-10-06T18:23:51+00:00",
-      "code": "SA",
-      "event_country": "沙特阿拉伯",
-      "sources": [
-        {
-          "id": "09723f2f53139cab",
-          "title": "Why Saudi Arabia’s Last War in Yemen Turned Into a Quagmire",
-          "published_at": "2026-10-06T18:23:51+00:00",
-          "code": "SA",
-          "event_country": "沙特阿拉伯",
-          "sources": [
-            {
-              "title": "Why Saudi Arabia’s Last War in Yemen Turned Into a Quagmire",
-              "link": "https://www.nytimes.com/2026/10/05/world/middleeast/saudi-arabia-war-yemen-houthis-quagmire.html",
-              "published_at": "2026-10-06T18:23:51+00:00",
-              "source": "纽约时报",
-              "source_url": "https://www.nytimes.com/2026/10/05/world/middleeast/saudi-arabia-war-yemen-houthis-quagmire.html",
-              "description": "A Saudi-led coalition launched a military campaign against the Iran-backed Houthi militia in the country, reviving memories of its previous effort.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "SA",
-              "event_country": "沙特阿拉伯",
-              "event_country_en": "Saudi Arabia"
-            }
-          ],
-          "source": "纽约时报",
-          "url": "https://www.nytimes.com/2026/10/05/world/middleeast/saudi-arabia-war-yemen-houthis-quagmire.html",
-          "source_url": "https://www.nytimes.com/2026/10/05/world/middleeast/saudi-arabia-war-yemen-houthis-quagmire.html",
-          "source_count": 1,
-          "source_names": [
-            "纽约时报"
-          ],
-          "source_authority": 96,
-          "summary": "A Saudi-led coalition launched a military campaign against the Iran-backed Houthi militia in the country, reviving memories of its previous effort.",
-          "description": "A Saudi-led coalition launched a military campaign against the Iran-backed Houthi militia in the country, reviving memories of its previous effort.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "纽约时报",
-      "url": "",
-      "source_url": "https://www.nytimes.com/2026/10/05/world/middleeast/saudi-arabia-war-yemen-houthis-quagmire.html",
-      "source_count": 1,
-      "source_names": [
-        "纽约时报"
-      ],
-      "source_authority": 96,
-      "summary": "A Saudi-led coalition launched a military campaign against the Iran-backed Houthi militia in the country, reviving memories of its previous effort.",
-      "description": "A Saudi-led coalition launched a military campaign against the Iran-backed Houthi militia in the country, reviving memories of its previous effort.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "429aeaa49b12d0e2",
-      "title": "France Student Protests Escalate Amid Fiscal Crisis and an Election",
-      "published_at": "2026-10-06T17:37:07+00:00",
-      "code": "FR",
-      "event_country": "法国",
-      "sources": [
-        {
-          "id": "429aeaa49b12d0e2",
-          "title": "France Student Protests Escalate Amid Fiscal Crisis and an Election",
-          "published_at": "2026-10-06T17:37:07+00:00",
-          "code": "FR",
-          "event_country": "法国",
-          "sources": [
-            {
-              "title": "France Student Protests Escalate Amid Fiscal Crisis and an Election",
-              "link": "https://www.nytimes.com/2026/10/06/world/europe/france-protests-social-welfare-election.html",
-              "published_at": "2026-10-06T17:37:07+00:00",
-              "source": "纽约时报",
-              "source_url": "https://www.nytimes.com/2026/10/06/world/europe/france-protests-social-welfare-election.html",
-              "description": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "FR",
-              "event_country": "法国",
-              "event_country_en": "France"
-            }
-          ],
-          "source": "纽约时报",
-          "url": "https://www.nytimes.com/2026/10/06/world/europe/france-protests-social-welfare-election.html",
-          "source_url": "https://www.nytimes.com/2026/10/06/world/europe/france-protests-social-welfare-election.html",
-          "source_count": 1,
-          "source_names": [
-            "纽约时报"
-          ],
-          "source_authority": 96,
-          "summary": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-          "description": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-          "category": "政治",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "纽约时报",
-      "url": "",
-      "source_url": "https://www.nytimes.com/2026/10/06/world/europe/france-protests-social-welfare-election.html",
-      "source_count": 1,
-      "source_names": [
-        "纽约时报"
-      ],
-      "source_authority": 96,
-      "summary": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-      "description": "Chaos in schools, on the streets and in the markets is rooted in France’s struggles to fund its social welfare state, with a presidential election approaching.",
-      "category": "政治",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "fef5165a9245c716",
-      "title": "Spain Cancels Arrest Warrant for Carles Puigdemont, Catalan Separatist Leader",
-      "published_at": "2026-10-06T16:03:08+00:00",
-      "code": "ES",
-      "event_country": "西班牙",
-      "sources": [
-        {
-          "id": "fef5165a9245c716",
-          "title": "Spain Cancels Arrest Warrant for Carles Puigdemont, Catalan Separatist Leader",
-          "published_at": "2026-10-06T16:03:08+00:00",
-          "code": "ES",
-          "event_country": "西班牙",
-          "sources": [
-            {
-              "title": "Spain Cancels Arrest Warrant for Carles Puigdemont, Catalan Separatist Leader",
-              "link": "https://www.nytimes.com/2026/10/06/world/europe/spain-separatist-amnesty-catalonia-return.html",
-              "published_at": "2026-10-06T16:03:08+00:00",
-              "source": "纽约时报",
-              "source_url": "https://www.nytimes.com/2026/10/06/world/europe/spain-separatist-amnesty-catalonia-return.html",
-              "description": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "ES",
-              "event_country": "西班牙",
-              "event_country_en": "Spain"
-            }
-          ],
-          "source": "纽约时报",
-          "url": "https://www.nytimes.com/2026/10/06/world/europe/spain-separatist-amnesty-catalonia-return.html",
-          "source_url": "https://www.nytimes.com/2026/10/06/world/europe/spain-separatist-amnesty-catalonia-return.html",
-          "source_count": 1,
-          "source_names": [
-            "纽约时报"
-          ],
-          "source_authority": 96,
-          "summary": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
-          "description": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
-          "category": "科技",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "纽约时报",
-      "url": "",
-      "source_url": "https://www.nytimes.com/2026/10/06/world/europe/spain-separatist-amnesty-catalonia-return.html",
-      "source_count": 1,
-      "source_names": [
-        "纽约时报"
-      ],
-      "source_authority": 96,
-      "summary": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
-      "description": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
-      "category": "科技",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     }
   ],
   "supplement": [
@@ -8415,6 +8170,162 @@
       "title_zh": "普京旨在通过混合攻击和核威胁来结束欧洲对乌克兰的支持"
     },
     {
+      "id": "669e83b5171d7790",
+      "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+      "published_at": "2026-10-07T05:50:21+00:00",
+      "code": "DE",
+      "event_country": "德国",
+      "sources": [
+        {
+          "title": "Covenant Plans Mass Production of Cruise Missiles in Germany",
+          "link": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+          "published_at": "2026-10-07T05:50:21+00:00",
+          "source": "彭博社",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+          "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "DE",
+          "event_country": "德国",
+          "event_country_en": "Germany"
+        }
+      ],
+      "source": "彭博社",
+      "url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/covenant-to-produce-cruise-missiles-in-germany-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+      "description": "Defense startup Covenant says their new heavy-payload, long-range missile called Anthem will become key to Europe’s deterrence. The company plans to mass produce the missile at a new factory in eastern Germany, as NATO allies look for ways to refill depleted stocks of precision-strike weapons. Covenant President Abby Denburg spoke with Bloomberg’s Stephen Carroll from Berlin, on October 7, 2026. (Source: Bloomberg)",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "圣约公司计划在德国大规模生产巡航导弹"
+    },
+    {
+      "id": "b6f1ebdf7a0f9d0e",
+      "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+      "published_at": "2026-10-07T05:44:03+00:00",
+      "code": "IN",
+      "event_country": "印度",
+      "sources": [
+        {
+          "title": "India's Central Bank Hikes Repo Rate By 25 Bps",
+          "link": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+          "published_at": "2026-10-07T05:44:03+00:00",
+          "source": "彭博社",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+          "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "IN",
+          "event_country": "印度",
+          "event_country_en": "India"
+        }
+      ],
+      "source": "彭博社",
+      "url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/india-s-central-bank-hikes-repo-rate-by-25-bps-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+      "description": "RBI raised interest rates for the first time in nearly four years. Governor Sanjay Malhotra says given the current economic scenario, rate hikes are off the table in the near-term. Correct: Removes incorrect name strap at 00:50:28 (Source: Bloomberg)",
+      "category": "宏观经济",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "印度央行将回购利率上调 25 个基点"
+    },
+    {
+      "id": "5bed2c24555f5ab7",
+      "title": "How three years of Israel’s genocidal war have changed Gaza",
+      "published_at": "2026-10-07T05:41:54+00:00",
+      "code": "IL",
+      "event_country": "以色列",
+      "sources": [
+        {
+          "title": "How three years of Israel’s genocidal war have changed Gaza",
+          "link": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+          "published_at": "2026-10-07T05:41:54+00:00",
+          "source": "半岛电视台",
+          "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+          "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "IL",
+          "event_country": "以色列",
+          "event_country_en": "Israel"
+        }
+      ],
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+      "source_url": "https://www.aljazeera.com/news/2026/10/7/how-three-years-of-israels-genocidal-war-have-changed-gaza?traffic_source=rss",
+      "source_count": 1,
+      "source_names": [
+        "半岛电视台"
+      ],
+      "source_authority": 90,
+      "summary": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+      "description": "War has devastated Gaza’s economy, education, healthcare, infrastructure and public services, transforming life.",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "以色列三年的种族灭绝战争如何改变了加沙"
+    },
+    {
+      "id": "71990220f63f6ee4",
+      "title": "MS Capital CEO on China Markets, Investment Strategy",
+      "published_at": "2026-10-07T05:41:53+00:00",
+      "code": "CN",
+      "event_country": "中国",
+      "sources": [
+        {
+          "title": "MS Capital CEO on China Markets, Investment Strategy",
+          "link": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+          "published_at": "2026-10-07T05:41:53+00:00",
+          "source": "彭博社",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+          "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "CN",
+          "event_country": "中国",
+          "event_country_en": "China"
+        }
+      ],
+      "source": "彭博社",
+      "url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+      "source_url": "https://www.bloomberg.com/news/videos/2026-10-07/ms-capital-ceo-on-china-markets-investment-strategy-video",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+      "description": "Kate Zhang, CEO at hedge fund MS Capital, discusses the investment opportunities in China's equity markets and the rising demand from global investors for Chinese quants. She speaks with Yvonne Man and Avril Hong on Bloomberg: The China Show. (Source: Bloomberg)",
+      "category": "金融",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "MS Capital首席执行官谈中国市场、投资策略"
+    },
+    {
       "id": "d45b52c4e921e676",
       "title": "Flydubai attack investigation widens as alleged hijacker’s training in New Zealand scrutinised",
       "published_at": "2026-10-07T05:25:10+00:00",
@@ -8491,168 +8402,12 @@
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "title_zh": "印度储备银行近四年来首次加息"
-    },
-    {
-      "id": "e7de012c1133d81a",
-      "title": "Israelis pause to mark October 7 Hamas-attack anniversary",
-      "published_at": "2026-10-07T04:43:02+00:00",
-      "code": "IL",
-      "event_country": "以色列",
-      "sources": [
-        {
-          "title": "Israelis pause to mark October 7 Hamas-attack anniversary",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israelis-pause-to-mark-october-7-hamas-attack-anniversary?traffic_source=rss",
-          "published_at": "2026-10-07T04:43:02+00:00",
-          "source": "半岛电视台",
-          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israelis-pause-to-mark-october-7-hamas-attack-anniversary?traffic_source=rss",
-          "description": "Israelis gathered at memorials to mark the moment the Hamas-led attack began on October 7, 2023.",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "IL",
-          "event_country": "以色列",
-          "event_country_en": "Israel"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israelis-pause-to-mark-october-7-hamas-attack-anniversary?traffic_source=rss",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israelis-pause-to-mark-october-7-hamas-attack-anniversary?traffic_source=rss",
-      "source_count": 1,
-      "source_names": [
-        "半岛电视台"
-      ],
-      "source_authority": 90,
-      "summary": "Israelis gathered at memorials to mark the moment the Hamas-led attack began on October 7, 2023.",
-      "description": "Israelis gathered at memorials to mark the moment the Hamas-led attack began on October 7, 2023.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "以色列暂停庆祝 10 月 7 日哈马斯袭击周年纪念日"
-    },
-    {
-      "id": "5d11f5443115436d",
-      "title": "Naval drone hits oil tanker off Russian resort city Sochi, triggering massive blaze",
-      "published_at": "2026-10-07T04:39:01+00:00",
-      "code": "RU",
-      "event_country": "俄罗斯",
-      "sources": [
-        {
-          "title": "Naval drone hits oil tanker off Russian resort city Sochi, triggering massive blaze",
-          "link": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
-          "published_at": "2026-10-07T04:39:01+00:00",
-          "source": "卫报",
-          "source_url": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
-          "description": "Russian officials said a Liberian-flagged tanker was attacked and a crew of 23 Indian nationals rescued An oil tanker off Russia’s Black Sea coast was struck by a naval drone, triggering a huge fire and black smoke cloud that blanketed parts of the resort city of Sochi, Russia’s transport ministry has said. The transport ministry said a Liberian-flagged tanker had been attacked and that “crude oil is burning openly in the waters of the Black Sea”. Continue reading...",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "RU",
-          "event_country": "俄罗斯",
-          "event_country_en": "Russia"
-        }
-      ],
-      "source": "卫报",
-      "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
-      "source_url": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
-      "source_count": 1,
-      "source_names": [
-        "卫报"
-      ],
-      "source_authority": 92,
-      "summary": "Russian officials said a Liberian-flagged tanker was attacked and a crew of 23 Indian nationals rescued An oil tanker off Russia’s Black Sea coast was struck by a naval drone, triggering a huge fire and black smoke cloud that blanketed parts of the resort city of Sochi, Russia’s transport ministry has said. The transport ministry said a Liberian-flagged tanker had been attacked and that “crude oil is burning openly in the waters of the Black Sea”. Continue reading...",
-      "description": "Russian officials said a Liberian-flagged tanker was attacked and a crew of 23 Indian nationals rescued An oil tanker off Russia’s Black Sea coast was struck by a naval drone, triggering a huge fire and black smoke cloud that blanketed parts of the resort city of Sochi, Russia’s transport ministry has said. The transport ministry said a Liberian-flagged tanker had been attacked and that “crude oil is burning openly in the waters of the Black Sea”. Continue reading...",
-      "category": "能源",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "海军无人机在俄罗斯度假城市索契附近击中油轮，引发大火"
-    },
-    {
-      "id": "3752a68fa1fa61de",
-      "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-      "published_at": "2026-10-07T03:16:32+00:00",
-      "code": "IN",
-      "event_country": "印度",
-      "sources": [
-        {
-          "title": "Oman evacuates injured crew from attacked tanker in Strait of Hormuz",
-          "link": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-          "published_at": "2026-10-07T03:16:32+00:00",
-          "source": "半岛电视台",
-          "source_url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-          "description": "India's Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "IN",
-          "event_country": "印度",
-          "event_country_en": "India"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-      "source_url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
-      "source_count": 1,
-      "source_names": [
-        "半岛电视台"
-      ],
-      "source_authority": 90,
-      "summary": "India's Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
-      "description": "India's Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.",
-      "category": "科技",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "阿曼从霍尔木兹海峡遇袭油轮撤离受伤船员"
-    },
-    {
-      "id": "a7383530e664bd1e",
-      "title": "Bolsonaro Family Emerges Triumphant in Brazil’s Elections, Mounting a Surprising Resurrection",
-      "published_at": "2026-10-06T23:10:47+00:00",
-      "code": "BR",
-      "event_country": "巴西",
-      "sources": [
-        {
-          "title": "Bolsonaro Family Emerges Triumphant in Brazil’s Elections, Mounting a Surprising Resurrection",
-          "link": "https://www.nytimes.com/2026/10/06/world/americas/brazil-election-flavio-jair-bolsonaro.html",
-          "published_at": "2026-10-06T23:10:47+00:00",
-          "source": "纽约时报",
-          "source_url": "https://www.nytimes.com/2026/10/06/world/americas/brazil-election-flavio-jair-bolsonaro.html",
-          "description": "The Bolsonaro family emerged triumphant in Brazil’s elections, mounting a surprising political resurrection in Latin America’s largest nation.",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "BR",
-          "event_country": "巴西",
-          "event_country_en": "Brazil"
-        }
-      ],
-      "source": "纽约时报",
-      "url": "https://www.nytimes.com/2026/10/06/world/americas/brazil-election-flavio-jair-bolsonaro.html",
-      "source_url": "https://www.nytimes.com/2026/10/06/world/americas/brazil-election-flavio-jair-bolsonaro.html",
-      "source_count": 1,
-      "source_names": [
-        "纽约时报"
-      ],
-      "source_authority": 96,
-      "summary": "The Bolsonaro family emerged triumphant in Brazil’s elections, mounting a surprising political resurrection in Latin America’s largest nation.",
-      "description": "The Bolsonaro family emerged triumphant in Brazil’s elections, mounting a surprising political resurrection in Latin America’s largest nation.",
-      "category": "政治",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "博尔索纳罗家族在巴西大选中大获全胜，令人惊讶的复活"
     }
   ],
   "stats": {
     "countries": 31,
-    "events": 163,
-    "tier1_events": 113,
+    "events": 157,
+    "tier1_events": 112,
     "supplement_events": 10,
     "failed_sources": 0,
     "successful_sources": 21,
@@ -8673,7 +8428,7 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 168,
+    "translated": 163,
     "failed": 0,
     "remaining_english": 0,
     "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
