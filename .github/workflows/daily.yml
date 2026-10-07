@@ -25,40 +25,18 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Lock builder window, expand country coverage and set source priority
+      - name: Use checked-in news-source configuration
         run: |
           python - <<'PY'
           from pathlib import Path
-          p=Path('scripts/build_daily.py'); text=p.read_text(encoding='utf-8')
-          old="now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)"
-          new="now=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))); cutoff=now-dt.timedelta(hours=25)"
-          if old not in text: raise SystemExit('WINDOW PATCH FAILED')
-          text=text.replace(old,new)
-          old2='if p and p<cutoff:continue'; new2='if p and p<cutoff:continue'
-          if old2 not in text: raise SystemExit('UPPER WINDOW PATCH FAILED')
-          marker=" # English secondary"
-          additions=" ('Moscow Times','RU','https://www.themoscowtimes.com/rss/news','en'),\n ('NPR Politics','US','https://feeds.npr.org/1014/rss.xml','en'),\n ('NPR Economy','US','https://feeds.npr.org/1017/rss.xml','en'),\n ('NPR Technology','US','https://feeds.npr.org/1019/rss.xml','en'),\n ('NYT US','US','https://rss.nytimes.com/services/xml/rss/nyt/US.xml','en'),\n"
-          if "('NPR Politics','US'" not in text:
-              if marker not in text: raise SystemExit('SOURCE PATCH FAILED')
-              text=text.replace(marker, additions+marker)
-          intl_marker=" ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),"
-          intl_add=" ('纽约时报中文网','GLOBAL','https://cn.nytimes.com/rss/','cn'),\n"
-          if "('纽约时报中文网','GLOBAL'" not in text:
-              if intl_marker not in text: raise SystemExit('NYT CHINESE SOURCE PATCH FAILED')
-              text=text.replace(intl_marker, intl_marker+"\n"+intl_add)
-          countries={'IN':'India','BR':'Brazil','SA':'Saudi Arabia','KR':'South Korea','CA':'Canada','AU':'Australia','UA':'Ukraine','IT':'Italy','ID':'Indonesia','TR':'Turkey','AE':'United Arab Emirates','MX':'Mexico','IR':'Iran','CH':'Switzerland','SG':'Singapore','ZA':'South Africa','NL':'Netherlands','IL':'Israel','ES':'Spain','EG':'Egypt','NG':'Nigeria','AR':'Argentina','PL':'Poland','VN':'Vietnam','US':'United States','CN':'China','GB':'United Kingdom','FR':'France','DE':'Germany','RU':'Russia','JP':'Japan'}
-          coverage=''.join(f" ('Coverage-{name}','{code}','https://news.google.com/rss/search?q={name.replace(' ','+')}+news+when%3A2d&hl=en-US&gl=US&ceid=US:en','en'),\n" for code,name in countries.items())
-          if "('Coverage-India','IN'" not in text:
-              if marker not in text: raise SystemExit('COVERAGE INSERT FAILED')
-              text=text.replace(marker, coverage+marker)
-          old3="en_cap=max(2,int(c['max']*0.20))"; new3="en_cap=max(4,int(c['max']*0.50))"
-          if old3 not in text: raise SystemExit('EN CAP PATCH FAILED')
-          text=text.replace(old3,new3)
-          old4="zh=[s for s in srcs if s.get('language')=='cn']; best=(zh or srcs)[0]"
-          new4="local=[s for s in srcs if s.get('feed_country')==e.get('code') and s.get('source') not in {'Coverage-'+str(e.get('event_country',''))}]; western=[s for s in srcs if s.get('source') in {'Reuters World','BBC World','AP World','Guardian UK','NPR','NPR Politics','NPR Economy','NPR Technology','AP US','CNN US','NYT US','BBC UK','France24','DW','TASS','TASS Politics','TASS Economy','NHK','Moscow Times'}]; intl_zh=[s for s in srcs if s.get('source') in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; other_en=[s for s in srcs if s.get('language')=='en']; mainland=[s for s in srcs if s.get('language')=='cn' and s.get('source') not in {'BBC中文','纽约时报中文网','路透中文','法广中文','联合早报'}]; best=(local or western or intl_zh or other_en or mainland or srcs)[0]"
-          if old4 not in text: raise SystemExit('SOURCE PRIORITY PATCH FAILED')
-          text=text.replace(old4,new4)
-          p.write_text(text,encoding='utf-8')
+          text=Path('scripts/build_daily.py').read_text(encoding='utf-8')
+          if 'multi-source-event-first-direct-rss' not in text:
+              raise SystemExit('SOURCE CONFIGURATION CHECK FAILED')
+          if '中文优先' in text or 'en_cap=max(2' in text:
+              raise SystemExit('LEGACY CHINESE-FIRST LOGIC DETECTED')
+          if 'Coverage-India' in text or 'Coverage-United States' in text:
+              raise SystemExit('LEGACY COUNTRY COVERAGE FEEDS DETECTED')
+          print('Checked-in V21 source configuration is active.')
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
@@ -104,21 +82,17 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
-      - name: Validate radar coverage
+      - name: Validate event quality
         run: |
           python - <<'PY2'
           import json
           from pathlib import Path
           d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
           events=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[]) if e.get('published_at')]
-          if not events: raise SystemExit('QUALITY GATE FAILED: no events')
-          cfg=json.loads(Path('config/country_tiers.json').read_text(encoding='utf-8'))
-          coverage=[]
-          for tier_name,countries in cfg['tiers'].items():
-              for c in countries:
-                  if not any(e.get('event_country')==c['name'] for e in events): coverage.append(f"{tier_name}:{c['name']}")
-          if coverage: raise SystemExit('COUNTRY COVERAGE GATE FAILED: zero-event countries: '+', '.join(coverage))
-          print('QUALITY GATE PASSED; events:',len(events))
+          if len(events)<40: raise SystemExit('QUALITY GATE FAILED: too few events')
+          if not any((e.get('source_authority') or 0)>=85 for e in events):
+              raise SystemExit('QUALITY GATE FAILED: no high-authority international source represented')
+          print('QUALITY GATE PASSED; events:',len(events),'high-authority:',sum(1 for e in events if (e.get('source_authority') or 0)>=85))
           PY2
       - name: Commit daily snapshot
         run: |
