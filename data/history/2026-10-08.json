@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T05:51:14.543193+00:00",
-  "generated_beijing": "2026-10-08 13:51",
+  "generated_at": "2026-10-08T06:36:43.917049+00:00",
+  "generated_beijing": "2026-10-08 14:36",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -57,47 +57,6 @@
             "importance_level": "国家重大",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "国防部长皮特·赫格斯如何将文化战争带入军队"
-          },
-          {
-            "id": "e3faf4aa42161b35",
-            "title": "Trump backs away from top aides who reportedly advised pro-Russia government",
-            "published_at": "2026-10-07T20:31:37+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Trump backs away from top aides who reportedly advised pro-Russia government",
-                "link": "https://www.theguardian.com/us-news/2026/oct/07/trump-advisers-republika-srpska",
-                "published_at": "2026-10-07T20:31:37+00:00",
-                "source": "卫报",
-                "source_url": "https://www.theguardian.com/us-news/2026/oct/07/trump-advisers-republika-srpska",
-                "description": "President floats firing Chris LaCivita and James Blair over any ‘conflict’ after reports of work in Republika Srpska Donald Trump distanced himself from two top advisers on Wednesday, claiming he did not have “any idea who else they work for”, after it was reported they spent the weekend assisting a pro-Russia government in the Balkans. On Truth Social, Trump wrote that Chris LaCivita , the co-manager of his 2024 presidential campaign, and James Blair, a campaign adviser and White House deputy chief of staff on leave of absence, “are outside consultants” and “do not work for me other than as outside consultants”. Continue reading...",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/us-news/2026/oct/07/trump-advisers-republika-srpska",
-            "source_url": "https://www.theguardian.com/us-news/2026/oct/07/trump-advisers-republika-srpska",
-            "source_count": 1,
-            "source_names": [
-              "卫报"
-            ],
-            "source_authority": 92,
-            "summary": "President floats firing Chris LaCivita and James Blair over any ‘conflict’ after reports of work in Republika Srpska Donald Trump distanced himself from two top advisers on Wednesday, claiming he did not have “any idea who else they work for”, after it was reported they spent the weekend assisting a pro-Russia government in the Balkans. On Truth Social, Trump wrote that Chris LaCivita , the co-manager of his 2024 presidential campaign, and James Blair, a campaign adviser and White House deputy c",
-            "description": "President floats firing Chris LaCivita and James Blair over any ‘conflict’ after reports of work in Republika Srpska Donald Trump distanced himself from two top advisers on Wednesday, claiming he did not have “any idea who else they work for”, after it was reported they spent the weekend assisting a pro-Russia government in the Balkans. On Truth Social, Trump wrote that Chris LaCivita , the co-manager of his 2024 presidential campaign, and James Blair, a campaign adviser and White House deputy c",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 68,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普放弃了据报道为亲俄政府提供建议的高级助手"
           },
           {
             "id": "5d40f5d543ba2aa7",
@@ -255,7 +214,7 @@
             "description": "Oil gained after a report that the White House asked the Pentagon to draw up strike options against Iran that could be executed before the midterm elections, and as a hurricane forced some US output to shut.",
             "category": "金融",
             "domestic_score": 38,
-            "importance": 61,
+            "importance": 60,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -264,36 +223,36 @@
             "title_zh": "10 月 8 日最新石油市场新闻和分析"
           },
           {
-            "id": "40a1ef55351860cb",
-            "title": "Rubio in Greece digs into past to tout Trump’s ‘America first’ approach",
-            "published_at": "2026-10-07T22:05:51+00:00",
+            "id": "bbc1c99fc173eaf5",
+            "title": "Trump proposes Camp David-style presidential retreat at his private Florida golf club",
+            "published_at": "2026-10-08T06:27:50+00:00",
             "code": "US",
             "event_country": "美国",
             "sources": [
               {
-                "title": "Rubio in Greece digs into past to tout Trump’s ‘America first’ approach",
-                "link": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
-                "published_at": "2026-10-07T22:05:51+00:00",
-                "source": "卫报",
-                "source_url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
-                "description": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the founders, philosophers and conquerers of antiquity to the modern American spirit – as well as his family’s own journey to the United States – as he called on Europe to “awaken from its long slumber” and reject a “future of atrophy and servitude and decline”. Continue reading...",
-                "feed_country": "GLOBAL",
+                "title": "Trump proposes Camp David-style presidential retreat at his private Florida golf club",
+                "link": "https://www.npr.org/2026/10/08/g-s1-147101/trump-presidential-retreat-golf-club",
+                "published_at": "2026-10-08T06:27:50+00:00",
+                "source": "NPR",
+                "source_url": "https://www.npr.org/2026/10/08/g-s1-147101/trump-presidential-retreat-golf-club",
+                "description": "President Trump said he wants to develop one of his Florida golf courses into a presidential retreat where his successors can spend quiet weekends, describing it as \"sort of a Camp David.\"",
+                "feed_country": "US",
                 "language": "en",
                 "code": "US",
                 "event_country": "美国",
                 "event_country_en": "United States"
               }
             ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
-            "source_url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/08/g-s1-147101/trump-presidential-retreat-golf-club",
+            "source_url": "https://www.npr.org/2026/10/08/g-s1-147101/trump-presidential-retreat-golf-club",
             "source_count": 1,
             "source_names": [
-              "卫报"
+              "NPR"
             ],
-            "source_authority": 92,
-            "summary": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the ",
-            "description": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the ",
+            "source_authority": 90,
+            "summary": "President Trump said he wants to develop one of his Florida golf courses into a presidential retreat where his successors can spend quiet weekends, describing it as \"sort of a Camp David.\"",
+            "description": "President Trump said he wants to develop one of his Florida golf courses into a presidential retreat where his successors can spend quiet weekends, describing it as \"sort of a Camp David.\"",
             "category": "政治",
             "domestic_score": 30,
             "importance": 56,
@@ -302,7 +261,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "卢比奥在希腊深入挖掘过去，宣扬特朗普的“美国优先”方针"
+            "title_zh": "特朗普提议在他的私人佛罗里达高尔夫俱乐部进行戴维营式的总统度假"
           },
           {
             "id": "47b8a4ca0a66f39e",
@@ -346,60 +305,19 @@
             "title_zh": "民主党人就纳税人资助的广告活动起诉美国总统特朗普"
           },
           {
-            "id": "3938bb2075e4dbdf",
-            "title": "Trump on why he thinks he deserves the Nobel Peace Prize",
-            "published_at": "2026-10-07T21:30:18+00:00",
+            "id": "40a1ef55351860cb",
+            "title": "Rubio in Greece digs into past to tout Trump’s ‘America first’ approach",
+            "published_at": "2026-10-07T22:05:51+00:00",
             "code": "US",
             "event_country": "美国",
             "sources": [
               {
-                "title": "Trump on why he thinks he deserves the Nobel Peace Prize",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/trump-on-why-he-thinks-he-deserves-the-nobel-peace-prize-2?traffic_source=rss",
-                "published_at": "2026-10-07T21:30:18+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/trump-on-why-he-thinks-he-deserves-the-nobel-peace-prize-2?traffic_source=rss",
-                "description": "US President Donald Trump said it would be a ‘great discredit’ to the Nobel Peace Prize committee.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/trump-on-why-he-thinks-he-deserves-the-nobel-peace-prize-2?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/trump-on-why-he-thinks-he-deserves-the-nobel-peace-prize-2?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "US President Donald Trump said it would be a ‘great discredit’ to the Nobel Peace Prize committee.",
-            "description": "US President Donald Trump said it would be a ‘great discredit’ to the Nobel Peace Prize committee.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 54,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普谈为什么他认为自己应该获得诺贝尔和平奖"
-          },
-          {
-            "id": "7db248c7f09e1313",
-            "title": "Trump repeats his false claim that Iran could destroy Los Angeles or San Diego – as it happened",
-            "published_at": "2026-10-08T02:31:06+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Trump repeats his false claim that Iran could destroy Los Angeles or San Diego – as it happened",
-                "link": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
-                "published_at": "2026-10-08T02:31:06+00:00",
+                "title": "Rubio in Greece digs into past to tout Trump’s ‘America first’ approach",
+                "link": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
+                "published_at": "2026-10-07T22:05:51+00:00",
                 "source": "卫报",
-                "source_url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
-                "description": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Times/Siena College poll. And Hinson, who currently serves as a congresswoman, has pushed back on Donald Trump’s agenda of late, as the president’s approval rating sinks to a new low . Hinson has called for an end on the war in Iran, despite consistently voting against House war powers resolutions that would curb military action, and criticizing the president’s recent pause on tariffs for foreign beef imports, which, Hinson argues, will affect the bottom line for the many cattle ranchers in Iowa. Continue reading...",
+                "source_url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
+                "description": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the founders, philosophers and conquerers of antiquity to the modern American spirit – as well as his family’s own journey to the United States – as he called on Europe to “awaken from its long slumber” and reject a “future of atrophy and servitude and decline”. Continue reading...",
                 "feed_country": "GLOBAL",
                 "language": "en",
                 "code": "US",
@@ -408,24 +326,24 @@
               }
             ],
             "source": "卫报",
-            "url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
-            "source_url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
+            "url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
+            "source_url": "https://www.theguardian.com/us-news/2026/oct/07/rubio-greece-trump-america-first-speech",
             "source_count": 1,
             "source_names": [
               "卫报"
             ],
             "source_authority": 92,
-            "summary": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Time",
-            "description": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Time",
-            "category": "科技",
+            "summary": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the ",
+            "description": "In the shadow of the Parthenon, the secretary of state gave a selective reading of history as he urged Europe to ‘awaken from its slumber’ The US secretary of state, Marco Rubio, delivered a classically inspired apologia for Donald Trump’s “America first” foreign policy on Wednesday, giving a sweeping speech to the backdrop of the Parthenon in Athens that appeared tailor-made for campaign ads if he runs for president in 2028. In the speech, the top US diplomat drew historical parallels from the ",
+            "category": "政治",
             "domestic_score": 30,
-            "importance": 53,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "importance": 55,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普重申了他的错误说法，即伊朗可以摧毁洛杉矶或圣地亚哥——事实确实如此"
+            "title_zh": "卢比奥在希腊深入挖掘过去，宣扬特朗普的“美国优先”方针"
           },
           {
             "id": "4a69e3bef4abd26d",
@@ -508,6 +426,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "特朗普希望在他的佛罗里达高尔夫俱乐部建立一个新的戴维营式度假胜地"
+          },
+          {
+            "id": "7db248c7f09e1313",
+            "title": "Trump repeats his false claim that Iran could destroy Los Angeles or San Diego – as it happened",
+            "published_at": "2026-10-08T02:31:06+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Trump repeats his false claim that Iran could destroy Los Angeles or San Diego – as it happened",
+                "link": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
+                "published_at": "2026-10-08T02:31:06+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
+                "description": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Times/Siena College poll. And Hinson, who currently serves as a congresswoman, has pushed back on Donald Trump’s agenda of late, as the president’s approval rating sinks to a new low . Hinson has called for an end on the war in Iran, despite consistently voting against House war powers resolutions that would curb military action, and criticizing the president’s recent pause on tariffs for foreign beef imports, which, Hinson argues, will affect the bottom line for the many cattle ranchers in Iowa. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
+            "source_url": "https://www.theguardian.com/us-news/live/2026/oct/07/donald-trump-gavin-newsom-california-la-san-diego-iran-republicans-democrats-us-politics-latest-news-updates",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Time",
+            "description": "This live blog is now closed. Sign up for the Breaking News US email Tonight, we’ll have another set of midterm debates. In Iowa, we’ll see the Republican nominee for US Senate, Ashley Hinson , face off against Democrat Josh Turek , a state representative and Paralympian at 8pm ET. The race has become one of the most competitive of this cycle, despite the fact a Democrat hasn’t won a Senate election in the Hawkeye state since 2008. Turek, however, trails by just a point in a recent New York Time",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "特朗普重申了他的错误说法，即伊朗可以摧毁洛杉矶或圣地亚哥——事实确实如此"
           },
           {
             "id": "88faa8ad658f34fc",
@@ -674,6 +633,47 @@
             "title_zh": "法官命令保留克里斯塔·派克处决证据"
           },
           {
+            "id": "c6737969b4727256",
+            "title": "Maricarmen, the 87-year-old woman whose eviction shook Spain, has died",
+            "published_at": "2026-10-08T05:56:02+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Maricarmen, the 87-year-old woman whose eviction shook Spain, has died",
+                "link": "https://www.npr.org/2026/10/08/nx-s1-5994868/maricarmen-eviction-spain-dies",
+                "published_at": "2026-10-08T05:56:02+00:00",
+                "source": "NPR",
+                "source_url": "https://www.npr.org/2026/10/08/nx-s1-5994868/maricarmen-eviction-spain-dies",
+                "description": "María del Carmen Abascal, the 87-year-old woman whose eviction from her Madrid home sparked nationwide protests across Spain and unleashed a political crisis, died on Wednesday while hospitalized.",
+                "feed_country": "US",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/08/nx-s1-5994868/maricarmen-eviction-spain-dies",
+            "source_url": "https://www.npr.org/2026/10/08/nx-s1-5994868/maricarmen-eviction-spain-dies",
+            "source_count": 1,
+            "source_names": [
+              "NPR"
+            ],
+            "source_authority": 90,
+            "summary": "María del Carmen Abascal, the 87-year-old woman whose eviction from her Madrid home sparked nationwide protests across Spain and unleashed a political crisis, died on Wednesday while hospitalized.",
+            "description": "María del Carmen Abascal, the 87-year-old woman whose eviction from her Madrid home sparked nationwide protests across Spain and unleashed a political crisis, died on Wednesday while hospitalized.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "震惊西班牙的 87 岁妇女马里卡门去世"
+          },
+          {
             "id": "b05337decb1cf806",
             "title": "Isaias strengthens into the first hurricane of the Atlantic season",
             "published_at": "2026-10-08T05:22:15+00:00",
@@ -747,7 +747,7 @@
             "description": "The World Health Organization says it wants more information on what caused the death of an employee at a Russian plague research lab. Russia says the woman died of pneumonia of unknown origin.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 47,
+            "importance": 46,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -889,6 +889,86 @@
             "title_zh": "卫星图像显示攻击机袭击中国在老挝的军事设施"
           },
           {
+            "id": "021c2abdcf3a37ad",
+            "title": "国庆假期中国高速公路新能源汽车日均充电量同比增逾51%",
+            "published_at": "2026-10-08T06:24:37+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "国庆假期中国高速公路新能源汽车日均充电量同比增逾51%",
+                "link": "https://www.chinanews.com.cn/cj/2026/10-08/10709071.shtml",
+                "published_at": "2026-10-08T06:24:37+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709071.shtml",
+                "description": "中新社北京10月8日电 (记者 王梦瑶)据中国国家能源局8日消息，通过对纳入国家充电设施监测服务平台的6.27万个高速公路充电设施(枪)的统计分析，自10月1日0时至10月7日24时，中国高速公路新能源汽车充电次数共计671.1万次，充电量达1.63亿千瓦时，日均充电量2325.66万千瓦时，日均充电量同比增长51.42%。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/cj/2026/10-08/10709071.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709071.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "中新社北京10月8日电 (记者 王梦瑶)据中国国家能源局8日消息，通过对纳入国家充电设施监测服务平台的6.27万个高速公路充电设施(枪)的统计分析，自10月1日0时至10月7日24时，中国高速公路新能源汽车充电次数共计671.1万次，充电量达1.63亿千瓦时，日均充电量2325.66万千瓦时，日均充电量同比增长51.42%。",
+            "description": "中新社北京10月8日电 (记者 王梦瑶)据中国国家能源局8日消息，通过对纳入国家充电设施监测服务平台的6.27万个高速公路充电设施(枪)的统计分析，自10月1日0时至10月7日24时，中国高速公路新能源汽车充电次数共计671.1万次，充电量达1.63亿千瓦时，日均充电量2325.66万千瓦时，日均充电量同比增长51.42%。",
+            "category": "能源",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "d9594eee76eec74a",
+            "title": "云南的神秘山洞，藏有人民军队夜视装备的源头 | 企步新长征",
+            "published_at": "2026-10-08T06:24:11+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "云南的神秘山洞，藏有人民军队夜视装备的源头 | 企步新长征",
+                "link": "https://www.chinanews.com.cn/gn/2026/10-08/10709077.shtml",
+                "published_at": "2026-10-08T06:24:11+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/gn/2026/10-08/10709077.shtml",
+                "description": "2026年是中国工农红军长征胜利90周年、",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/gn/2026/10-08/10709077.shtml",
+            "source_url": "https://www.chinanews.com.cn/gn/2026/10-08/10709077.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "2026年是中国工农红军长征胜利90周年、",
+            "description": "2026年是中国工农红军长征胜利90周年、",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "d9aacfba373431f7",
             "title": "How China’s 25 Trillion-Yuan Infrastructure Plan Could Offset Weaknesses",
             "published_at": "2026-10-08T03:33:12+00:00",
@@ -1012,60 +1092,19 @@
             "title_zh": "美国禁止一名斐济男子因与中国有关的腐败行为"
           },
           {
-            "id": "4ad3927d628e0540",
-            "title": "China races to build AI data centres across energy-rich hinterland",
-            "published_at": "2026-10-08T00:15:04+00:00",
+            "id": "c77c941e4ad28ed3",
+            "title": "厄尔尼诺致菲律宾逾42.8万人受影响 农业损失超55亿比索",
+            "published_at": "2026-10-08T06:28:43+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "China races to build AI data centres across energy-rich hinterland",
-                "link": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
-                "published_at": "2026-10-08T00:15:04+00:00",
-                "source": "金融时报",
-                "source_url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
-                "description": "In the first report of a three-part series, how Inner Mongolia became the engine room for the nation’s vast AI ambition",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "In the first report of a three-part series, how Inner Mongolia became the engine room for the nation’s vast AI ambition",
-            "description": "In the first report of a three-part series, how Inner Mongolia became the engine room for the nation’s vast AI ambition",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国竞相在能源丰富的腹地建设人工智能数据中心"
-          },
-          {
-            "id": "f78478366de1bda7",
-            "title": "重要能源通道大秦铁路开启集中修施工",
-            "published_at": "2026-10-08T05:32:18+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "重要能源通道大秦铁路开启集中修施工",
-                "link": "https://www.chinanews.com.cn/sh/2026/10-08/10709026.shtml",
-                "published_at": "2026-10-08T05:32:18+00:00",
+                "title": "厄尔尼诺致菲律宾逾42.8万人受影响 农业损失超55亿比索",
+                "link": "https://www.chinanews.com.cn/gj/2026/10-08/10709040.shtml",
+                "published_at": "2026-10-08T06:28:43+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709026.shtml",
-                "description": "中新网太原10月8日电 (范丽芳 王楷文)8日，记者从国铁太原局获悉，10月7日9时起，“中国重载第一路”大秦铁路开始为期20天的秋季集中修施工，恢复迎峰度夏运输后的线路设施设备状态，为即将到来的冬季电煤保供运输夯实线路基础。",
+                "source_url": "https://www.chinanews.com.cn/gj/2026/10-08/10709040.shtml",
+                "description": "中新网马尼拉10月8日电 菲律宾国家减灾委员会7日发布报告称，厄尔尼诺现象已影响全国42.8万余人，106个市镇宣布进入灾难状态，农业损失达55.8亿比索(约合人民币6亿元)。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1074,55 +1113,15 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/sh/2026/10-08/10709026.shtml",
-            "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709026.shtml",
+            "url": "https://www.chinanews.com.cn/gj/2026/10-08/10709040.shtml",
+            "source_url": "https://www.chinanews.com.cn/gj/2026/10-08/10709040.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新网太原10月8日电 (范丽芳 王楷文)8日，记者从国铁太原局获悉，10月7日9时起，“中国重载第一路”大秦铁路开始为期20天的秋季集中修施工，恢复迎峰度夏运输后的线路设施设备状态，为即将到来的冬季电煤保供运输夯实线路基础。",
-            "description": "中新网太原10月8日电 (范丽芳 王楷文)8日，记者从国铁太原局获悉，10月7日9时起，“中国重载第一路”大秦铁路开始为期20天的秋季集中修施工，恢复迎峰度夏运输后的线路设施设备状态，为即将到来的冬季电煤保供运输夯实线路基础。",
-            "category": "能源",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "1faaac1a8c544300",
-            "title": "全球首个人工冰雪景观专业国际标准化技术组织落地中国",
-            "published_at": "2026-10-08T05:27:08+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "全球首个人工冰雪景观专业国际标准化技术组织落地中国",
-                "link": "https://www.chinanews.com.cn/sh/2026/10-08/10709018.shtml",
-                "published_at": "2026-10-08T05:27:08+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709018.shtml",
-                "description": "中新社哈尔滨10月8日电 (记者 王琳)哈尔滨冰雪大世界股份有限公司8日发布消息，根据中国国家标准化管理委员会公告，该司正式获批承担国际标准化组织人工冰雪景观技术委员会(ISO/TC358)秘书处及国内技术对口单位。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/sh/2026/10-08/10709018.shtml",
-            "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709018.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新社哈尔滨10月8日电 (记者 王琳)哈尔滨冰雪大世界股份有限公司8日发布消息，根据中国国家标准化管理委员会公告，该司正式获批承担国际标准化组织人工冰雪景观技术委员会(ISO/TC358)秘书处及国内技术对口单位。",
-            "description": "中新社哈尔滨10月8日电 (记者 王琳)哈尔滨冰雪大世界股份有限公司8日发布消息，根据中国国家标准化管理委员会公告，该司正式获批承担国际标准化组织人工冰雪景观技术委员会(ISO/TC358)秘书处及国内技术对口单位。",
+            "summary": "中新网马尼拉10月8日电 菲律宾国家减灾委员会7日发布报告称，厄尔尼诺现象已影响全国42.8万余人，106个市镇宣布进入灾难状态，农业损失达55.8亿比索(约合人民币6亿元)。",
+            "description": "中新网马尼拉10月8日电 菲律宾国家减灾委员会7日发布报告称，厄尔尼诺现象已影响全国42.8万余人，106个市镇宣布进入灾难状态，农业损失达55.8亿比索(约合人民币6亿元)。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 50,
@@ -1133,19 +1132,19 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "d2dce9bffe00eb5b",
-            "title": "中国牵头制定的大型藻类固碳量测算国际标准发布",
-            "published_at": "2026-10-08T04:51:00+00:00",
+            "id": "4dbff05318809e88",
+            "title": "（经济观察）中国民企破局“无人物流”新赛道",
+            "published_at": "2026-10-08T06:28:01+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "中国牵头制定的大型藻类固碳量测算国际标准发布",
-                "link": "https://www.chinanews.com.cn/cj/2026/10-08/10709008.shtml",
-                "published_at": "2026-10-08T04:51:00+00:00",
+                "title": "（经济观察）中国民企破局“无人物流”新赛道",
+                "link": "https://www.chinanews.com.cn/cj/2026/10-08/10709076.shtml",
+                "published_at": "2026-10-08T06:28:01+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709008.shtml",
-                "description": "中新社北京10月8日电 (记者 刘亮)中国国家市场监管总局8日公布，由中国牵头制定的《养殖大型藻类固碳量 采样与分析方法》国际标准近日正式发布。该标准由中国联合挪威、意大利、印度、韩国、冰岛等国共同研制。",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709076.shtml",
+                "description": "中新社北京10月8日电 (记者 王梦瑶)路上无人快递车日益常见，酒店送餐机器人渐成标配......这些末端配送领域变化的背后，是整个中国物流产业链的无人化改造与升级。从发现需求到响应需求，民营企业发挥了不可小觑的作用。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1154,59 +1153,19 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/cj/2026/10-08/10709008.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709008.shtml",
+            "url": "https://www.chinanews.com.cn/cj/2026/10-08/10709076.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/10-08/10709076.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新社北京10月8日电 (记者 刘亮)中国国家市场监管总局8日公布，由中国牵头制定的《养殖大型藻类固碳量 采样与分析方法》国际标准近日正式发布。该标准由中国联合挪威、意大利、印度、韩国、冰岛等国共同研制。",
-            "description": "中新社北京10月8日电 (记者 刘亮)中国国家市场监管总局8日公布，由中国牵头制定的《养殖大型藻类固碳量 采样与分析方法》国际标准近日正式发布。该标准由中国联合挪威、意大利、印度、韩国、冰岛等国共同研制。",
-            "category": "政治",
+            "summary": "中新社北京10月8日电 (记者 王梦瑶)路上无人快递车日益常见，酒店送餐机器人渐成标配......这些末端配送领域变化的背后，是整个中国物流产业链的无人化改造与升级。从发现需求到响应需求，民营企业发挥了不可小觑的作用。",
+            "description": "中新社北京10月8日电 (记者 王梦瑶)路上无人快递车日益常见，酒店送餐机器人渐成标配......这些末端配送领域变化的背后，是整个中国物流产业链的无人化改造与升级。从发现需求到响应需求，民营企业发挥了不可小觑的作用。",
+            "category": "宏观经济",
             "domestic_score": 30,
             "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "dd0dc8923e3f8049",
-            "title": "中国女子高尔夫球公开赛将开赛 108位国际球员参赛",
-            "published_at": "2026-10-08T05:36:35+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "title": "中国女子高尔夫球公开赛将开赛 108位国际球员参赛",
-                "link": "https://www.chinanews.com.cn/ty/2026/10-08/10709030.shtml",
-                "published_at": "2026-10-08T05:36:35+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/ty/2026/10-08/10709030.shtml",
-                "description": "中新网上海10月8日电 (记者 缪璐)中国女子高尔夫球公开赛(以下简称“中国女子公开赛”)启动发布会7日举行。据悉，10月9日至11日，中国女子公开赛将首次来到上海崇明，在PGA安瀛高尔夫俱乐部长江林克斯球场展开角逐。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "CN",
-                "event_country": "中国",
-                "event_country_en": "China"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/ty/2026/10-08/10709030.shtml",
-            "source_url": "https://www.chinanews.com.cn/ty/2026/10-08/10709030.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新网上海10月8日电 (记者 缪璐)中国女子高尔夫球公开赛(以下简称“中国女子公开赛”)启动发布会7日举行。据悉，10月9日至11日，中国女子公开赛将首次来到上海崇明，在PGA安瀛高尔夫俱乐部长江林克斯球场展开角逐。",
-            "description": "中新网上海10月8日电 (记者 缪璐)中国女子高尔夫球公开赛(以下简称“中国女子公开赛”)启动发布会7日举行。据悉，10月9日至11日，中国女子公开赛将首次来到上海崇明，在PGA安瀛高尔夫俱乐部长江林克斯球场展开角逐。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 49,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -1254,19 +1213,19 @@
             "title_zh": "压力不断升级中欧贸易谈判在北京开始"
           },
           {
-            "id": "46d6cc89624fa989",
-            "title": "中国男足世界排名下降至第96名",
-            "published_at": "2026-10-08T05:28:02+00:00",
+            "id": "d61a83bb41e757fa",
+            "title": "山东国庆黄金周揽客逾6000万人次 旅游收入达576.9亿元",
+            "published_at": "2026-10-08T06:24:39+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "中国男足世界排名下降至第96名",
-                "link": "https://www.chinanews.com.cn/ty/2026/10-08/10709019.shtml",
-                "published_at": "2026-10-08T05:28:02+00:00",
+                "title": "山东国庆黄金周揽客逾6000万人次 旅游收入达576.9亿元",
+                "link": "https://www.chinanews.com.cn/sh/2026/10-08/10709072.shtml",
+                "published_at": "2026-10-08T06:24:39+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/ty/2026/10-08/10709019.shtml",
-                "description": "中新社北京10月8日电 根据国际足联(FIFA)当地时间7日公布的最新一期男足世界排名，中国队目前排名第96位，相较上一期下降5位，创下近十年来的最低世界排名。",
+                "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709072.shtml",
+                "description": "中新网济南10月8日电 (记者 赵晓)据旅游调查和客流与消费大数据测算，2026年国庆七天长假，山东共接待游客6002.1万人次，旅游收入达576.9亿元(人民币，下同)，游客接待量、旅游收入日均分别较上年国庆假期(8天)增长12.2%和8.1%。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1275,15 +1234,15 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/ty/2026/10-08/10709019.shtml",
-            "source_url": "https://www.chinanews.com.cn/ty/2026/10-08/10709019.shtml",
+            "url": "https://www.chinanews.com.cn/sh/2026/10-08/10709072.shtml",
+            "source_url": "https://www.chinanews.com.cn/sh/2026/10-08/10709072.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新社北京10月8日电 根据国际足联(FIFA)当地时间7日公布的最新一期男足世界排名，中国队目前排名第96位，相较上一期下降5位，创下近十年来的最低世界排名。",
-            "description": "中新社北京10月8日电 根据国际足联(FIFA)当地时间7日公布的最新一期男足世界排名，中国队目前排名第96位，相较上一期下降5位，创下近十年来的最低世界排名。",
+            "summary": "中新网济南10月8日电 (记者 赵晓)据旅游调查和客流与消费大数据测算，2026年国庆七天长假，山东共接待游客6002.1万人次，旅游收入达576.9亿元(人民币，下同)，游客接待量、旅游收入日均分别较上年国庆假期(8天)增长12.2%和8.1%。",
+            "description": "中新网济南10月8日电 (记者 赵晓)据旅游调查和客流与消费大数据测算，2026年国庆七天长假，山东共接待游客6002.1万人次，旅游收入达576.9亿元(人民币，下同)，游客接待量、旅游收入日均分别较上年国庆假期(8天)增长12.2%和8.1%。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 48,
@@ -1294,19 +1253,19 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "ddb701864dc63922",
-            "title": "国铁集团工电部原主任曾宪海接受审查调查",
-            "published_at": "2026-10-08T05:13:07+00:00",
+            "id": "69863f2758871fed",
+            "title": "聚集罕见病群体 《中国医生4：罕见人生》将开播",
+            "published_at": "2026-10-08T06:21:25+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "国铁集团工电部原主任曾宪海接受审查调查",
-                "link": "https://www.chinanews.com.cn/gn/2026/10-08/10709011.shtml",
-                "published_at": "2026-10-08T05:13:07+00:00",
+                "title": "聚集罕见病群体 《中国医生4：罕见人生》将开播",
+                "link": "https://www.chinanews.com.cn/cul/2026/10-08/10709070.shtml",
+                "published_at": "2026-10-08T06:21:25+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/gn/2026/10-08/10709011.shtml",
-                "description": "中新网10月8日电 据中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组、河北省纪委监委消息：中国国家铁路集团有限公司工电部原主任曾宪海涉嫌严重违纪违法，目前正接受中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组纪律审查和河北省监察委员会监察调查。",
+                "source_url": "https://www.chinanews.com.cn/cul/2026/10-08/10709070.shtml",
+                "description": "中新网北京10月8日电 (记者 尹倩芸)纪录片《中国医生》系列新作《中国医生4：罕见人生》将于10月8日起每周四晚播出，全片共五集，每周更新一集。这是《中国医生》团队继急诊题材之后，将镜头转向罕见病群体的又一纪实作品。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1315,15 +1274,15 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/gn/2026/10-08/10709011.shtml",
-            "source_url": "https://www.chinanews.com.cn/gn/2026/10-08/10709011.shtml",
+            "url": "https://www.chinanews.com.cn/cul/2026/10-08/10709070.shtml",
+            "source_url": "https://www.chinanews.com.cn/cul/2026/10-08/10709070.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新网10月8日电 据中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组、河北省纪委监委消息：中国国家铁路集团有限公司工电部原主任曾宪海涉嫌严重违纪违法，目前正接受中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组纪律审查和河北省监察委员会监察调查。",
-            "description": "中新网10月8日电 据中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组、河北省纪委监委消息：中国国家铁路集团有限公司工电部原主任曾宪海涉嫌严重违纪违法，目前正接受中央纪委国家监委驻中国国家铁路集团有限公司纪检监察组纪律审查和河北省监察委员会监察调查。",
+            "summary": "中新网北京10月8日电 (记者 尹倩芸)纪录片《中国医生》系列新作《中国医生4：罕见人生》将于10月8日起每周四晚播出，全片共五集，每周更新一集。这是《中国医生》团队继急诊题材之后，将镜头转向罕见病群体的又一纪实作品。",
+            "description": "中新网北京10月8日电 (记者 尹倩芸)纪录片《中国医生》系列新作《中国医生4：罕见人生》将于10月8日起每周四晚播出，全片共五集，每周更新一集。这是《中国医生》团队继急诊题材之后，将镜头转向罕见病群体的又一纪实作品。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 48,
@@ -1332,6 +1291,47 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "34bb21e2834a803e",
+            "title": "China races to build data centres in bid for AI supremacy",
+            "published_at": "2026-10-08T00:15:04+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "China races to build data centres in bid for AI supremacy",
+                "link": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
+                "published_at": "2026-10-08T00:15:04+00:00",
+                "source": "金融时报",
+                "source_url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
+                "description": "Beijing is rolling out computing infrastructure at breakneck speed in Inner Mongolia",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/e1dd8bff-b06d-4a40-bbb7-c0a6a36f1c8e?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "Beijing is rolling out computing infrastructure at breakneck speed in Inner Mongolia",
+            "description": "Beijing is rolling out computing infrastructure at breakneck speed in Inner Mongolia",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "中国竞相建设数据中心以争夺人工智能霸主地位"
           }
         ]
       },
@@ -1344,19 +1344,101 @@
         "count": 20,
         "events": [
           {
-            "id": "de878eeac01d0625",
-            "title": "'I want justice after boy's evil knife attack on my daughter'",
+            "id": "4a03e427b74d9079",
+            "title": "UK’s military needs to focus spending on domestic defence, not overseas missions – report",
+            "published_at": "2026-10-08T06:00:11+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "UK’s military needs to focus spending on domestic defence, not overseas missions – report",
+                "link": "https://www.theguardian.com/uk-news/2026/oct/08/uk-military-domestic-defence-overseas-missions-thinktank-report",
+                "published_at": "2026-10-08T06:00:11+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/uk-news/2026/oct/08/uk-military-domestic-defence-overseas-missions-thinktank-report",
+                "description": "Exclusive: Thinktank says Britain’s drive towards global commitments is symptom of ‘outdated foreign policy’ The UK’s military is too focused on global commitments at the expense of domestic defence, meaning the government’s planned increase in defence spending is likely to result in even greater waste, a thinktank report has warned. According to an analysis by researchers at the Transition Security Project, Britain has the most overseas-oriented military among European nations, with almost a quarter of the defence budget spent on commitments across five continents. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/uk-news/2026/oct/08/uk-military-domestic-defence-overseas-missions-thinktank-report",
+            "source_url": "https://www.theguardian.com/uk-news/2026/oct/08/uk-military-domestic-defence-overseas-missions-thinktank-report",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Exclusive: Thinktank says Britain’s drive towards global commitments is symptom of ‘outdated foreign policy’ The UK’s military is too focused on global commitments at the expense of domestic defence, meaning the government’s planned increase in defence spending is likely to result in even greater waste, a thinktank report has warned. According to an analysis by researchers at the Transition Security Project, Britain has the most overseas-oriented military among European nations, with almost a qu",
+            "description": "Exclusive: Thinktank says Britain’s drive towards global commitments is symptom of ‘outdated foreign policy’ The UK’s military is too focused on global commitments at the expense of domestic defence, meaning the government’s planned increase in defence spending is likely to result in even greater waste, a thinktank report has warned. According to an analysis by researchers at the Transition Security Project, Britain has the most overseas-oriented military among European nations, with almost a qu",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 84,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "国家重大",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "英国军方需要将支出重点放在国内防务上，而不是海外任务——报告"
+          },
+          {
+            "id": "2b01b976edf9fae3",
+            "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+            "published_at": "2026-10-08T06:16:38+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+                "link": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+                "published_at": "2026-10-08T06:16:38+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+                "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+            "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+            "category": "科技",
+            "domestic_score": 38,
+            "importance": 73,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "策略师表示，人工智能泡沫可能导致标准普尔 500 指数自 2008 年以来最严重的崩盘"
+          },
+          {
+            "id": "bba06c84c05f5fbf",
+            "title": "I want justice after boy's evil knife attack on my daughter, says mother",
             "published_at": "2026-10-08T05:20:01+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "'I want justice after boy's evil knife attack on my daughter'",
+                "title": "I want justice after boy's evil knife attack on my daughter, says mother",
                 "link": "https://www.bbc.co.uk/news/articles/c5398n821rlko?at_medium=RSS&at_campaign=rss",
                 "published_at": "2026-10-08T05:20:01+00:00",
                 "source": "BBC UK",
                 "source_url": "https://www.bbc.co.uk/news/articles/c5398n821rlko?at_medium=RSS&at_campaign=rss",
-                "description": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
+                "description": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
                 "feed_country": "GB",
                 "language": "en",
                 "code": "GB",
@@ -1372,8 +1454,8 @@
               "BBC UK"
             ],
             "source_authority": 94,
-            "summary": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
-            "description": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
+            "summary": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
+            "description": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
             "category": "国防安全",
             "domestic_score": 38,
             "importance": 68,
@@ -1382,7 +1464,48 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "“男孩用邪恶的刀袭击我的女儿后，我想要正义”"
+            "title_zh": "母亲说，男孩用邪恶的刀袭击了我的女儿，我想要正义"
+          },
+          {
+            "id": "a288d947935c90d5",
+            "title": "Holborn and St Pancras by-election gets under way",
+            "published_at": "2026-10-08T06:00:40+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Holborn and St Pancras by-election gets under way",
+                "link": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T06:00:40+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+                "description": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+            "description": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 58,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "霍尔本和圣潘克拉斯补选正在进行"
           },
           {
             "id": "5442929c14ce452a",
@@ -1426,6 +1549,47 @@
             "title_zh": "伯纳姆将在柏林与德国总理举行安全会谈"
           },
           {
+            "id": "3aa5d2e70b0bc255",
+            "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+            "published_at": "2026-10-08T06:00:12+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+                "link": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+                "published_at": "2026-10-08T06:00:12+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+                "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as an MP shortly after resigning as prime minister. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+            "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+            "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 56,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "霍尔本和圣潘克拉斯补选高风险投票开始"
+          },
+          {
             "id": "e39b0d2bd6a67593",
             "title": "Drumcree dispute could lead to issues with other marches, say residents",
             "published_at": "2026-10-07T17:00:54+00:00",
@@ -1465,6 +1629,88 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "居民称，德拉姆克里争端可能会导致其他游行出现问题"
+          },
+          {
+            "id": "fd2431025749ea14",
+            "title": "Why hotter summers are making British potatoes smaller",
+            "published_at": "2026-10-08T05:45:02+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Why hotter summers are making British potatoes smaller",
+                "link": "https://www.bbc.co.uk/news/articles/cmp3033l15qwo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T05:45:02+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cmp3033l15qwo?at_medium=RSS&at_campaign=rss",
+                "description": "Farmers say yields are down because they have had to harvest smaller potatoes earlier than normal.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cmp3033l15qwo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cmp3033l15qwo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Farmers say yields are down because they have had to harvest smaller potatoes earlier than normal.",
+            "description": "Farmers say yields are down because they have had to harvest smaller potatoes earlier than normal.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "为什么炎热的夏季使英国土豆变小"
+          },
+          {
+            "id": "e9baea19e88cf7f7",
+            "title": "'I was blamed for my baby's death now NHS needs to change'",
+            "published_at": "2026-10-08T05:42:43+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "'I was blamed for my baby's death now NHS needs to change'",
+                "link": "https://www.bbc.co.uk/news/articles/cxe8ry571z9eo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T05:42:43+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cxe8ry571z9eo?at_medium=RSS&at_campaign=rss",
+                "description": "Neil and Katie Russell are working with the hospital where their daughter died on the scheme.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cxe8ry571z9eo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cxe8ry571z9eo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Neil and Katie Russell are working with the hospital where their daughter died on the scheme.",
+            "description": "Neil and Katie Russell are working with the hospital where their daughter died on the scheme.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "“我因孩子的死亡而受到指责，现在 NHS 需要改变”"
           },
           {
             "id": "5e14e59d4f727f3a",
@@ -1508,14 +1754,14 @@
             "title_zh": "世界自然基金会表示，英国蓝鳍金枪鱼的卷土重来表明自然可以恢复"
           },
           {
-            "id": "a8fba176996efc4c",
-            "title": "The Papers: 'Kemi's family home pledge' and 'Badenoch invokes core Tory values'",
+            "id": "cb13a4e347773b1c",
+            "title": "'Kemi's family home pledge' and 'Badenoch invokes core Tory values'",
             "published_at": "2026-10-08T04:01:44+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "The Papers: 'Kemi's family home pledge' and 'Badenoch invokes core Tory values'",
+                "title": "'Kemi's family home pledge' and 'Badenoch invokes core Tory values'",
                 "link": "https://www.bbc.co.uk/news/articles/cm3el33kvn3wo?at_medium=RSS&at_campaign=rss",
                 "published_at": "2026-10-08T04:01:44+00:00",
                 "source": "BBC UK",
@@ -1546,7 +1792,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "报纸：“凯米的家庭住宅承诺”和“巴德诺克援引了保守党的核心价值观”"
+            "title_zh": "“凯米的家庭住宅承诺”和“巴德诺克援引保守党的核心价值观”"
           },
           {
             "id": "05f23a738f951c25",
@@ -1754,219 +2000,14 @@
             "title_zh": "法庭称，蒙面 15 岁女学生被刺伤"
           },
           {
-            "id": "44809cc481a6c53a",
-            "title": "Notorious gangland enforcer Paul Ferris dies aged 62",
-            "published_at": "2026-10-07T17:57:55+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Notorious gangland enforcer Paul Ferris dies aged 62",
-                "link": "https://www.bbc.co.uk/news/articles/cwx28l8dp2lxo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T17:57:55+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cwx28l8dp2lxo?at_medium=RSS&at_campaign=rss",
-                "description": "The criminal-turned-author is believed to have died on Tuesday night after a short illness.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cwx28l8dp2lxo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cwx28l8dp2lxo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "The criminal-turned-author is believed to have died on Tuesday night after a short illness.",
-            "description": "The criminal-turned-author is believed to have died on Tuesday night after a short illness.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "臭名昭著的黑帮打手 Paul Ferris 去世，享年 62 岁"
-          },
-          {
-            "id": "667525c61a93a082",
-            "title": "Chris Mason: Tories united behind Badenoch - but party still needs to win over voters",
-            "published_at": "2026-10-07T16:31:06+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Chris Mason: Tories united behind Badenoch - but party still needs to win over voters",
-                "link": "https://www.bbc.co.uk/news/articles/cm1j3rj2r72xo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T16:31:06+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cm1j3rj2r72xo?at_medium=RSS&at_campaign=rss",
-                "description": "Kemi Badenoch has the support of her party but the Tories still trail Labour and Reform in opinion polls.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cm1j3rj2r72xo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cm1j3rj2r72xo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Kemi Badenoch has the support of her party but the Tories still trail Labour and Reform in opinion polls.",
-            "description": "Kemi Badenoch has the support of her party but the Tories still trail Labour and Reform in opinion polls.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "克里斯·梅森：保守党团结支持巴德诺克 - 但该党仍需要赢得选民"
-          },
-          {
-            "id": "339a40d42dc5d0c3",
-            "title": "What's in the Conservatives' inheritance tax plan and who benefits?",
-            "published_at": "2026-10-07T16:23:32+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "What's in the Conservatives' inheritance tax plan and who benefits?",
-                "link": "https://www.bbc.co.uk/news/articles/c9kgj8nn8n0yo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T16:23:32+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/c9kgj8nn8n0yo?at_medium=RSS&at_campaign=rss",
-                "description": "BBC Verify looks into the party's move to overhaul the tax that is levied on inherited wealth.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c9kgj8nn8n0yo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c9kgj8nn8n0yo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "BBC Verify looks into the party's move to overhaul the tax that is levied on inherited wealth.",
-            "description": "BBC Verify looks into the party's move to overhaul the tax that is levied on inherited wealth.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "保守党的遗产税计划有哪些内容以及谁受益？"
-          },
-          {
-            "id": "677add2e34706438",
-            "title": "Katie Price messaged ex's rape accuser, court told",
-            "published_at": "2026-10-07T16:19:20+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Katie Price messaged ex's rape accuser, court told",
-                "link": "https://www.bbc.co.uk/news/articles/ckly4jn2ppmqo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T16:19:20+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/ckly4jn2ppmqo?at_medium=RSS&at_campaign=rss",
-                "description": "Price's ex-husband Kieran Hayler is accused of raping and sexually assaulting a 13-year-old in 2016.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/ckly4jn2ppmqo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/ckly4jn2ppmqo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Price's ex-husband Kieran Hayler is accused of raping and sexually assaulting a 13-year-old in 2016.",
-            "description": "Price's ex-husband Kieran Hayler is accused of raping and sexually assaulting a 13-year-old in 2016.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法庭称，凯蒂·普莱斯给前强奸指控者发了信息"
-          },
-          {
-            "id": "1bae140a455541a8",
-            "title": "Eckert free to stay as Southampton boss as Spygate ban suspended",
-            "published_at": "2026-10-07T16:11:15+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Eckert free to stay as Southampton boss as Spygate ban suspended",
-                "link": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T16:11:15+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
-                "description": "Tonda Eckert is free to continue as Southampton manager after being given a suspended ban for his role in Spygate.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/sport/football/articles/cqj9knmvm2ryo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Tonda Eckert is free to continue as Southampton manager after being given a suspended ban for his role in Spygate.",
-            "description": "Tonda Eckert is free to continue as Southampton manager after being given a suspended ban for his role in Spygate.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "间谍门禁令暂停后，埃克特可以继续担任南安普顿主帅"
-          },
-          {
-            "id": "f566bff98aee1ae1",
-            "title": "Cancer survivor with a stoma says he was made to feel like a 'criminal' at airports",
+            "id": "8dab1e41d473e928",
+            "title": "'You're made to feel like a criminal' - cancer survivor screamed at for stoma at airport",
             "published_at": "2026-10-08T05:05:38+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Cancer survivor with a stoma says he was made to feel like a 'criminal' at airports",
+                "title": "'You're made to feel like a criminal' - cancer survivor screamed at for stoma at airport",
                 "link": "https://www.bbc.co.uk/news/articles/cwy8l7n1jn9mo?at_medium=RSS&at_campaign=rss",
                 "published_at": "2026-10-08T05:05:38+00:00",
                 "source": "BBC UK",
@@ -1997,7 +2038,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "有造口的癌症幸存者说，他在机场感觉自己像个“罪犯”"
+            "title_zh": "“你感觉自己像个罪犯”——癌症幸存者在机场尖叫着要求造口"
           },
           {
             "id": "cb1be1068318759f",
@@ -2082,47 +2123,6 @@
             "title_zh": "10 月 7 日亲巴勒斯坦大学团体在伦敦游行"
           },
           {
-            "id": "3db09a2d54244983",
-            "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-            "published_at": "2026-10-07T13:52:13+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-                "link": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-07T13:52:13+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-                "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-            "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-            "category": "金融",
-            "domestic_score": 38,
-            "importance": 48,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "因操纵利率而入狱的前银行家已被撤销定罪"
-          },
-          {
             "id": "4c9d8432a5f28253",
             "title": "Fraudster jailed over multi-million pound PPE scam",
             "published_at": "2026-10-07T19:13:25+00:00",
@@ -2174,19 +2174,19 @@
         "count": 20,
         "events": [
           {
-            "id": "43f1128509e8fde3",
-            "title": "'It's still unclear whether Netanyahu will pay for what happened during his time in office'",
-            "published_at": "2026-10-07T19:52:06+00:00",
+            "id": "f4c6868948bd88b5",
+            "title": "El Nino set to intensify before peaking in December, UN warns",
+            "published_at": "2026-10-08T06:09:13+00:00",
             "code": "FR",
             "event_country": "法国",
             "sources": [
               {
-                "title": "'It's still unclear whether Netanyahu will pay for what happened during his time in office'",
-                "link": "https://www.france24.com/en/it-s-still-unclear-whether-netanyahu-will-pay-for-what-happened-during-his-time-in-office",
-                "published_at": "2026-10-07T19:52:06+00:00",
+                "title": "El Nino set to intensify before peaking in December, UN warns",
+                "link": "https://www.france24.com/en/environment/20261008-el-nino-set-to-intensify-before-peaking-in-december-un-warns",
+                "published_at": "2026-10-08T06:09:13+00:00",
                 "source": "France24",
-                "source_url": "https://www.france24.com/en/it-s-still-unclear-whether-netanyahu-will-pay-for-what-happened-during-his-time-in-office",
-                "description": "As Israel marks the third anniversary of the October 7 attacks, questions linger about the warnings Prime Minister Benjamin Netanyahu received about them. Speaking with FRANCE 24's Mark Owen, Ayala Panievsky, Lecturer at City University of London and author of The New Censorship, explains that the allegations in the run-up to the elections \"are very damaging for Netanyahu but there are some factors mitigating the risk for him\", including a fragmented opposition as well as the control of major media.",
+                "source_url": "https://www.france24.com/en/environment/20261008-el-nino-set-to-intensify-before-peaking-in-december-un-warns",
+                "description": "The United Nations warned on Thursday that El Nino will intensify before peaking in December, bringing higher temperatures to much of the planet and compounding the effects of man-made climate change. The World Meteorological Organization added that this naturally occurring weather phenomenon could be the strongest since at least 1950.",
                 "feed_country": "FR",
                 "language": "en",
                 "code": "FR",
@@ -2195,24 +2195,24 @@
               }
             ],
             "source": "France24",
-            "url": "https://www.france24.com/en/it-s-still-unclear-whether-netanyahu-will-pay-for-what-happened-during-his-time-in-office",
-            "source_url": "https://www.france24.com/en/it-s-still-unclear-whether-netanyahu-will-pay-for-what-happened-during-his-time-in-office",
+            "url": "https://www.france24.com/en/environment/20261008-el-nino-set-to-intensify-before-peaking-in-december-un-warns",
+            "source_url": "https://www.france24.com/en/environment/20261008-el-nino-set-to-intensify-before-peaking-in-december-un-warns",
             "source_count": 1,
             "source_names": [
               "France24"
             ],
             "source_authority": 88,
-            "summary": "As Israel marks the third anniversary of the October 7 attacks, questions linger about the warnings Prime Minister Benjamin Netanyahu received about them. Speaking with FRANCE 24's Mark Owen, Ayala Panievsky, Lecturer at City University of London and author of The New Censorship, explains that the allegations in the run-up to the elections \"are very damaging for Netanyahu but there are some factors mitigating the risk for him\", including a fragmented opposition as well as the control of major me",
-            "description": "As Israel marks the third anniversary of the October 7 attacks, questions linger about the warnings Prime Minister Benjamin Netanyahu received about them. Speaking with FRANCE 24's Mark Owen, Ayala Panievsky, Lecturer at City University of London and author of The New Censorship, explains that the allegations in the run-up to the elections \"are very damaging for Netanyahu but there are some factors mitigating the risk for him\", including a fragmented opposition as well as the control of major me",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 78,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "summary": "The United Nations warned on Thursday that El Nino will intensify before peaking in December, bringing higher temperatures to much of the planet and compounding the effects of man-made climate change. The World Meteorological Organization added that this naturally occurring weather phenomenon could be the strongest since at least 1950.",
+            "description": "The United Nations warned on Thursday that El Nino will intensify before peaking in December, bringing higher temperatures to much of the planet and compounding the effects of man-made climate change. The World Meteorological Organization added that this naturally occurring weather phenomenon could be the strongest since at least 1950.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 75,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "“目前尚不清楚内塔尼亚胡是否会为他任职期间发生的事情付出代价”"
+            "title_zh": "联合国警告称，厄尔尼诺现象将在12月达到顶峰之前加剧"
           },
           {
             "id": "e0726288fdb992dc",
@@ -2247,7 +2247,7 @@
             "description": "For now, it's still Benjamin Netanyahu’s Israel. In 2023, in the immediate aftermath of the country’s worst day of bloodshed in its history, pundits predicted the quick demise of the right wing prime minister. On this the third anniversary of the October Seventh attacks, Israel’s still not reckoned with the security failures on the day, the root causes of the Hamas-led terror attack, the brutal war of vengeance that followed and most of all, Netanyahu’s still prime minister with a fair shot at r",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 74,
+            "importance": 73,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2411,7 +2411,7 @@
             "description": "The Democratic National Committee sued President Donald Trump’s administration on Wednesday over taxpayer-funded television ads promoting his political message, alleging illegal government propaganda. The lawsuit seeks to halt federal funding for the ads, which have cost more than $12 million to air ahead of November’s midterm elections, according to AdImpact.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 61,
+            "importance": 60,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2502,6 +2502,88 @@
             "title_zh": "巴黎附近的学校揭示了法国学生抗议的原因"
           },
           {
+            "id": "4a2327c336d06b58",
+            "title": "Thousands protest presidential candidate Flavio Bolsonaro, fearing far-right return in Brazil",
+            "published_at": "2026-10-07T22:01:02+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Thousands protest presidential candidate Flavio Bolsonaro, fearing far-right return in Brazil",
+                "link": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
+                "published_at": "2026-10-07T22:01:02+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
+                "description": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against presidential candidate Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent President Luiz Inacio Lula da Silva and oppose the far right's return to power.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
+            "source_url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against presidential candidate Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent President Luiz Inacio Lula da Silva and oppose the far right's return to power.",
+            "description": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against presidential candidate Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent President Luiz Inacio Lula da Silva and oppose the far right's return to power.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 54,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "数千人抗议总统候选人弗拉维奥·博尔索纳罗（ Flavio Bolsonaro ） ，担心在巴西的极右翼回归"
+          },
+          {
+            "id": "e1d416e6033a4f94",
+            "title": "Thursday briefing: Why young people are taking to the streets across France",
+            "published_at": "2026-10-08T05:43:48+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Thursday briefing: Why young people are taking to the streets across France",
+                "link": "https://www.theguardian.com/world/2026/oct/08/thursday-briefing-why-young-people-are-taking-to-the-streets-across-france",
+                "published_at": "2026-10-08T05:43:48+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/world/2026/oct/08/thursday-briefing-why-young-people-are-taking-to-the-streets-across-france",
+                "description": "In today’s newsletter: A youth-led movement is protesting crumbling school buildings and teacher shortages while turning adult focus onto wider educational inequalities Good morning. In my experience, at any protest, the most memorable and encapsulating slogans are always the ones written by hand with marker pen on cardboard placards. “School is a right, not a privilege,” read one such sign held aloft by a student in Paris, where huge youth protests over the state of high school education have brought tens of thousands of young people and adults on to the streets, with further strikes planned today. UK politics | Kemi Badenoch has announced that the Conservatives would abolish inheritance tax on family homes if elected, prompting criticism that she is prioritising cutting taxes for the rich. Education | Labour’s flagship changes to special education in England are at risk of unravelling because parents are rushing to secure support for their children before the system changes, new analysis has found. Spain | María del Carmen Abascal, the 87-year-old whose eviction set off a nationwide wave of protests against Spain’s housing crisis, has died. Science | A type of gene therapy based on Nobel prize-winning science is safe and can partly restore sight in blind people , researchers have revealed. Epstein | British billionaire Sir James Goldsmith warned that Jeffrey Epstein was a “sexual deviant” decades before the FBI closed in on the abuser, a Guardian investigation has found. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/world/2026/oct/08/thursday-briefing-why-young-people-are-taking-to-the-streets-across-france",
+            "source_url": "https://www.theguardian.com/world/2026/oct/08/thursday-briefing-why-young-people-are-taking-to-the-streets-across-france",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "In today’s newsletter: A youth-led movement is protesting crumbling school buildings and teacher shortages while turning adult focus onto wider educational inequalities Good morning. In my experience, at any protest, the most memorable and encapsulating slogans are always the ones written by hand with marker pen on cardboard placards. “School is a right, not a privilege,” read one such sign held aloft by a student in Paris, where huge youth protests over the state of high school education have b",
+            "description": "In today’s newsletter: A youth-led movement is protesting crumbling school buildings and teacher shortages while turning adult focus onto wider educational inequalities Good morning. In my experience, at any protest, the most memorable and encapsulating slogans are always the ones written by hand with marker pen on cardboard placards. “School is a right, not a privilege,” read one such sign held aloft by a student in Paris, where huge youth protests over the state of high school education have b",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "周四简报：为什么法国各地的年轻人走上街头"
+          },
+          {
             "id": "771929a447481338",
             "title": "Big investors ‘bottom fish’ in Eurozone bond markets after France sell-off",
             "published_at": "2026-10-08T04:00:26+00:00",
@@ -2541,47 +2623,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "法国抛售后，大投资者在欧元区债券市场“抄底”"
-          },
-          {
-            "id": "06f0753397c176a4",
-            "title": "White House promotes 'Trump TV' with an AI-altered photo",
-            "published_at": "2026-10-07T19:45:24+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "White House promotes 'Trump TV' with an AI-altered photo",
-                "link": "https://www.france24.com/en/white-house-promotes-trump-tv-with-an-ai-altered-photo",
-                "published_at": "2026-10-07T19:45:24+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/white-house-promotes-trump-tv-with-an-ai-altered-photo",
-                "description": "The White House has promoted “Trump TV” using an AI-altered photo of passengers apparently watching the president’s new streaming channel. But the image was originally posted online in February 2023, showing passengers watching the NFL Super Bowl, with one watching the film “Hitch”. The original photo was modified using AI to make it appear the passengers were watching Trump TV. The post did not disclose that the image had been altered. Vedika Bahl explains in Truth or Fake.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/white-house-promotes-trump-tv-with-an-ai-altered-photo",
-            "source_url": "https://www.france24.com/en/white-house-promotes-trump-tv-with-an-ai-altered-photo",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "The White House has promoted “Trump TV” using an AI-altered photo of passengers apparently watching the president’s new streaming channel. But the image was originally posted online in February 2023, showing passengers watching the NFL Super Bowl, with one watching the film “Hitch”. The original photo was modified using AI to make it appear the passengers were watching Trump TV. The post did not disclose that the image had been altered. Vedika Bahl explains in Truth or Fake.",
-            "description": "The White House has promoted “Trump TV” using an AI-altered photo of passengers apparently watching the president’s new streaming channel. But the image was originally posted online in February 2023, showing passengers watching the NFL Super Bowl, with one watching the film “Hitch”. The original photo was modified using AI to make it appear the passengers were watching Trump TV. The post did not disclose that the image had been altered. Vedika Bahl explains in Truth or Fake.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "白宫用人工智能修改的照片宣传“特朗普电视”"
           },
           {
             "id": "a047e03d09e0fbae",
@@ -2705,47 +2746,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "非洲也加入反对数据中心的行列"
-          },
-          {
-            "id": "49559da834a9e78e",
-            "title": "Thousands protest Flavio Bolsonaro, fearing far-right return in Brazil",
-            "published_at": "2026-10-07T22:01:02+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Thousands protest Flavio Bolsonaro, fearing far-right return in Brazil",
-                "link": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
-                "published_at": "2026-10-07T22:01:02+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
-                "description": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent Luiz Inacio Lula da Silva and oppose the far right's return to power.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
-            "source_url": "https://www.france24.com/en/americas/20261007-thousands-protest-flavio-bolsonaro-far-right-brazil",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent Luiz Inacio Lula da Silva and oppose the far right's return to power.",
-            "description": "Thousands of people joined a student march in downtown Rio de Janeiro on Wednesday to protest against Flavio Bolsonaro ahead of Brazil's October 25 presidential runoff. Bolsonaro led Sunday's first-round vote, prompting demonstrators to rally behind incumbent Luiz Inacio Lula da Silva and oppose the far right's return to power.",
-            "category": "社会",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及社会，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "数千人抗议弗拉维奥·博尔索纳罗，担心极右翼在巴西卷土重来"
           },
           {
             "id": "829b866ca9fda39b",
@@ -3077,7 +3077,7 @@
             "description": "Leading German politicians including Chancellor Merz and President Steinmeier called for people to reject antisemitism.",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 78,
+            "importance": 77,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3127,47 +3127,6 @@
             "title_zh": "美国：屡获殊荣的克什米尔电影制片人被拘留"
           },
           {
-            "id": "ff11060b3dd7739e",
-            "title": "German spy scandal threatens national security",
-            "published_at": "2026-10-07T12:39:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "German spy scandal threatens national security",
-                "link": "https://www.dw.com/en/german-spy-scandal-threatens-national-security/a-79580000?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-07T12:39:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/german-spy-scandal-threatens-national-security/a-79580000?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The arrest of Germany's former intelligence chief August Hanning could undermine national security, experts warn, as allies may reconsider their intelligence relationships.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/german-spy-scandal-threatens-national-security/a-79580000?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/german-spy-scandal-threatens-national-security/a-79580000?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "The arrest of Germany's former intelligence chief August Hanning could undermine national security, experts warn, as allies may reconsider their intelligence relationships.",
-            "description": "The arrest of Germany's former intelligence chief August Hanning could undermine national security, experts warn, as allies may reconsider their intelligence relationships.",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 72,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "德国间谍丑闻威胁国家安全"
-          },
-          {
             "id": "1a422301045521f4",
             "title": "Christa Pike 'angry and confused' after botched execution",
             "published_at": "2026-10-07T21:23:00+00:00",
@@ -3209,6 +3168,47 @@
             "title_zh": "克里斯塔·派克在处决失败后“愤怒和困惑”"
           },
           {
+            "id": "3ba714a9063857f3",
+            "title": "Germany news: UK's Burnham, Merz to talk security in Berlin",
+            "published_at": "2026-10-08T05:50:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "Germany news: UK's Burnham, Merz to talk security in Berlin",
+                "link": "https://www.dw.com/en/germany-news-uk-s-burnham-merz-to-talk-security-in-berlin/live-79587637?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-08T05:50:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/germany-news-uk-s-burnham-merz-to-talk-security-in-berlin/live-79587637?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "UK Prime Minister Andy Burnham is visiting Berlin to launch a joint security partnership with Germany. President Steinmeier is on a state visit to France. DW has more.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/germany-news-uk-s-burnham-merz-to-talk-security-in-berlin/live-79587637?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/germany-news-uk-s-burnham-merz-to-talk-security-in-berlin/live-79587637?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "source_authority": 89,
+            "summary": "UK Prime Minister Andy Burnham is visiting Berlin to launch a joint security partnership with Germany. President Steinmeier is on a state visit to France. DW has more.",
+            "description": "UK Prime Minister Andy Burnham is visiting Berlin to launch a joint security partnership with Germany. President Steinmeier is on a state visit to France. DW has more.",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 65,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "德国新闻：英国伯纳姆和梅尔茨将在柏林讨论安全问题"
+          },
+          {
             "id": "5a26bf50f73d6069",
             "title": "Yemen's Houthis claim strike on Riyadh airport, three killed",
             "published_at": "2026-10-08T05:22:00+00:00",
@@ -3247,7 +3247,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "也门胡塞武装声称袭击利雅得机场 造成三人死亡"
+            "title_zh": "也门胡塞武装声称袭击利雅得机场，造成三人死亡"
           },
           {
             "id": "c25c7425601d52df",
@@ -3282,7 +3282,7 @@
             "description": "Pakistan's dependence on Gulf energy imports, remittances and regional financing has left the economy exposed to the fallout from the Middle East conflict.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 61,
+            "importance": 60,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3537,19 +3537,19 @@
             "title_zh": "格哈德·施罗德 (Gerhard Schröder) 拜访最新的俄罗斯雇主 Hyperglobus"
           },
           {
-            "id": "97fcc4fd01ec0121",
-            "title": "France suspends use of stun grenades against protesters",
-            "published_at": "2026-10-07T12:12:00+00:00",
+            "id": "e0374762ee47ad7e",
+            "title": "US to lay fresh torture charges against Venezuela's Maduro and wife",
+            "published_at": "2026-10-08T06:30:00+00:00",
             "code": "DE",
             "event_country": "德国",
             "sources": [
               {
-                "title": "France suspends use of stun grenades against protesters",
-                "link": "https://www.dw.com/en/france-suspends-use-of-stun-grenades-against-protesters/a-79577769?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-07T12:12:00+00:00",
+                "title": "US to lay fresh torture charges against Venezuela's Maduro and wife",
+                "link": "https://www.dw.com/en/us-to-lay-fresh-torture-charges-against-venezuela-s-maduro-and-wife/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-08T06:30:00+00:00",
                 "source": "DW",
-                "source_url": "https://www.dw.com/en/france-suspends-use-of-stun-grenades-against-protesters/a-79577769?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "France suspended the use of stun grenades against protesters as allegations of student brutality draw more anger. French Prime Minister Sebastien Lecornu said the country could not ignore students' concerns.",
+                "source_url": "https://www.dw.com/en/us-to-lay-fresh-torture-charges-against-venezuela-s-maduro-and-wife/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "Prosecutors are considering charges over the alleged torture of more than a dozen Americans detained in Venezuela. Meanwhile, Cilia Flores is seeking release from jail on health grounds.",
                 "feed_country": "DE",
                 "language": "en",
                 "code": "DE",
@@ -3558,24 +3558,24 @@
               }
             ],
             "source": "DW",
-            "url": "https://www.dw.com/en/france-suspends-use-of-stun-grenades-against-protesters/a-79577769?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/france-suspends-use-of-stun-grenades-against-protesters/a-79577769?maca=en-rss-en-all-1573-xml-mrss",
+            "url": "https://www.dw.com/en/us-to-lay-fresh-torture-charges-against-venezuela-s-maduro-and-wife/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/us-to-lay-fresh-torture-charges-against-venezuela-s-maduro-and-wife/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
             "source_count": 1,
             "source_names": [
               "DW"
             ],
             "source_authority": 89,
-            "summary": "France suspended the use of stun grenades against protesters as allegations of student brutality draw more anger. French Prime Minister Sebastien Lecornu said the country could not ignore students' concerns.",
-            "description": "France suspended the use of stun grenades against protesters as allegations of student brutality draw more anger. French Prime Minister Sebastien Lecornu said the country could not ignore students' concerns.",
+            "summary": "Prosecutors are considering charges over the alleged torture of more than a dozen Americans detained in Venezuela. Meanwhile, Cilia Flores is seeking release from jail on health grounds.",
+            "description": "Prosecutors are considering charges over the alleged torture of more than a dozen Americans detained in Venezuela. Meanwhile, Cilia Flores is seeking release from jail on health grounds.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 49,
+            "importance": 48,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法国暂停对抗议者使用眩晕手榴弹"
+            "title_zh": "美国对委内瑞拉马杜罗及其妻子提出新的酷刑指控"
           },
           {
             "id": "6f33ec754c1a795d",
@@ -3866,13 +3866,54 @@
             "description": "According to Yulia Zhdanova, head of the Russian delegation to the Vienna talks on military security and arms control, Western politicians continue to intensify their military rhetoric",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 76,
+            "importance": 75,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "俄罗斯代表团警告与西方的对抗可能进入最严峻阶段"
+          },
+          {
+            "id": "d1c4e4c3be37fb51",
+            "title": "Major oil companies eye Middle East investments despite war — newspaper",
+            "published_at": "2026-10-08T06:08:07+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "Major oil companies eye Middle East investments despite war — newspaper",
+                "link": "https://tass.com/economy/2199069",
+                "published_at": "2026-10-08T06:08:07+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/economy/2199069",
+                "description": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/economy/2199069",
+            "source_url": "https://tass.com/economy/2199069",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "source_authority": 82,
+            "summary": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+            "description": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+            "category": "能源",
+            "domestic_score": 46,
+            "importance": 73,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "尽管有战争，主要石油公司仍关注中东投资——报纸"
           },
           {
             "id": "d0304f0f738d041a",
@@ -4235,11 +4276,11 @@
             "description": "\"Insofar as specifics are concerned, India is trying to be helpful, starting with the Black Sea, safety of the shipping issue, addressing immediate concerns of Russia and Ukraine on grain and energy exports, and non-attack possibilities,\" Randhir Jaiswal said",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 60,
+            "importance": 59,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
+            "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "印度外交部呼吁俄罗斯和乌克兰停止黑海袭击"
           },
@@ -4449,47 +4490,6 @@
             "title_zh": "特朗普可能在国会选举前下令对伊朗发动新的打击——杂志"
           },
           {
-            "id": "0eab24ebbb463bc9",
-            "title": "A Plague Mystery in Siberia",
-            "published_at": "2026-10-08T05:06:17+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "A Plague Mystery in Siberia",
-                "link": "https://www.nytimes.com/2026/10/07/world/plague-siberia-russia-sports-betting.html",
-                "published_at": "2026-10-08T05:06:17+00:00",
-                "source": "纽约时报",
-                "source_url": "https://www.nytimes.com/2026/10/07/world/plague-siberia-russia-sports-betting.html",
-                "description": "The death of a Russian lab worker has spawned rumors. Here are the facts.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "纽约时报",
-            "url": "https://www.nytimes.com/2026/10/07/world/plague-siberia-russia-sports-betting.html",
-            "source_url": "https://www.nytimes.com/2026/10/07/world/plague-siberia-russia-sports-betting.html",
-            "source_count": 1,
-            "source_names": [
-              "纽约时报"
-            ],
-            "source_authority": 96,
-            "summary": "The death of a Russian lab worker has spawned rumors. Here are the facts.",
-            "description": "The death of a Russian lab worker has spawned rumors. Here are the facts.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "西伯利亚的鼠疫之谜"
-          },
-          {
             "id": "7f6812a30f98aa84",
             "title": "IMF backs global central bank rate hikes, chief Georgieva says",
             "published_at": "2026-10-07T14:30:21+00:00",
@@ -4620,7 +4620,7 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 6,
+        "count": 5,
         "events": [
           {
             "id": "aaaf9475a963bc45",
@@ -4655,7 +4655,7 @@
             "description": "Nidec Corp., the embattled Japanese electric motor maker, is being urged to consider putting itself on the auction block by an activist investor, a sign that confidence is waning in management’s ability to recover from a long-simmering accounting scandal.",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 73,
+            "importance": 72,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4787,47 +4787,6 @@
             "title_zh": "东证指数权重公布影响日本股市下跌"
           },
           {
-            "id": "c0db4529d548cdf6",
-            "title": "Kioxia Shares Up on $13 Billion Inflow Hope After JPX Review",
-            "published_at": "2026-10-07T09:40:15+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Kioxia Shares Up on $13 Billion Inflow Hope After JPX Review",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/kioxia-s-weighting-on-topix-index-to-rise-after-jpx-review",
-                "published_at": "2026-10-07T09:40:15+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/kioxia-s-weighting-on-topix-index-to-rise-after-jpx-review",
-                "description": "Kioxia Holdings Corp.’s shares rose as much as 4.1% after Japan Exchange Group Inc. announced its weighting on the benchmark Topix index will be increased, a move that fueled expectations that an estimated ¥2 trillion ($12.7 billion) of passive inflows may be triggered.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/kioxia-s-weighting-on-topix-index-to-rise-after-jpx-review",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/kioxia-s-weighting-on-topix-index-to-rise-after-jpx-review",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Kioxia Holdings Corp.’s shares rose as much as 4.1% after Japan Exchange Group Inc. announced its weighting on the benchmark Topix index will be increased, a move that fueled expectations that an estimated ¥2 trillion ($12.7 billion) of passive inflows may be triggered.",
-            "description": "Kioxia Holdings Corp.’s shares rose as much as 4.1% after Japan Exchange Group Inc. announced its weighting on the benchmark Topix index will be increased, a move that fueled expectations that an estimated ¥2 trillion ($12.7 billion) of passive inflows may be triggered.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "JPX 审查后，Kioxia 分享了 130 亿美元资金流入的希望"
-          },
-          {
             "id": "7065a95ae3954432",
             "title": "Japan beer giants raided over alleged price-fixing cartel",
             "published_at": "2026-10-08T00:53:46+00:00",
@@ -4878,7 +4837,7 @@
         "code": "IN",
         "target_min": 5,
         "target_max": 12,
-        "count": 4,
+        "count": 3,
         "events": [
           {
             "id": "c75c97c6e3e3c427",
@@ -5002,47 +4961,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "她让印度爱上了女子板球——现在她担任队长的时代已经结束"
-          },
-          {
-            "id": "2d2bbc41d2da05ee",
-            "title": "Harmanpreet Kaur: The captain who changed how India’s women played cricket",
-            "published_at": "2026-10-07T21:08:59+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "title": "Harmanpreet Kaur: The captain who changed how India’s women played cricket",
-                "link": "https://www.aljazeera.com/sports/2026/10/7/harmanpreet-kaur-the-captain-who-changed-how-indias-women-played-cricket?traffic_source=rss",
-                "published_at": "2026-10-07T21:08:59+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/sports/2026/10/7/harmanpreet-kaur-the-captain-who-changed-how-indias-women-played-cricket?traffic_source=rss",
-                "description": "Kaur's magical innings instilled belief in the Indian women's cricket team before she led them to a first world title.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IN",
-                "event_country": "印度",
-                "event_country_en": "India"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/sports/2026/10/7/harmanpreet-kaur-the-captain-who-changed-how-indias-women-played-cricket?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/sports/2026/10/7/harmanpreet-kaur-the-captain-who-changed-how-indias-women-played-cricket?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "Kaur's magical innings instilled belief in the Indian women's cricket team before she led them to a first world title.",
-            "description": "Kaur's magical innings instilled belief in the Indian women's cricket team before she led them to a first world title.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 40,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "哈曼普雷特·考尔：改变印度女性板球运动方式的队长"
           }
         ]
       },
@@ -5093,7 +5011,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "弗拉维奥·博尔索纳罗在巴西大选中的领先对气候活动家来说是一个严峻的震动"
+            "title_zh": "弗拉维奥·博尔索纳罗在巴西大选中的领先对气候活动人士来说是一个严峻的震动"
           },
           {
             "id": "b826ba4b629d613c",
@@ -5251,7 +5169,7 @@
             "description": "Students and other protesters marched against Flavio Bolsonaro after he advanced to Brazil's presidential run-off.",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 46,
+            "importance": 45,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5267,7 +5185,7 @@
         "code": "SA",
         "target_min": 5,
         "target_max": 12,
-        "count": 5,
+        "count": 4,
         "events": [
           {
             "id": "8a08cb459163c32c",
@@ -5392,46 +5310,6 @@
             "title_zh": "纽约法院听取正在进行的 9/11 家庭针对沙特阿拉伯的诉讼的论据"
           },
           {
-            "id": "8f1abb31a4f08af2",
-            "title": "沙特两座机场遭袭已致3死36伤",
-            "published_at": "2026-10-08T04:19:04+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "沙特两座机场遭袭已致3死36伤",
-                "link": "https://www.chinanews.com.cn/gj/2026/10-08/10708996.shtml",
-                "published_at": "2026-10-08T04:19:04+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/10-08/10708996.shtml",
-                "description": "中新社北京10月8日电 综合消息：沙特阿拉伯民航总局当地时间7日发表声明称，位于沙特西南部的艾卜哈国际机场和位于首都利雅得的哈立德国王国际机场6日至7日遭到袭击，已造成3人死亡、36人受伤。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "SA",
-                "event_country": "沙特阿拉伯",
-                "event_country_en": "Saudi Arabia"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/gj/2026/10-08/10708996.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/10-08/10708996.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新社北京10月8日电 综合消息：沙特阿拉伯民航总局当地时间7日发表声明称，位于沙特西南部的艾卜哈国际机场和位于首都利雅得的哈立德国王国际机场6日至7日遭到袭击，已造成3人死亡、36人受伤。",
-            "description": "中新社北京10月8日电 综合消息：沙特阿拉伯民航总局当地时间7日发表声明称，位于沙特西南部的艾卜哈国际机场和位于首都利雅得的哈立德国王国际机场6日至7日遭到袭击，已造成3人死亡、36人受伤。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 54,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "02021b6010254303",
             "title": "Saudi Arabia confirms three dead in Houthi strikes on its airports",
             "published_at": "2026-10-08T00:16:25+00:00",
@@ -5480,7 +5358,7 @@
         "code": "KR",
         "target_min": 5,
         "target_max": 12,
-        "count": 4,
+        "count": 3,
         "events": [
           {
             "id": "88c28e7b457fa72d",
@@ -5521,48 +5399,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "如果发现向俄罗斯运送燃料违法，韩国威胁采取法律行动"
-          },
-          {
-            "id": "6523ada296ceace9",
-            "title": "LG Energy Posts Best-Ever Quarterly Result on Storage Demand",
-            "published_at": "2026-10-07T23:58:55+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "title": "LG Energy Posts Best-Ever Quarterly Result on Storage Demand",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-07/lg-energy-profit-beats-estimates-on-energy-storage-system-demand",
-                "published_at": "2026-10-07T23:58:55+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/lg-energy-profit-beats-estimates-on-energy-storage-system-demand",
-                "description": "LG Energy Solution Ltd. reported preliminary third-quarter earnings that were more than double analyst estimates as the South Korean battery maker benefited from US manufacturing incentives and surging demand for energy-storage systems.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "KR",
-                "event_country": "韩国",
-                "event_country_en": "South Korea"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-07/lg-energy-profit-beats-estimates-on-energy-storage-system-demand",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/lg-energy-profit-beats-estimates-on-energy-storage-system-demand",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "LG Energy Solution Ltd. reported preliminary third-quarter earnings that were more than double analyst estimates as the South Korean battery maker benefited from US manufacturing incentives and surging demand for energy-storage systems.",
-            "description": "LG Energy Solution Ltd. reported preliminary third-quarter earnings that were more than double analyst estimates as the South Korean battery maker benefited from US manufacturing incentives and surging demand for energy-storage systems.",
-            "category": "能源",
-            "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "LG 能源公布有史以来最好的存储需求季度业绩"
+            "title_zh": "如果发现向俄罗斯运送燃料违反法律，韩国威胁采取法律行动"
           },
           {
             "id": "32d2bb9ba6089f7f",
@@ -5863,7 +5700,7 @@
             "description": "Exclusive: Revelation comes after executive told parliamentary inquiry he did not believe AI had been used to write message, but was ‘happy to go and confirm’ Get our breaking news email , free app or daily news podcast OpenAI used AI to help write the email to the Australian government advising that its AI agent had hacked into key departmental websites, Guardian Australia can reveal. On Tuesday, one of the company’s executives told a parliamentary inquiry that he didn’t believe that its own te",
             "category": "政治",
             "domestic_score": 38,
-            "importance": 72,
+            "importance": 71,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6014,7 +5851,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "意大利考虑通过有争议的法律向选举获胜者提供额外席位"
+            "title_zh": "意大利正在考虑向选举获胜者提供额外席位的有争议的法律"
           }
         ]
       },
@@ -6291,14 +6128,14 @@
         "count": 3,
         "events": [
           {
-            "id": "dec34d70bb600916",
-            "title": "Singapore Bank Stocks Drop as High Bond Yields May Hit Earnings",
+            "id": "afbe0e831fdf7a76",
+            "title": "Singapore Bank Shares Tumble as Yield Surge Threatens Earnings",
             "published_at": "2026-10-08T02:03:35+00:00",
             "code": "SG",
             "event_country": "新加坡",
             "sources": [
               {
-                "title": "Singapore Bank Stocks Drop as High Bond Yields May Hit Earnings",
+                "title": "Singapore Bank Shares Tumble as Yield Surge Threatens Earnings",
                 "link": "https://www.bloomberg.com/news/articles/2026-10-08/singapore-banks-hot-rally-stutters-over-surging-bond-yields",
                 "published_at": "2026-10-08T02:03:35+00:00",
                 "source": "彭博社",
@@ -6323,13 +6160,13 @@
             "description": "Singapore bank shares extended declines for a second day after JPMorgan Chase & Co. warned that surging long bond yields will hurt third-quarter earnings for Southeast Asian lenders.",
             "category": "金融",
             "domestic_score": 30,
-            "importance": 55,
+            "importance": 54,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "由于高债券收益率可能影响盈利，新加坡银行股下跌"
+            "title_zh": "由于收益率飙升威胁盈利，新加坡银行股价暴跌"
           },
           {
             "id": "2ac03886505a1618",
@@ -6405,7 +6242,7 @@
             "description": "The BBC’s Tessa Wong breaks down how one of Indonesia’s worst wildfire seasons is impacting countries around South East Asia.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 35,
+            "importance": 34,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6421,50 +6258,8 @@
         "code": "ZA",
         "target_min": 2,
         "target_max": 8,
-        "count": 1,
-        "events": [
-          {
-            "id": "0efedd04da6cb7e7",
-            "title": "South Africa host Australia who battle more than ‘Sandpapergate’ memories",
-            "published_at": "2026-10-07T21:09:20+00:00",
-            "code": "ZA",
-            "event_country": "南非",
-            "sources": [
-              {
-                "title": "South Africa host Australia who battle more than ‘Sandpapergate’ memories",
-                "link": "https://www.aljazeera.com/sports/2026/10/7/south-africa-host-an-australia-battling-more-than-sandpapergate-memories?traffic_source=rss",
-                "published_at": "2026-10-07T21:09:20+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/sports/2026/10/7/south-africa-host-an-australia-battling-more-than-sandpapergate-memories?traffic_source=rss",
-                "description": "WTC holders South Africa host Australia, who struggled against Bangladesh, in Tests for first time since 2018 scandal.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "ZA",
-                "event_country": "南非",
-                "event_country_en": "South Africa"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/sports/2026/10/7/south-africa-host-an-australia-battling-more-than-sandpapergate-memories?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/sports/2026/10/7/south-africa-host-an-australia-battling-more-than-sandpapergate-memories?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "WTC holders South Africa host Australia, who struggled against Bangladesh, in Tests for first time since 2018 scandal.",
-            "description": "WTC holders South Africa host Australia, who struggled against Bangladesh, in Tests for first time since 2018 scandal.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 44,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "南非主场迎战澳大利亚，他们的战斗不仅仅是“砂纸门”的记忆"
-          }
-        ]
+        "count": 0,
+        "events": []
       },
       "荷兰": {
         "country": "荷兰",
@@ -6481,8 +6276,49 @@
         "code": "IL",
         "target_min": 2,
         "target_max": 8,
-        "count": 7,
+        "count": 8,
         "events": [
+          {
+            "id": "b331f74328d1acdf",
+            "title": "What Life in Gaza Is Like Now",
+            "published_at": "2026-10-07T21:44:31+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "title": "What Life in Gaza Is Like Now",
+                "link": "https://www.nytimes.com/video/world/middleeast/100000011168313/what-life-in-gaza-is-like-now.html",
+                "published_at": "2026-10-07T21:44:31+00:00",
+                "source": "纽约时报",
+                "source_url": "https://www.nytimes.com/video/world/middleeast/100000011168313/what-life-in-gaza-is-like-now.html",
+                "description": "Nearly a year after Israel and Hamas agreed to end the war in Gaza, Saher Alghorra, a photographer for The New York Times, documents how residents are coping and working to rebuild their lives.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IL",
+                "event_country": "以色列",
+                "event_country_en": "Israel"
+              }
+            ],
+            "source": "纽约时报",
+            "url": "https://www.nytimes.com/video/world/middleeast/100000011168313/what-life-in-gaza-is-like-now.html",
+            "source_url": "https://www.nytimes.com/video/world/middleeast/100000011168313/what-life-in-gaza-is-like-now.html",
+            "source_count": 1,
+            "source_names": [
+              "纽约时报"
+            ],
+            "source_authority": 96,
+            "summary": "Nearly a year after Israel and Hamas agreed to end the war in Gaza, Saher Alghorra, a photographer for The New York Times, documents how residents are coping and working to rebuild their lives.",
+            "description": "Nearly a year after Israel and Hamas agreed to end the war in Gaza, Saher Alghorra, a photographer for The New York Times, documents how residents are coping and working to rebuild their lives.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 54,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "加沙现在的生活是什么样的"
+          },
           {
             "id": "7a924df3e596cf40",
             "title": "Israelis scarred by Oct. 7 attack weigh Netanyahu’s political future",
@@ -6639,7 +6475,7 @@
             "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 47,
+            "importance": 46,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -7291,6 +7127,69 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
+      "id": "d1c4e4c3be37fb51",
+      "title": "Major oil companies eye Middle East investments despite war — newspaper",
+      "published_at": "2026-10-08T06:08:07+00:00",
+      "code": "RU",
+      "event_country": "俄罗斯",
+      "sources": [
+        {
+          "id": "d1c4e4c3be37fb51",
+          "title": "Major oil companies eye Middle East investments despite war — newspaper",
+          "published_at": "2026-10-08T06:08:07+00:00",
+          "code": "RU",
+          "event_country": "俄罗斯",
+          "sources": [
+            {
+              "title": "Major oil companies eye Middle East investments despite war — newspaper",
+              "link": "https://tass.com/economy/2199069",
+              "published_at": "2026-10-08T06:08:07+00:00",
+              "source": "TASS",
+              "source_url": "https://tass.com/economy/2199069",
+              "description": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+              "feed_country": "RU",
+              "language": "en",
+              "code": "RU",
+              "event_country": "俄罗斯",
+              "event_country_en": "Russia"
+            }
+          ],
+          "source": "TASS",
+          "url": "https://tass.com/economy/2199069",
+          "source_url": "https://tass.com/economy/2199069",
+          "source_count": 1,
+          "source_names": [
+            "TASS"
+          ],
+          "source_authority": 82,
+          "summary": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+          "description": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+          "category": "能源",
+          "domestic_score": 46,
+          "importance": 61,
+          "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "TASS",
+      "url": "",
+      "source_url": "https://tass.com/economy/2199069",
+      "source_count": 1,
+      "source_names": [
+        "TASS"
+      ],
+      "source_authority": 82,
+      "summary": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+      "description": "Patrick Pouyanne, chief executive of France’s TotalEnergies, believes the Middle East still has the cheapest oil",
+      "category": "能源",
+      "domestic_score": 46,
+      "importance": 61,
+      "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
       "id": "786c269f7dbf0714",
       "title": "Israel marks three years since October 7 attack ahead of elections",
       "published_at": "2026-10-07T21:50:07+00:00",
@@ -7417,26 +7316,215 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
-      "id": "de878eeac01d0625",
-      "title": "'I want justice after boy's evil knife attack on my daughter'",
+      "id": "2b01b976edf9fae3",
+      "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+      "published_at": "2026-10-08T06:16:38+00:00",
+      "code": "GB",
+      "event_country": "英国",
+      "sources": [
+        {
+          "id": "2b01b976edf9fae3",
+          "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+          "published_at": "2026-10-08T06:16:38+00:00",
+          "code": "GB",
+          "event_country": "英国",
+          "sources": [
+            {
+              "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+              "link": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+              "published_at": "2026-10-08T06:16:38+00:00",
+              "source": "彭博社",
+              "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+              "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "GB",
+              "event_country": "英国",
+              "event_country_en": "United Kingdom"
+            }
+          ],
+          "source": "彭博社",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+          "source_count": 1,
+          "source_names": [
+            "彭博社"
+          ],
+          "source_authority": 96,
+          "summary": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+          "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+          "category": "科技",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "彭博社",
+      "url": "",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+      "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+      "category": "科技",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "a288d947935c90d5",
+      "title": "Holborn and St Pancras by-election gets under way",
+      "published_at": "2026-10-08T06:00:40+00:00",
+      "code": "GB",
+      "event_country": "英国",
+      "sources": [
+        {
+          "id": "a288d947935c90d5",
+          "title": "Holborn and St Pancras by-election gets under way",
+          "published_at": "2026-10-08T06:00:40+00:00",
+          "code": "GB",
+          "event_country": "英国",
+          "sources": [
+            {
+              "title": "Holborn and St Pancras by-election gets under way",
+              "link": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-10-08T06:00:40+00:00",
+              "source": "BBC UK",
+              "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+              "description": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+              "feed_country": "GB",
+              "language": "en",
+              "code": "GB",
+              "event_country": "英国",
+              "event_country_en": "United Kingdom"
+            }
+          ],
+          "source": "BBC UK",
+          "url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+          "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+          "source_count": 1,
+          "source_names": [
+            "BBC UK"
+          ],
+          "source_authority": 94,
+          "summary": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+          "description": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+          "category": "政治",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "BBC UK",
+      "url": "",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+      "source_count": 1,
+      "source_names": [
+        "BBC UK"
+      ],
+      "source_authority": 94,
+      "summary": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+      "description": "Voters in north London are going to the polls to choose a new MP after Sir Keir Starmer resigned.",
+      "category": "政治",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "3aa5d2e70b0bc255",
+      "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+      "published_at": "2026-10-08T06:00:12+00:00",
+      "code": "GB",
+      "event_country": "英国",
+      "sources": [
+        {
+          "id": "3aa5d2e70b0bc255",
+          "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+          "published_at": "2026-10-08T06:00:12+00:00",
+          "code": "GB",
+          "event_country": "英国",
+          "sources": [
+            {
+              "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+              "link": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+              "published_at": "2026-10-08T06:00:12+00:00",
+              "source": "卫报",
+              "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+              "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as an MP shortly after resigning as prime minister. Continue reading...",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "GB",
+              "event_country": "英国",
+              "event_country_en": "United Kingdom"
+            }
+          ],
+          "source": "卫报",
+          "url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+          "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+          "source_count": 1,
+          "source_names": [
+            "卫报"
+          ],
+          "source_authority": 92,
+          "summary": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+          "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+          "category": "政治",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "卫报",
+      "url": "",
+      "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+      "source_count": 1,
+      "source_names": [
+        "卫报"
+      ],
+      "source_authority": 92,
+      "summary": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+      "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+      "category": "政治",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "bba06c84c05f5fbf",
+      "title": "I want justice after boy's evil knife attack on my daughter, says mother",
       "published_at": "2026-10-08T05:20:01+00:00",
       "code": "GB",
       "event_country": "英国",
       "sources": [
         {
-          "id": "de878eeac01d0625",
-          "title": "'I want justice after boy's evil knife attack on my daughter'",
+          "id": "bba06c84c05f5fbf",
+          "title": "I want justice after boy's evil knife attack on my daughter, says mother",
           "published_at": "2026-10-08T05:20:01+00:00",
           "code": "GB",
           "event_country": "英国",
           "sources": [
             {
-              "title": "'I want justice after boy's evil knife attack on my daughter'",
+              "title": "I want justice after boy's evil knife attack on my daughter, says mother",
               "link": "https://www.bbc.co.uk/news/articles/c5398n821rlko?at_medium=RSS&at_campaign=rss",
               "published_at": "2026-10-08T05:20:01+00:00",
               "source": "BBC UK",
               "source_url": "https://www.bbc.co.uk/news/articles/c5398n821rlko?at_medium=RSS&at_campaign=rss",
-              "description": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
+              "description": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
               "feed_country": "GB",
               "language": "en",
               "code": "GB",
@@ -7452,8 +7540,8 @@
             "BBC UK"
           ],
           "source_authority": 94,
-          "summary": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
-          "description": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
+          "summary": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
+          "description": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
           "category": "国防安全",
           "domestic_score": 38,
           "importance": 57,
@@ -7470,8 +7558,8 @@
         "BBC UK"
       ],
       "source_authority": 94,
-      "summary": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
-      "description": "The 14-year-old girl could have died in the frenzied attack, her mother says.",
+      "summary": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
+      "description": "The boy, 14, had stalked the girl after she refused to date him before attacking her in broad daylight.",
       "category": "国防安全",
       "domestic_score": 38,
       "importance": 57,
@@ -8045,258 +8133,6 @@
       "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "907c746904891764",
-      "title": "How Defense Secretary Pete Hegseth has brought the culture wars to the military",
-      "published_at": "2026-10-07T16:55:19+00:00",
-      "code": "US",
-      "event_country": "美国",
-      "sources": [
-        {
-          "id": "907c746904891764",
-          "title": "How Defense Secretary Pete Hegseth has brought the culture wars to the military",
-          "published_at": "2026-10-07T16:55:19+00:00",
-          "code": "US",
-          "event_country": "美国",
-          "sources": [
-            {
-              "title": "How Defense Secretary Pete Hegseth has brought the culture wars to the military",
-              "link": "https://www.npr.org/2026/10/07/nx-s1-5992775/how-defense-secretary-pete-hegseth-has-brought-the-culture-wars-to-the-military",
-              "published_at": "2026-10-07T16:55:19+00:00",
-              "source": "NPR",
-              "source_url": "https://www.npr.org/2026/10/07/nx-s1-5992775/how-defense-secretary-pete-hegseth-has-brought-the-culture-wars-to-the-military",
-              "description": "The New York Times reporter Greg Jaffe says Hegseth has disproportionately blocked promotions of Black and women senior officers, and he's also been purging the military of transgender people.",
-              "feed_country": "US",
-              "language": "en",
-              "code": "US",
-              "event_country": "美国",
-              "event_country_en": "United States"
-            }
-          ],
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/10/07/nx-s1-5992775/how-defense-secretary-pete-hegseth-has-brought-the-culture-wars-to-the-military",
-          "source_url": "https://www.npr.org/2026/10/07/nx-s1-5992775/how-defense-secretary-pete-hegseth-has-brought-the-culture-wars-to-the-military",
-          "source_count": 1,
-          "source_names": [
-            "NPR"
-          ],
-          "source_authority": 90,
-          "summary": "The New York Times reporter Greg Jaffe says Hegseth has disproportionately blocked promotions of Black and women senior officers, and he's also been purging the military of transgender people.",
-          "description": "The New York Times reporter Greg Jaffe says Hegseth has disproportionately blocked promotions of Black and women senior officers, and he's also been purging the military of transgender people.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "NPR",
-      "url": "",
-      "source_url": "https://www.npr.org/2026/10/07/nx-s1-5992775/how-defense-secretary-pete-hegseth-has-brought-the-culture-wars-to-the-military",
-      "source_count": 1,
-      "source_names": [
-        "NPR"
-      ],
-      "source_authority": 90,
-      "summary": "The New York Times reporter Greg Jaffe says Hegseth has disproportionately blocked promotions of Black and women senior officers, and he's also been purging the military of transgender people.",
-      "description": "The New York Times reporter Greg Jaffe says Hegseth has disproportionately blocked promotions of Black and women senior officers, and he's also been purging the military of transgender people.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "64090012c544a940",
-      "title": "Israelis demand accountability over 7 October failures three years after attacks",
-      "published_at": "2026-10-07T16:00:18+00:00",
-      "code": "IL",
-      "event_country": "以色列",
-      "sources": [
-        {
-          "id": "64090012c544a940",
-          "title": "Israelis demand accountability over 7 October failures three years after attacks",
-          "published_at": "2026-10-07T16:00:18+00:00",
-          "code": "IL",
-          "event_country": "以色列",
-          "sources": [
-            {
-              "title": "Israelis demand accountability over 7 October failures three years after attacks",
-              "link": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
-              "published_at": "2026-10-07T16:00:18+00:00",
-              "source": "BBC World",
-              "source_url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
-              "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "IL",
-              "event_country": "以色列",
-              "event_country_en": "Israel"
-            }
-          ],
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
-          "source_url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
-          "source_count": 1,
-          "source_names": [
-            "BBC World"
-          ],
-          "source_authority": 94,
-          "summary": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
-          "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
-          "category": "科技",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "BBC World",
-      "url": "",
-      "source_url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
-      "source_count": 1,
-      "source_names": [
-        "BBC World"
-      ],
-      "source_authority": 94,
-      "summary": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
-      "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
-      "category": "科技",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "9a0af2936af6512e",
-      "title": "Satellite images show attack jets at Chinese military facility in Laos",
-      "published_at": "2026-10-07T14:46:01+00:00",
-      "code": "CN",
-      "event_country": "中国",
-      "sources": [
-        {
-          "id": "9a0af2936af6512e",
-          "title": "Satellite images show attack jets at Chinese military facility in Laos",
-          "published_at": "2026-10-07T14:46:01+00:00",
-          "code": "CN",
-          "event_country": "中国",
-          "sources": [
-            {
-              "title": "Satellite images show attack jets at Chinese military facility in Laos",
-              "link": "https://www.theguardian.com/world/2026/oct/07/satellite-images-attack-jets-china-military-facility-laos",
-              "published_at": "2026-10-07T14:46:01+00:00",
-              "source": "卫报",
-              "source_url": "https://www.theguardian.com/world/2026/oct/07/satellite-images-attack-jets-china-military-facility-laos",
-              "description": "New ‘support and training centre’ prompts concern in region but China says it is ‘not directed at any third party’ Satellite images show attack jets stationed at a new Chinese military facility in Laos, which opened last week and gives Beijing’s air force its first foothold in mainland south-east Asia. Images provided by the commercial satellite provider Vantor show eight light attack aircraft positioned at Ban Keun airport alongside what appear to be more than a dozen military vehicles lined up in rows. Continue reading...",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "CN",
-              "event_country": "中国",
-              "event_country_en": "China"
-            }
-          ],
-          "source": "卫报",
-          "url": "https://www.theguardian.com/world/2026/oct/07/satellite-images-attack-jets-china-military-facility-laos",
-          "source_url": "https://www.theguardian.com/world/2026/oct/07/satellite-images-attack-jets-china-military-facility-laos",
-          "source_count": 1,
-          "source_names": [
-            "卫报"
-          ],
-          "source_authority": 92,
-          "summary": "New ‘support and training centre’ prompts concern in region but China says it is ‘not directed at any third party’ Satellite images show attack jets stationed at a new Chinese military facility in Laos, which opened last week and gives Beijing’s air force its first foothold in mainland south-east Asia. Images provided by the commercial satellite provider Vantor show eight light attack aircraft positioned at Ban Keun airport alongside what appear to be more than a dozen military vehicles lined up",
-          "description": "New ‘support and training centre’ prompts concern in region but China says it is ‘not directed at any third party’ Satellite images show attack jets stationed at a new Chinese military facility in Laos, which opened last week and gives Beijing’s air force its first foothold in mainland south-east Asia. Images provided by the commercial satellite provider Vantor show eight light attack aircraft positioned at Ban Keun airport alongside what appear to be more than a dozen military vehicles lined up",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "卫报",
-      "url": "",
-      "source_url": "https://www.theguardian.com/world/2026/oct/07/satellite-images-attack-jets-china-military-facility-laos",
-      "source_count": 1,
-      "source_names": [
-        "卫报"
-      ],
-      "source_authority": 92,
-      "summary": "New ‘support and training centre’ prompts concern in region but China says it is ‘not directed at any third party’ Satellite images show attack jets stationed at a new Chinese military facility in Laos, which opened last week and gives Beijing’s air force its first foothold in mainland south-east Asia. Images provided by the commercial satellite provider Vantor show eight light attack aircraft positioned at Ban Keun airport alongside what appear to be more than a dozen military vehicles lined up",
-      "description": "New ‘support and training centre’ prompts concern in region but China says it is ‘not directed at any third party’ Satellite images show attack jets stationed at a new Chinese military facility in Laos, which opened last week and gives Beijing’s air force its first foothold in mainland south-east Asia. Images provided by the commercial satellite provider Vantor show eight light attack aircraft positioned at Ban Keun airport alongside what appear to be more than a dozen military vehicles lined up",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "3db09a2d54244983",
-      "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-      "published_at": "2026-10-07T13:52:13+00:00",
-      "code": "GB",
-      "event_country": "英国",
-      "sources": [
-        {
-          "id": "3db09a2d54244983",
-          "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-          "published_at": "2026-10-07T13:52:13+00:00",
-          "code": "GB",
-          "event_country": "英国",
-          "sources": [
-            {
-              "title": "Ex-bankers jailed for rigging rates have convictions quashed",
-              "link": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-              "published_at": "2026-10-07T13:52:13+00:00",
-              "source": "BBC UK",
-              "source_url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-              "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-              "feed_country": "GB",
-              "language": "en",
-              "code": "GB",
-              "event_country": "英国",
-              "event_country_en": "United Kingdom"
-            }
-          ],
-          "source": "BBC UK",
-          "url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-          "source_url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-          "source_count": 1,
-          "source_names": [
-            "BBC UK"
-          ],
-          "source_authority": 94,
-          "summary": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-          "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-          "category": "金融",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "BBC UK",
-      "url": "",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm4g175e8163o?at_medium=RSS&at_campaign=rss",
-      "source_count": 1,
-      "source_names": [
-        "BBC UK"
-      ],
-      "source_authority": 94,
-      "summary": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-      "description": "Jay Merchant, Jonathan Mathew, Philippe Moryoussef, Alex Pabon, Colin Bermingham had their convictions overturned by the Court of Appeal.",
-      "category": "金融",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     }
   ],
   "supplement": [
@@ -8549,6 +8385,84 @@
       "title_zh": "也门战争实况：政府军夺取关键高度，胡塞武装袭击仍在继续"
     },
     {
+      "id": "2b01b976edf9fae3",
+      "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+      "published_at": "2026-10-08T06:16:38+00:00",
+      "code": "GB",
+      "event_country": "英国",
+      "sources": [
+        {
+          "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
+          "link": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+          "published_at": "2026-10-08T06:16:38+00:00",
+          "source": "彭博社",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+          "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "GB",
+          "event_country": "英国",
+          "event_country_en": "United Kingdom"
+        }
+      ],
+      "source": "彭博社",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/ai-bubble-risks-worst-s-p-500-crash-since-2008-strategist-says",
+      "source_count": 1,
+      "source_names": [
+        "彭博社"
+      ],
+      "source_authority": 96,
+      "summary": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+      "description": "The head of market strategy at a London investment bank has a stark warning for investors: the artificial-intelligence trade may soon be over in what could trigger the most severe market crash since the global financial crisis.",
+      "category": "科技",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "策略师表示，人工智能泡沫可能导致标准普尔 500 指数自 2008 年以来最严重的崩盘"
+    },
+    {
+      "id": "3aa5d2e70b0bc255",
+      "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+      "published_at": "2026-10-08T06:00:12+00:00",
+      "code": "GB",
+      "event_country": "英国",
+      "sources": [
+        {
+          "title": "Voting opens in high stakes Holborn and St Pancras byelection",
+          "link": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+          "published_at": "2026-10-08T06:00:12+00:00",
+          "source": "卫报",
+          "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+          "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as an MP shortly after resigning as prime minister. Continue reading...",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "GB",
+          "event_country": "英国",
+          "event_country_en": "United Kingdom"
+        }
+      ],
+      "source": "卫报",
+      "url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+      "source_url": "https://www.theguardian.com/politics/2026/oct/08/voting-opens-holborn-st-pancras-byelection-green-party-zack-polanksi-labour-sagal-abdi-wali",
+      "source_count": 1,
+      "source_names": [
+        "卫报"
+      ],
+      "source_authority": 92,
+      "summary": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+      "description": "Zack Polanski has led energetic campaign for the Greens, while Labour will hope to hold on to Starmer’s old seat Voting has opened in the Holborn and St Pancras byelection, a contest seen as a key gauge of Andy Burnham’s ability to energise voters and whether Zack Polanski’s Greens can still peel off support from Labour’s left. Polanski, who leads the Greens in England and Wales, is standing for his party in the north London constituency, previously held by Keir Starmer before he stood down as a",
+      "category": "政治",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "霍尔本和圣潘克拉斯补选高风险投票开始"
+    },
+    {
       "id": "41c6d28af1b150bd",
       "title": "Italy Weighs Controversial Law Giving Bonus Seats to Election Winners",
       "published_at": "2026-10-08T04:01:04+00:00",
@@ -8585,7 +8499,7 @@
       "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "意大利考虑通过有争议的法律向选举获胜者提供额外席位"
+      "title_zh": "意大利正在考虑向选举获胜者提供额外席位的有争议的法律"
     },
     {
       "id": "c793f74162ca3e98",
@@ -8625,90 +8539,12 @@
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "title_zh": "官员称，胡塞武装袭击沙特阿拉伯机场，造成三人死亡"
-    },
-    {
-      "id": "7bfb6652211b6a7e",
-      "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
-      "published_at": "2026-10-08T02:05:33+00:00",
-      "code": "AU",
-      "event_country": "澳大利亚",
-      "sources": [
-        {
-          "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
-          "link": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
-          "published_at": "2026-10-08T02:05:33+00:00",
-          "source": "卫报",
-          "source_url": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
-          "description": "Exclusive: Revelation comes after executive told parliamentary inquiry he did not believe AI had been used to write message, but was ‘happy to go and confirm’ Get our breaking news email , free app or daily news podcast OpenAI used AI to help write the email to the Australian government advising that its AI agent had hacked into key departmental websites, Guardian Australia can reveal. On Tuesday, one of the company’s executives told a parliamentary inquiry that he didn’t believe that its own technology had been used to create the email, but said the company needed to confirm this. Continue reading...",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "AU",
-          "event_country": "澳大利亚",
-          "event_country_en": "Australia"
-        }
-      ],
-      "source": "卫报",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
-      "source_url": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
-      "source_count": 1,
-      "source_names": [
-        "卫报"
-      ],
-      "source_authority": 92,
-      "summary": "Exclusive: Revelation comes after executive told parliamentary inquiry he did not believe AI had been used to write message, but was ‘happy to go and confirm’ Get our breaking news email , free app or daily news podcast OpenAI used AI to help write the email to the Australian government advising that its AI agent had hacked into key departmental websites, Guardian Australia can reveal. On Tuesday, one of the company’s executives told a parliamentary inquiry that he didn’t believe that its own te",
-      "description": "Exclusive: Revelation comes after executive told parliamentary inquiry he did not believe AI had been used to write message, but was ‘happy to go and confirm’ Get our breaking news email , free app or daily news podcast OpenAI used AI to help write the email to the Australian government advising that its AI agent had hacked into key departmental websites, Guardian Australia can reveal. On Tuesday, one of the company’s executives told a parliamentary inquiry that he didn’t believe that its own te",
-      "category": "政治",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "OpenAI 使用 AI 帮助撰写电子邮件，警告澳大利亚政府 AI 入侵了其网站"
-    },
-    {
-      "id": "531e4c9e0badda06",
-      "title": "Fortescue Warns China Dispute Is Weighing on Iron Ore Sales",
-      "published_at": "2026-10-07T22:46:37+00:00",
-      "code": "CN",
-      "event_country": "中国",
-      "sources": [
-        {
-          "title": "Fortescue Warns China Dispute Is Weighing on Iron Ore Sales",
-          "link": "https://www.bloomberg.com/news/articles/2026-10-07/fortescue-flags-lower-iron-ore-sales-as-china-dispute-drags-on",
-          "published_at": "2026-10-07T22:46:37+00:00",
-          "source": "彭博社",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/fortescue-flags-lower-iron-ore-sales-as-china-dispute-drags-on",
-          "description": "Iron ore miner Fortescue Ltd. said sales fell and prices were down, in a rare warning to the market as a standoff with state-backed buyer China Mineral Resources Group Co. over supply contracts and price negotiations drag on.",
-          "feed_country": "GLOBAL",
-          "language": "en",
-          "code": "CN",
-          "event_country": "中国",
-          "event_country_en": "China"
-        }
-      ],
-      "source": "彭博社",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-07/fortescue-flags-lower-iron-ore-sales-as-china-dispute-drags-on",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-10-07/fortescue-flags-lower-iron-ore-sales-as-china-dispute-drags-on",
-      "source_count": 1,
-      "source_names": [
-        "彭博社"
-      ],
-      "source_authority": 96,
-      "summary": "Iron ore miner Fortescue Ltd. said sales fell and prices were down, in a rare warning to the market as a standoff with state-backed buyer China Mineral Resources Group Co. over supply contracts and price negotiations drag on.",
-      "description": "Iron ore miner Fortescue Ltd. said sales fell and prices were down, in a rare warning to the market as a standoff with state-backed buyer China Mineral Resources Group Co. over supply contracts and price negotiations drag on.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "Fortescue警告中国争端正在影响铁矿石销售"
     }
   ],
   "stats": {
     "countries": 31,
-    "events": 164,
-    "tier1_events": 117,
+    "events": 160,
+    "tier1_events": 116,
     "supplement_events": 10,
     "failed_sources": 0,
     "successful_sources": 21,
@@ -8729,14 +8565,14 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 169,
+    "translated": 165,
     "failed": 0,
     "remaining_english": 0,
     "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-07",
-    "removed": 3,
-    "undated_removed": 51
+    "removed": 2,
+    "undated_removed": 52
   }
 }
