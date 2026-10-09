@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T05:56:39.918996+00:00",
-  "generated_beijing": "2026-10-09 13:56",
+  "generated_at": "2026-10-09T06:39:02.968735+00:00",
+  "generated_beijing": "2026-10-09 14:39",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -17,47 +17,6 @@
         "target_max": 20,
         "count": 19,
         "events": [
-          {
-            "id": "775acb300ec86729",
-            "title": "Trump gives top US science awards to Elon Musk and other tech executives",
-            "published_at": "2026-10-08T21:11:54+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Trump gives top US science awards to Elon Musk and other tech executives",
-                "link": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-                "published_at": "2026-10-08T21:11:54+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-                "description": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-            "description": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 73,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普将美国最高科学奖授予埃隆·马斯克和其他科技高管"
-          },
           {
             "id": "236419f181f04d96",
             "title": "No new attack on Iran before the midterm elections, Trump says",
@@ -132,7 +91,7 @@
             "description": "Pentagon chief joins Trump in attempt to use deadly shooting at Texas base to attack former Democratic president Thousands turn out to welcome weary USS Lincoln sailors Sign up for the US Breaking News email Donald Trump has urged James Talarico , the Democratic nominee in the US Senate race in Texas, to debate Ken Paxton – Republican attorney general that the president has endorsed in the election. On Truth Social, Trump described Paxton as “ready, willing, and able” to take on Talarico – the 3",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 72,
+            "importance": 71,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -378,7 +337,7 @@
             "description": "U.S. authorities added new torture charges to their case against former Venezuelan President Nicolás Maduro, ramping up pressure on the ousted authoritarian leader already fighting drug trafficking allegations.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 54,
+            "importance": 53,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -419,54 +378,13 @@
             "description": "A majority of ownership in a proposed multibillion-dollar deal would go to a group of Middle Eastern investors, including some with business ties to U.S. negotiators.",
             "category": "能源",
             "domestic_score": 38,
-            "importance": 53,
+            "importance": 52,
             "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "特朗普的俄罗斯石油交易中，中东基金是最大所有者"
-          },
-          {
-            "id": "a06c74a884ce0928",
-            "title": "US Targets Indian IT Companies in Crackdown on Alleged Visa Abuse",
-            "published_at": "2026-10-09T02:45:32+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "US Targets Indian IT Companies in Crackdown on Alleged Visa Abuse",
-                "link": "https://www.bloomberg.com/news/newsletters/2026-10-09/us-targets-indian-it-companies-in-crackdown-on-alleged-visa-abuse",
-                "published_at": "2026-10-09T02:45:32+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/newsletters/2026-10-09/us-targets-indian-it-companies-in-crackdown-on-alleged-visa-abuse",
-                "description": "Infosys, Tata, Wipro and HCL Technologies among firms accused of visa abuse by Trump administration",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/newsletters/2026-10-09/us-targets-indian-it-companies-in-crackdown-on-alleged-visa-abuse",
-            "source_url": "https://www.bloomberg.com/news/newsletters/2026-10-09/us-targets-indian-it-companies-in-crackdown-on-alleged-visa-abuse",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Infosys, Tata, Wipro and HCL Technologies among firms accused of visa abuse by Trump administration",
-            "description": "Infosys, Tata, Wipro and HCL Technologies among firms accused of visa abuse by Trump administration",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国打击印度 IT 公司涉嫌滥用签证行为"
           },
           {
             "id": "9ec7efa0580c48d9",
@@ -549,6 +467,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "美国黑人自杀率上升。我们需要谈谈它。"
+          },
+          {
+            "id": "3d1314ce6c2155c6",
+            "title": "Daughter of Trump’s chief of staff works at firm that lobbies for Republika Srpska",
+            "published_at": "2026-10-08T15:17:53+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Daughter of Trump’s chief of staff works at firm that lobbies for Republika Srpska",
+                "link": "https://www.ft.com/content/c163a470-e73f-4fdb-91fb-426004b21f22?syn-25a6b1a6=1",
+                "published_at": "2026-10-08T15:17:53+00:00",
+                "source": "金融时报",
+                "source_url": "https://www.ft.com/content/c163a470-e73f-4fdb-91fb-426004b21f22?syn-25a6b1a6=1",
+                "description": "Susie Wiles’s daughter is latest White House-linked adviser to the Russian-aligned Balkan entity",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/c163a470-e73f-4fdb-91fb-426004b21f22?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/c163a470-e73f-4fdb-91fb-426004b21f22?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "Susie Wiles’s daughter is latest White House-linked adviser to the Russian-aligned Balkan entity",
+            "description": "Susie Wiles’s daughter is latest White House-linked adviser to the Russian-aligned Balkan entity",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 49,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "特朗普幕僚长的女儿在塞族共和国游说公司工作"
           },
           {
             "id": "926625e030e270dc",
@@ -674,6 +633,47 @@
             "title_zh": "伊萨亚斯在与墨西哥湾沿岸碰撞过程中增强为 2 级飓风"
           },
           {
+            "id": "38bc027e5139e2d6",
+            "title": "4 people on NASA's Crew-12 mission return to Earth after 8 months in space",
+            "published_at": "2026-10-08T15:34:39+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "4 people on NASA's Crew-12 mission return to Earth after 8 months in space",
+                "link": "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown",
+                "published_at": "2026-10-08T15:34:39+00:00",
+                "source": "NPR",
+                "source_url": "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown",
+                "description": "Four people — two NASA astronauts, one from the European Space Agency and a Russian cosmonaut — spent nearly eight months at the space station, conducting spacewalks, science experiments and research.",
+                "feed_country": "US",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown",
+            "source_url": "https://www.npr.org/2026/10/08/nx-s1-5992845/nasa-spacex-crew-12-international-space-station-iss-splashdown",
+            "source_count": 1,
+            "source_names": [
+              "NPR"
+            ],
+            "source_authority": 90,
+            "summary": "Four people — two NASA astronauts, one from the European Space Agency and a Russian cosmonaut — spent nearly eight months at the space station, conducting spacewalks, science experiments and research.",
+            "description": "Four people — two NASA astronauts, one from the European Space Agency and a Russian cosmonaut — spent nearly eight months at the space station, conducting spacewalks, science experiments and research.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "NASA Crew-12 任务中的 4 名人员在太空停留 8 个月后返回地球"
+          },
+          {
             "id": "f826b0fcfdc8e388",
             "title": "OpenAI caught Russians and Iranians using ChatGPT for influence campaigns",
             "published_at": "2026-10-09T00:25:15+00:00",
@@ -788,7 +788,7 @@
             "description": "The US will provide $1.5bn (£1.1bn) under the deal that was negotiated after Trump cut USAID funding.",
             "category": "社会",
             "domestic_score": 30,
-            "importance": 43,
+            "importance": 42,
             "why_important": "涉及社会，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -804,7 +804,7 @@
         "code": "CN",
         "target_min": 8,
         "target_max": 20,
-        "count": 9,
+        "count": 13,
         "events": [
           {
             "id": "08b83cfb1ab7c731",
@@ -839,11 +839,11 @@
             "description": "The new runway in Ban Keun is currently used by only small jets. Neighboring nations are watching warily to see if Beijing expands it for larger aircraft.",
             "category": "国防安全",
             "domestic_score": 30,
-            "importance": 80,
+            "importance": 79,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "国家重大",
+            "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "中国在老挝建立基地扩大军事影响力"
           },
@@ -1012,19 +1012,19 @@
             "title_zh": "中信里昂证券谈中国即将到来的活跃ETF市场"
           },
           {
-            "id": "2277cdb1ffb1eaf2",
-            "title": "央行为什么发布关于人民币汇率的政策立场",
-            "published_at": "2026-10-09T03:48:46+00:00",
+            "id": "1ff104cd9ac49b2f",
+            "title": "驻马尔代夫大使馆提醒中国游客注意涉水活动安全",
+            "published_at": "2026-10-09T05:59:43+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "央行为什么发布关于人民币汇率的政策立场",
-                "link": "https://www.chinanews.com.cn/cj/2026/10-09/10709554.shtml",
-                "published_at": "2026-10-09T03:48:46+00:00",
+                "title": "驻马尔代夫大使馆提醒中国游客注意涉水活动安全",
+                "link": "https://www.chinanews.com.cn/hr/2026/10-09/10709601.shtml",
+                "published_at": "2026-10-09T05:59:43+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709554.shtml",
-                "description": "谭谈：央行为什么发布关于人民币汇率的政策立场",
+                "source_url": "https://www.chinanews.com.cn/hr/2026/10-09/10709601.shtml",
+                "description": "中新网10月9日电 据中国驻马尔代夫大使馆微信公众号消息，近日，有中国公民在度假岛附近海域不幸溺亡，令人深感痛惜。驻马尔代夫大使馆郑重提醒来马中国公民，务必高度重视涉水安全，增强风险防范意识，谨慎参与涉水活动，确保人身安全。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1033,38 +1033,38 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/cj/2026/10-09/10709554.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709554.shtml",
+            "url": "https://www.chinanews.com.cn/hr/2026/10-09/10709601.shtml",
+            "source_url": "https://www.chinanews.com.cn/hr/2026/10-09/10709601.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "谭谈：央行为什么发布关于人民币汇率的政策立场",
-            "description": "谭谈：央行为什么发布关于人民币汇率的政策立场",
-            "category": "宏观经济",
+            "summary": "中新网10月9日电 据中国驻马尔代夫大使馆微信公众号消息，近日，有中国公民在度假岛附近海域不幸溺亡，令人深感痛惜。驻马尔代夫大使馆郑重提醒来马中国公民，务必高度重视涉水安全，增强风险防范意识，谨慎参与涉水活动，确保人身安全。",
+            "description": "中新网10月9日电 据中国驻马尔代夫大使馆微信公众号消息，近日，有中国公民在度假岛附近海域不幸溺亡，令人深感痛惜。驻马尔代夫大使馆郑重提醒来马中国公民，务必高度重视涉水安全，增强风险防范意识，谨慎参与涉水活动，确保人身安全。",
+            "category": "国防安全",
             "domestic_score": 30,
-            "importance": 53,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "importance": 52,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "8364e5e0c4849d39",
-            "title": "瑞典乒乓名将莫雷加德：“乒乓之心”在赛场中生长",
-            "published_at": "2026-10-09T03:25:42+00:00",
+            "id": "cfa8e177706fc78e",
+            "title": "当前刚果（金）安全形势复杂严峻 中使馆发布重要提醒",
+            "published_at": "2026-10-09T05:57:43+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "瑞典乒乓名将莫雷加德：“乒乓之心”在赛场中生长",
-                "link": "https://www.chinanews.com.cn/ty/2026/10-09/10709542.shtml",
-                "published_at": "2026-10-09T03:25:42+00:00",
+                "title": "当前刚果（金）安全形势复杂严峻 中使馆发布重要提醒",
+                "link": "https://www.chinanews.com.cn/hr/2026/10-09/10709593.shtml",
+                "published_at": "2026-10-09T05:57:43+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/ty/2026/10-09/10709542.shtml",
-                "description": "中新网北京10月9日电 题：瑞典乒乓名将莫雷加德：“乒乓之心”在赛场中生长",
+                "source_url": "https://www.chinanews.com.cn/hr/2026/10-09/10709593.shtml",
+                "description": "中新网10月9日电 据中国驻刚果民主共和国大使馆微信公众号消息，10月8日，中国驻刚果民主共和国大使馆发布刚果(金)安全形势通报，具体如下：",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1073,15 +1073,95 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/ty/2026/10-09/10709542.shtml",
-            "source_url": "https://www.chinanews.com.cn/ty/2026/10-09/10709542.shtml",
+            "url": "https://www.chinanews.com.cn/hr/2026/10-09/10709593.shtml",
+            "source_url": "https://www.chinanews.com.cn/hr/2026/10-09/10709593.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新网北京10月9日电 题：瑞典乒乓名将莫雷加德：“乒乓之心”在赛场中生长",
-            "description": "中新网北京10月9日电 题：瑞典乒乓名将莫雷加德：“乒乓之心”在赛场中生长",
+            "summary": "中新网10月9日电 据中国驻刚果民主共和国大使馆微信公众号消息，10月8日，中国驻刚果民主共和国大使馆发布刚果(金)安全形势通报，具体如下：",
+            "description": "中新网10月9日电 据中国驻刚果民主共和国大使馆微信公众号消息，10月8日，中国驻刚果民主共和国大使馆发布刚果(金)安全形势通报，具体如下：",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "b514611bb7236308",
+            "title": "跨国探访节目《大道 The Great Way》在重庆启动 讲述中国与东盟交流往来",
+            "published_at": "2026-10-09T06:11:01+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "跨国探访节目《大道 The Great Way》在重庆启动 讲述中国与东盟交流往来",
+                "link": "https://www.chinanews.com.cn/aseaninfo/2026/10-09/10709592.shtml",
+                "published_at": "2026-10-09T06:11:01+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-09/10709592.shtml",
+                "description": "【东盟专线】跨国探访节目《大道 The Great Way》在重庆启动 讲述中国与东盟交流往来",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/aseaninfo/2026/10-09/10709592.shtml",
+            "source_url": "https://www.chinanews.com.cn/aseaninfo/2026/10-09/10709592.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "【东盟专线】跨国探访节目《大道 The Great Way》在重庆启动 讲述中国与东盟交流往来",
+            "description": "【东盟专线】跨国探访节目《大道 The Great Way》在重庆启动 讲述中国与东盟交流往来",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 49,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "2b89a52096950ef8",
+            "title": "2026年全国马术三项赛青少年锦标赛落幕 香港骑手包揽冠亚军",
+            "published_at": "2026-10-09T06:34:33+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "2026年全国马术三项赛青少年锦标赛落幕 香港骑手包揽冠亚军",
+                "link": "https://www.chinanews.com.cn/ty/2026/10-09/10709585.shtml",
+                "published_at": "2026-10-09T06:34:33+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/ty/2026/10-09/10709585.shtml",
+                "description": "中新网西安10月9日电(记者 党田野 张一辰)2026年全国马术三项赛青少年锦标赛近日在秦汉国际马术中心落下帷幕。赛事为期三日，设盛装舞步、越野赛、场地障碍赛三个竞赛环节，依据三项总罚分确定最终名次。中国香港青年骑手王嘉莉发挥亮眼，搭档两匹赛驹包揽赛事冠、亚军。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/ty/2026/10-09/10709585.shtml",
+            "source_url": "https://www.chinanews.com.cn/ty/2026/10-09/10709585.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "中新网西安10月9日电(记者 党田野 张一辰)2026年全国马术三项赛青少年锦标赛近日在秦汉国际马术中心落下帷幕。赛事为期三日，设盛装舞步、越野赛、场地障碍赛三个竞赛环节，依据三项总罚分确定最终名次。中国香港青年骑手王嘉莉发挥亮眼，搭档两匹赛驹包揽赛事冠、亚军。",
+            "description": "中新网西安10月9日电(记者 党田野 张一辰)2026年全国马术三项赛青少年锦标赛近日在秦汉国际马术中心落下帷幕。赛事为期三日，设盛装舞步、越野赛、场地障碍赛三个竞赛环节，依据三项总罚分确定最终名次。中国香港青年骑手王嘉莉发挥亮眼，搭档两匹赛驹包揽赛事冠、亚军。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 48,
@@ -1092,19 +1172,19 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "f801811cedbedbf8",
-            "title": "《中国美术年鉴·2025》在京发布",
-            "published_at": "2026-10-09T03:23:16+00:00",
+            "id": "a371f1fdb5d519f4",
+            "title": "“中国天眼”发现首例原生演化脉冲星三体系统",
+            "published_at": "2026-10-09T06:32:02+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "《中国美术年鉴·2025》在京发布",
-                "link": "https://www.chinanews.com.cn/cul/2026/10-09/10709538.shtml",
-                "published_at": "2026-10-09T03:23:16+00:00",
+                "title": "“中国天眼”发现首例原生演化脉冲星三体系统",
+                "link": "https://www.chinanews.com.cn/sh/2026/10-09/10709583.shtml",
+                "published_at": "2026-10-09T06:32:02+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/cul/2026/10-09/10709538.shtml",
-                "description": "中新网北京10月9日电 (记者 应妮)由中国文联指导、中国美术家协会主办、《美术》杂志社承办，人民出版社出版的《中国美术年鉴·2025》发布仪式8日在京举行。",
+                "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709583.shtml",
+                "description": "中新网北京10月9日电 (记者 孙自法)中国科学院国家天文台10月9日发布消息说，该台韩金林研究员领衔的中国多家机构联合团队，结合“中国天眼”(500米口径球面射电望远镜，英文缩写FAST)观测数据与国际上光学和伽马射线望远镜的多波段天文数据，揭示“中国天眼”发现的脉冲星J0435+3233属于首例尚在演化阶段的原生三体，这也是第二例被确认的脉冲星三体系统。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1113,15 +1193,15 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/cul/2026/10-09/10709538.shtml",
-            "source_url": "https://www.chinanews.com.cn/cul/2026/10-09/10709538.shtml",
+            "url": "https://www.chinanews.com.cn/sh/2026/10-09/10709583.shtml",
+            "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709583.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "中新网北京10月9日电 (记者 应妮)由中国文联指导、中国美术家协会主办、《美术》杂志社承办，人民出版社出版的《中国美术年鉴·2025》发布仪式8日在京举行。",
-            "description": "中新网北京10月9日电 (记者 应妮)由中国文联指导、中国美术家协会主办、《美术》杂志社承办，人民出版社出版的《中国美术年鉴·2025》发布仪式8日在京举行。",
+            "summary": "中新网北京10月9日电 (记者 孙自法)中国科学院国家天文台10月9日发布消息说，该台韩金林研究员领衔的中国多家机构联合团队，结合“中国天眼”(500米口径球面射电望远镜，英文缩写FAST)观测数据与国际上光学和伽马射线望远镜的多波段天文数据，揭示“中国天眼”发现的脉冲星J0435+3233属于首例尚在演化阶段的原生三体，这也是第二例被确认的脉冲星三体系统。",
+            "description": "中新网北京10月9日电 (记者 孙自法)中国科学院国家天文台10月9日发布消息说，该台韩金林研究员领衔的中国多家机构联合团队，结合“中国天眼”(500米口径球面射电望远镜，英文缩写FAST)观测数据与国际上光学和伽马射线望远镜的多波段天文数据，揭示“中国天眼”发现的脉冲星J0435+3233属于首例尚在演化阶段的原生三体，这也是第二例被确认的脉冲星三体系统。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 48,
@@ -1132,19 +1212,19 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "829cf40e7bb4cc6c",
-            "title": "多只银行股创历史新高 透露哪些投资信号？",
-            "published_at": "2026-10-09T04:22:31+00:00",
+            "id": "ebc268b38369d91b",
+            "title": "长三角铁路部门中秋国庆假期运输累计发送旅客近5600万人次",
+            "published_at": "2026-10-09T06:30:30+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "title": "多只银行股创历史新高 透露哪些投资信号？",
-                "link": "https://www.chinanews.com.cn/cj/2026/10-09/10709562.shtml",
-                "published_at": "2026-10-09T04:22:31+00:00",
+                "title": "长三角铁路部门中秋国庆假期运输累计发送旅客近5600万人次",
+                "link": "https://www.chinanews.com.cn/cj/2026/10-09/10709576.shtml",
+                "published_at": "2026-10-09T06:30:30+00:00",
                 "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709562.shtml",
-                "description": "央广网北京10月9日消息(记者吴雨婷)据中央广播电视总台经济之声《交易实况》报道，国庆假期后的首个交易日，A股主要股指震荡调整，红利资产却整体强势。申万银行指数涨1.03%，42只银行股有37只飘红。工商银行、中国银行双双创出历史新高。这轮上涨到底是避险情绪的短期脉冲，还是长线资金的价值重估？",
+                "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709576.shtml",
+                "description": "中新网南京10月9日电 (记者 朱晓颖)中国铁路上海局集团有限公司9日统计，为期16天的2026年中秋国庆假期运输(9月23日至10月8日)期间，长三角铁路部门累计发送旅客近5600万人次。",
                 "feed_country": "GLOBAL",
                 "language": "cn",
                 "code": "CN",
@@ -1153,19 +1233,99 @@
               }
             ],
             "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/cj/2026/10-09/10709562.shtml",
-            "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709562.shtml",
+            "url": "https://www.chinanews.com.cn/cj/2026/10-09/10709576.shtml",
+            "source_url": "https://www.chinanews.com.cn/cj/2026/10-09/10709576.shtml",
             "source_count": 1,
             "source_names": [
               "中新网-即时"
             ],
             "source_authority": 62,
-            "summary": "央广网北京10月9日消息(记者吴雨婷)据中央广播电视总台经济之声《交易实况》报道，国庆假期后的首个交易日，A股主要股指震荡调整，红利资产却整体强势。申万银行指数涨1.03%，42只银行股有37只飘红。工商银行、中国银行双双创出历史新高。这轮上涨到底是避险情绪的短期脉冲，还是长线资金的价值重估？",
-            "description": "央广网北京10月9日消息(记者吴雨婷)据中央广播电视总台经济之声《交易实况》报道，国庆假期后的首个交易日，A股主要股指震荡调整，红利资产却整体强势。申万银行指数涨1.03%，42只银行股有37只飘红。工商银行、中国银行双双创出历史新高。这轮上涨到底是避险情绪的短期脉冲，还是长线资金的价值重估？",
-            "category": "金融",
+            "summary": "中新网南京10月9日电 (记者 朱晓颖)中国铁路上海局集团有限公司9日统计，为期16天的2026年中秋国庆假期运输(9月23日至10月8日)期间，长三角铁路部门累计发送旅客近5600万人次。",
+            "description": "中新网南京10月9日电 (记者 朱晓颖)中国铁路上海局集团有限公司9日统计，为期16天的2026年中秋国庆假期运输(9月23日至10月8日)期间，长三角铁路部门累计发送旅客近5600万人次。",
+            "category": "政治",
             "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "importance": 48,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "cd1ec029d6c55703",
+            "title": "接住全球小众需求！中国民企凭“柔性功夫”把“小单急单怪单”做成硬实力丨经观中国",
+            "published_at": "2026-10-09T06:15:24+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "接住全球小众需求！中国民企凭“柔性功夫”把“小单急单怪单”做成硬实力丨经观中国",
+                "link": "https://www.chinanews.com.cn/gsztc/2026/10-09/10709607.shtml",
+                "published_at": "2026-10-09T06:15:24+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/gsztc/2026/10-09/10709607.shtml",
+                "description": "文/陶思阅",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/gsztc/2026/10-09/10709607.shtml",
+            "source_url": "https://www.chinanews.com.cn/gsztc/2026/10-09/10709607.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "文/陶思阅",
+            "description": "文/陶思阅",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "4586ee1828a98fb6",
+            "title": "（走进中国乡村）河北“绣娘小镇”：老土布“织”出新生意",
+            "published_at": "2026-10-09T06:05:15+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "title": "（走进中国乡村）河北“绣娘小镇”：老土布“织”出新生意",
+                "link": "https://www.chinanews.com.cn/sh/2026/10-09/10709594.shtml",
+                "published_at": "2026-10-09T06:05:15+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709594.shtml",
+                "description": "中新社河北迁安10月9日电 题：河北“绣娘小镇”：老土布“织”出新生意",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "CN",
+                "event_country": "中国",
+                "event_country_en": "China"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/sh/2026/10-09/10709594.shtml",
+            "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709594.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "中新社河北迁安10月9日电 题：河北“绣娘小镇”：老土布“织”出新生意",
+            "description": "中新社河北迁安10月9日电 题：河北“绣娘小镇”：老土布“织”出新生意",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -1179,7 +1339,7 @@
         "code": "GB",
         "target_min": 8,
         "target_max": 20,
-        "count": 19,
+        "count": 20,
         "events": [
           {
             "id": "fa71c436f8019311",
@@ -1269,95 +1429,13 @@
             "description": "A judge in London said that a “significant error” had been made in the granting of search warrants in an investigation into Andrew Mountbatten-Windsor.",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 77,
+            "importance": 76,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "法院称用于搜查安德鲁住宅的搜查令是非法的"
-          },
-          {
-            "id": "e2a8ef84e2d1aad3",
-            "title": "Labour fends off Green party to win Holborn and St Pancras byelection",
-            "published_at": "2026-10-09T02:03:41+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Labour fends off Green party to win Holborn and St Pancras byelection",
-                "link": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
-                "published_at": "2026-10-09T02:03:41+00:00",
-                "source": "卫报",
-                "source_url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
-                "description": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, was considered a two-horse race between the Labour candidate, Sagal Abdi-Wali, and the Green party leader, Polanski. Abdi-Wali received 12,292 votes, 45% of the vote, to Polanski’s 8,928, 33% of the vote. Continue reading...",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
-            "source_url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
-            "source_count": 1,
-            "source_names": [
-              "卫报"
-            ],
-            "source_authority": 92,
-            "summary": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, ",
-            "description": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, ",
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 74,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "工党击败绿党赢得霍尔本和圣潘克拉斯补选"
-          },
-          {
-            "id": "7b9eee25bf1da5c0",
-            "title": "ADHD and autism at risk of over-diagnosis, says government review",
-            "published_at": "2026-10-08T23:01:30+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "ADHD and autism at risk of over-diagnosis, says government review",
-                "link": "https://www.bbc.co.uk/news/articles/crkg7n1ypj24o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T23:01:30+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/crkg7n1ypj24o?at_medium=RSS&at_campaign=rss",
-                "description": "The review, which focuses on younger people, warned there was a risk society was moving from an era of under-diagnosis to over-diagnosis.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/crkg7n1ypj24o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/crkg7n1ypj24o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "The review, which focuses on younger people, warned there was a risk society was moving from an era of under-diagnosis to over-diagnosis.",
-            "description": "The review, which focuses on younger people, warned there was a risk society was moving from an era of under-diagnosis to over-diagnosis.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 74,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "政府审查称多动症和自闭症面临过度诊断的风险"
           },
           {
             "id": "f2aee1a30d57651e",
@@ -1401,45 +1479,45 @@
             "title_zh": "为什么搜查令被视为非法以及接下来会发生什么？"
           },
           {
-            "id": "185db15cac958e06",
-            "title": "Woman told PC 'get off me' 300 times as he raped her",
-            "published_at": "2026-10-08T17:55:22+00:00",
+            "id": "e2a8ef84e2d1aad3",
+            "title": "Labour fends off Green party to win Holborn and St Pancras byelection",
+            "published_at": "2026-10-09T02:03:41+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Woman told PC 'get off me' 300 times as he raped her",
-                "link": "https://www.bbc.co.uk/news/articles/c6gqw1ed244ko?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T17:55:22+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/c6gqw1ed244ko?at_medium=RSS&at_campaign=rss",
-                "description": "Ryan Theaker, 30, was secretly recorded by the victim as he subjected her to an 82 minute attack.",
-                "feed_country": "GB",
+                "title": "Labour fends off Green party to win Holborn and St Pancras byelection",
+                "link": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
+                "published_at": "2026-10-09T02:03:41+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
+                "description": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, was considered a two-horse race between the Labour candidate, Sagal Abdi-Wali, and the Green party leader, Polanski. Abdi-Wali received 12,292 votes, 45% of the vote, to Polanski’s 8,928, 33% of the vote. Continue reading...",
+                "feed_country": "GLOBAL",
                 "language": "en",
                 "code": "GB",
                 "event_country": "英国",
                 "event_country_en": "United Kingdom"
               }
             ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c6gqw1ed244ko?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c6gqw1ed244ko?at_medium=RSS&at_campaign=rss",
+            "source": "卫报",
+            "url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
+            "source_url": "https://www.theguardian.com/politics/2026/oct/09/labour-wins-holborn-st-pancras-byelection-green-party",
             "source_count": 1,
             "source_names": [
-              "BBC UK"
+              "卫报"
             ],
-            "source_authority": 94,
-            "summary": "Ryan Theaker, 30, was secretly recorded by the victim as he subjected her to an 82 minute attack.",
-            "description": "Ryan Theaker, 30, was secretly recorded by the victim as he subjected her to an 82 minute attack.",
+            "source_authority": 92,
+            "summary": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, ",
+            "description": "Victory by Sagal Abdi-Wali in north London seat will be a relief for Andy Burnham in high-stakes battle for the left of British politics Holborn and St Pancras byelection – live updates Labour has seen off the Greens to win the Holborn and St Pancras byelection in a result that will relieve Andy Burnham and dent Zack Polanski’s position as a decisive power player on the left of British politics. The byelection, called after former prime minister Keir Starmer resigned from the seat in September, ",
             "category": "政治",
-            "domestic_score": 30,
-            "importance": 62,
+            "domestic_score": 38,
+            "importance": 73,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
+            "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "当PC强奸她时，女子对PC“放开我”300次"
+            "title_zh": "工党击败绿党赢得霍尔本和圣潘克拉斯补选"
           },
           {
             "id": "4e5aca889b7d2ae7",
@@ -1483,6 +1561,47 @@
             "title_zh": "工党在斯塔默前伦敦席位选举中击败绿党"
           },
           {
+            "id": "8ad109578a4bfe32",
+            "title": "Chris Mason: Polanski faces greatest crisis of his leadership so far",
+            "published_at": "2026-10-09T06:35:56+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Chris Mason: Polanski faces greatest crisis of his leadership so far",
+                "link": "https://www.bbc.co.uk/news/articles/cm70p821d6w4o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-09T06:35:56+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cm70p821d6w4o?at_medium=RSS&at_campaign=rss",
+                "description": "The Green leader faces pressure over his response to a party motion declaring Zionism a form of racism, as well as his by-election loss.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cm70p821d6w4o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cm70p821d6w4o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "The Green leader faces pressure over his response to a party motion declaring Zionism a form of racism, as well as his by-election loss.",
+            "description": "The Green leader faces pressure over his response to a party motion declaring Zionism a form of racism, as well as his by-election loss.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 56,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "克里斯·梅森：波兰斯基面临迄今为止最大的领导危机"
+          },
+          {
             "id": "307f9745fea376b6",
             "title": "Polanski defends leadership after Zionism row and by-election loss",
             "published_at": "2026-10-09T04:38:19+00:00",
@@ -1522,6 +1641,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "波兰斯基在犹太复国主义争论和补选失利后捍卫领导地位"
+          },
+          {
+            "id": "1b8de41d7a30e94e",
+            "title": "Teen's life transformed by gene editing",
+            "published_at": "2026-10-09T05:10:09+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Teen's life transformed by gene editing",
+                "link": "https://www.bbc.co.uk/news/articles/c6n8dg8kgjgko?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-09T05:10:09+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/c6n8dg8kgjgko?at_medium=RSS&at_campaign=rss",
+                "description": "Vian, 16, has thalassemia and had to have monthly blood transfusions throughout her childhood.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/c6n8dg8kgjgko?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/c6n8dg8kgjgko?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Vian, 16, has thalassemia and had to have monthly blood transfusions throughout her childhood.",
+            "description": "Vian, 16, has thalassemia and had to have monthly blood transfusions throughout her childhood.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "基因编辑改变青少年的生活"
           },
           {
             "id": "c9c677c6558277c3",
@@ -1647,45 +1807,45 @@
             "title_zh": "一个乡村投票决定离开英国，引发英国移民争论"
           },
           {
-            "id": "96be9c85c55b61ba",
-            "title": "Ex-councillor guilty of running sham Covid-19 lab",
-            "published_at": "2026-10-08T20:00:14+00:00",
+            "id": "556fbdf87749e99a",
+            "title": "Virgin unveils its future cross-Channel train as it gears up to take on Eurostar",
+            "published_at": "2026-10-09T06:00:39+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Ex-councillor guilty of running sham Covid-19 lab",
-                "link": "https://www.bbc.co.uk/news/articles/c39wzrdj7157o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T20:00:14+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/c39wzrdj7157o?at_medium=RSS&at_campaign=rss",
-                "description": "Faisal Shoukat is convicted of fraudulent trading and money laundering after a trial.",
-                "feed_country": "GB",
+                "title": "Virgin unveils its future cross-Channel train as it gears up to take on Eurostar",
+                "link": "https://www.theguardian.com/business/2026/oct/09/virgin-cross-channel-train-eurostar",
+                "published_at": "2026-10-09T06:00:39+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/business/2026/oct/09/virgin-cross-channel-train-eurostar",
+                "description": "Group plans to launch services from London in 2030 and hopes to outshine competitor with design inspiration from its airline, cruise and hotel arms Flash interiors, fancy food and maybe even a bar: Virgin has unveiled a mock-up of its future cross-Channel train, with a pledge to create “something genuinely new”. The group is planning to launch rail services from London to the continent in 2030, with Eurostar facing competition for the first time since the opening of the Channel tunnel. Continue reading...",
+                "feed_country": "GLOBAL",
                 "language": "en",
                 "code": "GB",
                 "event_country": "英国",
                 "event_country_en": "United Kingdom"
               }
             ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c39wzrdj7157o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c39wzrdj7157o?at_medium=RSS&at_campaign=rss",
+            "source": "卫报",
+            "url": "https://www.theguardian.com/business/2026/oct/09/virgin-cross-channel-train-eurostar",
+            "source_url": "https://www.theguardian.com/business/2026/oct/09/virgin-cross-channel-train-eurostar",
             "source_count": 1,
             "source_names": [
-              "BBC UK"
+              "卫报"
             ],
-            "source_authority": 94,
-            "summary": "Faisal Shoukat is convicted of fraudulent trading and money laundering after a trial.",
-            "description": "Faisal Shoukat is convicted of fraudulent trading and money laundering after a trial.",
-            "category": "政治",
+            "source_authority": 92,
+            "summary": "Group plans to launch services from London in 2030 and hopes to outshine competitor with design inspiration from its airline, cruise and hotel arms Flash interiors, fancy food and maybe even a bar: Virgin has unveiled a mock-up of its future cross-Channel train, with a pledge to create “something genuinely new”. The group is planning to launch rail services from London to the continent in 2030, with Eurostar facing competition for the first time since the opening of the Channel tunnel. Continue ",
+            "description": "Group plans to launch services from London in 2030 and hopes to outshine competitor with design inspiration from its airline, cruise and hotel arms Flash interiors, fancy food and maybe even a bar: Virgin has unveiled a mock-up of its future cross-Channel train, with a pledge to create “something genuinely new”. The group is planning to launch rail services from London to the continent in 2030, with Eurostar facing competition for the first time since the opening of the Channel tunnel. Continue ",
+            "category": "科技",
             "domestic_score": 30,
             "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "前议员因经营虚假 Covid-19 实验室而被判有罪"
+            "title_zh": "维珍公布其未来的跨海峡列车，准备与欧洲之星较量"
           },
           {
             "id": "5416a7a06ef6e9c9",
@@ -1770,19 +1930,19 @@
             "title_zh": "两名男子因涉嫌侵入剑桥郡英国皇家空军基地而被捕"
           },
           {
-            "id": "c443e41a6eea295e",
-            "title": "Body found in Colombia in search for missing Anton Green",
-            "published_at": "2026-10-08T16:24:19+00:00",
+            "id": "be852b54187506c3",
+            "title": "New evidence gives family hope after death in Spain",
+            "published_at": "2026-10-09T05:11:46+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Body found in Colombia in search for missing Anton Green",
-                "link": "https://www.bbc.co.uk/news/articles/cmy4xp74q4n5o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T16:24:19+00:00",
+                "title": "New evidence gives family hope after death in Spain",
+                "link": "https://www.bbc.co.uk/news/articles/c317jy2vx4l1o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-09T05:11:46+00:00",
                 "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/cmy4xp74q4n5o?at_medium=RSS&at_campaign=rss",
-                "description": "Anton Green's family are told a body found in Colombia is believed to be the missing 43-year-old.",
+                "source_url": "https://www.bbc.co.uk/news/articles/c317jy2vx4l1o?at_medium=RSS&at_campaign=rss",
+                "description": "Tobias White-Sansom, from Nottingham, was on a family holiday in Spain and died on a night out.",
                 "feed_country": "GB",
                 "language": "en",
                 "code": "GB",
@@ -1791,34 +1951,34 @@
               }
             ],
             "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cmy4xp74q4n5o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cmy4xp74q4n5o?at_medium=RSS&at_campaign=rss",
+            "url": "https://www.bbc.co.uk/news/articles/c317jy2vx4l1o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/c317jy2vx4l1o?at_medium=RSS&at_campaign=rss",
             "source_count": 1,
             "source_names": [
               "BBC UK"
             ],
             "source_authority": 94,
-            "summary": "Anton Green's family are told a body found in Colombia is believed to be the missing 43-year-old.",
-            "description": "Anton Green's family are told a body found in Colombia is believed to be the missing 43-year-old.",
-            "category": "政治",
+            "summary": "Tobias White-Sansom, from Nottingham, was on a family holiday in Spain and died on a night out.",
+            "description": "Tobias White-Sansom, from Nottingham, was on a family holiday in Spain and died on a night out.",
+            "category": "科技",
             "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "importance": 49,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "哥伦比亚发现尸体以寻找失踪的安东·格林"
+            "title_zh": "新证据给西班牙死后家人带来希望"
           },
           {
-            "id": "a7871a1a41b6e216",
-            "title": "Airtel Money to Debut After London’s Biggest IPO in Five Years",
+            "id": "dfd29d70623680ad",
+            "title": "Airtel Money to Debut in London’s Biggest IPO for Five Years",
             "published_at": "2026-10-09T04:40:30+00:00",
             "code": "GB",
             "event_country": "英国",
             "sources": [
               {
-                "title": "Airtel Money to Debut After London’s Biggest IPO in Five Years",
+                "title": "Airtel Money to Debut in London’s Biggest IPO for Five Years",
                 "link": "https://www.bloomberg.com/news/articles/2026-10-09/airtel-money-to-debut-after-london-s-biggest-ipo-in-five-years",
                 "published_at": "2026-10-09T04:40:30+00:00",
                 "source": "彭博社",
@@ -1849,7 +2009,48 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Airtel 资金将在伦敦五年来最大规模的首次公开募股后首次亮相"
+            "title_zh": "Airtel Money 将在伦敦五年来最大规模的 IPO 中首次亮相"
+          },
+          {
+            "id": "cfdef10b129691b6",
+            "title": "Emotions run high at the round table as Celebrity Traitors banish two players",
+            "published_at": "2026-10-08T23:08:09+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Emotions run high at the round table as Celebrity Traitors banish two players",
+                "link": "https://www.bbc.co.uk/news/articles/cm9dzl7wx2qyo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T23:08:09+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cm9dzl7wx2qyo?at_medium=RSS&at_campaign=rss",
+                "description": "Viewers watched to see whether Richard E Grant could save himself at the first round table of the series.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cm9dzl7wx2qyo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cm9dzl7wx2qyo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Viewers watched to see whether Richard E Grant could save himself at the first round table of the series.",
+            "description": "Viewers watched to see whether Richard E Grant could save himself at the first round table of the series.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "名人叛徒驱逐两名球员，圆桌会议上情绪高涨"
           },
           {
             "id": "76432fc329710e23",
@@ -1893,47 +2094,6 @@
             "title_zh": "发生致命火灾的电动自行车电池已修复 - 调查"
           },
           {
-            "id": "f5332e1153d087af",
-            "title": "Seventh man bailed in connection with RAF Fairford incident",
-            "published_at": "2026-10-08T18:04:22+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "title": "Seventh man bailed in connection with RAF Fairford incident",
-                "link": "https://www.bbc.co.uk/news/articles/c60qk0p043kdo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T18:04:22+00:00",
-                "source": "BBC UK",
-                "source_url": "https://www.bbc.co.uk/news/articles/c60qk0p043kdo?at_medium=RSS&at_campaign=rss",
-                "description": "A 22 year-old British national was arrested on Tuesday as part of the investigation into the incident near the airbase in Gloucestershire in September.",
-                "feed_country": "GB",
-                "language": "en",
-                "code": "GB",
-                "event_country": "英国",
-                "event_country_en": "United Kingdom"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c60qk0p043kdo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c60qk0p043kdo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "A 22 year-old British national was arrested on Tuesday as part of the investigation into the incident near the airbase in Gloucestershire in September.",
-            "description": "A 22 year-old British national was arrested on Tuesday as part of the investigation into the incident near the airbase in Gloucestershire in September.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "与英国皇家空军费尔福德事件有关的第七名男子被保释"
-          },
-          {
             "id": "0f48aa56e4debba4",
             "title": "Asos hackers took more personal details than first revealed, BBC finds",
             "published_at": "2026-10-08T16:29:33+00:00",
@@ -1966,13 +2126,54 @@
             "description": "Retailer issues update after BBC contacted by cyber criminals who said this week's breach went beyond \"basic contact details\"",
             "category": "科技",
             "domestic_score": 30,
-            "importance": 47,
+            "importance": 46,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "BBC 发现，Asos 黑客获取的个人信息比最初披露的还要多"
+            "title_zh": "BBC 发现，Asos 黑客窃取的个人信息比最初披露的还要多"
+          },
+          {
+            "id": "c9ed2866ae790b0e",
+            "title": "Forty five Scottish police officers suspended over alleged crimes against women",
+            "published_at": "2026-10-08T16:12:40+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "title": "Forty five Scottish police officers suspended over alleged crimes against women",
+                "link": "https://www.bbc.co.uk/news/articles/cqe9l0r105l8o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T16:12:40+00:00",
+                "source": "BBC UK",
+                "source_url": "https://www.bbc.co.uk/news/articles/cqe9l0r105l8o?at_medium=RSS&at_campaign=rss",
+                "description": "Chief Constable Jo Farrell says more officers are likely to face action as officers are re-vetted.",
+                "feed_country": "GB",
+                "language": "en",
+                "code": "GB",
+                "event_country": "英国",
+                "event_country_en": "United Kingdom"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cqe9l0r105l8o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cqe9l0r105l8o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Chief Constable Jo Farrell says more officers are likely to face action as officers are re-vetted.",
+            "description": "Chief Constable Jo Farrell says more officers are likely to face action as officers are re-vetted.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 46,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "四十五名苏格兰警察因涉嫌针对妇女犯罪被停职"
           }
         ]
       },
@@ -1984,47 +2185,6 @@
         "target_max": 20,
         "count": 19,
         "events": [
-          {
-            "id": "e89c612db5e0c241",
-            "title": "Joy as USS Lincoln back home after troubled Gulf deployment",
-            "published_at": "2026-10-09T00:13:02+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Joy as USS Lincoln back home after troubled Gulf deployment",
-                "link": "https://www.france24.com/en/live-news/20261009-joy-as-uss-lincoln-back-home-after-troubled-gulf-deployment",
-                "published_at": "2026-10-09T00:13:02+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/live-news/20261009-joy-as-uss-lincoln-back-home-after-troubled-gulf-deployment",
-                "description": "Thousands of emotional reunions unfolded Thursday as the USS Abraham Lincoln, whose lengthy deployment in the Gulf supporting President Donald Trump's war on Iran sparked fears for its crew's welfare, arrived back in its home port.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/live-news/20261009-joy-as-uss-lincoln-back-home-after-troubled-gulf-deployment",
-            "source_url": "https://www.france24.com/en/live-news/20261009-joy-as-uss-lincoln-back-home-after-troubled-gulf-deployment",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "Thousands of emotional reunions unfolded Thursday as the USS Abraham Lincoln, whose lengthy deployment in the Gulf supporting President Donald Trump's war on Iran sparked fears for its crew's welfare, arrived back in its home port.",
-            "description": "Thousands of emotional reunions unfolded Thursday as the USS Abraham Lincoln, whose lengthy deployment in the Gulf supporting President Donald Trump's war on Iran sparked fears for its crew's welfare, arrived back in its home port.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 75,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "林肯号航空母舰在海湾部署陷入困境后返回家园时的喜悦"
-          },
           {
             "id": "5c80d6ff1f4ed476",
             "title": "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
@@ -2038,7 +2198,7 @@
                 "published_at": "2026-10-08T21:19:29+00:00",
                 "source": "France24",
                 "source_url": "https://www.france24.com/en/europe/20261008-trump-envoys-ukraine-peace-talks-miami",
-                "description": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss new proposals to end Russia’s war in Ukraine, two US sources told AFP. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
+                "description": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss a new proposal to end Russia’s war in Ukraine. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
                 "feed_country": "FR",
                 "language": "en",
                 "code": "FR",
@@ -2054,8 +2214,8 @@
               "France24"
             ],
             "source_authority": 88,
-            "summary": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss new proposals to end Russia’s war in Ukraine, two US sources told AFP. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
-            "description": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss new proposals to end Russia’s war in Ukraine, two US sources told AFP. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
+            "summary": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss a new proposal to end Russia’s war in Ukraine. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
+            "description": "US President Donald Trump’s envoys will meet Ukrainian negotiators and European officials in Miami on Friday to discuss a new proposal to end Russia’s war in Ukraine. Steve Witkoff and Jared Kushner will present ideas developed during recent talks with both sides, one source said Thursday.",
             "category": "科技",
             "domestic_score": 30,
             "importance": 73,
@@ -2106,6 +2266,47 @@
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "英国法院裁定对前安德鲁王子住宅的搜查令非法"
+          },
+          {
+            "id": "3017ca42689ae2aa",
+            "title": "Families reunited as USS Lincoln returns from troubled 10-month deployment",
+            "published_at": "2026-10-09T00:13:02+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Families reunited as USS Lincoln returns from troubled 10-month deployment",
+                "link": "https://www.france24.com/en/americas/20261009-families-reunited-as-uss-lincoln-comes-home-after-troubled-gulf-deployment",
+                "published_at": "2026-10-09T00:13:02+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/americas/20261009-families-reunited-as-uss-lincoln-comes-home-after-troubled-gulf-deployment",
+                "description": "The USS Lincoln docked in California on Thursday ending a record deployment of 265 days of uninterrupted time at sea marked by reports of deteriorating conditions onboard. Crew members were reunited with family they had not seen in nearly a year after their mission was prolonged by the war in Iran.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/americas/20261009-families-reunited-as-uss-lincoln-comes-home-after-troubled-gulf-deployment",
+            "source_url": "https://www.france24.com/en/americas/20261009-families-reunited-as-uss-lincoln-comes-home-after-troubled-gulf-deployment",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "The USS Lincoln docked in California on Thursday ending a record deployment of 265 days of uninterrupted time at sea marked by reports of deteriorating conditions onboard. Crew members were reunited with family they had not seen in nearly a year after their mission was prolonged by the war in Iran.",
+            "description": "The USS Lincoln docked in California on Thursday ending a record deployment of 265 days of uninterrupted time at sea marked by reports of deteriorating conditions onboard. Crew members were reunited with family they had not seen in nearly a year after their mission was prolonged by the war in Iran.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 70,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "林肯号航空母舰从陷入困境的 10 个月部署归来，家人团聚"
           },
           {
             "id": "bc07b8ac77f4452a",
@@ -2304,7 +2505,7 @@
             "description": "The Pentagon said the firing squad execution of Fort Hood shooter Nidal Malik Hasan would be livestreamed on December 3. Defense Secretary Pete Hegseth said Wednesday the execution would be public. Hasan was convicted of killing 13 people and injuring 32 in a 2009 shooting at the Texas military base.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 61,
+            "importance": 60,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2395,47 +2596,6 @@
             "title_zh": "美国对委内瑞拉总统尼古拉斯·马杜罗和妻子西莉亚·弗洛雷斯提出新的酷刑指控"
           },
           {
-            "id": "15ada15173b346d5",
-            "title": "Brazil’s Flavio Bolsonaro wins third-place candidate’s support against Lula",
-            "published_at": "2026-10-09T02:34:06+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "title": "Brazil’s Flavio Bolsonaro wins third-place candidate’s support against Lula",
-                "link": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
-                "published_at": "2026-10-09T02:34:06+00:00",
-                "source": "France24",
-                "source_url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
-                "description": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
-                "feed_country": "FR",
-                "language": "en",
-                "code": "FR",
-                "event_country": "法国",
-                "event_country_en": "France"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
-            "source_url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
-            "description": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 53,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "巴西总统弗拉维奥·博尔索纳罗击败卢拉赢得第三名候选人支持"
-          },
-          {
             "id": "ea226c7a54b4edbc",
             "title": "The Wave of Student Protests Roiling France",
             "published_at": "2026-10-08T21:35:43+00:00",
@@ -2475,6 +2635,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "学生抗议浪潮席卷法国"
+          },
+          {
+            "id": "15ada15173b346d5",
+            "title": "Brazil’s Flavio Bolsonaro wins third-place candidate’s support against Lula",
+            "published_at": "2026-10-09T02:34:06+00:00",
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "title": "Brazil’s Flavio Bolsonaro wins third-place candidate’s support against Lula",
+                "link": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
+                "published_at": "2026-10-09T02:34:06+00:00",
+                "source": "France24",
+                "source_url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
+                "description": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
+                "feed_country": "FR",
+                "language": "en",
+                "code": "FR",
+                "event_country": "法国",
+                "event_country_en": "France"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
+            "source_url": "https://www.france24.com/en/americas/20261009-brazil-flavio-bolsonaro-third-place-candidate-lula",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
+            "description": "Brazil's right-wing presidential candidate Flavio Bolsonaro secured third-place finisher Augusto Cury's endorsement on Thursday, strengthening his position against incumbent Luiz Inacio Lula da Silva ahead of the runoff. Cury won nearly three percent in Sunday's first round. A Datafolha poll put Bolsonaro ahead with 52 percent against Lula's 48 percent.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "巴西总统弗拉维奥·博尔索纳罗击败卢拉赢得第三名候选人支持"
           },
           {
             "id": "ca09b15bd443e5b3",
@@ -2929,7 +3130,7 @@
             "description": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 62,
+            "importance": 61,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3134,7 +3335,7 @@
             "description": "The men were arrested for breaching a perimeter fence at a UK air base that houses US and NATO intelligence operations. The incident comes after an alleged terror plot at another air base in England was foiled recently.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 54,
+            "importance": 53,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3298,7 +3499,7 @@
             "description": "The EU's diplomatic service, Canada and host nation Lithuania all pulled support from a disinformation event in Vilnius. Amid reports of US pressure, the EU said it was \"uncomfortable with the framing\" of some panels.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 49,
+            "importance": 48,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3430,19 +3631,19 @@
             "title_zh": "在土豆节上，我们的柏林记者加深了与新土地的联系"
           },
           {
-            "id": "e5236a45a7c33e03",
-            "title": "EU envoy in Beijing for talks to calm trade tensions",
-            "published_at": "2026-10-08T14:42:00+00:00",
+            "id": "d62dfce27e8f4ef7",
+            "title": "India: Cockroach Janta Party leaders allege mass detentions ahead of Delhi protest, decry 'emergency'",
+            "published_at": "2026-10-09T06:04:00+00:00",
             "code": "DE",
             "event_country": "德国",
             "sources": [
               {
-                "title": "EU envoy in Beijing for talks to calm trade tensions",
-                "link": "https://www.dw.com/en/eu-envoy-in-beijing-for-talks-to-calm-trade-tensions/a-79598713?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-08T14:42:00+00:00",
+                "title": "India: Cockroach Janta Party leaders allege mass detentions ahead of Delhi protest, decry 'emergency'",
+                "link": "https://www.dw.com/en/india-cockroach-janta-party-leaders-allege-mass-detentions-ahead-of-delhi-protest-decry-emergency/live-79606961?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-09T06:04:00+00:00",
                 "source": "DW",
-                "source_url": "https://www.dw.com/en/eu-envoy-in-beijing-for-talks-to-calm-trade-tensions/a-79598713?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The EU trade envoy said he hoped to make progress in tackling the bloc's \"unsustainable\" trade imbalance with China. Beijing called for trade disputes to be resolved through equal dialogue.",
+                "source_url": "https://www.dw.com/en/india-cockroach-janta-party-leaders-allege-mass-detentions-ahead-of-delhi-protest-decry-emergency/live-79606961?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "The Cockroach Janta Party claims authorities are carrying out mass arrests ahead of its planned protest on October 10. Founder 'Cockroach' Abhijeet Dipke has accused the Modi government of \"intimidation.\" DW has more.",
                 "feed_country": "DE",
                 "language": "en",
                 "code": "DE",
@@ -3451,24 +3652,24 @@
               }
             ],
             "source": "DW",
-            "url": "https://www.dw.com/en/eu-envoy-in-beijing-for-talks-to-calm-trade-tensions/a-79598713?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/eu-envoy-in-beijing-for-talks-to-calm-trade-tensions/a-79598713?maca=en-rss-en-all-1573-xml-mrss",
+            "url": "https://www.dw.com/en/india-cockroach-janta-party-leaders-allege-mass-detentions-ahead-of-delhi-protest-decry-emergency/live-79606961?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/india-cockroach-janta-party-leaders-allege-mass-detentions-ahead-of-delhi-protest-decry-emergency/live-79606961?maca=en-rss-en-all-1573-xml-mrss",
             "source_count": 1,
             "source_names": [
               "DW"
             ],
             "source_authority": 89,
-            "summary": "The EU trade envoy said he hoped to make progress in tackling the bloc's \"unsustainable\" trade imbalance with China. Beijing called for trade disputes to be resolved through equal dialogue.",
-            "description": "The EU trade envoy said he hoped to make progress in tackling the bloc's \"unsustainable\" trade imbalance with China. Beijing called for trade disputes to be resolved through equal dialogue.",
-            "category": "产业/商业",
+            "summary": "The Cockroach Janta Party claims authorities are carrying out mass arrests ahead of its planned protest on October 10. Founder 'Cockroach' Abhijeet Dipke has accused the Modi government of \"intimidation.\" DW has more.",
+            "description": "The Cockroach Janta Party claims authorities are carrying out mass arrests ahead of its planned protest on October 10. Founder 'Cockroach' Abhijeet Dipke has accused the Modi government of \"intimidation.\" DW has more.",
+            "category": "社会",
             "domestic_score": 30,
             "importance": 47,
-            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "why_important": "涉及社会，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "欧盟特使在北京进行会谈以缓解贸易紧张局势"
+            "title_zh": "印度：蟑螂简塔党领导人声称德里抗议前进行大规模拘留，谴责“紧急状态”"
           },
           {
             "id": "d7560448924fb260",
@@ -3512,47 +3713,6 @@
             "title_zh": "法国：巴黎学生集会上警察与抗议者发生冲突"
           },
           {
-            "id": "8fe1d08d5e64a9aa",
-            "title": "US prosecutors add new torture charge against Maduro",
-            "published_at": "2026-10-08T16:24:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "US prosecutors add new torture charge against Maduro",
-                "link": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-08T16:24:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
-            "description": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国检察官对马杜罗提出新的酷刑指控"
-          },
-          {
             "id": "930a257986eb93c8",
             "title": "South Africa: Anti-migrant protests turn violent",
             "published_at": "2026-10-08T18:42:00+00:00",
@@ -3592,6 +3752,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "南非：反移民抗议演变为暴力"
+          },
+          {
+            "id": "8fe1d08d5e64a9aa",
+            "title": "US prosecutors add new torture charge against Maduro",
+            "published_at": "2026-10-08T16:24:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "US prosecutors add new torture charge against Maduro",
+                "link": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-08T16:24:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/us-prosecutors-add-new-torture-charge-against-maduro/a-79588019?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "source_authority": 89,
+            "summary": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
+            "description": "US prosecutors have added a new charge to their case against deposed Venezuelan leader Nicolas Maduro and his wife, Cilia Flores, accusing the couple of conspiring to commit torture.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 45,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "美国检察官对马杜罗提出新的酷刑指控"
           }
         ]
       },
@@ -3636,7 +3837,7 @@
             "description": "The Russian and Iranian presidents met in Turkmenistan ahead of regional summit.",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 83,
+            "importance": 82,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3882,7 +4083,7 @@
             "description": "Russia possess one of the world’s best and most powerful nuclear arsenals, Mikhail Kovalchuk said",
             "category": "能源",
             "domestic_score": 38,
-            "importance": 69,
+            "importance": 68,
             "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4012,47 +4213,6 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "两架无人机袭击伊拉克库尔德斯坦的伊朗反对派据点 — TV"
-          },
-          {
-            "id": "9860068cf881be1d",
-            "title": "Rubio warns Ukraine conflict could escalate into more dangerous regional war",
-            "published_at": "2026-10-08T13:50:00+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "Rubio warns Ukraine conflict could escalate into more dangerous regional war",
-                "link": "https://tass.com/world/2199355",
-                "published_at": "2026-10-08T13:50:00+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/world/2199355",
-                "description": "The US Secretary of State added that Washington would continue working to facilitate a negotiated settlement",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2199355",
-            "source_url": "https://tass.com/world/2199355",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "source_authority": 82,
-            "summary": "The US Secretary of State added that Washington would continue working to facilitate a negotiated settlement",
-            "description": "The US Secretary of State added that Washington would continue working to facilitate a negotiated settlement",
-            "category": "科技",
-            "domestic_score": 38,
-            "importance": 64,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "卢比奥警告乌克兰冲突可能升级为更危险的地区战争"
           },
           {
             "id": "e8480e4caa42b944",
@@ -4342,6 +4502,47 @@
             "title_zh": "俄罗斯大使馆表示，伦敦制裁不会改变莫斯科的方针"
           },
           {
+            "id": "8f089f1a9b01d589",
+            "title": "Ukrainian forces deliberately targeted non-military sites in Sochi in September — lawmaker",
+            "published_at": "2026-10-09T06:36:01+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "Ukrainian forces deliberately targeted non-military sites in Sochi in September — lawmaker",
+                "link": "https://tass.com/world/2199657",
+                "published_at": "2026-10-09T06:36:01+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/world/2199657",
+                "description": "Anna Skorokhod acknowledged that there are no military targets in Sochi",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2199657",
+            "source_url": "https://tass.com/world/2199657",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "source_authority": 82,
+            "summary": "Anna Skorokhod acknowledged that there are no military targets in Sochi",
+            "description": "Anna Skorokhod acknowledged that there are no military targets in Sochi",
+            "category": "科技",
+            "domestic_score": 38,
+            "importance": 51,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "乌克兰军队9月份蓄意袭击索契的非军事地点——立法者"
+          },
+          {
             "id": "75e6716a56300c74",
             "title": "Lukoil’s agreement with Carlyle on foreign assets has lapsed — report",
             "published_at": "2026-10-08T14:08:10+00:00",
@@ -4431,130 +4632,8 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 3,
-        "events": [
-          {
-            "id": "c192dee6422bc6bc",
-            "title": "高市减税政策持续遭质疑：日本民众对政治不信任感加剧",
-            "published_at": "2026-10-09T03:47:20+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "高市减税政策持续遭质疑：日本民众对政治不信任感加剧",
-                "link": "https://www.chinanews.com.cn/gj/2026/10-09/10709537.shtml",
-                "published_at": "2026-10-09T03:47:20+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/10-09/10709537.shtml",
-                "description": "中新网10月9日电 据日本广播协会(NHK)报道，当地时间9日，日本政府在内阁会议上敲定了把食品饮料的消费税税率从8%下调至1%的相关法案，并计划当天提交给国会。同时，日本在野党和民众进一步质疑减税措施的效果和资金来源问题。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/gj/2026/10-09/10709537.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/10-09/10709537.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新网10月9日电 据日本广播协会(NHK)报道，当地时间9日，日本政府在内阁会议上敲定了把食品饮料的消费税税率从8%下调至1%的相关法案，并计划当天提交给国会。同时，日本在野党和民众进一步质疑减税措施的效果和资金来源问题。",
-            "description": "中新网10月9日电 据日本广播协会(NHK)报道，当地时间9日，日本政府在内阁会议上敲定了把食品饮料的消费税税率从8%下调至1%的相关法案，并计划当天提交给国会。同时，日本在野党和民众进一步质疑减税措施的效果和资金来源问题。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "52f7dd014a3e23fd",
-            "title": "Foreigners Buy Japan Stocks Alongside Record Futures Selling",
-            "published_at": "2026-10-09T02:52:34+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Foreigners Buy Japan Stocks Alongside Record Futures Selling",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-09/foreigners-buy-japan-stocks-alongside-record-futures-selling",
-                "published_at": "2026-10-09T02:52:34+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-09/foreigners-buy-japan-stocks-alongside-record-futures-selling",
-                "description": "Overseas investors dumped the most Japanese stocks on record last week while buying up cash equities amid growing uncertainty over whether a rally in shares will continue.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-09/foreigners-buy-japan-stocks-alongside-record-futures-selling",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-09/foreigners-buy-japan-stocks-alongside-record-futures-selling",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Overseas investors dumped the most Japanese stocks on record last week while buying up cash equities amid growing uncertainty over whether a rally in shares will continue.",
-            "description": "Overseas investors dumped the most Japanese stocks on record last week while buying up cash equities amid growing uncertainty over whether a rally in shares will continue.",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 51,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "外国人在创纪录的期货抛售的同时购买日本股票"
-          },
-          {
-            "id": "78e86dea798531ec",
-            "title": "台风“诺洛”向西偏北方向移动 “小熊”继续增强",
-            "published_at": "2026-10-09T03:32:19+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "台风“诺洛”向西偏北方向移动 “小熊”继续增强",
-                "link": "https://www.chinanews.com.cn/sh/2026/10-09/10709548.shtml",
-                "published_at": "2026-10-09T03:32:19+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709548.shtml",
-                "description": "中新网10月9日电 据中央气象台网站消息，今年第28号台风“诺洛”(强热带风暴级)的中心今天(9日)上午8点钟位于日本东京东南方向约1270公里的西北太平洋洋面上，就是北纬28.4度，东经150.1度，中心附近最大风力10级(25米/秒)，中心最低气压为985百帕，七级风圈半径150-300公里。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/sh/2026/10-09/10709548.shtml",
-            "source_url": "https://www.chinanews.com.cn/sh/2026/10-09/10709548.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新网10月9日电 据中央气象台网站消息，今年第28号台风“诺洛”(强热带风暴级)的中心今天(9日)上午8点钟位于日本东京东南方向约1270公里的西北太平洋洋面上，就是北纬28.4度，东经150.1度，中心附近最大风力10级(25米/秒)，中心最低气压为985百帕，七级风圈半径150-300公里。",
-            "description": "中新网10月9日电 据中央气象台网站消息，今年第28号台风“诺洛”(强热带风暴级)的中心今天(9日)上午8点钟位于日本东京东南方向约1270公里的西北太平洋洋面上，就是北纬28.4度，东经150.1度，中心附近最大风力10级(25米/秒)，中心最低气压为985百帕，七级风圈半径150-300公里。",
-            "category": "灾害",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          }
-        ]
+        "count": 0,
+        "events": []
       }
     },
     "tier2": {
@@ -4640,7 +4719,7 @@
             "description": "He brought the intensity of the stage to the screen and was praised for his craft and philanthropy. He was also accused of sexual harassment.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 44,
+            "importance": 43,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4788,7 +4867,7 @@
         "code": "SA",
         "target_min": 5,
         "target_max": 12,
-        "count": 4,
+        "count": 3,
         "events": [
           {
             "id": "b61fe840a4dd5871",
@@ -4823,7 +4902,7 @@
             "description": "Saudi Arabia has not commented on claims, but confirmed three killed in airport strikes earlier this week Yemen’s Iran-aligned Houthis say they have struck Saudi Arabia’s Riyadh ⁠airport with a ballistic missile, badly damaging a plane and leading some airlines to suspend flights to the capital. The group provided no evidence, and Saudi Arabia did not immediately comment on the claim. Continue reading...",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 58,
+            "importance": 57,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -4871,47 +4950,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "胡塞武装袭击沙特机场导致航班大规模取消"
-          },
-          {
-            "id": "52608681b3ef41f3",
-            "title": "What is the Mecca defence pact?",
-            "published_at": "2026-10-08T21:04:48+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "What is the Mecca defence pact?",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/8/what-is-the-mecca-defence-pact?traffic_source=rss",
-                "published_at": "2026-10-08T21:04:48+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/what-is-the-mecca-defence-pact?traffic_source=rss",
-                "description": "Saudi Arabia, Turkiye and Pakistan are activating their defence pact to counter attacks from Yemen’s Houthis.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "SA",
-                "event_country": "沙特阿拉伯",
-                "event_country_en": "Saudi Arabia"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/what-is-the-mecca-defence-pact?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/what-is-the-mecca-defence-pact?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "Saudi Arabia, Turkiye and Pakistan are activating their defence pact to counter attacks from Yemen’s Houthis.",
-            "description": "Saudi Arabia, Turkiye and Pakistan are activating their defence pact to counter attacks from Yemen’s Houthis.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 55,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "什么是麦加防御条约？"
           },
           {
             "id": "94351b4b9cc9e117",
@@ -5048,7 +5086,7 @@
             "description": "The U.S. police say a 30-year-old offered the killer advice and cash for supplies at least six months before the rampage in British Columbia that left eight dead.",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 49,
+            "importance": 48,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5064,49 +5102,8 @@
         "code": "AU",
         "target_min": 5,
         "target_max": 12,
-        "count": 4,
+        "count": 2,
         "events": [
-          {
-            "id": "9e48afce5ffc768e",
-            "title": "Australia to Release Final Plan to Keep More LNG Output at Home",
-            "published_at": "2026-10-09T04:07:36+00:00",
-            "code": "AU",
-            "event_country": "澳大利亚",
-            "sources": [
-              {
-                "title": "Australia to Release Final Plan to Keep More LNG Output at Home",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-09/australia-to-release-final-plan-to-keep-more-lng-output-at-home",
-                "published_at": "2026-10-09T04:07:36+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-09/australia-to-release-final-plan-to-keep-more-lng-output-at-home",
-                "description": "Australia is set to unveil the final version of a controversial plan to force liquefied natural gas producers to reserve as much as a fifth of their output for local buyers.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "AU",
-                "event_country": "澳大利亚",
-                "event_country_en": "Australia"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-09/australia-to-release-final-plan-to-keep-more-lng-output-at-home",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-09/australia-to-release-final-plan-to-keep-more-lng-output-at-home",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Australia is set to unveil the final version of a controversial plan to force liquefied natural gas producers to reserve as much as a fifth of their output for local buyers.",
-            "description": "Australia is set to unveil the final version of a controversial plan to force liquefied natural gas producers to reserve as much as a fifth of their output for local buyers.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "澳大利亚将发布最终计划以在国内保留更多液化天然气产量"
-          },
           {
             "id": "20c407fbe4f71581",
             "title": "Adidas sues Australian label White Fox over four stripes design",
@@ -5147,46 +5144,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "阿迪达斯因四条纹设计起诉澳大利亚品牌 White Fox"
-          },
-          {
-            "id": "8eccf2a647d897a9",
-            "title": "澳大利亚著名汉学家马克林逝世 享年87岁",
-            "published_at": "2026-10-09T03:50:10+00:00",
-            "code": "AU",
-            "event_country": "澳大利亚",
-            "sources": [
-              {
-                "title": "澳大利亚著名汉学家马克林逝世 享年87岁",
-                "link": "https://www.chinanews.com.cn/gj/2026/10-09/10709520.shtml",
-                "published_at": "2026-10-09T03:50:10+00:00",
-                "source": "中新网-即时",
-                "source_url": "https://www.chinanews.com.cn/gj/2026/10-09/10709520.shtml",
-                "description": "中新网悉尼10月9日电 (记者 薄雯雯)澳大利亚著名汉学家马克林(Colin Mackerras)当地时间10月8日晚在布里斯班因病离世，享年87岁。",
-                "feed_country": "GLOBAL",
-                "language": "cn",
-                "code": "AU",
-                "event_country": "澳大利亚",
-                "event_country_en": "Australia"
-              }
-            ],
-            "source": "中新网-即时",
-            "url": "https://www.chinanews.com.cn/gj/2026/10-09/10709520.shtml",
-            "source_url": "https://www.chinanews.com.cn/gj/2026/10-09/10709520.shtml",
-            "source_count": 1,
-            "source_names": [
-              "中新网-即时"
-            ],
-            "source_authority": 62,
-            "summary": "中新网悉尼10月9日电 (记者 薄雯雯)澳大利亚著名汉学家马克林(Colin Mackerras)当地时间10月8日晚在布里斯班因病离世，享年87岁。",
-            "description": "中新网悉尼10月9日电 (记者 薄雯雯)澳大利亚著名汉学家马克林(Colin Mackerras)当地时间10月8日晚在布里斯班因病离世，享年87岁。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
             "id": "a627a2e673740947",
@@ -5274,7 +5231,7 @@
             "description": "It is the latest in a diplomatic spat after Kyiv disclosed that two North Korean prisoners were transferred to Seoul.",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 55,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5356,7 +5313,7 @@
             "description": "Ukraine accused Russia of targeting two crowded vehicles in the front line city of Kramatorsk to kill as many civilians as possible.",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 50,
+            "importance": 49,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5606,49 +5563,8 @@
         "code": "AE",
         "target_min": 3,
         "target_max": 10,
-        "count": 2,
+        "count": 1,
         "events": [
-          {
-            "id": "72aa428118af0bab",
-            "title": "Manchester City, Abu Dhabi and the future of football",
-            "published_at": "2026-10-09T04:00:22+00:00",
-            "code": "AE",
-            "event_country": "阿联酋",
-            "sources": [
-              {
-                "title": "Manchester City, Abu Dhabi and the future of football",
-                "link": "https://www.ft.com/content/bae7f43f-8954-45eb-a470-2cd7fb21a94b?syn-25a6b1a6=1",
-                "published_at": "2026-10-09T04:00:22+00:00",
-                "source": "金融时报",
-                "source_url": "https://www.ft.com/content/bae7f43f-8954-45eb-a470-2cd7fb21a94b?syn-25a6b1a6=1",
-                "description": "The sport is still shaped by the club’s acquisition in 2008",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "AE",
-                "event_country": "阿联酋",
-                "event_country_en": "United Arab Emirates"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/bae7f43f-8954-45eb-a470-2cd7fb21a94b?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/bae7f43f-8954-45eb-a470-2cd7fb21a94b?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "The sport is still shaped by the club’s acquisition in 2008",
-            "description": "The sport is still shaped by the club’s acquisition in 2008",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 41,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "曼城、阿布扎比和足球的未来"
-          },
           {
             "id": "95a1e54b7bcec05c",
             "title": "SoftBank seeks $100bn from Gulf investors to expand AI bet",
@@ -5780,7 +5696,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "被指控在墨西哥枪杀澳大利亚冲浪兄弟和美国朋友的男子，审判结束后了解命运"
+            "title_zh": "被控在墨西哥枪杀澳大利亚冲浪兄弟和美国朋友的男子，审判结束后了解命运"
           }
         ]
       },
@@ -5790,7 +5706,7 @@
         "code": "IR",
         "target_min": 3,
         "target_max": 10,
-        "count": 5,
+        "count": 6,
         "events": [
           {
             "id": "c08216b03436d110",
@@ -5831,7 +5747,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "伊朗战争实况：伊朗伊斯兰革命卫队称其每晚都会针对霍尔木兹的“违规”船只"
+            "title_zh": "伊朗战争实况：伊朗革命卫队称其每晚都会针对霍尔木兹的“违规”船只"
           },
           {
             "id": "0f169e88d829d8b7",
@@ -5875,47 +5791,6 @@
             "title_zh": "林肯号航空母舰在长期部署支持伊朗战争后返回美国"
           },
           {
-            "id": "814cfd7ddb6c6174",
-            "title": "Latest Oil Market News and Analysis for Oct. 9",
-            "published_at": "2026-10-08T22:02:47+00:00",
-            "code": "IR",
-            "event_country": "伊朗",
-            "sources": [
-              {
-                "title": "Latest Oil Market News and Analysis for Oct. 9",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
-                "published_at": "2026-10-08T22:02:47+00:00",
-                "source": "彭博社",
-                "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
-                "description": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IR",
-                "event_country": "伊朗",
-                "event_country_en": "Iran"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
-            "description": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
-            "category": "金融",
-            "domestic_score": 38,
-            "importance": 62,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "10 月 9 日最新石油市场新闻和分析"
-          },
-          {
             "id": "55ca52802a6260ac",
             "title": "Rizk: Economic & Physical Pressure Show in Bahrain Bonds",
             "published_at": "2026-10-09T05:12:53+00:00",
@@ -5957,6 +5832,88 @@
             "title_zh": "Rizk：巴林债券的经济和实体压力"
           },
           {
+            "id": "814cfd7ddb6c6174",
+            "title": "Latest Oil Market News and Analysis for Oct. 9",
+            "published_at": "2026-10-08T22:02:47+00:00",
+            "code": "IR",
+            "event_country": "伊朗",
+            "sources": [
+              {
+                "title": "Latest Oil Market News and Analysis for Oct. 9",
+                "link": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
+                "published_at": "2026-10-08T22:02:47+00:00",
+                "source": "彭博社",
+                "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
+                "description": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IR",
+                "event_country": "伊朗",
+                "event_country_en": "Iran"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-08/latest-oil-market-news-and-analysis-for-oct-9",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
+            "description": "Oil declined after President Donald Trump said the US would not attack Iran before November’s midterm elections, signaling a period of more than three weeks for no offensive military action against Tehran.",
+            "category": "金融",
+            "domestic_score": 38,
+            "importance": 61,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "10 月 9 日最新石油市场新闻和分析"
+          },
+          {
+            "id": "ccbacbf97d80a355",
+            "title": "​​USS Lincoln docks in San Diego after 10-month mission",
+            "published_at": "2026-10-08T22:26:10+00:00",
+            "code": "IR",
+            "event_country": "伊朗",
+            "sources": [
+              {
+                "title": "​​USS Lincoln docks in San Diego after 10-month mission",
+                "link": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-08T22:26:10+00:00",
+                "source": "BBC World",
+                "source_url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&at_campaign=rss",
+                "description": "The US aircraft carrier was set to return in May but the war with Iran has kept it at sea on one of the longest deployments ever.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IR",
+                "event_country": "伊朗",
+                "event_country_en": "Iran"
+              }
+            ],
+            "source": "BBC World",
+            "url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC World"
+            ],
+            "source_authority": 94,
+            "summary": "The US aircraft carrier was set to return in May but the war with Iran has kept it at sea on one of the longest deployments ever.",
+            "description": "The US aircraft carrier was set to return in May but the war with Iran has kept it at sea on one of the longest deployments ever.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 59,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "​​林肯号航空母舰经过 10 个月的任务后停靠在圣地亚哥"
+          },
+          {
             "id": "b48641b0070b5603",
             "title": "Florida judge allows lawsuit against Shah of Iran’s alleged ‘chief torturer’ to move forward",
             "published_at": "2026-10-08T16:00:23+00:00",
@@ -5989,7 +5946,7 @@
             "description": "Parviz Sabeti denies allegations he led Savak intelligence agency under shah and directed torture of thousands The alleged “chief torturer” for the deposed Shah of Iran is a step closer to trial for human rights abuses after a Florida federal judge rejected his demand to halt a lawsuit brought by three former political prisoners. Parviz Sabeti, who was reported last year to have lived in a quiet upscale central Florida community, is accused of being the former head of Savak, the shah’s secret po",
             "category": "科技",
             "domestic_score": 38,
-            "importance": 56,
+            "importance": 55,
             "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6016,8 +5973,49 @@
         "code": "SG",
         "target_min": 2,
         "target_max": 8,
-        "count": 1,
+        "count": 2,
         "events": [
+          {
+            "id": "8f6686f9fe77a336",
+            "title": "Sydney trader sacked for working from Singapore without permission wins unfair dismissal case",
+            "published_at": "2026-10-09T05:55:27+00:00",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "title": "Sydney trader sacked for working from Singapore without permission wins unfair dismissal case",
+                "link": "https://www.theguardian.com/australia-news/2026/oct/09/sydney-currency-trader-sacked-for-working-from-singapore-without-permission-wins-unfair-dismissal-case",
+                "published_at": "2026-10-09T05:55:27+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/australia-news/2026/oct/09/sydney-currency-trader-sacked-for-working-from-singapore-without-permission-wins-unfair-dismissal-case",
+                "description": "Employee had also been in Bali when he told his manager he was working from home, Fair Work Commission hears Get our breaking news email , free app or daily news podcast A Sydney currency trader who was sacked for working from Singapore without approval has won an unfair dismissal case, but failed to be awarded compensation. The Fair Work Commission ruled on Wednesday that Charles Graham had been unfairly dismissed by HIFX Australia, trading as Xe, in December last year. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "SG",
+                "event_country": "新加坡",
+                "event_country_en": "Singapore"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/australia-news/2026/oct/09/sydney-currency-trader-sacked-for-working-from-singapore-without-permission-wins-unfair-dismissal-case",
+            "source_url": "https://www.theguardian.com/australia-news/2026/oct/09/sydney-currency-trader-sacked-for-working-from-singapore-without-permission-wins-unfair-dismissal-case",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Employee had also been in Bali when he told his manager he was working from home, Fair Work Commission hears Get our breaking news email , free app or daily news podcast A Sydney currency trader who was sacked for working from Singapore without approval has won an unfair dismissal case, but failed to be awarded compensation. The Fair Work Commission ruled on Wednesday that Charles Graham had been unfairly dismissed by HIFX Australia, trading as Xe, in December last year. Continue reading...",
+            "description": "Employee had also been in Bali when he told his manager he was working from home, Fair Work Commission hears Get our breaking news email , free app or daily news podcast A Sydney currency trader who was sacked for working from Singapore without approval has won an unfair dismissal case, but failed to be awarded compensation. The Fair Work Commission ruled on Wednesday that Charles Graham had been unfairly dismissed by HIFX Australia, trading as Xe, in December last year. Continue reading...",
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 55,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "悉尼交易员因未经许可在新加坡工作而被解雇 赢得不公平解雇案"
+          },
           {
             "id": "2cca319ee8cbceb9",
             "title": "Nasdaq CEO Friedman on IPO Outlook",
@@ -6067,8 +6065,50 @@
         "code": "ZA",
         "target_min": 2,
         "target_max": 8,
-        "count": 0,
-        "events": []
+        "count": 1,
+        "events": [
+          {
+            "id": "44662d0010c8efce",
+            "title": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
+            "published_at": "2026-10-09T04:44:22+00:00",
+            "code": "ZA",
+            "event_country": "南非",
+            "sources": [
+              {
+                "title": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
+                "link": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-09T04:44:22+00:00",
+                "source": "BBC World",
+                "source_url": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
+                "description": "South Africa has experienced recurrent outbreaks of violence, often targeting migrants from neighbouring countries.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "ZA",
+                "event_country": "南非",
+                "event_country_en": "South Africa"
+              }
+            ],
+            "source": "BBC World",
+            "url": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC World"
+            ],
+            "source_authority": 94,
+            "summary": "South Africa has experienced recurrent outbreaks of violence, often targeting migrants from neighbouring countries.",
+            "description": "South Africa has experienced recurrent outbreaks of violence, often targeting migrants from neighbouring countries.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 36,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "南非爆发反移民暴力，汽车被烧毁，商店被抢劫"
+          }
+        ]
       },
       "荷兰": {
         "country": "荷兰",
@@ -6127,47 +6167,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "以色列宣传模仿NAZA纪录片的电影"
-          },
-          {
-            "id": "c4cf2da3f0e1577e",
-            "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
-            "published_at": "2026-10-08T05:06:09+00:00",
-            "code": "IL",
-            "event_country": "以色列",
-            "sources": [
-              {
-                "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
-                "link": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-08T05:06:09+00:00",
-                "source": "BBC World",
-                "source_url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss",
-                "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "IL",
-                "event_country": "以色列",
-                "event_country_en": "Israel"
-              }
-            ],
-            "source": "BBC World",
-            "url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC World"
-            ],
-            "source_authority": 94,
-            "summary": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled.",
-            "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled.",
-            "category": "灾害",
-            "domestic_score": 38,
-            "importance": 52,
-            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "“每天都有杀戮”：尽管和平协议陷入停火，但加沙的巴勒斯坦人仍面临以色列的袭击"
           },
           {
             "id": "725f6763a47b9c6b",
@@ -6332,6 +6331,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "以色列因定居者制裁而降低英国驻东耶路撒冷领事馆的级别"
+          },
+          {
+            "id": "2189ce86b5a0098d",
+            "title": "British consulate in East Jerusalem will stay open as UK mission, says Ed Miliband",
+            "published_at": "2026-10-08T16:43:39+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "title": "British consulate in East Jerusalem will stay open as UK mission, says Ed Miliband",
+                "link": "https://www.theguardian.com/politics/2026/oct/08/uk-consulate-east-jerusalem-remain-open-uk-mission-ed-miliband",
+                "published_at": "2026-10-08T16:43:39+00:00",
+                "source": "卫报",
+                "source_url": "https://www.theguardian.com/politics/2026/oct/08/uk-consulate-east-jerusalem-remain-open-uk-mission-ed-miliband",
+                "description": "UK and Israel back away from full diplomatic confrontation, though British presence in Palestine will be much reduced Israel and the UK have backed away from a full-scale diplomatic confrontation, with Britain announcing it is rebranding its consulate general ⁠building in ⁠East Jerusalem ​as a UK mission, a move that will result in UK diplomats leaving Israel, with only seven to remain in the building. Among those leaving is the consul general, Helen Winterton. The change was forced on the UK by the Israeli government as punishment for the decision by the foreign secretary, Ed Miliband, last month to ban trade with illegal settlements and introduce a tougher sanctions regime against those who aided the building of settlements. The UK is seeking to protect the two-state solution as the best means of ending the Israel-Palestine conflict. Continue reading...",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IL",
+                "event_country": "以色列",
+                "event_country_en": "Israel"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/politics/2026/oct/08/uk-consulate-east-jerusalem-remain-open-uk-mission-ed-miliband",
+            "source_url": "https://www.theguardian.com/politics/2026/oct/08/uk-consulate-east-jerusalem-remain-open-uk-mission-ed-miliband",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "UK and Israel back away from full diplomatic confrontation, though British presence in Palestine will be much reduced Israel and the UK have backed away from a full-scale diplomatic confrontation, with Britain announcing it is rebranding its consulate general ⁠building in ⁠East Jerusalem ​as a UK mission, a move that will result in UK diplomats leaving Israel, with only seven to remain in the building. Among those leaving is the consul general, Helen Winterton. The change was forced on the UK by",
+            "description": "UK and Israel back away from full diplomatic confrontation, though British presence in Palestine will be much reduced Israel and the UK have backed away from a full-scale diplomatic confrontation, with Britain announcing it is rebranding its consulate general ⁠building in ⁠East Jerusalem ​as a UK mission, a move that will result in UK diplomats leaving Israel, with only seven to remain in the building. Among those leaving is the consul general, Helen Winterton. The change was forced on the UK by",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 34,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "埃德·米利班德表示，英国驻东耶路撒冷领事馆将作为英国代表团继续开放"
           },
           {
             "id": "e898b42f16032aea",
@@ -7792,69 +7832,6 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
-      "id": "775acb300ec86729",
-      "title": "Trump gives top US science awards to Elon Musk and other tech executives",
-      "published_at": "2026-10-08T21:11:54+00:00",
-      "code": "US",
-      "event_country": "美国",
-      "sources": [
-        {
-          "id": "775acb300ec86729",
-          "title": "Trump gives top US science awards to Elon Musk and other tech executives",
-          "published_at": "2026-10-08T21:11:54+00:00",
-          "code": "US",
-          "event_country": "美国",
-          "sources": [
-            {
-              "title": "Trump gives top US science awards to Elon Musk and other tech executives",
-              "link": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-              "published_at": "2026-10-08T21:11:54+00:00",
-              "source": "半岛电视台",
-              "source_url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-              "description": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "US",
-              "event_country": "美国",
-              "event_country_en": "United States"
-            }
-          ],
-          "source": "半岛电视台",
-          "url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-          "source_url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-          "source_count": 1,
-          "source_names": [
-            "半岛电视台"
-          ],
-          "source_authority": 90,
-          "summary": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-          "description": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 57,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "",
-      "source_url": "https://www.aljazeera.com/news/2026/10/8/trump-gives-top-us-science-awards-to-elon-musk-and-other-tech-executives?traffic_source=rss",
-      "source_count": 1,
-      "source_names": [
-        "半岛电视台"
-      ],
-      "source_authority": 90,
-      "summary": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-      "description": "The National Medal of Science is annually given to scientists and engineers for major contributions in their fields.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 57,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
       "id": "2415231e6798d5e9",
       "title": "Iran scales up Hormuz attacks, raising pressure on Trump as midterms near",
       "published_at": "2026-10-08T21:03:29+00:00",
@@ -7918,26 +7895,89 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     },
     {
-      "id": "6628a713d3ef10d9",
-      "title": "Polls close in Holborn and St Pancras by-election",
-      "published_at": "2026-10-08T21:01:21+00:00",
+      "id": "aec468a9a83da0fb",
+      "title": "Houthi Attacks on Saudi Airports Prompt Mass Cancellations",
+      "published_at": "2026-10-08T18:17:07+00:00",
+      "code": "SA",
+      "event_country": "沙特阿拉伯",
+      "sources": [
+        {
+          "id": "aec468a9a83da0fb",
+          "title": "Houthi Attacks on Saudi Airports Prompt Mass Cancellations",
+          "published_at": "2026-10-08T18:17:07+00:00",
+          "code": "SA",
+          "event_country": "沙特阿拉伯",
+          "sources": [
+            {
+              "title": "Houthi Attacks on Saudi Airports Prompt Mass Cancellations",
+              "link": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html",
+              "published_at": "2026-10-08T18:17:07+00:00",
+              "source": "纽约时报",
+              "source_url": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html",
+              "description": "The Saudi authorities said they intercepted two missiles targeting Riyadh, a day after they said Houthi strikes on airports in the kingdom killed three people.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "SA",
+              "event_country": "沙特阿拉伯",
+              "event_country_en": "Saudi Arabia"
+            }
+          ],
+          "source": "纽约时报",
+          "url": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html",
+          "source_url": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html",
+          "source_count": 1,
+          "source_names": [
+            "纽约时报"
+          ],
+          "source_authority": 96,
+          "summary": "The Saudi authorities said they intercepted two missiles targeting Riyadh, a day after they said Houthi strikes on airports in the kingdom killed three people.",
+          "description": "The Saudi authorities said they intercepted two missiles targeting Riyadh, a day after they said Houthi strikes on airports in the kingdom killed three people.",
+          "category": "科技",
+          "domestic_score": 38,
+          "importance": 57,
+          "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "纽约时报",
+      "url": "",
+      "source_url": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html",
+      "source_count": 1,
+      "source_names": [
+        "纽约时报"
+      ],
+      "source_authority": 96,
+      "summary": "The Saudi authorities said they intercepted two missiles targeting Riyadh, a day after they said Houthi strikes on airports in the kingdom killed three people.",
+      "description": "The Saudi authorities said they intercepted two missiles targeting Riyadh, a day after they said Houthi strikes on airports in the kingdom killed three people.",
+      "category": "科技",
+      "domestic_score": 38,
+      "importance": 57,
+      "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "f2aee1a30d57651e",
+      "title": "Why the search warrants were deemed unlawful and what happens next?",
+      "published_at": "2026-10-08T17:26:49+00:00",
       "code": "GB",
       "event_country": "英国",
       "sources": [
         {
-          "id": "6628a713d3ef10d9",
-          "title": "Polls close in Holborn and St Pancras by-election",
-          "published_at": "2026-10-08T21:01:21+00:00",
+          "id": "f2aee1a30d57651e",
+          "title": "Why the search warrants were deemed unlawful and what happens next?",
+          "published_at": "2026-10-08T17:26:49+00:00",
           "code": "GB",
           "event_country": "英国",
           "sources": [
             {
-              "title": "Polls close in Holborn and St Pancras by-election",
-              "link": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
-              "published_at": "2026-10-08T21:01:21+00:00",
+              "title": "Why the search warrants were deemed unlawful and what happens next?",
+              "link": "https://www.bbc.co.uk/news/videos/c6qxn8dd0zllo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-10-08T17:26:49+00:00",
               "source": "BBC UK",
-              "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
-              "description": "Counting will run overnight to see who voters chose to represent the north London constituency.",
+              "source_url": "https://www.bbc.co.uk/news/videos/c6qxn8dd0zllo?at_medium=RSS&at_campaign=rss",
+              "description": "Special correspondent Lucy Manning explains why the Hight Court has ruled that search warrants used to search Mr Mountbatten-Windsor's home were unlawful.",
               "feed_country": "GB",
               "language": "en",
               "code": "GB",
@@ -7946,37 +7986,37 @@
             }
           ],
           "source": "BBC UK",
-          "url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
-          "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/videos/c6qxn8dd0zllo?at_medium=RSS&at_campaign=rss",
+          "source_url": "https://www.bbc.co.uk/news/videos/c6qxn8dd0zllo?at_medium=RSS&at_campaign=rss",
           "source_count": 1,
           "source_names": [
             "BBC UK"
           ],
           "source_authority": 94,
-          "summary": "Counting will run overnight to see who voters chose to represent the north London constituency.",
-          "description": "Counting will run overnight to see who voters chose to represent the north London constituency.",
-          "category": "政治",
+          "summary": "Special correspondent Lucy Manning explains why the Hight Court has ruled that search warrants used to search Mr Mountbatten-Windsor's home were unlawful.",
+          "description": "Special correspondent Lucy Manning explains why the Hight Court has ruled that search warrants used to search Mr Mountbatten-Windsor's home were unlawful.",
+          "category": "国防安全",
           "domestic_score": 38,
           "importance": 57,
-          "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
           "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
           "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
         }
       ],
       "source": "BBC UK",
       "url": "",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck24059mlzm8o?at_medium=RSS&at_campaign=rss",
+      "source_url": "https://www.bbc.co.uk/news/videos/c6qxn8dd0zllo?at_medium=RSS&at_campaign=rss",
       "source_count": 1,
       "source_names": [
         "BBC UK"
       ],
       "source_authority": 94,
-      "summary": "Counting will run overnight to see who voters chose to represent the north London constituency.",
-      "description": "Counting will run overnight to see who voters chose to represent the north London constituency.",
-      "category": "政治",
+      "summary": "Special correspondent Lucy Manning explains why the Hight Court has ruled that search warrants used to search Mr Mountbatten-Windsor's home were unlawful.",
+      "description": "Special correspondent Lucy Manning explains why the Hight Court has ruled that search warrants used to search Mr Mountbatten-Windsor's home were unlawful.",
+      "category": "国防安全",
       "domestic_score": 38,
       "importance": 57,
-      "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     }
@@ -8384,13 +8424,13 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "伊朗战争实况：伊朗伊斯兰革命卫队称其每晚都会针对霍尔木兹的“违规”船只"
+      "title_zh": "伊朗战争实况：伊朗革命卫队称其每晚都会针对霍尔木兹的“违规”船只"
     }
   ],
   "stats": {
     "countries": 31,
-    "events": 155,
-    "tier1_events": 109,
+    "events": 156,
+    "tier1_events": 111,
     "supplement_events": 10,
     "failed_sources": 0,
     "successful_sources": 21,
@@ -8411,14 +8451,14 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 162,
+    "translated": 161,
     "failed": 0,
     "remaining_english": 0,
     "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-08",
-    "removed": 4,
-    "undated_removed": 55
+    "removed": 3,
+    "undated_removed": 52
   }
 }
