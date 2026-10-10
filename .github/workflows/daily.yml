@@ -3,8 +3,7 @@ name: 雷达新闻每日更新
 on:
   workflow_dispatch:
   schedule:
-    - cron: '7 0 * * *'
-    - cron: '37 0 * * *'
+    - cron: '7 0,12 * * *'
 
 permissions:
   contents: write
