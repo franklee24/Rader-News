@@ -11,7 +11,14 @@ STRATEGIC={'总统':10,'president':10,'总理':9,'prime minister':9,'政府':7,'
 CATEGORY={'国防安全':9,'外交':8,'政治':7,'宏观经济':7,'金融':6,'能源':6,'科技':5,'产业/商业':4,'灾害':7,'公共卫生/疫情':9,'环境/气候':6,'法律/犯罪':5,'其他/综合':2,'社会':3}
 ACTION={'宣布':4,'正式':4,'签署':5,'通过':5,'批准':5,'生效':5,'取消':4,'暂停':4,'启动':3,'升级':4,'降息':5,'加息':5,'禁运':6,'制裁':6,'announced':4,'official':4,'signed':5,'approved':5,'effective':5,'launch':3}
 def text(e): return ((e.get('title') or '')+' '+(e.get('description') or '')).lower()
-def hits(t,d): return [k for k in d if k.lower() in t]
+def keyword_match(text, keyword):
+    key=keyword.lower()
+    if re.search(r'[a-z]',key):
+        if ' ' in key:
+            return key in text
+        return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?:s|es|ed|ing)?(?![a-z0-9])',text))
+    return key in text
+def hits(t,d): return [k for k in d if keyword_match(t,k)]
 def parse_time(s):
     try:return dt.datetime.fromisoformat(s.replace('Z','+00:00'))
     except:return None
