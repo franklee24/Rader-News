@@ -24,10 +24,10 @@ TIMEOUT=18; WORKERS=8; MIN_TOTAL_EVENTS=40; MIN_TIER1_EVENTS=20
 
 # 多源直连 RSS：中文媒体与国际媒体一视同仁，由事件覆盖度、媒体权威度和时效共同决定主来源。
 FEEDS=[
- ('中新网-即时','GLOBAL','https://www.chinanews.com.cn/rss/scroll-news.xml','cn'),
- ('人民网-时政','GLOBAL','http://www.people.com.cn/rss/politics.xml','cn'),
- ('新华-时政','GLOBAL','http://www.xinhuanet.com/politics/news_politics.xml','cn'),
- ('新华-国际','GLOBAL','http://www.xinhuanet.com/world/news_world.xml','cn'),
+ ('中新网-即时','CN','https://www.chinanews.com.cn/rss/scroll-news.xml','cn'),
+ ('人民网-时政','CN','http://www.people.com.cn/rss/politics.xml','cn'),
+ ('新华-时政','CN','http://www.xinhuanet.com/politics/news_politics.xml','cn'),
+ ('新华-国际','CN','http://www.xinhuanet.com/world/news_world.xml','cn'),
  ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
  ('纽约时报-日本','JP','https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/destination/japan/rss.xml','en'),
@@ -37,7 +37,7 @@ FEEDS=[
  ('卫报','GLOBAL','https://www.theguardian.com/world/rss','en'),
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
  ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
- ('Japan Times','GLOBAL','https://www.japantimes.co.jp/feed/','en'),
+ ('Japan Times','JP','https://www.japantimes.co.jp/feed/','en'),
  ('WHO News','GLOBAL','https://www.who.int/rss-feeds/news-english.xml','en'),
  ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
  ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
@@ -304,7 +304,7 @@ def main():
   for c in arr:
    pool=raw.get(c['code'],[])
    # 不再按语言限制事件；国家页只负责地理组织，主来源由事件聚合模型选择。
-   ev=cluster(pool)[:c['max']]
+   ev=cluster(pool)[:c['max']*3]
    report['tiers'][tier][c['name']]={'country':c['name'],'country_en':c['en'],'code':c['code'],'target_min':c['min'],'target_max':c['max'],'count':len(ev),'events':ev}
    all_events.extend(ev)
  report['supplement']=cluster(global_rows)[:10]
