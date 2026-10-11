@@ -2,8 +2,9 @@ name: 雷达新闻每日更新
 
 on:
   workflow_dispatch:
+# 北京时间 06:07、17:07（GitHub Actions cron 使用 UTC）
   schedule:
-    - cron: '7 0,12 * * *'
+    - cron: '7 9,22 * * *'
 
 permissions:
   contents: write
