@@ -34,7 +34,6 @@ FEEDS=[
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
  ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
  ('Japan Times','GLOBAL','https://www.japantimes.co.jp/feed/','en'),
- ('Kyodo News','GLOBAL','https://english.kyodonews.net/rss/all.xml','en'),
  ('WHO News','GLOBAL','https://www.who.int/rss-feeds/news-english.xml','en'),
  ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
  ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
