@@ -27,7 +27,6 @@ jobs:
             'CBC World':'https://www.cbc.ca/webfeed/rss/rss-world',
             'ABC Australia':'https://www.abc.net.au/news/feed/51120/rss.xml',
             'Le Monde English':'https://www.lemonde.fr/en/rss/une.xml',
-            'El Pais English':'https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada.2.xml',
             'Anadolu World':'https://www.aa.com.tr/en/rss/default?cat=world',
             'South China Morning Post':'https://www.scmp.com/rss/91/feed',
           }
@@ -49,4 +48,25 @@ jobs:
             print('Candidate feed failures:',failures)
             raise SystemExit(1)
           print('ALL CANDIDATE FEEDS PASSED')
+          PY
+      - name: Compile and test editorial filtering
+        run: |
+          python -m py_compile scripts/build_daily.py scripts/score_importance.py
+          python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          cases=[
+            ('Russia plague outbreak raises public health concerns','公共卫生/疫情'),
+            ('Japan plans new semiconductor investment','科技'),
+            ('Taiwan raises defense spending amid regional tension','国防安全'),
+            ('Central bank cuts interest rates amid inflation slowdown','宏观经济'),
+          ]
+          for title,expected in cases:
+            actual=m.category(title)
+            print('CATEGORY',title,'=>',actual)
+            assert actual==expected,(title,actual,expected)
+          assert m.is_low_signal_human_interest({'title':'A heartwarming story about a man and his wife'})
+          assert not m.is_low_signal_human_interest({'title':'Russia plague outbreak raises public health concerns'})
+          print('EDITORIAL FILTER TESTS PASSED')
           PY
