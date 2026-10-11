@@ -4440,10 +4440,11 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 135,
+    "translated": 0,
     "failed": 0,
     "remaining_english": 0,
-    "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
+    "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用；翻译服务不可用时保留英文并继续更新新闻数据。",
+    "degraded": false
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-10",
