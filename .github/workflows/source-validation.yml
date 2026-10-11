@@ -1,0 +1,52 @@
+name: Validate expanded authoritative news feeds
+on:
+  push:
+    paths:
+      - '.github/workflows/source-validation.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Validate candidate RSS feeds
+        run: |
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          import xml.etree.ElementTree as ET
+          feeds={
+            'Reuters via Google News':'https://news.google.com/rss/search?q=site%3Areuters.com&hl=en-US&gl=US&ceid=US:en',
+            'AP via Google News':'https://news.google.com/rss/search?q=site%3Aapnews.com&hl=en-US&gl=US&ceid=US:en',
+            'Yonhap':'https://en.yna.co.kr/RSS/news.xml',
+            'The Hindu National':'https://www.thehindu.com/news/national/feeder/default.rss',
+            'The Hindu International':'https://www.thehindu.com/news/international/feeder/default.rss',
+            'CBC World':'https://www.cbc.ca/webfeed/rss/rss-world',
+            'ABC Australia':'https://www.abc.net.au/news/feed/51120/rss.xml',
+            'Le Monde English':'https://www.lemonde.fr/en/rss/une.xml',
+            'El Pais English':'https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada.2.xml',
+            'Anadolu World':'https://www.aa.com.tr/en/rss/default?cat=world',
+            'South China Morning Post':'https://www.scmp.com/rss/91/feed',
+          }
+          failures=[]
+          for name,url in feeds.items():
+            try:
+              req=Request(url,headers={'User-Agent':'Mozilla/5.0 RadarNewsSourceCheck/1.0','Accept':'application/rss+xml,application/xml,text/xml,*/*'})
+              with urlopen(req,timeout=25) as r:
+                body=r.read()
+                status=r.status
+              root=ET.fromstring(body)
+              items=[x for x in root.iter() if x.tag.split('}')[-1].lower() in ('item','entry')]
+              if not items: raise RuntimeError('no RSS items')
+              print(f'PASS | {name} | HTTP {status} | items={len(items)} | {url}')
+            except Exception as e:
+              failures.append((name,str(e)))
+              print(f'FAIL | {name} | {e} | {url}')
+          if failures:
+            print('Candidate feed failures:',failures)
+            raise SystemExit(1)
+          print('ALL CANDIDATE FEEDS PASSED')
+          PY
