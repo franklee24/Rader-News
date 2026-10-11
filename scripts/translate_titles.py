@@ -65,7 +65,7 @@ def translate(title):
 
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
-    events = []
+    events = list(d.get("ai_news", []))
     for tier in d.get("tiers", {}).values():
         for country in tier.values():
             events.extend(country.get("events", []))
@@ -78,7 +78,8 @@ def main():
         title = e.get("title", "")
         if looks_english(title) and not e.get("title_zh"):
             targets_by_title.setdefault(title, e)
-    targets = list(targets_by_title.values())
+    targets = list(targets_by_title.values())[:80]
+    print("Translation request budget:", len(targets), "unique headlines this run; AI headlines are prioritized.")
     ok = failed = 0
     cache = {}
     errors = []
