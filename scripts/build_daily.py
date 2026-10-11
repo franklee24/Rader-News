@@ -166,7 +166,11 @@ def keyword_match(text, keyword):
  low=(text or '').lower(); key=keyword.lower()
  # English abbreviations/words must match token boundaries (e.g. AI must not match "raises").
  if re.fullmatch(r'[a-z0-9][a-z0-9 .+/-]*',key):
-  if len(key.strip())<=3 or ' ' in key or any(ch in key for ch in '+/-'):
+  if ' ' in key:
+   parts=key.split()
+   phrase=re.escape(' '.join(parts[:-1]))+r'\\s+'+re.escape(parts[-1])+r'(?:es|s|ed|ing)?'
+   return bool(re.search(r'(?<![a-z0-9])'+phrase+r'(?![a-z0-9])',low))
+  if len(key.strip())<=3 or any(ch in key for ch in '+/-'):
    return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?![a-z0-9])',low))
   return key in low
  return key in low
