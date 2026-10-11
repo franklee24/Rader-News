@@ -1,0 +1,56 @@
+name: Radar News relevance quality check
+on:
+  push:
+    paths:
+      - 'scripts/build_daily.py'
+      - 'scripts/score_importance.py'
+      - '.github/workflows/relevance-check.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Compile scripts and test relevance rules
+        run: |
+          python -m py_compile scripts/build_daily.py scripts/score_importance.py
+          python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          tests=[
+            ('Russia Plague Scare Raises Public Health Questions','公共卫生/疫情'),
+            ('Japan plans new semiconductor investment','科技'),
+            ('Taiwan raises defense spending amid regional tension','国防安全'),
+          ]
+          for title,expected in tests:
+            got=m.category(title)
+            print('CATEGORY',title,'=>',got)
+            assert got==expected,(title,got,expected)
+          story='這位丈夫15年來潛水760次，就為了「靠近」海嘯失蹤的妻子'
+          assert m.is_low_signal_human_interest({'title':story}), 'human-interest story should be filtered'
+          assert not m.is_low_signal_human_interest({'title':'Russia plague outbreak raises public health concerns'}), 'public health story must be kept'
+          print('RELEVANCE RULES PASS')
+          PY
+      - name: Verify new RSS sources
+        run: |
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          import xml.etree.ElementTree as ET
+          feeds={
+            'Japan Times':'https://www.japantimes.co.jp/feed/',
+            'WHO Disease Outbreak News':'https://www.who.int/feeds/entity/don/en/rss.xml',
+          }
+          for name,url in feeds.items():
+            req=Request(url,headers={'User-Agent':'Mozilla/5.0 LeidaNews source-check'})
+            with urlopen(req,timeout=25) as r:
+              body=r.read()
+            root=ET.fromstring(body)
+            items=[x for x in root.iter() if x.tag.split('}')[-1].lower() in ('item','entry')]
+            print('PASS',name,'items=',len(items),'bytes=',len(body))
+            assert items, name+' returned no RSS entries'
+          PY
