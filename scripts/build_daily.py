@@ -168,7 +168,7 @@ def keyword_match(text, keyword):
  if re.fullmatch(r'[a-z0-9][a-z0-9 .+/-]*',key):
   if ' ' in key:
    parts=key.split()
-   phrase=re.escape(' '.join(parts[:-1]))+r'\\s+'+re.escape(parts[-1])+r'(?:es|s|ed|ing)?'
+   phrase=re.escape(' '.join(parts[:-1]))+r'\s+'+re.escape(parts[-1])+r'(?:es|s|ed|ing)?'
    return bool(re.search(r'(?<![a-z0-9])'+phrase+r'(?![a-z0-9])',low))
   if len(key.strip())<=3 or any(ch in key for ch in '+/-'):
    return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?![a-z0-9])',low))
