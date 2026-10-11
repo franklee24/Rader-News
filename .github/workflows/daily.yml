@@ -96,7 +96,7 @@ jobs:
           d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
           d['stats']['supplement_events']=len(d.get('supplement',[]))
           d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed,'undated_removed':undated,'buffered_candidates_used':True}
-          daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+          daily.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
