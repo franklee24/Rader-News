@@ -15,8 +15,10 @@ def keyword_match(text, keyword):
     key=keyword.lower()
     if re.search(r'[a-z]',key):
         if ' ' in key:
-            return key in text
-        return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?:s|es|ed|ing)?(?![a-z0-9])',text))
+            parts=key.split()
+            phrase=re.escape(' '.join(parts[:-1])+ ' ')+re.escape(parts[-1])+r'(?:es|s|ed|ing)?'
+            return bool(re.search(r'(?<![a-z0-9])'+phrase+r'(?![a-z0-9])',text))
+        return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?:es|s|ed|ing)?(?![a-z0-9])',text))
     return key in text
 def hits(t,d): return [k for k in d if keyword_match(t,k)]
 def parse_time(s):
