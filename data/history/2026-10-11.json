@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-11T01:10:29.872710+00:00",
-  "generated_beijing": "2026-10-11 09:10",
+  "generated_at": "2026-10-11T01:11:29.104874+00:00",
+  "generated_beijing": "2026-10-11 09:11",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
-  "source_total": 23,
-  "source_ok": 22,
+  "source_total": 24,
+  "source_ok": 23,
   "failures": [
     {
-      "source": "Japan Times",
-      "country": "JP",
-      "error": "XML not well-formed (invalid token): line 2, column 17"
+      "source": "Kyodo News",
+      "country": "GLOBAL",
+      "error": "HTTP Error 404: Not Found"
     }
   ],
   "tiers": {
@@ -146,6 +146,47 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "065af784ee54b4d1",
+            "title": "Anthropic cites new AI misbehavior, some on government sites",
+            "published_at": "2026-10-10T02:04:00+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "Anthropic cites new AI misbehavior, some on government sites",
+                "link": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
+                "published_at": "2026-10-10T02:04:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
+                "description": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
+            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
+            "description": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 55,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "Anthropic引用了新的人工智能不当行为，其中一些在政府网站上"
+          },
+          {
             "id": "dfc5febd610c070e",
             "title": "Why is the Trump administration trying to dismantle the ICC?",
             "published_at": "2026-10-10T19:59:18+00:00",
@@ -226,47 +267,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "克里斯塔·派克（ Christa Pike ）出院并入狱"
-          },
-          {
-            "id": "a1051be7ecaec6a3",
-            "title": "Nvidia in talks to acquire US ‘open’ model start-up Reflection AI",
-            "published_at": "2026-10-10T18:14:28+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "title": "Nvidia in talks to acquire US ‘open’ model start-up Reflection AI",
-                "link": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a?syn-25a6b1a6=1",
-                "published_at": "2026-10-10T18:14:28+00:00",
-                "source": "金融时报",
-                "source_url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a?syn-25a6b1a6=1",
-                "description": "Donald Trump’s administration hopes the company will rival cheap Chinese alternatives such as DeepSeek",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "US",
-                "event_country": "美国",
-                "event_country_en": "United States"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "Donald Trump’s administration hopes the company will rival cheap Chinese alternatives such as DeepSeek",
-            "description": "Donald Trump’s administration hopes the company will rival cheap Chinese alternatives such as DeepSeek",
-            "category": "产业/商业",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "英伟达洽谈收购美国“开放”模式初创公司Reflection AI"
           }
         ]
       },
@@ -1391,8 +1391,49 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 1,
+        "count": 5,
         "events": [
+          {
+            "id": "7a5ff002a71b2f92",
+            "title": "Takaichi again in a bind as U.S. threatens to ‘end’ ICC",
+            "published_at": "2026-10-10T04:29:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "title": "Takaichi again in a bind as U.S. threatens to ‘end’ ICC",
+                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
+                "published_at": "2026-10-10T04:29:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
+                "description": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "JP",
+                "event_country": "日本",
+                "event_country_en": "Japan"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
+            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
+            "description": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 51,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "Takaichi再次陷入困境，因为美国威胁要“结束”国际刑事法院"
+          },
           {
             "id": "229fdfd56631f359",
             "title": "Rubio pledges US cooperation in Marine-linked murder case",
@@ -1433,6 +1474,129 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "卢比奥承诺在与海洋有关的谋杀案中与美国合作"
+          },
+          {
+            "id": "7193d61e260e6ee1",
+            "title": "Tax cut to bring ¥36,000 benefit per citizen, Takaichi says",
+            "published_at": "2026-10-10T01:02:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "title": "Tax cut to bring ¥36,000 benefit per citizen, Takaichi says",
+                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
+                "published_at": "2026-10-10T01:02:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
+                "description": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "JP",
+                "event_country": "日本",
+                "event_country_en": "Japan"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
+            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
+            "description": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "Takaichi说，减税将为每位公民带来36,000 ¥的福利"
+          },
+          {
+            "id": "70acde074cbd4fdd",
+            "title": "Germany eyes joining GCAP fighter jet project with U.K, Italy and Japan",
+            "published_at": "2026-10-10T05:02:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "title": "Germany eyes joining GCAP fighter jet project with U.K, Italy and Japan",
+                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
+                "published_at": "2026-10-10T05:02:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
+                "description": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "JP",
+                "event_country": "日本",
+                "event_country_en": "Japan"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
+            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
+            "description": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 38,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "德国与英国、意大利和日本合作加入GCAP战斗机项目"
+          },
+          {
+            "id": "d745b16783019ca1",
+            "title": "More Japanese firms hit by large-scale data breaches",
+            "published_at": "2026-10-10T01:31:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "title": "More Japanese firms hit by large-scale data breaches",
+                "link": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
+                "published_at": "2026-10-10T01:31:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
+                "description": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "JP",
+                "event_country": "日本",
+                "event_country_en": "Japan"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
+            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
+            "description": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 38,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "更多日本公司遭遇大规模数据泄露"
           }
         ]
       }
@@ -2302,7 +2466,7 @@
         "code": "IL",
         "target_min": 2,
         "target_max": 8,
-        "count": 3,
+        "count": 4,
         "events": [
           {
             "id": "724e2b84a493c2f3",
@@ -2385,6 +2549,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "巴勒斯坦人在“停火”一年后仍在加沙被杀"
+          },
+          {
+            "id": "db23695bda819243",
+            "title": "Flydubai co-pilot planned suicide attack on Tel Aviv airport",
+            "published_at": "2026-10-10T00:13:00+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "title": "Flydubai co-pilot planned suicide attack on Tel Aviv airport",
+                "link": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
+                "published_at": "2026-10-10T00:13:00+00:00",
+                "source": "Japan Times",
+                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
+                "description": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "IL",
+                "event_country": "以色列",
+                "event_country_en": "Israel"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
+            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
+            "description": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 47,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "Flydubai副驾驶员计划在特拉维夫机场发动自杀式袭击"
           },
           {
             "id": "bf2416abaebec631",
@@ -3865,69 +4070,6 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "e5dc0762d4d067cb",
-      "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-      "published_at": "2026-10-10T18:08:46+00:00",
-      "code": "SA",
-      "event_country": "沙特阿拉伯",
-      "sources": [
-        {
-          "id": "e5dc0762d4d067cb",
-          "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-          "published_at": "2026-10-10T18:08:46+00:00",
-          "code": "SA",
-          "event_country": "沙特阿拉伯",
-          "sources": [
-            {
-              "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-              "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-              "published_at": "2026-10-10T18:08:46+00:00",
-              "source": "半岛电视台",
-              "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-              "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "SA",
-              "event_country": "沙特阿拉伯",
-              "event_country_en": "Saudi Arabia"
-            }
-          ],
-          "source": "半岛电视台",
-          "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-          "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-          "source_count": 1,
-          "source_names": [
-            "半岛电视台"
-          ],
-          "source_authority": 90,
-          "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-          "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 73,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "",
-      "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-      "source_count": 1,
-      "source_names": [
-        "半岛电视台"
-      ],
-      "source_authority": 90,
-      "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-      "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 73,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     }
   ],
   "supplement": [
@@ -4324,11 +4466,11 @@
   ],
   "stats": {
     "countries": 31,
-    "events": 54,
-    "tier1_events": 33,
+    "events": 59,
+    "tier1_events": 37,
     "supplement_events": 10,
     "failed_sources": 1,
-    "successful_sources": 22,
+    "successful_sources": 23,
     "chinese_sources": 6
   },
   "stale_fallback": false,
@@ -4346,14 +4488,14 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 132,
+    "translated": 137,
     "failed": 0,
     "remaining_english": 0,
     "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-10",
-    "removed": 74,
+    "removed": 73,
     "undated_removed": 81
   }
 }
