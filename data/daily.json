@@ -1,18 +1,12 @@
 {
-  "generated_at": "2026-10-11T01:11:29.104874+00:00",
-  "generated_beijing": "2026-10-11 09:11",
+  "generated_at": "2026-10-11T01:12:29.812087+00:00",
+  "generated_beijing": "2026-10-11 09:12",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
-  "source_total": 24,
+  "source_total": 23,
   "source_ok": 23,
-  "failures": [
-    {
-      "source": "Kyodo News",
-      "country": "GLOBAL",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
+  "failures": [],
   "tiers": {
     "tier1": {
       "美国": {
@@ -1711,47 +1705,6 @@
             "title_zh": "对利雅得机场的导弹袭击造成12人死亡，数百人受伤"
           },
           {
-            "id": "1111cabc64e7c783",
-            "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-            "published_at": "2026-10-11T01:02:07+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-                "published_at": "2026-10-11T01:02:07+00:00",
-                "source": "半岛电视台",
-                "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-                "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-                "feed_country": "GLOBAL",
-                "language": "en",
-                "code": "SA",
-                "event_country": "沙特阿拉伯",
-                "event_country_en": "Saudi Arabia"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-            "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 61,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "利雅得机场袭击造成12人死亡， 300多人受伤"
-          },
-          {
             "id": "17519ccf25f02913",
             "title": "多国战机导弹云集沙特，也门胡塞武装将遭围攻？",
             "published_at": "2026-10-11T00:44:19+00:00",
@@ -1831,6 +1784,47 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "本周第三次袭击后，沙特机场内出现损坏"
+          },
+          {
+            "id": "e5dc0762d4d067cb",
+            "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+            "published_at": "2026-10-10T18:08:46+00:00",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+                "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+                "published_at": "2026-10-10T18:08:46+00:00",
+                "source": "半岛电视台",
+                "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+                "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+                "feed_country": "GLOBAL",
+                "language": "en",
+                "code": "SA",
+                "event_country": "沙特阿拉伯",
+                "event_country_en": "Saudi Arabia"
+              }
+            ],
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+            "source_count": 1,
+            "source_names": [
+              "半岛电视台"
+            ],
+            "source_authority": 90,
+            "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+            "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 60,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "沙特阿拉伯称，对利雅得机场的袭击造成12人死亡， 300多人受伤"
           },
           {
             "id": "24cd8f7a3341e683",
@@ -2624,7 +2618,7 @@
             "description": "Physicians accuse Israeli Medical Association of remaining silent as Palestinian healthcare is systematically destroyed.",
             "category": "社会",
             "domestic_score": 30,
-            "importance": 28,
+            "importance": 27,
             "why_important": "涉及社会，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2957,6 +2951,122 @@
       "category": "国防安全",
       "domestic_score": 46,
       "importance": 78,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "6ee294216d62f120",
+      "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
+      "published_at": "2026-10-10T23:41:00+00:00",
+      "code": "GLOBAL",
+      "event_country": "国际/全球",
+      "sources": [
+        {
+          "id": "6ee294216d62f120",
+          "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
+          "published_at": "2026-10-10T23:41:00+00:00",
+          "code": "GLOBAL",
+          "event_country": "国际/全球",
+          "sources": [
+            {
+              "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
+              "link": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+              "published_at": "2026-10-10T23:41:00+00:00",
+              "source": "Japan Times",
+              "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+              "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "GLOBAL",
+              "event_country": "国际/全球",
+              "event_country_en": "Global"
+            },
+            {
+              "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+              "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "published_at": "2026-10-10T18:08:46+00:00",
+              "source": "半岛电视台",
+              "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "SA",
+              "event_country": "沙特阿拉伯",
+              "event_country_en": "Saudi Arabia"
+            }
+          ],
+          "source": "Japan Times",
+          "url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+          "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+          "source_count": 2,
+          "source_names": [
+            "Japan Times",
+            "半岛电视台"
+          ],
+          "source_authority": 91,
+          "summary": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+          "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+          "category": "国防安全",
+          "domestic_score": 12,
+          "importance": 76,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        },
+        {
+          "id": "e5dc0762d4d067cb",
+          "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+          "published_at": "2026-10-10T18:08:46+00:00",
+          "code": "SA",
+          "event_country": "沙特阿拉伯",
+          "sources": [
+            {
+              "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+              "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "published_at": "2026-10-10T18:08:46+00:00",
+              "source": "半岛电视台",
+              "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "SA",
+              "event_country": "沙特阿拉伯",
+              "event_country_en": "Saudi Arabia"
+            }
+          ],
+          "source": "半岛电视台",
+          "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "source_count": 1,
+          "source_names": [
+            "半岛电视台"
+          ],
+          "source_authority": 90,
+          "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+          "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+          "category": "国防安全",
+          "domestic_score": 38,
+          "importance": 73,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "Japan Times",
+      "url": "",
+      "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+      "source_count": 2,
+      "source_names": [
+        "Japan Times",
+        "半岛电视台"
+      ],
+      "source_authority": 91,
+      "summary": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+      "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+      "category": "国防安全",
+      "domestic_score": 12,
+      "importance": 76,
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
@@ -3308,69 +3418,6 @@
       "source_authority": 94,
       "summary": "It was reported the man entered the tiger enclosure at the attraction near Doncaster, police say.",
       "description": "It was reported the man entered the tiger enclosure at the attraction near Doncaster, police say.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 73,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "1111cabc64e7c783",
-      "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-      "published_at": "2026-10-11T01:02:07+00:00",
-      "code": "SA",
-      "event_country": "沙特阿拉伯",
-      "sources": [
-        {
-          "id": "1111cabc64e7c783",
-          "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-          "published_at": "2026-10-11T01:02:07+00:00",
-          "code": "SA",
-          "event_country": "沙特阿拉伯",
-          "sources": [
-            {
-              "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-              "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-              "published_at": "2026-10-11T01:02:07+00:00",
-              "source": "半岛电视台",
-              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-              "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "SA",
-              "event_country": "沙特阿拉伯",
-              "event_country_en": "Saudi Arabia"
-            }
-          ],
-          "source": "半岛电视台",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-          "source_count": 1,
-          "source_names": [
-            "半岛电视台"
-          ],
-          "source_authority": 90,
-          "summary": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-          "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 73,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-      "source_count": 1,
-      "source_names": [
-        "半岛电视台"
-      ],
-      "source_authority": 90,
-      "summary": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-      "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
       "category": "国防安全",
       "domestic_score": 38,
       "importance": 73,
@@ -4152,19 +4199,32 @@
       "title_zh": "阿联酋表示， Flydubai袭击者在澳大利亚开始“走向极端主义和恐怖主义”"
     },
     {
-      "id": "1111cabc64e7c783",
-      "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-      "published_at": "2026-10-11T01:02:07+00:00",
-      "code": "SA",
-      "event_country": "沙特阿拉伯",
+      "id": "6ee294216d62f120",
+      "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
+      "published_at": "2026-10-10T23:41:00+00:00",
+      "code": "GLOBAL",
+      "event_country": "国际/全球",
       "sources": [
         {
-          "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-          "published_at": "2026-10-11T01:02:07+00:00",
+          "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
+          "link": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+          "published_at": "2026-10-10T23:41:00+00:00",
+          "source": "Japan Times",
+          "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+          "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+          "feed_country": "GLOBAL",
+          "language": "en",
+          "code": "GLOBAL",
+          "event_country": "国际/全球",
+          "event_country_en": "Global"
+        },
+        {
+          "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+          "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "published_at": "2026-10-10T18:08:46+00:00",
           "source": "半岛电视台",
-          "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-          "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
+          "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
           "feed_country": "GLOBAL",
           "language": "en",
           "code": "SA",
@@ -4172,23 +4232,24 @@
           "event_country_en": "Saudi Arabia"
         }
       ],
-      "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
-      "source_count": 1,
+      "source": "Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+      "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
+      "source_count": 2,
       "source_names": [
+        "Japan Times",
         "半岛电视台"
       ],
-      "source_authority": 90,
-      "summary": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
-      "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
+      "source_authority": 91,
+      "summary": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
+      "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
       "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 73,
+      "domestic_score": 12,
+      "importance": 76,
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "利雅得机场袭击造成12人死亡， 300多人受伤"
+      "title_zh": "胡塞武装袭击沙特机场造成12人死亡， 300多人受伤"
     },
     {
       "id": "149a021dc740e40d",
@@ -4469,7 +4530,7 @@
     "events": 59,
     "tier1_events": 37,
     "supplement_events": 10,
-    "failed_sources": 1,
+    "failed_sources": 0,
     "successful_sources": 23,
     "chinese_sources": 6
   },
