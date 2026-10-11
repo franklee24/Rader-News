@@ -58,6 +58,21 @@ jobs:
           print('AI FEED RESULT',len(ok),'passed,',len(bad),'unavailable/empty')
           if len(ok)<6:
               raise SystemExit('Too few AI feeds are usable; at least 6 must pass')
-          if sum(1 for name,_ in ok if name in {'OpenAI News','Google AI Blog','Google DeepMind','Anthropic News Watch','NVIDIA AI Blog','Microsoft AI Blog','Hugging Face Blog','Apple ML Research','AWS ML Blog','Meta AI Research','Google Research'})<2:
+          if sum(1 for name,_ in ok if name in {'OpenAI News','Google AI Blog','Google DeepMind','Anthropic News Watch','NVIDIA AI Blog','Microsoft AI Blog','Hugging Face Blog','Apple ML Research','AWS ML Blog','Microsoft Research AI','Google Research'})<2:
               raise SystemExit('Too few first-party AI company feeds are usable')
+          PY
+
+      - name: Build sample daily dataset and verify 20 AI stories
+        run: |
+          python scripts/build_daily.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          print('AI stories:',d.get('ai_news_count'),'target:',d.get('ai_news_target'))
+          print('Country events before previous-edition dedupe:',d.get('stats',{}).get('events'))
+          if d.get('ai_news_count') != 20:
+              raise SystemExit('AI/LLM module did not reach its 20-story daily target')
+          if d.get('stats',{}).get('events',0) < 40:
+              raise SystemExit('Country news coverage below minimum threshold')
           PY
