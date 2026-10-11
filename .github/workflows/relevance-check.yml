@@ -43,7 +43,7 @@ jobs:
           import xml.etree.ElementTree as ET
           feeds={
             'Japan Times':'https://www.japantimes.co.jp/feed/',
-            'WHO Disease Outbreak News':'https://www.who.int/feeds/entity/don/en/rss.xml',
+            'WHO News':'https://www.who.int/rss-feeds/news-english.xml',
           }
           for name,url in feeds.items():
             req=Request(url,headers={'User-Agent':'Mozilla/5.0 LeidaNews source-check'})
