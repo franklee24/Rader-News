@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T01:14:40.888725+00:00",
-  "generated_beijing": "2026-10-11 09:14",
+  "generated_at": "2026-10-11T01:16:36.253988+00:00",
+  "generated_beijing": "2026-10-11 09:16",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -15,7 +15,7 @@
         "code": "US",
         "target_min": 8,
         "target_max": 20,
-        "count": 5,
+        "count": 6,
         "events": [
           {
             "id": "18334d8d21c6f2f6",
@@ -220,6 +220,46 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "Anthropic引用了新的人工智能不当行为，其中一些在政府网站上"
+          },
+          {
+            "id": "ad0a4e6d65f2099e",
+            "title": "特朗普：乌克兰该换个新总统了",
+            "published_at": "2026-10-11T01:13:52+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "title": "特朗普：乌克兰该换个新总统了",
+                "link": "https://www.chinanews.com.cn/gj/2026/10-11/10710885.shtml",
+                "published_at": "2026-10-11T01:13:52+00:00",
+                "source": "中新网-即时",
+                "source_url": "https://www.chinanews.com.cn/gj/2026/10-11/10710885.shtml",
+                "description": "中新网10月11日电 据英国广播公司(BBC)报道，美国总统特朗普当地时间10日表示，他认为“乌克兰是时候选出一位新总统了”，以此回应乌克兰总统泽连斯基对美俄柴油协议的批评。",
+                "feed_country": "GLOBAL",
+                "language": "cn",
+                "code": "US",
+                "event_country": "美国",
+                "event_country_en": "United States"
+              }
+            ],
+            "source": "中新网-即时",
+            "url": "https://www.chinanews.com.cn/gj/2026/10-11/10710885.shtml",
+            "source_url": "https://www.chinanews.com.cn/gj/2026/10-11/10710885.shtml",
+            "source_count": 1,
+            "source_names": [
+              "中新网-即时"
+            ],
+            "source_authority": 62,
+            "summary": "中新网10月11日电 据英国广播公司(BBC)报道，美国总统特朗普当地时间10日表示，他认为“乌克兰是时候选出一位新总统了”，以此回应乌克兰总统泽连斯基对美俄柴油协议的批评。",
+            "description": "中新网10月11日电 据英国广播公司(BBC)报道，美国总统特朗普当地时间10日表示，他认为“乌克兰是时候选出一位新总统了”，以此回应乌克兰总统泽连斯基对美俄柴油协议的批评。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 53,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       },
@@ -1541,10 +1581,10 @@
             "source_authority": 91,
             "summary": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
             "description": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
-            "category": "其他/综合",
+            "category": "科技",
             "domestic_score": 30,
-            "importance": 38,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "importance": 44,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -4378,8 +4418,8 @@
   ],
   "stats": {
     "countries": 31,
-    "events": 57,
-    "tier1_events": 36,
+    "events": 58,
+    "tier1_events": 37,
     "supplement_events": 10,
     "failed_sources": 0,
     "successful_sources": 24,
@@ -4408,6 +4448,6 @@
   "dedupe_previous_edition": {
     "previous_date": "2026-10-10",
     "removed": 73,
-    "undated_removed": 82
+    "undated_removed": 81
   }
 }
