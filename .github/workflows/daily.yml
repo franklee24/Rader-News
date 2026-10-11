@@ -37,7 +37,7 @@ jobs:
           if 'Coverage-India' in text or 'Coverage-United States' in text:
               raise SystemExit('LEGACY COUNTRY COVERAGE FEEDS DETECTED')
           if 'AI_FEEDS' not in text or "report['ai_news']=ai_events[:20]" not in text:
-    raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
+              raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
           print('Checked-in V22 source configuration and AI/LLM module are active.')
           PY
       - name: Build daily news
