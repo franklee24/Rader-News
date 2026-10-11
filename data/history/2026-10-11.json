@@ -1,12 +1,18 @@
 {
-  "generated_at": "2026-10-11T01:08:12.946033+00:00",
-  "generated_beijing": "2026-10-11 09:08",
+  "generated_at": "2026-10-11T01:09:27.294844+00:00",
+  "generated_beijing": "2026-10-11 09:09",
   "window_hours": 24,
   "version": "V21.0",
   "source_mode": "multi-source-event-first-direct-rss",
   "source_total": 23,
-  "source_ok": 23,
-  "failures": [],
+  "source_ok": 22,
+  "failures": [
+    {
+      "source": "Japan Times",
+      "country": "JP",
+      "error": "XML not well-formed (invalid token): line 2, column 17"
+    }
+  ],
   "tiers": {
     "tier1": {
       "美国": {
@@ -527,10 +533,10 @@
             "source_authority": 88,
             "summary": "Adam Barron is an independent Middle East political analyst and consultant, specialising primarily in Yemen, where he has reported from the capital, Sanaa, for The Economist. He writes for Foreign Policy and The Atlantic.",
             "description": "Adam Barron is an independent Middle East political analyst and consultant, specialising primarily in Yemen, where he has reported from the capital, Sanaa, for The Economist. He writes for Foreign Policy and The Atlantic.",
-            "category": "外交",
+            "category": "政治",
             "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及外交，结合多源报道与时效性评估后值得关注。",
+            "importance": 50,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -671,47 +677,6 @@
             "title_zh": "厄立特里亚敦促联合国对埃塞俄比亚采取威慑措施"
           },
           {
-            "id": "31831d5806b659d9",
-            "title": "How the Houthi-Saudi conflict is affecting countries on Africa's Red Sea coast — and beyond",
-            "published_at": "2026-10-10T06:10:00+00:00",
-            "code": "DE",
-            "event_country": "德国",
-            "sources": [
-              {
-                "title": "How the Houthi-Saudi conflict is affecting countries on Africa's Red Sea coast — and beyond",
-                "link": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-10T06:10:00+00:00",
-                "source": "DW",
-                "source_url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
-                "description": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
-                "feed_country": "DE",
-                "language": "en",
-                "code": "DE",
-                "event_country": "德国",
-                "event_country_en": "Germany"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
-            "description": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 61,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "胡塞-沙特冲突如何影响非洲红海沿岸及其他地区的国家"
-          },
-          {
             "id": "954b7fb02c27ce60",
             "title": "Palestinian president postpones elections until late 2027",
             "published_at": "2026-10-10T22:54:00+00:00",
@@ -833,6 +798,47 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "金钱、网络和偏见：为什么女性在美国政治中难以赢得席位"
+          },
+          {
+            "id": "31831d5806b659d9",
+            "title": "How the Houthi-Saudi conflict is affecting countries on Africa's Red Sea coast — and beyond",
+            "published_at": "2026-10-10T06:10:00+00:00",
+            "code": "DE",
+            "event_country": "德国",
+            "sources": [
+              {
+                "title": "How the Houthi-Saudi conflict is affecting countries on Africa's Red Sea coast — and beyond",
+                "link": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-10T06:10:00+00:00",
+                "source": "DW",
+                "source_url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
+                "description": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
+                "feed_country": "DE",
+                "language": "en",
+                "code": "DE",
+                "event_country": "德国",
+                "event_country_en": "Germany"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "source_authority": 89,
+            "summary": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
+            "description": "The Bab el-Mandeb Strait, which Yemeni government forces are trying to take back from the Houthis, is located not far from Djibouti and other African states.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 52,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "胡塞-沙特冲突如何影响非洲红海沿岸及其他地区的国家"
           }
         ]
       },
@@ -925,6 +931,47 @@
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "北约“胜利理论”计划不针对俄罗斯—军事委员会主席"
+          },
+          {
+            "id": "4d4b5a09b210e396",
+            "title": "At least 12 people die, 309 injured in attack on Riyadh Airport — government",
+            "published_at": "2026-10-10T22:35:57+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "title": "At least 12 people die, 309 injured in attack on Riyadh Airport — government",
+                "link": "https://tass.com/emergencies/2200391",
+                "published_at": "2026-10-10T22:35:57+00:00",
+                "source": "TASS",
+                "source_url": "https://tass.com/emergencies/2200391",
+                "description": "The attack caused material damage, the extent of which is currently being assessed",
+                "feed_country": "RU",
+                "language": "en",
+                "code": "RU",
+                "event_country": "俄罗斯",
+                "event_country_en": "Russia"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/emergencies/2200391",
+            "source_url": "https://tass.com/emergencies/2200391",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "source_authority": 82,
+            "summary": "The attack caused material damage, the extent of which is currently being assessed",
+            "description": "The attack caused material damage, the extent of which is currently being assessed",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 69,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "利雅得机场遇袭至少12人死亡， 309人受伤—政府"
           },
           {
             "id": "485765e235bcc292",
@@ -1089,47 +1136,6 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "乌克兰在过去24小时内袭击了DPR 23次"
-          },
-          {
-            "id": "4d4b5a09b210e396",
-            "title": "At least 12 people die, 309 injured in attack on Riyadh Airport — government",
-            "published_at": "2026-10-10T22:35:57+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "title": "At least 12 people die, 309 injured in attack on Riyadh Airport — government",
-                "link": "https://tass.com/emergencies/2200391",
-                "published_at": "2026-10-10T22:35:57+00:00",
-                "source": "TASS",
-                "source_url": "https://tass.com/emergencies/2200391",
-                "description": "The attack caused material damage, the extent of which is currently being assessed",
-                "feed_country": "RU",
-                "language": "en",
-                "code": "RU",
-                "event_country": "俄罗斯",
-                "event_country_en": "Russia"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/emergencies/2200391",
-            "source_url": "https://tass.com/emergencies/2200391",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "source_authority": 82,
-            "summary": "The attack caused material damage, the extent of which is currently being assessed",
-            "description": "The attack caused material damage, the extent of which is currently being assessed",
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 65,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "利雅得机场遇袭至少12人死亡， 309人受伤—政府"
           },
           {
             "id": "434d9b91800d2617",
@@ -1385,583 +1391,8 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 14,
-        "events": [
-          {
-            "id": "4159e091d0f1e400",
-            "title": "Taiwan’s leader says increasing defense spending to ‘deter war’",
-            "published_at": "2026-10-10T04:29:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Taiwan’s leader says increasing defense spending to ‘deter war’",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/taiwan-lai-increasing-defense-spending/",
-                "published_at": "2026-10-10T04:29:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/taiwan-lai-increasing-defense-spending/",
-                "description": "Taiwan has earmarked a record NT$1.1 trillion in defense spending for 2027, which accounts for more than 3% of GDP.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/taiwan-lai-increasing-defense-spending/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/taiwan-lai-increasing-defense-spending/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Taiwan has earmarked a record NT$1.1 trillion in defense spending for 2027, which accounts for more than 3% of GDP.",
-            "description": "Taiwan has earmarked a record NT$1.1 trillion in defense spending for 2027, which accounts for more than 3% of GDP.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 72,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "台湾领导人表示，增加国防开支以“遏制战争”"
-          },
-          {
-            "id": "6ee294216d62f120",
-            "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
-            "published_at": "2026-10-10T23:41:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
-                "link": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-                "published_at": "2026-10-10T23:41:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-                "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-            "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 63,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "胡塞武装袭击沙特机场造成12人死亡， 300多人受伤"
-          },
-          {
-            "id": "db23695bda819243",
-            "title": "Flydubai co-pilot planned suicide attack on Tel Aviv airport",
-            "published_at": "2026-10-10T00:13:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Flydubai co-pilot planned suicide attack on Tel Aviv airport",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
-                "published_at": "2026-10-10T00:13:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
-                "description": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/world/flydubai-suicide-attack-tel-aviv/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
-            "description": "The unnamed Omani co-pilot had drawn inspiration from Al-Qaeda's Sept. 11 suicide attacks on the U.S., the United Arab Emirates' top prosecutor said.",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 59,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Flydubai副驾驶员计划在特拉维夫机场发动自杀式袭击"
-          },
-          {
-            "id": "065af784ee54b4d1",
-            "title": "Anthropic cites new AI misbehavior, some on government sites",
-            "published_at": "2026-10-10T02:04:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Anthropic cites new AI misbehavior, some on government sites",
-                "link": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
-                "published_at": "2026-10-10T02:04:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
-                "description": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
-            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/anthropic-new-ai-misbehavior/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
-            "description": "The incident prompted a warning from U.S. President Donald Trump's administration for artificial intelligence companies to secure their systems.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 54,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Anthropic引用了新的人工智能不当行为，其中一些在政府网站上"
-          },
-          {
-            "id": "d93a00433aeb45cb",
-            "title": "U.S. lifts sanctions on daughter of Myanmar military-linked businessman",
-            "published_at": "2026-10-10T00:11:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "U.S. lifts sanctions on daughter of Myanmar military-linked businessman",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/us-sanctions-myanmar-businessman/",
-                "published_at": "2026-10-10T00:11:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/us-sanctions-myanmar-businessman/",
-                "description": "The move comes a after report that said the administration of U.S. President Donald Trump had opened talks with Myanmar's military-installed government.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/us-sanctions-myanmar-businessman/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/politics/us-sanctions-myanmar-businessman/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "The move comes a after report that said the administration of U.S. President Donald Trump had opened talks with Myanmar's military-installed government.",
-            "description": "The move comes a after report that said the administration of U.S. President Donald Trump had opened talks with Myanmar's military-installed government.",
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 54,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国解除对缅甸军方商人女儿的制裁"
-          },
-          {
-            "id": "7a5ff002a71b2f92",
-            "title": "Takaichi again in a bind as U.S. threatens to ‘end’ ICC",
-            "published_at": "2026-10-10T04:29:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Takaichi again in a bind as U.S. threatens to ‘end’ ICC",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
-                "published_at": "2026-10-10T04:29:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
-                "description": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/japan-us-icc-takaichi-trump/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
-            "description": "Japan, which hosts roughly 60,000 U.S. service members and depends on Washington for its security, will need to walk a fine line as it pushes back.",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Takaichi再次陷入困境，因为美国威胁要“结束”国际刑事法院"
-          },
-          {
-            "id": "7193d61e260e6ee1",
-            "title": "Tax cut to bring ¥36,000 benefit per citizen, Takaichi says",
-            "published_at": "2026-10-10T01:02:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Tax cut to bring ¥36,000 benefit per citizen, Takaichi says",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
-                "published_at": "2026-10-10T01:02:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
-                "description": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/politics/tax-cut-36000-takaichi/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
-            "description": "The ¥36,000 figure was reached by dividing the total tax revenue loss to the central and local governments from the tax cut by the country's population.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Takaichi说，减税将为每位公民带来36,000 ¥的福利"
-          },
-          {
-            "id": "d04766d98b72e39b",
-            "title": "China militia boat spotted for first time off Taiwan’s east coast, patrol finds",
-            "published_at": "2026-10-10T00:14:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "China militia boat spotted for first time off Taiwan’s east coast, patrol finds",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/china-militia-boat-first-taiwan-east-coast/",
-                "published_at": "2026-10-10T00:14:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/china-militia-boat-first-taiwan-east-coast/",
-                "description": "Taipei regards the area off its east coast as critical to wartime supply routes from allies in the event of a blockade or conflict.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/china-militia-boat-first-taiwan-east-coast/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/asia-pacific/china-militia-boat-first-taiwan-east-coast/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Taipei regards the area off its east coast as critical to wartime supply routes from allies in the event of a blockade or conflict.",
-            "description": "Taipei regards the area off its east coast as critical to wartime supply routes from allies in the event of a blockade or conflict.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 46,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国民兵船首次在台湾东海岸被发现，巡逻队发现"
-          },
-          {
-            "id": "1728665a26c95846",
-            "title": "U.S. Treasury chief Scott Bessent to skip IMF-World Bank meetings in Bangkok",
-            "published_at": "2026-10-10T01:37:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "U.S. Treasury chief Scott Bessent to skip IMF-World Bank meetings in Bangkok",
-                "link": "https://www.japantimes.co.jp/business/2026/10/10/economy/scott-bessent-skip-imf-world-bank-meetings/",
-                "published_at": "2026-10-10T01:37:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/economy/scott-bessent-skip-imf-world-bank-meetings/",
-                "description": "Bessent's absence comes at a critical moment when benchmark Treasury yields have surged to their highest levels in nearly 25 years.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/business/2026/10/10/economy/scott-bessent-skip-imf-world-bank-meetings/",
-            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/economy/scott-bessent-skip-imf-world-bank-meetings/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Bessent's absence comes at a critical moment when benchmark Treasury yields have surged to their highest levels in nearly 25 years.",
-            "description": "Bessent's absence comes at a critical moment when benchmark Treasury yields have surged to their highest levels in nearly 25 years.",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国财政部长斯科特·贝森特（ Scott Bessent ）跳过国际货币基金组织-世界银行在曼谷举行的会议"
-          },
-          {
-            "id": "544610bc68bc48c5",
-            "title": "Nao-Cola Yamazaki is your favorite writer’s favorite writer",
-            "published_at": "2026-10-11T00:00:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Nao-Cola Yamazaki is your favorite writer’s favorite writer",
-                "link": "https://www.japantimes.co.jp/culture/2026/10/11/books/nao-cola-yamazaki-japanese-novelist/",
-                "published_at": "2026-10-11T00:00:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/culture/2026/10/11/books/nao-cola-yamazaki-japanese-novelist/",
-                "description": "More than 20 years after their literary debut, two of Nao-Cola Yamazaki's books have finally appeared in English translation for the first time.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/culture/2026/10/11/books/nao-cola-yamazaki-japanese-novelist/",
-            "source_url": "https://www.japantimes.co.jp/culture/2026/10/11/books/nao-cola-yamazaki-japanese-novelist/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "More than 20 years after their literary debut, two of Nao-Cola Yamazaki's books have finally appeared in English translation for the first time.",
-            "description": "More than 20 years after their literary debut, two of Nao-Cola Yamazaki's books have finally appeared in English translation for the first time.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 38,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Nao-Cola Yamazaki是您最喜爱的作家"
-          },
-          {
-            "id": "db6fa66234bd2a8a",
-            "title": "Win friends and influence people with nori ‘caviar’",
-            "published_at": "2026-10-10T23:00:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Win friends and influence people with nori ‘caviar’",
-                "link": "https://www.japantimes.co.jp/life/2026/10/11/food-drink/nori-caviar-recipe-soy-sauce-seafood-japanese-cuisine/",
-                "published_at": "2026-10-10T23:00:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/life/2026/10/11/food-drink/nori-caviar-recipe-soy-sauce-seafood-japanese-cuisine/",
-                "description": "It doesn't have to be caviar to have the same culinary cachet, and this nori 'caviar' recipe proves it.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/life/2026/10/11/food-drink/nori-caviar-recipe-soy-sauce-seafood-japanese-cuisine/",
-            "source_url": "https://www.japantimes.co.jp/life/2026/10/11/food-drink/nori-caviar-recipe-soy-sauce-seafood-japanese-cuisine/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "It doesn't have to be caviar to have the same culinary cachet, and this nori 'caviar' recipe proves it.",
-            "description": "It doesn't have to be caviar to have the same culinary cachet, and this nori 'caviar' recipe proves it.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 38,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "用海鲜「鱼子酱」赢得朋友并影响他人"
-          },
-          {
-            "id": "17d39191d8beec58",
-            "title": "Beer maker leaders may have been aware of price cartel",
-            "published_at": "2026-10-10T00:59:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Beer maker leaders may have been aware of price cartel",
-                "link": "https://www.japantimes.co.jp/business/2026/10/10/companies/beer-maker-leaders-price-cartel/",
-                "published_at": "2026-10-10T00:59:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/companies/beer-maker-leaders-price-cartel/",
-                "description": "Some of the officials with Asahi Breweries, Kirin Brewery, Sapporo Breweries and Suntory Holdings admitted to the cartel during an investigation.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/business/2026/10/10/companies/beer-maker-leaders-price-cartel/",
-            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/companies/beer-maker-leaders-price-cartel/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "Some of the officials with Asahi Breweries, Kirin Brewery, Sapporo Breweries and Suntory Holdings admitted to the cartel during an investigation.",
-            "description": "Some of the officials with Asahi Breweries, Kirin Brewery, Sapporo Breweries and Suntory Holdings admitted to the cartel during an investigation.",
-            "category": "其他/综合",
-            "domestic_score": 38,
-            "importance": 36,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "啤酒制造商领导人可能已经意识到价格卡特尔"
-          },
-          {
-            "id": "70acde074cbd4fdd",
-            "title": "Germany eyes joining GCAP fighter jet project with U.K, Italy and Japan",
-            "published_at": "2026-10-10T05:02:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "Germany eyes joining GCAP fighter jet project with U.K, Italy and Japan",
-                "link": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
-                "published_at": "2026-10-10T05:02:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
-                "description": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/10/japan/gcap-germany-join-japan/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
-            "description": "There has been mounting speculation the group could open the door to Germany after a rival Franco-German fighter program collapsed in June.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 34,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "德国与英国、意大利和日本合作加入GCAP战斗机项目"
-          },
-          {
-            "id": "d745b16783019ca1",
-            "title": "More Japanese firms hit by large-scale data breaches",
-            "published_at": "2026-10-10T01:31:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "title": "More Japanese firms hit by large-scale data breaches",
-                "link": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
-                "published_at": "2026-10-10T01:31:00+00:00",
-                "source": "Japan Times",
-                "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
-                "description": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
-                "feed_country": "JP",
-                "language": "en",
-                "code": "JP",
-                "event_country": "日本",
-                "event_country_en": "Japan"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
-            "source_url": "https://www.japantimes.co.jp/business/2026/10/10/tech/japanese-firms-data-breaches/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 55,
-            "summary": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
-            "description": "The companies respectively said that they had found no evidence of unauthorized use of the affected information by third parties.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 34,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "更多日本公司遭遇大规模数据泄露"
-          }
-        ]
+        "count": 0,
+        "events": []
       }
     },
     "tier2": {
@@ -2773,10 +2204,10 @@
             "source_authority": 90,
             "summary": "Saudi-backed forces say 1,150 Houthis killed in operations against the Iran-aligned group over the past 24 hours.",
             "description": "Saudi-backed forces say 1,150 Houthis killed in operations against the Iran-aligned group over the past 24 hours.",
-            "category": "政治",
+            "category": "国防安全",
             "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "importance": 52,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -3055,108 +2486,6 @@
     }
   },
   "global_top": [
-    {
-      "id": "6ee294216d62f120",
-      "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
-      "published_at": "2026-10-10T23:41:00+00:00",
-      "code": "JP",
-      "event_country": "日本",
-      "sources": [
-        {
-          "id": "e5dc0762d4d067cb",
-          "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-          "published_at": "2026-10-10T18:08:46+00:00",
-          "code": "SA",
-          "event_country": "沙特阿拉伯",
-          "sources": [
-            {
-              "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-              "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-              "published_at": "2026-10-10T18:08:46+00:00",
-              "source": "半岛电视台",
-              "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-              "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-              "feed_country": "GLOBAL",
-              "language": "en",
-              "code": "SA",
-              "event_country": "沙特阿拉伯",
-              "event_country_en": "Saudi Arabia"
-            }
-          ],
-          "source": "半岛电视台",
-          "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-          "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-          "source_count": 1,
-          "source_names": [
-            "半岛电视台"
-          ],
-          "source_authority": 90,
-          "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-          "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 73,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        },
-        {
-          "id": "6ee294216d62f120",
-          "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
-          "published_at": "2026-10-10T23:41:00+00:00",
-          "code": "JP",
-          "event_country": "日本",
-          "sources": [
-            {
-              "title": "Houthi attack on Saudi airport kills 12, over 300 wounded",
-              "link": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-              "published_at": "2026-10-10T23:41:00+00:00",
-              "source": "Japan Times",
-              "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-              "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-              "feed_country": "JP",
-              "language": "en",
-              "code": "JP",
-              "event_country": "日本",
-              "event_country_en": "Japan"
-            }
-          ],
-          "source": "Japan Times",
-          "url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-          "source_url": "https://www.japantimes.co.jp/news/2026/10/11/world/houthi-attack-saudi-airport/",
-          "source_count": 1,
-          "source_names": [
-            "Japan Times"
-          ],
-          "source_authority": 55,
-          "summary": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-          "description": "Saturday's attack, the deadliest in the kingdom in more than a decade, occurred without warning, with no alert issued by a threat warning system.",
-          "category": "国防安全",
-          "domestic_score": 38,
-          "importance": 70,
-          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-        }
-      ],
-      "source": "半岛电视台",
-      "url": "",
-      "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-      "source_count": 2,
-      "source_names": [
-        "半岛电视台",
-        "Japan Times"
-      ],
-      "source_authority": 90,
-      "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-      "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
-      "category": "国防安全",
-      "domestic_score": 38,
-      "importance": 78,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
     {
       "id": "bdfbb3a2a8ee82b4",
       "title": "12 killed, hundreds injured in Saudi Arabia airport attack as Houthi strikes intensify",
@@ -4431,6 +3760,69 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+    },
+    {
+      "id": "e5dc0762d4d067cb",
+      "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+      "published_at": "2026-10-10T18:08:46+00:00",
+      "code": "SA",
+      "event_country": "沙特阿拉伯",
+      "sources": [
+        {
+          "id": "e5dc0762d4d067cb",
+          "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+          "published_at": "2026-10-10T18:08:46+00:00",
+          "code": "SA",
+          "event_country": "沙特阿拉伯",
+          "sources": [
+            {
+              "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
+              "link": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "published_at": "2026-10-10T18:08:46+00:00",
+              "source": "半岛电视台",
+              "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+              "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+              "feed_country": "GLOBAL",
+              "language": "en",
+              "code": "SA",
+              "event_country": "沙特阿拉伯",
+              "event_country_en": "Saudi Arabia"
+            }
+          ],
+          "source": "半岛电视台",
+          "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+          "source_count": 1,
+          "source_names": [
+            "半岛电视台"
+          ],
+          "source_authority": 90,
+          "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+          "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+          "category": "国防安全",
+          "domestic_score": 38,
+          "importance": 73,
+          "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+          "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+          "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
+        }
+      ],
+      "source": "半岛电视台",
+      "url": "",
+      "source_url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+      "source_count": 1,
+      "source_names": [
+        "半岛电视台"
+      ],
+      "source_authority": 90,
+      "summary": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+      "description": "Aviation authority says death toll includes four Saudis and eight foreign nationals.",
+      "category": "国防安全",
+      "domestic_score": 38,
+      "importance": 73,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
     }
   ],
   "supplement": [
@@ -4827,11 +4219,11 @@
   ],
   "stats": {
     "countries": 31,
-    "events": 67,
-    "tier1_events": 46,
+    "events": 53,
+    "tier1_events": 32,
     "supplement_events": 10,
-    "failed_sources": 0,
-    "successful_sources": 23,
+    "failed_sources": 1,
+    "successful_sources": 22,
     "chinese_sources": 6
   },
   "stale_fallback": false,
@@ -4849,7 +4241,7 @@
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 146,
+    "translated": 132,
     "failed": 0,
     "remaining_english": 0,
     "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用。"
@@ -4857,6 +4249,6 @@
   "dedupe_previous_edition": {
     "previous_date": "2026-10-10",
     "removed": 75,
-    "undated_removed": 77
+    "undated_removed": 81
   }
 }
