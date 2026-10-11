@@ -109,12 +109,12 @@ def main():
         "failed": failed,
         "remaining_english": len(remaining),
         "degraded": bool(remaining),
-        "note": "仅翻译英文标题；原始 title 保留不变；Google Translate 优先，MyMemory 备用；翻译服务不可用时保留英文并继续更新新闻数据。"
+        "note": "仅翻译英文标题；原始 title 保留不变；每次最多翻译80个唯一标题，剩余标题保留英文以确保新闻更新不被阻塞。"
     })
     DAILY.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
     print("TITLE TRANSLATION:", ok, "translated;", failed, "failed;", len(remaining), "remaining English")
     if remaining:
-        print("TRANSLATION DEGRADED: external translation services unavailable; keep original English titles and continue publishing.")
+        print("TRANSLATION PARTIAL: per-run budget reached or translation providers unavailable; keep original English titles and continue publishing.")
         print("UNTRANSLATED SAMPLE:", " | ".join(remaining[:20]))
 
 
