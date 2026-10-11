@@ -36,7 +36,9 @@ jobs:
               raise SystemExit('LEGACY CHINESE-FIRST LOGIC DETECTED')
           if 'Coverage-India' in text or 'Coverage-United States' in text:
               raise SystemExit('LEGACY COUNTRY COVERAGE FEEDS DETECTED')
-          print('Checked-in V21 source configuration is active.')
+          if 'AI_FEEDS' not in text or "report['ai_news']=ai_events[:20]" not in text:
+    raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
+          print('Checked-in V22 source configuration and AI/LLM module are active.')
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
@@ -74,10 +76,21 @@ jobs:
                       if not e.get('published_at'): undated+=1; continue
                       if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles: removed+=1
                       else: keep.append(e)
-                  c['events']=keep; c['count']=len(keep)
+                  limit=int(c.get('target_max') or len(keep))
+              c['events']=keep[:limit]; c['count']=len(c['events'])
+          # Rebuild GLOBAL TOP from the final post-deduplication country lists.
+          current=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
+          current.extend(d.get('supplement',[]))
+          unique=[]; seen=set()
+          for e in sorted(current,key=lambda x:(x.get('importance',0),x.get('published_at') or ''),reverse=True):
+              key=e.get('id') or norm(e.get('title'))
+              if not key or key in seen: continue
+              seen.add(key); unique.append(e)
+          d['global_top']=unique[:20]
           d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
           d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
-          d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed,'undated_removed':undated}
+          d['stats']['supplement_events']=len(d.get('supplement',[]))
+          d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed,'undated_removed':undated,'buffered_candidates_used':True}
           daily.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
