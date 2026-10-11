@@ -66,14 +66,18 @@ AI_FEEDS=[
  ('OpenAI News','GLOBAL','https://openai.com/news/rss.xml','en'),
  ('Google AI Blog','GLOBAL','https://blog.google/technology/ai/rss/','en'),
  ('Google DeepMind','GLOBAL','https://deepmind.google/blog/rss.xml','en'),
- ('Anthropic News','GLOBAL','https://www.anthropic.com/news/rss.xml','en'),
- ('NVIDIA AI Blog','GLOBAL','https://blogs.nvidia.com/blog/category/ai/feed/','en'),
- ('Microsoft AI Blog','GLOBAL','https://blogs.microsoft.com/ai/feed/','en'),
+ ('Anthropic News Watch','GLOBAL','https://news.google.com/rss/search?q=site%3Aanthropic.com%2Fnews&hl=en-US&gl=US&ceid=US:en','en'),
+ ('NVIDIA AI Blog','GLOBAL','https://blogs.nvidia.com/feed/','en'),
+ ('Microsoft AI Blog','GLOBAL','https://www.microsoft.com/en-us/microsoft-cloud/blog/feed//','en'),
  ('Hugging Face Blog','GLOBAL','https://huggingface.co/blog/feed.xml','en'),
  ('TechCrunch AI','GLOBAL','https://techcrunch.com/category/artificial-intelligence/feed/','en'),
- ('VentureBeat AI','GLOBAL','https://venturebeat.com/category/ai/feed/','en'),
+ ('Apple ML Research','GLOBAL','https://machinelearning.apple.com/rss.xml','en'),
  ('MIT Technology Review AI','GLOBAL','https://www.technologyreview.com/topic/artificial-intelligence/feed/','en'),
  ('The Verge AI','GLOBAL','https://www.theverge.com/rss/ai-artificial-intelligence/index.xml','en'),
+ ('AWS ML Blog','GLOBAL','https://aws.amazon.com/blogs/machine-learning/feed/','en'),
+ ('Meta AI Research','GLOBAL','https://ai.meta.com/blog/rss/','en'),
+ ('Google Research','GLOBAL','https://research.google/blog/rss/','en'),
+ ('arXiv cs.AI','GLOBAL','https://rss.arxiv.org/rss/cs.AI','en'),
 ]
 
 ALIASES={
@@ -160,7 +164,7 @@ def fetch_feed(feed):
  except Exception as e:return feed,[],'XML '+str(e)[:120]
 
 SOURCE_AUTHORITY={
- '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':95,'Google AI Blog':95,'Google DeepMind':96,'Anthropic News':95,'NVIDIA AI Blog':94,'Microsoft AI Blog':93,'Hugging Face Blog':88,'TechCrunch AI':88,'VentureBeat AI':86,'MIT Technology Review AI':93,'The Verge AI':88,
+ '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':95,'Google AI Blog':95,'Google DeepMind':96,'Anthropic News Watch':92,'NVIDIA AI Blog':94,'Microsoft AI Blog':93,'Hugging Face Blog':88,'TechCrunch AI':88,'Apple ML Research':93,'AWS ML Blog':92,'Meta AI Research':94,'Google Research':94,'arXiv cs.AI':90,'MIT Technology Review AI':93,'The Verge AI':88,
  'Reuters':98,'Associated Press':97,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
