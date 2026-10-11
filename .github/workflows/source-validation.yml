@@ -1,0 +1,63 @@
+name: Validate AI news sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_daily.py'
+      - 'scripts/score_importance.py'
+      - '.github/workflows/source-validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-ai-feeds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Syntax and editorial rules
+        run: |
+          python -m py_compile scripts/build_daily.py scripts/score_importance.py scripts/translate_titles.py
+          python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          assert m.is_ai_related({'title':'OpenAI releases a new reasoning model'})
+          assert m.is_ai_related({'title':'Google DeepMind announces AI research'})
+          assert not m.is_ai_related({'title':'Central bank raises interest rates'})
+          assert m.category('OpenAI launches a new large language model')=='AI/LLM'
+          print('AI classification tests passed; AI feeds:',len(m.AI_FEEDS))
+          PY
+      - name: Probe AI RSS feeds
+        run: |
+          python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          ok=[]; bad=[]
+          for feed in m.AI_FEEDS:
+              name, country, url, lang=feed
+              body,err=m.fetch(url)
+              if body:
+                  try:
+                      rows=m.parse_feed(body,name,country,lang)
+                      if rows:
+                          ok.append((name,len(rows)))
+                          print('PASS',name,'items=',len(rows))
+                      else:
+                          bad.append((name,'empty feed'))
+                          print('WARN',name,'empty feed')
+                  except Exception as e:
+                      bad.append((name,'parse '+str(e)[:100]))
+                      print('WARN',name,'parse failed',str(e)[:100])
+              else:
+                  bad.append((name,err))
+                  print('WARN',name,err)
+          print('AI FEED RESULT',len(ok),'passed,',len(bad),'unavailable/empty')
+          if len(ok)<6:
+              raise SystemExit('Too few AI feeds are usable; at least 6 must pass')
+          if sum(1 for name,_ in ok if name in {'OpenAI News','Google AI Blog','Google DeepMind','Anthropic News','NVIDIA AI Blog','Microsoft AI Blog','Hugging Face Blog'})<2:
+              raise SystemExit('Too few first-party AI company feeds are usable')
+          PY
