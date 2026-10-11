@@ -42,7 +42,7 @@ jobs:
           from urllib.request import Request,urlopen
           import xml.etree.ElementTree as ET
           feeds={
-            'Japan Times':'https://www.japantimes.co.jp/news/japan/feed/',
+            'Japan Times':'https://www.japantimes.co.jp/feed/topstories/',
             'WHO News':'https://www.who.int/rss-feeds/news-english.xml',
           }
           for name,url in feeds.items():
