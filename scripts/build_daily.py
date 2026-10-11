@@ -33,7 +33,7 @@ FEEDS=[
  ('卫报','GLOBAL','https://www.theguardian.com/world/rss','en'),
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
  ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
- ('Japan Times','JP','https://www.japantimes.co.jp/feed/','en'),
+ ('Japan Times','JP','https://www.japantimes.co.jp/news/japan/feed/','en'),
  ('WHO News','GLOBAL','https://www.who.int/rss-feeds/news-english.xml','en'),
  ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
  ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
@@ -75,7 +75,7 @@ ALIASES={
 }
 CODE_TO_COUNTRY={c['code']:c for arr in CONFIG['tiers'].values() for c in arr}
 CAT={
-'政治':['政治','政府','总统','总理','选举','议会','政党','内阁','election','government','president','prime minister','parliament'],
+'政治':['政治','政府','总统','总理','选举','议会','政党','内阁','election','president','prime minister','parliament','legislation','bill','cabinet','minister','policy'],
 '宏观经济':['经济','GDP','通胀','通货膨胀','利率','央行','宏观','economic','inflation','interest rate','central bank'],
 '金融':['金融','股市','债券','汇率','银行','资本市场','market','stocks','bond','currency','finance','bank'],
 '产业/商业':['企业','公司','产业','制造','贸易','商业','供应链','company','industry','trade','manufacturing','business'],
