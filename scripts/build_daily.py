@@ -130,7 +130,7 @@ def fetch_feed(feed):
  except Exception as e:return feed,[],'XML '+str(e)[:120]
 
 SOURCE_AUTHORITY={
- '纽约时报':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'BBC World':94,'卫报':92,'华盛顿邮报':94,
+ '纽约时报':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
 }
