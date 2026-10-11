@@ -70,6 +70,7 @@ def main():
         for country in tier.values():
             events.extend(country.get("events", []))
     events.extend(d.get("supplement", []))
+    events.extend(d.get("ai_news", []))
 
     targets = [e for e in events if looks_english(e.get("title")) and not e.get("title_zh")]
     ok = failed = 0
