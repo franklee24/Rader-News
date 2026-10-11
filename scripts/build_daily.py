@@ -230,15 +230,15 @@ def cluster(items):
    old=grouped.get(g)
    if old is None or source_rank(s)>source_rank(old) or (source_rank(s)==source_rank(old) and (s.get('published_at') or '')>(old.get('published_at') or '')):
     grouped[g]=s
-  srcs=sorted(grouped.values(),key=lambda s:(source_rank(s),s.get('published_at') or ''),reverse=True)[:4]
+  srcs=sorted(grouped.values(),key=lambda s:(source_rank(s),s.get('published_at') or ''),reverse=True)[:3]
   best=srcs[0] if srcs else e['sources'][0]
   summary=clean(best.get('description',''))
   # Keep the published snapshot compact for mobile loading; preserve enough source detail for the event modal.
-  compact_sources=[{'source':s.get('source',''),'link':s.get('link',''),'url':s.get('url') or s.get('link',''),'published_at':s.get('published_at'),'description':clean(s.get('description',''))[:240]} for s in srcs]
+  compact_sources=[{'source':s.get('source',''),'link':s.get('link',''),'url':s.get('url') or s.get('link',''),'published_at':s.get('published_at'),'description':clean(s.get('description',''))[:160]} for s in srcs]
   e.update(
    source=best.get('source',''),url=best.get('link',''),source_url=best.get('source_url',''),
    sources=compact_sources,source_count=len(grouped),source_names=[s.get('source','') for s in srcs],
-   source_authority=source_rank(best),summary=summary[:350],description=summary[:350],
+   source_authority=source_rank(best),summary=summary[:250],description=summary[:250],
    category=category(e['title']+' '+summary)
   )
   impact=sum(1 for k in HIGH if k.lower() in e['title'].lower())
