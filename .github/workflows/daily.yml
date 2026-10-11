@@ -20,7 +20,7 @@ permissions:
 
 concurrency:
   group: radar-production
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update-and-deploy:
@@ -51,8 +51,6 @@ jobs:
         run: python scripts/build_daily.py
       - name: Apply V20 importance scoring
         run: python scripts/score_importance.py
-      - name: Translate English titles only
-        run: python scripts/translate_titles.py
       - name: Remove repeats and undated events
         run: |
           python - <<'PY'
@@ -102,6 +100,8 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
+      - name: Translate English titles only
+        run: python scripts/translate_titles.py
       - name: Validate event quality
         run: |
           python - <<'PY2'
