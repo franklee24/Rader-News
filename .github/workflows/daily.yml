@@ -1,6 +1,13 @@
 name: 雷达新闻每日更新
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_daily.py'
+      - 'scripts/score_importance.py'
+      - 'scripts/translate_titles.py'
+      - '.github/workflows/daily.yml'
   workflow_dispatch:
 # 北京时间 06:07、17:07（GitHub Actions cron 使用 UTC）
   schedule:
