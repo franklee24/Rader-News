@@ -42,8 +42,9 @@ jobs:
           from urllib.request import Request,urlopen
           import xml.etree.ElementTree as ET
           feeds={
-            'Japan Times':'https://www.japantimes.co.jp/feed/topstories/',
+            'Japan Times':'https://www.japantimes.co.jp/feed/',
             'WHO News':'https://www.who.int/rss-feeds/news-english.xml',
+            'Kyodo News':'https://english.kyodonews.net/rss/all.xml',
           }
           for name,url in feeds.items():
             req=Request(url,headers={'User-Agent':'Mozilla/5.0 LeidaNews source-check'})
