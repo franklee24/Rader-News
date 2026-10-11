@@ -83,6 +83,12 @@ jobs:
                       else: keep.append(e)
                   limit=int(c.get('target_max') or len(keep))
               c['events']=keep[:limit]; c['count']=len(c['events'])
+          # Drop the duplicate description field after scoring; the UI uses summary.
+          for tier in d.get('tiers',{}).values():
+              for country in tier.values():
+                  for e in country.get('events',[]): e.pop('description',None)
+          for e in d.get('supplement',[]): e.pop('description',None)
+          for e in d.get('ai_news',[]): e.pop('description',None)
           # Rebuild GLOBAL TOP from the final post-deduplication country lists.
           current=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
           current.extend(d.get('supplement',[]))
