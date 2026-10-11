@@ -58,6 +58,6 @@ jobs:
           print('AI FEED RESULT',len(ok),'passed,',len(bad),'unavailable/empty')
           if len(ok)<6:
               raise SystemExit('Too few AI feeds are usable; at least 6 must pass')
-          if sum(1 for name,_ in ok if name in {'OpenAI News','Google AI Blog','Google DeepMind','Anthropic News','NVIDIA AI Blog','Microsoft AI Blog','Hugging Face Blog'})<2:
+          if sum(1 for name,_ in ok if name in {'OpenAI News','Google AI Blog','Google DeepMind','Anthropic News Watch','NVIDIA AI Blog','Microsoft AI Blog','Hugging Face Blog','Apple ML Research','AWS ML Blog','Meta AI Research','Google Research'})<2:
               raise SystemExit('Too few first-party AI company feeds are usable')
           PY
