@@ -28,6 +28,7 @@ FEEDS=[
  ('新华-国际','GLOBAL','http://www.xinhuanet.com/world/news_world.xml','cn'),
  ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
+ ('纽约时报-日本','JP','https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/destination/japan/rss.xml','en'),
  ('彭博社','GLOBAL','https://feeds.bloomberg.com/markets/news.rss','en'),
  ('华尔街日报','GLOBAL','https://feeds.a.dj.com/rss/RSSWorldNews.xml','en'),
  ('联合早报','GLOBAL','https://plink.anyfeeder.com/zaobao/realtime/world','cn'),
@@ -54,7 +55,7 @@ ALIASES={
 'FR':['法国','法方','巴黎','法国政府','法国总统','France','Paris','Macron'],
 'DE':['德国','德方','柏林','德国政府','德国央行','Germany','Berlin','Merz'],
 'RU':['俄罗斯','俄方','莫斯科','克里姆林宫','俄军','俄罗斯政府','Russia','Moscow','Kremlin','Putin'],
-'JP':['日本','日方','东京','日本政府','日本央行','Japan','Japanese','Tokyo','Nikkei','BOJ','Bank of Japan','Takaichi','Koizumi','Okinawa','Osaka','Kyoto','Yen','Japanese firms'],
+'JP':['日本','日方','东京','日本政府','日本央行','Japan','Japanese','Tokyo','Nikkei','BOJ','Bank of Japan','Takaichi','Koizumi','Okinawa','Osaka','Kyoto','Yen','Japanese firms','LDP','food consumption tax'],
 'IN':['印度','新德里','印度政府','India','New Delhi','Modi'],
 'BR':['巴西','巴西政府','Brasilia','Brazil'],
 'SA':['沙特','沙特阿拉伯','利雅得','Saudi Arabia','Riyadh'],
@@ -77,13 +78,13 @@ ALIASES={
 CODE_TO_COUNTRY={c['code']:c for arr in CONFIG['tiers'].values() for c in arr}
 CAT={
 '政治':['政治','政府','总统','总理','选举','议会','政党','内阁','election','president','prime minister','parliament','legislation','bill','cabinet','minister','policy'],
-'宏观经济':['经济','GDP','通胀','通货膨胀','利率','央行','宏观','economic','inflation','interest rate','central bank'],
+'宏观经济':['经济','GDP','通胀','通货膨胀','利率','央行','宏观','财政','预算','税收','减税','国债','经济增长','消费税','economic','inflation','interest rate','central bank','fiscal','budget','tax cut','tax reduction','consumption tax','public debt','economic growth','wages'],
 '金融':['金融','股市','债券','汇率','银行','资本市场','market','stocks','bond','currency','finance','bank'],
 '产业/商业':['企业','公司','产业','制造','贸易','商业','供应链','company','industry','trade','manufacturing','business'],
-'科技':['科技','人工智能','AI','芯片','半导体','量子','technology','artificial intelligence','chip','semiconductor'],
+'科技':['科技','人工智能','AI','芯片','半导体','量子','网络安全','数据泄露','网络攻击','technology','artificial intelligence','chip','semiconductor','cybersecurity','data breach','data leak','cyberattack'],
 '能源':['能源','石油','天然气','电力','核能','油价','oil','gas','energy','power','nuclear'],
-'国防安全':['军事','国防','导弹','军演','武器','安全','袭击','战争','military','defense','missile','security','attack','war'],
-'外交':['外交','峰会','会谈','访问','外长','条约','diplomacy','summit','foreign','minister','treaty'],
+'国防安全':['军事','国防','导弹','军演','武器','安全','袭击','战争','战斗机','国防部','军费','军事开支','military','defense','missile','security','attack','war','fighter jet','defense ministry','military spending','armed forces'],
+'外交':['外交','峰会','会谈','访问','外长','条约','双边','合作','国际刑事法院','diplomacy','summit','foreign minister','treaty','bilateral','cooperation','ICC','alliance'],
 '公共卫生/疫情':['公共卫生','疫情','传染病','鼠疫','疫情暴发','疫情爆发','病毒','病原体','疫苗','感染','卫生组织','疾病暴发','plague','outbreak','epidemic','pandemic','virus','pathogen','vaccine','infection','infectious disease','disease outbreak','public health','who warns'],
 '社会':['社会','医疗','教育','抗议','就业','society','healthcare','education','protest'],
 '环境/气候':['气候','污染','排放','环保','森林砍伐','climate','pollution','emissions','environment','wildfire'],
@@ -138,6 +139,7 @@ def source_group(name):
  if name.startswith('中新网'): return '中新网'
  if name.startswith('人民网'): return '人民网'
  if name.startswith('新华'): return '新华社'
+ if name.startswith('纽约时报'): return '纽约时报'
  if name in {'NHK','NHK World'}: return 'NHK'
  if name in {'BBC World','BBC UK','BBC中文'}: return 'BBC'
  return name
