@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # 雷达新闻 V21 - 多源事件聚合；不预设中文媒体优先
+# 质量策略：领域覆盖 + 事件影响力排序，压低纯猎奇/人物故事
 import datetime as dt
 import email.utils
 import hashlib
