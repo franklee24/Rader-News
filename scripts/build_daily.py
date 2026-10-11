@@ -61,6 +61,21 @@ FEEDS=[
  ('South China Morning Post','GLOBAL','https://www.scmp.com/rss/91/feed','en'),
 ]
 
+# 独立 AI/LLM 新闻池：官方一手发布 + 权威科技媒体交叉报道
+AI_FEEDS=[
+ ('OpenAI News','GLOBAL','https://openai.com/news/rss.xml','en'),
+ ('Google AI Blog','GLOBAL','https://blog.google/technology/ai/rss/','en'),
+ ('Google DeepMind','GLOBAL','https://deepmind.google/blog/rss.xml','en'),
+ ('Anthropic News','GLOBAL','https://www.anthropic.com/news/rss.xml','en'),
+ ('NVIDIA AI Blog','GLOBAL','https://blogs.nvidia.com/blog/category/ai/feed/','en'),
+ ('Microsoft AI Blog','GLOBAL','https://blogs.microsoft.com/ai/feed/','en'),
+ ('Hugging Face Blog','GLOBAL','https://huggingface.co/blog/feed.xml','en'),
+ ('TechCrunch AI','GLOBAL','https://techcrunch.com/category/artificial-intelligence/feed/','en'),
+ ('VentureBeat AI','GLOBAL','https://venturebeat.com/category/ai/feed/','en'),
+ ('MIT Technology Review AI','GLOBAL','https://www.technologyreview.com/topic/artificial-intelligence/feed/','en'),
+ ('The Verge AI','GLOBAL','https://www.theverge.com/rss/ai-artificial-intelligence/index.xml','en'),
+]
+
 ALIASES={
 'US':['美国','美方','美总统','特朗普','华盛顿','白宫','美国政府','美联储','美国国会','美军','美国经济','United States','Trump','Washington','White House','Federal Reserve'],
 'CN':['中国','中方','中国政府','国务院','北京','人民币','央行','中国人民银行','China','Beijing'],
@@ -94,7 +109,8 @@ CAT={
 '宏观经济':['经济','GDP','通胀','通货膨胀','利率','央行','宏观','财政','预算','税收','减税','国债','经济增长','消费税','economic','inflation','interest rate','central bank','fiscal','budget','tax cut','tax reduction','consumption tax','public debt','economic growth','wages'],
 '金融':['金融','股市','债券','汇率','银行','资本市场','market','stocks','bond','currency','finance','bank'],
 '产业/商业':['企业','公司','产业','制造','贸易','商业','供应链','company','industry','trade','manufacturing','business'],
-'科技':['科技','人工智能','AI','芯片','半导体','量子','网络安全','数据泄露','网络攻击','technology','artificial intelligence','chip','semiconductor','cybersecurity','data breach','data leak','cyberattack'],
+'AI/LLM':['人工智能','生成式 AI','大语言模型','大型语言模型','AI 模型','AI agent','AI agents','LLM','GPT-','OpenAI','Anthropic','Gemini','Claude','DeepMind','machine learning','generative AI','large language model','AI model','AI assistant','artificial intelligence'],
+ '科技':['科技','人工智能','AI','芯片','半导体','量子','网络安全','数据泄露','网络攻击','technology','artificial intelligence','chip','semiconductor','cybersecurity','data breach','data leak','cyberattack'],
 '能源':['能源','石油','天然气','电力','核能','油价','oil','gas','energy','power','nuclear'],
 '国防安全':['军事','国防','导弹','军演','武器','安全','袭击','战争','战斗机','国防部','军费','军事开支','military','defense','missile','security','attack','war','fighter jet','defense ministry','military spending','armed forces'],
 '外交':['外交','峰会','会谈','访问','外长','条约','双边','合作','国际刑事法院','diplomacy','summit','foreign minister','treaty','bilateral','cooperation','ICC','alliance'],
@@ -144,7 +160,7 @@ def fetch_feed(feed):
  except Exception as e:return feed,[],'XML '+str(e)[:120]
 
 SOURCE_AUTHORITY={
- '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,
+ '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':95,'Google AI Blog':95,'Google DeepMind':96,'Anthropic News':95,'NVIDIA AI Blog':94,'Microsoft AI Blog':93,'Hugging Face Blog':88,'TechCrunch AI':88,'VentureBeat AI':86,'MIT Technology Review AI':93,'The Verge AI':88,
  'Reuters':98,'Associated Press':97,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
@@ -223,13 +239,18 @@ def cluster(items):
   authority_bonus=min(12,round(e['source_authority']/12))
   cross_bonus=min(20,5*max(0,e['source_count']-1))
   e['domestic_score']=min(100,30+impact*8) if e['code']!='GLOBAL' else 12
-  category_bonus={'国防安全':16,'公共卫生/疫情':16,'政治':14,'宏观经济':14,'金融':13,'外交':13,'科技':12,'能源':11,'灾害':12,'环境/气候':9,'法律/犯罪':8,'产业/商业':7,'社会':2,'其他/综合':0}.get(e.get('category',''),0)
+  category_bonus={'国防安全':16,'公共卫生/疫情':16,'政治':14,'宏观经济':14,'金融':13,'外交':13,'科技':12,'AI/LLM':15,'能源':11,'灾害':12,'环境/气候':9,'法律/犯罪':8,'产业/商业':7,'社会':2,'其他/综合':0}.get(e.get('category',''),0)
   e['importance']=min(100,42+cross_bonus+authority_bonus+min(24,impact*4)+round(e['domestic_score']*.08)+category_bonus)
   e['why_important']='涉及'+e['category']+'，结合多源报道与时效性评估后值得关注。'
   e['impact']='关注政策、市场、产业、安全及国际关系的后续影响。'
   e['next_72h']='关注官方声明、政策落地、市场反应及相关方后续行动。'
   out.append(e)
  return sorted(out,key=lambda x:(x['importance'],x.get('published_at') or ''),reverse=True)
+
+AI_TERMS=['artificial intelligence','generative AI','large language model','language model','LLM','OpenAI','ChatGPT','GPT-','Anthropic','Claude','Google DeepMind','Gemini','AI agent','AI agents','AI model','AI models','machine learning','neural network','Hugging Face','NVIDIA NIM','Copilot','Mistral AI','DeepSeek','Qwen','Llama model','智能体','大语言模型','人工智能','生成式 AI','生成式人工智能','AI 模型','AI芯片','AI 芯片','推理模型','多模态模型','文生视频','AI安全','AI 安全']
+def is_ai_related(item):
+ text=(item.get('title','')+' '+(item.get('description') or '')[:800])
+ return any(keyword_match(text,k) for k in AI_TERMS)
 
 def is_low_signal_human_interest(item):
  title=item.get('title','')
@@ -250,17 +271,19 @@ def is_low_signal_human_interest(item):
  return any(re.search(p,low if p.isascii() else combined,re.I) for p in patterns)
 
 def main():
- now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)
- raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; failures=[]; ok=0
- print('雷达新闻 V21：多源事件聚合，不预设中文媒体优先')
+ now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25); ai_cutoff=now-dt.timedelta(days=30)
+ raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; ai_rows=[]; failures=[]; ok=0
+ print('雷达新闻 V22：多源事件聚合 + 独立 AI/LLM 新闻池，不预设媒体优先')
  with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-  fs=[ex.submit(fetch_feed,f) for f in FEEDS]
+  fs=[ex.submit(fetch_feed,f) for f in (FEEDS+AI_FEEDS)]
   for fut in as_completed(fs):
    feed,rows,err=fut.result(); source,fc,_,lang=feed
    if err:failures.append({'source':source,'country':fc,'error':err});print('[FAIL]',source,err);continue
    ok+=1; fresh=[]
    for x in rows:
     p=dateval(x.get('published_at'))
+    if is_ai_related(x) and (not p or p>=ai_cutoff):
+     ai_item=x.copy(); ai_item['code']='GLOBAL'; ai_item['event_country']='AI / LLM'; ai_item['event_country_en']='AI / LLM'; ai_rows.append(ai_item)
     if p and p<cutoff:continue
     if is_low_signal_human_interest(x):
      print('[FILTER-LOW-SIGNAL]',source,x.get('title','')[:120]); continue
@@ -275,7 +298,7 @@ def main():
    print('[OK]',source,len(fresh))
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
- all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V21.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS),'source_ok':ok,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
+ all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS),'source_ok':ok,'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
@@ -286,7 +309,13 @@ def main():
    all_events.extend(ev)
  report['supplement']=cluster(global_rows)[:10]
  report['global_top']=cluster(all_events+report['supplement'])[:20]
- report['stats']={'countries':sum(len(v) for v in report['tiers'].values()),'events':sum(x['count'] for v in report['tiers'].values() for x in v.values()),'tier1_events':sum(x['count'] for x in report['tiers']['tier1'].values()),'supplement_events':len(report['supplement']),'failed_sources':len(failures),'successful_sources':ok,'chinese_sources':sum(1 for f in FEEDS if f[3]=='cn')}
+ ai_events=cluster(ai_rows)
+ # Prefer high-impact AI developments; use a 30-day backfill pool to keep the module populated.
+ ai_events.sort(key=lambda e:(e.get('importance',0),e.get('published_at') or ''),reverse=True)
+ report['ai_news']=ai_events[:20]
+ report['ai_news_count']=len(report['ai_news'])
+ report['ai_news_status']='ready' if len(report['ai_news'])==20 else 'partial'
+ report['stats']={'countries':sum(len(v) for v in report['tiers'].values()),'events':sum(x['count'] for v in report['tiers'].values() for x in v.values()),'tier1_events':sum(x['count'] for x in report['tiers']['tier1'].values()),'supplement_events':len(report['supplement']),'failed_sources':len(failures),'successful_sources':ok,'chinese_sources':sum(1 for f in FEEDS if f[3]=='cn'),'ai_feed_total':len(AI_FEEDS)}
  print('STATS',report['stats'])
  if report['stats']['events']<MIN_TOTAL_EVENTS or report['stats']['tier1_events']<MIN_TIER1_EVENTS:
   print('QUALITY GATE FAILED'); raise SystemExit(2)
