@@ -33,6 +33,8 @@ FEEDS=[
  ('卫报','GLOBAL','https://www.theguardian.com/world/rss','en'),
  ('BBC World','GLOBAL','https://feeds.bbci.co.uk/news/world/rss.xml','en'),
  ('NHK World','JP','https://www3.nhk.or.jp/rss/news/cat0.xml','en'),
+ ('Japan Times','JP','https://www.japantimes.co.jp/feed/','en'),
+ ('WHO Disease Outbreak News','GLOBAL','https://www.who.int/feeds/entity/don/en/rss.xml','en'),
  ('金融时报','GLOBAL','https://www.ft.com/rss/home','en'),
  ('经济学人','GLOBAL','https://www.economist.com/the-world-this-week/rss.xml','en'),
  ('NPR','US','https://feeds.npr.org/1001/rss.xml','en'),
@@ -81,7 +83,10 @@ CAT={
 '能源':['能源','石油','天然气','电力','核能','油价','oil','gas','energy','power','nuclear'],
 '国防安全':['军事','国防','导弹','军演','武器','安全','袭击','战争','military','defense','missile','security','attack','war'],
 '外交':['外交','峰会','会谈','访问','外长','条约','diplomacy','summit','foreign','minister','treaty'],
-'社会':['社会','医疗','教育','抗议','就业','公共卫生','society','health','education','protest'],
+'公共卫生/疫情':['公共卫生','疫情','传染病','鼠疫','疫情暴发','疫情爆发','病毒','病原体','疫苗','感染','卫生组织','疾病暴发','plague','outbreak','epidemic','pandemic','virus','pathogen','vaccine','infection','infectious disease','disease outbreak','public health','who warns'],
+'社会':['社会','医疗','教育','抗议','就业','society','healthcare','education','protest'],
+'环境/气候':['气候','污染','排放','环保','森林砍伐','climate','pollution','emissions','environment','wildfire'],
+'法律/犯罪':['法院','判决','起诉','调查','腐败','犯罪','凶杀','court','verdict','prosecutor','charged','corruption','crime','murder'],
 '灾害':['地震','洪水','台风','火灾','飓风','灾害','earthquake','flood','storm','fire','disaster']}
 HIGH=['战争','袭击','制裁','关税','选举','利率','核','导弹','停火','入侵','冲突','oil','war','attack','sanction','tariff','election','rate','nuclear','missile','ceasefire','invasion']
 
@@ -153,8 +158,20 @@ def infer_country(item):
  if scores:return max(scores)[1]
  return 'GLOBAL'
 
+def keyword_match(text, keyword):
+ low=(text or '').lower(); key=keyword.lower()
+ # English abbreviations/words must match token boundaries (e.g. AI must not match "raises").
+ if re.fullmatch(r'[a-z0-9][a-z0-9 .+/-]*',key):
+  if len(key.strip())<=3 or ' ' in key or any(ch in key for ch in '+/-'):
+   return bool(re.search(r'(?<![a-z0-9])'+re.escape(key)+r'(?![a-z0-9])',low))
+  return key in low
+ return key in low
+
 def category(t):
- low=(t or '').lower(); scores={c:sum(1 for k in ks if k.lower() in low) for c,ks in CAT.items()}; return max(scores,key=scores.get) if max(scores.values()) else '政治'
+ text=t or ''
+ scores={c:sum(1 for k in ks if keyword_match(text,k)) for c,ks in CAT.items()}
+ best=max(scores,key=scores.get)
+ return best if scores[best] else '其他/综合'
 
 def cluster(items):
  events=[]
@@ -178,7 +195,7 @@ def cluster(items):
    source=best.get('source',''),url=best.get('link',''),source_url=best.get('source_url',''),
    sources=srcs,source_count=len(srcs),source_names=[s.get('source','') for s in srcs],
    source_authority=source_rank(best),summary=summary[:500],description=summary[:500],
-   category=category(e['title'])
+   category=category(e['title']+' '+summary)
   )
   impact=sum(1 for k in HIGH if k.lower() in e['title'].lower())
   authority_bonus=min(12,round(e['source_authority']/12))
@@ -190,6 +207,22 @@ def cluster(items):
   e['next_72h']='关注官方声明、政策落地、市场反应及相关方后续行动。'
   out.append(e)
  return sorted(out,key=lambda x:(x['importance'],x.get('published_at') or ''),reverse=True)
+
+def is_low_signal_human_interest(item):
+ title=item.get('title','')
+ low=title.lower()
+ patterns=[
+  r'heartwarming',r'viral sensation',r'bizarre hobby',r'oddly enough',
+  r'world.?s oldest',r'why this man',r'why this woman',
+  r'丈夫.{0,30}妻子',r'妻子.{0,30}丈夫',r'潜水.{0,30}妻子',r'寻妻',r'寻找失踪妻子',
+  r'感人故事',r'暖心故事',r'奇闻',r'猎奇'
+ ]
+ if not any(re.search(p,low if p.isascii() else title,re.I) for p in patterns):
+  return False
+ combined=title+' '+(item.get('description') or '')
+ hard=['政治','选举','政府','总理','总统','议会','经济','通胀','央行','利率','贸易','科技','芯片','人工智能','军事','国防','导弹','战争','制裁','外交','疫情','鼠疫','公共卫生','地震','灾害',
+       'election','government','prime minister','president','parliament','economy','inflation','central bank','interest rate','trade','technology','semiconductor','military','defense','missile','war','sanction','diplomacy','outbreak','plague','public health','earthquake','disaster']
+ return not any(keyword_match(combined,k) for k in hard)
 
 def main():
  now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)
@@ -204,6 +237,8 @@ def main():
    for x in rows:
     p=dateval(x.get('published_at'))
     if p and p<cutoff:continue
+    if is_low_signal_human_interest(x):
+     print('[FILTER-LOW-SIGNAL]',source,x.get('title','')[:120]); continue
     code=infer_country(x); x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
