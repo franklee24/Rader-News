@@ -48,6 +48,17 @@ FEEDS=[
  ('TASS','RU','https://tass.com/rss/v2.xml','en'),
  ('华盛顿邮报','GLOBAL','https://feeds.washingtonpost.com/rss/world','en'),
  ('半岛电视台','GLOBAL','https://www.aljazeera.com/xml/rss/all.xml','en'),
+ # Reuters/AP are collected via Google News site-specific RSS because legacy publisher RSS endpoints are not dependable.
+ ('Reuters','GLOBAL','https://news.google.com/rss/search?q=site%3Areuters.com&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Associated Press','GLOBAL','https://news.google.com/rss/search?q=site%3Aapnews.com&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Yonhap','KR','https://en.yna.co.kr/RSS/news.xml','en'),
+ ('The Hindu National','IN','https://www.thehindu.com/news/national/feeder/default.rss','en'),
+ ('The Hindu International','GLOBAL','https://www.thehindu.com/news/international/feeder/default.rss','en'),
+ ('CBC World','CA','https://www.cbc.ca/webfeed/rss/rss-world','en'),
+ ('ABC Australia','AU','https://www.abc.net.au/news/feed/51120/rss.xml','en'),
+ ('Le Monde English','FR','https://www.lemonde.fr/en/rss/une.xml','en'),
+ ('Anadolu World','GLOBAL','https://www.aa.com.tr/en/rss/default?cat=world','en'),
+ ('South China Morning Post','GLOBAL','https://www.scmp.com/rss/91/feed','en'),
 ]
 
 ALIASES={
@@ -134,6 +145,7 @@ def fetch_feed(feed):
 
 SOURCE_AUTHORITY={
  '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,
+ 'Reuters':98,'Associated Press':97,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
 }
@@ -154,13 +166,14 @@ def similarity(a,b):
  aa=set(norm(a).split());bb=set(norm(b).split());return len(aa&bb)/len(aa|bb) if aa and bb else 0
 
 def infer_country(item):
- if item.get('feed_country') in CODE_TO_COUNTRY:return item['feed_country']
  text=item.get('title','')+' '+item.get('description','')[:300]
  scores=[]
  for code,als in ALIASES.items():
   score=sum(1 for a in als if a.lower() in text.lower())
   if score:scores.append((score,code))
  if scores:return max(scores)[1]
+ # Feed-country is a fallback only; it must not override an explicitly mentioned event country.
+ if item.get('feed_country') in CODE_TO_COUNTRY:return item['feed_country']
  return 'GLOBAL'
 
 def keyword_match(text, keyword):
@@ -221,18 +234,20 @@ def cluster(items):
 def is_low_signal_human_interest(item):
  title=item.get('title','')
  low=title.lower()
+ combined=title+' '+(item.get('description') or '')
+ hard=['政治','选举','政府','总理','总统','议会','经济','通胀','央行','利率','贸易','科技','芯片','人工智能','军事','国防','导弹','战争','制裁','外交','疫情','鼠疫','公共卫生','地震','灾害','制裁','能源','金融','税收','半导体','网络安全','疫情','疫苗','传染病',
+       'election','government','prime minister','president','parliament','economy','inflation','central bank','interest rate','trade','technology','semiconductor','military','defense','missile','war','sanction','diplomacy','outbreak','plague','public health','earthquake','disaster','energy','finance','tax','cybersecurity','vaccine','infectious disease']
+ # Always retain articles with clear public-interest or strategic-policy signals.
+ if any(keyword_match(combined,k) for k in hard): return False
  patterns=[
   r'heartwarming',r'viral sensation',r'bizarre hobby',r'oddly enough',
   r'world.?s oldest',r'why this man',r'why this woman',
   r'丈夫.{0,30}妻子',r'妻子.{0,30}丈夫',r'潜水.{0,30}妻子',r'寻妻',r'寻找失踪妻子',
-  r'感人故事',r'暖心故事',r'奇闻',r'猎奇'
+  r'感人故事',r'暖心故事',r'奇闻',r'猎奇',
+  r'celebrity',r'horoscope',r'astrology',r'reality tv',r'fashion trend',
+  r'名人八卦',r'星座运势',r'综艺明星',r'时尚穿搭'
  ]
- if not any(re.search(p,low if p.isascii() else title,re.I) for p in patterns):
-  return False
- combined=title+' '+(item.get('description') or '')
- hard=['政治','选举','政府','总理','总统','议会','经济','通胀','央行','利率','贸易','科技','芯片','人工智能','军事','国防','导弹','战争','制裁','外交','疫情','鼠疫','公共卫生','地震','灾害',
-       'election','government','prime minister','president','parliament','economy','inflation','central bank','interest rate','trade','technology','semiconductor','military','defense','missile','war','sanction','diplomacy','outbreak','plague','public health','earthquake','disaster']
- return not any(keyword_match(combined,k) for k in hard)
+ return any(re.search(p,low if p.isascii() else combined,re.I) for p in patterns)
 
 def main():
  now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25)
@@ -253,9 +268,10 @@ def main():
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)
-   if fc=='GLOBAL':global_rows.extend(fresh)
-   elif fc in raw:raw[fc].extend(fresh)
-   else:global_rows.extend(fresh)
+   for item in fresh:
+    code=item.get('code','GLOBAL')
+    if code in raw:raw[code].append(item)
+    else:global_rows.append(item)
    print('[OK]',source,len(fresh))
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
