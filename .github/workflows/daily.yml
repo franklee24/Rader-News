@@ -153,6 +153,7 @@ jobs:
               tw=max(1,len(re.findall(r'\b[A-Za-z0-9]+\b',title)))
               rw=len(re.findall(r'\b[A-Za-z0-9]+\b',result))
               han=len(re.findall(r'[\u3400-\u9fff]',result))
+              if han>=4 and len(result)>=5: return True
               if tw>=8 and rw<max(2,round(tw*.28)) and han<max(7,round(len(title)*.12)): return False
               if len(result)<min(8,max(1,round(len(title)*.18))): return False
               return True
