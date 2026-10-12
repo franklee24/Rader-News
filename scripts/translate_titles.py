@@ -148,6 +148,7 @@ def translate(title):
         "Verstappen cruises to first Singapore GP win as Antonelli closes on crown - Reuters": "维斯塔潘轻松赢得新加坡大奖赛首胜，安东内利则逼近冠军头衔",
         "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News": "马克斯·维斯塔潘赢得新加坡大奖赛，基米·安东内利逼近F1年度冠军",
         "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
+        "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
     }
     if title in manual and translation_is_usable(title, manual[title]):
         return manual[title]
