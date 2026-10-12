@@ -360,7 +360,13 @@ def main():
     china_watch_sources={'Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China','The Guardian China','NPR China'}
     if x.get('source') in china_watch_sources and not is_china_related(x):
      print('[FILTER-CHINA-IRRELEVANT]',source,x.get('title','')[:140]); continue
-    code=country_for_source(x,china_watch_sources); x['code']=code
+    # Keep Chinese domestic outlets on their existing country classification logic;
+    # only China-targeted international query feeds get strict headline gating.
+    if x.get('source') in china_watch_sources:
+     code='CN'
+    else:
+     code=country_for_source(x,china_watch_sources)
+    x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)
