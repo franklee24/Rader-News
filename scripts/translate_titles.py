@@ -57,7 +57,7 @@ def translate(title):
         for fn in (google_translate, mymemory_translate):
             try:
                 result = fn(title)
-                if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
+                if result and re.search(r"[\u3400-\u9fff]", result) and result.strip() != title.strip():
                     return result
                 errors.append(fn.__name__ + ": returned no Chinese translation")
             except Exception as exc:
@@ -80,7 +80,7 @@ def main():
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
-        if looks_english(title) and not re.search(r"[\\u3400-\\u9fff]", str(e.get("title_zh", ""))):
+        if looks_english(title) and not re.search(r"[\u3400-\u9fff]", str(e.get("title_zh", ""))):
             targets_by_title.setdefault(title, e)
     targets = list(targets_by_title.values())
     print("Translation request budget:", len(targets), "unique English headlines; all visible sections included.")
@@ -104,7 +104,7 @@ def main():
         if e.get("title") in cache:
             e["title_zh"] = cache[e["title"]]
 
-    remaining = [e.get("title", "") for e in events if looks_english(e.get("title")) and not re.search(r"[\\u3400-\\u9fff]", str(e.get("title_zh", "")))]
+    remaining = [e.get("title", "") for e in events if looks_english(e.get("title")) and not re.search(r"[\u3400-\u9fff]", str(e.get("title_zh", "")))]
     d.setdefault("translation", {})
     d["translation"].update({
         "language": "zh-CN",
