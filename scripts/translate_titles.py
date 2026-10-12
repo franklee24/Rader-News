@@ -48,7 +48,7 @@ def google_translate_web(title):
         payload = json.loads(r.read().decode("utf-8", "replace"))
     parts = payload[0] if isinstance(payload, list) else []
     result = "".join(p[0] for p in parts if isinstance(p, list) and p and p[0])
-    return re.sub(r"\\s+", " ", result).strip()
+    return re.sub(r"\s+", " ", result).strip()
 
 
 def mymemory_translate(title):
@@ -73,7 +73,7 @@ def translate(title):
         for fn in providers:
             try:
                 result = fn(title)
-                if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
+                if result and re.search(r"[\u3400-\u9fff]", result) and result.strip() != title.strip():
                     return result
                 errors.append(fn.__name__ + ": returned no Chinese translation")
             except Exception as exc:
