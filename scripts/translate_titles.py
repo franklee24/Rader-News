@@ -134,7 +134,7 @@ def translation_is_usable(title, result):
 
 def argos_translate_chunks(title):
     # If a long headline defeats the offline model as a whole, translate clauses separately.
-    parts = [p.strip() for p in re.split(r"\\s*(?:[,;:—–])\\s*|\\s+(?:as|after|before|while|amid|but|and|says|according to)\\s+", title, flags=re.I) if len(p.strip()) >= 8]
+    parts = [p.strip() for p in re.split(r"\s*(?:[,;:—–])\s*|\s+(?:as|after|before|while|amid|but|and|says|according to)\s+", title, flags=re.I) if len(p.strip()) >= 8]
     translated = []
     for part in parts:
         try:
@@ -152,7 +152,7 @@ def argos_translate_chunks(title):
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
-    for fn in (google_translate, google_translate_web, argos_translate, mymemory_translate):
+    for fn in (argos_translate, google_translate, google_translate_web, mymemory_translate):
         try:
             result = fn(title)
             if translation_is_usable(title, result):
