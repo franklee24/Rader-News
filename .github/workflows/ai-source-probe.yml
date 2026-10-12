@@ -122,3 +122,29 @@ jobs:
               print(("PASS" if items else "WARN")+f" | {name} | items={len(items)} | {title[:100]}")
             except Exception as e: print(f"FAIL | {name} | {type(e).__name__}: {str(e)[:100]}")
           PY
+
+      - name: Probe batched title translation
+        run: |
+          python - <<'PY'
+          import urllib.request, urllib.parse, json, re
+          titles = [
+            "India announces a new artificial intelligence research initiative",
+            "OpenAI releases a new reasoning model for developers",
+            "Researchers publish a major advance in language model evaluation",
+          ]
+          text = "\\n".join(titles)
+          url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=" + urllib.parse.quote(text, safe="")
+          try:
+            req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+            with urllib.request.urlopen(req,timeout=15) as r: payload=json.loads(r.read().decode("utf-8","replace"))
+            out="".join(p[0] for p in payload[0] if isinstance(p,list) and p and p[0])
+            rows=[x.strip() for x in out.splitlines() if x.strip()]
+            print("BATCH INPUT",len(titles),"OUTPUT LINES",len(rows),"TEXT",repr(out[:500]))
+            if len(rows)>=len(titles) and all(re.search("[\\u3400-\\u9fff]",x) for x in rows[:len(titles)]):
+              print("PASS | batched translation preserves line boundaries")
+            else:
+              raise SystemExit("BATCH TRANSLATION FORMAT UNSAFE")
+          except Exception as e:
+            print("FAIL | batched translation |",type(e).__name__,str(e)[:200])
+            raise
+          PY
