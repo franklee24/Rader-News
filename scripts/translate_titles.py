@@ -11,8 +11,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
-TIMEOUT = 15
-WORKERS = 6
+TIMEOUT = 20
+WORKERS = 10
 
 
 def looks_english(text):
@@ -53,33 +53,37 @@ def mymemory_translate(title):
 
 def translate(title):
     errors = []
-    for fn in (google_translate, mymemory_translate):
-        try:
-            result = fn(title)
-            if result:
-                return result
-        except Exception as exc:
-            errors.append(str(exc)[:120])
-    raise RuntimeError("; ".join(errors) or "no translation returned")
+    for attempt in range(2):
+        for fn in (google_translate, mymemory_translate):
+            try:
+                result = fn(title)
+                if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
+                    return result
+                errors.append(fn.__name__ + ": returned no Chinese translation")
+            except Exception as exc:
+                errors.append(str(exc)[:120])
+    raise RuntimeError("; ".join(errors[-6:]) or "no translation returned")
 
 
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
-    events = list(d.get("ai_news", []))
+    # Include every displayed surface, especially GLOBAL TOP (whose objects are serialized separately).
+    events = []
     for tier in d.get("tiers", {}).values():
         for country in tier.values():
             events.extend(country.get("events", []))
+    events.extend(d.get("global_top", []))
     events.extend(d.get("supplement", []))
     events.extend(d.get("ai_news", []))
 
-    # Translate each distinct headline once; apply the result to every matching item.
+    # Translate every distinct English headline in one run; there is no 80-title cap.
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
         if looks_english(title) and not e.get("title_zh"):
             targets_by_title.setdefault(title, e)
-    targets = list(targets_by_title.values())[:80]
-    print("Translation request budget:", len(targets), "unique headlines this run; AI headlines are prioritized.")
+    targets = list(targets_by_title.values())
+    print("Translation request budget:", len(targets), "unique English headlines; all visible sections included.")
     ok = failed = 0
     cache = {}
     errors = []
@@ -114,8 +118,10 @@ def main():
     DAILY.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
     print("TITLE TRANSLATION:", ok, "translated;", failed, "failed;", len(remaining), "remaining English")
     if remaining:
-        print("TRANSLATION PARTIAL: per-run budget reached or translation providers unavailable; keep original English titles and continue publishing.")
+        print("TRANSLATION QUALITY GATE FAILED: untranslated English headlines remain.")
         print("UNTRANSLATED SAMPLE:", " | ".join(remaining[:20]))
+        raise SystemExit(2)
+    print("TRANSLATION QUALITY GATE PASSED: every English headline in all displayed sections has a Chinese translation.")
 
 
 if __name__ == "__main__":
