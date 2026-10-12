@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T06:02:47.152196+00:00",
-  "generated_beijing": "2026-10-12 14:03",
+  "generated_at": "2026-10-12T06:08:38.304262+00:00",
+  "generated_beijing": "2026-10-12 14:08",
   "window_hours": 24,
   "version": "V22.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -314,38 +314,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "5581f7ae80150535",
-            "title": "Trump claims Russia and Ukraine agreed to 'energy ceasefire'",
-            "published_at": "2026-10-11T14:47:00+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "source": "DW",
-                "link": "https://www.dw.com/en/trump-claims-russia-and-ukraine-agreed-to-energy-ceasefire/a-79634509?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-11T14:47:00+00:00",
-                "description": "US President Donald Trump says both sides have agreed to stop targeting oil refineries, power plants and other energy in"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/trump-claims-russia-and-ukraine-agreed-to-energy-ceasefire/a-79634509?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/trump-claims-russia-and-ukraine-agreed-to-energy-ceasefire/a-79634509?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "US President Donald Trump says both sides have agreed to stop targeting oil refineries, power plants and other energy infrastructure immediately.",
-            "category": "能源",
-            "domestic_score": 38,
-            "importance": 67,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "c249cf9afc0109d8",
             "title": "Trump Claims Russia-Ukraine Agree to ‘Energy’ Truce, Houthi Attacks on Saudi Airports Escalate",
             "published_at": "2026-10-12T04:32:17+00:00",
@@ -378,38 +346,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "a6820cc534815b8b",
-            "title": "Saudi-led coalition says new attack at Riyadh airport causes fire, day after strike kills 12",
-            "published_at": "2026-10-11T16:07:13+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "source": "France24",
-                "link": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
-                "published_at": "2026-10-11T16:07:13+00:00",
-                "description": "The Saudi-led coalition in Yemen said an \"unidentified projectile\" had targeted Riyadh's international airport on Sunday"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
-            "source_url": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "The Saudi-led coalition in Yemen said an \"unidentified projectile\" had targeted Riyadh's international airport on Sunday, causing a fire. The incident came hours after the Iran-bac",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 65,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "17739e9e9818716f",
             "title": "Kyiv pushes back on Donald Trump's call for a new Ukrainian president as drones hit Russian data hub",
             "published_at": "2026-10-11T12:20:18+00:00",
@@ -436,6 +372,77 @@
             "domestic_score": 30,
             "importance": 65,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "a6820cc534815b8b",
+            "title": "Saudi-led coalition says new attack at Riyadh airport causes fire, day after strike kills 12",
+            "published_at": "2026-10-11T16:07:13+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "source": "France24",
+                "link": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
+                "published_at": "2026-10-11T16:07:13+00:00",
+                "description": "The Saudi-led coalition in Yemen said an \"unidentified projectile\" had targeted Riyadh's international airport on Sunday"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
+            "source_url": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "The Saudi-led coalition in Yemen said an \"unidentified projectile\" had targeted Riyadh's international airport on Sunday, causing a fire. The incident came hours after the Iran-bac",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 64,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "5581f7ae80150535",
+            "title": "Trump claims Russia and Ukraine agreed to 'energy ceasefire'",
+            "published_at": "2026-10-11T14:47:00+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "source": "Bloomberg China",
+                "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdmpsZEZJU1VvX015M2ZPVnpka3diOVh4WEpBQ2JrTUl3cTAwdjY3QlViMUZkWTZJQVFoRTM5TE5LZlZCZUJ5SjZuNjhwcXlROEFGSlFfVFVpUHFlSElDZUpnNTZlYnBmdDdHOGNBTDFVNmt3T2lIM19RY0pZRDhhdUFuejU2MnZZd0lDWU1kbTBHS3ZFamlqWmZDekJPcXRlN3JPVG9maEJCWDNCYU1EQVhqaEMzUW8?oc=5",
+                "published_at": "2026-10-11T14:23:11+00:00",
+                "description": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’ Bloomberg.com"
+              },
+              {
+                "source": "DW",
+                "link": "https://www.dw.com/en/trump-claims-russia-and-ukraine-agreed-to-energy-ceasefire/a-79634509?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-11T14:47:00+00:00",
+                "description": "US President Donald Trump says both sides have agreed to stop targeting oil refineries, power plants and other energy in"
+              }
+            ],
+            "source": "Bloomberg China",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdmpsZEZJU1VvX015M2ZPVnpka3diOVh4WEpBQ2JrTUl3cTAwdjY3QlViMUZkWTZJQVFoRTM5TE5LZlZCZUJ5SjZuNjhwcXlROEFGSlFfVFVpUHFlSElDZUpnNTZlYnBmdDdHOGNBTDFVNmt3T2lIM19RY0pZRDhhdUFuejU2MnZZd0lDWU1kbTBHS3ZFamlqWmZDekJPcXRlN3JPVG9maEJCWDNCYU1EQVhqaEMzUW8?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdmpsZEZJU1VvX015M2ZPVnpka3diOVh4WEpBQ2JrTUl3cTAwdjY3QlViMUZkWTZJQVFoRTM5TE5LZlZCZUJ5SjZuNjhwcXlROEFGSlFfVFVpUHFlSElDZUpnNTZlYnBmdDdHOGNBTDFVNmt3T2lIM19RY0pZRDhhdUFuejU2MnZZd0lDWU1kbTBHS3ZFamlqWmZDekJPcXRlN3JPVG9maEJCWDNCYU1EQVhqaEMzUW8?oc=5",
+            "source_count": 2,
+            "source_names": [
+              "Bloomberg China",
+              "DW"
+            ],
+            "source_authority": 96,
+            "summary": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’ Bloomberg.com",
+            "category": "能源",
+            "domestic_score": 38,
+            "importance": 63,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
@@ -1984,6 +1991,38 @@
         "count": 60,
         "events": [
           {
+            "id": "5b5c6e07e453a0b7",
+            "title": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal - Bloomberg.com",
+            "published_at": "2026-10-12T03:47:00+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Bloomberg China",
+                "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+                "published_at": "2026-10-12T03:47:00+00:00",
+                "description": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com"
+              }
+            ],
+            "source": "Bloomberg China",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Bloomberg China"
+            ],
+            "source_authority": 96,
+            "summary": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com",
+            "category": "产业/商业",
+            "domestic_score": 38,
+            "importance": 71,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "742327df7b294d59",
             "title": "Fixated on AI, the world has forgotten what is staring it in the face: nuclear annihilation | Simon Tisdall - The Guardian",
             "published_at": "2026-10-12T03:19:00+00:00",
@@ -2048,38 +2087,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "5b5c6e07e453a0b7",
-            "title": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal - Bloomberg.com",
-            "published_at": "2026-10-11T13:52:31+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Bloomberg China",
-                "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
-                "published_at": "2026-10-11T13:52:31+00:00",
-                "description": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com"
-              }
-            ],
-            "source": "Bloomberg China",
-            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Bloomberg China"
-            ],
-            "source_authority": 96,
-            "summary": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com",
-            "category": "产业/商业",
-            "domestic_score": 38,
-            "importance": 68,
-            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "187c7bf7d4cf4f08",
             "title": "Oil Rises on Mideast Attacks, Dollar Edges Higher: Markets Wrap - Bloomberg.com",
             "published_at": "2026-10-12T06:01:17+00:00",
@@ -2136,7 +2143,7 @@
             "summary": "Oil Rises as Saudi Airport and Tanker Attacks Stoke Supply Fears Bloomberg.com",
             "category": "能源",
             "domestic_score": 46,
-            "importance": 66,
+            "importance": 65,
             "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2244,6 +2251,38 @@
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "8091f46f09601b4c",
+            "title": "Goldman Sachs president urges market reforms to boost Shanghai’s financial hub role",
+            "published_at": "2026-10-12T06:07:33+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "South China Morning Post",
+                "link": "https://www.scmp.com/economy/china-economy/article/3370551/goldman-sachs-president-urges-market-reforms-boost-shanghais-financial-hub-role?utm_source=rss_feed",
+                "published_at": "2026-10-12T06:07:33+00:00",
+                "description": "Goldman Sachs president John Waldron has called on China to loosen foreign exchange rules, ease cross-border data restri"
+              }
+            ],
+            "source": "South China Morning Post",
+            "url": "https://www.scmp.com/economy/china-economy/article/3370551/goldman-sachs-president-urges-market-reforms-boost-shanghais-financial-hub-role?utm_source=rss_feed",
+            "source_url": "https://www.scmp.com/economy/china-economy/article/3370551/goldman-sachs-president-urges-market-reforms-boost-shanghais-financial-hub-role?utm_source=rss_feed",
+            "source_count": 1,
+            "source_names": [
+              "South China Morning Post"
+            ],
+            "source_authority": 86,
+            "summary": "Goldman Sachs president John Waldron has called on China to loosen foreign exchange rules, ease cross-border data restrictions and improve regulatory transparency as the country’s ",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 56,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
@@ -2471,38 +2510,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "461dd79391f8ed46",
-            "title": "Taiwan says it is closely monitoring series of Chinese live-fire drills - Reuters",
-            "published_at": "2026-10-12T02:04:00+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Reuters China",
-                "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
-                "published_at": "2026-10-12T02:04:00+00:00",
-                "description": "Taiwan says it is closely monitoring series of Chinese live-fire drills Reuters"
-              }
-            ],
-            "source": "Reuters China",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Reuters China"
-            ],
-            "source_authority": 98,
-            "summary": "Taiwan says it is closely monitoring series of Chinese live-fire drills Reuters",
-            "category": "灾害",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "06d695fcfaaef3bf",
             "title": "China Sanctions Officials of Taiwan’s Allies for the First Time - Bloomberg.com",
             "published_at": "2026-10-12T03:44:00+00:00",
@@ -2529,6 +2536,70 @@
             "domestic_score": 38,
             "importance": 51,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "6a18a13bd131e8ce",
+            "title": "DBS CEO Tan Says Market Is Repricing Risks on AI Financing - Bloomberg.com",
+            "published_at": "2026-10-12T02:50:00+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Bloomberg China",
+                "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQnBrcW1BX3ZTSUNhQjc3WllHQ3l2WlBka1MwV3VXZ3oyV3VHbmdpc2hkbjBNUkg3QjRrWFNkRmttU0JxdXhCR0FCWmlRbmJZMTZ0Ykl0WjBpQ3FrVlp5Uk5xYm9GeFhPLV9ybFN6RzI3Y3dCaGZyWjlMOVVmVGJMY0ktR0ZCUFVEbFgwb2dEbjRUckdEZjN1NjZTa1dLMWRHcUhsN2RGT2lHUTd4cnc?oc=5",
+                "published_at": "2026-10-12T02:50:00+00:00",
+                "description": "DBS CEO Tan Says Market Is Repricing Risks on AI Financing Bloomberg.com"
+              }
+            ],
+            "source": "Bloomberg China",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQnBrcW1BX3ZTSUNhQjc3WllHQ3l2WlBka1MwV3VXZ3oyV3VHbmdpc2hkbjBNUkg3QjRrWFNkRmttU0JxdXhCR0FCWmlRbmJZMTZ0Ykl0WjBpQ3FrVlp5Uk5xYm9GeFhPLV9ybFN6RzI3Y3dCaGZyWjlMOVVmVGJMY0ktR0ZCUFVEbFgwb2dEbjRUckdEZjN1NjZTa1dLMWRHcUhsN2RGT2lHUTd4cnc?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQnBrcW1BX3ZTSUNhQjc3WllHQ3l2WlBka1MwV3VXZ3oyV3VHbmdpc2hkbjBNUkg3QjRrWFNkRmttU0JxdXhCR0FCWmlRbmJZMTZ0Ykl0WjBpQ3FrVlp5Uk5xYm9GeFhPLV9ybFN6RzI3Y3dCaGZyWjlMOVVmVGJMY0ktR0ZCUFVEbFgwb2dEbjRUckdEZjN1NjZTa1dLMWRHcUhsN2RGT2lHUTd4cnc?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Bloomberg China"
+            ],
+            "source_authority": 96,
+            "summary": "DBS CEO Tan Says Market Is Repricing Risks on AI Financing Bloomberg.com",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 51,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "461dd79391f8ed46",
+            "title": "Taiwan says it is closely monitoring series of Chinese live-fire drills - Reuters",
+            "published_at": "2026-10-12T02:04:00+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Reuters China",
+                "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
+                "published_at": "2026-10-12T02:04:00+00:00",
+                "description": "Taiwan says it is closely monitoring series of Chinese live-fire drills Reuters"
+              }
+            ],
+            "source": "Reuters China",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzdVRzBOYnM4YWQ3Z0g2QTc2OTZwM0t0TUI3SUlGeTdBbXJ1amlQV0IyS2F2cGxmMk1hdW1HTElpV0pmaS1JUUt5N1lwdXdJUkNpYThnLVpvTEdsYjhnTVpqb015TTRDWWRZTTV6Ylo5c0pFbVRPeUM2YzNIdExpd1hRLWt6ZWR4bXZUeTRLZnJnNDlLVnAyX1JDdUxCajE3akRNMnpaUlpaVVRoWFJEWkh0MHEya28?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Reuters China"
+            ],
+            "source_authority": 98,
+            "summary": "Taiwan says it is closely monitoring series of Chinese live-fire drills Reuters",
+            "category": "灾害",
+            "domestic_score": 30,
+            "importance": 51,
+            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -3399,38 +3470,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "405eec62773e3653",
-            "title": "Man who served 13 years for drug conviction faces life back in jail after U.S. Supreme Court ruling - AP News",
-            "published_at": "2026-10-11T11:02:00+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Associated Press China",
-                "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSVBLRFduSXZ3dTVISDVmd0pYN3F3YnNHOVBxLUd4a0duaXBwcUR6ZkpnaFlMdTNvb1RqY2x6VGNNUEdwaEMyajVmcmJNbGJmb1FCbkdta1hhRVAwMnRaRW50OFlQazBvWXJRVUhVb3k3X2JmRW11YTVQSTZyX1V5azJmOTdjUHdQcjFYNC1DZ2p5UlQxTVdSMllaX3I0X0ZxNnMtZWtjQmRWTnhKLW9nT05XMThOczdobnd4N2k1X2hKQ3lPclVxTmg4Uzk3LXBxODk3bldHblAwT3prMG5KOE4xWjdRN25aM2wyNQ?oc=5",
-                "published_at": "2026-10-11T11:02:00+00:00",
-                "description": "Man who served 13 years for drug conviction faces life back in jail after U.S. Supreme Court ruling AP News"
-              }
-            ],
-            "source": "Associated Press China",
-            "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSVBLRFduSXZ3dTVISDVmd0pYN3F3YnNHOVBxLUd4a0duaXBwcUR6ZkpnaFlMdTNvb1RqY2x6VGNNUEdwaEMyajVmcmJNbGJmb1FCbkdta1hhRVAwMnRaRW50OFlQazBvWXJRVUhVb3k3X2JmRW11YTVQSTZyX1V5azJmOTdjUHdQcjFYNC1DZ2p5UlQxTVdSMllaX3I0X0ZxNnMtZWtjQmRWTnhKLW9nT05XMThOczdobnd4N2k1X2hKQ3lPclVxTmg4Uzk3LXBxODk3bldHblAwT3prMG5KOE4xWjdRN25aM2wyNQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSVBLRFduSXZ3dTVISDVmd0pYN3F3YnNHOVBxLUd4a0duaXBwcUR6ZkpnaFlMdTNvb1RqY2x6VGNNUEdwaEMyajVmcmJNbGJmb1FCbkdta1hhRVAwMnRaRW50OFlQazBvWXJRVUhVb3k3X2JmRW11YTVQSTZyX1V5azJmOTdjUHdQcjFYNC1DZ2p5UlQxTVdSMllaX3I0X0ZxNnMtZWtjQmRWTnhKLW9nT05XMThOczdobnd4N2k1X2hKQ3lPclVxTmg4Uzk3LXBxODk3bldHblAwT3prMG5KOE4xWjdRN25aM2wyNQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Associated Press China"
-            ],
-            "source_authority": 97,
-            "summary": "Man who served 13 years for drug conviction faces life back in jail after U.S. Supreme Court ruling AP News",
-            "category": "法律/犯罪",
-            "domestic_score": 30,
-            "importance": 45,
-            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "52d330c9ad6eceb4",
             "title": "Bristol man charged with murder after woman dies in Bradley Stoke - BBC",
             "published_at": "2026-10-11T10:10:40+00:00",
@@ -3711,38 +3750,6 @@
             "summary": "PBOC Expected to Tolerate Further Gradual Yuan Appreciation WSJ",
             "category": "其他/综合",
             "domestic_score": 38,
-            "importance": 43,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "b8844a87e0a9027c",
-            "title": "Exclusive | Lumber Liquidators Founder Asks $34.8 Million for His Ranch Near Nashville - WSJ",
-            "published_at": "2026-10-12T02:49:30+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Wall Street Journal China",
-                "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYkJSLV9aTG1PQ3lpYXpiRTlZX3g2MXV6aTU0emZyaFNHUDhFR0p2TmRtRWQ4MEhBaFFtdmFTSXBiQlE5MUlQalNMenVhcUlFNGRibTJUWEs3T1lBYzJtTk5yLWF5eWhlSGNaU3ljckstUXR5T1V2Q0p3VnhtZ1E5X1NaeE1oYUJUM3pjbm41T2xPa1RNTUtFakRuQkNBNWtNLW1N?oc=5",
-                "published_at": "2026-10-12T02:49:30+00:00",
-                "description": "Exclusive | Lumber Liquidators Founder Asks $34.8 Million for His Ranch Near Nashville WSJ"
-              }
-            ],
-            "source": "Wall Street Journal China",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYkJSLV9aTG1PQ3lpYXpiRTlZX3g2MXV6aTU0emZyaFNHUDhFR0p2TmRtRWQ4MEhBaFFtdmFTSXBiQlE5MUlQalNMenVhcUlFNGRibTJUWEs3T1lBYzJtTk5yLWF5eWhlSGNaU3ljckstUXR5T1V2Q0p3VnhtZ1E5X1NaeE1oYUJUM3pjbm41T2xPa1RNTUtFakRuQkNBNWtNLW1N?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYkJSLV9aTG1PQ3lpYXpiRTlZX3g2MXV6aTU0emZyaFNHUDhFR0p2TmRtRWQ4MEhBaFFtdmFTSXBiQlE5MUlQalNMenVhcUlFNGRibTJUWEs3T1lBYzJtTk5yLWF5eWhlSGNaU3ljckstUXR5T1V2Q0p3VnhtZ1E5X1NaeE1oYUJUM3pjbm41T2xPa1RNTUtFakRuQkNBNWtNLW1N?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Wall Street Journal China"
-            ],
-            "source_authority": 96,
-            "summary": "Exclusive | Lumber Liquidators Founder Asks $34.8 Million for His Ranch Near Nashville WSJ",
-            "category": "其他/综合",
-            "domestic_score": 30,
             "importance": 43,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -8391,38 +8398,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "53e7b8dbed6645a6",
-            "title": "Anti-sexual assault certification set for Japan’s cram schools",
-            "published_at": "2026-10-12T02:07:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "source": "Japan Times",
-                "link": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
-                "published_at": "2026-10-12T02:07:00+00:00",
-                "description": "The move comes ahead of the Dec. 25 launch of a Japanese version of Britain's Disclosure and Barring Service."
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
-            "source_url": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 91,
-            "summary": "The move comes ahead of the Dec. 25 launch of a Japanese version of Britain's Disclosure and Barring Service.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "f2931bbd4a58f93c",
             "title": "Brewers edge Dodgers 2-1 in National League Championship Series opener",
             "published_at": "2026-10-12T05:08:00+00:00",
@@ -8573,6 +8548,38 @@
             ],
             "source_authority": 91,
             "summary": "The imperial couple watched matches for boys and girls, held at a gymnasium in the city of Aomori.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 42,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "53e7b8dbed6645a6",
+            "title": "Anti-sexual assault certification set for Japan’s cram schools",
+            "published_at": "2026-10-12T02:07:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "source": "Japan Times",
+                "link": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
+                "published_at": "2026-10-12T02:07:00+00:00",
+                "description": "The move comes ahead of the Dec. 25 launch of a Japanese version of Britain's Disclosure and Barring Service."
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
+            "source_url": "https://www.japantimes.co.jp/news/2026/10/12/japan/society/cram-schools-anti-sexual-assault-certification/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "The move comes ahead of the Dec. 25 launch of a Japanese version of Britain's Disclosure and Barring Service.",
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 42,
@@ -8819,45 +8826,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "c87cd66cc22b9637",
-            "title": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released",
-            "published_at": "2026-10-11T16:08:39+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "Reuters",
-                "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
-                "published_at": "2026-10-11T13:30:56+00:00",
-                "description": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released Reuters"
-              },
-              {
-                "source": "France24",
-                "link": "https://www.france24.com/en/video/20261011-protesters-seeking-india-election-chief-s-ouster-detained-as-cockroach-leaders-released",
-                "published_at": "2026-10-11T16:08:39+00:00",
-                "description": "Police detained hundreds of protesters in Delhi for a second day on Sunday as sporadic protests broke out demanding Indi"
-              }
-            ],
-            "source": "Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
-            "source_count": 2,
-            "source_names": [
-              "Reuters",
-              "France24"
-            ],
-            "source_authority": 98,
-            "summary": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released Reuters",
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 51,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "3e6b90d34b21afcb",
             "title": "Delhi police shut metro stations ahead of election protest march",
             "published_at": "2026-10-12T05:51:48+00:00",
@@ -8979,6 +8947,77 @@
             "category": "政治",
             "domestic_score": 30,
             "importance": 50,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "c87cd66cc22b9637",
+            "title": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released",
+            "published_at": "2026-10-11T16:08:39+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "Reuters",
+                "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
+                "published_at": "2026-10-11T13:30:56+00:00",
+                "description": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released Reuters"
+              },
+              {
+                "source": "France24",
+                "link": "https://www.france24.com/en/video/20261011-protesters-seeking-india-election-chief-s-ouster-detained-as-cockroach-leaders-released",
+                "published_at": "2026-10-11T16:08:39+00:00",
+                "description": "Police detained hundreds of protesters in Delhi for a second day on Sunday as sporadic protests broke out demanding Indi"
+              }
+            ],
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYXdTVG9rZnB6T0JIWTR3VHUzWWs1RmVSQkxIaGk5bTdXMG9URUtTYWNZMHl3b0tPMDlIbXpydGItZDZ3bk8xNF9xYkNVVG8xOVRUa1BIc2ZQdjlhbnVaOUUzMlpBbGdVbGpkWndEQmYtX2pkX1NXUlY4VHQybWRhaWZsSW9MN1ZESEFGaVRXcnJrc2NqeVRrOTdRcjlZUnN2TDc4dFhET0RTT2R4cG5acUxEOElrZw?oc=5",
+            "source_count": 2,
+            "source_names": [
+              "Reuters",
+              "France24"
+            ],
+            "source_authority": 98,
+            "summary": "Protesters seeking India election chief's ouster detained, as 'cockroach' leaders released Reuters",
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 50,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "7b0ab0954ce25797",
+            "title": "Appointments in Election Commission of India | Explained",
+            "published_at": "2026-10-12T05:58:01+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "The Hindu National",
+                "link": "https://www.thehindu.com/news/national/appointments-in-election-commission-of-india-explained/article71573891.ece",
+                "published_at": "2026-10-12T05:58:01+00:00",
+                "description": "The appointment is important as the two Election Commissioners S.S. Sandhu and Vivek Joshi had written to Cabinet Secret"
+              }
+            ],
+            "source": "The Hindu National",
+            "url": "https://www.thehindu.com/news/national/appointments-in-election-commission-of-india-explained/article71573891.ece",
+            "source_url": "https://www.thehindu.com/news/national/appointments-in-election-commission-of-india-explained/article71573891.ece",
+            "source_count": 1,
+            "source_names": [
+              "The Hindu National"
+            ],
+            "source_authority": 87,
+            "summary": "The appointment is important as the two Election Commissioners S.S. Sandhu and Vivek Joshi had written to Cabinet Secretary on how files of the ECI IT department head Dr Seema Khan",
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 49,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -9146,38 +9185,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "f481d6f145c8c4ff",
-            "title": "Sporadic protests break uneasy calm in Delhi",
-            "published_at": "2026-10-11T22:05:56+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "The Hindu National",
-                "link": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
-                "published_at": "2026-10-11T22:05:56+00:00",
-                "description": "Protests continue despite security deployment and restrictions on gatherings; throughout the day, police chase and detai"
-              }
-            ],
-            "source": "The Hindu National",
-            "url": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
-            "source_url": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu National"
-            ],
-            "source_authority": 87,
-            "summary": "Protests continue despite security deployment and restrictions on gatherings; throughout the day, police chase and detain demonstrators; a few shoppers return to Connaught Place bu",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "6993dca4655ed82b",
             "title": "India releases ‘cockroach’ leaders as movement calls for more protests",
             "published_at": "2026-10-11T08:27:00+00:00",
@@ -9203,6 +9210,38 @@
             "category": "国防安全",
             "domestic_score": 30,
             "importance": 48,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "f481d6f145c8c4ff",
+            "title": "Sporadic protests break uneasy calm in Delhi",
+            "published_at": "2026-10-11T22:05:56+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "The Hindu National",
+                "link": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
+                "published_at": "2026-10-11T22:05:56+00:00",
+                "description": "Protests continue despite security deployment and restrictions on gatherings; throughout the day, police chase and detai"
+              }
+            ],
+            "source": "The Hindu National",
+            "url": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
+            "source_url": "https://www.thehindu.com/news/cities/Delhi/sporadic-protests-break-uneasy-calm-in-delhi/article71572311.ece",
+            "source_count": 1,
+            "source_names": [
+              "The Hindu National"
+            ],
+            "source_authority": 87,
+            "summary": "Protests continue despite security deployment and restrictions on gatherings; throughout the day, police chase and detain demonstrators; a few shoppers return to Connaught Place bu",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 47,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -9784,38 +9823,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "f6964eb569252268",
-            "title": "Man dies after alleged assault over seat inside Delhi Metro; ex-IAS officer, son arrested",
-            "published_at": "2026-10-12T05:41:45+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "The Hindu National",
-                "link": "https://www.thehindu.com/news/cities/Delhi/man-dies-after-alleged-assault-over-seat-inside-delhi-metro-ex-ias-officer-son-arrested/article71573844.ece",
-                "published_at": "2026-10-12T05:41:45+00:00",
-                "description": "The incident took place on October 8 at the Supreme Court Metro station, where the deceased, Pawan Sharma, allegedly got"
-              }
-            ],
-            "source": "The Hindu National",
-            "url": "https://www.thehindu.com/news/cities/Delhi/man-dies-after-alleged-assault-over-seat-inside-delhi-metro-ex-ias-officer-son-arrested/article71573844.ece",
-            "source_url": "https://www.thehindu.com/news/cities/Delhi/man-dies-after-alleged-assault-over-seat-inside-delhi-metro-ex-ias-officer-son-arrested/article71573844.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu National"
-            ],
-            "source_authority": 87,
-            "summary": "The incident took place on October 8 at the Supreme Court Metro station, where the deceased, Pawan Sharma, allegedly got into an altercation with the two accused, identified as San",
-            "category": "法律/犯罪",
-            "domestic_score": 30,
-            "importance": 41,
-            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       },
@@ -10197,38 +10204,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "4f98811856f840d3",
-            "title": "Countries warn against travel to Saudi Arabia following Houthi attacks",
-            "published_at": "2026-10-12T05:53:45+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "半岛电视台",
-                "link": "https://www.aljazeera.com/economy/2026/10/12/countries-warn-against-travel-to-saudi-arabia-following-houthi-attacks?traffic_source=rss",
-                "published_at": "2026-10-12T05:53:45+00:00",
-                "description": "US, Australia, Canada, Japan, South Korea and New Zealand among countries urging citizens to avoid travel to the kingdom"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/economy/2026/10/12/countries-warn-against-travel-to-saudi-arabia-following-houthi-attacks?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/economy/2026/10/12/countries-warn-against-travel-to-saudi-arabia-following-houthi-attacks?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "US, Australia, Canada, Japan, South Korea and New Zealand among countries urging citizens to avoid travel to the kingdom.",
-            "category": "国防安全",
-            "domestic_score": 46,
-            "importance": 61,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "9163572b2c28b5c1",
             "title": "Saudi Arabia says 1 dead, 11 injured in latest attack on Riyadh airport",
             "published_at": "2026-10-12T02:11:21+00:00",
@@ -10538,7 +10513,7 @@
               "South China Morning Post"
             ],
             "source_authority": 86,
-            "summary": "A fresh Houthi strike hit Riyadh’s international airport on Sunday, killing one person and wounding 11 others, a day after a deadly attack claimed by the Yemeni group forced author",
+            "summary": "A fresh Houthi strike hit Riyadh’s international airport on Sunday, killing one person and wounding 11 others, a day after another deadly attack claimed by the Yemeni group forced ",
             "category": "国防安全",
             "domestic_score": 38,
             "importance": 59,
@@ -10573,38 +10548,6 @@
             "summary": "",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 59,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "bf803ca38bae4b47",
-            "title": "New Houthi strike hits Riyadh airport, day after deadly strike",
-            "published_at": "2026-10-11T16:08:30+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "Le Monde English",
-                "link": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
-                "published_at": "2026-10-11T16:08:30+00:00",
-                "description": "The attack, which killed one person, comes a day after a strike by Yemen's Houthis killed 12 people and injured hundreds"
-              }
-            ],
-            "source": "Le Monde English",
-            "url": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
-            "source_url": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
-            "source_count": 1,
-            "source_names": [
-              "Le Monde English"
-            ],
-            "source_authority": 90,
-            "summary": "The attack, which killed one person, comes a day after a strike by Yemen's Houthis killed 12 people and injured hundreds in the Saudi capital's airport.",
-            "category": "国防安全",
-            "domestic_score": 30,
             "importance": 59,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -10741,6 +10684,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "bf803ca38bae4b47",
+            "title": "New Houthi strike hits Riyadh airport, day after deadly strike",
+            "published_at": "2026-10-11T16:08:30+00:00",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "Le Monde English",
+                "link": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
+                "published_at": "2026-10-11T16:08:30+00:00",
+                "description": "The attack, which killed one person, comes a day after a strike by Yemen's Houthis killed 12 people and injured hundreds"
+              }
+            ],
+            "source": "Le Monde English",
+            "url": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
+            "source_url": "https://www.lemonde.fr/en/international/article/2026/10/11/new-attack-hits-riyadh-airport-says-saudi-coalition_6758484_4.html",
+            "source_count": 1,
+            "source_names": [
+              "Le Monde English"
+            ],
+            "source_authority": 90,
+            "summary": "The attack, which killed one person, comes a day after a strike by Yemen's Houthis killed 12 people and injured hundreds in the Saudi capital's airport.",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 58,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "9f7bb28fbdf409f0",
             "title": "Foreign ministry recommends S. Koreans in Saudi Arabia leave country amid Houthi attacks",
             "published_at": "2026-10-11T11:58:25+00:00",
@@ -10763,38 +10738,6 @@
             ],
             "source_authority": 88,
             "summary": "SEOUL, Oct. 11 (Yonhap) -- The foreign ministry said Sunday it raised a travel w...",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 58,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "cb776e00566b0eaf",
-            "title": "12 killed and over 300 hurt in latest attack on Riyadh airport, Saudi authorities say - AP News",
-            "published_at": "2026-10-11T05:05:00+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "Associated Press",
-                "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGZwcDY1YlloN3oyNzFVMFZTcExnWXZqTzVQNEFkNnBoN2xGR0FEWEVjeUU2OVFEQ21hLUtXRzF2WHVnMzFuVUoxWGQzUFBVTjV2cWNmeFhmWTVvQ19iZ0xxV1c2OXRWMjBFOURBSzc2TWlaQUxENnpCU1ptX0Rna0E4Sl8zNE5aRmpNVkhrclRWUFdIcElCMg?oc=5",
-                "published_at": "2026-10-11T05:05:00+00:00",
-                "description": "12 killed and over 300 hurt in latest attack on Riyadh airport, Saudi authorities say AP News"
-              }
-            ],
-            "source": "Associated Press",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGZwcDY1YlloN3oyNzFVMFZTcExnWXZqTzVQNEFkNnBoN2xGR0FEWEVjeUU2OVFEQ21hLUtXRzF2WHVnMzFuVUoxWGQzUFBVTjV2cWNmeFhmWTVvQ19iZ0xxV1c2OXRWMjBFOURBSzc2TWlaQUxENnpCU1ptX0Rna0E4Sl8zNE5aRmpNVkhrclRWUFdIcElCMg?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUGZwcDY1YlloN3oyNzFVMFZTcExnWXZqTzVQNEFkNnBoN2xGR0FEWEVjeUU2OVFEQ21hLUtXRzF2WHVnMzFuVUoxWGQzUFBVTjV2cWNmeFhmWTVvQ19iZ0xxV1c2OXRWMjBFOURBSzc2TWlaQUxENnpCU1ptX0Rna0E4Sl8zNE5aRmpNVkhrclRWUFdIcElCMg?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Associated Press"
-            ],
-            "source_authority": 97,
-            "summary": "12 killed and over 300 hurt in latest attack on Riyadh airport, Saudi authorities say AP News",
             "category": "国防安全",
             "domestic_score": 38,
             "importance": 58,
@@ -10933,6 +10876,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "2d1fdeef19edf130",
+            "title": "通讯：“我们是好朋友、好伙伴、好兄弟”——中阿友好合作交流展见证中阿友好关系发展历史",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-国际",
+                "link": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
+                "published_at": null,
+                "description": "由国务院新闻办公室指导，新华通讯社主办，新华社中国图片社承办的中阿友好合作交流展近日在沙特阿拉伯首都利雅得成功举办。展览分为“历久弥坚”“合作新篇”“文明互鉴”三部分，展出的103张照片均来自新华社中国照片档案馆的珍贵馆藏资源，生动展现了中"
+              }
+            ],
+            "source": "新华-国际",
+            "url": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
+            "source_url": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-国际"
+            ],
+            "source_authority": 62,
+            "summary": "由国务院新闻办公室指导，新华通讯社主办，新华社中国图片社承办的中阿友好合作交流展近日在沙特阿拉伯首都利雅得成功举办。展览分为“历久弥坚”“合作新篇”“文明互鉴”三部分，展出的103张照片均来自新华社中国照片档案馆的珍贵馆藏资源，生动展现了中国与阿拉伯国家在经济、社会、文化、抗击新冠疫情和人道主义援助等领域的合作交流成果。",
+            "category": "宏观经济",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "ffcaa2cc46668c8a",
             "title": "习近平会见索马里总统马哈茂德",
             "published_at": null,
@@ -11051,6 +11026,38 @@
             ],
             "source_authority": 62,
             "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "f162f1cef9f2da63",
+            "title": "习近平会见阿尔及利亚总理阿卜杜拉赫曼",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-国际",
+                "link": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
+                "published_at": null,
+                "description": "当地时间12月9日晚，国家主席习近平在利雅得会见阿尔及利亚总理阿卜杜拉赫曼。"
+              }
+            ],
+            "source": "新华-国际",
+            "url": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
+            "source_url": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-国际"
+            ],
+            "source_authority": 62,
+            "summary": "当地时间12月9日晚，国家主席习近平在利雅得会见阿尔及利亚总理阿卜杜拉赫曼。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 41,
@@ -11550,7 +11557,7 @@
             "summary": "President Lee Jae Myung has announced plans to expand direct communication with ...",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 51,
+            "importance": 50,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -11870,7 +11877,7 @@
             "summary": "An alliance can survive disagreements over policy more easily than doubts about ...",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 44,
+            "importance": 43,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -12538,38 +12545,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "c7212b95f29366f8",
-            "title": "World's timekeepers will vote to ditch 'leap second' this week",
-            "published_at": "2026-10-12T02:00:00+00:00",
-            "code": "AU",
-            "event_country": "澳大利亚",
-            "sources": [
-              {
-                "source": "ABC Australia",
-                "link": "https://www.abc.net.au/news/science/2026-10-12/we-may-be-about-to-lose-the-leap-second-for-good/107207528",
-                "published_at": "2026-10-12T02:00:00+00:00",
-                "description": "Clocks occasionally go backwards for a second to keep Earth time in sync with the stars. But the powers that govern time"
-              }
-            ],
-            "source": "ABC Australia",
-            "url": "https://www.abc.net.au/news/science/2026-10-12/we-may-be-about-to-lose-the-leap-second-for-good/107207528",
-            "source_url": "https://www.abc.net.au/news/science/2026-10-12/we-may-be-about-to-lose-the-leap-second-for-good/107207528",
-            "source_count": 1,
-            "source_names": [
-              "ABC Australia"
-            ],
-            "source_authority": 88,
-            "summary": "Clocks occasionally go backwards for a second to keep Earth time in sync with the stars. But the powers that govern time measurement are about to vote to end the practice.",
-            "category": "能源",
-            "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "91517d16ab4e7130",
             "title": "One Nation Vic deputy denies AI-generated campaign video was racist",
             "published_at": "2026-10-12T02:25:13+00:00",
@@ -12792,6 +12767,38 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "844fc47ac78e2756",
+            "title": "'Unfinished business' lures couple back to Queensland island paradise",
+            "published_at": "2026-10-12T02:56:30+00:00",
+            "code": "AU",
+            "event_country": "澳大利亚",
+            "sources": [
+              {
+                "source": "ABC Australia",
+                "link": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+                "published_at": "2026-10-12T02:56:30+00:00",
+                "description": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the isla"
+              }
+            ],
+            "source": "ABC Australia",
+            "url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+            "source_url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+            "source_count": 1,
+            "source_names": [
+              "ABC Australia"
+            ],
+            "source_authority": 88,
+            "summary": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the island this week is their son, who spent the first four years of",
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       }
@@ -12835,38 +12842,6 @@
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "6db3160c647c5ee8",
-            "title": "Trump says Ukraine should get new President as he blames Zelenskyy for U.S. diesel prices",
-            "published_at": "2026-10-11T05:05:07+00:00",
-            "code": "UA",
-            "event_country": "乌克兰",
-            "sources": [
-              {
-                "source": "The Hindu International",
-                "link": "https://www.thehindu.com/news/international/trump-says-ukraine-should-get-new-president-as-he-blames-zelenskyy-for-us-diesel-prices/article71570543.ece",
-                "published_at": "2026-10-11T05:05:07+00:00",
-                "description": "Donald Trump has also sought to blame record U.S. diesel prices on Ukraine rather than the U.S.-led war in Iran, which h"
-              }
-            ],
-            "source": "The Hindu International",
-            "url": "https://www.thehindu.com/news/international/trump-says-ukraine-should-get-new-president-as-he-blames-zelenskyy-for-us-diesel-prices/article71570543.ece",
-            "source_url": "https://www.thehindu.com/news/international/trump-says-ukraine-should-get-new-president-as-he-blames-zelenskyy-for-us-diesel-prices/article71570543.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu International"
-            ],
-            "source_authority": 87,
-            "summary": "Donald Trump has also sought to blame record U.S. diesel prices on Ukraine rather than the U.S.-led war in Iran, which has elevated world energy prices",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 64,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
@@ -12995,6 +12970,45 @@
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "e07c15260bf4cf89",
+            "title": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue - AP News",
+            "published_at": "2026-10-12T04:56:00+00:00",
+            "code": "UA",
+            "event_country": "乌克兰",
+            "sources": [
+              {
+                "source": "Associated Press China",
+                "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
+                "published_at": "2026-10-12T04:56:00+00:00",
+                "description": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue AP News"
+              },
+              {
+                "source": "The Hindu International",
+                "link": "https://www.thehindu.com/news/international/trump-says-russia-and-ukraine-agree-to-energy-ceasefire/article71572265.ece",
+                "published_at": "2026-10-11T20:27:52+00:00",
+                "description": "Ukrainian President Zelenskyy said that while his country “welcomed” the announcement by Trump as “good news for everyon"
+              }
+            ],
+            "source": "Associated Press China",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
+            "source_count": 2,
+            "source_names": [
+              "Associated Press China",
+              "The Hindu International"
+            ],
+            "source_authority": 97,
+            "summary": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue AP News",
+            "category": "能源",
+            "domestic_score": 46,
+            "importance": 58,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
@@ -13133,45 +13147,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "ae8293c8e36fed18",
-            "title": "Trump says Russia, Ukraine agree to ‘energy ceasefire’ but Kyiv says attacks continue",
-            "published_at": "2026-10-11T20:27:52+00:00",
-            "code": "UA",
-            "event_country": "乌克兰",
-            "sources": [
-              {
-                "source": "Associated Press",
-                "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
-                "published_at": "2026-10-11T19:29:00+00:00",
-                "description": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue AP News"
-              },
-              {
-                "source": "The Hindu International",
-                "link": "https://www.thehindu.com/news/international/trump-says-russia-and-ukraine-agree-to-energy-ceasefire/article71572265.ece",
-                "published_at": "2026-10-11T20:27:52+00:00",
-                "description": "Ukrainian President Zelenskyy said that while his country “welcomed” the announcement by Trump as “good news for everyon"
-              }
-            ],
-            "source": "Associated Press",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPamZWc0pzUzdKd3YzOVM2MXRGdTc1akUwMDBma1pxUkt1OXd3ajk5RUlhLS1xaHJsVVdwVXk5cDVaMlFIcGxqSWtpelg1UUsydjFIZ3VpSXBKMTBnVlh3TTFUMGdjNlBtMWhEZmFpSnFTNVBDMWx1OVN5X2xGQS1DUndqS2RPQ2FBWXIxNGE5QzFhX0wzaW9vWUkwb2VoUHhGZU5Z?oc=5",
-            "source_count": 2,
-            "source_names": [
-              "Associated Press",
-              "The Hindu International"
-            ],
-            "source_authority": 97,
-            "summary": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue AP News",
-            "category": "能源",
-            "domestic_score": 46,
-            "importance": 56,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "e2c0246eb9a70835",
             "title": "Zelenskyy signals surprise at Trump claim of Russia-Ukraine ‘energy ceasefire’ but would back it if Moscow does – as it happened",
             "published_at": "2026-10-11T18:36:54+00:00",
@@ -13292,7 +13267,7 @@
             "summary": "Ukrainian President Volodymyr Zelensky told the Axios digital news outlet on Sunday that he was surprised by US counterpart Donald Trump's announcement of a Ukraine-Russia \"energy ",
             "category": "政治",
             "domestic_score": 38,
-            "importance": 55,
+            "importance": 54,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -13324,7 +13299,7 @@
             "summary": "US President Donald Trump said Russia and Ukraine had agreed to halt strikes on each other's energy infrastructure. Russia did not comment.",
             "category": "政治",
             "domestic_score": 38,
-            "importance": 55,
+            "importance": 54,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -13644,7 +13619,7 @@
             "summary": "Oil declined in a volatile start to the week as traders weighed resilient Middle East flows against rising regional tensions and a US claim that Russia and Ukraine had agreed to a ",
             "category": "能源",
             "domestic_score": 38,
-            "importance": 43,
+            "importance": 42,
             "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -13742,6 +13717,38 @@
             "domestic_score": 30,
             "importance": 39,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "32a554ea53debe0e",
+            "title": "‘A life-or-death race’: the volunteers protecting Kyiv’s skies from new jet-powered drones - The Guardian",
+            "published_at": "2026-10-11T17:45:00+00:00",
+            "code": "UA",
+            "event_country": "乌克兰",
+            "sources": [
+              {
+                "source": "The Guardian China",
+                "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSE53ZURYUWhJcUhHdVFrU1pqejE5TkJtWmRCbUoxWFFDT1o2aXlzMXVEQlhuTU9EOWdXTUNLQXJ2Vmg4bmdEbnV5TEEtWDVFS2lRbHlLbUtac2tuckphMWN5SDRHWjd3OXRWdXZfYXlpZlVsYk1EV3YwOE5UZ2QwckpEYTFHYXYxQ05YZzFuZ3VoNnIwMEZmX2xhTQ?oc=5",
+                "published_at": "2026-10-11T17:45:00+00:00",
+                "description": "‘A life-or-death race’: the volunteers protecting Kyiv’s skies from new jet-powered drones The Guardian"
+              }
+            ],
+            "source": "The Guardian China",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSE53ZURYUWhJcUhHdVFrU1pqejE5TkJtWmRCbUoxWFFDT1o2aXlzMXVEQlhuTU9EOWdXTUNLQXJ2Vmg4bmdEbnV5TEEtWDVFS2lRbHlLbUtac2tuckphMWN5SDRHWjd3OXRWdXZfYXlpZlVsYk1EV3YwOE5UZ2QwckpEYTFHYXYxQ05YZzFuZ3VoNnIwMEZmX2xhTQ?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSE53ZURYUWhJcUhHdVFrU1pqejE5TkJtWmRCbUoxWFFDT1o2aXlzMXVEQlhuTU9EOWdXTUNLQXJ2Vmg4bmdEbnV5TEEtWDVFS2lRbHlLbUtac2tuckphMWN5SDRHWjd3OXRWdXZfYXlpZlVsYk1EV3YwOE5UZ2QwckpEYTFHYXYxQ05YZzFuZ3VoNnIwMEZmX2xhTQ?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "The Guardian China"
+            ],
+            "source_authority": 92,
+            "summary": "‘A life-or-death race’: the volunteers protecting Kyiv’s skies from new jet-powered drones The Guardian",
+            "category": "能源",
+            "domestic_score": 30,
+            "importance": 38,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -15308,8 +15315,41 @@
         "code": "ZA",
         "target_min": 2,
         "target_max": 8,
-        "count": 0,
-        "events": []
+        "count": 1,
+        "events": [
+          {
+            "id": "2e25ccd1c5c52fe9",
+            "title": "Boxer Appoints New CEO as South African Grocer’s Profit Rises",
+            "published_at": "2026-10-12T05:56:01+00:00",
+            "code": "ZA",
+            "event_country": "南非",
+            "sources": [
+              {
+                "source": "彭博社",
+                "link": "https://www.bloomberg.com/news/articles/2026-10-12/boxer-appoints-new-ceo-as-south-african-grocer-s-profit-rises",
+                "published_at": "2026-10-12T05:56:01+00:00",
+                "description": "Boxer Retail Ltd. appointed a new chief executive officer as the incumbent is set to retire, with the South African budg"
+              }
+            ],
+            "source": "彭博社",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-12/boxer-appoints-new-ceo-as-south-african-grocer-s-profit-rises",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-12/boxer-appoints-new-ceo-as-south-african-grocer-s-profit-rises",
+            "source_count": 1,
+            "source_names": [
+              "彭博社"
+            ],
+            "source_authority": 96,
+            "summary": "Boxer Retail Ltd. appointed a new chief executive officer as the incumbent is set to retire, with the South African budget grocer reporting higher first-half profit after it kept p",
+            "category": "宏观经济",
+            "domestic_score": 30,
+            "importance": 36,
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          }
+        ]
       },
       "荷兰": {
         "country": "荷兰",
@@ -15326,7 +15366,7 @@
         "code": "IL",
         "target_min": 2,
         "target_max": 8,
-        "count": 12,
+        "count": 13,
         "events": [
           {
             "id": "bef646b0df84fe29",
@@ -15711,6 +15751,38 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "5735e017b2f17164",
+            "title": "Syrian families demand release of detainees held by Israel",
+            "published_at": "2026-10-11T20:24:19+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "source": "半岛电视台",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+                "published_at": "2026-10-11T20:24:19+00:00",
+                "description": "Syrian families demand release of detainees held by Israel"
+              }
+            ],
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+            "source_count": 1,
+            "source_names": [
+              "半岛电视台"
+            ],
+            "source_authority": 90,
+            "summary": "Syrian families demand release of detainees held by Israel",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 24,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       },
@@ -15853,7 +15925,7 @@
             "summary": "Emergency Lawyers blames Egypt for the deadly attack in northern Sudan.",
             "category": "国防安全",
             "domestic_score": 30,
-            "importance": 50,
+            "importance": 49,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -16892,6 +16964,38 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
+      "id": "5b5c6e07e453a0b7",
+      "title": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal - Bloomberg.com",
+      "published_at": "2026-10-12T03:47:00+00:00",
+      "code": "CN",
+      "event_country": "中国",
+      "sources": [
+        {
+          "source": "Bloomberg China",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+          "published_at": "2026-10-12T03:47:00+00:00",
+          "description": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com"
+        }
+      ],
+      "source": "Bloomberg China",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+      "source_count": 1,
+      "source_names": [
+        "Bloomberg China"
+      ],
+      "source_authority": 96,
+      "summary": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com",
+      "category": "产业/商业",
+      "domestic_score": 38,
+      "importance": 71,
+      "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "importance_level": "重要事件",
+      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+    },
+    {
       "id": "742327df7b294d59",
       "title": "Fixated on AI, the world has forgotten what is staring it in the face: nuclear annihilation | Simon Tisdall - The Guardian",
       "published_at": "2026-10-12T03:19:00+00:00",
@@ -17010,36 +17114,6 @@
       ],
       "source_authority": 96,
       "summary": "The man came face to face with an Amur tiger inside the animal’s habitat at Yorkshire Wildlife Park in England. The park was evacuated and closed to the public.",
-      "category": "国防安全",
-      "domestic_score": 12,
-      "importance": 71,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。"
-    },
-    {
-      "id": "82af383396c78348",
-      "title": "One dead in new attack on Saudi airport, a day after Houthi strike kills 13 - Reuters",
-      "published_at": "2026-10-11T10:23:00+00:00",
-      "code": "GLOBAL",
-      "event_country": "国际/全球",
-      "sources": [
-        {
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSEo0VkFTZkY2VzMzeFV0OVRVbWN4aHFzaXFjV0FBN05uaEFONHhQVTN2a3JJM09NdFBzY1R3MnRrUFZOeFZfUDItOUd1NkxiT3dfOWduTHJKTlBzSGsyN3VCYTNkWG1ZTWlZMUpzbDdrc1dOZUs3VDRwa0lHN21tNnFNdFhQYUxoNmdfN1Zyb3FMRm04RzRVei0zY3FKN0FoY2JYTGFodjYtemdITVpKVXk3NlR2QXFIMU9YMnUtX004QW1GZ0UzZA?oc=5",
-          "published_at": "2026-10-11T10:23:00+00:00",
-          "description": "One dead in new attack on Saudi airport, a day after Houthi strike kills 13 Reuters"
-        }
-      ],
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSEo0VkFTZkY2VzMzeFV0OVRVbWN4aHFzaXFjV0FBN05uaEFONHhQVTN2a3JJM09NdFBzY1R3MnRrUFZOeFZfUDItOUd1NkxiT3dfOWduTHJKTlBzSGsyN3VCYTNkWG1ZTWlZMUpzbDdrc1dOZUs3VDRwa0lHN21tNnFNdFhQYUxoNmdfN1Zyb3FMRm04RzRVei0zY3FKN0FoY2JYTGFodjYtemdITVpKVXk3NlR2QXFIMU9YMnUtX004QW1GZ0UzZA?oc=5",
-      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSEo0VkFTZkY2VzMzeFV0OVRVbWN4aHFzaXFjV0FBN05uaEFONHhQVTN2a3JJM09NdFBzY1R3MnRrUFZOeFZfUDItOUd1NkxiT3dfOWduTHJKTlBzSGsyN3VCYTNkWG1ZTWlZMUpzbDdrc1dOZUs3VDRwa0lHN21tNnFNdFhQYUxoNmdfN1Zyb3FMRm04RzRVei0zY3FKN0FoY2JYTGFodjYtemdITVpKVXk3NlR2QXFIMU9YMnUtX004QW1GZ0UzZA?oc=5",
-      "source_count": 1,
-      "source_names": [
-        "Reuters"
-      ],
-      "source_authority": 98,
-      "summary": "One dead in new attack on Saudi airport, a day after Houthi strike kills 13 Reuters",
       "category": "国防安全",
       "domestic_score": 12,
       "importance": 71,
@@ -17775,28 +17849,28 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
-      "id": "fd0b6389f7b73c9b",
-      "title": "OpenAI’s ChatGPT for Teens Poses ‘Unacceptable Risk,’ Nonprofit Says - WSJ",
-      "published_at": "2026-10-11T02:22:09+00:00",
+      "id": "e976693b905f569f",
+      "title": "llm-pi-ai: pass presence_penalty / frequency_penalty / repetition_penalty through GenerateOptions (openai-completions) · deepseek-ai deepseek-harness · Discussion #9387 - GitHub",
+      "published_at": "2026-10-10T18:50:44+00:00",
       "code": "GLOBAL",
       "event_country": "AI / LLM",
       "sources": [
         {
-          "source": "Wall Street Journal AI",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZW9OTGdpUjUzbldpeFl1aVpQUW8wbFFRYVZ0QU5GOXpmbEpLeDZTQTVQOTYySTd6RHZqekZvTXZod2VIRU5leU52S3Y0Yk9qdlRxSnZzY2ZYQnZoemZNSlNVS1pSUHk3NThPVHBEeVdLZWQ3YkVNVk5WR1lwQ2t3X043ZzEyY2sweUcwejVHTW5UR08xNTBMR0J3TzBsQkxEM1JB?oc=5",
-          "published_at": "2026-10-11T02:22:09+00:00",
-          "description": "OpenAI’s ChatGPT for Teens Poses ‘Unacceptable Risk,’ Nonprofit Says WSJ"
+          "source": "DeepSeek",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ENHVLd0thVDVMd2haQU1YQ2xZby1UV2lhTGZESklDUlFRSTJ1SjdCRFJaUU5maFdXOGhMTW5KZ0NaNFBUZ2hfa2wxemw0MFN1RzRIeGdYTXQ4VUxFMkctdVppMEcyU3VSdHZIY1p4Nm4zZw?oc=5",
+          "published_at": "2026-10-10T18:50:44+00:00",
+          "description": "llm-pi-ai: pass presence_penalty / frequency_penalty / repetition_penalty through GenerateOptions (openai-completions) ·"
         }
       ],
-      "source": "Wall Street Journal AI",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZW9OTGdpUjUzbldpeFl1aVpQUW8wbFFRYVZ0QU5GOXpmbEpLeDZTQTVQOTYySTd6RHZqekZvTXZod2VIRU5leU52S3Y0Yk9qdlRxSnZzY2ZYQnZoemZNSlNVS1pSUHk3NThPVHBEeVdLZWQ3YkVNVk5WR1lwQ2t3X043ZzEyY2sweUcwejVHTW5UR08xNTBMR0J3TzBsQkxEM1JB?oc=5",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZW9OTGdpUjUzbldpeFl1aVpQUW8wbFFRYVZ0QU5GOXpmbEpLeDZTQTVQOTYySTd6RHZqekZvTXZod2VIRU5leU52S3Y0Yk9qdlRxSnZzY2ZYQnZoemZNSlNVS1pSUHk3NThPVHBEeVdLZWQ3YkVNVk5WR1lwQ2t3X043ZzEyY2sweUcwejVHTW5UR08xNTBMR0J3TzBsQkxEM1JB?oc=5",
+      "source": "DeepSeek",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ENHVLd0thVDVMd2haQU1YQ2xZby1UV2lhTGZESklDUlFRSTJ1SjdCRFJaUU5maFdXOGhMTW5KZ0NaNFBUZ2hfa2wxemw0MFN1RzRIeGdYTXQ4VUxFMkctdVppMEcyU3VSdHZIY1p4Nm4zZw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ENHVLd0thVDVMd2haQU1YQ2xZby1UV2lhTGZESklDUlFRSTJ1SjdCRFJaUU5maFdXOGhMTW5KZ0NaNFBUZ2hfa2wxemw0MFN1RzRIeGdYTXQ4VUxFMkctdVppMEcyU3VSdHZIY1p4Nm4zZw?oc=5",
       "source_count": 1,
       "source_names": [
-        "Wall Street Journal AI"
+        "DeepSeek"
       ],
-      "source_authority": 96,
-      "summary": "OpenAI’s ChatGPT for Teens Poses ‘Unacceptable Risk,’ Nonprofit Says WSJ",
+      "source_authority": 92,
+      "summary": "llm-pi-ai: pass presence_penalty / frequency_penalty / repetition_penalty through GenerateOptions (openai-completions) · deepseek-ai deepseek-harness · Discussion #9387 GitHub",
       "category": "AI/LLM",
       "domestic_score": 12,
       "importance": 34,
@@ -18003,7 +18077,7 @@
   "ai_news_status": "ready",
   "stats": {
     "countries": 31,
-    "events": 500,
+    "events": 502,
     "tier1_events": 266,
     "supplement_events": 10,
     "failed_sources": 1,
@@ -18025,8 +18099,8 @@
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-11",
-    "removed": 107,
-    "undated_removed": 88,
+    "removed": 105,
+    "undated_removed": 90,
     "buffered_candidates_used": true
   }
 }
