@@ -74,21 +74,43 @@ FEEDS=[
 
 # 独立 AI/LLM 新闻池：官方一手发布 + 权威科技媒体交叉报道
 AI_FEEDS=[
+ # Official company announcements, model releases and first-party research.
  ('OpenAI News','GLOBAL','https://openai.com/news/rss.xml','en'),
- ('Google AI Blog','GLOBAL','https://blog.google/technology/ai/rss/','en'),
+ ('Google AI Blog','GLOBAL','https://blog.google/innovation-and-ai/technology/ai/rss/','en'),
  ('Google DeepMind','GLOBAL','https://deepmind.google/blog/rss.xml','en'),
- ('Anthropic News Watch','GLOBAL','https://news.google.com/rss/search?q=site%3Aanthropic.com%2Fnews&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Google Research','GLOBAL','https://research.google/blog/rss/','en'),
+ ('Anthropic News Watch','GLOBAL','https://news.google.com/rss/search?q=site%3Aanthropic.com%2Fnews%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Meta AI','GLOBAL','https://news.google.com/rss/search?q=site%3Aai.meta.com%2Fblog%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
  ('NVIDIA AI Blog','GLOBAL','https://blogs.nvidia.com/feed/','en'),
- ('Microsoft AI Blog','GLOBAL','https://www.microsoft.com/en-us/microsoft-cloud/blog/feed//','en'),
+ ('NVIDIA Developer AI','GLOBAL','https://developer.nvidia.com/blog/category/generative-ai/feed/','en'),
+ ('Microsoft AI Blog','GLOBAL','https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/','en'),
+ ('Microsoft Research AI','GLOBAL','https://www.microsoft.com/en-us/research/feed/','en'),
+ ('AWS ML Blog','GLOBAL','https://aws.amazon.com/blogs/machine-learning/feed/','en'),
  ('Hugging Face Blog','GLOBAL','https://huggingface.co/blog/feed.xml','en'),
- ('TechCrunch AI','GLOBAL','https://techcrunch.com/category/artificial-intelligence/feed/','en'),
+ ('Mistral AI News','GLOBAL','https://mistral.ai/news/rss','en'),
  ('Apple ML Research','GLOBAL','https://machinelearning.apple.com/rss.xml','en'),
+ # Major Chinese AI companies: official domains and their official engineering/model repositories.
+ ('Alibaba Qwen','GLOBAL','https://news.google.com/rss/search?q=site%3Aqwenlm.github.io%20OR%20site%3Agithub.com%2FQwenLM%20OR%20site%3Aalibabacloud.com%2Fblog%20Qwen%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('DeepSeek','GLOBAL','https://news.google.com/rss/search?q=site%3Adeepseek.com%20OR%20site%3Agithub.com%2Fdeepseek-ai%20DeepSeek%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('ByteDance Seed','GLOBAL','https://news.google.com/rss/search?q=site%3Aseed.bytedance.com%20OR%20site%3Agithub.com%2FByteDance%20AI%20model%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Zhipu GLM','GLOBAL','https://news.google.com/rss/search?q=site%3Az.ai%20OR%20site%3Azhipuai.cn%20OR%20site%3Agithub.com%2FTHUDM%20GLM%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Moonshot Kimi','GLOBAL','https://news.google.com/rss/search?q=site%3Amoonshot.cn%20OR%20site%3Akimi.com%20OR%20site%3Agithub.com%2FMoonshotAI%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Baidu ERNIE','GLOBAL','https://news.google.com/rss/search?q=site%3Aernie.baidu.com%20OR%20site%3Agithub.com%2FPaddlePaddle%20ERNIE%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Tencent Hunyuan','GLOBAL','https://news.google.com/rss/search?q=site%3Ahunyuan.tencent.com%20OR%20site%3Agithub.com%2FTencent-Hunyuan%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('MiniMax','GLOBAL','https://news.google.com/rss/search?q=site%3Aminimax.io%20OR%20site%3Agithub.com%2FMiniMax-AI%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('StepFun','GLOBAL','https://news.google.com/rss/search?q=site%3Astepfun.com%20OR%20site%3Agithub.com%2Fstepfun-ai%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ # Independent international reporting, analysis and research.
+ ('Reuters AI','GLOBAL','https://news.google.com/rss/search?q=site%3Areuters.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Financial Times AI','GLOBAL','https://news.google.com/rss/search?q=site%3Aft.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('New York Times AI','GLOBAL','https://news.google.com/rss/search?q=site%3Anytimes.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Bloomberg AI','GLOBAL','https://news.google.com/rss/search?q=site%3Abloomberg.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Wall Street Journal AI','GLOBAL','https://news.google.com/rss/search?q=site%3Awsj.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Associated Press AI','GLOBAL','https://news.google.com/rss/search?q=site%3Aapnews.com%20AI%20OR%20artificial%20intelligence%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
+ ('TechCrunch AI','GLOBAL','https://techcrunch.com/category/artificial-intelligence/feed/','en'),
  ('MIT Technology Review AI','GLOBAL','https://www.technologyreview.com/topic/artificial-intelligence/feed/','en'),
  ('The Verge AI','GLOBAL','https://www.theverge.com/rss/ai-artificial-intelligence/index.xml','en'),
- ('AWS ML Blog','GLOBAL','https://aws.amazon.com/blogs/machine-learning/feed/','en'),
- ('Microsoft Research AI','GLOBAL','https://www.microsoft.com/en-us/research/feed/','en'),
- ('Google Research','GLOBAL','https://research.google/blog/rss/','en'),
  ('arXiv cs.AI','GLOBAL','https://rss.arxiv.org/rss/cs.AI','en'),
+ ('arXiv cs.CL','GLOBAL','https://rss.arxiv.org/rss/cs.CL','en'),
 ]
 
 ALIASES={
@@ -175,7 +197,7 @@ def fetch_feed(feed):
  except Exception as e:return feed,[],'XML '+str(e)[:120]
 
 SOURCE_AUTHORITY={
- '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':95,'Google AI Blog':95,'Google DeepMind':96,'Anthropic News Watch':92,'NVIDIA AI Blog':94,'Microsoft AI Blog':93,'Hugging Face Blog':88,'TechCrunch AI':88,'Apple ML Research':93,'AWS ML Blog':92,'Microsoft Research AI':93,'Google Research':94,'arXiv cs.AI':90,'MIT Technology Review AI':93,'The Verge AI':88,
+ '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':98,'Google AI Blog':97,'Google DeepMind':98,'Google Research':96,'Anthropic News Watch':97,'Meta AI':95,'NVIDIA AI Blog':96,'NVIDIA Developer AI':94,'Microsoft AI Blog':96,'Microsoft Research AI':96,'AWS ML Blog':93,'Hugging Face Blog':91,'Mistral AI News':93,'Apple ML Research':95,'Alibaba Qwen':91,'DeepSeek':92,'ByteDance Seed':90,'Zhipu GLM':89,'Moonshot Kimi':89,'Baidu ERNIE':88,'Tencent Hunyuan':88,'MiniMax':88,'StepFun':87,'Reuters AI':98,'Financial Times AI':97,'New York Times AI':96,'Bloomberg AI':97,'Wall Street Journal AI':96,'Associated Press AI':97,'TechCrunch AI':89,'arXiv cs.AI':92,'arXiv cs.CL':92,'MIT Technology Review AI':94,'The Verge AI':88,
  'Reuters':98,'Reuters China':98,'Associated Press':97,'Associated Press China':97,'New York Times China':96,'Wall Street Journal China':96,'Bloomberg China':96,'Financial Times China':96,'The Economist China':92,'BBC China':94,'The Guardian China':92,'NPR China':90,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
