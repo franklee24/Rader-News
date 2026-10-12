@@ -59,6 +59,17 @@ FEEDS=[
  ('Le Monde English','FR','https://www.lemonde.fr/en/rss/une.xml','en'),
  ('Anadolu World','GLOBAL','https://www.aa.com.tr/en/rss/default?cat=world','en'),
  ('South China Morning Post','GLOBAL','https://www.scmp.com/rss/91/feed','en'),
+ # Dedicated international coverage of China: keep these separate from domestic Chinese outlets.
+ ('Reuters China','CN','https://news.google.com/rss/search?q=site%3Areuters.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('BBC China','CN','https://news.google.com/rss/search?q=site%3Abbc.com%2Fnews%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Associated Press China','CN','https://news.google.com/rss/search?q=site%3Aapnews.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('New York Times China','CN','https://news.google.com/rss/search?q=site%3Anytimes.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Wall Street Journal China','CN','https://news.google.com/rss/search?q=site%3Awsj.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Bloomberg China','CN','https://news.google.com/rss/search?q=site%3Abloomberg.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('Financial Times China','CN','https://news.google.com/rss/search?q=site%3Aft.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('The Economist China','CN','https://news.google.com/rss/search?q=site%3Aeconomist.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('The Guardian China','CN','https://news.google.com/rss/search?q=site%3Atheguardian.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
+ ('NPR China','CN','https://news.google.com/rss/search?q=site%3Anpr.org%20China&hl=en-US&gl=US&ceid=US:en','en'),
 ]
 
 # 独立 AI/LLM 新闻池：官方一手发布 + 权威科技媒体交叉报道
@@ -165,7 +176,7 @@ def fetch_feed(feed):
 
 SOURCE_AUTHORITY={
  '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':95,'Google AI Blog':95,'Google DeepMind':96,'Anthropic News Watch':92,'NVIDIA AI Blog':94,'Microsoft AI Blog':93,'Hugging Face Blog':88,'TechCrunch AI':88,'Apple ML Research':93,'AWS ML Blog':92,'Microsoft Research AI':93,'Google Research':94,'arXiv cs.AI':90,'MIT Technology Review AI':93,'The Verge AI':88,
- 'Reuters':98,'Associated Press':97,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
+ 'Reuters':98,'Reuters China':98,'Associated Press':97,'Associated Press China':97,'New York Times China':96,'Wall Street Journal China':96,'Bloomberg China':96,'Financial Times China':96,'The Economist China':92,'BBC China':94,'The Guardian China':92,'NPR China':90,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
 }
@@ -310,7 +321,16 @@ def main():
   for c in arr:
    pool=raw.get(c['code'],[])
    # 不再按语言限制事件；国家页只负责地理组织，主来源由事件聚合模型选择。
-   ev=cluster(pool)[:c['max']*3]
+   ev=cluster(pool)
+   if c['code']=='CN':
+    # China section: prioritize foreign reporting, limit domestic-only stories to 25% of target capacity.
+    ev.sort(key=lambda e:(e.get('source_authority',0)>=80,e.get('importance',0),e.get('published_at') or ''),reverse=True)
+    foreign=[e for e in ev if e.get('source_authority',0)>=80]
+    domestic=[e for e in ev if e.get('source_authority',0)<80]
+    domestic_cap=max(2,round(int(c.get('max',20))*.25))
+    ev=(foreign+domestic[:domestic_cap])[:c['max']*3]
+   else:
+    ev=ev[:c['max']*3]
    report['tiers'][tier][c['name']]={'country':c['name'],'country_en':c['en'],'code':c['code'],'target_min':c['min'],'target_max':c['max'],'count':len(ev),'events':ev}
    all_events.extend(ev)
  report['supplement']=cluster(global_rows)[:10]
