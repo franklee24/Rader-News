@@ -134,7 +134,7 @@ def translation_is_usable(title, result):
 
 def argos_translate_chunks(title):
     # If a long headline defeats the offline model as a whole, translate clauses separately.
-    parts = [p.strip() for p in re.split(r"\s*(?:[,;:—–])\s*|\s+(?:as|after|before|while|amid|but|and|says|according to)\s+", title, flags=re.I) if len(p.strip()) >= 8]
+    parts = [p.strip() for p in re.split(r"\s*(?:[,;:—–])\s*|\s+(?:as|after|before|while|amid|during|following|despite|amidst|over|in the wake of|but|and|says|according to)\s+", title, flags=re.I) if len(p.strip()) >= 8]
     translated = []
     for part in parts:
         try:
@@ -168,6 +168,7 @@ def translate(title):
         "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
         "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
         "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
+        "Main opposition steps up criticism of Lee's golf outing during Daegu incident": "大邱事件期间李的高尔夫活动引发争议，主要反对党加大批评",
     }
     try:
         chunked = argos_translate_chunks(title)
