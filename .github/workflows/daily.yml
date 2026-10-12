@@ -113,21 +113,24 @@ jobs:
       - name: Cache offline translation model
         uses: actions/cache@v4
         with:
-          path: ~/.local/share/argos-translate
-          key: argos-en-zh-v1
-      - name: Prepare optional offline translation fallback
-        continue-on-error: true
-        timeout-minutes: 5
+          path: |
+            ~/.local/share/argos-translate
+            ~/.config/argos-translate
+          key: argos-en-zh-v2-${{ runner.os }}-py312
+      - name: Install required offline English-to-Chinese model
+        timeout-minutes: 15
         run: |
-          python -m pip install --quiet argostranslate
-          python - <<'PY' || (argospm update && argospm install translate-en_zh)
+          python -m pip install --upgrade argostranslate
+          argospm update
+          argospm install translate-en_zh
+          python - <<'PY'
           import argostranslate.translate
           languages=argostranslate.translate.get_installed_languages()
           en=next((x for x in languages if x.code=='en'),None)
           zh=next((x for x in languages if x.code=='zh'),None)
           if not (en and zh and en.get_translation(zh)):
-              raise SystemExit(1)
-          print('Offline English-to-Chinese fallback is available.')
+              raise SystemExit('REQUIRED OFFLINE EN-ZH MODEL NOT AVAILABLE')
+          print('Required Argos English-to-Chinese model is ready.')
           PY
       - name: Translate all English titles
         run: python scripts/translate_titles.py
