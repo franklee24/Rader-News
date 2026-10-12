@@ -45,7 +45,11 @@ jobs:
               raise SystemExit('LEGACY COUNTRY COVERAGE FEEDS DETECTED')
           if 'AI_FEEDS' not in text or "report['ai_news']=ai_events[:20]" not in text:
               raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
-          print('Checked-in V22 source configuration and AI/LLM module are active.')
+          for source in ('Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China'):
+              if source not in text: raise SystemExit('INTERNATIONAL CHINA SOURCE MISSING: '+source)
+          if "domestic_cap=max(2,round(int(c.get('max',20))*.25))" not in text:
+              raise SystemExit('CHINA SOURCE DIVERSITY RULE MISSING')
+          print('Checked-in V22 sources, international China coverage, domestic-source cap and AI/LLM module are active.')
           PY
       - name: Build daily news
         run: python scripts/build_daily.py
@@ -106,8 +110,26 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
-      - name: Translate English titles only
+      - name: Translate all English titles
         run: python scripts/translate_titles.py
+      - name: Validate headline translations
+        run: |
+          python - <<'PY3'
+          import json,re
+          from pathlib import Path
+          d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          events=[]
+          for tier in d.get('tiers',{}).values():
+              for country in tier.values(): events.extend(country.get('events',[]))
+          events.extend(d.get('global_top',[])); events.extend(d.get('supplement',[])); events.extend(d.get('ai_news',[]))
+          def english(s):
+              s=str(s or '').strip()
+              return bool(s) and not re.search(r'[\\u3400-\\u9fff]',s) and len(re.findall(r'[A-Za-z]',s))>=8 and len(re.findall(r'[A-Za-z]',s))/max(1,len(re.sub(r'\\s+','',s)))>=0.45
+          missing=[e.get('title','') for e in events if english(e.get('title')) and not re.search(r'[\\u3400-\\u9fff]',str(e.get('title_zh','')))]
+          if missing:
+              print('Missing Chinese translations:',len(missing)); print('\\n'.join(missing[:20])); raise SystemExit('HEADLINE TRANSLATION QUALITY GATE FAILED')
+          print('HEADLINE TRANSLATION QUALITY GATE PASSED; visible English headlines:',sum(1 for e in events if english(e.get('title'))))
+          PY3
       - name: Validate event quality
         run: |
           python - <<'PY2'
