@@ -116,9 +116,8 @@ jobs:
           path: ~/.local/share/argos-translate
           key: argos-en-zh-v1
       - name: Prepare optional offline translation fallback
-        if: runner.os == 'Windows'
         continue-on-error: true
-        timeout-minutes: 3
+        timeout-minutes: 5
         run: |
           python -m pip install --quiet argostranslate
           python - <<'PY' || (argospm update && argospm install translate-en_zh)
