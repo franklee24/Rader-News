@@ -308,6 +308,14 @@ def is_china_related(item):
  return any(re.search(p,text,re.I) for p in patterns)
 
 
+def country_for_source(item,china_watch_sources):
+ if item.get('source') in china_watch_sources:
+  if is_china_related(item): return 'CN'
+  # Do not let a China-specific feed's default country override an unrelated headline.
+  return infer_country({**item,'description':'','feed_country':None})
+ return infer_country(item)
+
+
 def is_low_signal_human_interest(item):
  title=item.get('title','')
  low=title.lower()
@@ -346,7 +354,7 @@ def main():
     # Dedicated international-media China feeds are intentionally assigned to China even
     # when a headline names a foreign official but the article's focus is China.
     china_watch_sources={'Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China','The Guardian China','NPR China'}
-    code=('CN' if is_china_related(x) else infer_country({**x,'description':''})) if x.get('source') in china_watch_sources else infer_country(x); x['code']=code
+    code=country_for_source(x,china_watch_sources); x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)
