@@ -9,9 +9,9 @@ on:
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
-# 北京时间 06:07、17:07（GitHub Actions cron 使用 UTC）
+# 北京时间每天 06:00、17:00（GitHub Actions cron 使用 UTC；实际启动可能略有延迟）
   schedule:
-    - cron: '7 9,22 * * *'
+    - cron: '0 9,22 * * *'
 
 permissions:
   contents: write
