@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T06:55:38.283529+00:00",
-  "generated_beijing": "2026-10-12 14:55",
+  "generated_at": "2026-10-12T07:01:00.624572+00:00",
+  "generated_beijing": "2026-10-12 15:01",
   "window_hours": 24,
   "version": "V22.0",
   "source_mode": "multi-source-event-first-direct-rss",
@@ -1967,7 +1967,7 @@
         "code": "CN",
         "target_min": 8,
         "target_max": 20,
-        "count": 39,
+        "count": 40,
         "events": [
           {
             "id": "5b5c6e07e453a0b7",
@@ -2137,6 +2137,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "8e022c7d4b44ae15",
+            "title": "文旅领域疫情防控指南不再要求提供核酸检测阴性证明",
+            "published_at": null,
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+                "published_at": null,
+                "description": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。",
+            "category": "公共卫生/疫情",
+            "domestic_score": 38,
+            "importance": 59,
+            "why_important": "涉及公共卫生/疫情，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "28394a0765ac5baf",
             "title": "阿富汗首都酒店爆炸袭击致5名中国公民受伤",
             "published_at": null,
@@ -2201,38 +2233,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "8e022c7d4b44ae15",
-            "title": "文旅领域疫情防控指南不再要求提供核酸检测阴性证明",
-            "published_at": null,
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "新华-时政",
-                "link": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-                "published_at": null,
-                "description": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。"
-              }
-            ],
-            "source": "新华-时政",
-            "url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-时政"
-            ],
-            "source_authority": 62,
-            "summary": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。",
-            "category": "公共卫生/疫情",
-            "domestic_score": 38,
-            "importance": 59,
-            "why_important": "涉及公共卫生/疫情，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "8091f46f09601b4c",
             "title": "Goldman Sachs president urges market reforms to boost Shanghai’s financial hub role",
             "published_at": "2026-10-12T06:07:33+00:00",
@@ -2290,6 +2290,38 @@
             "category": "金融",
             "domestic_score": 30,
             "importance": 55,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "21ed545230cbf834",
+            "title": "European, Chinese automakers launch product blitz at Paris car show in fight for market share - Reuters",
+            "published_at": "2026-10-12T05:55:00+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Reuters China",
+                "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
+                "published_at": "2026-10-12T05:55:00+00:00",
+                "description": "European, Chinese automakers launch product blitz at Paris car show in fight for market share Reuters"
+              }
+            ],
+            "source": "Reuters China",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Reuters China"
+            ],
+            "source_authority": 98,
+            "summary": "European, Chinese automakers launch product blitz at Paris car show in fight for market share Reuters",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 52,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -2585,38 +2617,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "340c17ca21b4be38",
-            "title": "The EU’s China dilemma: how to counter Beijing without alienating friends",
-            "published_at": "2026-10-11T11:00:14+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "South China Morning Post",
-                "link": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
-                "published_at": "2026-10-11T11:00:14+00:00",
-                "description": "In September, the Jaecoo 7 – a budget SUV from China’s Chery Automobile – made headlines when it shifted more than 10,00"
-              }
-            ],
-            "source": "South China Morning Post",
-            "url": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
-            "source_url": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
-            "source_count": 1,
-            "source_names": [
-              "South China Morning Post"
-            ],
-            "source_authority": 86,
-            "summary": "In September, the Jaecoo 7 – a budget SUV from China’s Chery Automobile – made headlines when it shifted more than 10,000 units to become Britain’s bestselling car. Christened the ",
-            "category": "宏观经济",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "0fa9d2564fbadc64",
             "title": "Asia’s largest industrial exhibition opens in Shanghai",
             "published_at": "2026-10-12T06:12:09+00:00",
@@ -2681,6 +2681,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "340c17ca21b4be38",
+            "title": "The EU’s China dilemma: how to counter Beijing without alienating friends",
+            "published_at": "2026-10-11T11:00:14+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "South China Morning Post",
+                "link": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
+                "published_at": "2026-10-11T11:00:14+00:00",
+                "description": "In September, the Jaecoo 7 – a budget SUV from China’s Chery Automobile – made headlines when it shifted more than 10,00"
+              }
+            ],
+            "source": "South China Morning Post",
+            "url": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
+            "source_url": "https://www.scmp.com/news/china/diplomacy/article/3370482/eus-china-dilemma-how-counter-beijing-without-alienating-friends?utm_source=rss_feed",
+            "source_count": 1,
+            "source_names": [
+              "South China Morning Post"
+            ],
+            "source_authority": 86,
+            "summary": "In September, the Jaecoo 7 – a budget SUV from China’s Chery Automobile – made headlines when it shifted more than 10,000 units to become Britain’s bestselling car. Christened the ",
+            "category": "宏观经济",
+            "domestic_score": 30,
+            "importance": 47,
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "5aa194a18e07375d",
             "title": "AI Is Redrawing the Map of the US-China Rivalry - Bloomberg.com",
             "published_at": "2026-10-11T12:00:02+00:00",
@@ -2737,7 +2769,7 @@
             "summary": "Beijing-based jeweller Laopu Gold has leased an entire mid-floor at One Exchange Square in Central to support its global expansion, according to two sources familiar with the matte",
             "category": "产业/商业",
             "domestic_score": 30,
-            "importance": 45,
+            "importance": 44,
             "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3065,38 +3097,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "ea34fb3fdb641b49",
-            "title": "Europe can fight the ‘China shock’ - Financial Times",
-            "published_at": "2026-10-11T11:00:08+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Financial Times AI",
-                "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
-                "published_at": "2026-10-11T11:00:08+00:00",
-                "description": "Europe can fight the ‘China shock’ Financial Times"
-              }
-            ],
-            "source": "Financial Times AI",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Financial Times AI"
-            ],
-            "source_authority": 97,
-            "summary": "Europe can fight the ‘China shock’ Financial Times",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 40,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "aaeef899f50f7042",
             "title": "Why are mainland China’s tax officials suddenly so interested in my Hong Kong MPF?",
             "published_at": "2026-10-11T09:00:11+00:00",
@@ -3122,6 +3122,38 @@
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 40,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "ea34fb3fdb641b49",
+            "title": "Europe can fight the ‘China shock’ - Financial Times",
+            "published_at": "2026-10-11T11:00:08+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Financial Times AI",
+                "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
+                "published_at": "2026-10-11T11:00:08+00:00",
+                "description": "Europe can fight the ‘China shock’ Financial Times"
+              }
+            ],
+            "source": "Financial Times AI",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUFSSS0xV005dGhsWGRESlV2M0FVd0FTNXQ3SHRxOFlrU0E5OE83QUwxZWh0dHNkM2QtU09ZbERHcVdPUld4X05UR244ODd1R0ZKMkZSWnZuWkdXVmpXaXV2N291bVk3N1JTQjg5WmtfS0gxRkE0RUVtMHgyTHo0bkpiTzk?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Financial Times AI"
+            ],
+            "source_authority": 97,
+            "summary": "Europe can fight the ‘China shock’ Financial Times",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 39,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -3747,38 +3779,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "573f89b808ef8cc6",
-            "title": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star - AP News",
-            "published_at": "2026-10-11T22:59:00+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "source": "Associated Press AI",
-                "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
-                "published_at": "2026-10-11T22:59:00+00:00",
-                "description": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star AP News"
-              }
-            ],
-            "source": "Associated Press AI",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Associated Press AI"
-            ],
-            "source_authority": 97,
-            "summary": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star AP News",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "953188e1a0091db5",
             "title": "英媒：锂离子电池价格十多年来首涨",
             "published_at": null,
@@ -4003,6 +4003,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "573f89b808ef8cc6",
+            "title": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star - AP News",
+            "published_at": "2026-10-11T22:59:00+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "source": "Associated Press AI",
+                "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
+                "published_at": "2026-10-11T22:59:00+00:00",
+                "description": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star AP News"
+              }
+            ],
+            "source": "Associated Press AI",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeWlVeHpXdGEtZHQ4TEhXTjRQVXdGaDZQcWhYWWN6VFRNalpYZWhQZTdjOWRtV2Y2ZE0yRzAtLVNKSWdYSHdPaE5paEtOYjNvajRfdUMtalJYUGwwZkV1Z2QtZG81Y3VNdWc3NUc5T1N1WHo4NDYxQ09YT0MxVkowRmtSUHVNWVR6aUlnUXZ3OFdIbkhJREY3RllVM1kyejk1?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Associated Press AI"
+            ],
+            "source_authority": 97,
+            "summary": "Quentin Tarantino’s first stage play will debut in London with Sacha Baron Cohen as star AP News",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "46dff20a0891ba2a",
             "title": "Man City's statement win has feeling of irrelevance with season in limbo",
             "published_at": "2026-10-11T20:02:27+00:00",
@@ -4202,7 +4234,7 @@
         "code": "FR",
         "target_min": 8,
         "target_max": 20,
-        "count": 34,
+        "count": 33,
         "events": [
           {
             "id": "f925ed6b00aea034",
@@ -4327,38 +4359,6 @@
             "domestic_score": 30,
             "importance": 53,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "21ed545230cbf834",
-            "title": "European, Chinese automakers launch product blitz at Paris car show in fight for market share - Reuters",
-            "published_at": "2026-10-12T05:55:00+00:00",
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "source": "Reuters",
-                "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
-                "published_at": "2026-10-12T05:55:00+00:00",
-                "description": "European, Chinese automakers launch product blitz at Paris car show in fight for market share Reuters"
-              }
-            ],
-            "source": "Reuters",
-            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE5ZM3ZtTlpCRVZYM0QzQmV1cWxaWkh5ZUx0UHQ2NmFZR0dkZGYxZVR6RFFnRUVqdXUxS1dmY2JlQXdRUXdqdGQ0bnE3bDN4M0pxSmlTOFN0eFZTTDF6aGg5NXJoT2N6Rl91bEpZZ25GeHh5WnNNc2R3UjU2b05uLVJyYXRPLXF2dExrZVI2Y2FDbU53R25lMnVnczl1dG84SlEteUVQS2V4X1FxRDRiUFMxbE8wdDdRNFBwY05ON1hkd2w2eDFVaTBUWF9IdmJBNWZDWjJvdm5TQQ?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Reuters"
-            ],
-            "source_authority": 98,
-            "summary": "European, Chinese automakers launch product blitz at Paris car show in fight for market share Reuters",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 52,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -5229,6 +5229,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "f4f6fe1af118282d",
+            "title": "陕西文化艺术展在巴黎举行",
+            "published_at": null,
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+                "published_at": null,
+                "description": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 34,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "5c0b1dd0d8243830",
             "title": "全球连线|法国队战胜英格兰 第7次打入世界杯半决赛",
             "published_at": null,
@@ -5251,38 +5283,6 @@
             ],
             "source_authority": 62,
             "summary": "北京时间10日晚，卫冕冠军法国队以2:1战胜英格兰队，挺进卡塔尔世界杯足球赛四强。",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 34,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "f4f6fe1af118282d",
-            "title": "陕西文化艺术展在巴黎举行",
-            "published_at": null,
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-                "published_at": null,
-                "description": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-            "source_url": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。",
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 34,
@@ -5694,7 +5694,7 @@
         "code": "RU",
         "target_min": 8,
         "target_max": 20,
-        "count": 51,
+        "count": 50,
         "events": [
           {
             "id": "7007e7ba17ea3fb4",
@@ -5722,38 +5722,6 @@
             "category": "国防安全",
             "domestic_score": 30,
             "importance": 75,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "重要事件",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "4ea483a1504f7874",
-            "title": "UK does not support Trump's Russia diesel deal, says Streeting",
-            "published_at": "2026-10-11T11:00:49+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "source": "BBC UK",
-                "link": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-11T11:00:49+00:00",
-                "description": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine"
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine.",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 73,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -5817,6 +5785,38 @@
             "summary": "NATO’s top military commander is expected to warn Russia on Monday that the alliance can counter any attack, officials said. US General Alexus Grynkewich will outline his “theory o",
             "category": "国防安全",
             "domestic_score": 46,
+            "importance": 72,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "重要事件",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "4ea483a1504f7874",
+            "title": "UK does not support Trump's Russia diesel deal, says Streeting",
+            "published_at": "2026-10-11T11:00:49+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "source": "BBC UK",
+                "link": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-11T11:00:49+00:00",
+                "description": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine"
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine.",
+            "category": "国防安全",
+            "domestic_score": 30,
             "importance": 72,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -6927,8 +6927,8 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "ff21154e825befcf",
-            "title": "Documents falsified to evade tax on Abramovich's wealth",
+            "id": "3ddb6d5ac2eeeae6",
+            "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
             "published_at": "2026-10-12T05:00:52+00:00",
             "code": "RU",
             "event_country": "俄罗斯",
@@ -6937,7 +6937,7 @@
                 "source": "BBC World",
                 "link": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss",
                 "published_at": "2026-10-12T05:00:52+00:00",
-                "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds."
+                "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds."
               }
             ],
             "source": "BBC World",
@@ -6948,7 +6948,7 @@
               "BBC World"
             ],
             "source_authority": 94,
-            "summary": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, BBC finds.",
+            "summary": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds.",
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 43,
@@ -7048,38 +7048,6 @@
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 41,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "99023118b12f2380",
-            "title": "Andy Burnham says it is clear Russia interfered in Brexit referendum",
-            "published_at": "2026-10-11T15:33:15+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "source": "卫报",
-                "link": "https://www.theguardian.com/politics/2026/oct/11/andy-burnham-russia-interfered-brexit-vote",
-                "published_at": "2026-10-11T15:33:15+00:00",
-                "description": "PM says he asked question upon entering No 10 but does not reveal who gave him ‘clear answer’ Russia meddled Andy Burnha"
-              }
-            ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/politics/2026/oct/11/andy-burnham-russia-interfered-brexit-vote",
-            "source_url": "https://www.theguardian.com/politics/2026/oct/11/andy-burnham-russia-interfered-brexit-vote",
-            "source_count": 1,
-            "source_names": [
-              "卫报"
-            ],
-            "source_authority": 92,
-            "summary": "PM says he asked question upon entering No 10 but does not reveal who gave him ‘clear answer’ Russia meddled Andy Burnham has said it is clear Russia interfered in the Brexit refer",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 40,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -7350,7 +7318,7 @@
         "code": "JP",
         "target_min": 8,
         "target_max": 20,
-        "count": 15,
+        "count": 16,
         "events": [
           {
             "id": "04d1ace3972639dc",
@@ -7411,6 +7379,38 @@
             "domestic_score": 38,
             "importance": 65,
             "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "e7a092a98e31a825",
+            "title": "French defense firm Thales to build Japan base, media report says",
+            "published_at": "2026-10-12T06:54:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "source": "Japan Times",
+                "link": "https://www.japantimes.co.jp/business/2026/10/12/companies/french-defense-firm-japan-base/",
+                "published_at": "2026-10-12T06:54:00+00:00",
+                "description": "Thales Chairman and CEO Patrice Caine told the Nikkei daily that the base \"will mark a milestone toward Thales's long-te"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/business/2026/10/12/companies/french-defense-firm-japan-base/",
+            "source_url": "https://www.japantimes.co.jp/business/2026/10/12/companies/french-defense-firm-japan-base/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "Thales Chairman and CEO Patrice Caine told the Nikkei daily that the base \"will mark a milestone toward Thales's long-term engagement in Japan.\"",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 60,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
@@ -7673,38 +7673,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "fcd51478a726272c",
-            "title": "Nishikori appears alongside Federer at retirement event",
-            "published_at": "2026-10-12T03:01:00+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "source": "Japan Times",
-                "link": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
-                "published_at": "2026-10-12T03:01:00+00:00",
-                "description": "At the event held at the Ariake Coliseum indoor stadium in Tokyo, Nishikori held exhibition matches with Swiss tennis le"
-              }
-            ],
-            "source": "Japan Times",
-            "url": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
-            "source_url": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
-            "source_count": 1,
-            "source_names": [
-              "Japan Times"
-            ],
-            "source_authority": 91,
-            "summary": "At the event held at the Ariake Coliseum indoor stadium in Tokyo, Nishikori held exhibition matches with Swiss tennis legend Roger Federer and others.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "53e7b8dbed6645a6",
             "title": "Anti-sexual assault certification set for Japan’s cram schools",
             "published_at": "2026-10-12T02:07:00+00:00",
@@ -7730,6 +7698,38 @@
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 42,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "fcd51478a726272c",
+            "title": "Nishikori appears alongside Federer at retirement event",
+            "published_at": "2026-10-12T03:01:00+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "source": "Japan Times",
+                "link": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
+                "published_at": "2026-10-12T03:01:00+00:00",
+                "description": "At the event held at the Ariake Coliseum indoor stadium in Tokyo, Nishikori held exhibition matches with Swiss tennis le"
+              }
+            ],
+            "source": "Japan Times",
+            "url": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
+            "source_url": "https://www.japantimes.co.jp/sports/2026/10/12/tennis/nishikori-retirement-event/",
+            "source_count": 1,
+            "source_names": [
+              "Japan Times"
+            ],
+            "source_authority": 91,
+            "summary": "At the event held at the Ariake Coliseum indoor stadium in Tokyo, Nishikori held exhibition matches with Swiss tennis legend Roger Federer and others.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 41,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -7825,7 +7825,7 @@
             "summary": "Eztia CEO Tiffany Yeh discusses the story behind this innovation and its potential across a wide range of applications.",
             "category": "其他/综合",
             "domestic_score": 30,
-            "importance": 41,
+            "importance": 40,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -9216,38 +9216,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "e8d7b710662ae7e0",
-            "title": "Oil chiefs pull out of Riyadh energy congress after airport missile strike",
-            "published_at": "2026-10-11T16:56:50+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "金融时报",
-                "link": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
-                "published_at": "2026-10-11T16:56:50+00:00",
-                "description": "BP and others skip World Petroleum Council meeting after 12 killed in Houthi attack"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "BP and others skip World Petroleum Council meeting after 12 killed in Houthi attack",
-            "category": "能源",
-            "domestic_score": 46,
-            "importance": 66,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "149a021dc740e40d",
             "title": "Saudi Arabia’s Riyadh Airport Attacked Again, After Days of Houthi Strikes",
             "published_at": "2026-10-11T08:55:27+00:00",
@@ -9274,6 +9242,38 @@
             "domestic_score": 38,
             "importance": 66,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "e8d7b710662ae7e0",
+            "title": "Oil chiefs pull out of Riyadh energy congress after airport missile strike",
+            "published_at": "2026-10-11T16:56:50+00:00",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "金融时报",
+                "link": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
+                "published_at": "2026-10-11T16:56:50+00:00",
+                "description": "BP and others skip World Petroleum Council meeting after 12 killed in Houthi attack"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/a01776ea-4a12-4195-8820-e43a885ba5fe?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "BP and others skip World Petroleum Council meeting after 12 killed in Houthi attack",
+            "category": "能源",
+            "domestic_score": 46,
+            "importance": 65,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
@@ -9575,38 +9575,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "cbe0bef22fd83dc0",
-            "title": "Saudi Arabia: Second strike kills at least 1 at Riyadh airport",
-            "published_at": "2026-10-11T22:59:00+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "DW",
-                "link": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
-                "published_at": "2026-10-11T22:59:00+00:00",
-                "description": "Sunday's strike came as the King Khalid International Airport remained closed after a deadly attack on Saturday, and aft"
-              }
-            ],
-            "source": "DW",
-            "url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
-            "source_url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
-            "source_count": 1,
-            "source_names": [
-              "DW"
-            ],
-            "source_authority": 89,
-            "summary": "Sunday's strike came as the King Khalid International Airport remained closed after a deadly attack on Saturday, and after a warning from Houthi rebels in Yemen that \"worse is yet ",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 60,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "3eb2f267317ee428",
             "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
             "published_at": "2026-10-11T22:45:58+00:00",
@@ -9727,6 +9695,38 @@
             "summary": "At least 12 people were killed and 300 others were injured in a deadly attack on the same airport on October 10",
             "category": "国防安全",
             "domestic_score": 38,
+            "importance": 59,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "cbe0bef22fd83dc0",
+            "title": "Saudi Arabia: Second strike kills at least 1 at Riyadh airport",
+            "published_at": "2026-10-11T22:59:00+00:00",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "DW",
+                "link": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
+                "published_at": "2026-10-11T22:59:00+00:00",
+                "description": "Sunday's strike came as the King Khalid International Airport remained closed after a deadly attack on Saturday, and aft"
+              }
+            ],
+            "source": "DW",
+            "url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
+            "source_url": "https://www.dw.com/en/saudi-arabia-second-strike-kills-at-least-1-at-riyadh-airport/a-79632306?maca=en-rss-en-all-1573-xml-mrss",
+            "source_count": 1,
+            "source_names": [
+              "DW"
+            ],
+            "source_authority": 89,
+            "summary": "Sunday's strike came as the King Khalid International Airport remained closed after a deadly attack on Saturday, and after a warning from Houthi rebels in Yemen that \"worse is yet ",
+            "category": "国防安全",
+            "domestic_score": 30,
             "importance": 59,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -10151,32 +10151,64 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "2d1fdeef19edf130",
-            "title": "通讯：“我们是好朋友、好伙伴、好兄弟”——中阿友好合作交流展见证中阿友好关系发展历史",
+            "id": "ffcaa2cc46668c8a",
+            "title": "习近平会见索马里总统马哈茂德",
             "published_at": null,
             "code": "SA",
             "event_country": "沙特阿拉伯",
             "sources": [
               {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
                 "published_at": null,
-                "description": "由国务院新闻办公室指导，新华通讯社主办，新华社中国图片社承办的中阿友好合作交流展近日在沙特阿拉伯首都利雅得成功举办。展览分为“历久弥坚”“合作新篇”“文明互鉴”三部分，展出的103张照片均来自新华社中国照片档案馆的珍贵馆藏资源，生动展现了中"
+                "description": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。"
               }
             ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
-            "source_url": "http://www.news.cn/world/2022-12/11/c_1129200210.htm",
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
             "source_count": 1,
             "source_names": [
-              "新华-国际"
+              "新华-时政"
             ],
             "source_authority": 62,
-            "summary": "由国务院新闻办公室指导，新华通讯社主办，新华社中国图片社承办的中阿友好合作交流展近日在沙特阿拉伯首都利雅得成功举办。展览分为“历久弥坚”“合作新篇”“文明互鉴”三部分，展出的103张照片均来自新华社中国照片档案馆的珍贵馆藏资源，生动展现了中国与阿拉伯国家在经济、社会、文化、抗击新冠疫情和人道主义援助等领域的合作交流成果。",
-            "category": "宏观经济",
+            "summary": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。",
+            "category": "政治",
             "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "importance": 42,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "df35f78ebebb6768",
+            "title": "习近平会见突尼斯总统赛义德",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+                "published_at": null,
+                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 42,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -10215,63 +10247,31 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "f162f1cef9f2da63",
-            "title": "习近平会见阿尔及利亚总理阿卜杜拉赫曼",
+            "id": "a19431c4e5c1d1f3",
+            "title": "习近平会见伊拉克总理苏达尼",
             "published_at": null,
             "code": "SA",
             "event_country": "沙特阿拉伯",
             "sources": [
               {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
                 "published_at": null,
-                "description": "当地时间12月9日晚，国家主席习近平在利雅得会见阿尔及利亚总理阿卜杜拉赫曼。"
+                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。"
               }
             ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
-            "source_url": "http://www.news.cn/world/2022-12/10/c_1129197284.htm",
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
             "source_count": 1,
             "source_names": [
-              "新华-国际"
+              "新华-时政"
             ],
             "source_authority": 62,
-            "summary": "当地时间12月9日晚，国家主席习近平在利雅得会见阿尔及利亚总理阿卜杜拉赫曼。",
+            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 41,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "e50c5eb4fd44a566",
-            "title": "国际锐评丨“既古老又年轻”的中海关系将焕发更大生机",
-            "published_at": null,
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/11/c_1129200227.htm",
-                "published_at": null,
-                "description": "海合会是海湾地区最主要的政治经济组织，成员国包括沙特、阿联酋、卡塔尔、科威特、阿曼、巴林6国。中国与海合会国家之间关系很古老，古丝绸之路缔结了双方近两千年的友好交往史。"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/11/c_1129200227.htm",
-            "source_url": "http://www.news.cn/world/2022-12/11/c_1129200227.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "海合会是海湾地区最主要的政治经济组织，成员国包括沙特、阿联酋、卡塔尔、科威特、阿曼、巴林6国。中国与海合会国家之间关系很古老，古丝绸之路缔结了双方近两千年的友好交往史。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 37,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -10680,6 +10680,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "966994661172b82e",
+            "title": "Defense ministry opens military's 1st AI transformation base",
+            "published_at": "2026-10-12T06:55:53+00:00",
+            "code": "KR",
+            "event_country": "韩国",
+            "sources": [
+              {
+                "source": "Yonhap",
+                "link": "https://en.yna.co.kr/view/AEN20261012006500315",
+                "published_at": "2026-10-12T06:55:53+00:00",
+                "description": "SEOUL, Oct. 12 (Yonhap) -- The defense ministry on Monday opened the military's ..."
+              }
+            ],
+            "source": "Yonhap",
+            "url": "https://en.yna.co.kr/view/AEN20261012006500315",
+            "source_url": "https://en.yna.co.kr/view/AEN20261012006500315",
+            "source_count": 1,
+            "source_names": [
+              "Yonhap"
+            ],
+            "source_authority": 88,
+            "summary": "SEOUL, Oct. 12 (Yonhap) -- The defense ministry on Monday opened the military's ...",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 58,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "3c67e3dc5468d672",
             "title": "Unification minister says S. Korea-U.S. alliance intact despite conflicting interests",
             "published_at": "2026-10-12T04:25:23+00:00",
@@ -10936,38 +10968,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "b919e2a4e601fa71",
-            "title": "S. Korea's economic recovery yet to benefit households broadly: KDI",
-            "published_at": "2026-10-12T03:00:07+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "source": "Yonhap",
-                "link": "https://en.yna.co.kr/view/AEN20261012002200320",
-                "published_at": "2026-10-12T03:00:07+00:00",
-                "description": "SEOUL, Oct. 12 (Yonhap) -- The benefits of South Korea's economic recovery have ..."
-              }
-            ],
-            "source": "Yonhap",
-            "url": "https://en.yna.co.kr/view/AEN20261012002200320",
-            "source_url": "https://en.yna.co.kr/view/AEN20261012002200320",
-            "source_count": 1,
-            "source_names": [
-              "Yonhap"
-            ],
-            "source_authority": 88,
-            "summary": "SEOUL, Oct. 12 (Yonhap) -- The benefits of South Korea's economic recovery have ...",
-            "category": "宏观经济",
-            "domestic_score": 30,
-            "importance": 45,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "9cdc88d398143977",
             "title": "Main opposition steps up criticism of Lee's golf outing during Daegu incident",
             "published_at": "2026-10-12T06:21:28+00:00",
@@ -11032,32 +11032,32 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "a573b03efe6beea6",
-            "title": "BOK chief to attend G20, IMF-WBG meetings in Bangkok",
-            "published_at": "2026-10-12T03:00:11+00:00",
+            "id": "b919e2a4e601fa71",
+            "title": "S. Korea's economic recovery yet to benefit households broadly: KDI",
+            "published_at": "2026-10-12T03:00:07+00:00",
             "code": "KR",
             "event_country": "韩国",
             "sources": [
               {
                 "source": "Yonhap",
-                "link": "https://en.yna.co.kr/view/AEN20261012002000320",
-                "published_at": "2026-10-12T03:00:11+00:00",
-                "description": "SEOUL, Oct. 12 (Yonhap) -- South Korea's top central banker will attend a meetin..."
+                "link": "https://en.yna.co.kr/view/AEN20261012002200320",
+                "published_at": "2026-10-12T03:00:07+00:00",
+                "description": "SEOUL, Oct. 12 (Yonhap) -- The benefits of South Korea's economic recovery have ..."
               }
             ],
             "source": "Yonhap",
-            "url": "https://en.yna.co.kr/view/AEN20261012002000320",
-            "source_url": "https://en.yna.co.kr/view/AEN20261012002000320",
+            "url": "https://en.yna.co.kr/view/AEN20261012002200320",
+            "source_url": "https://en.yna.co.kr/view/AEN20261012002200320",
             "source_count": 1,
             "source_names": [
               "Yonhap"
             ],
             "source_authority": 88,
-            "summary": "SEOUL, Oct. 12 (Yonhap) -- South Korea's top central banker will attend a meetin...",
-            "category": "金融",
+            "summary": "SEOUL, Oct. 12 (Yonhap) -- The benefits of South Korea's economic recovery have ...",
+            "category": "宏观经济",
             "domestic_score": 30,
             "importance": 44,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -11122,6 +11122,38 @@
             "domestic_score": 30,
             "importance": 44,
             "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "a573b03efe6beea6",
+            "title": "BOK chief to attend G20, IMF-WBG meetings in Bangkok",
+            "published_at": "2026-10-12T03:00:11+00:00",
+            "code": "KR",
+            "event_country": "韩国",
+            "sources": [
+              {
+                "source": "Yonhap",
+                "link": "https://en.yna.co.kr/view/AEN20261012002000320",
+                "published_at": "2026-10-12T03:00:11+00:00",
+                "description": "SEOUL, Oct. 12 (Yonhap) -- South Korea's top central banker will attend a meetin..."
+              }
+            ],
+            "source": "Yonhap",
+            "url": "https://en.yna.co.kr/view/AEN20261012002000320",
+            "source_url": "https://en.yna.co.kr/view/AEN20261012002000320",
+            "source_count": 1,
+            "source_names": [
+              "Yonhap"
+            ],
+            "source_authority": 88,
+            "summary": "SEOUL, Oct. 12 (Yonhap) -- South Korea's top central banker will attend a meetin...",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -11406,38 +11438,6 @@
             ],
             "source_authority": 88,
             "summary": "SEOUL, Oct. 12 (Yonhap) -- No South Korean player remains in the ongoing major l...",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 36,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "45deb6d38b10d48c",
-            "title": "Today in Korean history",
-            "published_at": "2026-10-12T05:00:03+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "source": "Yonhap",
-                "link": "https://en.yna.co.kr/view/AEN20261012000700315",
-                "published_at": "2026-10-12T05:00:03+00:00",
-                "description": "Oct. 13"
-              }
-            ],
-            "source": "Yonhap",
-            "url": "https://en.yna.co.kr/view/AEN20261012000700315",
-            "source_url": "https://en.yna.co.kr/view/AEN20261012000700315",
-            "source_count": 1,
-            "source_names": [
-              "Yonhap"
-            ],
-            "source_authority": 88,
-            "summary": "Oct. 13",
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 36,
@@ -11852,38 +11852,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "844fc47ac78e2756",
-            "title": "'Unfinished business' lures couple back to Queensland island paradise",
-            "published_at": "2026-10-12T02:56:30+00:00",
-            "code": "AU",
-            "event_country": "澳大利亚",
-            "sources": [
-              {
-                "source": "ABC Australia",
-                "link": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
-                "published_at": "2026-10-12T02:56:30+00:00",
-                "description": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the isla"
-              }
-            ],
-            "source": "ABC Australia",
-            "url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
-            "source_url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
-            "source_count": 1,
-            "source_names": [
-              "ABC Australia"
-            ],
-            "source_authority": 88,
-            "summary": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the island this week is their son, who spent the first four years of",
-            "category": "产业/商业",
-            "domestic_score": 30,
-            "importance": 40,
-            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "136490b30b5e447c",
             "title": "100 preschools set to open in NSW, but how many will be accepting children?",
             "published_at": "2026-10-12T06:16:51+00:00",
@@ -11942,6 +11910,38 @@
             "domestic_score": 30,
             "importance": 39,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "844fc47ac78e2756",
+            "title": "'Unfinished business' lures couple back to Queensland island paradise",
+            "published_at": "2026-10-12T02:56:30+00:00",
+            "code": "AU",
+            "event_country": "澳大利亚",
+            "sources": [
+              {
+                "source": "ABC Australia",
+                "link": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+                "published_at": "2026-10-12T02:56:30+00:00",
+                "description": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the isla"
+              }
+            ],
+            "source": "ABC Australia",
+            "url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+            "source_url": "https://www.abc.net.au/news/2026-10-12/steve-sharpe-louise-collier-return-low-isles-caretakers/107254862",
+            "source_count": 1,
+            "source_names": [
+              "ABC Australia"
+            ],
+            "source_authority": 88,
+            "summary": "Steve Sharpe and Louise Collier are the new caretakers of Low Isles, in the Great Barrier Reef. Joining them on the island this week is their son, who spent the first four years of",
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 39,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -12195,6 +12195,38 @@
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "802ec60895539970",
+            "title": "Ukraine says Russia violated Trump’s ‘energy ceasefire’ – Europe live",
+            "published_at": "2026-10-12T06:54:56+00:00",
+            "code": "UA",
+            "event_country": "乌克兰",
+            "sources": [
+              {
+                "source": "卫报",
+                "link": "https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates",
+                "published_at": "2026-10-12T06:54:56+00:00",
+                "description": "Volodymyr Zelenskyy says Kyiv power plant among the facilities hit after US president claims ‘energy ceasefire’, while K"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates",
+            "source_url": "https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Volodymyr Zelenskyy says Kyiv power plant among the facilities hit after US president claims ‘energy ceasefire’, while Kremlin yet to confirm any deal Trump announces partial cease",
+            "category": "政治",
+            "domestic_score": 38,
+            "importance": 58,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
@@ -12900,38 +12932,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "02232c185a60bcff",
-            "title": "Footage shows moment Russian strike hits Ukrainian grocery store",
-            "published_at": "2026-10-11T22:49:23+00:00",
-            "code": "UA",
-            "event_country": "乌克兰",
-            "sources": [
-              {
-                "source": "半岛电视台",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/footage-shows-moment-russian-strike-hits-ukrainian-grocery-store?traffic_source=rss",
-                "published_at": "2026-10-11T22:49:23+00:00",
-                "description": "CCTV footage shows the moment of a Russian strike on a residential street in Kharkiv, Ukraine."
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/footage-shows-moment-russian-strike-hits-ukrainian-grocery-store?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/footage-shows-moment-russian-strike-hits-ukrainian-grocery-store?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "CCTV footage shows the moment of a Russian strike on a residential street in Kharkiv, Ukraine.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 29,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           }
         ]
       },
@@ -13530,14 +13530,14 @@
           {
             "id": "548336bc24cb899b",
             "title": "Hurricane Simon pounds resorts and vulnerable towns along Mexico’s Pacific coast - AP News",
-            "published_at": "2026-10-12T05:49:00+00:00",
+            "published_at": "2026-10-11T12:22:44+00:00",
             "code": "MX",
             "event_country": "墨西哥",
             "sources": [
               {
                 "source": "Associated Press AI",
                 "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPM1JYNEFiNHpwMTFGZFVETFU1SG9OMXEzTzIzbWh1ZmxoVWY4bTNwTzlxZ1A1VWhmaFJ1bWNIbFEtc0VYVmJZZ0FIQ1JBdTkyU21wamtWdXh1azZUMnpWZ0JOVHc3emE3WVNmTlFBVXdjQ2xiX1FldkExelhnbFRJM1NBY0J6ZVJ4LUE?oc=5",
-                "published_at": "2026-10-12T05:49:00+00:00",
+                "published_at": "2026-10-11T12:22:44+00:00",
                 "description": "Hurricane Simon pounds resorts and vulnerable towns along Mexico’s Pacific coast AP News"
               },
               {
@@ -13559,7 +13559,7 @@
             "summary": "Hurricane Simon pounds resorts and vulnerable towns along Mexico’s Pacific coast AP News",
             "category": "其他/综合",
             "domestic_score": 30,
-            "importance": 35,
+            "importance": 32,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -14075,7 +14075,7 @@
         "code": "SG",
         "target_min": 2,
         "target_max": 8,
-        "count": 7,
+        "count": 8,
         "events": [
           {
             "id": "9935b576be05d4fb",
@@ -14166,7 +14166,7 @@
             "summary": "At least two people were airlifted to hospital in the past two days after falling ill while hiking in Hong Kong, with a middle-aged man dying and a 17-year-old Singaporean girl dis",
             "category": "法律/犯罪",
             "domestic_score": 30,
-            "importance": 28,
+            "importance": 27,
             "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -14270,6 +14270,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "8aa2191a946cf1ff",
+            "title": "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News",
+            "published_at": "2026-10-11T16:13:10+00:00",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "source": "Associated Press AI",
+                "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSXNQcV94Z05vNC1CaEpsMFdjaWVSaUs1TS1xekZlbV81U2tUM3prTGltUUw1REhQTE9pUF9FMFlMZU1TYXZaNmxMTDNFMkhDY2hLVl9waTJJNTBPZlptQURFSTVJZ1RjYUNFNmpvR3hhQjVBcnE4QUtnZTdtTWp3aEx4ZnhEbVBaNXNTSU00SE5JWS10clhvWTVWRUgwLWNnT0VxQmk4bWFNYzhFdDRB?oc=5",
+                "published_at": "2026-10-11T16:13:10+00:00",
+                "description": "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title AP News"
+              }
+            ],
+            "source": "Associated Press AI",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSXNQcV94Z05vNC1CaEpsMFdjaWVSaUs1TS1xekZlbV81U2tUM3prTGltUUw1REhQTE9pUF9FMFlMZU1TYXZaNmxMTDNFMkhDY2hLVl9waTJJNTBPZlptQURFSTVJZ1RjYUNFNmpvR3hhQjVBcnE4QUtnZTdtTWp3aEx4ZnhEbVBaNXNTSU00SE5JWS10clhvWTVWRUgwLWNnT0VxQmk4bWFNYzhFdDRB?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSXNQcV94Z05vNC1CaEpsMFdjaWVSaUs1TS1xekZlbV81U2tUM3prTGltUUw1REhQTE9pUF9FMFlMZU1TYXZaNmxMTDNFMkhDY2hLVl9waTJJNTBPZlptQURFSTVJZ1RjYUNFNmpvR3hhQjVBcnE4QUtnZTdtTWp3aEx4ZnhEbVBaNXNTSU00SE5JWS10clhvWTVWRUgwLWNnT0VxQmk4bWFNYzhFdDRB?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Associated Press AI"
+            ],
+            "source_authority": 97,
+            "summary": "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title AP News",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 24,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "9561d9475d833b66",
             "title": "世界一级方程式赛车锦标赛（F1）新加坡大奖赛正赛：维斯塔潘夺冠",
             "published_at": "2026-10-12T06:41:31+00:00",
@@ -14360,7 +14392,7 @@
         "code": "IL",
         "target_min": 2,
         "target_max": 8,
-        "count": 12,
+        "count": 13,
         "events": [
           {
             "id": "bef646b0df84fe29",
@@ -14420,6 +14452,38 @@
             "category": "国防安全",
             "domestic_score": 30,
             "importance": 57,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "07f3dcbea64f6556",
+            "title": "Investigation into FlyDubai Attacker Puts Spotlight on a Melbourne Mosque",
+            "published_at": "2026-10-12T06:57:17+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "source": "纽约时报",
+                "link": "https://www.nytimes.com/2026/10/12/world/asia/investigation-into-flydubai-attacker-puts-spotlight-on-a-melbourne-mosque.html",
+                "published_at": "2026-10-12T06:57:17+00:00",
+                "description": "Emirati investigators said the co-pilot accused of attacking a captain on a flight to Israel drifted toward extremism du"
+              }
+            ],
+            "source": "纽约时报",
+            "url": "https://www.nytimes.com/2026/10/12/world/asia/investigation-into-flydubai-attacker-puts-spotlight-on-a-melbourne-mosque.html",
+            "source_url": "https://www.nytimes.com/2026/10/12/world/asia/investigation-into-flydubai-attacker-puts-spotlight-on-a-melbourne-mosque.html",
+            "source_count": 1,
+            "source_names": [
+              "纽约时报"
+            ],
+            "source_authority": 96,
+            "summary": "Emirati investigators said the co-pilot accused of attacking a captain on a flight to Israel drifted toward extremism during his time as a student in Australia.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 52,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -14515,38 +14579,6 @@
             "summary": "Meanwhile, 12,424 people have being injured",
             "category": "国防安全",
             "domestic_score": 38,
-            "importance": 48,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "e1beee9e8da2458b",
-            "title": "The week in pictures: French student protests, October 7 anniversary and Adenot's return to Earth",
-            "published_at": "2026-10-11T13:17:55+00:00",
-            "code": "IL",
-            "event_country": "以色列",
-            "sources": [
-              {
-                "source": "France24",
-                "link": "https://www.france24.com/en/europe/20261011-the-week-in-pictures-french-student-protests-october-7-anniversary-and-adenot-return-to-earth",
-                "published_at": "2026-10-11T13:17:55+00:00",
-                "description": "Blockades and protests by French secondary school and university students continued, occasionally becoming violent; Fren"
-              }
-            ],
-            "source": "France24",
-            "url": "https://www.france24.com/en/europe/20261011-the-week-in-pictures-french-student-protests-october-7-anniversary-and-adenot-return-to-earth",
-            "source_url": "https://www.france24.com/en/europe/20261011-the-week-in-pictures-french-student-protests-october-7-anniversary-and-adenot-return-to-earth",
-            "source_count": 1,
-            "source_names": [
-              "France24"
-            ],
-            "source_authority": 88,
-            "summary": "Blockades and protests by French secondary school and university students continued, occasionally becoming violent; French astronaut Sophie Adenot returned to Earth after eight mon",
-            "category": "国防安全",
-            "domestic_score": 30,
             "importance": 48,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -14741,6 +14773,38 @@
             "domestic_score": 30,
             "importance": 32,
             "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "53ccc0e571fd208a",
+            "title": "Melbourne Islamic leader linked to suspected Flydubai hijacker condemns 'false accusations'",
+            "published_at": "2026-10-12T03:49:40+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "source": "France24",
+                "link": "https://www.france24.com/en/asia-pacific/20261012-melbourne-man-linked-to-suspected-flydubai-hijacker-condemns-false-accusations",
+                "published_at": "2026-10-12T03:49:40+00:00",
+                "description": "Abu Hamza, whose Melbourne-based Islamic community centre was linked by Emirati prosecutors to the suspect in the attemp"
+              }
+            ],
+            "source": "France24",
+            "url": "https://www.france24.com/en/asia-pacific/20261012-melbourne-man-linked-to-suspected-flydubai-hijacker-condemns-false-accusations",
+            "source_url": "https://www.france24.com/en/asia-pacific/20261012-melbourne-man-linked-to-suspected-flydubai-hijacker-condemns-false-accusations",
+            "source_count": 1,
+            "source_names": [
+              "France24"
+            ],
+            "source_authority": 88,
+            "summary": "Abu Hamza, whose Melbourne-based Islamic community centre was linked by Emirati prosecutors to the suspect in the attempted hijacking of an Israel-bound passenger jet, publicly dis",
+            "category": "法律/犯罪",
+            "domestic_score": 30,
+            "importance": 31,
+            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -15766,38 +15830,6 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
-      "id": "4ea483a1504f7874",
-      "title": "UK does not support Trump's Russia diesel deal, says Streeting",
-      "published_at": "2026-10-11T11:00:49+00:00",
-      "code": "RU",
-      "event_country": "俄罗斯",
-      "sources": [
-        {
-          "source": "BBC UK",
-          "link": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-          "published_at": "2026-10-11T11:00:49+00:00",
-          "description": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine"
-        }
-      ],
-      "source": "BBC UK",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-      "source_url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
-      "source_count": 1,
-      "source_names": [
-        "BBC UK"
-      ],
-      "source_authority": 94,
-      "summary": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine.",
-      "category": "国防安全",
-      "domestic_score": 30,
-      "importance": 73,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "importance_level": "重要事件",
-      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-    },
-    {
       "id": "05e911ef5e9cadae",
       "title": "Modi government waging war against citizens to protect CEC: Abhijeet Dipke",
       "published_at": "2026-10-12T06:39:16+00:00",
@@ -15918,6 +15950,38 @@
       "summary": "US president’s plan to park the wars in Iran and Yemen, while blaming Ukraine for diesel prices, looks unsustainable The reckless missile attack on King Khalid international airpor",
       "category": "国防安全",
       "domestic_score": 46,
+      "importance": 72,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "importance_level": "重要事件",
+      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+    },
+    {
+      "id": "4ea483a1504f7874",
+      "title": "UK does not support Trump's Russia diesel deal, says Streeting",
+      "published_at": "2026-10-11T11:00:49+00:00",
+      "code": "RU",
+      "event_country": "俄罗斯",
+      "sources": [
+        {
+          "source": "BBC UK",
+          "link": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-11T11:00:49+00:00",
+          "description": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine"
+        }
+      ],
+      "source": "BBC UK",
+      "url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+      "source_url": "https://www.bbc.co.uk/news/articles/c65yn92nj423o?at_medium=RSS&at_campaign=rss",
+      "source_count": 1,
+      "source_names": [
+        "BBC UK"
+      ],
+      "source_authority": 94,
+      "summary": "The defence secretary says the US and its allies need to increase pressure on Vladimir Putin to end the war with Ukraine.",
+      "category": "国防安全",
+      "domestic_score": 30,
       "importance": 72,
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
@@ -16651,6 +16715,38 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
+      "id": "9ab1fd202fa4dfbc",
+      "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites - The Guardian",
+      "published_at": "2026-10-08T13:30:00+00:00",
+      "code": "GLOBAL",
+      "event_country": "AI / LLM",
+      "sources": [
+        {
+          "source": "The Guardian China",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUkM3NTBLWW04VFkzdWJWellLSjVTNkJMblhnaTU3OEVFckkzTTdOY0RWSTItY3pEejhmY1NUN1FBTG9xakFyLXZJNnlvcGVqdi1ERHUySFFnbFVIdFFrM0dFVDBpbFdwXzhRTFlyXzNydnRERUItM2lIRHRfaG5PTUpYMzRyTEdSMDFkRTFjdHZxS2xFM1BGS0RFNUtab1Nkc3FfcGJtMGVkNDl3NmN2dVJucS0yMUh4Q1VXblBoOWxZTTkwM256ekU0T0ZIbXNuaVo4RmZublZfQjgyYWF3?oc=5",
+          "published_at": "2026-10-08T13:30:00+00:00",
+          "description": "OpenAI used AI to help write email warning Australian government AI had hacked its websites The Guardian"
+        }
+      ],
+      "source": "The Guardian China",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUkM3NTBLWW04VFkzdWJWellLSjVTNkJMblhnaTU3OEVFckkzTTdOY0RWSTItY3pEejhmY1NUN1FBTG9xakFyLXZJNnlvcGVqdi1ERHUySFFnbFVIdFFrM0dFVDBpbFdwXzhRTFlyXzNydnRERUItM2lIRHRfaG5PTUpYMzRyTEdSMDFkRTFjdHZxS2xFM1BGS0RFNUtab1Nkc3FfcGJtMGVkNDl3NmN2dVJucS0yMUh4Q1VXblBoOWxZTTkwM256ekU0T0ZIbXNuaVo4RmZublZfQjgyYWF3?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUkM3NTBLWW04VFkzdWJWellLSjVTNkJMblhnaTU3OEVFckkzTTdOY0RWSTItY3pEejhmY1NUN1FBTG9xakFyLXZJNnlvcGVqdi1ERHUySFFnbFVIdFFrM0dFVDBpbFdwXzhRTFlyXzNydnRERUItM2lIRHRfaG5PTUpYMzRyTEdSMDFkRTFjdHZxS2xFM1BGS0RFNUtab1Nkc3FfcGJtMGVkNDl3NmN2dVJucS0yMUh4Q1VXblBoOWxZTTkwM256ekU0T0ZIbXNuaVo4RmZublZfQjgyYWF3?oc=5",
+      "source_count": 1,
+      "source_names": [
+        "The Guardian China"
+      ],
+      "source_authority": 92,
+      "summary": "OpenAI used AI to help write email warning Australian government AI had hacked its websites The Guardian",
+      "category": "AI/LLM",
+      "domestic_score": 12,
+      "importance": 37,
+      "why_important": "涉及AI/LLM，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "importance_level": "一般动态",
+      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+    },
+    {
       "id": "a405ec67d5467980",
       "title": "Can Language Models Learn When to Abstain? Policy Learning and Calibrated Answer Selection",
       "published_at": "2026-10-12T04:00:00+00:00",
@@ -16843,38 +16939,6 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
-      "id": "6e9f55491ce3392f",
-      "title": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip - WSJ",
-      "published_at": "2026-10-10T03:34:00+00:00",
-      "code": "GLOBAL",
-      "event_country": "AI / LLM",
-      "sources": [
-        {
-          "source": "Wall Street Journal China",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
-          "published_at": "2026-10-10T03:34:00+00:00",
-          "description": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip WSJ"
-        }
-      ],
-      "source": "Wall Street Journal China",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdC1Yb1VaRzVmWnNoRmpLRFF4cWtUZXNyMjYtVzItMEJIYWhGWUpsUXRtWEJmaDVpZ1lGSXE3WGFYWU94cUFwcTRZZnQzVFBsaktQVjQ3WmJMMFVyQnlTS3NtUEMzVkY1WmNoU1dmdW1LWVB5YXJ1amROdEVIWVRhSFNLdldjVkMwcVRjaHJoOGVwVFBDbmxCdHlqTGIwc2px?oc=5",
-      "source_count": 1,
-      "source_names": [
-        "Wall Street Journal China"
-      ],
-      "source_authority": 96,
-      "summary": "Anthropic AI Model Went Rogue, Submitted Fake Unsolved Murder Tip WSJ",
-      "category": "AI/LLM",
-      "domestic_score": 12,
-      "importance": 34,
-      "why_important": "涉及AI/LLM，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "importance_level": "一般动态",
-      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-    },
-    {
       "id": "4cb662239d66842c",
       "title": "OpenAI's Altman says AI benefits warrant accepting some risks - Reuters",
       "published_at": "2026-10-07T07:00:00+00:00",
@@ -17007,7 +17071,7 @@
   "ai_news_status": "ready",
   "stats": {
     "countries": 31,
-    "events": 469,
+    "events": 471,
     "tier1_events": 241,
     "supplement_events": 10,
     "failed_sources": 1,
@@ -17029,7 +17093,7 @@
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-11",
-    "removed": 86,
+    "removed": 84,
     "undated_removed": 92,
     "buffered_candidates_used": true
   }
