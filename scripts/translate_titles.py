@@ -12,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
-TIMEOUT = 12
-WORKERS = 3
+TIMEOUT = 6
+WORKERS = 8
 
 
 def looks_english(text):
@@ -68,19 +68,16 @@ def mymemory_translate(title):
 
 def translate(title):
     errors = []
-    providers = (google_translate, google_translate_web, mymemory_translate)
-    for attempt in range(2):
-        for fn in providers:
-            try:
-                result = fn(title)
-                if result and re.search(r"[\u3400-\u9fff]", result) and result.strip() != title.strip():
-                    return result
-                errors.append(fn.__name__ + ": returned no Chinese translation")
-            except Exception as exc:
-                errors.append(fn.__name__ + ": " + str(exc)[:100])
-        if attempt == 0:
-            time.sleep(1.0)
-    raise RuntimeError("; ".join(errors[-6:]) or "no translation returned")
+    # One pass across independent providers keeps the full-title sweep bounded in runtime.
+    for fn in (google_translate, google_translate_web, mymemory_translate):
+        try:
+            result = fn(title)
+            if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
+                return result
+            errors.append(fn.__name__ + ": returned no Chinese translation")
+        except Exception as exc:
+            errors.append(fn.__name__ + ": " + str(exc)[:100])
+    raise RuntimeError("; ".join(errors[-3:]) or "no translation returned")
 
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
