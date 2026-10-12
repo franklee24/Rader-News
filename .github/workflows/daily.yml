@@ -110,6 +110,29 @@ jobs:
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Removed repeats:',removed,'undated:',undated)
           PY
+      - name: Cache offline translation model
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/argos-translate
+          key: argos-en-zh-v1
+      - name: Prepare offline translation fallback
+        run: |
+          python -m pip install --quiet argostranslate
+          python - <<'PY'
+          import subprocess
+          import argostranslate.translate
+          def ready():
+              languages=argostranslate.translate.get_installed_languages()
+              en=next((x for x in languages if x.code=='en'),None)
+              zh=next((x for x in languages if x.code=='zh'),None)
+              return bool(en and zh and en.get_translation(zh))
+          if not ready():
+              subprocess.run(['argospm','update'],check=True)
+              subprocess.run(['argospm','install','translate-en_zh'],check=True)
+          if not ready():
+              raise SystemExit('Offline English-to-Chinese translation model unavailable')
+          print('Offline Argos English-to-Chinese fallback ready.')
+          PY
       - name: Translate all English titles
         run: python scripts/translate_titles.py
       - name: Validate headline translations
