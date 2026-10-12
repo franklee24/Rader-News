@@ -31,6 +31,9 @@ jobs:
           assert m.is_china_related({'title':'China Moves to Stave Off Wider EU Trade War'})
           assert not m.is_china_related({'title':'Oil prices fall after Trump claims energy ceasefire in Ukraine war'})
           assert not m.is_china_related({'title':'North Korea fires multiple ballistic missiles, adding to streak of weapons tests'})
+          china_feeds={'Associated Press China'}
+          assert m.country_for_source({'source':'Associated Press China','title':'China Moves to Stave Off Wider EU Trade War','description':'','feed_country':'CN'},china_feeds)=='CN'
+          assert m.country_for_source({'source':'Associated Press China','title':'North Korea fires multiple ballistic missiles, adding to streak of weapons tests','description':'China was mentioned in the body','feed_country':'CN'},china_feeds)!='CN'
           print('AI and China-relevance classification tests passed; AI feeds:',len(m.AI_FEEDS))
           PY
       - name: Probe AI RSS feeds
