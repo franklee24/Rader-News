@@ -69,10 +69,28 @@ jobs:
           import json
           from pathlib import Path
           d=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+          from collections import Counter
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          ai=d.get('ai_news',[])
+          mix=Counter(m.source_group(e.get('source','')) for e in ai)
+          all_names=[str(n) for e in ai for n in ([e.get('source','')]+(e.get('source_names') or []))]
+          official_tokens=('OpenAI','Google','Anthropic','Meta AI','NVIDIA','Microsoft','AWS','Hugging Face','Mistral','Apple','Alibaba Qwen','DeepSeek','ByteDance Seed','Zhipu GLM','Moonshot Kimi','Baidu ERNIE','Tencent Hunyuan','MiniMax','StepFun')
+          media_tokens=('Reuters AI','Financial Times AI','New York Times AI','Bloomberg AI','Wall Street Journal AI','Associated Press AI','TechCrunch AI','MIT Technology Review AI','The Verge AI')
           print('AI stories:',d.get('ai_news_count'),'target:',d.get('ai_news_target'))
+          print('AI source mix:',dict(mix))
           print('Country events before previous-edition dedupe:',d.get('stats',{}).get('events'))
           if d.get('ai_news_count') != 20:
               raise SystemExit('AI/LLM module did not reach its 20-story daily target')
+          if mix.get('arXiv',0)>4:
+              raise SystemExit('Research source dominates AI/LLM module: more than 4 arXiv items')
+          if len(mix)<5:
+              raise SystemExit('AI/LLM news source diversity below minimum threshold')
+          if not any(any(token in name for token in official_tokens) for name in all_names):
+              raise SystemExit('No Chinese or international AI company first-party source made the top 20')
+          if not any(any(token in name for token in media_tokens) for name in all_names):
+              raise SystemExit('No international media source made the AI/LLM top 20')
           if d.get('stats',{}).get('events',0) < 40:
               raise SystemExit('Country news coverage below minimum threshold')
           PY
