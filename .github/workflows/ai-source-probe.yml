@@ -76,3 +76,27 @@ jobs:
               failed += 1
           print(f"PROBE SUMMARY: {len(feeds)-failed}/{len(feeds)} feeds parsed with items; {failed} failed or empty.")
           PY
+
+      - name: Probe free translation fallbacks
+        run: |
+          python - <<'PY'
+          import urllib.request, json, urllib.parse
+          title = "India announces a new artificial intelligence research initiative"
+          providers = [
+            ("LibreTranslate Argos", "https://translate.argosopentech.com/translate"),
+            ("LibreTranslate.de", "https://libretranslate.de/translate"),
+            ("Astian Translate", "https://translate.astian.org/translate"),
+          ]
+          for name, url in providers:
+            try:
+              data = json.dumps({"q":title,"source":"en","target":"zh","format":"text"}).encode()
+              req=urllib.request.Request(url,data=data,headers={"Content-Type":"application/json","User-Agent":"Mozilla/5.0 RadarNewsSourceProbe/1.0"})
+              with urllib.request.urlopen(req,timeout=12) as resp:
+                body=resp.read().decode("utf-8","replace")
+              payload=json.loads(body)
+              translated=payload.get("translatedText","")
+              ok=bool(translated and any("\\u3400" <= ch <= "\\u9fff" for ch in translated))
+              print(("PASS" if ok else "WARN")+f" | {name} | {translated[:100]}")
+            except Exception as e:
+              print(f"FAIL | {name} | {type(e).__name__}: {str(e)[:150]}")
+          PY
