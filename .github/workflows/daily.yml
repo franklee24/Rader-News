@@ -116,6 +116,7 @@ jobs:
           path: ~/.local/share/argos-translate
           key: argos-en-zh-v1
       - name: Prepare optional offline translation fallback
+        if: runner.os == 'Windows'
         continue-on-error: true
         timeout-minutes: 3
         run: |
