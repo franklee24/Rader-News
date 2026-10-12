@@ -206,9 +206,18 @@ def source_group(name):
  if name.startswith('中新网'): return '中新网'
  if name.startswith('人民网'): return '人民网'
  if name.startswith('新华'): return '新华社'
- if name.startswith('纽约时报'): return '纽约时报'
+ if name.startswith('arXiv'): return 'arXiv'
+ if name in {'Google AI Blog','Google DeepMind','Google Research'}: return 'Google'
+ if name in {'NVIDIA AI Blog','NVIDIA Developer AI'}: return 'NVIDIA'
+ if name in {'Microsoft AI Blog','Microsoft Research AI'}: return 'Microsoft'
+ if name in {'Reuters','Reuters China','Reuters AI'}: return 'Reuters'
+ if name in {'Associated Press','Associated Press China','Associated Press AI'}: return 'Associated Press'
+ if name in {'纽约时报','纽约时报-日本','New York Times China','New York Times AI'}: return 'New York Times'
+ if name in {'华尔街日报','Wall Street Journal China','Wall Street Journal AI'}: return 'Wall Street Journal'
+ if name in {'彭博社','Bloomberg China','Bloomberg AI'}: return 'Bloomberg'
+ if name in {'金融时报','Financial Times China','Financial Times AI'}: return 'Financial Times'
  if name in {'NHK','NHK World'}: return 'NHK'
- if name in {'BBC World','BBC UK','BBC中文'}: return 'BBC'
+ if name in {'BBC World','BBC UK','BBC中文','BBC China'}: return 'BBC'
  return name
 def source_rank(s):
  return SOURCE_AUTHORITY.get(s.get('source',''),55)
@@ -361,10 +370,27 @@ def main():
  report['supplement']=cluster(global_rows)[:10]
  report['global_top']=cluster(all_events+report['supplement'])[:20]
  ai_events=cluster(ai_rows)
- # Prefer high-impact AI developments; use a 30-day backfill pool to keep the module populated.
+ # Rank candidates on the same importance scale, while preventing one publisher or research feed from filling the module.
  ai_events.sort(key=lambda e:(e.get('importance',0),e.get('published_at') or ''),reverse=True)
- report['ai_news']=ai_events[:20]
+ ai_selected=[]; ai_seen=set(); ai_group_counts={}
+ for item in ai_events:
+  key=item.get('id') or norm(item.get('title',''))
+  if not key or key in ai_seen: continue
+  group=source_group(item.get('source',''))
+  # Research remains eligible, but arXiv is one publisher—not two independent outlets.
+  if ai_group_counts.get(group,0)>=4: continue
+  ai_selected.append(item); ai_seen.add(key); ai_group_counts[group]=ai_group_counts.get(group,0)+1
+  if len(ai_selected)>=20: break
+ # Relax publisher caps only if the 30-day candidate pool cannot otherwise reach 20 stories.
+ if len(ai_selected)<20:
+  for item in ai_events:
+   key=item.get('id') or norm(item.get('title',''))
+   if key and key not in ai_seen:
+    ai_selected.append(item); ai_seen.add(key)
+    if len(ai_selected)>=20: break
+ report['ai_news']=ai_selected[:20]
  report['ai_news_count']=len(report['ai_news'])
+ print('AI NEWS SOURCE MIX',ai_group_counts)
  report['ai_news_status']='ready' if len(report['ai_news'])==20 else 'partial'
  report['stats']={'countries':sum(len(v) for v in report['tiers'].values()),'events':sum(x['count'] for v in report['tiers'].values() for x in v.values()),'tier1_events':sum(x['count'] for x in report['tiers']['tier1'].values()),'supplement_events':len(report['supplement']),'failed_sources':len(failures),'successful_sources':ok,'chinese_sources':sum(1 for f in FEEDS if f[3]=='cn'),'ai_feed_total':len(AI_FEEDS)}
  print('STATS',report['stats'])
