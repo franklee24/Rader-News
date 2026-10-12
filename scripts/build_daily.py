@@ -346,7 +346,7 @@ def main():
     # Dedicated international-media China feeds are intentionally assigned to China even
     # when a headline names a foreign official but the article's focus is China.
     china_watch_sources={'Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China','The Guardian China','NPR China'}
-    code='CN' if x.get('source') in china_watch_sources and is_china_related(x) else infer_country(x); x['code']=code
+    code=('CN' if is_china_related(x) else infer_country({**x,'description':''})) if x.get('source') in china_watch_sources else infer_country(x); x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)
