@@ -1,0 +1,78 @@
+name: AI source availability probe
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ai-source-probe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Probe AI news sources
+        run: |
+          python - <<'PY'
+          import urllib.request, xml.etree.ElementTree as ET, re
+          feeds = [
+            ("OpenAI official", "https://openai.com/news/rss.xml"),
+            ("Google DeepMind official", "https://deepmind.google/blog/rss.xml"),
+            ("Google Research official", "https://research.google/blog/rss/"),
+            ("Google AI official", "https://blog.google/innovation-and-ai/technology/ai/rss/"),
+            ("Anthropic official news search", "https://news.google.com/rss/search?q=site%3Aanthropic.com%2Fnews&hl=en-US&gl=US&ceid=US:en"),
+            ("Meta AI official news search", "https://news.google.com/rss/search?q=site%3Aai.meta.com%2Fblog&hl=en-US&gl=US&ceid=US:en"),
+            ("NVIDIA official blog", "https://blogs.nvidia.com/feed/"),
+            ("NVIDIA developer AI", "https://developer.nvidia.com/blog/category/generative-ai/feed/"),
+            ("Microsoft Research official", "https://www.microsoft.com/en-us/research/feed/"),
+            ("Microsoft AI official", "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/"),
+            ("AWS ML official", "https://aws.amazon.com/blogs/machine-learning/feed/"),
+            ("Hugging Face official", "https://huggingface.co/blog/feed.xml"),
+            ("Mistral official", "https://mistral.ai/news/rss"),
+            ("Apple ML official", "https://machinelearning.apple.com/rss.xml"),
+            ("arXiv cs.AI research", "https://rss.arxiv.org/rss/cs.AI"),
+            ("arXiv cs.CL research", "https://rss.arxiv.org/rss/cs.CL"),
+            ("TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"),
+            ("MIT Technology Review AI", "https://www.technologyreview.com/topic/artificial-intelligence/feed/"),
+            ("The Verge AI", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
+            ("Reuters AI search", "https://news.google.com/rss/search?q=site%3Areuters.com%20AI%20OR%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en"),
+            ("Financial Times AI search", "https://news.google.com/rss/search?q=site%3Aft.com%20AI%20OR%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en"),
+            ("NYT AI search", "https://news.google.com/rss/search?q=site%3Anytimes.com%20AI%20OR%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en"),
+            ("Bloomberg AI search", "https://news.google.com/rss/search?q=site%3Abloomberg.com%20AI%20OR%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en"),
+            ("WSJ AI search", "https://news.google.com/rss/search?q=site%3Awsj.com%20AI%20OR%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en"),
+            ("Alibaba Qwen official search", "https://news.google.com/rss/search?q=site%3Aqwenlm.github.io%20OR%20site%3Aalibabacloud.com%2Fblog%20Qwen%20AI&hl=en-US&gl=US&ceid=US:en"),
+            ("DeepSeek official search", "https://news.google.com/rss/search?q=site%3Adeepseek.com%20OR%20site%3Agithub.com%2Fdeepseek-ai%20DeepSeek&hl=en-US&gl=US&ceid=US:en"),
+            ("Baidu ERNIE official search", "https://news.google.com/rss/search?q=site%3Aernie.baidu.com%20OR%20site%3Abaidu.com%20ERNIE%20AI&hl=en-US&gl=US&ceid=US:en"),
+            ("Tencent Hunyuan official search", "https://news.google.com/rss/search?q=site%3Ahunyuan.tencent.com%20OR%20site%3A腾讯.com%20Hunyuan%20AI&hl=en-US&gl=US&ceid=US:en"),
+            ("ByteDance Seed official search", "https://news.google.com/rss/search?q=site%3Aseed.bytedance.com%20OR%20site%3Abytedance.com%20AI%20model&hl=en-US&gl=US&ceid=US:en"),
+            ("Zhipu GLM official search", "https://news.google.com/rss/search?q=site%3Azhipuai.cn%20OR%20site%3Az.ai%20GLM%20AI&hl=en-US&gl=US&ceid=US:en"),
+            ("Moonshot Kimi official search", "https://news.google.com/rss/search?q=site%3Amoonshot.cn%20OR%20site%3Akimi.com%20AI%20model&hl=en-US&gl=US&ceid=US:en"),
+          ]
+          failed = 0
+          for name, url in feeds:
+            try:
+              req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0 RadarNewsSourceProbe/1.0"})
+              with urllib.request.urlopen(req, timeout=18) as resp:
+                body = resp.read(2_500_000)
+                status = resp.status
+              root = ET.fromstring(body)
+              items = root.findall(".//item")
+              if not items:
+                items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
+              title = (items[0].findtext("title") if items and items[0].find("title") is not None else "") if items else ""
+              title = title or (items[0].find("{http://www.w3.org/2005/Atom}title").text if items and items[0].find("{http://www.w3.org/2005/Atom}title") is not None else "")
+              ok = status == 200 and len(items) > 0
+              print(("PASS" if ok else "WARN") + f" | {name} | status={status} | items={len(items)} | {title[:110]}")
+              if not ok: failed += 1
+            except Exception as e:
+              print(f"FAIL | {name} | {type(e).__name__}: {str(e)[:180]}")
+              failed += 1
+          print(f"PROBE SUMMARY: {len(feeds)-failed}/{len(feeds)} feeds parsed with items; {failed} failed or empty.")
+          PY
