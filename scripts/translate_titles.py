@@ -124,6 +124,9 @@ def translation_is_usable(title, result):
     title_words = max(1, len(re.findall(r"\b[A-Za-z0-9]+\b", title)))
     result_words = len(re.findall(r"\b[A-Za-z0-9]+\b", result))
     han_chars = len(re.findall("[一-鿿]", result))
+    # Accept a meaningful partial Chinese rendering rather than leave a headline English-only.
+    if han_chars >= 4 and len(result) >= 5:
+        return True
     if title_words >= 8 and result_words < max(2, round(title_words * 0.28)) and han_chars < max(7, round(len(title) * 0.12)):
         return False
     if len(result) < min(8, max(1, round(len(title) * 0.18))):
@@ -169,6 +172,7 @@ def translate(title):
         "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
         "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
         "Main opposition steps up criticism of Lee's golf outing during Daegu incident": "大邱事件期间李的高尔夫活动引发争议，主要反对党加大批评",
+        "Security beefed up outside Parliament Street police station ahead of CJP leaders visit for fresh Jantar Mantar protest date": "在CJP领导人到访、准备确定新一轮Jantar Mantar抗议日期前，议会街警察局外加强了安保",
     }
     try:
         chunked = argos_translate_chunks(title)
