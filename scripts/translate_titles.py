@@ -109,7 +109,7 @@ def argos_translate(title):
         _ARGOS_TRANSLATOR = en.get_translation(zh)
         if not _ARGOS_TRANSLATOR:
             raise RuntimeError("Argos en-to-zh translation is unavailable")
-    result = re.sub(r"\\s+", " ", _ARGOS_TRANSLATOR.translate(title)).strip()
+    result = re.sub(r"\s+", " ", _ARGOS_TRANSLATOR.translate(title)).strip()
     if not result or not re.search("[一-鿿]", result):
         raise RuntimeError("Argos returned no Chinese translation")
     return result
