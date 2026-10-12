@@ -1,10 +1,8 @@
 name: 刷新英文新闻中文翻译
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/translate_titles.py'
+  # Manual recovery only. The daily production workflow owns translation + deployment,
+  # avoiding concurrent writes to data/daily.json.
   workflow_dispatch:
 
 permissions:
