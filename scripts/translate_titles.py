@@ -72,7 +72,7 @@ def translate(title):
     for fn in (google_translate, google_translate_web, mymemory_translate):
         try:
             result = fn(title)
-            if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
+            if result and re.search("[一-鿿]", result) and result.strip() != title.strip():
                 return result
             errors.append(fn.__name__ + ": returned no Chinese translation")
         except Exception as exc:
