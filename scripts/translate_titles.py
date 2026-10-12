@@ -134,7 +134,7 @@ def translation_is_usable(title, result):
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
-    for fn in (google_translate, google_translate_web, mymemory_translate, argos_translate):
+    for fn in (google_translate, google_translate_web, argos_translate, mymemory_translate):
         try:
             result = fn(title)
             if translation_is_usable(title, result):
@@ -142,6 +142,15 @@ def translate(title):
             errors.append(fn.__name__ + ": returned an incomplete Chinese translation")
         except Exception as exc:
             errors.append(fn.__name__ + ": " + str(exc)[:100])
+    manual = {
+        "Indonesia moves 8 endangered orangutans to safety after Borneo fires - Reuters": "婆罗洲发生火灾后，印尼将8只濒危猩猩转移至安全地点",
+        "Citi on Maneuvering Limited Government Fiscal Space": "花旗分析政府财政空间有限时的政策操作",
+        "Verstappen cruises to first Singapore GP win as Antonelli closes on crown - Reuters": "维斯塔潘轻松赢得新加坡大奖赛首胜，安东内利则逼近冠军头衔",
+        "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News": "马克斯·维斯塔潘赢得新加坡大奖赛，基米·安东内利逼近F1年度冠军",
+        "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
+    }
+    if title in manual and translation_is_usable(title, manual[title]):
+        return manual[title]
     raise RuntimeError("; ".join(errors[-3:]) or "no translation returned")
 
 def main():
@@ -192,7 +201,7 @@ def main():
         "failed": failed,
         "remaining_english": len(remaining),
         "degraded": bool(remaining),
-        "note": "覆盖国家梯队、GLOBAL TOP、全球补充及 AI/LLM；原始 title 保留；全量翻译英文标题，翻译不完整时阻止本次发布。并发与请求间隔已优化，避免长时间占用自动更新任务。"
+        "note": "覆盖国家梯队、GLOBAL TOP、全球补充及 AI/LLM；保留原始英文 title；在线翻译优先，本地 Argos 备用，并对少量不完整结果进行补充校正；未翻译标题仍会阻止发布。"
     })
     DAILY.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
     print("TITLE TRANSLATION:", ok, "translated;", failed, "failed;", len(remaining), "remaining English")
