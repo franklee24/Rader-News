@@ -28,7 +28,9 @@ jobs:
           assert m.is_ai_related({'title':'Google DeepMind announces AI research'})
           assert not m.is_ai_related({'title':'Central bank raises interest rates'})
           assert m.category('OpenAI launches a new large language model')=='AI/LLM'
-          print('AI classification tests passed; AI feeds:',len(m.AI_FEEDS))
+          assert m.is_china_related({'title':'China Moves to Stave Off Wider EU Trade War'})
+          assert not m.is_china_related({'title':'Oil prices fall after Trump claims energy ceasefire in Ukraine war'})
+          print('AI and China-relevance classification tests passed; AI feeds:',len(m.AI_FEEDS))
           PY
       - name: Probe AI RSS feeds
         run: |
