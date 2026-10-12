@@ -1,0 +1,35 @@
+name: PR regression checks
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Compile Python modules
+        run: python -m py_compile scripts/build_daily.py scripts/score_importance.py scripts/translate_titles.py
+      - name: Verify AI relevance, China filtering and translation quality
+        run: |
+          python - <<'PY'
+          import importlib.util
+          spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          assert m.is_ai_related({'title':'OpenAI releases a new reasoning model'})
+          assert m.is_ai_related({'title':'Google DeepMind announces AI research'})
+          assert not m.is_ai_related({'title':'Central bank raises interest rates'})
+          assert m.is_china_related({'title':'China sanctions Paraguay over Taiwan ties'})
+          assert not m.is_china_related({'title':'North Korea fires multiple ballistic missiles, adding to streak of weapons tests'})
+          spec=importlib.util.spec_from_file_location('translate_titles','scripts/translate_titles.py')
+          t=importlib.util.module_from_spec(spec); spec.loader.exec_module(t)
+          assert t.translation_is_usable('China expands clean-energy investment','中国扩大清洁能源投资')
+          assert not t.translation_is_usable('AI is less regulated than milk, says Microsoft president - BBC','微软总裁说,')
+          assert not t.translation_is_usable('Oil prices fall after Trump claims energy ceasefire in Ukraine war - Financial Times','')
+          print('AI, China relevance and translation regression checks passed.')
+          PY
