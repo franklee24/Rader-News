@@ -124,8 +124,8 @@ jobs:
           events.extend(d.get('global_top',[])); events.extend(d.get('supplement',[])); events.extend(d.get('ai_news',[]))
           def english(s):
               s=str(s or '').strip()
-              return bool(s) and not re.search(r'[\\u3400-\\u9fff]',s) and len(re.findall(r'[A-Za-z]',s))>=8 and len(re.findall(r'[A-Za-z]',s))/max(1,len(re.sub(r'\\s+','',s)))>=0.45
-          missing=[e.get('title','') for e in events if english(e.get('title')) and not re.search(r'[\\u3400-\\u9fff]',str(e.get('title_zh','')))]
+              return bool(s) and not re.search(r'[\u3400-\u9fff]',s) and len(re.findall(r'[A-Za-z]',s))>=8 and len(re.findall(r'[A-Za-z]',s))/max(1,len(re.sub(r'\s+','',s)))>=0.45
+          missing=[e.get('title','') for e in events if english(e.get('title')) and not re.search(r'[\u3400-\u9fff]',str(e.get('title_zh','')))]
           if missing:
               print('Missing Chinese translations:',len(missing)); print('\\n'.join(missing[:20])); raise SystemExit('HEADLINE TRANSLATION QUALITY GATE FAILED')
           print('HEADLINE TRANSLATION QUALITY GATE PASSED; visible English headlines:',sum(1 for e in events if english(e.get('title'))))
