@@ -39,7 +39,7 @@ jobs:
           import importlib.util
           spec=importlib.util.spec_from_file_location('build_daily','scripts/build_daily.py')
           m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-          ok=[]; bad=[]
+          ok=[]; bad=[]; results=[]
           for feed in m.AI_FEEDS:
               name, country, url, lang=feed
               body,err=m.fetch(url)
@@ -48,16 +48,22 @@ jobs:
                       rows=m.parse_feed(body,name,country,lang)
                       if rows:
                           ok.append((name,len(rows)))
+                          results.append({'source':name,'status':'PASS','items':len(rows),'url':url})
                           print('PASS',name,'items=',len(rows))
                       else:
                           bad.append((name,'empty feed'))
+                          results.append({'source':name,'status':'WARN','items':0,'reason':'empty feed','url':url})
                           print('WARN',name,'empty feed')
                   except Exception as e:
                       bad.append((name,'parse '+str(e)[:100]))
                       print('WARN',name,'parse failed',str(e)[:100])
               else:
                   bad.append((name,err))
+                  results.append({'source':name,'status':'WARN','items':0,'reason':err,'url':url})
                   print('WARN',name,err)
+          from pathlib import Path
+          import json
+          Path('ai-feed-validation.json').write_text(json.dumps({'passed':len(ok),'warning':len(bad),'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
           print('AI FEED RESULT',len(ok),'passed,',len(bad),'unavailable/empty')
           if len(ok)<6:
               raise SystemExit('Too few AI feeds are usable; at least 6 must pass')
@@ -78,6 +84,14 @@ jobs:
           m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
           ai=d.get('ai_news',[])
           mix=Counter(m.source_group(e.get('source','')) for e in ai)
+          china_events=[]
+          for countries in d.get('tiers',{}).values():
+              if '中国' in countries:
+                  china_events.extend(countries['中国'].get('events',[]))
+          irrelevant=[e.get('title','') for e in china_events if not m.is_china_related(e)]
+          if irrelevant:
+              raise SystemExit('China section contains irrelevant headlines: '+repr(irrelevant[:5]))
+          print('China section relevance check passed; items:',len(china_events))
           all_names=[str(n) for e in ai for n in ([e.get('source','')]+(e.get('source_names') or []))]
           official_tokens=('OpenAI','Google','Anthropic','Meta AI','NVIDIA','Microsoft','AWS','Hugging Face','Mistral','Apple','Alibaba Qwen','DeepSeek','ByteDance Seed','Zhipu GLM','Moonshot Kimi','Baidu ERNIE','Tencent Hunyuan','MiniMax','StepFun')
           media_tokens=('Reuters AI','Financial Times AI','New York Times AI','Bloomberg AI','Wall Street Journal AI','Associated Press AI','TechCrunch AI','MIT Technology Review AI','The Verge AI')
