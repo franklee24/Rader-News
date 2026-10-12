@@ -131,6 +131,24 @@ def translation_is_usable(title, result):
     return True
 
 
+
+def argos_translate_chunks(title):
+    # If a long headline defeats the offline model as a whole, translate clauses separately.
+    parts = [p.strip() for p in re.split(r"\\s*(?:[,;:—–])\\s*|\\s+(?:as|after|before|while|amid|but|and|says|according to)\\s+", title, flags=re.I) if len(p.strip()) >= 8]
+    translated = []
+    for part in parts:
+        try:
+            result = argos_translate(part)
+            if re.search("[一-鿿]", result) and len(re.findall("[一-鿿]", result)) >= 3:
+                translated.append(result)
+        except Exception:
+            continue
+    combined = "，".join(translated)
+    if len(re.findall("[一-鿿]", combined)) >= 8:
+        return combined
+    raise RuntimeError("offline clause translation was incomplete")
+
+
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
@@ -149,7 +167,14 @@ def translate(title):
         "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News": "马克斯·维斯塔潘赢得新加坡大奖赛，基米·安东内利逼近F1年度冠军",
         "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
         "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
+        "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
     }
+    try:
+        chunked = argos_translate_chunks(title)
+        if translation_is_usable(title, chunked):
+            return chunked
+    except Exception as exc:
+        errors.append("argos_translate_chunks: " + str(exc)[:100])
     if title in manual and translation_is_usable(title, manual[title]):
         return manual[title]
     raise RuntimeError("; ".join(errors[-3:]) or "no translation returned")
