@@ -100,3 +100,25 @@ jobs:
             except Exception as e:
               print(f"FAIL | {name} | {type(e).__name__}: {str(e)[:150]}")
           PY
+
+      - name: Probe alternate official China AI feeds
+        run: |
+          python - <<'PY'
+          import urllib.request, urllib.parse, xml.etree.ElementTree as ET
+          qs = [
+            ("Meta official newsroom", "site:about.fb.com/news Meta AI when:30d"),
+            ("Meta AI blog recent", "site:ai.meta.com/blog Meta AI when:90d"),
+            ("Baidu ERNIE official", "site:baidu.com 文心 AI when:30d"),
+            ("Baidu PaddlePaddle official", "site:github.com/PaddlePaddle ERNIE when:30d"),
+            ("Baidu research official", "site:research.baidu.com AI when:90d"),
+          ]
+          for name,q in qs:
+            url="https://news.google.com/rss/search?q="+urllib.parse.quote(q)+"&hl=en-US&gl=US&ceid=US:en"
+            try:
+              req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"})
+              with urllib.request.urlopen(req,timeout=15) as r: body=r.read()
+              root=ET.fromstring(body); items=root.findall(".//item")
+              title=items[0].findtext("title","") if items else ""
+              print(("PASS" if items else "WARN")+f" | {name} | items={len(items)} | {title[:100]}")
+            except Exception as e: print(f"FAIL | {name} | {type(e).__name__}: {str(e)[:100]}")
+          PY
