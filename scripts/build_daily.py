@@ -300,6 +300,14 @@ def is_ai_related(item):
  text=(item.get('title','')+' '+(item.get('description') or '')[:800])
  return any(keyword_match(text,k) for k in AI_TERMS)
 
+def is_china_related(item):
+ text=(item.get('title','')+' '+(item.get('description') or '')[:900])
+ if any(term in text for term in ['中国','中方','北京','习近平','中国政府','中国企业','中国经济','中国市场','中国共产党','中共','香港','新疆','西藏','南海','台海','两岸']):
+  return True
+ patterns=[r'\\bChina\\b',r'\\bChinese\\b',r'\\bBeijing\\b',r'\\bXi Jinping\\b',r'\\bPRC\\b',r'\\bChinese Communist Party\\b',r'\\bSouth China Sea\\b',r'\\bTaiwan Strait\\b',r'\\bHong Kong\\b',r'\\bXinjiang\\b',r'\\bTibet\\b']
+ return any(re.search(p,text,re.I) for p in patterns)
+
+
 def is_low_signal_human_interest(item):
  title=item.get('title','')
  low=title.lower()
@@ -338,7 +346,7 @@ def main():
     # Dedicated international-media China feeds are intentionally assigned to China even
     # when a headline names a foreign official but the article's focus is China.
     china_watch_sources={'Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China','The Guardian China','NPR China'}
-    code='CN' if x.get('source') in china_watch_sources else infer_country(x); x['code']=code
+    code='CN' if x.get('source') in china_watch_sources and is_china_related(x) else infer_country(x); x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)
