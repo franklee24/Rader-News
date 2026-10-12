@@ -164,3 +164,23 @@ jobs:
               print(("PASS" if result else "WARN")+f" | Lingva {host} | {result[:100]}")
             except Exception as e: print(f"FAIL | Lingva {host} | {type(e).__name__}: {str(e)[:100]}")
           PY
+
+      - name: Probe offline Argos English to Chinese translation
+        run: |
+          python -m pip install --quiet argostranslate
+          argospm update
+          argospm install translate-en_zh
+          python - <<'PY'
+          import argostranslate.translate
+          languages=argostranslate.translate.get_installed_languages()
+          en=next((x for x in languages if x.code=="en"),None)
+          zh=next((x for x in languages if x.code in ("zh","zh_CN")),None)
+          print("LANGUAGES",[(x.code,x.name) for x in languages])
+          if not en or not zh: raise SystemExit("Argos en/zh package not installed")
+          tr=en.get_translation(zh)
+          if not tr: raise SystemExit("Argos en-to-zh translation unavailable")
+          result=tr.translate("India announces a new artificial intelligence research initiative")
+          print("ARGOS RESULT",result)
+          if not any("\\u3400" <= ch <= "\\u9fff" for ch in result): raise SystemExit("Argos output has no Chinese characters")
+          print("PASS | offline Argos translation is usable")
+          PY
