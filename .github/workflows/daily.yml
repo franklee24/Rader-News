@@ -115,7 +115,9 @@ jobs:
         with:
           path: ~/.local/share/argos-translate
           key: argos-en-zh-v1
-      - name: Prepare offline translation fallback
+      - name: Prepare optional offline translation fallback
+        continue-on-error: true
+        timeout-minutes: 3
         run: |
           python -m pip install --quiet argostranslate
           python - <<'PY' || (argospm update && argospm install translate-en_zh)
@@ -125,16 +127,7 @@ jobs:
           zh=next((x for x in languages if x.code=='zh'),None)
           if not (en and zh and en.get_translation(zh)):
               raise SystemExit(1)
-          print('Cached offline translation model found.')
-          PY
-          python - <<'PY'
-          import argostranslate.translate
-          languages=argostranslate.translate.get_installed_languages()
-          en=next((x for x in languages if x.code=='en'),None)
-          zh=next((x for x in languages if x.code=='zh'),None)
-          if not (en and zh and en.get_translation(zh)):
-              raise SystemExit('Offline English-to-Chinese translation model unavailable')
-          print('Offline Argos English-to-Chinese fallback ready.')
+          print('Offline English-to-Chinese fallback is available.')
           PY
       - name: Translate all English titles
         run: python scripts/translate_titles.py
@@ -151,9 +144,18 @@ jobs:
           def english(s):
               s=str(s or '').strip()
               return bool(s) and not re.search(r'[\u3400-\u9fff]',s) and len(re.findall(r'[A-Za-z]',s))>=8 and len(re.findall(r'[A-Za-z]',s))/max(1,len(re.sub(r'\s+','',s)))>=0.45
-          missing=[e.get('title','') for e in events if english(e.get('title')) and not re.search(r'[\u3400-\u9fff]',str(e.get('title_zh','')))]
-          if missing:
-              print('Missing Chinese translations:',len(missing)); print('\\n'.join(missing[:20])); raise SystemExit('HEADLINE TRANSLATION QUALITY GATE FAILED')
+          def usable(title,result):
+              title=str(title or '').strip(); result=str(result or '').strip()
+              if not result or not re.search(r'[\u3400-\u9fff]',result) or result==title: return False
+              tw=max(1,len(re.findall(r'\b[A-Za-z0-9]+\b',title)))
+              rw=len(re.findall(r'\b[A-Za-z0-9]+\b',result))
+              han=len(re.findall(r'[\u3400-\u9fff]',result))
+              if tw>=8 and rw<max(2,round(tw*.28)) and han<max(7,round(len(title)*.12)): return False
+              if len(result)<min(8,max(1,round(len(title)*.18))): return False
+              return True
+          bad=[e.get('title','') for e in events if english(e.get('title')) and not usable(e.get('title'),e.get('title_zh'))]
+          if bad:
+              print('Missing or incomplete Chinese translations:',len(bad)); print('\\n'.join(bad[:20])); raise SystemExit('HEADLINE TRANSLATION QUALITY GATE FAILED')
           print('HEADLINE TRANSLATION QUALITY GATE PASSED; visible English headlines:',sum(1 for e in events if english(e.get('title'))))
           PY3
       - name: Validate event quality
