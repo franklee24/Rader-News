@@ -8,6 +8,9 @@ on:
       - 'scripts/translate_titles.py'
       - '.github/workflows/source-validation.yml'
   workflow_dispatch:
+  # 每天北京时间 05:00 检查 AI/LLM 新闻源（UTC 21:00）
+  schedule:
+    - cron: '0 21 * * *'
 permissions:
   contents: read
 jobs:
