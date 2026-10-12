@@ -4,6 +4,7 @@
 # Refresh workflow trigger: 2026-09-12
 import json
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -11,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
-TIMEOUT = 20
-WORKERS = 10
+TIMEOUT = 12
+WORKERS = 3
 
 
 def looks_english(text):
@@ -36,6 +37,20 @@ def google_translate(title):
     return re.sub(r"\s+", " ", result).strip()
 
 
+def google_translate_web(title):
+    # Alternate Google Translate host as a fallback for transient endpoint/rate-limit failures.
+    url = (
+        "https://translate.google.com/translate_a/single?client=gtx&sl=auto"
+        "&tl=zh-CN&dt=t&q=" + quote(title, safe="")
+    )
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/22)"})
+    with urlopen(req, timeout=TIMEOUT) as r:
+        payload = json.loads(r.read().decode("utf-8", "replace"))
+    parts = payload[0] if isinstance(payload, list) else []
+    result = "".join(p[0] for p in parts if isinstance(p, list) and p and p[0])
+    return re.sub(r"\\s+", " ", result).strip()
+
+
 def mymemory_translate(title):
     # Free fallback. This is deliberately second-choice so Google remains the primary translator.
     url = (
@@ -53,17 +68,19 @@ def mymemory_translate(title):
 
 def translate(title):
     errors = []
+    providers = (google_translate, google_translate_web, mymemory_translate)
     for attempt in range(2):
-        for fn in (google_translate, mymemory_translate):
+        for fn in providers:
             try:
                 result = fn(title)
-                if result and re.search(r"[\u3400-\u9fff]", result) and result.strip() != title.strip():
+                if result and re.search(r"[\\u3400-\\u9fff]", result) and result.strip() != title.strip():
                     return result
                 errors.append(fn.__name__ + ": returned no Chinese translation")
             except Exception as exc:
-                errors.append(str(exc)[:120])
+                errors.append(fn.__name__ + ": " + str(exc)[:100])
+        if attempt == 0:
+            time.sleep(1.0)
     raise RuntimeError("; ".join(errors[-6:]) or "no translation returned")
-
 
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
@@ -117,6 +134,8 @@ def main():
     })
     DAILY.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
     print("TITLE TRANSLATION:", ok, "translated;", failed, "failed;", len(remaining), "remaining English")
+    if errors:
+        print("TRANSLATION ERROR SAMPLE:", json.dumps(errors[:8], ensure_ascii=False))
     if remaining:
         print("TRANSLATION QUALITY GATE FAILED: untranslated English headlines remain.")
         print("UNTRANSLATED SAMPLE:", " | ".join(remaining[:20]))
