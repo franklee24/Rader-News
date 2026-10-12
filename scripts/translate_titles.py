@@ -134,7 +134,7 @@ def translation_is_usable(title, result):
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
-    for fn in (google_translate, google_translate_web, argos_translate, mymemory_translate):
+    for fn in (google_translate, google_translate_web, mymemory_translate, argos_translate):
         try:
             result = fn(title)
             if translation_is_usable(title, result):
