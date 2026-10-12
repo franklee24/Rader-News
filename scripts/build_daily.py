@@ -77,7 +77,7 @@ AI_FEEDS=[
  # Official company announcements, model releases and first-party research.
  ('OpenAI News','GLOBAL','https://openai.com/news/rss.xml','en'),
  ('Google AI Blog','GLOBAL','https://blog.google/innovation-and-ai/technology/ai/rss/','en'),
- ('Google DeepMind','GLOBAL','https://deepmind.google/blog/rss.xml','en'),
+ ('Google DeepMind','GLOBAL','https://news.google.com/rss/search?q=site%3Adeepmind.google%2Fblog%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
  ('Google Research','GLOBAL','https://research.google/blog/rss/','en'),
  ('Anthropic News Watch','GLOBAL','https://news.google.com/rss/search?q=site%3Aanthropic.com%2Fnews%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
  ('Meta AI','GLOBAL','https://news.google.com/rss/search?q=site%3Aabout.fb.com%2Fnews%20Meta%20AI%20when%3A30d&hl=en-US&gl=US&ceid=US:en','en'),
