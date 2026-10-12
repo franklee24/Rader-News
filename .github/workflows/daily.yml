@@ -43,7 +43,7 @@ jobs:
               raise SystemExit('LEGACY CHINESE-FIRST LOGIC DETECTED')
           if 'Coverage-India' in text or 'Coverage-United States' in text:
               raise SystemExit('LEGACY COUNTRY COVERAGE FEEDS DETECTED')
-          if 'AI_FEEDS' not in text or "report['ai_news']=ai_events[:20]" not in text:
+          if 'AI_FEEDS' not in text or "report['ai_news']=ai_selected[:20]" not in text:
               raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
           for source in ('Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China'):
               if source not in text: raise SystemExit('INTERNATIONAL CHINA SOURCE MISSING: '+source)
