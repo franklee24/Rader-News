@@ -14,9 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
 TIMEOUT = 5
-WORKERS = 12
+WORKERS = 8
 RATE_LOCK = threading.Lock()
 NEXT_REQUEST_AT = 0.0
+GOOGLE_BLOCKED = threading.Event()
+_ARGOS_TRANSLATOR = None
 
 
 def throttle_translation_requests():
@@ -25,7 +27,7 @@ def throttle_translation_requests():
         wait = NEXT_REQUEST_AT - time.monotonic()
         if wait > 0:
             time.sleep(wait)
-        NEXT_REQUEST_AT = time.monotonic() + 0.18
+        NEXT_REQUEST_AT = time.monotonic() + 0.22
 
 
 def looks_english(text):
@@ -37,29 +39,42 @@ def looks_english(text):
 
 
 def google_translate(title):
+    if GOOGLE_BLOCKED.is_set():
+        raise RuntimeError("Google Translate rate-limited this run; use offline fallback")
     url = (
         "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto"
         "&tl=zh-CN&dt=t&q=" + quote(title, safe="")
     )
-    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/20)"})
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/22)"})
     throttle_translation_requests()
-    with urlopen(req, timeout=TIMEOUT) as r:
-        payload = json.loads(r.read().decode("utf-8", "replace"))
+    try:
+        with urlopen(req, timeout=TIMEOUT) as r:
+            payload = json.loads(r.read().decode("utf-8", "replace"))
+    except Exception as exc:
+        if getattr(exc, "code", None) == 429:
+            GOOGLE_BLOCKED.set()
+        raise
     parts = payload[0] if isinstance(payload, list) else []
     result = "".join(p[0] for p in parts if isinstance(p, list) and p and p[0])
     return re.sub(r"\s+", " ", result).strip()
 
 
 def google_translate_web(title):
-    # Alternate Google Translate host as a fallback for transient endpoint/rate-limit failures.
+    if GOOGLE_BLOCKED.is_set():
+        raise RuntimeError("Google Translate host already rate-limited; use offline fallback")
     url = (
         "https://translate.google.com/translate_a/single?client=gtx&sl=auto"
         "&tl=zh-CN&dt=t&q=" + quote(title, safe="")
     )
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/22)"})
     throttle_translation_requests()
-    with urlopen(req, timeout=TIMEOUT) as r:
-        payload = json.loads(r.read().decode("utf-8", "replace"))
+    try:
+        with urlopen(req, timeout=TIMEOUT) as r:
+            payload = json.loads(r.read().decode("utf-8", "replace"))
+    except Exception as exc:
+        if getattr(exc, "code", None) == 429:
+            GOOGLE_BLOCKED.set()
+        raise
     parts = payload[0] if isinstance(payload, list) else []
     result = "".join(p[0] for p in parts if isinstance(p, list) and p and p[0])
     return re.sub(r"\s+", " ", result).strip()
@@ -81,10 +96,29 @@ def mymemory_translate(title):
     return ""
 
 
+def argos_translate(title):
+    # Local, keyless fallback: avoids incomplete headlines when public translation APIs rate-limit.
+    global _ARGOS_TRANSLATOR
+    if _ARGOS_TRANSLATOR is None:
+        import argostranslate.translate
+        languages = argostranslate.translate.get_installed_languages()
+        en = next((x for x in languages if x.code == "en"), None)
+        zh = next((x for x in languages if x.code == "zh"), None)
+        if not en or not zh:
+            raise RuntimeError("Argos en-to-zh model is not installed")
+        _ARGOS_TRANSLATOR = en.get_translation(zh)
+        if not _ARGOS_TRANSLATOR:
+            raise RuntimeError("Argos en-to-zh translation is unavailable")
+    result = re.sub(r"\\s+", " ", _ARGOS_TRANSLATOR.translate(title)).strip()
+    if not result or not re.search("[一-鿿]", result):
+        raise RuntimeError("Argos returned no Chinese translation")
+    return result
+
+
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
-    for fn in (google_translate, google_translate_web, mymemory_translate):
+    for fn in (google_translate, google_translate_web, argos_translate, mymemory_translate):
         try:
             result = fn(title)
             if result and re.search("[一-鿿]", result) and result.strip() != title.strip():
