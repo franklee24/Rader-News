@@ -297,8 +297,12 @@ def cluster(items):
 
 AI_TERMS=['artificial intelligence','generative AI','large language model','language model','LLM','OpenAI','ChatGPT','GPT-','Anthropic','Claude','Google DeepMind','Gemini','AI agent','AI agents','AI model','AI models','machine learning','neural network','Hugging Face','NVIDIA NIM','Copilot','Mistral AI','DeepSeek','Qwen','Llama model','智能体','大语言模型','人工智能','生成式 AI','生成式人工智能','AI 模型','AI芯片','AI 芯片','推理模型','多模态模型','文生视频','AI安全','AI 安全']
 def is_ai_related(item):
- text=(item.get('title','')+' '+(item.get('description') or '')[:800])
- return any(keyword_match(text,k) for k in AI_TERMS)
+ title=item.get('title','')
+ desc=(item.get('description') or '')[:800]
+ # Prefer a strong headline signal; avoid admitting unrelated stories only because the body mentions AI.
+ if any(keyword_match(title,k) for k in AI_TERMS): return True
+ strong=('artificial intelligence','generative AI','large language model','language model','LLM','AI model','machine learning','neural network','大语言模型','人工智能','生成式人工智能')
+ return sum(1 for k in strong if keyword_match(desc,k))>=2
 
 def is_china_related(item):
  text=item.get('title','')  # Require China-related framing in the headline, not a passing mention in the article body.
@@ -343,10 +347,12 @@ def main():
     if p and p<cutoff:continue
     if is_low_signal_human_interest(x):
      print('[FILTER-LOW-SIGNAL]',source,x.get('title','')[:120]); continue
-    # Dedicated international-media China feeds are intentionally assigned to China even
-    # when a headline names a foreign official but the article's focus is China.
+    # China-specific search feeds are candidates, not proof of relevance:
+    # require a China-related headline before allowing an item into the China section.
     china_watch_sources={'Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China','The Guardian China','NPR China'}
-    code=('CN' if is_china_related(x) else infer_country({**x,'description':''})) if x.get('source') in china_watch_sources else infer_country(x); x['code']=code
+    if x.get('source') in china_watch_sources and not is_china_related(x):
+     print('[FILTER-CHINA-IRRELEVANT]',source,x.get('title','')[:140]); continue
+    code='CN' if x.get('source') in china_watch_sources else infer_country(x); x['code']=code
     c=CODE_TO_COUNTRY.get(code)
     x['event_country']=c['name'] if c else '国际/全球'; x['event_country_en']=c['en'] if c else 'Global'
     fresh.append(x)

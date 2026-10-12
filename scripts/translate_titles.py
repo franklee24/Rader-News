@@ -115,15 +115,30 @@ def argos_translate(title):
     return result
 
 
+def translation_is_usable(title, result):
+    title = str(title or "").strip()
+    result = re.sub(r"\s+", " ", str(result or "")).strip()
+    if not result or not re.search("[一-鿿]", result) or result == title:
+        return False
+    # Reject obvious fragments returned as if they were complete translations.
+    title_words = max(1, len(re.findall(r"\b[A-Za-z0-9]+\b", title)))
+    result_words = len(re.findall(r"\b[A-Za-z0-9]+\b", result))
+    if title_words >= 8 and result_words < max(2, round(title_words * 0.28)):
+        return False
+    if len(result) < min(8, max(1, round(len(title) * 0.18))):
+        return False
+    return True
+
+
 def translate(title):
     errors = []
     # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
     for fn in (google_translate, google_translate_web, argos_translate, mymemory_translate):
         try:
             result = fn(title)
-            if result and re.search("[一-鿿]", result) and result.strip() != title.strip():
+            if translation_is_usable(title, result):
                 return result
-            errors.append(fn.__name__ + ": returned no Chinese translation")
+            errors.append(fn.__name__ + ": returned an incomplete Chinese translation")
         except Exception as exc:
             errors.append(fn.__name__ + ": " + str(exc)[:100])
     raise RuntimeError("; ".join(errors[-3:]) or "no translation returned")
@@ -143,7 +158,7 @@ def main():
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
-        if looks_english(title) and not re.search(r"[\u3400-\u9fff]", str(e.get("title_zh", ""))):
+        if looks_english(title) and not translation_is_usable(title, e.get("title_zh", "")):
             targets_by_title.setdefault(title, e)
     targets = list(targets_by_title.values())
     print("Translation request budget:", len(targets), "unique English headlines; all visible sections included.")
@@ -167,7 +182,7 @@ def main():
         if e.get("title") in cache:
             e["title_zh"] = cache[e["title"]]
 
-    remaining = [e.get("title", "") for e in events if looks_english(e.get("title")) and not re.search(r"[\u3400-\u9fff]", str(e.get("title_zh", "")))]
+    remaining = [e.get("title", "") for e in events if looks_english(e.get("title")) and not translation_is_usable(e.get("title", ""), e.get("title_zh", ""))]
     d.setdefault("translation", {})
     d["translation"].update({
         "language": "zh-CN",
