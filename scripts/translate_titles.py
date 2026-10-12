@@ -57,6 +57,7 @@ def google_translate_web(title):
         "&tl=zh-CN&dt=t&q=" + quote(title, safe="")
     )
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/22)"})
+    throttle_translation_requests()
     with urlopen(req, timeout=TIMEOUT) as r:
         payload = json.loads(r.read().decode("utf-8", "replace"))
     parts = payload[0] if isinstance(payload, list) else []
@@ -71,6 +72,7 @@ def mymemory_translate(title):
         + "&langpair=en|zh-CN"
     )
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/20)"})
+    throttle_translation_requests()
     with urlopen(req, timeout=TIMEOUT) as r:
         payload = json.loads(r.read().decode("utf-8", "replace"))
     result = ((payload.get("responseData") or {}).get("translatedText") or "").strip()
