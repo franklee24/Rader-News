@@ -5,6 +5,7 @@
 import json
 import re
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -14,6 +15,17 @@ ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
 TIMEOUT = 6
 WORKERS = 8
+RATE_LOCK = threading.Lock()
+NEXT_REQUEST_AT = 0.0
+
+
+def throttle_translation_requests():
+    global NEXT_REQUEST_AT
+    with RATE_LOCK:
+        wait = NEXT_REQUEST_AT - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        NEXT_REQUEST_AT = time.monotonic() + 1.05
 
 
 def looks_english(text):
@@ -30,6 +42,7 @@ def google_translate(title):
         "&tl=zh-CN&dt=t&q=" + quote(title, safe="")
     )
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; LeidaNews/20)"})
+    throttle_translation_requests()
     with urlopen(req, timeout=TIMEOUT) as r:
         payload = json.loads(r.read().decode("utf-8", "replace"))
     parts = payload[0] if isinstance(payload, list) else []
