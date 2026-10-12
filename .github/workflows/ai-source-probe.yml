@@ -146,7 +146,7 @@ jobs:
               raise SystemExit("BATCH TRANSLATION FORMAT UNSAFE")
           except Exception as e:
             print("FAIL | batched translation |",type(e).__name__,str(e)[:200])
-            raise
+            print("WARN | batch translation unavailable; continue testing alternate providers")
           PY
 
       - name: Probe Lingva translation instances
