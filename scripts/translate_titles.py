@@ -13,8 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
-TIMEOUT = 6
-WORKERS = 8
+TIMEOUT = 5
+WORKERS = 12
 RATE_LOCK = threading.Lock()
 NEXT_REQUEST_AT = 0.0
 
@@ -25,7 +25,7 @@ def throttle_translation_requests():
         wait = NEXT_REQUEST_AT - time.monotonic()
         if wait > 0:
             time.sleep(wait)
-        NEXT_REQUEST_AT = time.monotonic() + 1.05
+        NEXT_REQUEST_AT = time.monotonic() + 0.18
 
 
 def looks_english(text):
@@ -83,7 +83,7 @@ def mymemory_translate(title):
 
 def translate(title):
     errors = []
-    # One pass across independent providers keeps the full-title sweep bounded in runtime.
+    # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
     for fn in (google_translate, google_translate_web, mymemory_translate):
         try:
             result = fn(title)
@@ -142,7 +142,7 @@ def main():
         "failed": failed,
         "remaining_english": len(remaining),
         "degraded": bool(remaining),
-        "note": "覆盖国家梯队、GLOBAL TOP、全球补充及 AI/LLM；原始 title 保留；全量翻译英文标题，任何未完成项都会阻止本次发布。"
+        "note": "覆盖国家梯队、GLOBAL TOP、全球补充及 AI/LLM；原始 title 保留；全量翻译英文标题，翻译不完整时阻止本次发布。并发与请求间隔已优化，避免长时间占用自动更新任务。"
     })
     DAILY.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
     print("TITLE TRANSLATION:", ok, "translated;", failed, "failed;", len(remaining), "remaining English")
