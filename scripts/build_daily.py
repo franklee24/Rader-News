@@ -306,9 +306,9 @@ def is_ai_related(item):
 
 def is_china_related(item):
  text=item.get('title','')  # Require China-related framing in the headline, not a passing mention in the article body.
- if any(term in text for term in ['中国','中方','北京','习近平','中国政府','中国企业','中国经济','中国市场','中国共产党','中共','香港','新疆','西藏','南海','台海','两岸']):
+ if any(term in text for term in ['中国','中方','北京','习近平','中国政府','中国企业','中国经济','中国市场','中国共产党','中共','香港','新疆','西藏','南海','台海','两岸','黄奇帆','重庆','纪委','纪律审查','监察调查','被查']):
   return True
- patterns=[r'\bChina\b',r'\bChinese\b',r'\bBeijing\b',r'\bXi Jinping\b',r'\bPRC\b',r'\bChinese Communist Party\b',r'\bSouth China Sea\b',r'\bTaiwan Strait\b',r'\bHong Kong\b',r'\bXinjiang\b',r'\bTibet\b']
+ patterns=[r'\bChina\b',r'\bChinese\b',r'\bBeijing\b',r'\bXi Jinping\b',r'\bPRC\b',r'\bChinese Communist Party\b',r'\bSouth China Sea\b',r'\bTaiwan Strait\b',r'\bHong Kong\b',r'\bXinjiang\b',r'\bTibet\b',r'\bHuang Qifan\b',r'\bChongqing\b',r'\bformer mayor of Chongqing\b']
  return any(re.search(p,text,re.I) for p in patterns)
 
 
