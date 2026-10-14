@@ -31,10 +31,15 @@ def freshness(e):
     return 5 if h<=4 else 4 if h<=8 else 3 if h<=14 else 2 if h<=20 else 1
 def score(e):
     t=text(e); country=e.get('event_country',''); tier=TIER_BY_COUNTRY.get(country,0); cat=e.get('category','')
-    # High-profile Chinese political investigations are nationally significant, even when a feed title omits "China".
-    china_investigation = (
-        any(k in t for k in ['黄奇帆','huang qifan','former mayor of chongqing','重庆市原市长','重庆市委原副书记'])
-        and any(k in t for k in ['被查','接受审查调查','纪律审查','监察调查','under investigation','investigation for','corruption','涉嫌严重违纪违法'])
+    # Senior Chinese official investigations are nationally significant; detect the event type, not one person's name.
+    source_names=[e.get('source','')]
+    source_names += e.get('source_names',[]) if isinstance(e.get('source_names'),list) else []
+    source_names += [x.get('source','') for x in e.get('sources',[]) if isinstance(x,dict)]
+    official_source=any('CCDI Official investigations' in str(x) for x in source_names)
+    investigation_terms=['被查','接受审查调查','纪律审查','监察调查','审查调查','涉嫌严重违纪违法','under investigation','investigation for','corruption investigation']
+    senior_roles=['市委原副书记','市委书记','省委副书记','省委常委','省委书记','原市长','原省长','副省长','省政府原','党组成员','中管干部','部长','副部长','省部级','市政府原市长','国家监委','former mayor of chongqing','huang qifan']
+    china_investigation=any(k in t for k in investigation_terms) and (
+        official_source or any(k in t for k in senior_roles)
     )
     if china_investigation:
         cat='政治'
