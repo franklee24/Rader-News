@@ -222,7 +222,7 @@ def fetch_feed(feed):
 SOURCE_AUTHORITY={
  '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':98,'Google AI Blog':97,'Google DeepMind':98,'Google Research':96,'Anthropic News Watch':97,'Meta AI':95,'NVIDIA AI Blog':96,'NVIDIA Developer AI':94,'Microsoft AI Blog':96,'Microsoft Research AI':96,'AWS ML Blog':93,'Hugging Face Blog':91,'Mistral AI News':93,'Apple ML Research':95,'Alibaba Qwen':91,'DeepSeek':92,'ByteDance Seed':90,'Zhipu GLM':89,'Moonshot Kimi':89,'Baidu ERNIE':88,'Tencent Hunyuan':88,'MiniMax':88,'StepFun':87,'Reuters AI':98,'Financial Times AI':97,'New York Times AI':96,'Bloomberg AI':97,'Wall Street Journal AI':96,'Associated Press AI':97,'TechCrunch AI':89,'arXiv cs.AI':92,'arXiv cs.CL':92,'MIT Technology Review AI':94,'The Verge AI':88,
  'Reuters':98,'Reuters China':98,'Associated Press':97,'Associated Press China':97,'New York Times China':96,'Wall Street Journal China':96,'Bloomberg China':96,'Financial Times China':96,'The Economist China':92,'BBC China':94,'The Guardian China':92,'NPR China':90,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
- 'CCDI Official investigations':99,'中央纪委国家监委网站':99,'新华社':96,'央视网':94,
+ 'CCDI Official investigations':99,'中央纪委国家监委网站':99,'Official China investigations search':97,'新华社':96,'央视网':94,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
 }
@@ -242,7 +242,7 @@ def source_group(name):
  if name in {'金融时报','Financial Times China','Financial Times AI'}: return 'Financial Times'
  if name in {'NHK','NHK World'}: return 'NHK'
  if name in {'BBC World','BBC UK','BBC中文','BBC China'}: return 'BBC'
- if name in {'CCDI Official investigations','Google News CCDI Investigations','中央纪委国家监委网站'}: return 'CCDI Official'
+ if name in {'CCDI Official investigations','Google News CCDI Investigations','中央纪委国家监委网站','Official China investigations search'}: return 'CCDI Official'
  return name
 def source_rank(s):
  return SOURCE_AUTHORITY.get(s.get('source',''),55)
@@ -289,7 +289,7 @@ def is_major_china_investigation(item):
  source_names=[item.get('source','')]
  source_names += item.get('source_names',[]) if isinstance(item.get('source_names'),list) else []
  source_names += [s.get('source','') for s in item.get('sources',[]) if isinstance(s,dict)]
- official=any(('CCDI Official investigations' in s or 'Google News CCDI Investigations' in s or '中央纪委国家监委网站' in s) for s in source_names)
+ official=any(('CCDI Official investigations' in s or 'Google News CCDI Investigations' in s or '中央纪委国家监委网站' in s or 'Official China investigations search' in s) for s in source_names)
  investigation=any(k in text for k in ['接受审查调查','纪律审查','监察调查','审查调查','被查','涉嫌严重违纪违法','under investigation','corruption investigation'])
  senior=any(k in title for k in ['市委原副书记','市委书记','省委副书记','省委常委','省委书记','原市长','原省长','副省长','省政府原','党组成员','中管干部','部长','副部长','省部级','市政府原市长','国家监委'])
  return investigation and (official or senior)
@@ -368,7 +368,7 @@ def is_china_related(item):
 
 
 def country_for_source(item,china_watch_sources):
- if item.get('source') in {'CCDI Official investigations','Google News CCDI Investigations','中央纪委国家监委网站'}: return 'CN'
+ if item.get('source') in {'CCDI Official investigations','Google News CCDI Investigations','中央纪委国家监委网站','Official China investigations search'}: return 'CN'
  if item.get('source') in china_watch_sources:
   if is_china_related(item): return 'CN'
   # Do not let a China-specific feed's default country override an unrelated headline.
@@ -393,6 +393,14 @@ def is_low_signal_human_interest(item):
   r'名人八卦',r'星座运势',r'综艺明星',r'时尚穿搭'
  ]
  return any(re.search(p,low if p.isascii() else combined,re.I) for p in patterns)
+
+def fetch_china_investigation_search():
+ # Run one targeted search after the parallel feed batch to avoid concurrent Google News 503s.
+ url='https://news.google.com/rss/search?q=site%3Accdi.gov.cn%20%22%E7%BA%AA%E5%BE%8B%E5%AE%A1%E6%9F%A5%22%20OR%20site%3Accdi.gov.cn%20%22%E6%8E%A5%E5%8F%97%E5%AE%A1%E6%9F%A5%E8%B0%83%E6%9F%A5%22%20OR%20site%3Axinhuanet.com%20%22%E6%8E%A5%E5%8F%97%E5%AE%A1%E6%9F%A5%E8%B0%83%E6%9F%A5%22&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
+ body,err=fetch(url)
+ if not body: return [],err
+ try: return parse_feed(body,'Official China investigations search','CN','cn'),None
+ except Exception as e: return [],'parse '+str(e)[:120]
 
 def fetch_priority_china_fallback(now):
  # Time-limited backfill for a verified high-priority news item; expires after 72 hours.
@@ -457,13 +465,27 @@ def main():
     if code in raw:raw[code].append(item)
     else:global_rows.append(item)
    print('[OK]',source,len(fresh))
+ search_rows,search_error=fetch_china_investigation_search()
+ if search_error:
+  failures.append({'source':'Official China investigations search','country':'CN','error':search_error})
+  print('[PRIORITY-SEARCH-FAIL]',search_error)
+ else:
+  ok+=1
+  kept=0
+  for item in search_rows:
+   if not is_major_china_investigation(item): continue
+   published=dateval(item.get('published_at'))
+   if not published or (published<cutoff and published<now-dt.timedelta(hours=72)): continue
+   item['code']='CN'; item['event_country']='中国'; item['event_country_en']='China'
+   raw['CN'].append(item); kept+=1
+  print('[PRIORITY-SEARCH-OK]',kept,'senior investigation candidates from',len(search_rows),'search results')
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
  priority_fallback=fetch_priority_china_fallback(now)
  if priority_fallback:
   raw['CN'].append(priority_fallback)
   print('[BACKFILL-PRIORITY]',priority_fallback['title'],'source:',priority_fallback['source'])
- all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS),'source_ok':ok,'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
+ all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS)+1,'source_ok':ok,'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
