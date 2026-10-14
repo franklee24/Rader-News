@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/build_daily.py'
       - 'scripts/score_importance.py'
+      - 'scripts/test_china_priority.py'
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
@@ -47,13 +48,36 @@ jobs:
               raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
           for source in ('Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China'):
               if source not in text: raise SystemExit('INTERNATIONAL CHINA SOURCE MISSING: '+source)
-          if "domestic_cap=max(2,round(int(c.get('max',20))*.25))" not in text:
-              raise SystemExit('CHINA SOURCE DIVERSITY RULE MISSING')
-          print('Checked-in V22 sources, international China coverage, domestic-source cap and AI/LLM module are active.')
+          if 'CCDI Official investigations' not in text or 'def rank_china_events' not in text:
+              raise SystemExit('CHINA INVESTIGATION DISCOVERY/RANKING RULE MISSING')
+          print('Checked-in sources, China investigation discovery/ranking, international China coverage and AI/LLM module are active.')
           PY
+      - name: Test China priority rules
+        run: python scripts/test_china_priority.py
       - name: Build daily news
         run: python scripts/build_daily.py
-      - name: Apply V20 importance scoring
+      - name: Verify current high-priority China story
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          now=datetime.now(timezone.utc)
+          published=datetime(2026,10,13,10,0,tzinfo=timezone.utc)
+          if now <= published + timedelta(hours=72):
+              data=json.loads(Path('data/daily.json').read_text(encoding='utf-8'))
+              events=data.get('tiers',{}).get('tier1',{}).get('中国',{}).get('events',[])
+              matches=[(i,e) for i,e in enumerate(events) if any(k in ((e.get('title') or '')+' '+(e.get('title_zh') or '')) for k in ['黄奇帆','Huang Qifan','huang qifan'])]
+              if not matches:
+                  raise SystemExit('QUALITY GATE FAILED: Huang Qifan story missing from China section; check CCDI source fetch/parser.')
+              index,event=matches[0]
+              if index>=5 or int(event.get('importance',0))<95:
+                  raise SystemExit(f'QUALITY GATE FAILED: Huang Qifan story ranked #{index+1} with score {event.get("importance")}; expected top 5 and score >=95.')
+              print(f'CRITICAL CHINA STORY GATE PASSED: rank #{index+1}, score {event.get("importance")}')
+          else:
+              print('Time-limited Huang Qifan live-story gate expired; synthetic regression test remains active.')
+          PY
+      - name: Apply V22 importance scoring
         run: python scripts/score_importance.py
       - name: Remove repeats and undated events
         run: |
