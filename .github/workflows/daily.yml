@@ -56,6 +56,26 @@ jobs:
         run: python scripts/test_china_priority.py
       - name: Build daily news
         run: python scripts/build_daily.py
+      - name: Verify source reliability report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/source_health.json')
+          if not p.exists(): raise SystemExit('SOURCE HEALTH REPORT MISSING')
+          report=json.loads(p.read_text(encoding='utf-8'))
+          if not report.get('runs') or not report.get('sources'):
+              raise SystemExit('SOURCE HEALTH REPORT EMPTY')
+          for source in report['sources']:
+              if not 0 <= source.get('success_rate',-1) <= 1:
+                  raise SystemExit('INVALID SOURCE SUCCESS RATE: '+str(source.get('source')))
+          latest=report['runs'][-1]
+          failed=[x for x in latest.get('observations',[]) if x.get('status')=='failed']
+          empty=[x for x in latest.get('observations',[]) if x.get('status')=='empty']
+          print('SOURCE HEALTH REPORT PASSED; retained runs:',len(report['runs']),'sources:',len(report['sources']))
+          print('Latest run failed sources:',[(x['source'],x.get('error')) for x in failed])
+          print('Latest run sources returned zero items:',[x['source'] for x in empty])
+          PY
       - name: Verify current high-priority China story
         run: |
           python - <<'PY'
