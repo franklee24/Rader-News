@@ -286,17 +286,13 @@ def category(t):
  return best if scores[best] else '其他/综合'
 
 def is_major_china_investigation(item):
+ # Search broadly for investigation notices, but only elevate them when the title/snippet identifies a senior role.
  title=(item.get('title') or '')
  body=(item.get('description') or '')
- text=(title+' '+body).lower()
- source_names=[item.get('source','')]
- source_names += item.get('source_names',[]) if isinstance(item.get('source_names'),list) else []
- source_names += [s.get('source','') for s in item.get('sources',[]) if isinstance(s,dict)]
- official=any(('CCDI Official investigations' in s or 'Google News CCDI Investigations' in s or '中央纪委国家监委网站' in s or 'Official China investigations search' in s) for s in source_names)
- investigation=any(k in text for k in ['接受审查调查','纪律审查','监察调查','审查调查','被查','涉嫌严重违纪违法','under investigation','corruption investigation'])
- senior_text=(title+' '+body)
- senior=any(k in senior_text for k in ['省委书记','省委副书记','省委常委','省长','副省长','省人大常委会主任','省人大常委会副主任','省政协主席','省政协副主席','市委书记','市委副书记','市长','市政府原市长','市人大常委会主任','市政协主席','部长','副部长','中央委员','中央候补委员','中管干部','省部级','党组书记','党委书记','国家监委'])
- return investigation and (official or senior)
+ text=title+' '+body
+ investigation=any(k in text.lower() for k in ['接受审查调查','纪律审查','监察调查','审查调查','被查','涉嫌严重违纪违法','under investigation','corruption investigation'])
+ senior=any(k in text for k in ['省委书记','省委副书记','省委常委','省长','副省长','省人大常委会主任','省人大常委会副主任','省人大常委会党组成员','省政协主席','省政协副主席','市委书记','市委副书记','市长','市政府原市长','市人大常委会主任','市人大常委会副主任','市政协主席','市政协副主席','部长','副部长','中央委员','中央候补委员','中管干部','省部级','党组书记','党委书记','国家监委'])
+ return investigation and senior
 
 def rank_china_events(events,target_max=20):
  priority=[e for e in events if is_major_china_investigation(e)]
@@ -504,7 +500,7 @@ def main():
  health_runs=health_runs[-30:]
  source_rollup={}
  for run in health_runs:
-  for obs in run.get('observations',[]): source_rollup.setdefault(obs['source'],[]).append(obs)
+  for obs in run.get('observations',[]): source_rollup.setdefault(obs['source'],[]).append(dict(obs,checked_at=run.get('checked_at')))
  source_summaries=[]
  for name,checks in source_rollup.items():
   failed=sum(1 for x in checks if x.get('status')=='failed')
