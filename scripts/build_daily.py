@@ -10,6 +10,7 @@ import html
 import json
 import os
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -20,6 +21,7 @@ CONFIG=json.load(open(os.path.join(ROOT,'config/country_tiers.json'),encoding='u
 OUT=os.path.join(ROOT,'data'); HISTORY=os.path.join(OUT,'history')
 os.makedirs(HISTORY,exist_ok=True)
 DAILY=os.path.join(OUT,'daily.json')
+SOURCE_HEALTH=os.path.join(OUT,'source_health.json')
 UA='LeidaNews/18.0 (+https://github.com/franklee24/Rader-News)'
 TIMEOUT=18; WORKERS=8; MIN_TOTAL_EVENTS=40; MIN_TIER1_EVENTS=20
 
@@ -212,12 +214,13 @@ def parse_ccdi_listing(body,source):
  return rows
 
 def fetch_feed(feed):
+ started=time.perf_counter()
  source,country,url,lang=feed; body,err=fetch(url)
- if not body:return feed,[],err
+ if not body:return feed,[],err,round(time.perf_counter()-started,3)
  try:
   rows=parse_ccdi_listing(body,source) if source=='CCDI Official investigations' else parse_feed(body,source,country,lang)
-  return feed,rows,None
- except Exception as e:return feed,[],'parse '+str(e)[:120]
+  return feed,rows,None,round(time.perf_counter()-started,3)
+ except Exception as e:return feed,[],'parse '+str(e)[:120],round(time.perf_counter()-started,3)
 
 SOURCE_AUTHORITY={
  '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':98,'Google AI Blog':97,'Google DeepMind':98,'Google Research':96,'Anthropic News Watch':97,'Meta AI':95,'NVIDIA AI Blog':96,'NVIDIA Developer AI':94,'Microsoft AI Blog':96,'Microsoft Research AI':96,'AWS ML Blog':93,'Hugging Face Blog':91,'Mistral AI News':93,'Apple ML Research':95,'Alibaba Qwen':91,'DeepSeek':92,'ByteDance Seed':90,'Zhipu GLM':89,'Moonshot Kimi':89,'Baidu ERNIE':88,'Tencent Hunyuan':88,'MiniMax':88,'StepFun':87,'Reuters AI':98,'Financial Times AI':97,'New York Times AI':96,'Bloomberg AI':97,'Wall Street Journal AI':96,'Associated Press AI':97,'TechCrunch AI':89,'arXiv cs.AI':92,'arXiv cs.CL':92,'MIT Technology Review AI':94,'The Verge AI':88,
@@ -291,7 +294,8 @@ def is_major_china_investigation(item):
  source_names += [s.get('source','') for s in item.get('sources',[]) if isinstance(s,dict)]
  official=any(('CCDI Official investigations' in s or 'Google News CCDI Investigations' in s or '中央纪委国家监委网站' in s or 'Official China investigations search' in s) for s in source_names)
  investigation=any(k in text for k in ['接受审查调查','纪律审查','监察调查','审查调查','被查','涉嫌严重违纪违法','under investigation','corruption investigation'])
- senior=any(k in title for k in ['市委原副书记','市委书记','省委副书记','省委常委','省委书记','原市长','原省长','副省长','省政府原','党组成员','中管干部','部长','副部长','省部级','市政府原市长','国家监委'])
+ senior_text=(title+' '+body)
+ senior=any(k in senior_text for k in ['省委书记','省委副书记','省委常委','省长','副省长','省人大常委会主任','省人大常委会副主任','省政协主席','省政协副主席','市委书记','市委副书记','市长','市政府原市长','市人大常委会主任','市政协主席','部长','副部长','中央委员','中央候补委员','中管干部','省部级','党组书记','党委书记','国家监委'])
  return investigation and (official or senior)
 
 def rank_china_events(events,target_max=20):
@@ -430,12 +434,13 @@ def fetch_priority_china_fallback(now):
 
 def main():
  now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25); ai_cutoff=now-dt.timedelta(days=30)
- raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; ai_rows=[]; failures=[]; ok=0
+ raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; ai_rows=[]; failures=[]; ok=0; health_observations=[]
  print('雷达新闻 V22：多源事件聚合 + 独立 AI/LLM 新闻池，不预设媒体优先')
  with ThreadPoolExecutor(max_workers=WORKERS) as ex:
   fs=[ex.submit(fetch_feed,f) for f in (FEEDS+AI_FEEDS)]
   for fut in as_completed(fs):
-   feed,rows,err=fut.result(); source,fc,_,lang=feed
+   feed,rows,err,elapsed=fut.result(); source,fc,_,lang=feed
+   health_observations.append({'source':source,'country':fc,'status':'failed' if err else ('empty' if not rows else 'ok'),'items_returned':len(rows),'elapsed_seconds':elapsed,'error':err})
    if err:failures.append({'source':source,'country':fc,'error':err});print('[FAIL]',source,err);continue
    ok+=1; fresh=[]
    for x in rows:
@@ -465,7 +470,10 @@ def main():
     if code in raw:raw[code].append(item)
     else:global_rows.append(item)
    print('[OK]',source,len(fresh))
+ search_started=time.perf_counter()
  search_rows,search_error=fetch_china_investigation_search()
+ search_elapsed=round(time.perf_counter()-search_started,3)
+ health_observations.append({'source':'Official China investigations search','country':'CN','status':'failed' if search_error else ('empty' if not search_rows else 'ok'),'items_returned':len(search_rows),'elapsed_seconds':search_elapsed,'error':search_error})
  if search_error:
   failures.append({'source':'Official China investigations search','country':'CN','error':search_error})
   print('[PRIORITY-SEARCH-FAIL]',search_error)
@@ -479,13 +487,35 @@ def main():
    item['code']='CN'; item['event_country']='中国'; item['event_country_en']='China'
    raw['CN'].append(item); kept+=1
   print('[PRIORITY-SEARCH-OK]',kept,'senior investigation candidates from',len(search_rows),'search results')
+  if search_rows and kept==0: print('[PRIORITY-SEARCH-NO-MATCH] Search succeeded, but no result passed the high-official investigation filter.')
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
  priority_fallback=fetch_priority_china_fallback(now)
  if priority_fallback:
   raw['CN'].append(priority_fallback)
   print('[BACKFILL-PRIORITY]',priority_fallback['title'],'source:',priority_fallback['source'])
- all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS)+1,'source_ok':ok,'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
+ # Keep a rolling 30-run per-source history so transient errors are not mislabeled as persistent outages.
+ try:
+  prior_health=json.load(open(SOURCE_HEALTH,encoding='utf-8'))
+  health_runs=prior_health.get('runs',[])
+ except Exception:
+  health_runs=[]
+ health_runs.append({'checked_at':now.isoformat(),'observations':health_observations})
+ health_runs=health_runs[-30:]
+ source_rollup={}
+ for run in health_runs:
+  for obs in run.get('observations',[]): source_rollup.setdefault(obs['source'],[]).append(obs)
+ source_summaries=[]
+ for name,checks in source_rollup.items():
+  failed=sum(1 for x in checks if x.get('status')=='failed')
+  empty=sum(1 for x in checks if x.get('status')=='empty')
+  source_summaries.append({'source':name,'checks':len(checks),'failed_checks':failed,'empty_checks':empty,'success_rate':round((len(checks)-failed)/len(checks),3),'last_status':checks[-1].get('status'),'last_checked_at':checks[-1].get('checked_at'),'last_error':next((x.get('error') for x in reversed(checks) if x.get('error')),None),'recent_failures':[{'checked_at':x.get('checked_at'),'error':x.get('error')} for x in checks[-5:] if x.get('status')=='failed']})
+ health_report={'updated_at':now.isoformat(),'retained_runs':len(health_runs),'window_runs':30,'sources':sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])),'runs':health_runs}
+ with open(SOURCE_HEALTH,'w',encoding='utf-8') as hf: json.dump(health_report,hf,ensure_ascii=False,indent=2)
+ for h in sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])):
+  if h['last_status']=='failed' or h['failed_checks']>=2 or h['empty_checks']>=3:
+   print('[SOURCE-HEALTH]',h['source'],'checks=',h['checks'],'failed=',h['failed_checks'],'empty=',h['empty_checks'],'success_rate=',h['success_rate'],'last=',h['last_status'],'error=',h['last_error'])
+ all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS)+1,'source_ok':ok,'source_health_path':'data/source_health.json','source_health_window_runs':len(health_runs),'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
