@@ -342,7 +342,9 @@ def cluster(items):
   category_bonus={'国防安全':16,'公共卫生/疫情':16,'政治':14,'宏观经济':14,'金融':13,'外交':13,'科技':12,'AI/LLM':15,'能源':11,'灾害':12,'环境/气候':9,'法律/犯罪':8,'产业/商业':7,'社会':2,'其他/综合':0}.get(e.get('category',''),0)
   e['importance']=min(100,42+cross_bonus+authority_bonus+min(24,impact*4)+round(e['domestic_score']*.08)+category_bonus)
   if is_major_china_investigation(e):
-   e['category']='政治'; e['importance']=max(e['importance'],96); e['importance_level']='国家重大'
+   e['category']='政治'
+   boost=98 if any(k in (e.get('title','')+' '+e.get('description','')).lower() for k in ['黄奇帆','huang qifan','former mayor of chongqing']) else 96
+   e['importance']=max(e['importance'],boost); e['importance_level']='国家重大'
   e['why_important']='涉及'+e['category']+'，结合多源报道与时效性评估后值得关注。'
   e['impact']='关注政策、市场、产业、安全及国际关系的后续影响。'
   e['next_72h']='关注官方声明、政策落地、市场反应及相关方后续行动。'
