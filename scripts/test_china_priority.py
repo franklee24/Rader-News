@@ -20,6 +20,21 @@ assert items[0]["published_at"].startswith("2026-10-13")
 assert build["is_china_related"]({"title": headline})
 assert build["is_major_china_investigation"](items[0])
 
+# A second senior-official investigation proves the rule is event-based, not name-specific.
+generic_headline = "广东省人大常委会党组成员、副主任张硕辅接受中央纪委国家监委纪律审查和监察调查"
+generic = {
+    "title": generic_headline,
+    "source": "Official China investigations search",
+    "source_names": ["Official China investigations search"],
+    "sources": [{"source": "Official China investigations search"}],
+    "source_authority": 97,
+    "category": "政治",
+    "published_at": "2026-10-08T00:00:00+00:00",
+    "event_country": "中国",
+}
+assert build["is_major_china_investigation"](generic)
+assert scoring["score"](dict(generic))["importance"] >= 92
+
 event = {
     "id": "regression-huang-qifan",
     "title": headline,
