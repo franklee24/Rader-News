@@ -395,12 +395,35 @@ def is_low_signal_human_interest(item):
  return any(re.search(p,low if p.isascii() else combined,re.I) for p in patterns)
 
 def fetch_china_investigation_search():
- # Run one targeted search after the parallel feed batch to avoid concurrent Google News 503s.
- url='https://news.google.com/rss/search?q=site%3Accdi.gov.cn%20%22%E7%BA%AA%E5%BE%8B%E5%AE%A1%E6%9F%A5%22%20OR%20site%3Accdi.gov.cn%20%22%E6%8E%A5%E5%8F%97%E5%AE%A1%E6%9F%A5%E8%B0%83%E6%9F%A5%22%20OR%20site%3Axinhuanet.com%20%22%E6%8E%A5%E5%8F%97%E5%AE%A1%E6%9F%A5%E8%B0%83%E6%9F%A5%22&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
- body,err=fetch(url)
- if not body: return [],err
- try: return parse_feed(body,'Official China investigations search','CN','cn'),None
- except Exception as e: return [],'parse '+str(e)[:120]
+ # Search only investigation reports that also mention senior leadership roles; do not ingest a general CCDI news stream.
+ from urllib.parse import quote
+ roles='("省委书记" OR "省委常委" OR "省长" OR "副省长" OR "市委书记" OR "市长" OR "省人大常委会" OR "省政协主席" OR "部长" OR "副部长" OR "中央委员" OR "中管干部")'
+ event_terms='("接受纪律审查和监察调查" OR "接受审查调查" OR "涉嫌严重违纪违法" OR "被查")'
+ queries=[
+  'site:ccdi.gov.cn '+event_terms+' '+roles,
+  'site:xinhuanet.com '+event_terms+' '+roles,
+  'site:cctv.com '+event_terms+' '+roles,
+ ]
+ all_rows=[]; errors=[]; seen=set(); successful=0
+ for query in queries:
+  url='https://news.google.com/rss/search?q='+quote(query)+'&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
+  body,err=fetch(url)
+  if not body:
+   errors.append(err or 'fetch failed')
+   print('[PRIORITY-SEARCH-QUERY-FAIL]',err)
+   continue
+  try:
+   rows=parse_feed(body,'Official China investigations search','CN','cn')
+   successful+=1
+   for item in rows:
+    key=item.get('link') or norm(item.get('title',''))
+    if key and key not in seen:
+     seen.add(key); all_rows.append(item)
+  except Exception as e:
+   errors.append('parse '+str(e)[:120])
+ if not successful: return [],'; '.join(errors)[:240] or 'all targeted queries failed'
+ print('[PRIORITY-SEARCH-QUERIES]',successful,'of',len(queries),'succeeded; unique results:',len(all_rows))
+ return all_rows,None
 
 def fetch_priority_china_fallback(now):
  # Time-limited backfill for a verified high-priority news item; expires after 72 hours.
