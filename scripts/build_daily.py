@@ -29,7 +29,6 @@ FEEDS=[
  ('人民网-时政','CN','http://www.people.com.cn/rss/politics.xml','cn'),
  ('新华-时政','CN','http://www.xinhuanet.com/politics/news_politics.xml','cn'),
  ('新华-国际','CN','http://www.xinhuanet.com/world/news_world.xml','cn'),
- ('Google News CCDI Investigations','CN','https://news.google.com/rss/search?q=site%3Accdi.gov.cn%2Fscdcn%2Fzggb%2Fzjsc%20%22%E7%BA%AA%E5%BE%8B%E5%AE%A1%E6%9F%A5%22%20OR%20%22%E6%8E%A5%E5%8F%97%E5%AE%A1%E6%9F%A5%E8%B0%83%E6%9F%A5%22&hl=zh-CN&gl=CN&ceid=CN:zh-Hans','cn'),
  ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
  ('纽约时报-日本','JP','https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/destination/japan/rss.xml','en'),
