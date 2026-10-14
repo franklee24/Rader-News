@@ -20,6 +20,20 @@ assert items[0]["published_at"].startswith("2026-10-13")
 assert build["is_china_related"]({"title": headline})
 assert build["is_major_china_investigation"](items[0])
 
+# Search results must identify a senior role, not merely mention an investigation.
+snippet_only = {
+    "title": "某市某局干部李某接受审查调查",
+    "description": "李某曾任某省省长，相关调查正在进行",
+    "source": "Official China investigations search",
+}
+assert build["is_major_china_investigation"](snippet_only), "senior role in search snippet was missed"
+ordinary_investigation = {
+    "title": "某县普通科级干部接受审查调查",
+    "description": "有关部门发布调查通报",
+    "source": "Official China investigations search",
+}
+assert not build["is_major_china_investigation"](ordinary_investigation), "ordinary investigation was incorrectly elevated"
+
 # A second senior-official investigation proves the rule is event-based, not name-specific.
 generic_headline = "广东省人大常委会党组成员、副主任张硕辅接受中央纪委国家监委纪律审查和监察调查"
 generic = {
