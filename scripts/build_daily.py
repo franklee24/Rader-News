@@ -459,6 +459,10 @@ def main():
    print('[OK]',source,len(fresh))
  for x in global_rows:
   if x.get('code') in raw:raw[x['code']].append(x)
+ priority_fallback=fetch_priority_china_fallback(now)
+ if priority_fallback:
+  raw['CN'].append(priority_fallback)
+  print('[BACKFILL-PRIORITY]',priority_fallback['title'],'source:',priority_fallback['source'])
  all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS),'source_ok':ok,'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
