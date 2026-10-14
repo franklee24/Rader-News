@@ -48,7 +48,7 @@ jobs:
               raise SystemExit('AI/LLM NEWS CONFIGURATION MISSING')
           for source in ('Reuters China','BBC China','Associated Press China','New York Times China','Wall Street Journal China','Bloomberg China','Financial Times China','The Economist China'):
               if source not in text: raise SystemExit('INTERNATIONAL CHINA SOURCE MISSING: '+source)
-          if 'Google News CCDI Investigations' not in text or 'def rank_china_events' not in text:
+          if 'def fetch_priority_china_fallback' not in text or 'def rank_china_events' not in text:
               raise SystemExit('CHINA INVESTIGATION DISCOVERY/RANKING RULE MISSING')
           print('Checked-in sources, China investigation discovery/ranking, international China coverage and AI/LLM module are active.')
           PY
