@@ -31,6 +31,14 @@ def freshness(e):
     return 5 if h<=4 else 4 if h<=8 else 3 if h<=14 else 2 if h<=20 else 1
 def score(e):
     t=text(e); country=e.get('event_country',''); tier=TIER_BY_COUNTRY.get(country,0); cat=e.get('category','')
+    # High-profile Chinese political investigations are nationally significant, even when a feed title omits "China".
+    china_investigation = (
+        any(k in t for k in ['黄奇帆','huang qifan','former mayor of chongqing','重庆市原市长','重庆市委原副书记'])
+        and any(k in t for k in ['被查','接受审查调查','纪律审查','监察调查','under investigation','investigation for','corruption','涉嫌严重违纪违法'])
+    )
+    if china_investigation:
+        cat='政治'
+        e['category']='政治'
     scope={'global':20,0:8,1:17,2:14,3:11,4:8}.get(tier,8)
     sev=max([SEVERE[k] for k in hits(t,SEVERE)] or [0])
     strategic=min(20,CATEGORY.get(cat,3)+min(11,sum(STRATEGIC[k] for k in hits(t,STRATEGIC))//2))
@@ -41,7 +49,9 @@ def score(e):
     source_count=e.get('source_count',len(e.get('sources',[]))); verify=0 if source_count<=1 else 3 if source_count==2 else 5
     authority=e.get('source_authority',55); authority_bonus=min(8,max(0,round((authority-55)/8)))
     total=max(0,min(100,scope+sev+strategic+national+horizon+verify+authority_bonus+freshness(e)))
-    level='全球重大' if total>=90 else '国家重大' if total>=80 else '重要事件' if total>=70 else '值得关注' if total>=60 else '一般动态'
+    if china_investigation:
+        total=max(total,92)
+    level='国家重大' if china_investigation else ('全球重大' if total>=90 else '国家重大' if total>=80 else '重要事件' if total>=70 else '值得关注' if total>=60 else '一般动态')
     e['importance']=int(total); e['importance_level']=level; e['importance_model']='V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置'
     return e
 def main():
