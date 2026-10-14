@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-14T05:14:10.186739+00:00",
-  "generated_beijing": "2026-10-14 13:14",
+  "generated_at": "2026-10-14T05:18:59.950074+00:00",
+  "generated_beijing": "2026-10-14 13:19",
   "window_hours": 24,
   "version": "V22.0",
   "source_mode": "multi-source-event-first-direct-rss",
   "source_total": 79,
   "source_ok": 77,
   "source_health_path": "data/source_health.json",
-  "source_health_window_runs": 1,
+  "source_health_window_runs": 2,
   "ai_news_target": 20,
   "ai_news_window_days": 30,
   "failures": [
@@ -2027,12 +2027,18 @@
         "count": 60,
         "events": [
           {
-            "id": "c84ed4e46b5e47e7",
-            "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
-            "published_at": "2026-10-13T10:01:21+00:00",
+            "id": "6773685f5a011eea",
+            "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 - 央视网",
+            "published_at": "2026-10-13T10:08:39+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
+              {
+                "source": "Official China investigations search",
+                "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+                "published_at": "2026-10-13T10:08:39+00:00",
+                "description": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 央视网"
+              },
               {
                 "source": "新华社",
                 "link": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
@@ -2040,15 +2046,16 @@
                 "description": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查"
               }
             ],
-            "source": "新华社",
-            "url": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
-            "source_url": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
-            "source_count": 1,
+            "source": "Official China investigations search",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+            "source_count": 2,
             "source_names": [
+              "Official China investigations search",
               "新华社"
             ],
-            "source_authority": 96,
-            "summary": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
+            "source_authority": 97,
+            "summary": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 央视网",
             "category": "政治",
             "domestic_score": 30,
             "importance": 98,
@@ -2189,6 +2196,38 @@
             "title_zh": "美国国防起动器向台湾出动 打造无中生有无人机 - WSJ"
           },
           {
+            "id": "8e022c7d4b44ae15",
+            "title": "文旅领域疫情防控指南不再要求提供核酸检测阴性证明",
+            "published_at": null,
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+                "published_at": null,
+                "description": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。",
+            "category": "公共卫生/疫情",
+            "domestic_score": 38,
+            "importance": 59,
+            "why_important": "涉及公共卫生/疫情，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "28394a0765ac5baf",
             "title": "阿富汗首都酒店爆炸袭击致5名中国公民受伤",
             "published_at": null,
@@ -2247,38 +2286,6 @@
             "domestic_score": 38,
             "importance": 59,
             "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "8e022c7d4b44ae15",
-            "title": "文旅领域疫情防控指南不再要求提供核酸检测阴性证明",
-            "published_at": null,
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "新华-时政",
-                "link": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-                "published_at": null,
-                "description": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。"
-              }
-            ],
-            "source": "新华-时政",
-            "url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196838.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-时政"
-            ],
-            "source_authority": 62,
-            "summary": "新指南除要求导游上团前核验健康码外，均不再要求提供核酸检测阴性证明、查验健康码、开展落地检。",
-            "category": "公共卫生/疫情",
-            "domestic_score": 38,
-            "importance": 59,
-            "why_important": "涉及公共卫生/疫情，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -2587,6 +2594,38 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "被控毒害同事并想逃到中国的研究生在洛杉矶洛杉矶机场被捕"
+          },
+          {
+            "id": "fcd4ce480d969fed",
+            "title": "国家能源局四川监管办公室原党组书记、监管专员何淑兰接受纪律审查和监察调查 - 央视网",
+            "published_at": "2026-10-13T07:09:14+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Official China investigations search",
+                "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xT25jTnJSS1NJYmZlS3Z6WVRJWC1ELVJ1X2NFQ2tDazRUbm1SWk5xMXp6dUVjU2M2Q3J3Q25JUzQ0WkY4NkVnczhmYWZoSEdPMkNUeHcyTDNMTXNnQXdMdjZzMFJCZ1M3LUZzR0JVSFE3eU0xT0JTag?oc=5",
+                "published_at": "2026-10-13T07:09:14+00:00",
+                "description": "国家能源局四川监管办公室原党组书记、监管专员何淑兰接受纪律审查和监察调查 央视网"
+              }
+            ],
+            "source": "Official China investigations search",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xT25jTnJSS1NJYmZlS3Z6WVRJWC1ELVJ1X2NFQ2tDazRUbm1SWk5xMXp6dUVjU2M2Q3J3Q25JUzQ0WkY4NkVnczhmYWZoSEdPMkNUeHcyTDNMTXNnQXdMdjZzMFJCZ1M3LUZzR0JVSFE3eU0xT0JTag?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xT25jTnJSS1NJYmZlS3Z6WVRJWC1ELVJ1X2NFQ2tDazRUbm1SWk5xMXp6dUVjU2M2Q3J3Q25JUzQ0WkY4NkVnczhmYWZoSEdPMkNUeHcyTDNMTXNnQXdMdjZzMFJCZ1M3LUZzR0JVSFE3eU0xT0JTag?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Official China investigations search"
+            ],
+            "source_authority": 97,
+            "summary": "国家能源局四川监管办公室原党组书记、监管专员何淑兰接受纪律审查和监察调查 央视网",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 51,
+            "importance_level": "一般动态",
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
             "id": "67efa3798ad0370c",
@@ -3124,18 +3163,18 @@
             "event_country": "中国",
             "sources": [
               {
-                "source": "Reuters China",
+                "source": "Reuters",
                 "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5",
                 "published_at": "2026-10-13T14:47:04+00:00",
                 "description": "US chip stocks extend slide as China memory report, AI spending jitters hit sector Reuters"
               }
             ],
-            "source": "Reuters China",
+            "source": "Reuters",
             "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5",
             "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5",
             "source_count": 1,
             "source_names": [
-              "Reuters China"
+              "Reuters"
             ],
             "source_authority": 98,
             "summary": "US chip stocks extend slide as China memory report, AI spending jitters hit sector Reuters",
@@ -3777,39 +3816,6 @@
             "title_zh": "宝马投放量在第三季度下降6.3%,"
           },
           {
-            "id": "7cdd2ff29ed22a47",
-            "title": "India Contract Drugmaker Piramal Says Focused on Cutting China Exposure - Bloomberg.com",
-            "published_at": "2026-10-13T09:05:43+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Bloomberg China",
-                "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2RqTkIta0JIMzB0dTR0Y2RqQkcwQkJIc1FrN3FScTVaYTJwUVdtS25yRUNIMm93cktpWTh2U3BUZ2N5b3FDQ0xGczI3ZENiOTE4OWMweVFoOG9lZEtxSTViaDVrXzR5dWRRRmxyWk1NV2dGUXV2QXIzUzdVbzkxd0NPQkRVSUJ0S3ZiZlB6aVZKQmZBdDJ4YWlyOHBseTJLOE1EekFIdU9UUUpaWXhFeG1Kb1JFc1VweEhvaXFwdw?oc=5",
-                "published_at": "2026-10-13T09:05:43+00:00",
-                "description": "India Contract Drugmaker Piramal Says Focused on Cutting China Exposure Bloomberg.com"
-              }
-            ],
-            "source": "Bloomberg China",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2RqTkIta0JIMzB0dTR0Y2RqQkcwQkJIc1FrN3FScTVaYTJwUVdtS25yRUNIMm93cktpWTh2U3BUZ2N5b3FDQ0xGczI3ZENiOTE4OWMweVFoOG9lZEtxSTViaDVrXzR5dWRRRmxyWk1NV2dGUXV2QXIzUzdVbzkxd0NPQkRVSUJ0S3ZiZlB6aVZKQmZBdDJ4YWlyOHBseTJLOE1EekFIdU9UUUpaWXhFeG1Kb1JFc1VweEhvaXFwdw?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM2RqTkIta0JIMzB0dTR0Y2RqQkcwQkJIc1FrN3FScTVaYTJwUVdtS25yRUNIMm93cktpWTh2U3BUZ2N5b3FDQ0xGczI3ZENiOTE4OWMweVFoOG9lZEtxSTViaDVrXzR5dWRRRmxyWk1NV2dGUXV2QXIzUzdVbzkxd0NPQkRVSUJ0S3ZiZlB6aVZKQmZBdDJ4YWlyOHBseTJLOE1EekFIdU9UUUpaWXhFeG1Kb1JFc1VweEhvaXFwdw?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Bloomberg China"
-            ],
-            "source_authority": 96,
-            "summary": "India Contract Drugmaker Piramal Says Focused on Cutting China Exposure Bloomberg.com",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 39,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "印度签约药剂师皮拉马尔表示关注\"切入\"中国曝光-彭博.com."
-          },
-          {
             "id": "f23100074cb9030f",
             "title": "China State Media Warns EU Against ‘New Tricks’ After Car Deal - Bloomberg.com",
             "published_at": "2026-10-13T07:52:59+00:00",
@@ -4015,7 +4021,7 @@
         "code": "GB",
         "target_min": 8,
         "target_max": 20,
-        "count": 41,
+        "count": 42,
         "events": [
           {
             "id": "0fe90079d2e5e34c",
@@ -4381,6 +4387,39 @@
             "title_zh": "我们从IMF那里学到了英国经济的三点"
           },
           {
+            "id": "5fc157b8f0ded5b1",
+            "title": "Barriers facing black and south Asian music events ‘cost London up to £141m a year’",
+            "published_at": "2026-10-14T05:00:46+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "source": "卫报",
+                "link": "https://www.theguardian.com/music/2026/oct/14/barriers-black-south-asian-music-events-london-racial-inequality",
+                "published_at": "2026-10-14T05:00:46+00:00",
+                "description": "Exclusive: Investigation finds racial inequality in live music industry rife and many genres labelled ‘high risk’ despit"
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/music/2026/oct/14/barriers-black-south-asian-music-events-london-racial-inequality",
+            "source_url": "https://www.theguardian.com/music/2026/oct/14/barriers-black-south-asian-music-events-london-racial-inequality",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Exclusive: Investigation finds racial inequality in live music industry rife and many genres labelled ‘high risk’ despite lack of evidence Black and south Asian music events in Lon",
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 47,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "面对亚洲黑人和南亚音乐活动的障碍:伦敦每年花费1.41亿英镑。"
+          },
+          {
             "id": "e079306c5dc4e7af",
             "title": "外媒：环保人士谴责英国政府“气候虚伪”",
             "published_at": null,
@@ -4543,6 +4582,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "最高法院审理教会典狱长谋杀案上诉"
+          },
+          {
+            "id": "a760aa53333552d7",
+            "title": "Our baby died on Christmas Eve and we're still waiting for answers",
+            "published_at": "2026-10-14T05:14:15+00:00",
+            "code": "GB",
+            "event_country": "英国",
+            "sources": [
+              {
+                "source": "BBC UK",
+                "link": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
+                "published_at": "2026-10-14T05:14:15+00:00",
+                "description": "Gwilym died on Christmas Eve at just 11 days old, with his parents still waiting for answers."
+              }
+            ],
+            "source": "BBC UK",
+            "url": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
+            "source_url": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
+            "source_count": 1,
+            "source_names": [
+              "BBC UK"
+            ],
+            "source_authority": 94,
+            "summary": "Gwilym died on Christmas Eve at just 11 days old, with his parents still waiting for answers.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "我们的孩子在平安夜去世 我们还在等待答案"
           },
           {
             "id": "adec4b4ce75123a5",
@@ -4832,39 +4904,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "a760aa53333552d7",
-            "title": "Our baby died on Christmas Eve and we're still waiting for answers",
-            "published_at": "2026-10-13T21:09:00+00:00",
-            "code": "GB",
-            "event_country": "英国",
-            "sources": [
-              {
-                "source": "BBC UK",
-                "link": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
-                "published_at": "2026-10-13T21:09:00+00:00",
-                "description": "Gwilym died on Christmas Eve at just 11 days old, with his parents still waiting for answers."
-              }
-            ],
-            "source": "BBC UK",
-            "url": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
-            "source_url": "https://www.bbc.co.uk/news/articles/cwdd8972n1zeo?at_medium=RSS&at_campaign=rss",
-            "source_count": 1,
-            "source_names": [
-              "BBC UK"
-            ],
-            "source_authority": 94,
-            "summary": "Gwilym died on Christmas Eve at just 11 days old, with his parents still waiting for answers.",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 41,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "我们的孩子在平安夜去世 我们还在等待答案"
           },
           {
             "id": "ae0ae55c61e4b756",
@@ -6530,6 +6569,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "f4f6fe1af118282d",
+            "title": "陕西文化艺术展在巴黎举行",
+            "published_at": null,
+            "code": "FR",
+            "event_country": "法国",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+                "published_at": null,
+                "description": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129194638.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 34,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "5c0b1dd0d8243830",
             "title": "全球连线|法国队战胜英格兰 第7次打入世界杯半决赛",
             "published_at": null,
@@ -6552,38 +6623,6 @@
             ],
             "source_authority": 62,
             "summary": "北京时间10日晚，卫冕冠军法国队以2:1战胜英格兰队，挺进卡塔尔世界杯足球赛四强。",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 34,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "f4f6fe1af118282d",
-            "title": "陕西文化艺术展在巴黎举行",
-            "published_at": null,
-            "code": "FR",
-            "event_country": "法国",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-                "published_at": null,
-                "description": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-            "source_url": "http://www.news.cn/world/2022-12/09/c_1129194637.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "由巴黎中国文化中心与陕西省文化和旅游厅共同主办的“古法新作”陕西文化艺术展8日晚在巴黎开幕。中法两国各界人士200余人出席开幕式。",
             "category": "其他/综合",
             "domestic_score": 30,
             "importance": 34,
@@ -9724,6 +9763,39 @@
             "title_zh": "俄罗斯以间谍罪名逮捕日本记者"
           },
           {
+            "id": "ef396fe0505699f1",
+            "title": "Russia detains Japanese journalist suspected of spying",
+            "published_at": "2026-10-13T22:08:47+00:00",
+            "code": "JP",
+            "event_country": "日本",
+            "sources": [
+              {
+                "source": "South China Morning Post",
+                "link": "https://www.scmp.com/news/world/russia-central-asia/article/3370789/russia-detains-japanese-journalist-suspicion-spying?utm_source=rss_feed",
+                "published_at": "2026-10-13T22:08:47+00:00",
+                "description": "Russia’s FSB security agency said on Tuesday it had detained a Japanese journalist for alleged espionage, and Moscow’s F"
+              }
+            ],
+            "source": "South China Morning Post",
+            "url": "https://www.scmp.com/news/world/russia-central-asia/article/3370789/russia-detains-japanese-journalist-suspicion-spying?utm_source=rss_feed",
+            "source_url": "https://www.scmp.com/news/world/russia-central-asia/article/3370789/russia-detains-japanese-journalist-suspicion-spying?utm_source=rss_feed",
+            "source_count": 1,
+            "source_names": [
+              "South China Morning Post"
+            ],
+            "source_authority": 86,
+            "summary": "Russia’s FSB security agency said on Tuesday it had detained a Japanese journalist for alleged espionage, and Moscow’s Foreign Ministry said it regretted that Tokyo was using corre",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 54,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "俄罗斯拘留涉嫌间谍的日本记者"
+          },
+          {
             "id": "146ce4058eef1a14",
             "title": "Japanese banks and insurers return to domestic bonds as yields surge",
             "published_at": "2026-10-14T04:00:03+00:00",
@@ -9986,46 +10058,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "前帮派领导人因图帕克·沙库尔被谋杀被判处40年徒刑"
-          },
-          {
-            "id": "ef396fe0505699f1",
-            "title": "Russia detains Japanese journalist suspected of spying",
-            "published_at": "2026-10-13T22:08:47+00:00",
-            "code": "JP",
-            "event_country": "日本",
-            "sources": [
-              {
-                "source": "Reuters AI",
-                "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkdlOUdiNjZXXzhwd1VuY2UwbXlOWTNaeHBMbzk0UFF2QzZvaEVDS25iWHdoMmNJTFZFS2duUzJzWkpZNER2OExvUVZDMkJQZ25HMGxmN3hMbjY2YkMwM0tRM3hoR1ZJMnVBb3RpMUJ3NzhZdTktWHotUDQ3a1lqMEdQc0oxQUZLb3ZYemhUUkMtU3FGd1M4ajQ2SVdEWTNYSUlDeHhENVBSbzU0NGtv?oc=5",
-                "published_at": "2026-10-13T15:02:00+00:00",
-                "description": "Russia detains Japanese journalist on suspicion of spying Reuters"
-              },
-              {
-                "source": "South China Morning Post",
-                "link": "https://www.scmp.com/news/world/russia-central-asia/article/3370789/russia-detains-japanese-journalist-suspicion-spying?utm_source=rss_feed",
-                "published_at": "2026-10-13T22:08:47+00:00",
-                "description": "Russia’s FSB security agency said on Tuesday it had detained a Japanese journalist for alleged espionage, and Moscow’s F"
-              }
-            ],
-            "source": "Reuters AI",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkdlOUdiNjZXXzhwd1VuY2UwbXlOWTNaeHBMbzk0UFF2QzZvaEVDS25iWHdoMmNJTFZFS2duUzJzWkpZNER2OExvUVZDMkJQZ25HMGxmN3hMbjY2YkMwM0tRM3hoR1ZJMnVBb3RpMUJ3NzhZdTktWHotUDQ3a1lqMEdQc0oxQUZLb3ZYemhUUkMtU3FGd1M4ajQ2SVdEWTNYSUlDeHhENVBSbzU0NGtv?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkdlOUdiNjZXXzhwd1VuY2UwbXlOWTNaeHBMbzk0UFF2QzZvaEVDS25iWHdoMmNJTFZFS2duUzJzWkpZNER2OExvUVZDMkJQZ25HMGxmN3hMbjY2YkMwM0tRM3hoR1ZJMnVBb3RpMUJ3NzhZdTktWHotUDQ3a1lqMEdQc0oxQUZLb3ZYemhUUkMtU3FGd1M4ajQ2SVdEWTNYSUlDeHhENVBSbzU0NGtv?oc=5",
-            "source_count": 2,
-            "source_names": [
-              "Reuters AI",
-              "South China Morning Post"
-            ],
-            "source_authority": 98,
-            "summary": "Russia detains Japanese journalist on suspicion of spying Reuters",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 45,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "俄罗斯拘留涉嫌间谍的日本记者"
           },
           {
             "id": "a47983799a303354",
@@ -10344,25 +10376,25 @@
             "event_country": "印度",
             "sources": [
               {
-                "source": "The Hindu International",
+                "source": "The Hindu National",
                 "link": "https://www.thehindu.com/news/national/modi-speaks-to-carney-says-india-and-canada-contribute-to-stable-prosperous-world/article71581011.ece",
                 "published_at": "2026-10-14T03:37:57+00:00",
                 "description": "The two Prime Ministers had a phone call as senior Canadian Ministers are in Delhi for talks; India steps up its middle "
               },
               {
-                "source": "The Hindu National",
+                "source": "The Hindu International",
                 "link": "https://www.thehindu.com/news/national/modi-speaks-to-carney-says-india-and-canada-contribute-to-stable-prosperous-world/article71581011.ece",
                 "published_at": "2026-10-14T03:37:57+00:00",
                 "description": "The two Prime Ministers had a phone call as senior Canadian Ministers are in Delhi for talks; India steps up its middle "
               }
             ],
-            "source": "The Hindu International",
+            "source": "The Hindu National",
             "url": "https://www.thehindu.com/news/national/modi-speaks-to-carney-says-india-and-canada-contribute-to-stable-prosperous-world/article71581011.ece",
             "source_url": "https://www.thehindu.com/news/national/modi-speaks-to-carney-says-india-and-canada-contribute-to-stable-prosperous-world/article71581011.ece",
             "source_count": 2,
             "source_names": [
-              "The Hindu International",
-              "The Hindu National"
+              "The Hindu National",
+              "The Hindu International"
             ],
             "source_authority": 87,
             "summary": "The two Prime Ministers had a phone call as senior Canadian Ministers are in Delhi for talks; India steps up its middle power engagement",
@@ -10582,25 +10614,25 @@
             "event_country": "印度",
             "sources": [
               {
-                "source": "The Hindu International",
+                "source": "The Hindu National",
                 "link": "https://www.thehindu.com/news/national/us-state-secretary-rubio-to-visit-india-for-energy-talks-next-week-visit-to-jamnagar-on-cards/article71582052.ece",
                 "published_at": "2026-10-14T01:08:52+00:00",
                 "description": "Mr. Rubio will first visit Samarkand in Uzbekistan, and will then travel to Mumbai and Jamnagar"
               },
               {
-                "source": "The Hindu National",
+                "source": "The Hindu International",
                 "link": "https://www.thehindu.com/news/national/us-state-secretary-rubio-to-visit-india-for-energy-talks-next-week-visit-to-jamnagar-on-cards/article71582052.ece",
                 "published_at": "2026-10-14T01:08:52+00:00",
                 "description": "Mr. Rubio will first visit Samarkand in Uzbekistan, and will then travel to Mumbai and Jamnagar"
               }
             ],
-            "source": "The Hindu International",
+            "source": "The Hindu National",
             "url": "https://www.thehindu.com/news/national/us-state-secretary-rubio-to-visit-india-for-energy-talks-next-week-visit-to-jamnagar-on-cards/article71582052.ece",
             "source_url": "https://www.thehindu.com/news/national/us-state-secretary-rubio-to-visit-india-for-energy-talks-next-week-visit-to-jamnagar-on-cards/article71582052.ece",
             "source_count": 2,
             "source_names": [
-              "The Hindu International",
-              "The Hindu National"
+              "The Hindu National",
+              "The Hindu International"
             ],
             "source_authority": 87,
             "summary": "Mr. Rubio will first visit Samarkand in Uzbekistan, and will then travel to Mumbai and Jamnagar",
@@ -10688,25 +10720,25 @@
             "event_country": "印度",
             "sources": [
               {
-                "source": "The Hindu International",
+                "source": "The Hindu National",
                 "link": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
                 "published_at": "2026-10-14T02:38:53+00:00",
                 "description": "Elon Musk believes that India’s mobile internet market is skewed to favour the Ambani family and that his Starlink servi"
               },
               {
-                "source": "The Hindu National",
+                "source": "The Hindu International",
                 "link": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
                 "published_at": "2026-10-14T02:38:53+00:00",
                 "description": "Elon Musk believes that India’s mobile internet market is skewed to favour the Ambani family and that his Starlink servi"
               }
             ],
-            "source": "The Hindu International",
+            "source": "The Hindu National",
             "url": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
             "source_url": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
             "source_count": 2,
             "source_names": [
-              "The Hindu International",
-              "The Hindu National"
+              "The Hindu National",
+              "The Hindu International"
             ],
             "source_authority": 87,
             "summary": "Elon Musk believes that India’s mobile internet market is skewed to favour the Ambani family and that his Starlink service deserves a fair chance in the country. However, critics h",
@@ -10719,39 +10751,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "Elon Musk和Mukesh Ambani对\"星际迷航\"的不满"
-          },
-          {
-            "id": "fc812fcd82f3d594",
-            "title": "Special Executive Magistrate sends CJP’s leaders Saurav Das, Ashutosh Ranka to five-day judicial custody in trespassing case",
-            "published_at": "2026-10-14T05:05:56+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "The Hindu National",
-                "link": "https://www.thehindu.com/news/national/cjp-anto-cec-protest-jantar-mantar-case-saurav-das-ashutosh-ranka-arrest-update/article71582061.ece",
-                "published_at": "2026-10-14T05:05:56+00:00",
-                "description": "The police action follows an FIR registered against them on charges including criminal trespass, violation of a bond and"
-              }
-            ],
-            "source": "The Hindu National",
-            "url": "https://www.thehindu.com/news/national/cjp-anto-cec-protest-jantar-mantar-case-saurav-das-ashutosh-ranka-arrest-update/article71582061.ece",
-            "source_url": "https://www.thehindu.com/news/national/cjp-anto-cec-protest-jantar-mantar-case-saurav-das-ashutosh-ranka-arrest-update/article71582061.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu National"
-            ],
-            "source_authority": 87,
-            "summary": "The police action follows an FIR registered against them on charges including criminal trespass, violation of a bond and disobedience of orders, among others, officials said",
-            "category": "金融",
-            "domestic_score": 38,
-            "importance": 46,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特别执行法官将正义与和平党领导人Saurav Das、Ashutosh Ranka送入非法侵入案件的五天司法拘留。"
           },
           {
             "id": "84211667421aaf62",
@@ -11249,6 +11248,39 @@
             "title_zh": "印度、捷克共和国扩大国防工业合作"
           },
           {
+            "id": "775377edda7d6751",
+            "title": "Man held on charge of setting fire to boards outside Kadavumbhagam synagogue in Keralam’s Kochi",
+            "published_at": "2026-10-13T21:00:46+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "The Hindu National",
+                "link": "https://www.thehindu.com/news/national/kerala/man-held-on-charge-of-setting-fire-to-boards-outside-kadavumbhagam-synagogue-in-keralams-kochi/article71580915.ece",
+                "published_at": "2026-10-13T21:00:46+00:00",
+                "description": ""
+              }
+            ],
+            "source": "The Hindu National",
+            "url": "https://www.thehindu.com/news/national/kerala/man-held-on-charge-of-setting-fire-to-boards-outside-kadavumbhagam-synagogue-in-keralams-kochi/article71580915.ece",
+            "source_url": "https://www.thehindu.com/news/national/kerala/man-held-on-charge-of-setting-fire-to-boards-outside-kadavumbhagam-synagogue-in-keralams-kochi/article71580915.ece",
+            "source_count": 1,
+            "source_names": [
+              "The Hindu National"
+            ],
+            "source_authority": 87,
+            "summary": "",
+            "category": "灾害",
+            "domestic_score": 30,
+            "importance": 43,
+            "why_important": "涉及灾害，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "在Keralam Kochi的Kadavumbhagam犹太会堂外,"
+          },
+          {
             "id": "8edbb12b148b508d",
             "title": "NH works not gaining pace in Keralam: Minister",
             "published_at": "2026-10-13T19:04:00+00:00",
@@ -11280,39 +11312,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "NH在喀拉拉姆的工作没有加快:部长"
-          },
-          {
-            "id": "b9e34d8052cf139d",
-            "title": "Amit Shah slams SIR protests, says Congress will suffer its fourth consecutive defeat in 2029",
-            "published_at": "2026-10-13T18:58:00+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "The Hindu National",
-                "link": "https://www.thehindu.com/news/national/amit-shah-slams-sir-protests-says-congress-will-suffer-its-fourth-consecutive-defeat-in-2029/article71580933.ece",
-                "published_at": "2026-10-13T18:58:00+00:00",
-                "description": "The trust of people cannot be earned through manufactured media events and the echo of falsehoods, says Home Minister"
-              }
-            ],
-            "source": "The Hindu National",
-            "url": "https://www.thehindu.com/news/national/amit-shah-slams-sir-protests-says-congress-will-suffer-its-fourth-consecutive-defeat-in-2029/article71580933.ece",
-            "source_url": "https://www.thehindu.com/news/national/amit-shah-slams-sir-protests-says-congress-will-suffer-its-fourth-consecutive-defeat-in-2029/article71580933.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu National"
-            ],
-            "source_authority": 87,
-            "summary": "The trust of people cannot be earned through manufactured media events and the echo of falsehoods, says Home Minister",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "国会将在2029年连续第四次失败,"
           },
           {
             "id": "d1e81597b40fa02d",
@@ -11412,6 +11411,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "十年后返回印度"
+          },
+          {
+            "id": "c2f7f0f5622c6db6",
+            "title": "Apple supplier Jabil, Adani sign pact for AI data centre equipment venture in India - Reuters",
+            "published_at": "2026-10-13T13:27:00+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "Reuters AI",
+                "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMkI5WmRHZUlfUUEyamxRV1ZnYXVCSjljeTNId0YwZWtLQlNBREJRelliQ2FZamd1cjFFVWdMbEFLalNxSmMxYUJrQ3dMN1FtOEgwZDljVEdZM3laazk4R2k0WHMxWFRzQVNMQUYwa1VjY002Y1A3QzVrOG5KS2FQVnZCM1Uya2hPbV9xRlZsN19SZEpPbmg4WmtOcGlnbUhjMkV4TF9qUDUwOFd5bUEyMXN0MzNkMEtjZGM0X3Q0Ym0?oc=5",
+                "published_at": "2026-10-13T13:27:00+00:00",
+                "description": "Apple supplier Jabil, Adani sign pact for AI data centre equipment venture in India Reuters"
+              }
+            ],
+            "source": "Reuters AI",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMkI5WmRHZUlfUUEyamxRV1ZnYXVCSjljeTNId0YwZWtLQlNBREJRelliQ2FZamd1cjFFVWdMbEFLalNxSmMxYUJrQ3dMN1FtOEgwZDljVEdZM3laazk4R2k0WHMxWFRzQVNMQUYwa1VjY002Y1A3QzVrOG5KS2FQVnZCM1Uya2hPbV9xRlZsN19SZEpPbmg4WmtOcGlnbUhjMkV4TF9qUDUwOFd5bUEyMXN0MzNkMEtjZGM0X3Q0Ym0?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMkI5WmRHZUlfUUEyamxRV1ZnYXVCSjljeTNId0YwZWtLQlNBREJRelliQ2FZamd1cjFFVWdMbEFLalNxSmMxYUJrQ3dMN1FtOEgwZDljVEdZM3laazk4R2k0WHMxWFRzQVNMQUYwa1VjY002Y1A3QzVrOG5KS2FQVnZCM1Uya2hPbV9xRlZsN19SZEpPbmg4WmtOcGlnbUhjMkV4TF9qUDUwOFd5bUEyMXN0MzNkMEtjZGM0X3Q0Ym0?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Reuters AI"
+            ],
+            "source_authority": 98,
+            "summary": "Apple supplier Jabil, Adani sign pact for AI data centre equipment venture in India Reuters",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "苹果供应商Jabil,印度AI数据中心设备风险的Adani签名协议-路透社"
           }
         ]
       },
@@ -12026,38 +12058,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "ff6cebe1447d07f9",
-            "title": "相知跨千年，携手创未来——中共中央政治局委员、国务委员兼外交部长王毅谈习近平主席出席中国－阿拉伯国家峰会、中国－海湾阿拉伯国家合作委员会峰会并对沙特进行国事访问",
-            "published_at": null,
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/11/c_1129199269.htm",
-                "published_at": null,
-                "description": "2022年12月7日至10日，国家主席习近平应沙特阿拉伯王国国王萨勒曼邀请，赴利雅得出席首届中国－阿拉伯国家峰会、首届中国－海湾阿拉伯国家合作委员会峰会并对沙特进行国事访问。访问结束之际，中共中央政治局委员、国务委员兼外交部长王毅向随行记者"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/11/c_1129199269.htm",
-            "source_url": "http://www.news.cn/world/2022-12/11/c_1129199269.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "2022年12月7日至10日，国家主席习近平应沙特阿拉伯王国国王萨勒曼邀请，赴利雅得出席首届中国－阿拉伯国家峰会、首届中国－海湾阿拉伯国家合作委员会峰会并对沙特进行国事访问。访问结束之际，中共中央政治局委员、国务委员兼外交部长王毅向随行记者介绍此访情况。",
-            "category": "外交",
-            "domestic_score": 30,
-            "importance": 47,
-            "why_important": "涉及外交，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "30d9fc4723be34c9",
             "title": "伙伴握手的时刻——记习近平主席出席中国－海湾阿拉伯国家合作委员会峰会并对沙特阿拉伯王国进行国事访问",
             "published_at": null,
@@ -12155,28 +12155,28 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "e3712588003636ff",
-            "title": "热解读丨双峰会上 习近平强调同一关键词",
+            "id": "77b20961af3cada5",
+            "title": "第1视点丨习近平：共同开创中海关系美好未来",
             "published_at": null,
             "code": "SA",
             "event_country": "沙特阿拉伯",
             "sources": [
               {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/11/c_1129200030.htm",
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/10/c_1129197768.htm",
                 "published_at": null,
-                "description": "当地时间12月9日，习近平主席在沙特首都利雅得出席首届中国－阿拉伯国家峰会、首届中国－海湾阿拉伯国家合作委员会峰会。两场峰会是中阿、中海关系发展史上具有里程碑意义的盛事，也是“传承之旅、开创之旅”的高光时刻。"
+                "description": "当地时间12月9日下午，首届中国—海湾阿拉伯国家合作委员会峰会在利雅得阿卜杜勒阿齐兹国王国际会议中心举行。国家主席习近平出席峰会并发表题为《继往开来，携手奋进 共同开创中海关系美好未来》的主旨讲话。"
               }
             ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/11/c_1129200030.htm",
-            "source_url": "http://www.news.cn/world/2022-12/11/c_1129200030.htm",
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/10/c_1129197768.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/10/c_1129197768.htm",
             "source_count": 1,
             "source_names": [
-              "新华-国际"
+              "新华-时政"
             ],
             "source_authority": 62,
-            "summary": "当地时间12月9日，习近平主席在沙特首都利雅得出席首届中国－阿拉伯国家峰会、首届中国－海湾阿拉伯国家合作委员会峰会。两场峰会是中阿、中海关系发展史上具有里程碑意义的盛事，也是“传承之旅、开创之旅”的高光时刻。",
+            "summary": "当地时间12月9日下午，首届中国—海湾阿拉伯国家合作委员会峰会在利雅得阿卜杜勒阿齐兹国王国际会议中心举行。国家主席习近平出席峰会并发表题为《继往开来，携手奋进 共同开创中海关系美好未来》的主旨讲话。",
             "category": "外交",
             "domestic_score": 30,
             "importance": 43,
@@ -12187,32 +12187,96 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "84b360f280bdf8f2",
-            "title": "时政微纪录丨习近平沙特行",
+            "id": "151f6091d1cee090",
+            "title": "第1视点｜习近平：携手构建面向新时代的中阿命运共同体",
             "published_at": null,
             "code": "SA",
             "event_country": "沙特阿拉伯",
             "sources": [
               {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/11/c_1129199734.htm",
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/10/c_1129197743.htm",
                 "published_at": null,
-                "description": "应沙特阿拉伯王国国王萨勒曼邀请，国家主席习近平于12月7日至10日赴沙特利雅得出席首届中国－阿拉伯国家峰会、中国－海湾阿拉伯国家合作委员会峰会并对沙特进行国事访问。"
+                "description": "当地时间12月9日下午，首届中国—阿拉伯国家峰会在沙特首都利雅得阿卜杜勒阿齐兹国王国际会议中心举行。国家主席习近平出席峰会并发表题为《弘扬中阿友好精神 携手构建面向新时代的中阿命运共同体》的主旨讲话。"
               }
             ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/11/c_1129199734.htm",
-            "source_url": "http://www.news.cn/world/2022-12/11/c_1129199734.htm",
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/10/c_1129197743.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/10/c_1129197743.htm",
             "source_count": 1,
             "source_names": [
-              "新华-国际"
+              "新华-时政"
             ],
             "source_authority": 62,
-            "summary": "应沙特阿拉伯王国国王萨勒曼邀请，国家主席习近平于12月7日至10日赴沙特利雅得出席首届中国－阿拉伯国家峰会、中国－海湾阿拉伯国家合作委员会峰会并对沙特进行国事访问。",
+            "summary": "当地时间12月9日下午，首届中国—阿拉伯国家峰会在沙特首都利雅得阿卜杜勒阿齐兹国王国际会议中心举行。国家主席习近平出席峰会并发表题为《弘扬中阿友好精神 携手构建面向新时代的中阿命运共同体》的主旨讲话。",
             "category": "外交",
             "domestic_score": 30,
             "importance": 43,
             "why_important": "涉及外交，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "ffcaa2cc46668c8a",
+            "title": "习近平会见索马里总统马哈茂德",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
+                "published_at": null,
+                "description": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129196470.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 42,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "df35f78ebebb6768",
+            "title": "习近平会见突尼斯总统赛义德",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+                "published_at": null,
+                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129195143.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 42,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -12241,38 +12305,6 @@
             ],
             "source_authority": 62,
             "summary": "当地时间12月9日下午，国家主席习近平在利雅得会见也门总统领导委员会主席阿里米。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "ffcaa2cc46668c8a",
-            "title": "习近平会见索马里总统马哈茂德",
-            "published_at": null,
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/09/c_1129196470.htm",
-                "published_at": null,
-                "description": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/09/c_1129196470.htm",
-            "source_url": "http://www.news.cn/world/2022-12/09/c_1129196470.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "当地时间12月9日下午，国家主席习近平在利雅得会见索马里总统马哈茂德。",
             "category": "政治",
             "domestic_score": 30,
             "importance": 42,
@@ -12379,38 +12411,6 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "df35f78ebebb6768",
-            "title": "习近平会见突尼斯总统赛义德",
-            "published_at": null,
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/09/c_1129195143.htm",
-                "published_at": null,
-                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。"
-              }
-            ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/09/c_1129195143.htm",
-            "source_url": "http://www.news.cn/world/2022-12/09/c_1129195143.htm",
-            "source_count": 1,
-            "source_names": [
-              "新华-国际"
-            ],
-            "source_authority": 62,
-            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见突尼斯总统赛义德。",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
             "id": "07cdb714bcccadb1",
             "title": "习近平会见巴勒斯坦总统阿巴斯",
             "published_at": null,
@@ -12475,6 +12475,38 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "a19431c4e5c1d1f3",
+            "title": "习近平会见伊拉克总理苏达尼",
+            "published_at": null,
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
+                "published_at": null,
+                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。"
+              }
+            ],
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129195294.htm",
+            "source_count": 1,
+            "source_names": [
+              "新华-时政"
+            ],
+            "source_authority": 62,
+            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
             "id": "f162f1cef9f2da63",
             "title": "习近平会见阿尔及利亚总理阿卜杜拉赫曼",
             "published_at": null,
@@ -12507,32 +12539,32 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
-            "id": "a19431c4e5c1d1f3",
-            "title": "习近平会见伊拉克总理苏达尼",
+            "id": "b94223b0224914df",
+            "title": "高清大图 | 中国沙特关系的“重要里程碑”！",
             "published_at": null,
             "code": "SA",
             "event_country": "沙特阿拉伯",
             "sources": [
               {
-                "source": "新华-国际",
-                "link": "http://www.news.cn/world/2022-12/09/c_1129195294.htm",
+                "source": "新华-时政",
+                "link": "http://www.news.cn/politics/2022-12/09/c_1129194746.htm",
                 "published_at": null,
-                "description": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。"
+                "description": "时隔6年，国家主席习近平再次访问沙特阿拉伯。当地时间8日，习近平主席与沙特王储兼首相穆罕默德举行会谈，并会见国王萨勒曼。双方共同擘画中沙关系发展，达成系列重要共识，中沙关系的战略性和全局性更加凸显。"
               }
             ],
-            "source": "新华-国际",
-            "url": "http://www.news.cn/world/2022-12/09/c_1129195294.htm",
-            "source_url": "http://www.news.cn/world/2022-12/09/c_1129195294.htm",
+            "source": "新华-时政",
+            "url": "http://www.news.cn/politics/2022-12/09/c_1129194746.htm",
+            "source_url": "http://www.news.cn/politics/2022-12/09/c_1129194746.htm",
             "source_count": 1,
             "source_names": [
-              "新华-国际"
+              "新华-时政"
             ],
             "source_authority": 62,
-            "summary": "当地时间12月9日上午，国家主席习近平在利雅得会见伊拉克总理苏达尼。",
-            "category": "政治",
+            "summary": "时隔6年，国家主席习近平再次访问沙特阿拉伯。当地时间8日，习近平主席与沙特王储兼首相穆罕默德举行会谈，并会见国王萨勒曼。双方共同擘画中沙关系发展，达成系列重要共识，中沙关系的战略性和全局性更加凸显。",
+            "category": "外交",
             "domestic_score": 30,
-            "importance": 41,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "importance": 39,
+            "why_important": "涉及外交，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
@@ -14114,14 +14146,14 @@
           {
             "id": "ac78c6ea9f38cc84",
             "title": "Australian politics live: Albanese says ‘completely wrong’ he ‘cleaned up’ after Chalmers on credit card ban; Coalition continues to target Aly",
-            "published_at": "2026-10-14T04:47:51+00:00",
+            "published_at": "2026-10-14T05:03:20+00:00",
             "code": "AU",
             "event_country": "澳大利亚",
             "sources": [
               {
                 "source": "卫报",
                 "link": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
-                "published_at": "2026-10-14T04:47:51+00:00",
+                "published_at": "2026-10-14T05:03:20+00:00",
                 "description": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Australia missing out on $45bn "
               }
             ],
@@ -14757,39 +14789,6 @@
             "title_zh": "基辅发电厂被俄罗斯导弹击中,没有受到盟国的警告"
           },
           {
-            "id": "f023144da0dcb627",
-            "title": "Ukraine Says It Received No Intelligence About Strikes 2 Nights in a Row",
-            "published_at": "2026-10-13T21:17:35+00:00",
-            "code": "UA",
-            "event_country": "乌克兰",
-            "sources": [
-              {
-                "source": "纽约时报",
-                "link": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
-                "published_at": "2026-10-13T21:17:35+00:00",
-                "description": "Asked about apparent U.S. threats to cut off intelligence sharing with Kyiv, which can warn of Russian aerial attacks, P"
-              }
-            ],
-            "source": "纽约时报",
-            "url": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
-            "source_url": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
-            "source_count": 1,
-            "source_names": [
-              "纽约时报"
-            ],
-            "source_authority": 96,
-            "summary": "Asked about apparent U.S. threats to cut off intelligence sharing with Kyiv, which can warn of Russian aerial attacks, President Trump said information continued to flow.",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 57,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "乌克兰说,它没有收到任何关于两晚罢工的情报"
-          },
-          {
             "id": "70ae68bb4958124f",
             "title": "Zelenskyy says Kyiv’s partners failed to warn of ballistic missile attack - Financial Times",
             "published_at": "2026-10-13T12:06:15+00:00",
@@ -14821,6 +14820,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "Zelenskyy说基辅的合作伙伴没有发出弹道导弹攻击的警告-金融时报"
+          },
+          {
+            "id": "f023144da0dcb627",
+            "title": "Ukraine Says It Received No Intelligence About Strikes 2 Nights in a Row",
+            "published_at": "2026-10-13T21:17:35+00:00",
+            "code": "UA",
+            "event_country": "乌克兰",
+            "sources": [
+              {
+                "source": "纽约时报",
+                "link": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
+                "published_at": "2026-10-13T21:17:35+00:00",
+                "description": "Asked about apparent U.S. threats to cut off intelligence sharing with Kyiv, which can warn of Russian aerial attacks, P"
+              }
+            ],
+            "source": "纽约时报",
+            "url": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
+            "source_url": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
+            "source_count": 1,
+            "source_names": [
+              "纽约时报"
+            ],
+            "source_authority": 96,
+            "summary": "Asked about apparent U.S. threats to cut off intelligence sharing with Kyiv, which can warn of Russian aerial attacks, President Trump said information continued to flow.",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 56,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "乌克兰说,它没有收到任何关于两晚罢工的情报"
           },
           {
             "id": "011e01ba0924fcde",
@@ -16924,7 +16956,7 @@
         "code": "SG",
         "target_min": 2,
         "target_max": 8,
-        "count": 5,
+        "count": 4,
         "events": [
           {
             "id": "41574869f363e759",
@@ -17057,39 +17089,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "新加坡持有货币政策作为经济扩张 5.4% 在AI上 - Bloomberg.com"
-          },
-          {
-            "id": "6cf709d0b0ad5cd3",
-            "title": "Blackstone-Backed Hyperscale Data-Center Operator Delays Singapore IPO - WSJ",
-            "published_at": "2026-10-13T04:15:00+00:00",
-            "code": "SG",
-            "event_country": "新加坡",
-            "sources": [
-              {
-                "source": "Wall Street Journal AI",
-                "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb0lGZE9CWXM5RUY3WC0yOUstV21VRHRkcWExWjhrQnk2SXpNT3BpWkgtTTVKVndyclRtcWV5LTZyRXFnZW5XZnZvY1JuYzFQOV95eEQxU2FaUGlqTzFvSlhhSE9yc3N5dXFLT1RNS3dfTjFjdjdUYllyeHNITEtUNjB4V3dzNzJiV3BKQWZndDU2bnlCZnU1SktXY1RzTUJtME5jRlRtbWlKQnc?oc=5",
-                "published_at": "2026-10-13T04:15:00+00:00",
-                "description": "Blackstone-Backed Hyperscale Data-Center Operator Delays Singapore IPO WSJ"
-              }
-            ],
-            "source": "Wall Street Journal AI",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb0lGZE9CWXM5RUY3WC0yOUstV21VRHRkcWExWjhrQnk2SXpNT3BpWkgtTTVKVndyclRtcWV5LTZyRXFnZW5XZnZvY1JuYzFQOV95eEQxU2FaUGlqTzFvSlhhSE9yc3N5dXFLT1RNS3dfTjFjdjdUYllyeHNITEtUNjB4V3dzNzJiV3BKQWZndDU2bnlCZnU1SktXY1RzTUJtME5jRlRtbWlKQnc?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb0lGZE9CWXM5RUY3WC0yOUstV21VRHRkcWExWjhrQnk2SXpNT3BpWkgtTTVKVndyclRtcWV5LTZyRXFnZW5XZnZvY1JuYzFQOV95eEQxU2FaUGlqTzFvSlhhSE9yc3N5dXFLT1RNS3dfTjFjdjdUYllyeHNITEtUNjB4V3dzNzJiV3BKQWZndDU2bnlCZnU1SktXY1RzTUJtME5jRlRtbWlKQnc?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Wall Street Journal AI"
-            ],
-            "source_authority": 96,
-            "summary": "Blackstone-Backed Hyperscale Data-Center Operator Delays Singapore IPO WSJ",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 23,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Blackstone-Backed Hyperscale Data-Center 运营商延迟 新加坡 IPO - WSJ"
           }
         ]
       },
@@ -18137,7 +18136,7 @@
         "code": "NG",
         "target_min": 2,
         "target_max": 8,
-        "count": 3,
+        "count": 2,
         "events": [
           {
             "id": "955a1c2e45ce1c69",
@@ -18204,39 +18203,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "29亿元经理Tips尼日利亚股票超越韩国克什皮-彭博克."
-          },
-          {
-            "id": "36eb2dd3d0926700",
-            "title": "US Supreme Court to hear asylum fight involving Nigerian cook - Reuters",
-            "published_at": "2026-10-13T18:53:07+00:00",
-            "code": "NG",
-            "event_country": "尼日利亚",
-            "sources": [
-              {
-                "source": "Reuters",
-                "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaUUwQkZuN291OGNsWVFRRC1zVGUyTHNkQ2ZzUXUtTWpkSEo1Wl9kRkJrQkN3azFoUThqVzBDYzYtQmpSbDg0cWR0c1B6dG5WTlhWdVl3Z29VaFFZX1ZZOVQxZ1N3ZF9NLWE1cUE5eW5FNkVsMzhGSVcwTjNidnZBQUE0cFRhNHJTUXlwYWtoZjJrZkNFMDNzOTJXOWp0MU9qU1E?oc=5",
-                "published_at": "2026-10-13T18:53:07+00:00",
-                "description": "US Supreme Court to hear asylum fight involving Nigerian cook Reuters"
-              }
-            ],
-            "source": "Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaUUwQkZuN291OGNsWVFRRC1zVGUyTHNkQ2ZzUXUtTWpkSEo1Wl9kRkJrQkN3azFoUThqVzBDYzYtQmpSbDg0cWR0c1B6dG5WTlhWdVl3Z29VaFFZX1ZZOVQxZ1N3ZF9NLWE1cUE5eW5FNkVsMzhGSVcwTjNidnZBQUE0cFRhNHJTUXlwYWtoZjJrZkNFMDNzOTJXOWp0MU9qU1E?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaUUwQkZuN291OGNsWVFRRC1zVGUyTHNkQ2ZzUXUtTWpkSEo1Wl9kRkJrQkN3azFoUThqVzBDYzYtQmpSbDg0cWR0c1B6dG5WTlhWdVl3Z29VaFFZX1ZZOVQxZ1N3ZF9NLWE1cUE5eW5FNkVsMzhGSVcwTjNidnZBQUE0cFRhNHJTUXlwYWtoZjJrZkNFMDNzOTJXOWp0MU9qU1E?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Reuters"
-            ],
-            "source_authority": 98,
-            "summary": "US Supreme Court to hear asylum fight involving Nigerian cook Reuters",
-            "category": "法律/犯罪",
-            "domestic_score": 30,
-            "importance": 30,
-            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国最高法院审理涉及尼日利亚厨师的庇护斗争-路透社"
           }
         ]
       },
@@ -18538,12 +18504,18 @@
   },
   "global_top": [
     {
-      "id": "c84ed4e46b5e47e7",
-      "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
-      "published_at": "2026-10-13T10:01:21+00:00",
+      "id": "6773685f5a011eea",
+      "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 - 央视网",
+      "published_at": "2026-10-13T10:08:39+00:00",
       "code": "CN",
       "event_country": "中国",
       "sources": [
+        {
+          "source": "Official China investigations search",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+          "published_at": "2026-10-13T10:08:39+00:00",
+          "description": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 央视网"
+        },
         {
           "source": "新华社",
           "link": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
@@ -18551,15 +18523,16 @@
           "description": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查"
         }
       ],
-      "source": "新华社",
-      "url": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
-      "source_url": "https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html",
-      "source_count": 1,
+      "source": "Official China investigations search",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yZnMzbE1wOFNmV1NKT1FmSi1uZXN4bHJUUWFoVHBldjhvWEU1R2I4UXRiS0VLREkwTHJQOWNWTUxfb0JRRVJXakx1WUxBbVlRX1FSR3I2NmYyRFlWSGx0NzFkVGJLSndoMUc3ZEV0dDYyLTQwc01PaA?oc=5",
+      "source_count": 2,
       "source_names": [
+        "Official China investigations search",
         "新华社"
       ],
-      "source_authority": 96,
-      "summary": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
+      "source_authority": 97,
+      "summary": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查 央视网",
       "category": "政治",
       "domestic_score": 30,
       "importance": 98,
@@ -20198,8 +20171,8 @@
   "ai_news_status": "ready",
   "stats": {
     "countries": 31,
-    "events": 551,
-    "tier1_events": 306,
+    "events": 550,
+    "tier1_events": 307,
     "supplement_events": 10,
     "failed_sources": 2,
     "successful_sources": 77,
@@ -20220,14 +20193,14 @@
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-13",
-    "removed": 193,
+    "removed": 191,
     "undated_removed": 103,
     "buffered_candidates_used": true
   },
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 483,
+    "translated": 481,
     "failed": 0,
     "remaining_english": 0,
     "degraded": false,
