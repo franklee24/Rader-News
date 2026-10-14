@@ -1,19 +1,14 @@
 {
-  "generated_at": "2026-10-14T03:59:14.194016+00:00",
-  "generated_beijing": "2026-10-14 11:59",
+  "generated_at": "2026-10-14T04:05:34.119946+00:00",
+  "generated_beijing": "2026-10-14 12:05",
   "window_hours": 24,
   "version": "V22.0",
   "source_mode": "multi-source-event-first-direct-rss",
-  "source_total": 78,
-  "source_ok": 76,
+  "source_total": 79,
+  "source_ok": 78,
   "ai_news_target": 20,
   "ai_news_window_days": 30,
   "failures": [
-    {
-      "source": "华盛顿邮报",
-      "country": "GLOBAL",
-      "error": "HTTP Error 502: Bad Gateway"
-    },
     {
       "source": "CBC World",
       "country": "CA",
@@ -61,7 +56,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "N. 韩国在部队部署方面获得经验,通过乌克兰战争维持军事行动:韩国国防军总司令"
+            "title_zh": "N. 韩国在部队部署、通过乌克兰战争维持军事行动方面积累了经验:"
           },
           {
             "id": "7a26a009364d6d94",
@@ -259,7 +254,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "评论:特朗普的石油下巴因战争螺旋而失去一拳-路透社"
+            "title_zh": "评论:特朗普的石油下巴在战争螺旋式中失去一拳-路透社"
           },
           {
             "id": "2c7bfe52aa5e9e75",
@@ -361,39 +356,6 @@
             "title_zh": "特朗普表示美国仍分享情报,"
           },
           {
-            "id": "434855f78c002a03",
-            "title": "Trump attacks immigrants from Somalia and Haiti while rallying in Ohio for Republican candidates",
-            "published_at": "2026-10-13T03:00:53+00:00",
-            "code": "US",
-            "event_country": "美国",
-            "sources": [
-              {
-                "source": "The Hindu International",
-                "link": "https://www.thehindu.com/news/international/trump-attacks-immigrants-from-somalia-and-haiti-while-rallying-in-ohio-for-republican-candidates/article71577822.ece",
-                "published_at": "2026-10-13T03:00:53+00:00",
-                "description": "If you want to stop Ohio from being plundered, ransacked and destroyed like Minnesota is being destroyed, we're going to"
-              }
-            ],
-            "source": "The Hindu International",
-            "url": "https://www.thehindu.com/news/international/trump-attacks-immigrants-from-somalia-and-haiti-while-rallying-in-ohio-for-republican-candidates/article71577822.ece",
-            "source_url": "https://www.thehindu.com/news/international/trump-attacks-immigrants-from-somalia-and-haiti-while-rallying-in-ohio-for-republican-candidates/article71577822.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu International"
-            ],
-            "source_authority": 87,
-            "summary": "If you want to stop Ohio from being plundered, ransacked and destroyed like Minnesota is being destroyed, we're going to stop it, says U.S. President Donald Trump",
-            "category": "政治",
-            "domestic_score": 38,
-            "importance": 64,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普攻击来自索马里和海地的移民,"
-          },
-          {
             "id": "7989d78af0e12d44",
             "title": "US rejects Kiev’s quid pro quo ask to end attacks on Russian refineries — NYT",
             "published_at": "2026-10-13T12:56:28+00:00",
@@ -490,7 +452,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "伯纳姆将主办Zelenskyy,"
+            "title_zh": "伯纳姆将主办Zelenskyy at No 10,以显示“摇滚固态”的支持"
           },
           {
             "id": "d35ee93907cfc094",
@@ -695,7 +657,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普说台湾要从阿拉斯加输油管道购买30%的天然气"
+            "title_zh": "川普说台湾要从阿拉斯加输油管道购买30%的天然气"
           },
           {
             "id": "a2377f0d8941030c",
@@ -794,7 +756,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "国际足联向特朗普塔办公室支付数百万美元"
+            "title_zh": "国际足联向特朗普塔办公室支付数百万美元,"
           },
           {
             "id": "46fa87dc7d057eeb",
@@ -926,7 +888,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "政府斥资数百万用于特朗普广告. 联邦探员袭击了Ilhan Omar的家"
+            "title_zh": "政府斥资数百万用于特朗普广告. 还有 联邦探员袭击了Ilhan Omar的家"
           },
           {
             "id": "b626ce560d881a3b",
@@ -1098,7 +1060,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "康奈尔大学禁止兄弟会的聚会, 誓言解决‘扰乱'校园文化"
+            "title_zh": "康奈尔大学禁止兄弟会的聚会, 誓言要解决‘扰乱'校园文化"
           },
           {
             "id": "c935f4a23a762c6a",
@@ -1164,7 +1126,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "乌克兰和美国:特朗普与俄罗斯的柴油交易之后,下一步是什么?."
+            "title_zh": "乌克兰和美国:特朗普与俄罗斯的柴油交易之后,接下来是什么?."
           },
           {
             "id": "152e77b5b110d53f",
@@ -1230,7 +1192,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "新白宫发言人说,54美元bln 绑在阿拉斯加天然气项目 在S."
+            "title_zh": "新白宫发言人说,54美元bln 绑在阿拉斯加天然气项目 S."
           },
           {
             "id": "e4406a233dc51aa9",
@@ -1342,7 +1304,7 @@
                 "source": "Japan Times",
                 "link": "https://www.japantimes.co.jp/news/2026/10/14/world/politics/donald-trump-threatens-ceos-foreign/",
                 "published_at": "2026-10-14T00:52:00+00:00",
-                "description": "In a new memoir, Chrystia Freeland writes that that the Trump administration \"is swaggeringly, rudely aggressive, even b"
+                "description": "In a new memoir, Chrystia Freeland writes that the Trump administration \"is swaggeringly, rudely aggressive, even behind"
               }
             ],
             "source": "Japan Times",
@@ -1353,7 +1315,7 @@
               "Japan Times"
             ],
             "source_authority": 91,
-            "summary": "In a new memoir, Chrystia Freeland writes that that the Trump administration \"is swaggeringly, rudely aggressive, even behind closed doors.\"",
+            "summary": "In a new memoir, Chrystia Freeland writes that the Trump administration \"is swaggeringly, rudely aggressive, even behind closed doors.\"",
             "category": "政治",
             "domestic_score": 30,
             "importance": 51,
@@ -1362,7 +1324,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "特朗普威胁CEO对盟友的策略,"
+            "title_zh": "特朗普威胁CEO对盟国的策略,"
           },
           {
             "id": "bd29e1591eb77e30",
@@ -1488,7 +1450,7 @@
             "summary": "NPR's Ailsa Chang chats with Michael Woodford of Columbia University, who was one of two Americans awarded the Nobel Prize in Economics.",
             "category": "宏观经济",
             "domestic_score": 30,
-            "importance": 50,
+            "importance": 49,
             "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -1691,6 +1653,39 @@
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
           },
           {
+            "id": "f368285a98043221",
+            "title": "Washington resident charged with conspiracy in Canada school shooting is ordered detained - AP News",
+            "published_at": "2026-10-14T00:56:00+00:00",
+            "code": "US",
+            "event_country": "美国",
+            "sources": [
+              {
+                "source": "Associated Press AI",
+                "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUHZPN1F0alExTEYwdFN3OWUyLUJkNUFWRWszQk94VDVzV09VUjI1LTM5WXJWbFZWakVYRl80VnZCbnV3elB3YnBIWXlFSE5jRkVvRnJvS3JVbktreHN5aVU3OE9BRlpBN0dWQUlBNXFncFFvZGVieVFTUmRpdGVfeUdvOGVMa3ZMT3NfS3ZhaFVFbFN1SS1sVjBZQ0hjc3JFRWt0M3RvQWRQcXM?oc=5",
+                "published_at": "2026-10-14T00:56:00+00:00",
+                "description": "Washington resident charged with conspiracy in Canada school shooting is ordered detained AP News"
+              }
+            ],
+            "source": "Associated Press AI",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUHZPN1F0alExTEYwdFN3OWUyLUJkNUFWRWszQk94VDVzV09VUjI1LTM5WXJWbFZWakVYRl80VnZCbnV3elB3YnBIWXlFSE5jRkVvRnJvS3JVbktreHN5aVU3OE9BRlpBN0dWQUlBNXFncFFvZGVieVFTUmRpdGVfeUdvOGVMa3ZMT3NfS3ZhaFVFbFN1SS1sVjBZQ0hjc3JFRWt0M3RvQWRQcXM?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUHZPN1F0alExTEYwdFN3OWUyLUJkNUFWRWszQk94VDVzV09VUjI1LTM5WXJWbFZWakVYRl80VnZCbnV3elB3YnBIWXlFSE5jRkVvRnJvS3JVbktreHN5aVU3OE9BRlpBN0dWQUlBNXFncFFvZGVieVFTUmRpdGVfeUdvOGVMa3ZMT3NfS3ZhaFVFbFN1SS1sVjBZQ0hjc3JFRWt0M3RvQWRQcXM?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Associated Press AI"
+            ],
+            "source_authority": 97,
+            "summary": "Washington resident charged with conspiracy in Canada school shooting is ordered detained AP News",
+            "category": "法律/犯罪",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "华盛顿居民在加拿大被控阴谋开枪被下令拘留 - AP新闻"
+          },
+          {
             "id": "d9641262fba7c549",
             "title": "What ice cream has to do with this year's Nobel Prize in economics",
             "published_at": "2026-10-13T10:30:00+00:00",
@@ -1819,7 +1814,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "请输入 Zachbot : Trump 的新新闻秘书在主席台首播时发生故障"
+            "title_zh": "输入 Zachbot : 特朗普的新新闻秘书在主席台首播时发生故障"
           },
           {
             "id": "8714e16c49fbcf43",
@@ -1852,7 +1847,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "俄罗斯向整个全球市场发送柴油——特朗普"
+            "title_zh": "俄罗斯向整个全球市场发送柴油——特朗普."
           },
           {
             "id": "0acd6ca216f0d372",
@@ -2025,39 +2020,6 @@
         "count": 60,
         "events": [
           {
-            "id": "85e8dea07f470c00",
-            "title": "Former Chongqing mayor Huang Qifan under investigation for corruption",
-            "published_at": "2026-10-13T10:04:33+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "South China Morning Post",
-                "link": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-                "published_at": "2026-10-13T10:04:33+00:00",
-                "description": "Huang Qifan, former mayor of Chongqing and a survivor of multiple regional graft scandals, is under investigation for co"
-              }
-            ],
-            "source": "South China Morning Post",
-            "url": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-            "source_url": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-            "source_count": 1,
-            "source_names": [
-              "South China Morning Post"
-            ],
-            "source_authority": 86,
-            "summary": "Huang Qifan, former mayor of Chongqing and a survivor of multiple regional graft scandals, is under investigation for corruption, according to state media. State news agency Xinhua",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 98,
-            "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "国家重大",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "前重庆市市长黄琦芳涉嫌贪污被查"
-          },
-          {
             "id": "c84ed4e46b5e47e7",
             "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
             "published_at": "2026-10-13T10:01:21+00:00",
@@ -2184,7 +2146,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国 \"稳定模式\"中的中国:陆克文"
+            "title_zh": "美国,\"稳定模式\"中的中国:陆克文"
           },
           {
             "id": "5bcb16ec86ca5ccd",
@@ -2217,7 +2179,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国国防创业者 Flock 到台湾打造无中华无人机 - WSJ"
+            "title_zh": "美国国防创业者 Flock 到台湾打造无中空无人机 - WSJ"
           },
           {
             "id": "28394a0765ac5baf",
@@ -2521,6 +2483,39 @@
             "title_zh": "被控毒害同事并企图逃往中国的研究生在洛杉矶洛杉矶机场被捕"
           },
           {
+            "id": "b5de2b64888f4ddb",
+            "title": "China’s Exports Soar, Putting Its Trade Surplus on Track for a Record",
+            "published_at": "2026-10-14T04:00:29+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "纽约时报",
+                "link": "https://www.nytimes.com/2026/10/14/business/china-exports-trade-surplus.html",
+                "published_at": "2026-10-14T04:00:29+00:00",
+                "description": "China’s exports grew last month at the fastest pace in almost any month since the end of the global financial crisis."
+              }
+            ],
+            "source": "纽约时报",
+            "url": "https://www.nytimes.com/2026/10/14/business/china-exports-trade-surplus.html",
+            "source_url": "https://www.nytimes.com/2026/10/14/business/china-exports-trade-surplus.html",
+            "source_count": 1,
+            "source_names": [
+              "纽约时报"
+            ],
+            "source_authority": 96,
+            "summary": "China’s exports grew last month at the fastest pace in almost any month since the end of the global financial crisis.",
+            "category": "产业/商业",
+            "domestic_score": 30,
+            "importance": 51,
+            "why_important": "涉及产业/商业，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "中国出口飙升,将其贸易盈余投入记录"
+          },
+          {
             "id": "596b02e548afbec2",
             "title": "China Is Poised to Spearhead a $5 Trillion Humanoid Robot Market - Bloomberg.com",
             "published_at": "2026-10-14T03:27:00+00:00",
@@ -2617,73 +2612,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "World-Beating China Bonds Can Cover Caltry yelds, Funds Say - Bloomberg.com (中文(中国大陆) )."
-          },
-          {
-            "id": "440d0ad51bd7ce4e",
-            "title": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition - The New York Times",
-            "published_at": "2026-10-13T20:07:29+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "New York Times China",
-                "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
-                "published_at": "2026-10-13T20:07:29+00:00",
-                "description": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition The New York Times"
-              }
-            ],
-            "source": "New York Times China",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "New York Times China"
-            ],
-            "source_authority": 96,
-            "summary": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition The New York Times",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Chip Stocks Tumble on A. I. 花销恐惧与崛起的中国竞争 - 纽约时报."
-          },
-          {
-            "id": "3e6d98910dcbd785",
-            "title": "Bank of America fined $1.2bn over money laundering failures",
-            "published_at": "2026-10-13T20:00:06+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "金融时报",
-                "link": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
-                "published_at": "2026-10-13T20:00:06+00:00",
-                "description": "US bank failed to flag $5bn in suspicious transactions linked to suspected illicit finance from China and the southern U"
-              }
-            ],
-            "source": "金融时报",
-            "url": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
-            "source_url": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
-            "source_count": 1,
-            "source_names": [
-              "金融时报"
-            ],
-            "source_authority": 96,
-            "summary": "US bank failed to flag $5bn in suspicious transactions linked to suspected illicit finance from China and the southern US border",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国银行因洗钱失败罚款1.2美元"
+            "title_zh": "World-Beating China Bonds Can Covercome Paltry yelds, Funds Say - Bloomberg.com (中文(中国大陆) )."
           },
           {
             "id": "d73e5661388bb380",
@@ -2752,6 +2681,39 @@
             "title_zh": "香港11天空为何失败,巨型项目能否获救?."
           },
           {
+            "id": "3e6d98910dcbd785",
+            "title": "Bank of America fined $1.2bn over money laundering failures",
+            "published_at": "2026-10-13T20:00:06+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "金融时报",
+                "link": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
+                "published_at": "2026-10-13T20:00:06+00:00",
+                "description": "US bank failed to flag $5bn in suspicious transactions linked to suspected illicit finance from China and the southern U"
+              }
+            ],
+            "source": "金融时报",
+            "url": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
+            "source_url": "https://www.ft.com/content/c08dd4a1-74a4-49f2-90f7-0857c6e87868?syn-25a6b1a6=1",
+            "source_count": 1,
+            "source_names": [
+              "金融时报"
+            ],
+            "source_authority": 96,
+            "summary": "US bank failed to flag $5bn in suspicious transactions linked to suspected illicit finance from China and the southern US border",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 49,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "美国银行因洗钱失败罚款1.2美元"
+          },
+          {
             "id": "0c57895910f0649b",
             "title": "Roche Licenses Obesity Therapy From China’s Rona in Up to $1.2 Billion Deal - WSJ",
             "published_at": "2026-10-13T13:02:00+00:00",
@@ -2815,7 +2777,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "A 人口幻象可能扭曲中国的经济幻象-WSJ"
+            "title_zh": "人口幻象可能扭曲中国的经济幻象-WSJ"
           },
           {
             "id": "91aafb9ebe00545a",
@@ -2881,7 +2843,40 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "传承嘉宾见败大众市场到中国里瓦尔斯-彭博.com."
+            "title_zh": "传承嘉宾见输大众市场到中国里瓦尔斯-彭博.com."
+          },
+          {
+            "id": "440d0ad51bd7ce4e",
+            "title": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition - The New York Times",
+            "published_at": "2026-10-13T09:55:10+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "New York Times China",
+                "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
+                "published_at": "2026-10-13T09:55:10+00:00",
+                "description": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition The New York Times"
+              }
+            ],
+            "source": "New York Times China",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWJ0ZG5rRVhWSUQyclV5TE1zWHpBVmY1SDRRUkRMSUM5RThQVVpsakFsQmw5UG5CV04tMkFGVnhHNW4talZ2bHlxbDVrUGlweGxEcFhzWWwzX21fSTRYUi1PNS1pU1lVczFsOU1vRGF4R3BJUmppXzhfdmJTSThBRFZ3?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "New York Times China"
+            ],
+            "source_authority": 96,
+            "summary": "Chip Stocks Tumble on A.I. Spending Fears and Rising Chinese Competition The New York Times",
+            "category": "金融",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "Chip Stocks Tumble on A. I. 花销恐惧与崛起的中国竞争 - 纽约时报."
           },
           {
             "id": "61940bd06bede65f",
@@ -2915,39 +2910,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "签证在特朗普-习近平峰会前获得中卡业务批准 - 金融时报"
-          },
-          {
-            "id": "fe9059a33c44ea87",
-            "title": "Visa wins approval to prepare a bank card clearing business in China - AP News",
-            "published_at": "2026-10-13T08:01:00+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Associated Press China",
-                "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
-                "published_at": "2026-10-13T08:01:00+00:00",
-                "description": "Visa wins approval to prepare a bank card clearing business in China AP News"
-              }
-            ],
-            "source": "Associated Press China",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Associated Press China"
-            ],
-            "source_authority": 97,
-            "summary": "Visa wins approval to prepare a bank card clearing business in China AP News",
-            "category": "金融",
-            "domestic_score": 30,
-            "importance": 48,
-            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "签证获批筹办中国银行卡结算业务-AP新闻."
           },
           {
             "id": "f7782416d51b3f93",
@@ -3013,40 +2975,40 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国芯片股票扩张滑动,因为中国的记忆报告,AI 支出焦虑冲击部门 - 路透社"
+            "title_zh": "美国芯片股票扩展滑动,因为中国的记忆报告,AI支出焦急冲击部门 - 路透社"
           },
           {
-            "id": "cb47506183cf1e5a",
-            "title": "China is working on a submarine tank that can operate underwater for 2 hours",
-            "published_at": "2026-10-13T14:00:08+00:00",
+            "id": "fe9059a33c44ea87",
+            "title": "Visa wins approval to prepare a bank card clearing business in China - AP News",
+            "published_at": "2026-10-13T08:01:00+00:00",
             "code": "CN",
             "event_country": "中国",
             "sources": [
               {
-                "source": "South China Morning Post",
-                "link": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
-                "published_at": "2026-10-13T14:00:08+00:00",
-                "description": "A Chinese research team has proposed four types of equipment that could rapidly switch between wartime environments, inc"
+                "source": "Associated Press China",
+                "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
+                "published_at": "2026-10-13T08:01:00+00:00",
+                "description": "Visa wins approval to prepare a bank card clearing business in China AP News"
               }
             ],
-            "source": "South China Morning Post",
-            "url": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
-            "source_url": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
+            "source": "Associated Press China",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERjbHMwN24ybW1SZnhueDRFR2dCNlZVcDhTN3ZfaTl5YU5lcjR6bGUxQjZuUjhBZjNWb2MxTEZMQm40ak1ray1MeHB5ZHpmNmFVbzZuRDFmNWJnRnJLMktRM3R3WEdOcGJZSUhDSjVMdjBQWXU2Y1E1Sm5OVU5lMkxmSXFEemw0NnZOeWl5enBFdmlONWItZGhNQmp0aFk?oc=5",
             "source_count": 1,
             "source_names": [
-              "South China Morning Post"
+              "Associated Press China"
             ],
-            "source_authority": 86,
-            "summary": "A Chinese research team has proposed four types of equipment that could rapidly switch between wartime environments, including operating deep under water for long periods, as multi",
-            "category": "环境/气候",
-            "domestic_score": 38,
+            "source_authority": 97,
+            "summary": "Visa wins approval to prepare a bank card clearing business in China AP News",
+            "category": "金融",
+            "domestic_score": 30,
             "importance": 47,
-            "why_important": "涉及环境/气候，结合多源报道与时效性评估后值得关注。",
+            "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国正在研制潜艇坦克 可以在水下工作2小时"
+            "title_zh": "签证获批筹办中国银行卡结算业务-AP新闻."
           },
           {
             "id": "0387cbcfaf123e09",
@@ -3079,7 +3041,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "韩芯片股票辛克在中国里瓦尔担心, Broadcom 备注 - Bloomberg.com"
+            "title_zh": "韩芯片股票沉淀在中国里华尔担心, Broadcom 备注 - Bloomberg.com"
           },
           {
             "id": "b93d2caa695c50fa",
@@ -3112,7 +3074,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国制裁巴拉圭和伯利兹官员因国家与台湾的关系-AP新闻"
+            "title_zh": "中国制裁巴拉圭和伯利兹官员因本国与台湾的关系-AP新闻"
           },
           {
             "id": "4dc13dd26939fed2",
@@ -3214,6 +3176,39 @@
             "title_zh": "为何中国的孤军奋战,"
           },
           {
+            "id": "cb47506183cf1e5a",
+            "title": "China is working on a submarine tank that can operate underwater for 2 hours",
+            "published_at": "2026-10-13T14:00:08+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "South China Morning Post",
+                "link": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
+                "published_at": "2026-10-13T14:00:08+00:00",
+                "description": "A Chinese research team has proposed four types of equipment that could rapidly switch between wartime environments, inc"
+              }
+            ],
+            "source": "South China Morning Post",
+            "url": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
+            "source_url": "https://www.scmp.com/news/china/science/article/3370724/china-working-submarine-tank-can-operate-underwater-2-hours?utm_source=rss_feed",
+            "source_count": 1,
+            "source_names": [
+              "South China Morning Post"
+            ],
+            "source_authority": 86,
+            "summary": "A Chinese research team has proposed four types of equipment that could rapidly switch between wartime environments, including operating deep under water for long periods, as multi",
+            "category": "环境/气候",
+            "domestic_score": 38,
+            "importance": 46,
+            "why_important": "涉及环境/气候，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "中国正在研制潜艇坦克,可以在水下作业2小时"
+          },
+          {
             "id": "4f18c82005a6d1dc",
             "title": "Visa Approved to Prepare Domestic Payments Business in China - Bloomberg.com",
             "published_at": "2026-10-13T04:55:00+00:00",
@@ -3311,72 +3306,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "LVMH的中国失望指出长期奢侈产业痛苦-路透社."
-          },
-          {
-            "id": "41c756ed336cb872",
-            "title": "China's exports surge 36.3% y/y in September, imports up 31% - Reuters",
-            "published_at": "2026-10-14T02:41:00+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Reuters China",
-                "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXg0RnM4TVlLaHEwQjBYdU16ZGhJaXpFeVVXYk9FLVg1RFp4cVlvWWNWa2xlRlhacndGbHpYeF9QMWs5Zy0ydnV6Ni1kV2dIUS1Ca0NEYVNpdHlQMk1EdFBOc2hxTVlJLXZXX2RKbVplTG5NY1B2NEl2UXRFaFROckZjUGdVZW1vcWpYUmdJR21JOTJrQkhIT3E5Y25CM1VCMDNwOWcxbVdsZw?oc=5",
-                "published_at": "2026-10-14T02:41:00+00:00",
-                "description": "China's exports surge 36.3% y/y in September, imports up 31% Reuters"
-              }
-            ],
-            "source": "Reuters China",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXg0RnM4TVlLaHEwQjBYdU16ZGhJaXpFeVVXYk9FLVg1RFp4cVlvWWNWa2xlRlhacndGbHpYeF9QMWs5Zy0ydnV6Ni1kV2dIUS1Ca0NEYVNpdHlQMk1EdFBOc2hxTVlJLXZXX2RKbVplTG5NY1B2NEl2UXRFaFROckZjUGdVZW1vcWpYUmdJR21JOTJrQkhIT3E5Y25CM1VCMDNwOWcxbVdsZw?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXg0RnM4TVlLaHEwQjBYdU16ZGhJaXpFeVVXYk9FLVg1RFp4cVlvWWNWa2xlRlhacndGbHpYeF9QMWs5Zy0ydnV6Ni1kV2dIUS1Ca0NEYVNpdHlQMk1EdFBOc2hxTVlJLXZXX2RKbVplTG5NY1B2NEl2UXRFaFROckZjUGdVZW1vcWpYUmdJR21JOTJrQkhIT3E5Y25CM1VCMDNwOWcxbVdsZw?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Reuters China"
-            ],
-            "source_authority": 98,
-            "summary": "China's exports surge 36.3% y/y in September, imports up 31% Reuters",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "9月中国出口猛增36.3%,进口增长31%-路透社."
-          },
-          {
-            "id": "21b345691c49c440",
-            "title": "China’s Weakening Economy Is Creating a Lost Generation - WSJ",
-            "published_at": "2026-10-14T02:23:59+00:00",
-            "code": "CN",
-            "event_country": "中国",
-            "sources": [
-              {
-                "source": "Wall Street Journal China",
-                "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5R2p1V0RoRTdaVVBmd0tkM2Uxd0RqdFFYODNXckxEZVk3N0xwVTRub08tZGpWb25Sd2p3VjZWSzNNMUxsbnlMRkJhZXMwMVc0OHRVNUN4Z1FMSHJGcVIyZFRRdTI?oc=5",
-                "published_at": "2026-10-14T02:23:59+00:00",
-                "description": "China’s Weakening Economy Is Creating a Lost Generation WSJ"
-              }
-            ],
-            "source": "Wall Street Journal China",
-            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5R2p1V0RoRTdaVVBmd0tkM2Uxd0RqdFFYODNXckxEZVk3N0xwVTRub08tZGpWb25Sd2p3VjZWSzNNMUxsbnlMRkJhZXMwMVc0OHRVNUN4Z1FMSHJGcVIyZFRRdTI?oc=5",
-            "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5R2p1V0RoRTdaVVBmd0tkM2Uxd0RqdFFYODNXckxEZVk3N0xwVTRub08tZGpWb25Sd2p3VjZWSzNNMUxsbnlMRkJhZXMwMVc0OHRVNUN4Z1FMSHJGcVIyZFRRdTI?oc=5",
-            "source_count": 1,
-            "source_names": [
-              "Wall Street Journal China"
-            ],
-            "source_authority": 96,
-            "summary": "China’s Weakening Economy Is Creating a Lost Generation WSJ",
-            "category": "其他/综合",
-            "domestic_score": 30,
-            "importance": 43,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国经济疲软 正在创建丢失的一代 - WSJ"
           },
           {
             "id": "41860fb1f797dcfa",
@@ -3676,6 +3605,72 @@
             "title_zh": "大众网 Stellantis 展现EV自信,有中国的教训-路透社"
           },
           {
+            "id": "050984a532dfaabb",
+            "title": "BMW Group Vehicle Deliveries Fall on Continued Weakness in China - WSJ",
+            "published_at": "2026-10-13T09:45:00+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Wall Street Journal China",
+                "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaVhsZUtKc2hwZWE5RzVmUFo1cWJDWjBCNmVGUy1OZUJ6S0czN2pQelVoRGNCRXBFNTNFOExjVVl2akZvQ2dpdWx3d3Fob3dQd0hnOUZTVm41WW4zT21NY01xQ0hvLWlyaGVqR3R4cW5DR2Y4bGdPN2UzR1VGSEFBTld4SGhpZ2dDb2tBb202WnRRSU9HeS1FTEI3SWNYeVRRY0NIcVpMZ1BtMnJY?oc=5",
+                "published_at": "2026-10-13T09:45:00+00:00",
+                "description": "BMW Group Vehicle Deliveries Fall on Continued Weakness in China WSJ"
+              }
+            ],
+            "source": "Wall Street Journal China",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaVhsZUtKc2hwZWE5RzVmUFo1cWJDWjBCNmVGUy1OZUJ6S0czN2pQelVoRGNCRXBFNTNFOExjVVl2akZvQ2dpdWx3d3Fob3dQd0hnOUZTVm41WW4zT21NY01xQ0hvLWlyaGVqR3R4cW5DR2Y4bGdPN2UzR1VGSEFBTld4SGhpZ2dDb2tBb202WnRRSU9HeS1FTEI3SWNYeVRRY0NIcVpMZ1BtMnJY?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaVhsZUtKc2hwZWE5RzVmUFo1cWJDWjBCNmVGUy1OZUJ6S0czN2pQelVoRGNCRXBFNTNFOExjVVl2akZvQ2dpdWx3d3Fob3dQd0hnOUZTVm41WW4zT21NY01xQ0hvLWlyaGVqR3R4cW5DR2Y4bGdPN2UzR1VGSEFBTld4SGhpZ2dDb2tBb202WnRRSU9HeS1FTEI3SWNYeVRRY0NIcVpMZ1BtMnJY?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Wall Street Journal China"
+            ],
+            "source_authority": 96,
+            "summary": "BMW Group Vehicle Deliveries Fall on Continued Weakness in China WSJ",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "BMW集团车辆在中国持续疲软时落地-WSJ"
+          },
+          {
+            "id": "c748eda6cd6e0606",
+            "title": "China’s CXMT Claims Memory Advances Ahead of Samsung, Hynix - Bloomberg.com",
+            "published_at": "2026-10-13T09:34:38+00:00",
+            "code": "CN",
+            "event_country": "中国",
+            "sources": [
+              {
+                "source": "Bloomberg China",
+                "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNW1wbkpCelJMOTd6YW8zcVo3X3VrYVRvLVNQalgtc2h1UlF2Q2RNYm1FSkJFVzF2SFptbGZiSzlZeF93QlZLU0Jjemh3UlktbWUwb3Z6WHBQQWh2ZlM5N0NrU2NhR1I0Z0VLLXkxczlZRkZzaWtQaUg5LVVyQ0pHRG9MRmNJdmpGR21KWmxYdlNpX2dyRG9GenFZNGFWQ3ZSQzlISWp3a0pMTlRKZDFRMUotNA?oc=5",
+                "published_at": "2026-10-13T09:34:38+00:00",
+                "description": "China’s CXMT Claims Memory Advances Ahead of Samsung, Hynix Bloomberg.com"
+              }
+            ],
+            "source": "Bloomberg China",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNW1wbkpCelJMOTd6YW8zcVo3X3VrYVRvLVNQalgtc2h1UlF2Q2RNYm1FSkJFVzF2SFptbGZiSzlZeF93QlZLU0Jjemh3UlktbWUwb3Z6WHBQQWh2ZlM5N0NrU2NhR1I0Z0VLLXkxczlZRkZzaWtQaUg5LVVyQ0pHRG9MRmNJdmpGR21KWmxYdlNpX2dyRG9GenFZNGFWQ3ZSQzlISWp3a0pMTlRKZDFRMUotNA?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNW1wbkpCelJMOTd6YW8zcVo3X3VrYVRvLVNQalgtc2h1UlF2Q2RNYm1FSkJFVzF2SFptbGZiSzlZeF93QlZLU0Jjemh3UlktbWUwb3Z6WHBQQWh2ZlM5N0NrU2NhR1I0Z0VLLXkxczlZRkZzaWtQaUg5LVVyQ0pHRG9MRmNJdmpGR21KWmxYdlNpX2dyRG9GenFZNGFWQ3ZSQzlISWp3a0pMTlRKZDFRMUotNA?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Bloomberg China"
+            ],
+            "source_authority": 96,
+            "summary": "China’s CXMT Claims Memory Advances Ahead of Samsung, Hynix Bloomberg.com",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "中国CXMT索赔记忆提前三星,Hynix - Bloomberg.com"
+          },
+          {
             "id": "da0ceae18a7060ca",
             "title": "BMW deliveries fall 6.3% in third quarter as China sales slump - Reuters",
             "published_at": "2026-10-13T09:07:18+00:00",
@@ -3772,7 +3767,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "中国国媒警告欧盟反对\"汽车交易后的新诡计\"-Bloomberg.com"
+            "title_zh": "中国国媒警告欧盟反对\"汽车交易后的新诡计\" - Bloomberg.com"
           },
           {
             "id": "e4c5047b85eb1ef2",
@@ -3805,7 +3800,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "作为中国进口的南非工厂 Crateer StuntReval - Bloomberg.com"
+            "title_zh": "作为中国进口的南非工厂 Crater StuntReval - Bloomberg.com"
           },
           {
             "id": "69541d3ffcf572d7",
@@ -4112,7 +4107,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "英国要求国际刑警拒绝阿根廷`出于政治动机 ' 要求逮捕福克兰群岛石油的请求。"
+            "title_zh": "英国要求国际刑警拒绝阿根廷“出于政治动机”的逮捕福克兰群岛石油的请求。"
           },
           {
             "id": "49ce9767aa46dd12",
@@ -4145,7 +4140,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "明年英国增长预测会升级,"
+            "title_zh": "明年英国增长预测会提高能源价格,"
           },
           {
             "id": "813902ce2b69458d",
@@ -4277,7 +4272,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "再来杯茶? 苏格兰未来作物如何改变"
+            "title_zh": "还要茶吗? 苏格兰未来作物如何改变"
           },
           {
             "id": "c136108ebc74ed1d",
@@ -4310,7 +4305,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "规则,伦敦最古老的餐厅,捐赠给国家信托"
+            "title_zh": "规则,伦敦最古老的餐厅,捐赠给国家信托公司"
           },
           {
             "id": "d95f15e08d53b58e",
@@ -4573,7 +4568,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Glencore Opens Above London Close in Australia Trading Debut 互联网档案馆的存檔,存档日期2013-12-21. 伦敦上空Glencore Opens Opens Close in Australia Trading Dut"
+            "title_zh": "Glencore Opens Above London Close in Australia Trading Debut 互联网档案馆的存檔,存档日期2013-12-22. 伦敦上空的Glencore Opens Close in Australia Trading Dut"
           },
           {
             "id": "adec4b4ce75123a5",
@@ -4671,7 +4666,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "我们的孩子在平安夜去世 我们还在等待答案"
+            "title_zh": "我们的孩子在平安夜死了 我们还在等待答案"
           },
           {
             "id": "953188e1a0091db5",
@@ -4961,7 +4956,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "主题公园工作人员对19名13岁以下女童的性侵犯"
+            "title_zh": "主题公园工作人员对19名13岁以下女孩的性侵犯"
           },
           {
             "id": "bad466c3e261dfae",
@@ -4994,7 +4989,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "凯蒂·普莱斯在强奸案的审判中否认了\"任何毒液\"对前男友的指控"
+            "title_zh": "凯蒂·普莱斯否认\"任何毒液\" 对他前夫的强奸审判"
           },
           {
             "id": "40f5cc95009b12be",
@@ -5060,7 +5055,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "培训前法医警官,以支助被控强奸的强奸受害人"
+            "title_zh": "培训前法医警官,以支助被控强奸的强奸受害者"
           },
           {
             "id": "de368a448a5d81bd",
@@ -5291,7 +5286,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "洛克比爆炸案嫌犯在利比亚的“cloak和匕首”行动中被捕"
+            "title_zh": "洛克比爆炸案嫌犯在利比亚的“cloak和匕首”行动中被抓获"
           },
           {
             "id": "1aba0b0e3e21df5c",
@@ -5563,7 +5558,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "超市冰箱因缺乏基本网络安全措施而入侵"
+            "title_zh": "超市冰箱因为缺乏基本网络安全措施而入侵"
           },
           {
             "id": "f32a8d6bfcb54c48",
@@ -5662,7 +5657,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法国的年轻人正经历着希望的危机"
+            "title_zh": "法国的青年正经历着希望危机"
           },
           {
             "id": "36da5bcad6c47583",
@@ -5728,7 +5723,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法国足协青年:总统候选人能否与学生运动联系起来?."
+            "title_zh": "法国支部青年:总统候选人能否与学生运动联系起来?."
           },
           {
             "id": "76bfe88889f46ddf",
@@ -5788,7 +5783,7 @@
             "summary": "The National Assembly overwhelmingly passed the so-called “comprehensive” bill against sexist and sexual violence on Tuesday. The focus now shifts to the more conservative Senate, ",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 50,
+            "importance": 49,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -6055,7 +6050,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "卡比拉与 \" 3·23 \" 运动发起新的联盟"
+            "title_zh": "卡比拉与“3·23”运动发起新的联盟"
           },
           {
             "id": "2070667c98773529",
@@ -6161,7 +6156,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "'如果我们不尖叫,他们不会听我们的': 学生抗议者在巴黎的BBC演讲"
+            "title_zh": "'如果我们不尖叫,他们不会听我们的': 学生抗议者在巴黎向英国广播公司演讲"
           },
           {
             "id": "630290d535e2c6c6",
@@ -6194,7 +6189,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "一个星形的铸造者 提供了一个肤浅的印象 \"Les Miséables\""
+            "title_zh": "一个星形的铸造者 提供了一个肤浅的印象 \"Les Misécables\""
           },
           {
             "id": "eac035d6fc045c0e",
@@ -6521,7 +6516,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "IMF提高欧元区增长预测,凸显法国经济大幅下滑"
+            "title_zh": "IMF提升欧元区增长预测,凸显法国经济大幅下滑."
           },
           {
             "id": "1f864d222959d444",
@@ -6725,7 +6720,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "DR 刚果:卡比拉向“3·23”运动的举动引发了和平问题"
+            "title_zh": "DR 刚果:卡比拉向“3·23”运动的举动引起了和平问题"
           },
           {
             "id": "a45826f89621757c",
@@ -6824,7 +6819,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "匈牙利议会投票推翻奥尔班时代的反LGBTQ立法."
+            "title_zh": "匈牙利议会投票推翻奥尔班时代的反LGBTQ立法"
           },
           {
             "id": "3b0659c9420165a0",
@@ -6890,7 +6885,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Explainer - 关于Nord Stream破坏案的审理情况"
+            "title_zh": "关于Nord Stream破坏案的审判,"
           },
           {
             "id": "93af315bf49373b2",
@@ -7152,7 +7147,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "德国警方在十几岁女孩被搜身后抓获机器人"
+            "title_zh": "德国警方在十几岁女孩被搜捕后 扣押了机器人"
           },
           {
             "id": "465c20ed1502dd0d",
@@ -7884,7 +7879,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "在Hormuz海峡受到攻击的油轮——UKMTO"
+            "title_zh": "在Hormuz海峡袭击的油轮——UKMTO"
           },
           {
             "id": "68b540ef26455886",
@@ -8213,7 +8208,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "利比亚参加莫斯科的俄罗斯-非洲首脑会议——特使"
+            "title_zh": "利比亚参加莫斯科俄罗斯-非洲首脑会议——特使"
           },
           {
             "id": "d1217f5fc1837067",
@@ -8282,39 +8277,6 @@
             "title_zh": "2026年俄罗斯额外非石油天然气预算收入达到1特朗(11.92英磅)."
           },
           {
-            "id": "30c944ed2ed6a581",
-            "title": "Lukashenko explains why Belarus holds military inspections",
-            "published_at": "2026-10-13T14:00:11+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "source": "TASS",
-                "link": "https://tass.com/world/2201483",
-                "published_at": "2026-10-13T14:00:11+00:00",
-                "description": "Alexander Lukashenko said that in the event of wartime every military serviceman must know every point, especially those"
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/world/2201483",
-            "source_url": "https://tass.com/world/2201483",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "source_authority": 82,
-            "summary": "Alexander Lukashenko said that in the event of wartime every military serviceman must know every point, especially those who will be called up from the reserve",
-            "category": "国防安全",
-            "domestic_score": 30,
-            "importance": 56,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "卢卡申科解释为什么白俄罗斯进行军事视察"
-          },
-          {
             "id": "fd6f38374a742103",
             "title": "Citadel uses less ammunition than other air defense systems",
             "published_at": "2026-10-13T11:40:15+00:00",
@@ -8379,6 +8341,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "巴基斯坦敦促美国、伊朗在海湾紧张局势加剧的情况下遵守和平协定。"
+          },
+          {
+            "id": "30c944ed2ed6a581",
+            "title": "Lukashenko explains why Belarus holds military inspections",
+            "published_at": "2026-10-13T14:00:11+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "source": "TASS",
+                "link": "https://tass.com/world/2201483",
+                "published_at": "2026-10-13T14:00:11+00:00",
+                "description": "Alexander Lukashenko said that in the event of wartime every military serviceman must know every point, especially those"
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/world/2201483",
+            "source_url": "https://tass.com/world/2201483",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "source_authority": 82,
+            "summary": "Alexander Lukashenko said that in the event of wartime every military serviceman must know every point, especially those who will be called up from the reserve",
+            "category": "国防安全",
+            "domestic_score": 30,
+            "importance": 55,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "卢卡申科解释白俄罗斯为何进行军事视察"
           },
           {
             "id": "9692ab877b5d517e",
@@ -8509,7 +8504,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "副国防部长指出,朝鲜军队在解放库尔斯克地区方面发挥着特殊作用。"
+            "title_zh": "副国防部长指出,韩国军队在解放库尔斯克地区中发挥了特殊作用。"
           },
           {
             "id": "f8fa5561fb0fe507",
@@ -8542,7 +8537,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "巩固俄罗斯-北朝鲜的伙伴关系有助于全球稳定"
+            "title_zh": "巩固俄罗斯-北朝鲜伙伴关系有助于全球稳定"
           },
           {
             "id": "0194815ee5ab12e8",
@@ -8839,7 +8834,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "法国海军拦截了拉留尼汪以南的油轮 怀疑是俄国影子舰队的一部分"
+            "title_zh": "法国海军拦截了拉留尼汪以南的油轮,怀疑是俄国影子舰队的一部分"
           },
           {
             "id": "3fb5f6b00ce0998a",
@@ -9007,39 +9002,6 @@
             "title_zh": "油价攀升,因为贸易商权衡沙特的供应风险,俄罗斯柴油流通-路透社"
           },
           {
-            "id": "0e72e8dc1c49a36f",
-            "title": "OPEC again revises downward global oil demand growth outlook in 2026",
-            "published_at": "2026-10-13T14:03:50+00:00",
-            "code": "RU",
-            "event_country": "俄罗斯",
-            "sources": [
-              {
-                "source": "TASS",
-                "link": "https://tass.com/economy/2201485",
-                "published_at": "2026-10-13T14:03:50+00:00",
-                "description": "The figure is expected to grow by 0.2 mln barrels per day and the demand will stand at 105.72 mln bpd, OPEC said in its "
-              }
-            ],
-            "source": "TASS",
-            "url": "https://tass.com/economy/2201485",
-            "source_url": "https://tass.com/economy/2201485",
-            "source_count": 1,
-            "source_names": [
-              "TASS"
-            ],
-            "source_authority": 82,
-            "summary": "The figure is expected to grow by 0.2 mln barrels per day and the demand will stand at 105.72 mln bpd, OPEC said in its October report",
-            "category": "能源",
-            "domestic_score": 46,
-            "importance": 51,
-            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "2026年欧佩克再次修订全球石油需求下降前景"
-          },
-          {
             "id": "caf746cbef3b8c55",
             "title": "MI5 chief warns of threats to UK from Russia, Iran and AI",
             "published_at": "2026-10-13T15:52:15+00:00",
@@ -9078,6 +9040,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "军情五处头目警告来自俄罗斯、伊朗和大赦国际对英国的威胁"
+          },
+          {
+            "id": "0e72e8dc1c49a36f",
+            "title": "OPEC again revises downward global oil demand growth outlook in 2026",
+            "published_at": "2026-10-13T14:03:50+00:00",
+            "code": "RU",
+            "event_country": "俄罗斯",
+            "sources": [
+              {
+                "source": "TASS",
+                "link": "https://tass.com/economy/2201485",
+                "published_at": "2026-10-13T14:03:50+00:00",
+                "description": "The figure is expected to grow by 0.2 mln barrels per day and the demand will stand at 105.72 mln bpd, OPEC said in its "
+              }
+            ],
+            "source": "TASS",
+            "url": "https://tass.com/economy/2201485",
+            "source_url": "https://tass.com/economy/2201485",
+            "source_count": 1,
+            "source_names": [
+              "TASS"
+            ],
+            "source_authority": 82,
+            "summary": "The figure is expected to grow by 0.2 mln barrels per day and the demand will stand at 105.72 mln bpd, OPEC said in its October report",
+            "category": "能源",
+            "domestic_score": 46,
+            "importance": 50,
+            "why_important": "涉及能源，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "2026年欧佩克再次修订全球石油需求下降前景"
           },
           {
             "id": "b3cd35616c2960c7",
@@ -9209,7 +9204,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "俄罗斯、朝鲜在构造地缘政治变化中共同奋斗——外交家"
+            "title_zh": "俄罗斯,朝鲜在构造地缘政治变化中共同奋斗——外交家."
           },
           {
             "id": "2fc29b2e9e49c890",
@@ -9648,7 +9643,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "日本记者因涉嫌间谍罪被拘留"
+            "title_zh": "因涉嫌间谍罪被拘留的日本记者"
           },
           {
             "id": "9e0c6832e1104095",
@@ -9846,7 +9841,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "MUFG 阻碍印度Shriram金融的多数控制"
+            "title_zh": "MUFG 操纵印度Shriram金融的多数控制"
           },
           {
             "id": "a634aac3a64abf6c",
@@ -10216,7 +10211,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "日本2026年大米收成预计下降1%"
+            "title_zh": "日本2026年大米收成预计将下降1%"
           }
         ]
       }
@@ -10466,7 +10461,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Rupee 的无穷滑动画 进口商进入 RBI 货币斗争"
+            "title_zh": "Rupee 的无限制幻灯片绘制导入者进入 RBI 货币战斗"
           },
           {
             "id": "0fa992b65b4568c9",
@@ -10506,7 +10501,40 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "美国国务卿鲁比奥下周访问印度参加能源会谈;卡片访问贾姆纳加尔"
+            "title_zh": "美国国务卿鲁比奥下周访问印度进行能源会谈;卡片访问贾姆纳加尔"
+          },
+          {
+            "id": "4e7c57909892b175",
+            "title": "India’s Modi faces unprecedented challenge to power as youth mobilize",
+            "published_at": "2026-10-13T16:40:03+00:00",
+            "code": "IN",
+            "event_country": "印度",
+            "sources": [
+              {
+                "source": "华盛顿邮报",
+                "link": "https://www.washingtonpost.com/world/2026/10/13/indias-modi-faces-unprecedented-challenge-power-youth-mobilize/",
+                "published_at": "2026-10-13T16:40:03+00:00",
+                "description": "Until this month’s “cockroach” protests over changes to India’s voter rolls, the prime minister’s political might went a"
+              }
+            ],
+            "source": "华盛顿邮报",
+            "url": "https://www.washingtonpost.com/world/2026/10/13/indias-modi-faces-unprecedented-challenge-power-youth-mobilize/",
+            "source_url": "https://www.washingtonpost.com/world/2026/10/13/indias-modi-faces-unprecedented-challenge-power-youth-mobilize/",
+            "source_count": 1,
+            "source_names": [
+              "华盛顿邮报"
+            ],
+            "source_authority": 94,
+            "summary": "Until this month’s “cockroach” protests over changes to India’s voter rolls, the prime minister’s political might went all but unchallenged among the nearly billion-strong electora",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 48,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "印度的莫迪在青年动员时面临前所未有的权力挑战"
           },
           {
             "id": "a10668a73e486f25",
@@ -10579,7 +10607,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "德里警方在Jantar Mantar案中对正义与和平党领导人Saurav Das、Ashutosh Ranka和Ajinkya Shinde进行预防性逮捕。"
+            "title_zh": "德里警方在Jantar Mantar案中对正义与正义同盟领导人Saurav Das、Ashutosh Ranka和Ajinkya Shinde进行预防性逮捕。"
           },
           {
             "id": "84211667421aaf62",
@@ -10645,7 +10673,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "印度警方拘留要求选举总长下台的“cockroach”运动领导人-路透社"
+            "title_zh": "印度警方拘留要求选举总长下台的“cockroach”运动领袖-路透社"
           },
           {
             "id": "9385e021d83951d4",
@@ -10975,7 +11003,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "前中央邦CM Shivraj Singh Chouhan的双面言论助长了邦正义党内部的裂痕。"
+            "title_zh": "前中央邦CM Shivraj Singh Chouhan的两句言论,助长了邦正义党内部的裂痕。"
           },
           {
             "id": "d1e81597b40fa02d",
@@ -11008,7 +11036,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "现代汽车集团以印度为全球汽车枢纽下注155亿美元-路透社."
+            "title_zh": "现代汽车集团以印度为全球汽车枢纽下注155亿美元-路透社"
           },
           {
             "id": "ab58ef3612f2de56",
@@ -11074,7 +11102,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "争取公平教育的斗争:萨马切尔·卡尔维如何在泰米尔纳德邦诞生"
+            "title_zh": "争取公平教育的斗争:Samacheer Kalvi如何在泰米尔纳德邦诞生"
           },
           {
             "id": "e149adc23c986971",
@@ -11272,7 +11300,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "因在Vellore流通伪造货币而被关押的3人中的银行工作人员"
+            "title_zh": "因在Vellore流通伪造货币而被扣押的3人中的银行职员"
           },
           {
             "id": "ce1f411a41e8ec7a",
@@ -11372,39 +11400,6 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "最高法院/最高法院谴责卡纳塔克高等法院驳回强化保留的裁决。"
-          },
-          {
-            "id": "4bbb10bb188d728c",
-            "title": "Patna High Court acquits 13 accused in 1996 Jehanabad quadruple murder case",
-            "published_at": "2026-10-13T21:39:09+00:00",
-            "code": "IN",
-            "event_country": "印度",
-            "sources": [
-              {
-                "source": "The Hindu National",
-                "link": "https://www.thehindu.com/news/national/bihar/patna-high-court-acquits-13-accused-in-1996-jehanabad-quadruple-murder-case/article71580349.ece",
-                "published_at": "2026-10-13T21:39:09+00:00",
-                "description": "A Division Bench comprising Justice Rajeev Ranjan Prasad and Justice Kumar Manish delivered the ruling, citing grave lap"
-              }
-            ],
-            "source": "The Hindu National",
-            "url": "https://www.thehindu.com/news/national/bihar/patna-high-court-acquits-13-accused-in-1996-jehanabad-quadruple-murder-case/article71580349.ece",
-            "source_url": "https://www.thehindu.com/news/national/bihar/patna-high-court-acquits-13-accused-in-1996-jehanabad-quadruple-murder-case/article71580349.ece",
-            "source_count": 1,
-            "source_names": [
-              "The Hindu National"
-            ],
-            "source_authority": 87,
-            "summary": "A Division Bench comprising Justice Rajeev Ranjan Prasad and Justice Kumar Manish delivered the ruling, citing grave lapses in the police investigation",
-            "category": "法律/犯罪",
-            "domestic_score": 30,
-            "importance": 40,
-            "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "帕特纳高等法院于1996年宣判13名被告Jehanabad四重谋杀案无罪"
           },
           {
             "id": "d544102794613337",
@@ -11513,7 +11508,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "巴西最高法院的丑闻 如何让波尔索纳罗斯掌权"
+            "title_zh": "巴西最高法院的丑闻如何让波尔索纳罗人重新掌权"
           }
         ]
       },
@@ -11556,7 +11551,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "重要事件",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "沙特能源巨头斯特鲁克作为胡塞和沙特阿拉伯之间的战争史比奇"
+            "title_zh": "沙特能源巨头斯特鲁克作为胡塞斯和沙特阿拉伯之间的战争史派克"
           },
           {
             "id": "df482fedcc1dd80c",
@@ -11592,6 +11587,39 @@
             "title_zh": "沙特阿拉伯反对胡塞袭击的军事斗争"
           },
           {
+            "id": "6e0b2cf9062c3054",
+            "title": "As Houthis strike Riyadh, Saudi Arabia confronts the costs of U.S. war on Iran",
+            "published_at": "2026-10-13T11:39:31+00:00",
+            "code": "SA",
+            "event_country": "沙特阿拉伯",
+            "sources": [
+              {
+                "source": "华盛顿邮报",
+                "link": "https://www.washingtonpost.com/world/2026/10/13/saudi-arabia-faces-grave-question-fight-houthis-win-or-push-peace/",
+                "published_at": "2026-10-13T11:39:31+00:00",
+                "description": "Deadly attacks by Yemen’s rebels have left Saudi leader Mohammed bin Salman juggling security risks and the kingdom’s ec"
+              }
+            ],
+            "source": "华盛顿邮报",
+            "url": "https://www.washingtonpost.com/world/2026/10/13/saudi-arabia-faces-grave-question-fight-houthis-win-or-push-peace/",
+            "source_url": "https://www.washingtonpost.com/world/2026/10/13/saudi-arabia-faces-grave-question-fight-houthis-win-or-push-peace/",
+            "source_count": 1,
+            "source_names": [
+              "华盛顿邮报"
+            ],
+            "source_authority": 94,
+            "summary": "Deadly attacks by Yemen’s rebels have left Saudi leader Mohammed bin Salman juggling security risks and the kingdom’s economic ambitions.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 67,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "沙特阿拉伯面临美国对伊朗战争的代价,"
+          },
+          {
             "id": "71985624c32f4311",
             "title": "Live: Saudi Arabia reports Aramco building hit and four wounded in Houthi missile attacks",
             "published_at": "2026-10-14T03:39:11+00:00",
@@ -11622,7 +11650,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "现场:沙特阿拉伯报告说,在Houthi导弹袭击中,Aramco大楼被击中,4人受伤"
+            "title_zh": "现场:沙特阿拉伯报告说,在Houthi导弹袭击中,Aramco大楼被击中,四人受伤"
           },
           {
             "id": "0df02bc5f5dc8101",
@@ -11655,7 +11683,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "随着战斗的加剧,胡塞导弹在沙特阿拉伯上空被拦截"
+            "title_zh": "随着战斗的加剧,胡塞导弹在沙特阿拉伯上空拦截"
           },
           {
             "id": "2bc889477fe27349",
@@ -11691,39 +11719,6 @@
             "title_zh": "沙特联军击中也门燃料库后,在利雅得附近截获导弹"
           },
           {
-            "id": "4b0d95bb6c2d7171",
-            "title": "Aramco Headquarters Hit as Houthi Missiles Strike Saudi Arabia",
-            "published_at": "2026-10-13T20:32:12+00:00",
-            "code": "SA",
-            "event_country": "沙特阿拉伯",
-            "sources": [
-              {
-                "source": "彭博社",
-                "link": "https://www.bloomberg.com/news/articles/2026-10-13/aramco-headquarters-hit-during-houthi-attacks-on-saudi-arabia",
-                "published_at": "2026-10-13T20:32:12+00:00",
-                "description": "Saudi Aramco’s executive headquarters in eastern Saudi Arabia was hit during a missile attack by Yemen’s Houthi militant"
-              }
-            ],
-            "source": "彭博社",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-13/aramco-headquarters-hit-during-houthi-attacks-on-saudi-arabia",
-            "source_url": "https://www.bloomberg.com/news/articles/2026-10-13/aramco-headquarters-hit-during-houthi-attacks-on-saudi-arabia",
-            "source_count": 1,
-            "source_names": [
-              "彭博社"
-            ],
-            "source_authority": 96,
-            "summary": "Saudi Aramco’s executive headquarters in eastern Saudi Arabia was hit during a missile attack by Yemen’s Houthi militants on Tuesday, causing a fire in a part of the complex, the k",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 64,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "沙特阿拉伯"
-          },
-          {
             "id": "3fee01fc1523b183",
             "title": "Houthis launch fresh wave of missiles across Saudi Arabia",
             "published_at": "2026-10-14T00:50:00+00:00",
@@ -11754,7 +11749,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Houthis在沙特阿拉伯各地发射新一轮导弹"
+            "title_zh": "Houthis在沙特阿拉伯境内发射新一轮导弹"
           },
           {
             "id": "9d9df7a91d6f0617",
@@ -11886,7 +11881,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Aramco设施在Houthis和沙特联盟的交换攻击中被击中"
+            "title_zh": "沙特石油公司在Houthis和沙特联盟的交换攻击中被击中"
           },
           {
             "id": "a806be7ca9efff5b",
@@ -11985,7 +11980,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "沙特阿拉伯在发出紧急警报后,在2个中部省份发布全部清除"
+            "title_zh": "沙特阿拉伯在发出紧急警报后,在2个中央省份发布全部清除"
           },
           {
             "id": "f85deb4781682186",
@@ -12018,7 +12013,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "胡塞斯和沙特人最近互相攻击"
+            "title_zh": "Houthis和沙特人最近互相攻击"
           },
           {
             "id": "508a19f7ac42c6fa",
@@ -12833,7 +12828,40 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "(LEAD) 1,心脏停搏,7人受伤 在仁川的刀伤"
+            "title_zh": "(LEAD) 1,心脏停搏,7人受伤 在仁川刀伤"
+          },
+          {
+            "id": "ceb467ae57fa569c",
+            "title": "“The Assassin(s)” Movie Fuels South Korea’s Culture Wars",
+            "published_at": "2026-10-14T04:01:10+00:00",
+            "code": "KR",
+            "event_country": "韩国",
+            "sources": [
+              {
+                "source": "纽约时报",
+                "link": "https://www.nytimes.com/2026/10/14/world/asia/korea-assasin-assassins-movie.html",
+                "published_at": "2026-10-14T04:01:10+00:00",
+                "description": "The film, “The Assassin(s),” revisits a 1974 shooting that has spawned J.F.K.-style conspiracy theories, exposing divide"
+              }
+            ],
+            "source": "纽约时报",
+            "url": "https://www.nytimes.com/2026/10/14/world/asia/korea-assasin-assassins-movie.html",
+            "source_url": "https://www.nytimes.com/2026/10/14/world/asia/korea-assasin-assassins-movie.html",
+            "source_count": 1,
+            "source_names": [
+              "纽约时报"
+            ],
+            "source_authority": 96,
+            "summary": "The film, “The Assassin(s),” revisits a 1974 shooting that has spawned J.F.K.-style conspiracy theories, exposing divides over the country’s history.",
+            "category": "其他/综合",
+            "domestic_score": 38,
+            "importance": 57,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "\" 刺客 \" 电影为韩国的文化战争火上浇油"
           },
           {
             "id": "8327a42f5e9a5ade",
@@ -13064,7 +13092,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "(10月14日\"韩国时报\"的编辑)"
+            "title_zh": "(10月14日\"韩国时报\"的EDITORIAL)."
           },
           {
             "id": "31b30537aad5da2d",
@@ -13262,7 +13290,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "首尔股权回升很晚,"
+            "title_zh": "首尔股权反弹迟到,"
           },
           {
             "id": "329a0be71bd4852a",
@@ -13397,39 +13425,6 @@
             "title_zh": "(10月14日韩国先驱报的新闻稿)"
           },
           {
-            "id": "aa9a15b3317b7ea8",
-            "title": "(URGENT) Seoul shares start higher amid AI concerns",
-            "published_at": "2026-10-14T00:02:14+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "source": "Yonhap",
-                "link": "https://en.yna.co.kr/view/AEN20261014001400320",
-                "published_at": "2026-10-14T00:02:14+00:00",
-                "description": "(END)"
-              }
-            ],
-            "source": "Yonhap",
-            "url": "https://en.yna.co.kr/view/AEN20261014001400320",
-            "source_url": "https://en.yna.co.kr/view/AEN20261014001400320",
-            "source_count": 1,
-            "source_names": [
-              "Yonhap"
-            ],
-            "source_authority": 88,
-            "summary": "(END)",
-            "category": "科技",
-            "domestic_score": 30,
-            "importance": 42,
-            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "首尔股权在AI的担忧下开始提高"
-          },
-          {
             "id": "8d26d7f1095b20f3",
             "title": "Several hurt, one in ‘cardiac arrest’ in South Korea market stabbing",
             "published_at": "2026-10-13T07:57:52+00:00",
@@ -13463,6 +13458,39 @@
             "title_zh": "南韩市场遭\"心肌梗塞\","
           },
           {
+            "id": "aa9a15b3317b7ea8",
+            "title": "(URGENT) Seoul shares start higher amid AI concerns",
+            "published_at": "2026-10-14T00:02:14+00:00",
+            "code": "KR",
+            "event_country": "韩国",
+            "sources": [
+              {
+                "source": "Yonhap",
+                "link": "https://en.yna.co.kr/view/AEN20261014001400320",
+                "published_at": "2026-10-14T00:02:14+00:00",
+                "description": "(END)"
+              }
+            ],
+            "source": "Yonhap",
+            "url": "https://en.yna.co.kr/view/AEN20261014001400320",
+            "source_url": "https://en.yna.co.kr/view/AEN20261014001400320",
+            "source_count": 1,
+            "source_names": [
+              "Yonhap"
+            ],
+            "source_authority": 88,
+            "summary": "(END)",
+            "category": "科技",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及科技，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "首尔股权在AI的担忧下开始提高"
+          },
+          {
             "id": "95e3412d180c3f3b",
             "title": "Why Samsung, SK Hynix and CXMT shares are under pressure despite strong AI demand",
             "published_at": "2026-10-13T10:30:05+00:00",
@@ -13493,7 +13521,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "三星,SK Hynix和CXMT的股票为何面临压力,尽管AI需求强劲"
+            "title_zh": "三星,SK Hynix和CXMT的股票为何面临压力,尽管AI需求强劲."
           },
           {
             "id": "97adc7a439f80925",
@@ -13592,7 +13620,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "在蔚山的化工公司发生火灾 迫使附近的7000名工人撤离"
+            "title_zh": "在蔚山的化工公司起火 迫使附近的7000名工人疏散"
           },
           {
             "id": "ae27846575d2ff3d",
@@ -13855,39 +13883,6 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
-          },
-          {
-            "id": "d4d447de1544aa6f",
-            "title": "Korean filmmaker July Jung awarded French cultural honor",
-            "published_at": "2026-10-14T01:54:45+00:00",
-            "code": "KR",
-            "event_country": "韩国",
-            "sources": [
-              {
-                "source": "Yonhap",
-                "link": "https://en.yna.co.kr/view/AEN20261014003500315",
-                "published_at": "2026-10-14T01:54:45+00:00",
-                "description": "SEOUL, Oct. 14 (Yonhap) -- Korean director July Jung, whose works have been invi..."
-              }
-            ],
-            "source": "Yonhap",
-            "url": "https://en.yna.co.kr/view/AEN20261014003500315",
-            "source_url": "https://en.yna.co.kr/view/AEN20261014003500315",
-            "source_count": 1,
-            "source_names": [
-              "Yonhap"
-            ],
-            "source_authority": 88,
-            "summary": "SEOUL, Oct. 14 (Yonhap) -- Korean director July Jung, whose works have been invi...",
-            "category": "其他/综合",
-            "domestic_score": 38,
-            "importance": 36,
-            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "韩国电影制片人July Jung授予法国文化荣誉"
           }
         ]
       },
@@ -14040,39 +14035,6 @@
         "count": 12,
         "events": [
           {
-            "id": "d73fa2bf83cb5335",
-            "title": "Australian politics live: King says gas reservation plan may ‘push down’ prices at some stage; Liberal ‘reached out’ to Aly over ‘stoned’ comment",
-            "published_at": "2026-10-14T03:44:00+00:00",
-            "code": "AU",
-            "event_country": "澳大利亚",
-            "sources": [
-              {
-                "source": "卫报",
-                "link": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
-                "published_at": "2026-10-14T03:44:00+00:00",
-                "description": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Australia missing out on $45bn "
-              }
-            ],
-            "source": "卫报",
-            "url": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
-            "source_url": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
-            "source_count": 1,
-            "source_names": [
-              "卫报"
-            ],
-            "source_authority": 92,
-            "summary": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Australia missing out on $45bn of revenue from resources: Greens As Labor prepares to intro",
-            "category": "政治",
-            "domestic_score": 30,
-            "importance": 50,
-            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "一般动态",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "澳大利亚政治现场:国王说,天然气储备计划可能会在某个阶段“压低”价格;自由派“接触”了Aly,"
-          },
-          {
             "id": "c763ede52557d567",
             "title": "Family of Indigenous woman found dead in Melbourne mourn ‘vibrant, beautiful young girl’",
             "published_at": "2026-10-14T03:37:02+00:00",
@@ -14104,6 +14066,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "在墨尔本发现死去的土著妇女的家人哀悼“活力、美丽的年轻女孩”。"
+          },
+          {
+            "id": "dfdc58164ed791d5",
+            "title": "Australian politics live: Taylor claims Albanese has repeatedly ‘humiliated’ Chalmers; Coalition continues to target Aly",
+            "published_at": "2026-10-14T03:59:35+00:00",
+            "code": "AU",
+            "event_country": "澳大利亚",
+            "sources": [
+              {
+                "source": "卫报",
+                "link": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
+                "published_at": "2026-10-14T03:59:35+00:00",
+                "description": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Australia missing out on $45bn "
+              }
+            ],
+            "source": "卫报",
+            "url": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
+            "source_url": "https://www.theguardian.com/australia-news/live/2026/oct/14/treasurer-jim-chalmers-labor-one-nation-pauline-hanson-one-nation-gas-reservation-scheme-ntwnfb",
+            "source_count": 1,
+            "source_names": [
+              "卫报"
+            ],
+            "source_authority": 92,
+            "summary": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Australia missing out on $45bn of revenue from resources: Greens As Labor prepares to intro",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 46,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "澳大利亚政治现场:泰勒声称阿尔巴内斯屡次\"羞辱\"查尔默斯;联盟继续针对阿利."
           },
           {
             "id": "14edab8ce7599d99",
@@ -14367,7 +14362,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Beau Lamarre-Condon以前曾访问过农场,后来他试图沉没尸体,法庭说"
+            "title_zh": "Beau Lamarre-Condon以前曾到过农场,后来他试图沉没尸体,法庭说"
           },
           {
             "id": "3f2407009365051b",
@@ -14400,7 +14395,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "父母警告学生将终身风险“将学习分包给AI”。"
+            "title_zh": "父母警告学生将终身风险“将学习分包给大赦国际”。"
           },
           {
             "id": "0e24d43dc774f9a6",
@@ -15440,7 +15435,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "乌克兰昨晚没有收到任何情报警告 泽连斯基证实"
+            "title_zh": "乌克兰昨晚没有收到任何情报警告 Zelensky证实"
           }
         ]
       },
@@ -15523,7 +15518,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "Pope Leo诊断为肺癌,手术时摘除生长"
+            "title_zh": "Pope Leo诊断出肺癌,因为手术时已停止生长"
           },
           {
             "id": "73f3806c5f440503",
@@ -16019,7 +16014,7 @@
         "code": "MX",
         "target_min": 3,
         "target_max": 10,
-        "count": 7,
+        "count": 8,
         "events": [
           {
             "id": "e6311694d83cec84",
@@ -16117,6 +16112,39 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
+          },
+          {
+            "id": "ba8ff277672691c6",
+            "title": "Chinese team finds 11,700 new viruses in world’s biggest seabed metal deposit",
+            "published_at": "2026-10-14T04:00:09+00:00",
+            "code": "MX",
+            "event_country": "墨西哥",
+            "sources": [
+              {
+                "source": "South China Morning Post",
+                "link": "https://www.scmp.com/news/china/science/article/3370762/chinese-team-finds-11700-new-viruses-worlds-biggest-seabed-metal-deposit?utm_source=rss_feed",
+                "published_at": "2026-10-14T04:00:09+00:00",
+                "description": "Up to 6,000 metres (19,700 feet) beneath the surface of the Pacific Ocean between Mexico and Hawaii, billions of potato-"
+              }
+            ],
+            "source": "South China Morning Post",
+            "url": "https://www.scmp.com/news/china/science/article/3370762/chinese-team-finds-11700-new-viruses-worlds-biggest-seabed-metal-deposit?utm_source=rss_feed",
+            "source_url": "https://www.scmp.com/news/china/science/article/3370762/chinese-team-finds-11700-new-viruses-worlds-biggest-seabed-metal-deposit?utm_source=rss_feed",
+            "source_count": 1,
+            "source_names": [
+              "South China Morning Post"
+            ],
+            "source_authority": 86,
+            "summary": "Up to 6,000 metres (19,700 feet) beneath the surface of the Pacific Ocean between Mexico and Hawaii, billions of potato-shaped metallic nodules are scattered across the seabed. The",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 40,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "中国队在世界最大的海底金属矿藏中发现了11700个新病毒"
           },
           {
             "id": "b7d0bde0bb1b5b68",
@@ -16258,41 +16286,8 @@
         "code": "IR",
         "target_min": 3,
         "target_max": 10,
-        "count": 17,
+        "count": 18,
         "events": [
-          {
-            "id": "50f7c5db142da774",
-            "title": "Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east",
-            "published_at": "2026-10-14T00:00:00+00:00",
-            "code": "IR",
-            "event_country": "伊朗",
-            "sources": [
-              {
-                "source": "半岛电视台",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
-                "published_at": "2026-10-14T00:00:00+00:00",
-                "description": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi 'vital assets' in Yemen"
-              }
-            ],
-            "source": "半岛电视台",
-            "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
-            "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
-            "source_count": 1,
-            "source_names": [
-              "半岛电视台"
-            ],
-            "source_authority": 90,
-            "summary": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi 'vital assets' in Yemen",
-            "category": "国防安全",
-            "domestic_score": 38,
-            "importance": 64,
-            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-            "importance_level": "值得关注",
-            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "伊朗战争现场:沙特联军击中Houthi地点;Aramco办事处击中东部"
-          },
           {
             "id": "6c87a4ba692a3193",
             "title": "Libya moves past war stage, threat of new crisis remains — envoy",
@@ -16325,6 +16320,39 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "利比亚走出战争阶段,新危机的威胁依然存在——特使"
+          },
+          {
+            "id": "50f7c5db142da774",
+            "title": "Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east",
+            "published_at": "2026-10-14T00:00:00+00:00",
+            "code": "IR",
+            "event_country": "伊朗",
+            "sources": [
+              {
+                "source": "半岛电视台",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
+                "published_at": "2026-10-14T00:00:00+00:00",
+                "description": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi 'vital assets' in Yemen"
+              }
+            ],
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
+            "source_count": 1,
+            "source_names": [
+              "半岛电视台"
+            ],
+            "source_authority": 90,
+            "summary": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi 'vital assets' in Yemen",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 63,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "值得关注",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "伊朗战争现场:沙特联军击中Houthi地点;Aramco办事处击中东部"
           },
           {
             "id": "64ea36bf083e5f97",
@@ -16430,7 +16458,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "尽管伊朗战争中断,9月沙特领先欧佩克+石油产出猛增-路透社"
+            "title_zh": "尽管伊朗战争中断,9月沙特领先欧佩克+石油产量猛增-路透社"
           },
           {
             "id": "97a157550027db68",
@@ -16464,6 +16492,39 @@
             "importance_level": "值得关注",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "伊朗更关心经济战争而不是武装对抗——伊斯兰议会发言人"
+          },
+          {
+            "id": "f8db88d802e6b492",
+            "title": "U.K. intelligence chief warns Iran is shifting plots to ‘harder targets’",
+            "published_at": "2026-10-13T12:58:36+00:00",
+            "code": "IR",
+            "event_country": "伊朗",
+            "sources": [
+              {
+                "source": "华盛顿邮报",
+                "link": "https://www.washingtonpost.com/world/2026/10/13/uk-intelligence-chief-warns-iran-is-shifting-plots-harder-targets/",
+                "published_at": "2026-10-13T12:58:36+00:00",
+                "description": "In annual speech on threats, Ken McCallum, the head of MI5, cited a “major shift” in Tehran’s “ambitions” to attack mili"
+              }
+            ],
+            "source": "华盛顿邮报",
+            "url": "https://www.washingtonpost.com/world/2026/10/13/uk-intelligence-chief-warns-iran-is-shifting-plots-harder-targets/",
+            "source_url": "https://www.washingtonpost.com/world/2026/10/13/uk-intelligence-chief-warns-iran-is-shifting-plots-harder-targets/",
+            "source_count": 1,
+            "source_names": [
+              "华盛顿邮报"
+            ],
+            "source_authority": 94,
+            "summary": "In annual speech on threats, Ken McCallum, the head of MI5, cited a “major shift” in Tehran’s “ambitions” to attack military sites and other high-security targets.",
+            "category": "国防安全",
+            "domestic_score": 38,
+            "importance": 58,
+            "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "英国情报部门负责人警告伊朗,"
           },
           {
             "id": "beb57d71fd13e5a7",
@@ -16853,7 +16914,7 @@
         "code": "SG",
         "target_min": 2,
         "target_max": 8,
-        "count": 3,
+        "count": 4,
         "events": [
           {
             "id": "41574869f363e759",
@@ -16887,6 +16948,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "智能经济学:共同应对气候变化和空气污染"
+          },
+          {
+            "id": "1b6d50474a8f1b3c",
+            "title": "Singapore Central Bank Unexpectedly Holds Policy Steady as Growth Slows - WSJ",
+            "published_at": "2026-10-14T02:33:00+00:00",
+            "code": "SG",
+            "event_country": "新加坡",
+            "sources": [
+              {
+                "source": "Wall Street Journal AI",
+                "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQX0JYRWx2ZUpOM2U4QUg0VVFOTEtYNVJORzZkLWRHUF9VQ0dDUEVfcjRYN1N5U3ZIRS13UmdkckRqQmFpb0NoLWRvdjJGV0haU1UyZ0syWFhkRGd1RDFoSEl5VjJGT2llSEZCNVhDd2syR0hsVjl5c0swQzdUUG1fZTNIQkZzdHhIY2xSVkpRRWFCQl9oYzlLNDlEc29mZ2plOXQ5S29DOFVLSGFN?oc=5",
+                "published_at": "2026-10-14T02:33:00+00:00",
+                "description": "Singapore Central Bank Unexpectedly Holds Policy Steady as Growth Slows WSJ"
+              }
+            ],
+            "source": "Wall Street Journal AI",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQX0JYRWx2ZUpOM2U4QUg0VVFOTEtYNVJORzZkLWRHUF9VQ0dDUEVfcjRYN1N5U3ZIRS13UmdkckRqQmFpb0NoLWRvdjJGV0haU1UyZ0syWFhkRGd1RDFoSEl5VjJGT2llSEZCNVhDd2syR0hsVjl5c0swQzdUUG1fZTNIQkZzdHhIY2xSVkpRRWFCQl9oYzlLNDlEc29mZ2plOXQ5S29DOFVLSGFN?oc=5",
+            "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQX0JYRWx2ZUpOM2U4QUg0VVFOTEtYNVJORzZkLWRHUF9VQ0dDUEVfcjRYN1N5U3ZIRS13UmdkckRqQmFpb0NoLWRvdjJGV0haU1UyZ0syWFhkRGd1RDFoSEl5VjJGT2llSEZCNVhDd2syR0hsVjl5c0swQzdUUG1fZTNIQkZzdHhIY2xSVkpRRWFCQl9oYzlLNDlEc29mZ2plOXQ5S29DOFVLSGFN?oc=5",
+            "source_count": 1,
+            "source_names": [
+              "Wall Street Journal AI"
+            ],
+            "source_authority": 96,
+            "summary": "Singapore Central Bank Unexpectedly Holds Policy Steady as Growth Slows WSJ",
+            "category": "政治",
+            "domestic_score": 30,
+            "importance": 41,
+            "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "新加坡中央银行意外持有政策随着增长放缓而稳定-WSJ"
           },
           {
             "id": "31954b43cf3895e0",
@@ -16989,7 +17083,7 @@
             "summary": "Allan Gray Ltd., which oversees $29 billion in assets, favors Nigerian stocks over South Korean equities, as they offer a diversification play from the artificial-intelligence fren",
             "category": "金融",
             "domestic_score": 30,
-            "importance": 35,
+            "importance": 34,
             "why_important": "涉及金融，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -17028,7 +17122,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "2026年诺贝尔奖:今年获奖者完整名单."
+            "title_zh": "2026年诺贝尔奖:今年获奖者完整名单"
           }
         ]
       },
@@ -17081,7 +17175,7 @@
         "code": "IL",
         "target_min": 2,
         "target_max": 8,
-        "count": 10,
+        "count": 11,
         "events": [
           {
             "id": "7ac127b1077c8bfd",
@@ -17180,7 +17274,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "以色列攻击在加沙打死一名记者,打伤被占领的西岸的记者"
+            "title_zh": "以色列袭击在加沙打死一名记者,打伤被占领的西岸的记者"
           },
           {
             "id": "ccb4727bba415ea1",
@@ -17246,7 +17340,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "以色列第一命令起诉在NAZA纪录片中揭露加沙大规模杀戮事件的士兵"
+            "title_zh": "以色列主要命令起诉在NAZA纪录片中揭露加沙大规模屠杀事件的士兵"
           },
           {
             "id": "a95d3d09fb316573",
@@ -17410,6 +17504,39 @@
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
             "title_zh": "以色列军队逮捕30名巴勒斯坦人,作为占领者袭击被占领的西岸的家庭"
+          },
+          {
+            "id": "9ff8103e6500c7de",
+            "title": "Israel returns 22 stolen ancient artefacts to Greece",
+            "published_at": "2026-10-14T03:23:08+00:00",
+            "code": "IL",
+            "event_country": "以色列",
+            "sources": [
+              {
+                "source": "半岛电视台",
+                "link": "https://www.aljazeera.com/news/2026/10/14/israel-returns-22-stolen-ancient-artefacts-to-greece?traffic_source=rss",
+                "published_at": "2026-10-14T03:23:08+00:00",
+                "description": "The cultural exchange comes amid strengthening ties between the two countries."
+              }
+            ],
+            "source": "半岛电视台",
+            "url": "https://www.aljazeera.com/news/2026/10/14/israel-returns-22-stolen-ancient-artefacts-to-greece?traffic_source=rss",
+            "source_url": "https://www.aljazeera.com/news/2026/10/14/israel-returns-22-stolen-ancient-artefacts-to-greece?traffic_source=rss",
+            "source_count": 1,
+            "source_names": [
+              "半岛电视台"
+            ],
+            "source_authority": 90,
+            "summary": "The cultural exchange comes amid strengthening ties between the two countries.",
+            "category": "其他/综合",
+            "domestic_score": 30,
+            "importance": 26,
+            "why_important": "涉及其他/综合，结合多源报道与时效性评估后值得关注。",
+            "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+            "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+            "importance_level": "一般动态",
+            "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
+            "title_zh": "以色列将22件被盗的古董归还希腊"
           }
         ]
       },
@@ -17657,7 +17784,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "休达是西班牙不可剥夺的一部分,"
+            "title_zh": "休达是西班牙不可剥夺的一部分,国王在重要访问中说"
           },
           {
             "id": "d2e9d6d8bb22561e",
@@ -18126,7 +18253,7 @@
             "summary": "A $29 Billion Manager Tips Nigerian Stocks Over South Korea’s Kospi Bloomberg.com",
             "category": "政治",
             "domestic_score": 30,
-            "importance": 36,
+            "importance": 35,
             "why_important": "涉及政治，结合多源报道与时效性评估后值得关注。",
             "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
@@ -18208,7 +18335,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "阿根廷把联合王国作为福克兰群岛石油勘探法律索赔的目标"
+            "title_zh": "阿根廷在福克兰群岛石油勘探的法律主张中以联合王国为目标"
           },
           {
             "id": "f062fffffcef77b5",
@@ -18241,7 +18368,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "阿根廷要求法庭下令取缔福克兰群岛附近的英国石油活动-路透社"
+            "title_zh": "阿根廷寻求法庭下令取缔福克兰群岛附近的英国石油活动-路透社"
           },
           {
             "id": "c31e36a5b3694d4d",
@@ -18393,7 +18520,7 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "俄越两国副国防部长再举行一轮战略对话"
+            "title_zh": "俄越副国防部长再举行一轮战略对话"
           },
           {
             "id": "c196682d0cb57c0f",
@@ -18426,46 +18553,13 @@
             "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
             "importance_level": "一般动态",
             "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-            "title_zh": "越南妇女因涉嫌洗钱在日本被捕"
+            "title_zh": "在日本因涉嫌洗钱被捕的越南妇女"
           }
         ]
       }
     }
   },
   "global_top": [
-    {
-      "id": "85e8dea07f470c00",
-      "title": "Former Chongqing mayor Huang Qifan under investigation for corruption",
-      "published_at": "2026-10-13T10:04:33+00:00",
-      "code": "CN",
-      "event_country": "中国",
-      "sources": [
-        {
-          "source": "South China Morning Post",
-          "link": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-          "published_at": "2026-10-13T10:04:33+00:00",
-          "description": "Huang Qifan, former mayor of Chongqing and a survivor of multiple regional graft scandals, is under investigation for co"
-        }
-      ],
-      "source": "South China Morning Post",
-      "url": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-      "source_url": "https://www.scmp.com/news/china/politics/article/3370744/former-chongqing-mayor-huang-qifan-under-investigation-corruption?utm_source=rss_feed",
-      "source_count": 1,
-      "source_names": [
-        "South China Morning Post"
-      ],
-      "source_authority": 86,
-      "summary": "Huang Qifan, former mayor of Chongqing and a survivor of multiple regional graft scandals, is under investigation for corruption, according to state media. State news agency Xinhua",
-      "category": "政治",
-      "domestic_score": 30,
-      "importance": 98,
-      "why_important": "涉及宏观经济，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "importance_level": "国家重大",
-      "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "前重庆市市长黄琦芳涉嫌贪污被查"
-    },
     {
       "id": "c84ed4e46b5e47e7",
       "title": "重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查",
@@ -18562,7 +18656,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "重要事件",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "N. 韩国在部队部署方面获得经验,通过乌克兰战争维持军事行动:韩国国防军总司令"
+      "title_zh": "N. 韩国在部队部署、通过乌克兰战争维持军事行动方面积累了经验:"
     },
     {
       "id": "1fd018f6cf84624c",
@@ -18666,7 +18760,7 @@
       "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "前帮派领袖因图帕克·沙库尔谋杀案被判处40年有期徒刑 - 路透社"
+      "title_zh": "前帮派领袖因图帕克·沙库尔谋杀案被判处40年无期徒刑-路透社"
     },
     {
       "id": "7fb729be8f6b47bc",
@@ -18803,7 +18897,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "重要事件",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "沙特能源巨头斯特鲁克作为胡塞和沙特阿拉伯之间的战争史比奇"
+      "title_zh": "沙特能源巨头斯特鲁克作为胡塞斯和沙特阿拉伯之间的战争史派克"
     },
     {
       "id": "991e9e48e459eef2",
@@ -18871,6 +18965,37 @@
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置"
     },
     {
+      "id": "c1dc61dadad3bc5b",
+      "title": "From Allies to Enemies: Ethiopia and Eritrea Edge Toward War",
+      "published_at": "2026-10-14T04:01:07+00:00",
+      "code": "GLOBAL",
+      "event_country": "国际/全球",
+      "sources": [
+        {
+          "source": "纽约时报",
+          "link": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+          "published_at": "2026-10-14T04:01:07+00:00",
+          "description": "The two nations fought alongside each other during a brutal conflict in Tigray that left hundreds of thousands of people"
+        }
+      ],
+      "source": "纽约时报",
+      "url": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+      "source_url": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+      "source_count": 1,
+      "source_names": [
+        "纽约时报"
+      ],
+      "source_authority": 96,
+      "summary": "The two nations fought alongside each other during a brutal conflict in Tigray that left hundreds of thousands of people dead just a few years ago. Now they are on the brink of fig",
+      "category": "国防安全",
+      "domestic_score": 12,
+      "importance": 71,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "从盟军到敌人:埃塞俄比亚和厄立特里亚走向战争"
+    },
+    {
       "id": "6fed10212b9e3895",
       "title": "This Copper Mine Led to a Civil War. Can Reopening It Fund a New Nation?",
       "published_at": "2026-10-14T01:28:48+00:00",
@@ -18899,7 +19024,7 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "这个铜矿导致了内战,能重新打开它来资助一个新国家吗?"
+      "title_zh": "这个铜矿引发内战 能否重开新国家?"
     },
     {
       "id": "86504e2055aa76d3",
@@ -18994,7 +19119,7 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "埃塞俄比亚军队进入与厄立特里亚接壤的城镇,制造战争恐惧——路透社"
+      "title_zh": "埃塞俄比亚军队进入与厄立特里亚接壤的城镇,制造战争恐惧-路透社"
     },
     {
       "id": "1ef44b9b09825cb2",
@@ -19058,7 +19183,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "重要事件",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "评论:特朗普的石油下巴因战争螺旋而失去一拳-路透社"
+      "title_zh": "评论:特朗普的石油下巴在战争螺旋式中失去一拳-路透社"
     },
     {
       "id": "f2c905af0888ec3a",
@@ -19129,7 +19254,7 @@
       "why_important": "涉及法律/犯罪，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "前帮派领袖因图帕克·沙库尔谋杀案被判处40年有期徒刑 - 路透社"
+      "title_zh": "前帮派领袖因图帕克·沙库尔谋杀案被判处40年无期徒刑-路透社"
     },
     {
       "id": "7fb729be8f6b47bc",
@@ -19170,6 +19295,37 @@
       "title_zh": "美国银行12亿美元说它违反了洗钱、制裁法"
     },
     {
+      "id": "c1dc61dadad3bc5b",
+      "title": "From Allies to Enemies: Ethiopia and Eritrea Edge Toward War",
+      "published_at": "2026-10-14T04:01:07+00:00",
+      "code": "GLOBAL",
+      "event_country": "国际/全球",
+      "sources": [
+        {
+          "source": "纽约时报",
+          "link": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+          "published_at": "2026-10-14T04:01:07+00:00",
+          "description": "The two nations fought alongside each other during a brutal conflict in Tigray that left hundreds of thousands of people"
+        }
+      ],
+      "source": "纽约时报",
+      "url": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+      "source_url": "https://www.nytimes.com/2026/10/14/world/africa/ethiopia-eritrea-tigray-invasion.html",
+      "source_count": 1,
+      "source_names": [
+        "纽约时报"
+      ],
+      "source_authority": 96,
+      "summary": "The two nations fought alongside each other during a brutal conflict in Tigray that left hundreds of thousands of people dead just a few years ago. Now they are on the brink of fig",
+      "category": "国防安全",
+      "domestic_score": 12,
+      "importance": 71,
+      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
+      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
+      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
+      "title_zh": "从盟军到敌人:埃塞俄比亚和厄立特里亚走向战争"
+    },
+    {
       "id": "6fed10212b9e3895",
       "title": "This Copper Mine Led to a Civil War. Can Reopening It Fund a New Nation?",
       "published_at": "2026-10-14T01:28:48+00:00",
@@ -19198,7 +19354,7 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "这个铜矿导致了内战,能重新打开它来资助一个新国家吗?"
+      "title_zh": "这个铜矿引发内战 能否重开新国家?"
     },
     {
       "id": "86504e2055aa76d3",
@@ -19260,7 +19416,7 @@
       "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "埃塞俄比亚军队进入与厄立特里亚接壤的城镇,制造战争恐惧——路透社"
+      "title_zh": "埃塞俄比亚军队进入与厄立特里亚接壤的城镇,制造战争恐惧-路透社"
     },
     {
       "id": "1ef44b9b09825cb2",
@@ -19385,37 +19541,6 @@
       "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "title_zh": "Anthropic警告无赖AI特工可能‘自我复制'劫持日常设备-金融时报."
-    },
-    {
-      "id": "865212b3ef2dc536",
-      "title": "EU chief condemns drone attacks on merchant ships near Bulgaria's coast",
-      "published_at": "2026-10-13T08:00:37+00:00",
-      "code": "GLOBAL",
-      "event_country": "国际/全球",
-      "sources": [
-        {
-          "source": "Anadolu World",
-          "link": "https://www.aa.com.tr/en/world/eu-chief-condemns-drone-attacks-on-merchant-ships-near-bulgarias-coast/4086914",
-          "published_at": "2026-10-13T08:00:37+00:00",
-          "description": "15 crew members rescued from Maltese-flagged vessel, 5 receiving medical assistance, Bulgarian authorities seek investig"
-        }
-      ],
-      "source": "Anadolu World",
-      "url": "https://www.aa.com.tr/en/world/eu-chief-condemns-drone-attacks-on-merchant-ships-near-bulgarias-coast/4086914",
-      "source_url": "https://www.aa.com.tr/en/world/eu-chief-condemns-drone-attacks-on-merchant-ships-near-bulgarias-coast/4086914",
-      "source_count": 1,
-      "source_names": [
-        "Anadolu World"
-      ],
-      "source_authority": 85,
-      "summary": "15 crew members rescued from Maltese-flagged vessel, 5 receiving medical assistance, Bulgarian authorities seek investigation into origin of drones",
-      "category": "国防安全",
-      "domestic_score": 12,
-      "importance": 70,
-      "why_important": "涉及国防安全，结合多源报道与时效性评估后值得关注。",
-      "impact": "关注政策、市场、产业、安全及国际关系的后续影响。",
-      "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
-      "title_zh": "欧盟酋长谴责无人机袭击保加利亚海岸附近的商船"
     }
   ],
   "ai_news": [
@@ -19450,7 +19575,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "AI Price War is heating Up - OpenAI Is Gearing Ground on Athropic - WSJ 互联网档案馆的存檔,存档日期2013-12-20."
+      "title_zh": "AI Price War is Heating Up - 和OpenAI 在Anthropic上取得基础 - WSJ"
     },
     {
       "id": "9df76e856fd3942e",
@@ -19483,7 +19608,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "Anthropic说新保障措施大幅降低AI蒸馏攻击-路透社"
+      "title_zh": "Anthropic说新保障措施大幅削减AI蒸馏攻击——路透社"
     },
     {
       "id": "1bed448784919d98",
@@ -19516,7 +19641,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "将代理吊带与 LLM 订阅分离以消除利益冲突 - GitHub"
+      "title_zh": "从 LLM 订阅中分离代理吊带以消除利益冲突 - GitHub"
     },
     {
       "id": "62e5929a524df1b9",
@@ -19688,7 +19813,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "美国逮捕OpenAI的沙特雇员,指控他们窃听OpenAI的办公室"
+      "title_zh": "美国逮捕了OpenAI的沙特雇员,指控他们窃听其办公室"
     },
     {
       "id": "981216d2939107da",
@@ -19721,7 +19846,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "F.B.I. 逮捕OpenAI公司员工 被控在办公室种植虫 - 纽约时报"
+      "title_zh": "F.B.I. 逮捕OpenAI公司雇员 被控在办公室种植虫-纽约时报"
     },
     {
       "id": "2c7b7c7cb6c17344",
@@ -19754,7 +19879,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "你烤箱里有人工智能吗? Anthropic警告模型在智能设备上的自我复制“月外”——守护者"
+      "title_zh": "烤箱里有人工智能吗? Anthropic警告模型在智能设备上的自我复制“月外”——守护者"
     },
     {
       "id": "01fb16efee414b06",
@@ -19886,7 +20011,7 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "Anthropic警告AI模型可能很快会自我复制,可能会在网络上造成破坏-路透社"
+      "title_zh": "Anthropic警告AI模型可能很快会自我复制,可能会在网络上造成破坏——路透社"
     },
     {
       "id": "0425e9216197fdf4",
@@ -20084,18 +20209,18 @@
       "next_72h": "关注官方声明、政策落地、市场反应及相关方后续行动。",
       "importance_level": "一般动态",
       "importance_model": "V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置",
-      "title_zh": "(原始内容存档于2018-09-21). Agent Teams: per-teammate model shoot ^ deepseek-ai deepseek-harness ^ 讨论#8324 - GitHub."
+      "title_zh": "(原始内容存档于2019-03-03). Agent Teams: per-teammate model selection ^ deepseek-ai deepseek-harness ^ 讨论#8324 - GitHub."
     }
   ],
   "ai_news_count": 20,
   "ai_news_status": "ready",
   "stats": {
     "countries": 31,
-    "events": 548,
+    "events": 552,
     "tier1_events": 307,
     "supplement_events": 10,
-    "failed_sources": 2,
-    "successful_sources": 76,
+    "failed_sources": 1,
+    "successful_sources": 78,
     "chinese_sources": 6,
     "ai_feed_total": 34
   },
@@ -20113,14 +20238,14 @@
   },
   "dedupe_previous_edition": {
     "previous_date": "2026-10-13",
-    "removed": 216,
+    "removed": 218,
     "undated_removed": 101,
     "buffered_candidates_used": true
   },
   "translation": {
     "language": "zh-CN",
     "field": "title_zh",
-    "translated": 484,
+    "translated": 488,
     "failed": 0,
     "remaining_english": 0,
     "degraded": false,
