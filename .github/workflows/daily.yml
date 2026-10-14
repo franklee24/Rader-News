@@ -202,7 +202,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily.json data/history/
+          git add data/daily.json data/history/ data/source_health.json
           if git diff --cached --quiet; then
             echo "No snapshot changes to commit"
           else
