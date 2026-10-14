@@ -201,10 +201,11 @@ def parse_ccdi_listing(body,source):
   href=urljoin('https://www.ccdi.gov.cn/',html.unescape(m.group(2)))
   if not title or 'ccdi.gov.cn' not in href or not re.search(r'(接受.{0,12}(调查|审查)|纪律审查|监察调查|审查调查|被查|严重违纪违法)',title): continue
   if href in seen: continue
-  context=raw[max(0,m.start()-420):min(len(raw),m.end()+420)]
-  dates=re.findall(r'20\d{2}-\d{1,2}-\d{1,2}',context)
+  context_start=max(0,m.start()-420)
+  context=raw[context_start:min(len(raw),m.end()+420)]
+  dates=list(re.finditer(r'20\d{2}-\d{1,2}-\d{1,2}',context))
   if not dates: continue
-  date=min(dates,key=lambda value:abs(raw.find(value)-m.start()))
+  date=min(dates,key=lambda match:abs(context_start+match.start()-m.start())).group(0)
   published=dateval(date)
   if not published: continue
   seen.add(href)
