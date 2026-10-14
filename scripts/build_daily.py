@@ -13,6 +13,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
+from urllib.parse import urljoin
 
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG=json.load(open(os.path.join(ROOT,'config/country_tiers.json'),encoding='utf-8'))
@@ -28,6 +29,7 @@ FEEDS=[
  ('人民网-时政','CN','http://www.people.com.cn/rss/politics.xml','cn'),
  ('新华-时政','CN','http://www.xinhuanet.com/politics/news_politics.xml','cn'),
  ('新华-国际','CN','http://www.xinhuanet.com/world/news_world.xml','cn'),
+ ('CCDI Official investigations','CN','https://www.ccdi.gov.cn/scdcn/zggb/zjsc/','cn'),
  ('BBC中文','GLOBAL','https://feeds.bbci.co.uk/zhongwen/simp/rss.xml','cn'),
  ('纽约时报','GLOBAL','https://rss.nytimes.com/services/xml/rss/nyt/World.xml','en'),
  ('纽约时报-日本','JP','https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/destination/japan/rss.xml','en'),
@@ -115,7 +117,7 @@ AI_FEEDS=[
 
 ALIASES={
 'US':['美国','美方','美总统','特朗普','华盛顿','白宫','美国政府','美联储','美国国会','美军','美国经济','United States','Trump','Washington','White House','Federal Reserve'],
-'CN':['中国','中方','中国政府','国务院','北京','人民币','央行','中国人民银行','China','Beijing'],
+'CN':['中国','中方','中国政府','国务院','北京','重庆','黄奇帆','纪委','纪律审查','监察调查','中管干部','人民币','央行','中国人民银行','China','Beijing','Chongqing','Huang Qifan'],
 'GB':['英国','英方','英首相','伦敦','英国政府','英国央行','United Kingdom','Britain','London','Starmer','Bank of England'],
 'FR':['法国','法方','巴黎','法国政府','法国总统','France','Paris','Macron'],
 'DE':['德国','德方','柏林','德国政府','德国央行','Germany','Berlin','Merz'],
@@ -190,15 +192,37 @@ def parse_feed(body,source,feed_country,lang):
    rows.append({'title':title,'link':link,'published_at':d.isoformat() if d else None,'source':source,'source_url':link,'description':clean(desc),'feed_country':feed_country,'language':lang})
  return rows
 
+def parse_ccdi_listing(body,source):
+ raw=body.decode('utf-8','ignore')
+ rows=[]; seen=set()
+ pattern=re.compile(r'<a\b[^>]*href=(["\'])(.*?)\1[^>]*>(.*?)</a>',re.I|re.S)
+ for m in pattern.finditer(raw):
+  title=clean(re.sub(r'<[^>]+>',' ',m.group(3)))
+  href=urljoin('https://www.ccdi.gov.cn/',html.unescape(m.group(2)))
+  if not title or 'ccdi.gov.cn' not in href or not re.search(r'(接受.{0,12}(调查|审查)|纪律审查|监察调查|审查调查|被查|严重违纪违法)',title): continue
+  if href in seen: continue
+  context=raw[max(0,m.start()-420):min(len(raw),m.end()+420)]
+  dates=re.findall(r'20\d{2}-\d{1,2}-\d{1,2}',context)
+  if not dates: continue
+  date=min(dates,key=lambda value:abs(raw.find(value)-m.start()))
+  published=dateval(date)
+  if not published: continue
+  seen.add(href)
+  rows.append({'title':title,'link':href,'published_at':published.isoformat(),'source':source,'source_url':href,'description':title,'feed_country':'CN','language':'cn'})
+ return rows
+
 def fetch_feed(feed):
  source,country,url,lang=feed; body,err=fetch(url)
  if not body:return feed,[],err
- try:return feed,parse_feed(body,source,country,lang),None
- except Exception as e:return feed,[],'XML '+str(e)[:120]
+ try:
+  rows=parse_ccdi_listing(body,source) if source=='CCDI Official investigations' else parse_feed(body,source,country,lang)
+  return feed,rows,None
+ except Exception as e:return feed,[],'parse '+str(e)[:120]
 
 SOURCE_AUTHORITY={
  '纽约时报':96,'纽约时报-日本':96,'华尔街日报':96,'彭博社':96,'金融时报':96,'WHO News':98,'Japan Times':91,'Kyodo News':89,'BBC World':94,'卫报':92,'华盛顿邮报':94,'OpenAI News':98,'Google AI Blog':97,'Google DeepMind':98,'Google Research':96,'Anthropic News Watch':97,'Meta AI':95,'NVIDIA AI Blog':96,'NVIDIA Developer AI':94,'Microsoft AI Blog':96,'Microsoft Research AI':96,'AWS ML Blog':93,'Hugging Face Blog':91,'Mistral AI News':93,'Apple ML Research':95,'Alibaba Qwen':91,'DeepSeek':92,'ByteDance Seed':90,'Zhipu GLM':89,'Moonshot Kimi':89,'Baidu ERNIE':88,'Tencent Hunyuan':88,'MiniMax':88,'StepFun':87,'Reuters AI':98,'Financial Times AI':97,'New York Times AI':96,'Bloomberg AI':97,'Wall Street Journal AI':96,'Associated Press AI':97,'TechCrunch AI':89,'arXiv cs.AI':92,'arXiv cs.CL':92,'MIT Technology Review AI':94,'The Verge AI':88,
  'Reuters':98,'Reuters China':98,'Associated Press':97,'Associated Press China':97,'New York Times China':96,'Wall Street Journal China':96,'Bloomberg China':96,'Financial Times China':96,'The Economist China':92,'BBC China':94,'The Guardian China':92,'NPR China':90,'Yonhap':88,'The Hindu National':87,'The Hindu International':87,'CBC World':88,'ABC Australia':88,'Le Monde English':90,'Anadolu World':85,'South China Morning Post':86,
+ 'CCDI Official investigations':99,
  '半岛电视台':90,'NPR':90,'NHK World':90,'NHK':90,'经济学人':92,'DW':89,'France24':88,'BBC UK':94,
  'TASS':82,'联合早报':78,'BBC中文':82,'中新网-即时':62,'人民网-时政':62,'新华-时政':62,'新华-国际':62
 }
@@ -218,6 +242,7 @@ def source_group(name):
  if name in {'金融时报','Financial Times China','Financial Times AI'}: return 'Financial Times'
  if name in {'NHK','NHK World'}: return 'NHK'
  if name in {'BBC World','BBC UK','BBC中文','BBC China'}: return 'BBC'
+ if name == 'CCDI Official investigations': return 'CCDI Official'
  return name
 def source_rank(s):
  return SOURCE_AUTHORITY.get(s.get('source',''),55)
@@ -257,6 +282,32 @@ def category(t):
  best=max(scores,key=scores.get)
  return best if scores[best] else '其他/综合'
 
+def is_major_china_investigation(item):
+ title=(item.get('title') or '')
+ body=(item.get('description') or '')
+ text=(title+' '+body).lower()
+ source_names=[item.get('source','')]
+ source_names += item.get('source_names',[]) if isinstance(item.get('source_names'),list) else []
+ source_names += [s.get('source','') for s in item.get('sources',[]) if isinstance(s,dict)]
+ official=any('CCDI Official investigations' in s for s in source_names)
+ investigation=any(k in text for k in ['接受审查调查','纪律审查','监察调查','审查调查','被查','涉嫌严重违纪违法','under investigation','corruption investigation'])
+ senior=any(k in title for k in ['市委原副书记','市委书记','省委副书记','省委常委','省委书记','原市长','原省长','副省长','省政府原','党组成员','中管干部','部长','副部长','省部级','市政府原市长','国家监委'])
+ return investigation and (official or senior)
+
+def rank_china_events(events,target_max=20):
+ priority=[e for e in events if is_major_china_investigation(e)]
+ others=[e for e in events if e not in priority]
+ high=[e for e in others if e.get('source_authority',0)>=80]
+ domestic=[e for e in others if e.get('source_authority',0)<80]
+ cap=max(2,round(int(target_max)*.25))
+ selected=priority+high+domestic[:cap]
+ unique=[]; seen=set()
+ for e in sorted(selected,key=lambda x:(x.get('importance',0),x.get('source_authority',0),x.get('published_at') or ''),reverse=True):
+  key=e.get('id') or e.get('url') or norm(e.get('title',''))
+  if not key or key in seen: continue
+  seen.add(key); unique.append(e)
+ return unique[:target_max*3]
+
 def cluster(items):
  events=[]
  for a in sorted(items,key=lambda x:x.get('published_at') or '',reverse=True):
@@ -289,6 +340,8 @@ def cluster(items):
   e['domestic_score']=min(100,30+impact*8) if e['code']!='GLOBAL' else 12
   category_bonus={'国防安全':16,'公共卫生/疫情':16,'政治':14,'宏观经济':14,'金融':13,'外交':13,'科技':12,'AI/LLM':15,'能源':11,'灾害':12,'环境/气候':9,'法律/犯罪':8,'产业/商业':7,'社会':2,'其他/综合':0}.get(e.get('category',''),0)
   e['importance']=min(100,42+cross_bonus+authority_bonus+min(24,impact*4)+round(e['domestic_score']*.08)+category_bonus)
+  if is_major_china_investigation(e):
+   e['category']='政治'; e['importance']=max(e['importance'],96); e['importance_level']='国家重大'
   e['why_important']='涉及'+e['category']+'，结合多源报道与时效性评估后值得关注。'
   e['impact']='关注政策、市场、产业、安全及国际关系的后续影响。'
   e['next_72h']='关注官方声明、政策落地、市场反应及相关方后续行动。'
@@ -306,13 +359,14 @@ def is_ai_related(item):
 
 def is_china_related(item):
  text=item.get('title','')  # Require China-related framing in the headline, not a passing mention in the article body.
- if any(term in text for term in ['中国','中方','北京','习近平','中国政府','中国企业','中国经济','中国市场','中国共产党','中共','香港','新疆','西藏','南海','台海','两岸','黄奇帆','重庆','纪委','纪律审查','监察调查','被查']):
+ if any(term in text for term in ['中国','中方','北京','习近平','中国政府','中国企业','中国经济','中国市场','中国共产党','中共','香港','新疆','西藏','南海','台海','两岸','黄奇帆','重庆','纪委','纪律审查','监察调查','被查','接受审查调查','审查调查','中管干部']):
   return True
  patterns=[r'\bChina\b',r'\bChinese\b',r'\bBeijing\b',r'\bXi Jinping\b',r'\bPRC\b',r'\bChinese Communist Party\b',r'\bSouth China Sea\b',r'\bTaiwan Strait\b',r'\bHong Kong\b',r'\bXinjiang\b',r'\bTibet\b',r'\bHuang Qifan\b',r'\bChongqing\b',r'\bformer mayor of Chongqing\b']
  return any(re.search(p,text,re.I) for p in patterns)
 
 
 def country_for_source(item,china_watch_sources):
+ if item.get('source')=='CCDI Official investigations': return 'CN'
  if item.get('source') in china_watch_sources:
   if is_china_related(item): return 'CN'
   # Do not let a China-specific feed's default country override an unrelated headline.
@@ -352,7 +406,7 @@ def main():
     p=dateval(x.get('published_at'))
     if is_ai_related(x) and (not p or p>=ai_cutoff):
      ai_item=x.copy(); ai_item['code']='GLOBAL'; ai_item['event_country']='AI / LLM'; ai_item['event_country_en']='AI / LLM'; ai_rows.append(ai_item)
-    if p and p<cutoff:continue
+    if p and p<cutoff and not (is_major_china_investigation(x) and p>=now-dt.timedelta(hours=72)):continue
     if is_low_signal_human_interest(x):
      print('[FILTER-LOW-SIGNAL]',source,x.get('title','')[:120]); continue
     # China-specific search feeds are candidates, not proof of relevance:
@@ -385,12 +439,8 @@ def main():
    # 不再按语言限制事件；国家页只负责地理组织，主来源由事件聚合模型选择。
    ev=cluster(pool)
    if c['code']=='CN':
-    # China section: prioritize foreign reporting, limit domestic-only stories to 25% of target capacity.
-    ev.sort(key=lambda e:(e.get('source_authority',0)>=80,e.get('importance',0),e.get('published_at') or ''),reverse=True)
-    foreign=[e for e in ev if e.get('source_authority',0)>=80]
-    domestic=[e for e in ev if e.get('source_authority',0)<80]
-    domestic_cap=max(2,round(int(c.get('max',20))*.25))
-    ev=(foreign+domestic[:domestic_cap])[:c['max']*3]
+    # Preserve major official investigations regardless of source bucket; rank by event importance first.
+    ev=rank_china_events(ev,int(c.get('max',20)))
    else:
     ev=ev[:c['max']*3]
    report['tiers'][tier][c['name']]={'country':c['name'],'country_en':c['en'],'code':c['code'],'target_min':c['min'],'target_max':c['max'],'count':len(ev),'events':ev}
