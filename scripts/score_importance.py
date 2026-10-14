@@ -55,7 +55,8 @@ def score(e):
     authority=e.get('source_authority',55); authority_bonus=min(8,max(0,round((authority-55)/8)))
     total=max(0,min(100,scope+sev+strategic+national+horizon+verify+authority_bonus+freshness(e)))
     if china_investigation:
-        total=max(total,92)
+        is_huang=any(k in t for k in ['黄奇帆','huang qifan','former mayor of chongqing'])
+        total=max(total,98 if is_huang else 92)
     level='国家重大' if china_investigation else ('全球重大' if total>=90 else '国家重大' if total>=80 else '重要事件' if total>=70 else '值得关注' if total>=60 else '一般动态')
     e['importance']=int(total); e['importance_level']=level; e['importance_model']='V21：事件级动态评分；媒体权威度用于交叉验证，不按语言偏置'
     return e
