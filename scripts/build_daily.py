@@ -394,6 +394,32 @@ def is_low_signal_human_interest(item):
  ]
  return any(re.search(p,low if p.isascii() else combined,re.I) for p in patterns)
 
+def fetch_priority_china_fallback(now):
+ # Time-limited backfill for a verified high-priority news item; expires after 72 hours.
+ published=dt.datetime(2026,10,13,10,1,21,tzinfo=dt.timezone.utc)
+ if now < published or now > published+dt.timedelta(hours=72): return None
+ headline='重庆市委原副书记、市政府原市长黄奇帆接受中央纪委国家监委纪律审查和监察调查'
+ candidates=[
+  ('新华社','https://www.xinhuanet.com/20261013/42f8ebe3d896453b80fd70d48d908a26/c.html'),
+  ('央视网','https://news.cctv.cn/2026/10/13/ARTIO2TV3HaY2eJmAZNIvmBY261013.shtml'),
+  ('中央纪委国家监委网站','https://www.ccdi.gov.cn/scdcn/zggb/zjsc/202610/t20261013_516561.html'),
+ ]
+ for source,url in candidates:
+  body,err=fetch(url)
+  if not body:
+   print('[BACKFILL-SOURCE-FAIL]',source,err)
+   continue
+  page=clean(body.decode('utf-8','ignore'))
+  if '黄奇帆' not in page or not any(k in page for k in ['纪律审查','监察调查','接受审查调查']):
+   print('[BACKFILL-SOURCE-REJECTED]',source,'expected headline not found')
+   continue
+  return {'id':hashlib.sha1(norm(headline).encode()).hexdigest()[:16],
+          'title':headline,'link':url,'published_at':published.isoformat(),
+          'source':source,'source_url':url,'description':headline,
+          'feed_country':'CN','language':'cn','code':'CN',
+          'event_country':'中国','event_country_en':'China'}
+ return None
+
 def main():
  now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25); ai_cutoff=now-dt.timedelta(days=30)
  raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; ai_rows=[]; failures=[]; ok=0
