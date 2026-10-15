@@ -56,7 +56,7 @@ body.day .flip-card{box-shadow:0 8px 18px rgba(38,102,75,.14),inset 0 1px 0 #fff
 let DATA=null,all=[];const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function normalizeEvents(){let out=[];Object.values(DATA?.tiers||{}).forEach(t=>Object.values(t||{}).forEach(c=>out.push(...(c?.events||[]))));if(Array.isArray(DATA?.supplement))out.push(...DATA.supplement);if(!out.length&&Array.isArray(DATA?.events))out=DATA.events;return out}function buildAll(){all=normalizeEvents()}
 function displayTitle(e){return e?.title||e?.title_zh||'未命名事件'}
-function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||'';let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';return `<article class="event" ${rank?`data-rank="${rank}"`:''} onclick='openEvent(${JSON.stringify(e).replace(/'/g,"&#39;")})'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${original}<p>${esc((e.source_names||[]).join(' · ')||e.source||'')}</p><div class="importance">${level?`<span class="level ${score>=80?'hot':''}">${esc(level)}</span>`:''}</div></article>`}
+function card(e,rank){let score=Number(e.importance)||0,level=e.importance_level||'';let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'';let title=raw||zh||'未命名事件';let original=zh&&raw&&zh!==raw?`<div class="original-title"><b>译文：</b>${esc(zh)}</div>`:'';const eventJson=JSON.stringify(e).replace(/'/g,"&#39;");return `<article class="event" ${rank?`data-rank="${rank}"`:''} onclick='handleEventCardClick(event,${eventJson})' onpointerdown='startEventPress(event,${eventJson})' onpointerup='endEventPress(event)' onpointercancel='cancelEventPress(event)' onpointerleave='leaveEventPress(event)' oncontextmenu='return false'><div class="meta"><span class="badge">${esc(e.event_country||'全球')}</span><span>${esc(e.category||'')}</span><span class="score">${score}</span></div><h3>${esc(title)}</h3>${original}<p>${esc((e.source_names||[]).join(' · ')||e.source||'')}</p><div class="importance">${level?`<span class="level ${score>=80?'hot':''}">${esc(level)}</span>`:''}</div></article>`}
 const NAV_ITEMS=[{id:'top',title:'GLOBAL TOP',sub:'全球重要事件'},{id:'tier1',title:'TIER 1',sub:'核心国家'},{id:'tier2',title:'TIER 2',sub:'重要国家'},{id:'tier3',title:'TIER 3',sub:'重点观察'},{id:'tier4',title:'TIER 4',sub:'全球补充'},{id:'ai',title:'AI / LLM',sub:'人工智能前沿'}];
 let flipIndex=0,flipPos=0,flipVelocity=0,flipFrame=0,flipDragging=false,flipPointerId=null,flipLastY=0,flipLastTime=0,flipSuppressClick=false,flipWasDragged=false;
 
@@ -315,6 +315,21 @@ document.addEventListener('touchmove',e=>{
   if(flipDragging)e.preventDefault();
 },{passive:false,capture:true});
 
+let eventPressTimer=null,eventPressTriggered=false,eventPressPointerId=null,eventSuppressClickUntil=0,eventPressTarget=null;
+function startEventPress(ev,e){
+ if(ev.button!==undefined&&ev.button!==0)return;
+ clearTimeout(eventPressTimer);eventPressTriggered=false;eventPressPointerId=ev.pointerId;eventPressTarget=ev.currentTarget;
+ eventPressTimer=setTimeout(()=>{eventPressTriggered=true;eventSuppressClickUntil=Date.now()+900;openEvent(e);},380);
+}
+function endEventPress(ev){
+ if(eventPressPointerId!==null&&ev.pointerId!==undefined&&ev.pointerId!==eventPressPointerId)return;
+ clearTimeout(eventPressTimer);eventPressTimer=null;
+ if(eventPressTriggered){closeModal();eventSuppressClickUntil=Date.now()+900;eventPressTriggered=false;ev.preventDefault();ev.stopPropagation();}
+ eventPressPointerId=null;eventPressTarget=null;
+}
+function cancelEventPress(ev){clearTimeout(eventPressTimer);eventPressTimer=null;if(eventPressTriggered){closeModal();eventSuppressClickUntil=Date.now()+900;}eventPressTriggered=false;eventPressPointerId=null;eventPressTarget=null;}
+function leaveEventPress(ev){if(eventPressTimer){clearTimeout(eventPressTimer);eventPressTimer=null;}if(eventPressTriggered){closeModal();eventSuppressClickUntil=Date.now()+900;eventPressTriggered=false;}eventPressPointerId=null;eventPressTarget=null;}
+function handleEventCardClick(ev,e){if(Date.now()<eventSuppressClickUntil){ev.preventDefault();ev.stopPropagation();return;}openEvent(e)}
 function openEvent(e){
  let sources=(e.sources||[]).map(s=>{let d=String(s.description||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();return `<div class="source"><b>${esc(s.source||'来源')}</b>${d?`<div class="source-summary">${esc(d.slice(0,260))}</div>`:''}<a target="_blank" rel="noopener" href="${esc(s.link||s.url||'#')}">打开报道</a></div>`}).join('');
  let zh=e.title_zh?.trim()||'',raw=e.title?.trim()||'',title=raw||zh||'未命名事件';
