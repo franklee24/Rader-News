@@ -11,8 +11,8 @@ on:
       - '.github/workflows/daily.yml'
   workflow_dispatch:
 # 北京时间每天 06:00、17:00（GitHub Actions cron 使用 UTC；实际启动可能略有延迟）
-  schedule:
-    - cron: '0 9,22 * * *'
+  # Scheduled production runs are dispatched by reliable-scheduler.yml only,
+  # preventing simultaneous cron triggers from cancelling each other.
 
 permissions:
   contents: write
@@ -138,7 +138,8 @@ jobs:
                       if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles: removed+=1
                       else: keep.append(e)
                   limit=int(c.get('target_max') or len(keep))
-              c['events']=keep[:limit]; c['count']=len(c['events'])
+                  c['events']=keep[:limit]
+                  c['count']=len(c['events'])
           # Drop the duplicate description field after scoring; the UI uses summary.
           for tier in d.get('tiers',{}).values():
               for country in tier.values():
