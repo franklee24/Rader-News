@@ -29,7 +29,7 @@ jobs:
           current_minutes=$((10#$hour * 60 + 10#$minute))
           # Frequent checkpoints are intentional: they keep the scheduler chain under the 6-hour runner limit.
           # 15:00 was the previous forced-update verification checkpoint; 08:00 remains the daily production update.
-          checkpoints=(0 240 480 720 750 780 840 870 900 960 1066 1200)
+          checkpoints=(0 240 360 480 720 750 780 840 870 900 960 1020 1066 1200)
           target_minutes=""
           for m in "${checkpoints[@]}"; do
             if [ "$m" -gt "$current_minutes" ]; then
@@ -71,9 +71,9 @@ jobs:
           fi
           echo "Today: $today; current generated date: ${generated_date:-unknown}"
 
-          # 17:46 is intentionally forced for verification even if today's snapshot already exists.
-          # 08:00 is the normal daily update; later checkpoints catch up if today's snapshot is missing.
-          if [ "$checkpoint_minutes" -eq 1066 ] || { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
+          # 06:00 and 17:00 are the requested production editions; force both even when today's morning snapshot already exists.
+          # 17:46 remains a legacy verification checkpoint; 08:00 and stale-date checks are recovery fallbacks.
+          if [ "$checkpoint_minutes" -eq 360 ] || [ "$checkpoint_minutes" -eq 1020 ] || [ "$checkpoint_minutes" -eq 1066 ] || { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ]; } || [ "$generated_date" != "$today" ]; then
             gh workflow run daily.yml --repo franklee24/Rader-News --ref main
             echo "Daily radar update dispatched."
           else
