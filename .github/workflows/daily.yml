@@ -29,6 +29,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Preserve previous published edition for cross-run deduplication
+        run: |
+          if [ -s data/daily.json ]; then cp data/daily.json /tmp/previous_edition.json; else printf '{}' > /tmp/previous_edition.json; fi
       - name: Setup Python
         uses: actions/setup-python@v7
         with:
@@ -111,16 +114,21 @@ jobs:
           if now<anchor: anchor-=timedelta(days=1)
           prev_date=(anchor.date()-timedelta(days=1)).isoformat(); pp=root/'data/history'/f'{prev_date}.json'
           prev=json.loads(pp.read_text(encoding='utf-8')) if pp.exists() else {}
+          snapshot=Path('/tmp/previous_edition.json')
+          previous_edition=json.loads(snapshot.read_text(encoding='utf-8')) if snapshot.exists() else {}
           ids=set(); urls=set(); titles=set(); norm=lambda s: re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
           def add(e):
               if e.get('id'): ids.add(e['id'])
               if e.get('url'): urls.add(e['url'])
               if e.get('source_url'): urls.add(e['source_url'])
               if e.get('title'): titles.add(norm(e['title']))
-          for tier in prev.get('tiers',{}).values():
-              for c in tier.values():
-                  for e in c.get('events',[]): add(e)
-          for e in prev.get('supplement',[]): add(e)
+          # Exclude stories already shown in the immediately previous edition (morning/evening),
+          # and also retain yesterday's protection. This snapshot is captured before build_daily.py overwrites it.
+          for edition in (previous_edition, prev):
+              for tier in edition.get('tiers',{}).values():
+                  for c in tier.values():
+                      for e in c.get('events',[]): add(e)
+              for e in edition.get('supplement',[]): add(e)
           removed=0; undated=0
           for tier in d.get('tiers',{}).values():
               for c in tier.values():
@@ -137,6 +145,25 @@ jobs:
                   for e in country.get('events',[]): e.pop('description',None)
           for e in d.get('supplement',[]): e.pop('description',None)
           for e in d.get('ai_news',[]): e.pop('description',None)
+          # Enforce a hard cap of 30 stories per country across all tiers; configured target_max remains the normal lower target.
+          country_events={}
+          for tier_name,tier in d.get('tiers',{}).items():
+              for country,c in tier.items():
+                  for e in c.get('events',[]):
+                      key=(e.get('code') or country or '').strip()
+                      country_events.setdefault(key,[]).append((tier_name,country,e))
+          allowed={}
+          for key,rows in country_events.items():
+              rows.sort(key=lambda row:(int(row[2].get('importance',0)),row[2].get('published_at') or ''),reverse=True)
+              allowed[key]={row[2].get('id') or norm(row[2].get('title')) for row in rows[:30]}
+          capped=0
+          for tier_name,tier in d.get('tiers',{}).items():
+              for country,c in tier.items():
+                  key=(c.get('code') or country or '').strip()
+                  before=len(c.get('events',[]))
+                  c['events']=[e for e in c.get('events',[]) if (e.get('id') or norm(e.get('title'))) in allowed.get(key,set())]
+                  c['count']=len(c['events']); capped+=before-len(c['events'])
+          print('Hard cap: max 30 events per country across all tiers; removed over-cap events:',capped)
           # Rebuild GLOBAL TOP from the final post-deduplication country lists.
           current=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
           current.extend(d.get('supplement',[]))
