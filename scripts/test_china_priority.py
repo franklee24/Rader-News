@@ -47,7 +47,8 @@ generic = {
     "event_country": "中国",
 }
 assert build["is_major_china_investigation"](generic)
-assert scoring["score"](dict(generic))["importance"] >= 92
+generic_score = scoring["score"](dict(generic))["importance"]
+assert generic_score < 92, f"generic senior-official investigation was forced into global-top score: {generic_score}"
 
 event = {
     "id": "regression-huang-qifan",
