@@ -173,7 +173,55 @@ jobs:
               key=e.get('id') or norm(e.get('title'))
               if not key or key in seen: continue
               seen.add(key); unique.append(e)
-          d['global_top']=unique[:20]
+          # Rank GLOBAL TOP by event significance, not source prestige or country-section order.
+          # A deterministic, fully free ranking pass adds a soft diversity penalty; it does not reserve fixed slots for categories.
+          def global_topic(e):
+              t=norm((e.get('title') or '')+' '+(e.get('title_zh') or '')+' '+(e.get('summary') or '')+' '+(e.get('category') or ''))
+              rules=[
+                ('war_conflict',['war','warfare','invasion','ukraine','russia','俄乌','战争','俄军','乌克兰','停火','空袭','missile','导弹','ceasefire']),
+                ('macro_economy',['gdp','quarterly economy','economic growth','inflation','interest rate','central bank','economy','经济','gdp','第三季度','季度经济','通胀','央行','利率','就业','房地产']),
+                ('us_politics',['trump','white house','us president','tariff','特朗普','白宫','美国总统','关税','美国政府']),
+                ('protests_politics',['protest','demonstration','strike','riot','manifestation','游行','示威','罢工','抗议']),
+                ('china_official_investigation',['纪律审查','监察调查','接受审查调查','涉嫌严重违纪违法','中央纪委','国家监委','被查','corruption investigation','under investigation']),
+                ('disaster_health',['earthquake','flood','hurricane','plague','outbreak','地震','洪水','飓风','疫情','灾害','重大事故']),
+                ('technology_science',['artificial intelligence','technology','semiconductor','scientific','ai model','人工智能','科技','芯片','科研','重大突破']),
+                ('diplomacy_security',['summit','treaty','sanctions','diplomacy','外交','峰会','条约','制裁','北约','nato']),
+              ]
+              for topic,words in rules:
+                  if any(w in t for w in words): return topic
+              return 'other'
+          # Importance remains the primary signal. Freshness breaks ties; source count supports verification but does not dominate.
+          def global_score(e):
+              base=int(e.get('importance') or 0)
+              pub=e.get('published_at') or ''
+              return (base, pub, int(e.get('source_count') or len(e.get('sources',[]))))
+          ranked=sorted(unique,key=global_score,reverse=True)
+          chosen=[]; topic_counts={}; chosen_keys=set()
+          for e in ranked:
+              key=e.get('id') or norm(e.get('title') or e.get('title_zh') or '')
+              topic=global_topic(e)
+              # Soft cap for repeated topics near the top, not a hard exclusion.
+              # A strong outlier can still enter; same-topic follow-ups may re-enter when materially more important.
+              if len(chosen)<5 and topic_counts.get(topic,0)>=1:
+                  top_score=int(chosen[0].get('importance') or 0) if chosen else 0
+                  if int(e.get('importance') or 0)<top_score-12:
+                      continue
+              if len(chosen)>=5 and topic_counts.get(topic,0)>=2:
+                  top_score=int(chosen[0].get('importance') or 0) if chosen else 0
+                  if int(e.get('importance') or 0)<top_score-8:
+                      continue
+              if key in chosen_keys: continue
+              chosen.append(e); chosen_keys.add(key); topic_counts[topic]=topic_counts.get(topic,0)+1
+              if len(chosen)>=10: break
+          # If soft diversity rules leave gaps, fill remaining positions by raw importance.
+          if len(chosen)<10:
+              for e in ranked:
+                  key=e.get('id') or norm(e.get('title') or e.get('title_zh') or '')
+                  if key and key not in chosen_keys:
+                      chosen.append(e); chosen_keys.add(key)
+                      if len(chosen)>=10: break
+          d['global_top']=chosen
+          d['global_top_ranking']={'version':'V23','method':'event-importance-first with soft topic diversity; no fixed country/category quotas','topic_counts':topic_counts}
           d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
           d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
           d['stats']['supplement_events']=len(d.get('supplement',[]))
