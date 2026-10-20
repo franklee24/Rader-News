@@ -116,30 +116,31 @@ jobs:
           prev=json.loads(pp.read_text(encoding='utf-8')) if pp.exists() else {}
           snapshot=Path('/tmp/previous_edition.json')
           previous_edition=json.loads(snapshot.read_text(encoding='utf-8')) if snapshot.exists() else {}
-          ids=set(); urls=set(); titles=set(); norm=lambda s: re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
-          def add(e):
-              if e.get('id'): ids.add(e['id'])
-              if e.get('url'): urls.add(e['url'])
-              if e.get('source_url'): urls.add(e['source_url'])
-              if e.get('title'): titles.add(norm(e['title']))
-          # Exclude stories already shown in the immediately previous edition (morning/evening),
-          # and also retain yesterday's protection. This snapshot is captured before build_daily.py overwrites it.
+          # Keep country pages comprehensive across morning/evening editions.
+          # Previous-edition suppression applies ONLY to GLOBAL TOP, never to country sections.
+          norm=lambda s: re.sub(r'[^0-9a-z\\u4e00-\\u9fff]+',' ',(s or '').lower()).strip()
+          prev_top_keys=set(); prev_top_urls=set(); prev_top_titles=set()
+          def add_prev_top(e):
+              if e.get('id'): prev_top_keys.add(e['id'])
+              if e.get('url'): prev_top_urls.add(e['url'])
+              if e.get('source_url'): prev_top_urls.add(e['source_url'])
+              title=norm(e.get('title') or e.get('title_zh') or '')
+              if title: prev_top_titles.add(title)
           for edition in (previous_edition, prev):
-              for tier in edition.get('tiers',{}).values():
-                  for c in tier.values():
-                      for e in c.get('events',[]): add(e)
-              for e in edition.get('supplement',[]): add(e)
-          removed=0; undated=0
+              for e in edition.get('global_top',[]): add_prev_top(e)
+          # Keep all dated country stories from the 24-hour collection window, including stories
+          # that appeared in the prior edition. Repetition is controlled in GLOBAL TOP instead.
+          undated=0
           for tier in d.get('tiers',{}).values():
               for c in tier.values():
                   keep=[]
                   for e in c.get('events',[]):
                       if not e.get('published_at'): undated+=1; continue
-                      if e.get('id') in ids or e.get('url') in urls or norm(e.get('title')) in titles: removed+=1
-                      else: keep.append(e)
-                  limit=int(c.get('target_max') or len(keep))
+                      keep.append(e)
+                  limit=min(30,int(c.get('target_max') or 30))
                   c['events']=keep[:limit]
                   c['count']=len(c['events'])
+          removed=0
           # Drop the duplicate description field after scoring; the UI uses summary.
           for tier in d.get('tiers',{}).values():
               for country in tier.values():
@@ -169,9 +170,24 @@ jobs:
           current=[e for tier in d.get('tiers',{}).values() for c in tier.values() for e in c.get('events',[])]
           current.extend(d.get('supplement',[]))
           unique=[]; seen=set()
+          # Ordinary local/provincial discipline notices remain in China political news,
+          # but are not eligible for GLOBAL TOP without clear national-level significance.
+          investigation_terms=['接受审查调查','纪律审查','监察调查','涉嫌严重违纪违法','under investigation','corruption investigation']
+          exceptional_terms=['政治局','中央政治局','中央委员','中央候补委员','中共中央','全国人大常委会委员长','国务院总理','国家主席','省委书记','省长','中央军委','systemic corruption','politburo','prime minister','president']
+          def ordinary_local_investigation(e):
+              title=(e.get('title') or '')+' '+(e.get('title_zh') or '')+' '+(e.get('summary') or '')
+              low=title.lower()
+              is_investigation=any(k.lower() in low for k in investigation_terms)
+              exceptional=any(k.lower() in low for k in exceptional_terms)
+              return is_investigation and not exceptional
           for e in sorted(current,key=lambda x:(x.get('importance',0),x.get('published_at') or ''),reverse=True):
-              key=e.get('id') or norm(e.get('title'))
+              key=e.get('id') or norm(e.get('title') or e.get('title_zh') or '')
+              title=norm(e.get('title') or e.get('title_zh') or '')
+              url=e.get('url') or e.get('source_url') or ''
               if not key or key in seen: continue
+              if key in prev_top_keys or (url and url in prev_top_urls) or (title and title in prev_top_titles):
+                  removed+=1; continue
+              if ordinary_local_investigation(e): continue
               seen.add(key); unique.append(e)
           # Rank GLOBAL TOP by event significance, not source prestige or country-section order.
           # A deterministic, fully free ranking pass adds a soft diversity penalty; it does not reserve fixed slots for categories.
@@ -221,14 +237,14 @@ jobs:
                       chosen.append(e); chosen_keys.add(key)
                       if len(chosen)>=10: break
           d['global_top']=chosen
-          d['global_top_ranking']={'version':'V23','method':'event-importance-first with soft topic diversity; no fixed country/category quotas','topic_counts':topic_counts}
+          d['global_top_ranking']={'version':'V23','method':'global-event eligibility gate + previous-edition suppression for GLOBAL TOP only + importance-first soft topic diversity; country sections retain dated stories','topic_counts':topic_counts}
           d['stats']['events']=sum(c.get('count',0) for t in d.get('tiers',{}).values() for c in t.values())
           d['stats']['tier1_events']=sum(c.get('count',0) for c in d.get('tiers',{}).get('tier1',{}).values())
           d['stats']['supplement_events']=len(d.get('supplement',[]))
           d['dedupe_previous_edition']={'previous_date':prev_date,'removed':removed,'undated_removed':undated,'buffered_candidates_used':True}
           daily.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
           (root/'data/history'/f'{anchor.date().isoformat()}.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
-          print('Removed repeats:',removed,'undated:',undated)
+          print('Removed previous-edition repeats from GLOBAL TOP:',removed,'undated country events removed:',undated,'country sections are not cross-edition deduped')
           PY
       - name: Cache offline translation model
         uses: actions/cache@v4
