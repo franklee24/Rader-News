@@ -14,7 +14,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
-from urllib.parse import urljoin
+from urllib.parse import urljoin, quote
 
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG=json.load(open(os.path.join(ROOT,'config/country_tiers.json'),encoding='utf-8'))
@@ -74,6 +74,20 @@ FEEDS=[
  ('The Guardian China','CN','https://news.google.com/rss/search?q=site%3Atheguardian.com%20China&hl=en-US&gl=US&ceid=US:en','en'),
  ('NPR China','CN','https://news.google.com/rss/search?q=site%3Anpr.org%20China&hl=en-US&gl=US&ceid=US:en','en'),
 ]
+
+
+# Per-country discovery feeds: many countries previously had no dedicated national feed,
+# so their daily counts reflected source scarcity rather than actual news volume.
+# Google News RSS is a free discovery layer; event clustering removes overlap with publisher feeds.
+_COUNTRY_DISCOVERY_FEEDS=[]
+for _tier_name,_countries in CONFIG['tiers'].items():
+ for _country in _countries:
+  _code=_country['code']; _name=_country['name']; _en=_country['en']
+  _query=quote(f'"{_en}" news when:1d')
+  _url=f'https://news.google.com/rss/search?q={_query}&hl=en-US&gl=US&ceid=US:en'
+  _COUNTRY_DISCOVERY_FEEDS.append((f'Google News {_name} discovery',_code,_url,'en'))
+FEEDS.extend(_COUNTRY_DISCOVERY_FEEDS)
+print('[SOURCE-COVERAGE] added free country discovery feeds:',len(_COUNTRY_DISCOVERY_FEEDS))
 
 # 独立 AI/LLM 新闻池：官方一手发布 + 权威科技媒体交叉报道
 AI_FEEDS=[
