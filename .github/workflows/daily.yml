@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: radar-production
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update-and-deploy:
