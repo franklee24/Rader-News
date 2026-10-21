@@ -118,7 +118,7 @@ jobs:
           previous_edition=json.loads(snapshot.read_text(encoding='utf-8')) if snapshot.exists() else {}
           # Keep country pages comprehensive across morning/evening editions.
           # Previous-edition suppression applies ONLY to GLOBAL TOP, never to country sections.
-          norm=lambda s: re.sub(r'[^0-9a-z\\u4e00-\\u9fff]+',' ',(s or '').lower()).strip()
+          norm=lambda s: re.sub(r'[^0-9a-z\u4e00-\u9fff]+',' ',(s or '').lower()).strip()
           prev_top_keys=set(); prev_top_urls=set(); prev_top_titles=set()
           def add_prev_top(e):
               if e.get('id'): prev_top_keys.add(e['id'])
@@ -173,7 +173,7 @@ jobs:
           # Ordinary local/provincial discipline notices remain in China political news,
           # but are not eligible for GLOBAL TOP without clear national-level significance.
           investigation_terms=['接受审查调查','纪律审查','监察调查','涉嫌严重违纪违法','under investigation','corruption investigation']
-          exceptional_terms=['政治局','中央政治局','中央委员','中央候补委员','中共中央','全国人大常委会委员长','国务院总理','国家主席','省委书记','省长','中央军委','systemic corruption','politburo','prime minister','president']
+          exceptional_terms=['政治局','中央政治局','中央委员','中央候补委员','中共中央','中央军委','国家主席','国务院总理','systemic corruption','politburo','prime minister','president of china']
           def ordinary_local_investigation(e):
               title=(e.get('title') or '')+' '+(e.get('title_zh') or '')+' '+(e.get('summary') or '')
               low=title.lower()
