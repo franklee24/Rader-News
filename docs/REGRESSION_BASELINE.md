@@ -44,3 +44,11 @@ This file is the release contract for changes to collection, ranking, deduplicat
 - A source outage must be distinguishable from zero real news.
 - Any country section exceeding 30 events is a hard failure.
 - Schedule or Pages failure must not be mistaken for a fresh published edition.
+
+5. **AI/LLM daily coverage and importance parity**
+   - Collect AI/LLM news on every scheduled production run, using official company/research sources and independent international reporting; retain major Chinese AI labs as first-class coverage.
+   - AI/LLM news must use the same 0–100 event-importance model and freshness logic as mainstream news, not an isolated arbitrary ranking scale.
+   - Freshness matters: for otherwise comparable stories, a newer event must outrank an older one.
+   - The module targets 20 distinct items, but must report partial coverage honestly rather than inventing or indefinitely recycling stale stories to fill the quota.
+   - Keep source-health evidence for AI feeds so an empty day can be distinguished from collection failures.
+   - Verify Chinese headline translations and inspect the latest AI/LLM publication dates in each release.
