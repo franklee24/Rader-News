@@ -7,6 +7,7 @@ on:
       - 'scripts/build_daily.py'
       - 'scripts/score_importance.py'
       - 'scripts/test_china_priority.py'
+      - 'scripts/test_ai_news_contract.py'
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
@@ -57,6 +58,8 @@ jobs:
           PY
       - name: Test China priority rules
         run: python scripts/test_china_priority.py
+      - name: Test AI/LLM daily coverage and importance parity
+        run: python scripts/test_ai_news_contract.py
       - name: Build daily news
         run: python scripts/build_daily.py
       - name: Verify source reliability report
