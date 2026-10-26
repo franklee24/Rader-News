@@ -466,7 +466,7 @@ def fetch_priority_china_fallback(now):
  return None
 
 def main():
- now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25); ai_cutoff=now-dt.timedelta(days=30)
+ now=dt.datetime.now(dt.timezone.utc); cutoff=now-dt.timedelta(hours=25); ai_cutoff=now-dt.timedelta(days=7)
  raw={c['code']:[] for arr in CONFIG['tiers'].values() for c in arr}; global_rows=[]; ai_rows=[]; failures=[]; ok=0; health_observations=[]
  print('雷达新闻 V22：多源事件聚合 + 独立 AI/LLM 新闻池，不预设媒体优先')
  with ThreadPoolExecutor(max_workers=WORKERS) as ex:
@@ -548,7 +548,7 @@ def main():
  for h in sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])):
   if h['last_status']=='failed' or h['failed_checks']>=2 or h['empty_checks']>=3:
    print('[SOURCE-HEALTH]',h['source'],'checks=',h['checks'],'failed=',h['failed_checks'],'empty=',h['empty_checks'],'success_rate=',h['success_rate'],'last=',h['last_status'],'error=',h['last_error'])
- all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS)+1,'source_ok':ok,'source_health_path':'data/source_health.json','source_health_window_runs':len(health_runs),'ai_news_target':20,'ai_news_window_days':30,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
+ all_events=[]; report={'generated_at':now.isoformat(),'generated_beijing':dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime('%Y-%m-%d %H:%M'),'window_hours':24,'version':'V22.0','source_mode':'multi-source-event-first-direct-rss','source_total':len(FEEDS)+len(AI_FEEDS)+1,'source_ok':ok,'source_health_path':'data/source_health.json','source_health_window_runs':len(health_runs),'ai_news_target':20,'ai_news_window_days':7,'failures':failures,'tiers':{},'global_top':[],'supplement':[]}
  for tier,arr in CONFIG['tiers'].items():
   report['tiers'][tier]={}
   for c in arr:
