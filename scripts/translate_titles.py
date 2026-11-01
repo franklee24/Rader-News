@@ -21,6 +21,62 @@ NEXT_REQUEST_AT = 0.0
 GOOGLE_BLOCKED = threading.Event()
 _ARGOS_TRANSLATOR = None
 
+MANUAL_TRANSLATIONS = {
+    "Trump administration imposes new sanctions on Rwanda over war in Congo - The Washington Post": "特朗普政府因刚果战争对卢旺达实施新制裁",
+    "Iran warns U.S. and Israel against new attacks after Trump and Netanyahu threats": "伊朗警告美国和以色列不要在特朗普和内塔尼亚胡发出威胁后发动新一轮袭击",
+    "Persian Gulf scrambling to prevent Iran war from again hitting its doorstep - The Washington Post": "波斯湾国家正紧急斡旋，避免伊朗战争再次波及本地区",
+    "U.S. midterm elections put Canada’s trade war with Trump in political spotlight - Philippine Canadian Inquirer": "美国中期选举使加拿大与特朗普政府的贸易争端成为焦点",
+    "Use of Russian prisoners of war as suicide bombers is war crime": "将俄罗斯战俘用作自杀式袭击者构成战争罪",
+    "Ghana says Russia to back 2,000 MW nuclear plant, deepen ties - Reuters": "路透社：加纳称俄罗斯将支持建设 2000 兆瓦核电站，并深化双边关系",
+    "Russian Offensive Campaign Assessment, October 31, 2026 - Institute for the Study of War": "战争研究所发布 2026 年 10 月 31 日俄罗斯进攻行动评估",
+    "Russia responds to US warning of Moscow attack plan": "俄罗斯回应美国关于莫斯科可能遭袭的警告",
+    "Israel prepares for possible Iran war as Trump and Netanyahu reportedly speak ahead of US midterms - Ynetnews": "报道称特朗普与内塔尼亚胡在美国中期选举前通话后，以色列为可能与伊朗开战做准备",
+    "FBI blames North Korea for stolen billions from Binance in biggest hack in history - AP News": "美联社：FBI 指称朝鲜应对币安数十亿美元失窃案负责",
+    "Steve Bannon: Republicans will erupt in ‘civil war’ after midterm elections - Financial Times": "《金融时报》：班农预测共和党将在中期选举后爆发“内战”",
+    "Evacuated Oleshky residents begin the long journey out of the war-ravaged region - AP News": "美联社：奥列什基撤离居民开始漫长的离开战区之旅",
+    "An Asian Stock Trader’s Guide Ahead of the US Midterm Elections": "美国中期选举前，亚洲股票交易员应关注哪些因素？",
+    "What is ranked-choice voting and how does it work in US elections?": "什么是排序选择投票？它在美国选举中如何运作？",
+    "Final Countdown to Midterm Elections, Tech Stocks Tank": "美国中期选举进入倒计时，科技股大幅下跌",
+    "US Midterm Candidates Tap Rare Bipartisan Issue: Credit Card Rates": "美国中期选举候选人罕见地在信用卡利率议题上形成跨党派共识",
+    "Rising health costs and coverage changes are big concerns for older adults as Election Day nears - AP News": "美联社：选举日临近，医疗成本上涨与医保变化令老年人担忧",
+    "Türkiye says Feridun Sinirlioglu's UN chief bid aims to 'overcome impasse' in selection process": "土耳其称，支持费里敦·西尼尔利奥卢竞选联合国秘书长旨在打破遴选僵局",
+    "How can Pope Leo vote in U.S. elections while serving as the sovereign of Vatican City? | Explained": "解析：教宗良十四世担任梵蒂冈城元首期间，如何参加美国选举投票？",
+    "Proposal: configure fixed effort for the Claude Code subagent · deepseek-ai deepseek-harness · Discussion #11701 - GitHub": "开发者提议为 Claude Code 子代理配置固定推理力度",
+    "Speeding up planning decisions with AI - Google DeepMind": "Google DeepMind 探索用 AI 加速规划决策",
+    "OpenAI’s Altman Meets Samsung Executives as Chip Crunch Deepens - Bloomberg.com": "彭博社：芯片供应趋紧之际，奥特曼会见三星高管",
+    "OpenAI slashes funding target by $10bn as tech anxieties mount - Financial Times": "《金融时报》：科技行业担忧升温之际，OpenAI 将融资目标下调 100 亿美元",
+    "Video: Anthropic’s I.P.O.: Why the Stakes Are So High - The New York Times": "《纽约时报》视频解析：Anthropic IPO 为何备受关注",
+    "Cursor says up to 5,000 users affected by tampered Claude Code extension - Reuters": "路透社：Cursor 称遭篡改的 Claude Code 扩展可能影响多达 5000 名用户",
+    "Run AI Models for Edge Application Development with Just a Few Commands": "用几条命令运行边缘端 AI 模型，助力边缘应用开发",
+    "House Democrats Criticize Justice Dept. Support of OpenAI in Copyright Suit - The New York Times": "《纽约时报》：美国众议院民主党人批评司法部在版权诉讼中支持 OpenAI",
+    "I read Anthropic's 92-page risk factor document, so you don't have to – video explainer - The Guardian": "《卫报》视频解读：Anthropic 长达 92 页的风险因素文件",
+    "OpenAI to limit weapons information for teens on ChatGPT in violence-prevention push - Reuters": "路透社：为预防暴力，OpenAI 将限制 ChatGPT 向青少年提供武器相关信息",
+    "Anthropic may not secure investment-grade rating after IPO, Blackstone tells investors - Financial Times": "《金融时报》：Blackstone 告知投资者，Anthropic IPO 后未必能获得投资级评级",
+    "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble - Reuters": "路透社：富士康正与 OpenAI 洽谈新合作，并称 AI 并非泡沫",
+    "Opinion | What Anthropic’s I.P.O. Filing Says About the Future of A.I. - The New York Times": "《纽约时报》观点：Anthropic 的 IPO 文件揭示了 AI 的哪些未来趋势",
+    "The story of Anthropic in three numbers - Financial Times": "《金融时报》：用三个数字看 Anthropic",
+    "AI agents free up CEOs’ time to think ahead - Financial Times": "《金融时报》：AI 智能体让 CEO 腾出时间思考长期战略",
+    "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI - AP News": "美联社：Anthropic 递交 IPO 申请，CEO 同时警告 AI 对人类的风险",
+    "The two most interesting risks to Anthropic - NPR": "NPR：Anthropic 面临的两项关键风险",
+    "Tarmac: Five AI Agents Negotiate the Storm, and One Mediator Signs the Ruling - Alibaba Cloud": "阿里云发布 Tarmac：五个 AI 智能体协商风暴情景，由调解智能体作出裁决",
+    "deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System - GitHub": "DeepSeek 开源 dsh-superagent 原型，探索更自主的智能体系统",
+    "Chinese AI model carries out complex cyberattacks in controlled tests, researchers say - Reuters": "路透社：研究人员称，中国 AI 模型在受控测试中实施复杂网络攻击",
+    "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning": "GARDEN：通过证据导航实现通用自主奖励设计，促进多智能体协同强化学习",
+    "PromptSense: Sentiment-Aware Mental Health Chatbot with Dynamic Prompting": "PromptSense：采用动态提示的情感感知型心理健康聊天机器人",
+    "Predict the Reward, Not the World: World Reward Models for ML Agents": "预测奖励，而非世界：面向机器学习智能体的世界奖励模型",
+    "A Negotiation-Aware Hybrid LLM Framework for Intent Interpretation and Service Discovery": "面向意图理解与服务发现的协商感知型混合大语言模型框架",
+    "Indonesia moves 8 endangered orangutans to safety after Borneo fires - Reuters": "婆罗洲发生火灾后，印尼将 8 只濒危猩猩转移至安全地点",
+    "Citi on Maneuvering Limited Government Fiscal Space": "花旗分析政府财政空间有限时的政策操作",
+    "Verstappen cruises to first Singapore GP win as Antonelli closes on crown - Reuters": "维斯塔潘轻松赢得新加坡大奖赛首胜，安东内利则逼近冠军头衔",
+    "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News": "马克斯·维斯塔潘赢得新加坡大奖赛，基米·安东内利逼近 F1 年度冠军",
+    "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
+    "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
+    "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
+    "Main opposition steps up criticism of Lee's golf outing during Daegu incident": "大邱事件期间李的高尔夫活动引发争议，主要反对党加大批评",
+    "Security beefed up outside Parliament Street police station ahead of CJP leaders visit for fresh Jantar Mantar protest date": "在 CJP 领导人到访、准备确定新一轮 Jantar Mantar 抗议日期前，议会街警察局外加强了安保",
+}
+
+
 
 def throttle_translation_requests():
     global NEXT_REQUEST_AT
@@ -121,6 +177,15 @@ def translation_is_usable(title, result):
     result = re.sub(r"\s+", " ", str(result or "")).strip()
     if not result or not re.search("[一-鿿]", result) or result == title:
         return False
+    # Reject known high-impact literal mistranslations of technical names/terms.
+    if re.search(r"\\bClaude Code\\b", title, re.I) and re.search(r"密码子|克洛德", result):
+        return False
+    if re.search(r"\\bAI agents?\\b", title, re.I) and re.search(r"特工", result):
+        return False
+    if re.search(r"\\bAnthropic\\b", title, re.I) and re.search(r"人类学", result):
+        return False
+    if re.search(r"\\bOpenAI\\b", title, re.I) and re.search(r"开放人工智能", result):
+        return False
     # Reject obvious fragments returned as if they were complete translations.
     title_words = max(1, len(re.findall(r"\b[A-Za-z0-9]+\b", title)))
     result_words = len(re.findall(r"\b[A-Za-z0-9]+\b", result))
@@ -154,27 +219,19 @@ def argos_translate_chunks(title):
 
 
 def translate(title):
+    manual = MANUAL_TRANSLATIONS
+    if title in manual and translation_is_usable(title, manual[title]):
+        return manual[title]
     errors = []
-    # Try multiple providers only when the previous provider fails; keep the full-title sweep within the scheduled runner window.
-    for fn in (argos_translate, google_translate, google_translate_web, mymemory_translate):
+    # Online providers first; use the offline Argos model only as a fallback.
+    for fn in (google_translate, google_translate_web, mymemory_translate, argos_translate):
         try:
             result = fn(title)
             if translation_is_usable(title, result):
                 return result
-            errors.append(fn.__name__ + ": returned an incomplete Chinese translation")
+            errors.append(fn.__name__ + ": returned an incomplete or suspicious Chinese translation")
         except Exception as exc:
             errors.append(fn.__name__ + ": " + str(exc)[:100])
-    manual = {
-        "Indonesia moves 8 endangered orangutans to safety after Borneo fires - Reuters": "婆罗洲发生火灾后，印尼将8只濒危猩猩转移至安全地点",
-        "Citi on Maneuvering Limited Government Fiscal Space": "花旗分析政府财政空间有限时的政策操作",
-        "Verstappen cruises to first Singapore GP win as Antonelli closes on crown - Reuters": "维斯塔潘轻松赢得新加坡大奖赛首胜，安东内利则逼近冠军头衔",
-        "Max Verstappen wins Singapore Grand Prix as Kimi Antonelli closes in on F1 title - AP News": "马克斯·维斯塔潘赢得新加坡大奖赛，基米·安东内利逼近F1年度冠军",
-        "Poland stabbings driven by online glorification of violence, Tusk says": "图斯克称，波兰持刀袭击事件受到网络美化暴力内容的驱动",
-        "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
-        "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
-        "Main opposition steps up criticism of Lee's golf outing during Daegu incident": "大邱事件期间李的高尔夫活动引发争议，主要反对党加大批评",
-        "Security beefed up outside Parliament Street police station ahead of CJP leaders visit for fresh Jantar Mantar protest date": "在CJP领导人到访、准备确定新一轮Jantar Mantar抗议日期前，议会街警察局外加强了安保",
-    }
     try:
         chunked = argos_translate_chunks(title)
         if translation_is_usable(title, chunked):
