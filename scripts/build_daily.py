@@ -542,7 +542,7 @@ def main():
  for name,checks in source_rollup.items():
   failed=sum(1 for x in checks if x.get('status')=='failed')
   empty=sum(1 for x in checks if x.get('status')=='empty')
-  source_summaries.append({'source':name,'checks':len(checks),'failed_checks':failed,'empty_checks':empty,'success_rate':round((len(checks)-failed)/len(checks),3),'last_status':checks[-1].get('status'),'last_checked_at':checks[-1].get('checked_at'),'last_error':next((x.get('error') for x in reversed(checks) if x.get('error')),None),'recent_failures':[{'checked_at':x.get('checked_at'),'error':x.get('error')} for x in checks[-5:] if x.get('status')=='failed']})
+  source_summaries.append({'source':name,'checks':len(checks),'failed_checks':failed,'empty_checks':empty,'success_rate':round((len(checks)-failed)/len(checks),3),'last_status':checks[-1].get('status'),'last_checked_at':checks[-1].get('checked_at'),'last_error':(checks[-1].get('error') if checks[-1].get('status')=='failed' else None),'recent_failures':[{'checked_at':x.get('checked_at'),'error':x.get('error')} for x in checks[-5:] if x.get('status')=='failed']})
  health_report={'updated_at':now.isoformat(),'retained_runs':len(health_runs),'window_runs':30,'sources':sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])),'runs':health_runs}
  with open(SOURCE_HEALTH,'w',encoding='utf-8') as hf: json.dump(health_report,hf,ensure_ascii=False,indent=2)
  for h in sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])):
