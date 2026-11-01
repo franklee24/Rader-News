@@ -1,6 +1,16 @@
 name: ChatGPT 新闻编辑审核包（无 API）
 
 on:
+  # PR checks are isolated from the production deployment workflow.
+  pull_request:
+    paths:
+      - '.github/workflows/chatgpt-editorial-review.yml'
+      - 'scripts/prepare_chatgpt_review.py'
+      - 'scripts/apply_chatgpt_review.py'
+      - 'scripts/test_chatgpt_review.py'
+      - 'scripts/build_daily.py'
+      - 'scripts/score_importance.py'
+      - 'config/country_tiers.json'
   workflow_dispatch:
 
 permissions:
@@ -13,7 +23,7 @@ concurrency:
 jobs:
   prepare-review-pack:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -21,8 +31,6 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Syntax-check review scripts
-        run: python -m py_compile scripts/prepare_chatgpt_review.py scripts/apply_chatgpt_review.py
       - name: Syntax-check and offline contract tests
         run: |
           python -m py_compile scripts/prepare_chatgpt_review.py scripts/apply_chatgpt_review.py scripts/test_chatgpt_review.py
@@ -31,8 +39,36 @@ jobs:
         run: python scripts/build_daily.py
       - name: Apply deterministic baseline score
         run: python scripts/score_importance.py
-      - name: Export ChatGPT review pack
-        run: python scripts/prepare_chatgpt_review.py
+      - name: Validate generated daily data and export review pack
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/daily.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          assert isinstance(data, dict), "daily.json must be a JSON object"
+          assert isinstance(data.get("tiers"), dict), "daily.json missing tiers object"
+          assert isinstance(data.get("ai_news"), list), "daily.json missing ai_news list"
+          assert isinstance(data.get("global_top"), list), "daily.json missing global_top list"
+          print("daily.json schema smoke test passed")
+          PY
+          python scripts/prepare_chatgpt_review.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/ai_review/chatgpt_review_input.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          assert isinstance(data, dict), "review input must be a JSON object"
+          items = data.get("items")
+          assert isinstance(items, list) and items, "review input has no candidates"
+          assert len(items) <= 120, "review input exceeds configured cap"
+          ids = [x.get("id") for x in items]
+          assert all(isinstance(x, str) and x for x in ids), "candidate missing stable id"
+          assert len(ids) == len(set(ids)), "candidate ids are not unique"
+          prompt = Path("data/ai_review/chatgpt_review_prompt.md")
+          assert prompt.is_file() and prompt.stat().st_size > 100, "review prompt missing/empty"
+          print(f"review-pack smoke test passed: {len(items)} unique candidates")
+          PY
       - name: Upload prompt and source batch
         uses: actions/upload-artifact@v5
         with:
