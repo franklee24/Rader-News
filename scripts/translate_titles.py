@@ -73,7 +73,13 @@ MANUAL_TRANSLATIONS = {
     "Two Indian seafarers missing, nine rescued after drone attack on tanker at Sohar Anchorage, says Sonowal": "索诺瓦尔称，索哈尔锚地油轮遭无人机袭击后，两名印度海员失踪，九人获救",
     "India releases ‘cockroach’ leaders as movement calls for more protests": "印度释放被称为“蟑螂”的领导人，相关运动呼吁举行更多抗议",
     "Main opposition steps up criticism of Lee's golf outing during Daegu incident": "大邱事件期间李的高尔夫活动引发争议，主要反对党加大批评",
-    "Security beefed up outside Parliament Street police station ahead of CJP leaders visit for fresh Jantar Mantar protest date": "在 CJP 领导人到访、准备确定新一轮 Jantar Mantar 抗议日期前，议会街警察局外加强了安保",
+    "Security beefed up outside Parliament Street police station ahead of fresh Jantar Mantar protest date": "在 CJP 领导人到访、准备确定新一轮 Jantar Mantar 抗议日期前，议会街警察局外加强了安保",
+    "Dartmouth provost resigns following accusations he used AI to write his own statement - The New York Times": "《纽约时报》：达特茅斯学院教务长因被指使用 AI 撰写自己的声明而辞职",
+    "Rubio says U.S. yet to decide on new Iran strikes - Financial Times": "《金融时报》：鲁比奥表示，美国尚未决定是否对伊朗发动新一轮打击",
+    "Maria Vorontsova, Vladimir Putin's daughter, leads fight against aging - Financial Times": "《金融时报》：普京之女玛丽亚·沃龙佐娃参与抗衰老研究",
+    "Bond investors sit out ‘most consequential’ US midterm elections in years - Financial Times": "《金融时报》：债券投资者对这场被称为多年来最重要的美国中期选举持观望态度",
+    "Video: Opinion | What We’re Watching For on Election Night - The New York Times": "《纽约时报》视频观点：美国选举之夜有哪些值得关注的看点",
+    "Wall Street Journal AI Exclusive | Elizabeth Warren Demands Answers From Anthropic Over “Existential Risk” Responses - WSJ": "《华尔街日报》独家：伊丽莎白·沃伦要求 Anthropic 解释其对“生存性风险”问题的回应",
 }
 
 
