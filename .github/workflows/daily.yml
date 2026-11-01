@@ -294,7 +294,7 @@ jobs:
           if len(matches) != 1:
               raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: expected one snapshot for {stamp}, found {len(matches)}')
           target=matches[0]
-          target.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+          target.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           # Verify the persisted snapshot has translations for the AI/LLM section too.
           saved=json.loads(target.read_text(encoding='utf-8'))
           missing=[e.get('title','') for e in saved.get('ai_news',[]) if e.get('title') and not e.get('title_zh')]
