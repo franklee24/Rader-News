@@ -178,13 +178,13 @@ def translation_is_usable(title, result):
     if not result or not re.search("[一-鿿]", result) or result == title:
         return False
     # Reject known high-impact literal mistranslations of technical names/terms.
-    if re.search(r"\\bClaude Code\\b", title, re.I) and re.search(r"密码子|克洛德", result):
+    if re.search(r"\bClaude Code\b", title, re.I) and re.search(r"密码子|克洛德", result):
         return False
-    if re.search(r"\\bAI agents?\\b", title, re.I) and re.search(r"特工", result):
+    if re.search(r"\bAI agents?\b", title, re.I) and re.search(r"特工", result):
         return False
-    if re.search(r"\\bAnthropic\\b", title, re.I) and re.search(r"人类学", result):
+    if re.search(r"\bAnthropic\b", title, re.I) and re.search(r"人类学", result):
         return False
-    if re.search(r"\\bOpenAI\\b", title, re.I) and re.search(r"开放人工智能", result):
+    if re.search(r"\bOpenAI\b", title, re.I) and re.search(r"开放人工智能", result):
         return False
     # Reject obvious fragments returned as if they were complete translations.
     title_words = max(1, len(re.findall(r"\b[A-Za-z0-9]+\b", title)))
