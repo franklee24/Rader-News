@@ -269,14 +269,14 @@ Every output must contain Chinese characters. Keep the meaning faithful; no comm
 
 def apply_curated_translations(events):
     """Override stale machine translations for reviewed, high-visibility headlines."""
-    applied = 0
+    applied_titles = set()
     for event in events:
         title = str(event.get("title", "")).strip()
         curated = MANUAL_TRANSLATIONS.get(title)
         if curated and translation_is_usable(title, curated) and event.get("title_zh") != curated:
             event["title_zh"] = curated
-            applied += 1
-    return applied
+            applied_titles.add(title)
+    return len(applied_titles)
 
 
 def main():
