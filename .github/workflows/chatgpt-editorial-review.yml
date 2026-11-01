@@ -1,0 +1,38 @@
+name: ChatGPT 新闻编辑审核包（无 API）
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chatgpt-editorial-review
+  cancel-in-progress: false
+
+jobs:
+  prepare-review-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Collect latest news
+        run: python scripts/build_daily.py
+      - name: Apply deterministic baseline score
+        run: python scripts/score_importance.py
+      - name: Export ChatGPT review pack
+        run: python scripts/prepare_chatgpt_review.py
+      - name: Upload prompt and source batch
+        uses: actions/upload-artifact@v5
+        with:
+          name: chatgpt-editorial-review
+          path: |
+            data/ai_review/chatgpt_review_prompt.md
+            data/ai_review/chatgpt_review_input.json
+          if-no-files-found: error
+          retention-days: 7
