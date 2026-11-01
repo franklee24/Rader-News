@@ -52,7 +52,7 @@ def main():
             "items": [
                 {"id": "news-1", "title_zh": "重要政策公告", "score": 84,
                  "confidence": 0.9, "reason_zh": "影响范围较大",
-                 "event_key": "policy-test", "decision": "keep",
+                 "event_key": "policy-test", "decision": "deprioritize",
                  "facts_to_verify": []},
                 {"id": "unknown", "title_zh": "未知新闻", "score": 99, "confidence": 0.99},
                 {"id": "news-1", "title_zh": "低置信度新闻", "score": 90, "confidence": 0.2}
@@ -71,8 +71,11 @@ def main():
         assert updated["supplement"][0]["importance"] == 84
         assert updated["global_top"][0]["title_zh"] == "重要政策公告"
         assert updated["global_top"][0]["rule_importance"] == 72
+        assert updated["global_top"][0]["ai_assessment"]["decision"] == "deprioritize"
+        # Current contract is annotation-only: decision does not remove the story.
+        assert len(updated["global_top"]) == 1
         assert updated["ai_editorial"]["reviewed_count"] == 1
-    print("PASS: candidate export, ID validation, confidence gate, dry-run, duplicate surfaces and write-back")
+    print("PASS: candidate export, ID validation, confidence gate, dry-run, duplicate surfaces, write-back and deprioritize annotation")
 
 if __name__ == "__main__":
     main()
