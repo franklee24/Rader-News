@@ -8,6 +8,9 @@ on:
       - 'scripts/score_importance.py'
       - 'scripts/test_china_priority.py'
       - 'scripts/test_ai_news_contract.py'
+      - 'scripts/ai_client.py'
+      - 'scripts/ai_news_enhance.py'
+      - 'scripts/test_ai_client.py'
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
@@ -60,6 +63,10 @@ jobs:
         run: python scripts/test_china_priority.py
       - name: Test AI/LLM daily coverage and importance parity
         run: python scripts/test_ai_news_contract.py
+      - name: Syntax-check AI modules
+        run: python -m py_compile scripts/ai_client.py scripts/ai_news_enhance.py scripts/translate_titles.py scripts/test_ai_client.py
+      - name: Test optional AI provider contract
+        run: python scripts/test_ai_client.py
       - name: Build daily news
         run: python scripts/build_daily.py
       - name: Verify source reliability report
@@ -103,8 +110,15 @@ jobs:
           else:
               print('Time-limited Huang Qifan live-story gate expired; synthetic regression test remains active.')
           PY
-      - name: Apply V22 importance scoring
+      - name: Apply deterministic V24 baseline scoring
         run: python scripts/score_importance.py
+      - name: Apply AI editorial scoring when credentials are configured
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_BASE_URL: ${{ secrets.AI_API_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          AI_BATCH_SIZE: '20'
+        run: python scripts/ai_news_enhance.py
       - name: Remove repeats and undated events
         run: |
           python - <<'PY'
@@ -271,8 +285,42 @@ jobs:
               raise SystemExit('REQUIRED OFFLINE EN-ZH MODEL NOT AVAILABLE')
           print('Required Argos English-to-Chinese model is ready.')
           PY
-      - name: Translate all English titles
+      - name: Translate all English titles with AI and existing fallbacks
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_BASE_URL: ${{ secrets.AI_API_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          AI_TRANSLATION_BATCH_SIZE: '20'
         run: python scripts/translate_titles.py
+      - name: Persist translated titles to the published history snapshot
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          daily=Path('data/daily.json')
+          d=json.loads(daily.read_text(encoding='utf-8'))
+          stamp=d.get('generated_beijing')
+          if not stamp:
+              raise SystemExit('HISTORY TRANSLATION SYNC FAILED: generated_beijing missing')
+          matches=[]
+          for p in Path('data/history').glob('*.json'):
+              try:
+                  item=json.loads(p.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              if item.get('generated_beijing') == stamp:
+                  matches.append(p)
+          if len(matches) != 1:
+              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: expected one snapshot for {stamp}, found {len(matches)}')
+          target=matches[0]
+          target.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          # Verify the persisted snapshot has translations for the AI/LLM section too.
+          saved=json.loads(target.read_text(encoding='utf-8'))
+          missing=[e.get('title','') for e in saved.get('ai_news',[]) if e.get('title') and not e.get('title_zh')]
+          if missing:
+              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: {len(missing)} AI/LLM titles lack title_zh')
+          print(f'Persisted translated daily snapshot to {target}; AI/LLM untranslated titles: {len(missing)}')
+          PY
       - name: Validate headline translations
         run: |
           python - <<'PY3'

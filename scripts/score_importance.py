@@ -10,6 +10,10 @@ SEVERE={'战争':20,'war':20,'入侵':19,'invasion':19,'核打击':20,'nuclear s
 STRATEGIC={'总统':10,'president':10,'总理':9,'prime minister':9,'政府':7,'government':7,'议会':6,'parliament':6,'选举':9,'election':9,'央行':10,'central bank':10,'利率':10,'interest rate':10,'降息':10,'加息':10,'关税':12,'tariff':12,'贸易':8,'trade':8,'制裁':12,'sanction':12,'外交':8,'diplomacy':8,'峰会':8,'summit':8,'条约':11,'treaty':11,'核':13,'nuclear':13,'军队':9,'military':9,'国防':10,'defense':10,'pentagon':10,'能源':7,'energy':7,'石油':9,'oil':9,'天然气':8,'gas':8,'芯片':8,'semiconductor':8,'人工智能':6,'artificial intelligence':6,'公共卫生':10,'public health':10,'疫情':12,'outbreak':12,'鼠疫':12,'plague':12,'疫苗':6,'vaccine':6,'气候':6,'climate':6}
 CATEGORY={'国防安全':9,'外交':8,'政治':7,'宏观经济':7,'金融':6,'能源':6,'科技':5,'AI/LLM':8,'产业/商业':4,'灾害':7,'公共卫生/疫情':9,'环境/气候':6,'法律/犯罪':5,'其他/综合':2,'社会':3}
 ACTION={'宣布':4,'正式':4,'签署':5,'通过':5,'批准':5,'生效':5,'取消':4,'暂停':4,'启动':3,'升级':4,'降息':5,'加息':5,'禁运':6,'制裁':6,'announced':4,'official':4,'signed':5,'approved':5,'effective':5,'launch':3}
+# Keywords for policy/financial impact: avoid under-scoring tax, cross-border trusts and regulation.
+POLICY_FINANCE={'税收':7,'税务':7,'税制':7,'tax':7,'taxation':7,'tax authority':7,'capital gains':7,'offshore trust':8,'trust gains':7,'regulation':6,'regulatory':6,'监管':6,'合规':5,'资产冻结':7,'asset freeze':7,'billionaire':4,'billionaires':4,'capital flight':7,'资本外流':7}
+ACADEMIC_TERMS=['arxiv.org','arxiv','research paper','researchers propose','we propose','benchmark dataset','feature selection','re-identification','feature engineering','novel framework','new method','论文','研究团队提出','数据集','基准测试']
+ACADEMIC_IMPACT_TERMS=['clinical trial','deployed at scale','production deployment','regulatory approval','重大临床试验','大规模部署','正式商用','监管批准','state-of-the-art breakthrough','重大突破']
 def text(e): return ((e.get('title') or '')+' '+(e.get('description') or '')).lower()
 def keyword_match(text, keyword):
     key=keyword.lower()
@@ -54,6 +58,17 @@ def score(e):
     source_count=e.get('source_count',len(e.get('sources',[]))); verify=0 if source_count<=1 else 3 if source_count==2 else 5
     authority=e.get('source_authority',55); authority_bonus=min(8,max(0,round((authority-55)/8)))
     total=max(0,min(100,scope+sev+strategic+national+horizon+verify+authority_bonus+freshness(e)))
+    # Generic academic papers should not outrank globally consequential events based on technical keywords alone.
+    # Keep papers eligible when there is evidence of deployment, clinical/regulatory validation, or a substantiated breakthrough.
+    source_urls=' '.join(str(x.get('link','')) for x in e.get('sources',[]) if isinstance(x,dict)).lower()
+    is_academic=any(k in t for k in ACADEMIC_TERMS) or 'arxiv.org' in source_urls
+    has_material_academic_impact=any(k in t for k in ACADEMIC_IMPACT_TERMS)
+    if is_academic and not has_material_academic_impact:
+        total=max(0,total-22)
+    # Give policy and cross-border financial events a modest explicit boost without treating asset values as tax owed.
+    policy_finance_hits=hits(t,POLICY_FINANCE)
+    if policy_finance_hits:
+        total=min(100,total+min(10,max(POLICY_FINANCE[k] for k in policy_finance_hits)))
     if china_investigation:
         # Do not give routine local investigations an automatic score boost.
         # Only exceptional central-level cases can receive a high-priority override.

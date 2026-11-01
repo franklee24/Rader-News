@@ -49,7 +49,7 @@ FEEDS=[
  ('France24','FR','https://www.france24.com/en/rss','en'),
  ('DW','DE','https://rss.dw.com/xml/rss-en-all','en'),
  ('TASS','RU','https://tass.com/rss/v2.xml','en'),
- ('华盛顿邮报','GLOBAL','https://feeds.washingtonpost.com/rss/world','en'),
+ ('华盛顿邮报','GLOBAL','https://news.google.com/rss/search?q=site%3Awashingtonpost.com%2Fworld&hl=en-US&gl=US&ceid=US:en','en'),
  ('半岛电视台','GLOBAL','https://www.aljazeera.com/xml/rss/all.xml','en'),
  # Reuters/AP are collected via Google News site-specific RSS because legacy publisher RSS endpoints are not dependable.
  ('Reuters','GLOBAL','https://news.google.com/rss/search?q=site%3Areuters.com&hl=en-US&gl=US&ceid=US:en','en'),
@@ -57,7 +57,7 @@ FEEDS=[
  ('Yonhap','KR','https://en.yna.co.kr/RSS/news.xml','en'),
  ('The Hindu National','IN','https://www.thehindu.com/news/national/feeder/default.rss','en'),
  ('The Hindu International','GLOBAL','https://www.thehindu.com/news/international/feeder/default.rss','en'),
- ('CBC World','CA','https://www.cbc.ca/webfeed/rss/rss-world','en'),
+ ('CBC World','CA','https://news.google.com/rss/search?q=site%3Acbc.ca%2Fnews%2Fworld&hl=en-CA&gl=CA&ceid=CA:en','en'),
  ('ABC Australia','AU','https://www.abc.net.au/news/feed/51120/rss.xml','en'),
  ('Le Monde English','FR','https://www.lemonde.fr/en/rss/une.xml','en'),
  ('Anadolu World','GLOBAL','https://www.aa.com.tr/en/rss/default?cat=world','en'),
@@ -542,7 +542,7 @@ def main():
  for name,checks in source_rollup.items():
   failed=sum(1 for x in checks if x.get('status')=='failed')
   empty=sum(1 for x in checks if x.get('status')=='empty')
-  source_summaries.append({'source':name,'checks':len(checks),'failed_checks':failed,'empty_checks':empty,'success_rate':round((len(checks)-failed)/len(checks),3),'last_status':checks[-1].get('status'),'last_checked_at':checks[-1].get('checked_at'),'last_error':next((x.get('error') for x in reversed(checks) if x.get('error')),None),'recent_failures':[{'checked_at':x.get('checked_at'),'error':x.get('error')} for x in checks[-5:] if x.get('status')=='failed']})
+  source_summaries.append({'source':name,'checks':len(checks),'failed_checks':failed,'empty_checks':empty,'success_rate':round((len(checks)-failed)/len(checks),3),'last_status':checks[-1].get('status'),'last_checked_at':checks[-1].get('checked_at'),'last_error':(checks[-1].get('error') if checks[-1].get('status')=='failed' else None),'recent_failures':[{'checked_at':x.get('checked_at'),'error':x.get('error')} for x in checks[-5:] if x.get('status')=='failed']})
  health_report={'updated_at':now.isoformat(),'retained_runs':len(health_runs),'window_runs':30,'sources':sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])),'runs':health_runs}
  with open(SOURCE_HEALTH,'w',encoding='utf-8') as hf: json.dump(health_report,hf,ensure_ascii=False,indent=2)
  for h in sorted(source_summaries,key=lambda x:(x['success_rate'],x['source'])):

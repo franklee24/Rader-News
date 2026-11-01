@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 from pathlib import Path
+from ai_client import configured as ai_configured, chat_json as ai_chat_json
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY = ROOT / "data/daily.json"
@@ -184,6 +185,31 @@ def translate(title):
         return manual[title]
     raise RuntimeError("; ".join(errors[-3:]) or "no translation returned")
 
+def ai_translate_batch(titles):
+    """Translate a batch of headlines with the configured LLM; return only validated Chinese titles."""
+    if not ai_configured() or not titles:
+        return {}
+    out={}
+    batch_size=max(5,min(25,int(__import__("os").getenv("AI_TRANSLATION_BATCH_SIZE","20"))))
+    system="""Translate news headlines into accurate, concise Simplified Chinese. Preserve names, figures,
+uncertainty, attribution and distinctions between assets, revenue, exposure and tax owed. Do not add facts.
+Return JSON exactly: {"items":[{"id":"input id","title_zh":"Chinese translation"}]}.
+Every output must contain Chinese characters. Keep the meaning faithful; no commentary."""
+    for start in range(0,len(titles),batch_size):
+        batch=titles[start:start+batch_size]
+        payload={"items":[{"id":str(i),"title":title} for i,title in enumerate(batch,start=start)]}
+        try:
+            result=ai_chat_json(system,payload,max_tokens=2500)
+            by_id={str(x.get("id")):str(x.get("title_zh","")).strip() for x in result.get("items",[]) if isinstance(x,dict)}
+            for i,title in enumerate(batch,start=start):
+                zh=re.sub(r"\\s+"," ",by_id.get(str(i),"")).strip()
+                if translation_is_usable(title,zh):
+                    out[title]=zh
+        except Exception as exc:
+            print("AI translation batch fallback:",str(exc)[:220])
+    return out
+
+
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
     # Include every displayed surface, especially GLOBAL TOP (whose objects are serialized separately).
@@ -199,6 +225,10 @@ def main():
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
+        # Reuse the AI translation produced during scoring so the same title is not billed twice.
+        ai_title = e.get("title_zh_ai", "")
+        if not translation_is_usable(title, e.get("title_zh", "")) and translation_is_usable(title, ai_title):
+            e["title_zh"] = ai_title
         if looks_english(title) and not translation_is_usable(title, e.get("title_zh", "")):
             targets_by_title.setdefault(title, e)
     targets = list(targets_by_title.values())
@@ -206,8 +236,13 @@ def main():
     ok = failed = 0
     cache = {}
     errors = []
+    ai_cache = ai_translate_batch([e["title"] for e in targets])
+    cache.update(ai_cache)
+    ok += len(ai_cache)
+    fallback_targets = [e for e in targets if e["title"] not in ai_cache]
+    print("AI translation accepted:",len(ai_cache),"; existing translator fallback queue:",len(fallback_targets))
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        futures = {ex.submit(translate, e["title"]): e for e in targets}
+        futures = {ex.submit(translate, e["title"]): e for e in fallback_targets}
         for fut in as_completed(futures):
             e = futures[fut]
             try:

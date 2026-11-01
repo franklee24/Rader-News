@@ -46,4 +46,14 @@ assert scoring["score"](dict(fresh))["importance_model"] == scoring["score"](
     dict(fixture("Major central bank changes interest-rate policy", "宏观经济", now.isoformat()))
 )["importance_model"], "AI and mainstream news must use the same importance model"
 
+# Regression: generic academic papers should not dominate GLOBAL TOP; material policy/finance stories must remain competitive.
+paper = fixture("Feature selection method for Siamese Networks research paper", "科技", now.isoformat(), country="GLOBAL")
+paper["sources"] = [{"source": "arXiv", "link": "https://arxiv.org/abs/2610.39499"}]
+paper["source_count"] = 1
+paper_score = scoring["score"](dict(paper))["importance"]
+macro = fixture("China tax authority widens tax net for offshore trust gains", "金融", now.isoformat(), country="GLOBAL")
+macro_score = scoring["score"](dict(macro))["importance"]
+assert paper_score <= 60, f"generic academic paper should be down-ranked: {paper_score}"
+assert macro_score > paper_score, f"material tax/financial regulation should outrank generic paper: finance={macro_score}, paper={paper_score}"
+
 print(f"AI/LLM regression tests passed: {len(feeds)} configured feeds; shared scoring and freshness verified.")
