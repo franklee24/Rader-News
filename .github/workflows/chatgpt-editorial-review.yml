@@ -69,12 +69,14 @@ jobs:
           assert prompt.is_file() and prompt.stat().st_size > 100, "review prompt missing/empty"
           print(f"review-pack smoke test passed: {len(items)} unique candidates")
           PY
-      - name: Upload prompt and source batch
+      - name: Upload prompt, source batch, matching daily snapshot and source health
         uses: actions/upload-artifact@v5
         with:
           name: chatgpt-editorial-review
           path: |
             data/ai_review/chatgpt_review_prompt.md
             data/ai_review/chatgpt_review_input.json
+            data/daily.json
+            data/source_health.json
           if-no-files-found: error
           retention-days: 7
