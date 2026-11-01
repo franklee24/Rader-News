@@ -23,6 +23,10 @@ jobs:
           python-version: '3.12'
       - name: Syntax-check review scripts
         run: python -m py_compile scripts/prepare_chatgpt_review.py scripts/apply_chatgpt_review.py
+      - name: Syntax-check and offline contract tests
+        run: |
+          python -m py_compile scripts/prepare_chatgpt_review.py scripts/apply_chatgpt_review.py scripts/test_chatgpt_review.py
+          python scripts/test_chatgpt_review.py
       - name: Collect latest news
         run: python scripts/build_daily.py
       - name: Apply deterministic baseline score
