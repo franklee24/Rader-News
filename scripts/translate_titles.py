@@ -80,6 +80,17 @@ MANUAL_TRANSLATIONS = {
     "Bond investors sit out ‘most consequential’ US midterm elections in years - Financial Times": "《金融时报》：债券投资者对这场被称为多年来最重要的美国中期选举持观望态度",
     "Video: Opinion | What We’re Watching For on Election Night - The New York Times": "《纽约时报》视频观点：美国选举之夜有哪些值得关注的看点",
     "Wall Street Journal AI Exclusive | Elizabeth Warren Demands Answers From Anthropic Over “Existential Risk” Responses - WSJ": "《华尔街日报》独家：伊丽莎白·沃伦要求 Anthropic 解释其对“生存性风险”问题的回应",
+    "Putin’s return to the G20 summit would “normalize” Russia’s war crimes in Ukraine — Kallas - Українські Національні Новини (УНН)": "卡拉斯称，普京重返 G20 峰会将使俄罗斯在乌克兰的战争罪行“正常化”",
+    "EU’s Kallas Says Hosting Putin at G20 May Normalize War Crimes": "欧盟外交负责人卡拉斯警告，邀请普京出席 G20 可能使战争罪行被常态化",
+    "Iran war live: Trump has not decided on renewed Iran military action: Rubio - Arabian Business": "伊朗战事最新：鲁比奥称，特朗普尚未决定是否对伊朗采取新的军事行动",
+    "China’s military purge reduces war risk: experts - Taipei Times": "《台北时报》：专家称，中国军方整肃可能降低战争风险",
+    "Trump vs MAGA: Why his movement is splitting": "特朗普与 MAGA 阵营为何出现分裂",
+    "Trump says Iran war will end soon, US military insists Hormuz is secure - Arab News": "特朗普称伊朗战争很快会结束，美军则坚称霍尔木兹海峡安全",
+    "Trump admin approves potential Patriot missiles sale to Ukraine": "特朗普政府批准一项向乌克兰出售爱国者导弹的潜在军售案",
+    "Dartmouth provost resigns following accusations he used artificial intelligence for writing - AP News": "美联社：达特茅斯学院教务长因被指使用人工智能撰写声明而辞职",
+    "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic - Bloomberg.com": "彭博社：SpaceX 最大的收入来源，是与 Anthropic 的一项有期限合同",
+    "Bond investors sit out ‘most consequential’ US midterm elections in years": "债券投资者对这场被称为多年来最重要的美国中期选举持观望态度",
+    "Maria Vorontsova, Vladimir Putin's daughter, leads fight against aging": "普京之女玛丽亚·沃龙佐娃参与抗衰老研究",
 }
 
 
