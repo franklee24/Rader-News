@@ -49,7 +49,7 @@ FEEDS=[
  ('France24','FR','https://www.france24.com/en/rss','en'),
  ('DW','DE','https://rss.dw.com/xml/rss-en-all','en'),
  ('TASS','RU','https://tass.com/rss/v2.xml','en'),
- ('华盛顿邮报','GLOBAL','https://feeds.washingtonpost.com/rss/world','en'),
+ ('华盛顿邮报','GLOBAL','https://news.google.com/rss/search?q=site%3Awashingtonpost.com%2Fworld&hl=en-US&gl=US&ceid=US:en','en'),
  ('半岛电视台','GLOBAL','https://www.aljazeera.com/xml/rss/all.xml','en'),
  # Reuters/AP are collected via Google News site-specific RSS because legacy publisher RSS endpoints are not dependable.
  ('Reuters','GLOBAL','https://news.google.com/rss/search?q=site%3Areuters.com&hl=en-US&gl=US&ceid=US:en','en'),
@@ -57,7 +57,7 @@ FEEDS=[
  ('Yonhap','KR','https://en.yna.co.kr/RSS/news.xml','en'),
  ('The Hindu National','IN','https://www.thehindu.com/news/national/feeder/default.rss','en'),
  ('The Hindu International','GLOBAL','https://www.thehindu.com/news/international/feeder/default.rss','en'),
- ('CBC World','CA','https://www.cbc.ca/webfeed/rss/rss-world','en'),
+ ('CBC World','CA','https://news.google.com/rss/search?q=site%3Acbc.ca%2Fnews%2Fworld&hl=en-CA&gl=CA&ceid=CA:en','en'),
  ('ABC Australia','AU','https://www.abc.net.au/news/feed/51120/rss.xml','en'),
  ('Le Monde English','FR','https://www.lemonde.fr/en/rss/une.xml','en'),
  ('Anadolu World','GLOBAL','https://www.aa.com.tr/en/rss/default?cat=world','en'),
