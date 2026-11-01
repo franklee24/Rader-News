@@ -8,6 +8,13 @@ on:
       - 'scripts/translate_titles.py'
       - 'scripts/test_translation_quality.py'
       - '.github/workflows/source-validation.yml'
+  pull_request:
+    paths:
+      - 'scripts/build_daily.py'
+      - 'scripts/score_importance.py'
+      - 'scripts/translate_titles.py'
+      - 'scripts/test_translation_quality.py'
+      - '.github/workflows/source-validation.yml'
   workflow_dispatch:
   # 每天北京时间 05:00 检查 AI/LLM 新闻源（UTC 21:00）
   schedule:
