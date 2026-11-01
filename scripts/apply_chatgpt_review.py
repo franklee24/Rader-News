@@ -37,13 +37,13 @@ def main():
     lookup = {}
     for row in all_events(data):
         key = str(row.get("id") or row.get("url") or row.get("source_url") or row.get("title") or "")
-        if key: lookup[key] = row
+        if key: lookup.setdefault(key, []).append(row)
     accepted = skipped = 0
     for item in response["items"]:
         if not isinstance(item, dict): skipped += 1; continue
         key = str(item.get("id") or "")
-        target = lookup.get(key)
-        if target is None:
+        targets = lookup.get(key)
+        if not targets:
             skipped += 1
             print(f"Skipped unknown id: {key[:100]}")
             continue
@@ -58,17 +58,18 @@ def main():
         if title_zh and not usable_zh(title_zh):
             skipped += 1; continue
         if not args.dry_run:
-            target["rule_importance"] = int(target.get("importance") or 0)
-            target["importance"] = score
-            target["importance_level"] = ("全球重大" if score >= 90 else "国家重大" if score >= 80 else "重要事件" if score >= 70 else "值得关注" if score >= 60 else "一般动态")
-            target["importance_model"] = "ChatGPT manual editorial review"
-            target["ai_assessment"] = {
-                "confidence": round(confidence, 2), "reason_zh": str(item.get("reason_zh") or "")[:120],
-                "event_key": str(item.get("event_key") or "")[:100],
-                "decision": item.get("decision") if item.get("decision") in ("keep", "deprioritize") else "keep",
-                "facts_to_verify": [str(x)[:160] for x in (item.get("facts_to_verify") or [])[:2]],
-            }
-            if usable_zh(title_zh): target["title_zh"] = title_zh
+            for target in targets:
+                target["rule_importance"] = int(target.get("importance") or 0)
+                target["importance"] = score
+                target["importance_level"] = ("全球重大" if score >= 90 else "国家重大" if score >= 80 else "重要事件" if score >= 70 else "值得关注" if score >= 60 else "一般动态")
+                target["importance_model"] = "ChatGPT manual editorial review"
+                target["ai_assessment"] = {
+                    "confidence": round(confidence, 2), "reason_zh": str(item.get("reason_zh") or "")[:120],
+                    "event_key": str(item.get("event_key") or "")[:100],
+                    "decision": item.get("decision") if item.get("decision") in ("keep", "deprioritize") else "keep",
+                    "facts_to_verify": [str(x)[:160] for x in (item.get("facts_to_verify") or [])[:2]],
+                }
+                if usable_zh(title_zh): target["title_zh"] = title_zh
         accepted += 1
     if args.dry_run:
         print(f"DRY RUN: {accepted} valid results, {skipped} skipped; no files changed.")
