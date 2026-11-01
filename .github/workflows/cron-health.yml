@@ -1,7 +1,7 @@
 name: 雷达新闻每日调度守护
 
-# UTC cron is intentional: it avoids timezone-parser ambiguity. The watchdog
-# is only a health check around 08:00 Beijing; production has its own schedule.
+# This watchdog validates the production scheduler chain. Production runs are
+# dispatched by reliable-scheduler.yml, not by a cron expression in daily.yml.
 on:
   workflow_dispatch:
   schedule:
@@ -22,12 +22,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Verify production workflow is present
+      - name: Verify production scheduler chain is present
         run: |
           python - <<'PY'
           from pathlib import Path
-          text=Path('.github/workflows/daily.yml').read_text(encoding='utf-8')
-          if 'schedule:' not in text:
-              raise SystemExit('Production schedule missing')
-          print('Production schedule exists.')
+          daily=Path('.github/workflows/daily.yml').read_text(encoding='utf-8')
+          scheduler=Path('.github/workflows/reliable-scheduler.yml').read_text(encoding='utf-8')
+          if 'workflow_dispatch:' not in daily:
+              raise SystemExit('Production workflow cannot be dispatched')
+          if 'checkpoints=(0 240 360 480 720 750 780 840 870 900 960 1020 1066 1200)' not in scheduler:
+              raise SystemExit('Expected Beijing scheduler checkpoints missing')
+          if 'gh workflow run daily.yml --repo franklee24/Rader-News --ref main' not in scheduler:
+              raise SystemExit('Scheduler no longer dispatches the production workflow')
+          print('Production workflow dispatch and Beijing scheduler checkpoints verified.')
           PY
