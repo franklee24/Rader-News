@@ -63,6 +63,8 @@ jobs:
         run: python scripts/test_china_priority.py
       - name: Test AI/LLM daily coverage and importance parity
         run: python scripts/test_ai_news_contract.py
+      - name: Syntax-check AI modules
+        run: python -m py_compile scripts/ai_client.py scripts/ai_news_enhance.py scripts/translate_titles.py scripts/test_ai_client.py
       - name: Test optional AI provider contract
         run: python scripts/test_ai_client.py
       - name: Build daily news
