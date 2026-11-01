@@ -11,6 +11,7 @@ on:
       - 'scripts/ai_client.py'
       - 'scripts/ai_news_enhance.py'
       - 'scripts/test_ai_client.py'
+      - 'scripts/test_translation_quality.py'
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
@@ -64,9 +65,11 @@ jobs:
       - name: Test AI/LLM daily coverage and importance parity
         run: python scripts/test_ai_news_contract.py
       - name: Syntax-check AI modules
-        run: python -m py_compile scripts/ai_client.py scripts/ai_news_enhance.py scripts/translate_titles.py scripts/test_ai_client.py
+        run: python -m py_compile scripts/ai_client.py scripts/ai_news_enhance.py scripts/translate_titles.py scripts/test_ai_client.py scripts/test_translation_quality.py
       - name: Test optional AI provider contract
-        run: python scripts/test_ai_client.py
+        run: |
+          python scripts/test_ai_client.py
+          python scripts/test_translation_quality.py
       - name: Build daily news
         run: python scripts/build_daily.py
       - name: Verify source reliability report
