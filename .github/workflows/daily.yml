@@ -273,6 +273,35 @@ jobs:
           PY
       - name: Translate all English titles
         run: python scripts/translate_titles.py
+      - name: Persist translated titles to the published history snapshot
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          daily=Path('data/daily.json')
+          d=json.loads(daily.read_text(encoding='utf-8'))
+          stamp=d.get('generated_beijing')
+          if not stamp:
+              raise SystemExit('HISTORY TRANSLATION SYNC FAILED: generated_beijing missing')
+          matches=[]
+          for p in Path('data/history').glob('*.json'):
+              try:
+                  item=json.loads(p.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              if item.get('generated_beijing') == stamp:
+                  matches.append(p)
+          if len(matches) != 1:
+              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: expected one snapshot for {stamp}, found {len(matches)}')
+          target=matches[0]
+          target.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+          # Verify the persisted snapshot has translations for the AI/LLM section too.
+          saved=json.loads(target.read_text(encoding='utf-8'))
+          missing=[e.get('title','') for e in saved.get('ai_news',[]) if e.get('title') and not e.get('title_zh')]
+          if missing:
+              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: {len(missing)} AI/LLM titles lack title_zh')
+          print(f'Persisted translated daily snapshot to {target}; AI/LLM untranslated titles: {len(missing)}')
+          PY
       - name: Validate headline translations
         run: |
           python - <<'PY3'
