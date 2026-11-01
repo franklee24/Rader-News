@@ -8,6 +8,9 @@ on:
       - 'scripts/score_importance.py'
       - 'scripts/test_china_priority.py'
       - 'scripts/test_ai_news_contract.py'
+      - 'scripts/ai_client.py'
+      - 'scripts/ai_news_enhance.py'
+      - 'scripts/test_ai_client.py'
       - 'scripts/translate_titles.py'
       - '.github/workflows/daily.yml'
   workflow_dispatch:
@@ -60,6 +63,8 @@ jobs:
         run: python scripts/test_china_priority.py
       - name: Test AI/LLM daily coverage and importance parity
         run: python scripts/test_ai_news_contract.py
+      - name: Test optional AI provider contract
+        run: python scripts/test_ai_client.py
       - name: Build daily news
         run: python scripts/build_daily.py
       - name: Verify source reliability report
@@ -103,8 +108,15 @@ jobs:
           else:
               print('Time-limited Huang Qifan live-story gate expired; synthetic regression test remains active.')
           PY
-      - name: Apply V22 importance scoring
+      - name: Apply deterministic V24 baseline scoring
         run: python scripts/score_importance.py
+      - name: Apply AI editorial scoring when credentials are configured
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_BASE_URL: ${{ secrets.AI_API_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          AI_BATCH_SIZE: '20'
+        run: python scripts/ai_news_enhance.py
       - name: Remove repeats and undated events
         run: |
           python - <<'PY'
@@ -271,7 +283,12 @@ jobs:
               raise SystemExit('REQUIRED OFFLINE EN-ZH MODEL NOT AVAILABLE')
           print('Required Argos English-to-Chinese model is ready.')
           PY
-      - name: Translate all English titles
+      - name: Translate all English titles with AI and existing fallbacks
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_BASE_URL: ${{ secrets.AI_API_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          AI_TRANSLATION_BATCH_SIZE: '20'
         run: python scripts/translate_titles.py
       - name: Persist translated titles to the published history snapshot
         run: |
