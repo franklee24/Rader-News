@@ -27,9 +27,11 @@ def main():
         "title": "AI agents free up CEOs’ time to think ahead - Financial Times",
         "title_zh": "AI特工腾出时间让首席执行官提前思考",
     }
-    applied = translator.apply_curated_translations([stale])
-    assert applied == 1, "curated translation should replace an existing bad translation"
+    duplicate = dict(stale)
+    applied = translator.apply_curated_translations([stale, duplicate])
+    assert applied == 1, "translation metadata should count unique titles, not duplicate surfaces"
     assert stale["title_zh"] == cases[stale["title"]], "curated override did not replace stale translation"
+    assert duplicate["title_zh"] == cases[duplicate["title"]], "curated override must update duplicate surfaces too"
 
     assert not translator.translation_is_usable(
         "Proposal: configure fixed effort for the Claude Code subagent",
