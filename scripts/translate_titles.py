@@ -267,6 +267,18 @@ Every output must contain Chinese characters. Keep the meaning faithful; no comm
     return out
 
 
+def apply_curated_translations(events):
+    """Override stale machine translations for reviewed, high-visibility headlines."""
+    applied_titles = set()
+    for event in events:
+        title = str(event.get("title", "")).strip()
+        curated = MANUAL_TRANSLATIONS.get(title)
+        if curated and translation_is_usable(title, curated) and event.get("title_zh") != curated:
+            event["title_zh"] = curated
+            applied_titles.add(title)
+    return len(applied_titles)
+
+
 def main():
     d = json.loads(DAILY.read_text(encoding="utf-8"))
     # Include every displayed surface, especially GLOBAL TOP (whose objects are serialized separately).
@@ -279,6 +291,8 @@ def main():
     events.extend(d.get("ai_news", []))
 
     # Translate every distinct English headline in one run; there is no 80-title cap.
+    curated_applied = apply_curated_translations(events)
+    print("Curated translation overrides:", curated_applied)
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
@@ -290,7 +304,8 @@ def main():
             targets_by_title.setdefault(title, e)
     targets = list(targets_by_title.values())
     print("Translation request budget:", len(targets), "unique English headlines; all visible sections included.")
-    ok = failed = 0
+    ok = curated_applied
+    failed = 0
     cache = {}
     errors = []
     ai_cache = ai_translate_batch([e["title"] for e in targets])
