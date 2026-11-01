@@ -225,6 +225,10 @@ def main():
     targets_by_title = {}
     for e in events:
         title = e.get("title", "")
+        # Reuse the AI translation produced during scoring so the same title is not billed twice.
+        ai_title = e.get("title_zh_ai", "")
+        if not translation_is_usable(title, e.get("title_zh", "")) and translation_is_usable(title, ai_title):
+            e["title_zh"] = ai_title
         if looks_english(title) and not translation_is_usable(title, e.get("title_zh", "")):
             targets_by_title.setdefault(title, e)
     targets = list(targets_by_title.values())
