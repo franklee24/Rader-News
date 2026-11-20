@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T09:00:20.085800+00:00",
+  "updated_at": "2026-11-20T09:46:33.207007+00:00",
   "retained_runs": 30,
   "window_runs": 30,
   "sources": [
@@ -10,7 +10,7 @@
       "empty_checks": 0,
       "success_rate": 0.9,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -21,7 +21,7 @@
       "empty_checks": 0,
       "success_rate": 0.933,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -32,7 +32,7 @@
       "empty_checks": 0,
       "success_rate": 0.933,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -43,7 +43,7 @@
       "empty_checks": 0,
       "success_rate": 0.933,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -54,7 +54,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -65,12 +65,28 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": [
         {
           "checked_at": "2026-11-19T09:46:19.085207+00:00",
           "error": "HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
+    {
+      "source": "Associated Press AI",
+      "checks": 30,
+      "failed_checks": 1,
+      "empty_checks": 0,
+      "success_rate": 0.967,
+      "last_status": "failed",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
+      "last_error": "HTTP Error 404: Not Found",
+      "recent_failures": [
+        {
+          "checked_at": "2026-11-20T09:46:33.207007+00:00",
+          "error": "HTTP Error 404: Not Found"
         }
       ]
     },
@@ -81,7 +97,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -92,7 +108,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -103,7 +119,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -114,7 +130,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -125,7 +141,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -136,7 +152,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -147,7 +163,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -158,7 +174,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -169,7 +185,7 @@
       "empty_checks": 1,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -180,7 +196,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -191,7 +207,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -202,7 +218,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -213,7 +229,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": [
         {
@@ -229,7 +245,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -240,7 +256,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -251,7 +267,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -262,7 +278,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -273,7 +289,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -284,7 +300,7 @@
       "empty_checks": 1,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -295,7 +311,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -306,7 +322,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -317,7 +333,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -328,7 +344,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -339,7 +355,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -350,7 +366,7 @@
       "empty_checks": 0,
       "success_rate": 0.967,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -361,7 +377,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -372,7 +388,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -383,7 +399,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -394,7 +410,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -405,18 +421,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
-      "last_error": null,
-      "recent_failures": []
-    },
-    {
-      "source": "Associated Press AI",
-      "checks": 30,
-      "failed_checks": 0,
-      "empty_checks": 0,
-      "success_rate": 1.0,
-      "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -427,7 +432,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -438,7 +443,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -449,7 +454,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -460,7 +465,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -471,7 +476,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -482,7 +487,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -493,7 +498,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -504,7 +509,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -515,7 +520,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -526,7 +531,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -537,7 +542,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -548,7 +553,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -559,7 +564,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -570,7 +575,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -581,7 +586,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -592,7 +597,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -603,7 +608,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -614,7 +619,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -625,7 +630,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -636,7 +641,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -647,7 +652,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -658,7 +663,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -669,7 +674,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -680,7 +685,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -691,7 +696,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -702,7 +707,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -713,7 +718,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -724,7 +729,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -735,7 +740,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -746,7 +751,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -757,7 +762,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -768,7 +773,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -779,7 +784,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -790,7 +795,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -801,7 +806,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -812,7 +817,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -823,7 +828,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -834,7 +839,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -845,7 +850,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -856,7 +861,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -867,7 +872,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -878,7 +883,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -889,7 +894,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -900,7 +905,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -911,7 +916,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -922,7 +927,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -933,7 +938,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -944,7 +949,7 @@
       "empty_checks": 1,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -955,7 +960,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -966,7 +971,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -977,7 +982,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -988,7 +993,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -999,7 +1004,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1010,7 +1015,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1021,7 +1026,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1032,7 +1037,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1043,7 +1048,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1051,10 +1056,10 @@
       "source": "arXiv cs.AI",
       "checks": 30,
       "failed_checks": 0,
-      "empty_checks": 8,
+      "empty_checks": 7,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1062,10 +1067,10 @@
       "source": "arXiv cs.CL",
       "checks": 30,
       "failed_checks": 0,
-      "empty_checks": 8,
+      "empty_checks": 7,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1076,7 +1081,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1087,7 +1092,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1098,7 +1103,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1109,7 +1114,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1120,7 +1125,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1131,7 +1136,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1142,7 +1147,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1153,7 +1158,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1164,7 +1169,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1175,7 +1180,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1186,7 +1191,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1197,7 +1202,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1208,7 +1213,7 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     },
@@ -1219,897 +1224,12 @@
       "empty_checks": 0,
       "success_rate": 1.0,
       "last_status": "ok",
-      "last_checked_at": "2026-11-20T09:00:20.085800+00:00",
+      "last_checked_at": "2026-11-20T09:46:33.207007+00:00",
       "last_error": null,
       "recent_failures": []
     }
   ],
   "runs": [
-    {
-      "checked_at": "2026-11-08T00:00:17.662633+00:00",
-      "observations": [
-        {
-          "source": "纽约时报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 53,
-          "elapsed_seconds": 0.24,
-          "error": null
-        },
-        {
-          "source": "BBC中文",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 42,
-          "elapsed_seconds": 0.444,
-          "error": null
-        },
-        {
-          "source": "华尔街日报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.212,
-          "error": null
-        },
-        {
-          "source": "彭博社",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.469,
-          "error": null
-        },
-        {
-          "source": "卫报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 45,
-          "elapsed_seconds": 0.101,
-          "error": null
-        },
-        {
-          "source": "BBC World",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 25,
-          "elapsed_seconds": 0.117,
-          "error": null
-        },
-        {
-          "source": "纽约时报-日本",
-          "country": "JP",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.599,
-          "error": null
-        },
-        {
-          "source": "联合早报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 24,
-          "elapsed_seconds": 0.164,
-          "error": null
-        },
-        {
-          "source": "WHO News",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 83,
-          "elapsed_seconds": 0.23,
-          "error": null
-        },
-        {
-          "source": "中新网-即时",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 30,
-          "elapsed_seconds": 0.948,
-          "error": null
-        },
-        {
-          "source": "经济学人",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 300,
-          "elapsed_seconds": 0.168,
-          "error": null
-        },
-        {
-          "source": "NPR",
-          "country": "US",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.157,
-          "error": null
-        },
-        {
-          "source": "BBC UK",
-          "country": "GB",
-          "status": "ok",
-          "items_returned": 36,
-          "elapsed_seconds": 0.141,
-          "error": null
-        },
-        {
-          "source": "NHK World",
-          "country": "JP",
-          "status": "ok",
-          "items_returned": 7,
-          "elapsed_seconds": 0.619,
-          "error": null
-        },
-        {
-          "source": "France24",
-          "country": "FR",
-          "status": "ok",
-          "items_returned": 24,
-          "elapsed_seconds": 0.099,
-          "error": null
-        },
-        {
-          "source": "DW",
-          "country": "DE",
-          "status": "ok",
-          "items_returned": 120,
-          "elapsed_seconds": 0.155,
-          "error": null
-        },
-        {
-          "source": "金融时报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 8,
-          "elapsed_seconds": 0.719,
-          "error": null
-        },
-        {
-          "source": "新华-国际",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 300,
-          "elapsed_seconds": 1.435,
-          "error": null
-        },
-        {
-          "source": "半岛电视台",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 25,
-          "elapsed_seconds": 0.152,
-          "error": null
-        },
-        {
-          "source": "人民网-时政",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 1.595,
-          "error": null
-        },
-        {
-          "source": "新华-时政",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 300,
-          "elapsed_seconds": 1.6,
-          "error": null
-        },
-        {
-          "source": "Japan Times",
-          "country": "JP",
-          "status": "ok",
-          "items_returned": 30,
-          "elapsed_seconds": 1.036,
-          "error": null
-        },
-        {
-          "source": "The Hindu International",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 60,
-          "elapsed_seconds": 0.21,
-          "error": null
-        },
-        {
-          "source": "Reuters",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.512,
-          "error": null
-        },
-        {
-          "source": "华盛顿邮报",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.673,
-          "error": null
-        },
-        {
-          "source": "Associated Press",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.52,
-          "error": null
-        },
-        {
-          "source": "ABC Australia",
-          "country": "AU",
-          "status": "ok",
-          "items_returned": 25,
-          "elapsed_seconds": 0.229,
-          "error": null
-        },
-        {
-          "source": "The Hindu National",
-          "country": "IN",
-          "status": "ok",
-          "items_returned": 60,
-          "elapsed_seconds": 0.464,
-          "error": null
-        },
-        {
-          "source": "TASS",
-          "country": "RU",
-          "status": "ok",
-          "items_returned": 70,
-          "elapsed_seconds": 0.939,
-          "error": null
-        },
-        {
-          "source": "Le Monde English",
-          "country": "FR",
-          "status": "ok",
-          "items_returned": 14,
-          "elapsed_seconds": 0.313,
-          "error": null
-        },
-        {
-          "source": "CBC World",
-          "country": "CA",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.555,
-          "error": null
-        },
-        {
-          "source": "South China Morning Post",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 50,
-          "elapsed_seconds": 0.57,
-          "error": null
-        },
-        {
-          "source": "BBC China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.582,
-          "error": null
-        },
-        {
-          "source": "Wall Street Journal China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.569,
-          "error": null
-        },
-        {
-          "source": "Reuters China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.745,
-          "error": null
-        },
-        {
-          "source": "Associated Press China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.693,
-          "error": null
-        },
-        {
-          "source": "New York Times China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.697,
-          "error": null
-        },
-        {
-          "source": "Yonhap",
-          "country": "KR",
-          "status": "ok",
-          "items_returned": 94,
-          "elapsed_seconds": 1.425,
-          "error": null
-        },
-        {
-          "source": "Bloomberg China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.592,
-          "error": null
-        },
-        {
-          "source": "Google News 美国 discovery",
-          "country": "US",
-          "status": "ok",
-          "items_returned": 24,
-          "elapsed_seconds": 0.413,
-          "error": null
-        },
-        {
-          "source": "The Economist China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.555,
-          "error": null
-        },
-        {
-          "source": "Financial Times China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.7,
-          "error": null
-        },
-        {
-          "source": "NPR China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.536,
-          "error": null
-        },
-        {
-          "source": "The Guardian China",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.627,
-          "error": null
-        },
-        {
-          "source": "Google News 中国 discovery",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.566,
-          "error": null
-        },
-        {
-          "source": "Google News 英国 discovery",
-          "country": "GB",
-          "status": "ok",
-          "items_returned": 26,
-          "elapsed_seconds": 0.378,
-          "error": null
-        },
-        {
-          "source": "Google News 法国 discovery",
-          "country": "FR",
-          "status": "ok",
-          "items_returned": 68,
-          "elapsed_seconds": 0.434,
-          "error": null
-        },
-        {
-          "source": "Google News 德国 discovery",
-          "country": "DE",
-          "status": "ok",
-          "items_returned": 88,
-          "elapsed_seconds": 0.453,
-          "error": null
-        },
-        {
-          "source": "Google News 日本 discovery",
-          "country": "JP",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.498,
-          "error": null
-        },
-        {
-          "source": "Google News 巴西 discovery",
-          "country": "BR",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.485,
-          "error": null
-        },
-        {
-          "source": "Google News 沙特阿拉伯 discovery",
-          "country": "SA",
-          "status": "ok",
-          "items_returned": 89,
-          "elapsed_seconds": 0.489,
-          "error": null
-        },
-        {
-          "source": "Google News 俄罗斯 discovery",
-          "country": "RU",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.687,
-          "error": null
-        },
-        {
-          "source": "Google News 印度 discovery",
-          "country": "IN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.669,
-          "error": null
-        },
-        {
-          "source": "Google News 韩国 discovery",
-          "country": "KR",
-          "status": "ok",
-          "items_returned": 62,
-          "elapsed_seconds": 0.46,
-          "error": null
-        },
-        {
-          "source": "Google News 加拿大 discovery",
-          "country": "CA",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.448,
-          "error": null
-        },
-        {
-          "source": "Google News 澳大利亚 discovery",
-          "country": "AU",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.466,
-          "error": null
-        },
-        {
-          "source": "Google News 印度尼西亚 discovery",
-          "country": "ID",
-          "status": "ok",
-          "items_returned": 21,
-          "elapsed_seconds": 0.362,
-          "error": null
-        },
-        {
-          "source": "Anadolu World",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 30,
-          "elapsed_seconds": 2.544,
-          "error": null
-        },
-        {
-          "source": "Google News 阿联酋 discovery",
-          "country": "AE",
-          "status": "ok",
-          "items_returned": 16,
-          "elapsed_seconds": 0.332,
-          "error": null
-        },
-        {
-          "source": "Google News 乌克兰 discovery",
-          "country": "UA",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.574,
-          "error": null
-        },
-        {
-          "source": "Google News 意大利 discovery",
-          "country": "IT",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.603,
-          "error": null
-        },
-        {
-          "source": "Google News 土耳其 discovery",
-          "country": "TR",
-          "status": "ok",
-          "items_returned": 94,
-          "elapsed_seconds": 0.559,
-          "error": null
-        },
-        {
-          "source": "Google News 墨西哥 discovery",
-          "country": "MX",
-          "status": "ok",
-          "items_returned": 72,
-          "elapsed_seconds": 0.476,
-          "error": null
-        },
-        {
-          "source": "Google News 瑞士 discovery",
-          "country": "CH",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.347,
-          "error": null
-        },
-        {
-          "source": "Google News 伊朗 discovery",
-          "country": "IR",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.498,
-          "error": null
-        },
-        {
-          "source": "Google News 荷兰 discovery",
-          "country": "NL",
-          "status": "ok",
-          "items_returned": 29,
-          "elapsed_seconds": 0.384,
-          "error": null
-        },
-        {
-          "source": "Google News 新加坡 discovery",
-          "country": "SG",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.489,
-          "error": null
-        },
-        {
-          "source": "Google News 南非 discovery",
-          "country": "ZA",
-          "status": "ok",
-          "items_returned": 98,
-          "elapsed_seconds": 0.496,
-          "error": null
-        },
-        {
-          "source": "Google News 西班牙 discovery",
-          "country": "ES",
-          "status": "ok",
-          "items_returned": 77,
-          "elapsed_seconds": 0.44,
-          "error": null
-        },
-        {
-          "source": "Google News 以色列 discovery",
-          "country": "IL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.559,
-          "error": null
-        },
-        {
-          "source": "OpenAI News",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 1368,
-          "elapsed_seconds": 0.258,
-          "error": null
-        },
-        {
-          "source": "Google DeepMind",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 7,
-          "elapsed_seconds": 0.292,
-          "error": null
-        },
-        {
-          "source": "Google News 阿根廷 discovery",
-          "country": "AR",
-          "status": "ok",
-          "items_returned": 82,
-          "elapsed_seconds": 0.639,
-          "error": null
-        },
-        {
-          "source": "Google News 埃及 discovery",
-          "country": "EG",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.803,
-          "error": null
-        },
-        {
-          "source": "Google AI Blog",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.415,
-          "error": null
-        },
-        {
-          "source": "Google News 尼日利亚 discovery",
-          "country": "NG",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.81,
-          "error": null
-        },
-        {
-          "source": "Google News 波兰 discovery",
-          "country": "PL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.716,
-          "error": null
-        },
-        {
-          "source": "Google News 越南 discovery",
-          "country": "VN",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.77,
-          "error": null
-        },
-        {
-          "source": "Anthropic News Watch",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 11,
-          "elapsed_seconds": 0.298,
-          "error": null
-        },
-        {
-          "source": "Meta AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 18,
-          "elapsed_seconds": 0.339,
-          "error": null
-        },
-        {
-          "source": "Google Research",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.55,
-          "error": null
-        },
-        {
-          "source": "Microsoft AI Blog",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.271,
-          "error": null
-        },
-        {
-          "source": "NVIDIA Developer AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.342,
-          "error": null
-        },
-        {
-          "source": "NVIDIA AI Blog",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 18,
-          "elapsed_seconds": 0.366,
-          "error": null
-        },
-        {
-          "source": "Hugging Face Blog",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 899,
-          "elapsed_seconds": 0.187,
-          "error": null
-        },
-        {
-          "source": "Apple ML Research",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.151,
-          "error": null
-        },
-        {
-          "source": "AWS ML Blog",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.29,
-          "error": null
-        },
-        {
-          "source": "Mistral AI News",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 94,
-          "elapsed_seconds": 0.235,
-          "error": null
-        },
-        {
-          "source": "ByteDance Seed",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 27,
-          "elapsed_seconds": 0.318,
-          "error": null
-        },
-        {
-          "source": "Alibaba Qwen",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 60,
-          "elapsed_seconds": 0.377,
-          "error": null
-        },
-        {
-          "source": "Zhipu GLM",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 11,
-          "elapsed_seconds": 0.299,
-          "error": null
-        },
-        {
-          "source": "DeepSeek",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 97,
-          "elapsed_seconds": 0.428,
-          "error": null
-        },
-        {
-          "source": "Baidu ERNIE",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 11,
-          "elapsed_seconds": 0.323,
-          "error": null
-        },
-        {
-          "source": "Moonshot Kimi",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.348,
-          "error": null
-        },
-        {
-          "source": "Tencent Hunyuan",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 44,
-          "elapsed_seconds": 0.396,
-          "error": null
-        },
-        {
-          "source": "StepFun",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 3,
-          "elapsed_seconds": 0.275,
-          "error": null
-        },
-        {
-          "source": "MiniMax",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 56,
-          "elapsed_seconds": 0.359,
-          "error": null
-        },
-        {
-          "source": "TechCrunch AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 20,
-          "elapsed_seconds": 0.086,
-          "error": null
-        },
-        {
-          "source": "MIT Technology Review AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.092,
-          "error": null
-        },
-        {
-          "source": "Reuters AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.502,
-          "error": null
-        },
-        {
-          "source": "Bloomberg AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.5,
-          "error": null
-        },
-        {
-          "source": "Financial Times AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.556,
-          "error": null
-        },
-        {
-          "source": "New York Times AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.558,
-          "error": null
-        },
-        {
-          "source": "The Verge AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 0.163,
-          "error": null
-        },
-        {
-          "source": "arXiv cs.AI",
-          "country": "GLOBAL",
-          "status": "empty",
-          "items_returned": 0,
-          "elapsed_seconds": 0.166,
-          "error": null
-        },
-        {
-          "source": "arXiv cs.CL",
-          "country": "GLOBAL",
-          "status": "empty",
-          "items_returned": 0,
-          "elapsed_seconds": 0.104,
-          "error": null
-        },
-        {
-          "source": "Wall Street Journal AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.49,
-          "error": null
-        },
-        {
-          "source": "Associated Press AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 100,
-          "elapsed_seconds": 0.542,
-          "error": null
-        },
-        {
-          "source": "Microsoft Research AI",
-          "country": "GLOBAL",
-          "status": "ok",
-          "items_returned": 10,
-          "elapsed_seconds": 21.129,
-          "error": null
-        },
-        {
-          "source": "Official China investigations search",
-          "country": "CN",
-          "status": "ok",
-          "items_returned": 227,
-          "elapsed_seconds": 1.141,
-          "error": null
-        }
-      ]
-    },
     {
       "checked_at": "2026-11-08T09:00:16.342885+00:00",
       "observations": [
@@ -27771,6 +26891,891 @@
           "status": "ok",
           "items_returned": 168,
           "elapsed_seconds": 1.056,
+          "error": null
+        }
+      ]
+    },
+    {
+      "checked_at": "2026-11-20T09:46:33.207007+00:00",
+      "observations": [
+        {
+          "source": "纽约时报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 56,
+          "elapsed_seconds": 0.109,
+          "error": null
+        },
+        {
+          "source": "华尔街日报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.034,
+          "error": null
+        },
+        {
+          "source": "联合早报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 24,
+          "elapsed_seconds": 0.126,
+          "error": null
+        },
+        {
+          "source": "卫报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 45,
+          "elapsed_seconds": 0.046,
+          "error": null
+        },
+        {
+          "source": "纽约时报-日本",
+          "country": "JP",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.347,
+          "error": null
+        },
+        {
+          "source": "BBC World",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 36,
+          "elapsed_seconds": 0.06,
+          "error": null
+        },
+        {
+          "source": "BBC中文",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 42,
+          "elapsed_seconds": 0.403,
+          "error": null
+        },
+        {
+          "source": "彭博社",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.423,
+          "error": null
+        },
+        {
+          "source": "NHK World",
+          "country": "JP",
+          "status": "ok",
+          "items_returned": 7,
+          "elapsed_seconds": 0.083,
+          "error": null
+        },
+        {
+          "source": "WHO News",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 83,
+          "elapsed_seconds": 0.081,
+          "error": null
+        },
+        {
+          "source": "经济学人",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 300,
+          "elapsed_seconds": 0.075,
+          "error": null
+        },
+        {
+          "source": "Japan Times",
+          "country": "JP",
+          "status": "ok",
+          "items_returned": 30,
+          "elapsed_seconds": 0.166,
+          "error": null
+        },
+        {
+          "source": "NPR",
+          "country": "US",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.07,
+          "error": null
+        },
+        {
+          "source": "人民网-时政",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.58,
+          "error": null
+        },
+        {
+          "source": "中新网-即时",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 30,
+          "elapsed_seconds": 0.609,
+          "error": null
+        },
+        {
+          "source": "France24",
+          "country": "FR",
+          "status": "ok",
+          "items_returned": 24,
+          "elapsed_seconds": 0.076,
+          "error": null
+        },
+        {
+          "source": "半岛电视台",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 25,
+          "elapsed_seconds": 0.075,
+          "error": null
+        },
+        {
+          "source": "BBC UK",
+          "country": "GB",
+          "status": "ok",
+          "items_returned": 36,
+          "elapsed_seconds": 0.269,
+          "error": null
+        },
+        {
+          "source": "Reuters",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.37,
+          "error": null
+        },
+        {
+          "source": "华盛顿邮报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.555,
+          "error": null
+        },
+        {
+          "source": "Associated Press",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.419,
+          "error": null
+        },
+        {
+          "source": "The Hindu National",
+          "country": "IN",
+          "status": "ok",
+          "items_returned": 60,
+          "elapsed_seconds": 0.06,
+          "error": null
+        },
+        {
+          "source": "金融时报",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.916,
+          "error": null
+        },
+        {
+          "source": "ABC Australia",
+          "country": "AU",
+          "status": "ok",
+          "items_returned": 25,
+          "elapsed_seconds": 0.098,
+          "error": null
+        },
+        {
+          "source": "DW",
+          "country": "DE",
+          "status": "ok",
+          "items_returned": 134,
+          "elapsed_seconds": 0.931,
+          "error": null
+        },
+        {
+          "source": "The Hindu International",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 60,
+          "elapsed_seconds": 0.34,
+          "error": null
+        },
+        {
+          "source": "Le Monde English",
+          "country": "FR",
+          "status": "ok",
+          "items_returned": 14,
+          "elapsed_seconds": 0.116,
+          "error": null
+        },
+        {
+          "source": "新华-时政",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 300,
+          "elapsed_seconds": 1.591,
+          "error": null
+        },
+        {
+          "source": "TASS",
+          "country": "RU",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 1.044,
+          "error": null
+        },
+        {
+          "source": "CBC World",
+          "country": "CA",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.494,
+          "error": null
+        },
+        {
+          "source": "新华-国际",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 300,
+          "elapsed_seconds": 1.975,
+          "error": null
+        },
+        {
+          "source": "Yonhap",
+          "country": "KR",
+          "status": "ok",
+          "items_returned": 98,
+          "elapsed_seconds": 0.992,
+          "error": null
+        },
+        {
+          "source": "BBC China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.49,
+          "error": null
+        },
+        {
+          "source": "Reuters China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.536,
+          "error": null
+        },
+        {
+          "source": "Associated Press China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.492,
+          "error": null
+        },
+        {
+          "source": "South China Morning Post",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 50,
+          "elapsed_seconds": 0.595,
+          "error": null
+        },
+        {
+          "source": "New York Times China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.506,
+          "error": null
+        },
+        {
+          "source": "Wall Street Journal China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.445,
+          "error": null
+        },
+        {
+          "source": "Bloomberg China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.467,
+          "error": null
+        },
+        {
+          "source": "Financial Times China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.473,
+          "error": null
+        },
+        {
+          "source": "The Economist China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.471,
+          "error": null
+        },
+        {
+          "source": "NPR China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.449,
+          "error": null
+        },
+        {
+          "source": "The Guardian China",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.503,
+          "error": null
+        },
+        {
+          "source": "Google News 美国 discovery",
+          "country": "US",
+          "status": "ok",
+          "items_returned": 71,
+          "elapsed_seconds": 0.428,
+          "error": null
+        },
+        {
+          "source": "Google News 英国 discovery",
+          "country": "GB",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.282,
+          "error": null
+        },
+        {
+          "source": "Google News 中国 discovery",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.416,
+          "error": null
+        },
+        {
+          "source": "Google News 法国 discovery",
+          "country": "FR",
+          "status": "ok",
+          "items_returned": 78,
+          "elapsed_seconds": 0.368,
+          "error": null
+        },
+        {
+          "source": "Google News 德国 discovery",
+          "country": "DE",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.383,
+          "error": null
+        },
+        {
+          "source": "Google News 俄罗斯 discovery",
+          "country": "RU",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.404,
+          "error": null
+        },
+        {
+          "source": "Google News 日本 discovery",
+          "country": "JP",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.448,
+          "error": null
+        },
+        {
+          "source": "Google News 印度 discovery",
+          "country": "IN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.46,
+          "error": null
+        },
+        {
+          "source": "Google News 巴西 discovery",
+          "country": "BR",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.433,
+          "error": null
+        },
+        {
+          "source": "Google News 沙特阿拉伯 discovery",
+          "country": "SA",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.437,
+          "error": null
+        },
+        {
+          "source": "Google News 韩国 discovery",
+          "country": "KR",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.41,
+          "error": null
+        },
+        {
+          "source": "Google News 加拿大 discovery",
+          "country": "CA",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.432,
+          "error": null
+        },
+        {
+          "source": "Google News 澳大利亚 discovery",
+          "country": "AU",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.448,
+          "error": null
+        },
+        {
+          "source": "Google News 乌克兰 discovery",
+          "country": "UA",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.417,
+          "error": null
+        },
+        {
+          "source": "Google News 意大利 discovery",
+          "country": "IT",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.432,
+          "error": null
+        },
+        {
+          "source": "Google News 印度尼西亚 discovery",
+          "country": "ID",
+          "status": "ok",
+          "items_returned": 62,
+          "elapsed_seconds": 0.345,
+          "error": null
+        },
+        {
+          "source": "Google News 阿联酋 discovery",
+          "country": "AE",
+          "status": "ok",
+          "items_returned": 14,
+          "elapsed_seconds": 0.285,
+          "error": null
+        },
+        {
+          "source": "Google News 土耳其 discovery",
+          "country": "TR",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.398,
+          "error": null
+        },
+        {
+          "source": "Anadolu World",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 30,
+          "elapsed_seconds": 2.215,
+          "error": null
+        },
+        {
+          "source": "Google News 墨西哥 discovery",
+          "country": "MX",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.425,
+          "error": null
+        },
+        {
+          "source": "Google News 瑞士 discovery",
+          "country": "CH",
+          "status": "ok",
+          "items_returned": 52,
+          "elapsed_seconds": 0.358,
+          "error": null
+        },
+        {
+          "source": "Google News 伊朗 discovery",
+          "country": "IR",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.462,
+          "error": null
+        },
+        {
+          "source": "Google News 荷兰 discovery",
+          "country": "NL",
+          "status": "ok",
+          "items_returned": 69,
+          "elapsed_seconds": 0.32,
+          "error": null
+        },
+        {
+          "source": "Google News 南非 discovery",
+          "country": "ZA",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.399,
+          "error": null
+        },
+        {
+          "source": "Google News 新加坡 discovery",
+          "country": "SG",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.483,
+          "error": null
+        },
+        {
+          "source": "Google News 以色列 discovery",
+          "country": "IL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.397,
+          "error": null
+        },
+        {
+          "source": "Google News 西班牙 discovery",
+          "country": "ES",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.406,
+          "error": null
+        },
+        {
+          "source": "OpenAI News",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 1418,
+          "elapsed_seconds": 0.185,
+          "error": null
+        },
+        {
+          "source": "Google AI Blog",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.261,
+          "error": null
+        },
+        {
+          "source": "Google News 埃及 discovery",
+          "country": "EG",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.526,
+          "error": null
+        },
+        {
+          "source": "Google DeepMind",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.236,
+          "error": null
+        },
+        {
+          "source": "Google News 尼日利亚 discovery",
+          "country": "NG",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.527,
+          "error": null
+        },
+        {
+          "source": "Google News 阿根廷 discovery",
+          "country": "AR",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.476,
+          "error": null
+        },
+        {
+          "source": "Google News 波兰 discovery",
+          "country": "PL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.497,
+          "error": null
+        },
+        {
+          "source": "Google News 越南 discovery",
+          "country": "VN",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.462,
+          "error": null
+        },
+        {
+          "source": "NVIDIA AI Blog",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 18,
+          "elapsed_seconds": 0.17,
+          "error": null
+        },
+        {
+          "source": "Microsoft AI Blog",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.149,
+          "error": null
+        },
+        {
+          "source": "AWS ML Blog",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.106,
+          "error": null
+        },
+        {
+          "source": "Meta AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 19,
+          "elapsed_seconds": 0.242,
+          "error": null
+        },
+        {
+          "source": "Anthropic News Watch",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 8,
+          "elapsed_seconds": 0.268,
+          "error": null
+        },
+        {
+          "source": "Mistral AI News",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 94,
+          "elapsed_seconds": 0.083,
+          "error": null
+        },
+        {
+          "source": "Apple ML Research",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.096,
+          "error": null
+        },
+        {
+          "source": "Google Research",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.462,
+          "error": null
+        },
+        {
+          "source": "NVIDIA Developer AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.319,
+          "error": null
+        },
+        {
+          "source": "Hugging Face Blog",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 913,
+          "elapsed_seconds": 0.257,
+          "error": null
+        },
+        {
+          "source": "Alibaba Qwen",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 59,
+          "elapsed_seconds": 0.265,
+          "error": null
+        },
+        {
+          "source": "Baidu ERNIE",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 1,
+          "elapsed_seconds": 0.164,
+          "error": null
+        },
+        {
+          "source": "DeepSeek",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 93,
+          "elapsed_seconds": 0.272,
+          "error": null
+        },
+        {
+          "source": "Moonshot Kimi",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 6,
+          "elapsed_seconds": 0.213,
+          "error": null
+        },
+        {
+          "source": "ByteDance Seed",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 36,
+          "elapsed_seconds": 0.284,
+          "error": null
+        },
+        {
+          "source": "Zhipu GLM",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 7,
+          "elapsed_seconds": 0.308,
+          "error": null
+        },
+        {
+          "source": "Tencent Hunyuan",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 40,
+          "elapsed_seconds": 0.241,
+          "error": null
+        },
+        {
+          "source": "Microsoft Research AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.621,
+          "error": null
+        },
+        {
+          "source": "StepFun",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 4,
+          "elapsed_seconds": 0.242,
+          "error": null
+        },
+        {
+          "source": "MiniMax",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 57,
+          "elapsed_seconds": 0.28,
+          "error": null
+        },
+        {
+          "source": "TechCrunch AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 20,
+          "elapsed_seconds": 0.037,
+          "error": null
+        },
+        {
+          "source": "The Verge AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.029,
+          "error": null
+        },
+        {
+          "source": "MIT Technology Review AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 10,
+          "elapsed_seconds": 0.087,
+          "error": null
+        },
+        {
+          "source": "arXiv cs.CL",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 161,
+          "elapsed_seconds": 0.057,
+          "error": null
+        },
+        {
+          "source": "Financial Times AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.45,
+          "error": null
+        },
+        {
+          "source": "arXiv cs.AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 400,
+          "elapsed_seconds": 0.219,
+          "error": null
+        },
+        {
+          "source": "Reuters AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.538,
+          "error": null
+        },
+        {
+          "source": "New York Times AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.673,
+          "error": null
+        },
+        {
+          "source": "Bloomberg AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.626,
+          "error": null
+        },
+        {
+          "source": "Wall Street Journal AI",
+          "country": "GLOBAL",
+          "status": "ok",
+          "items_returned": 100,
+          "elapsed_seconds": 0.574,
+          "error": null
+        },
+        {
+          "source": "Associated Press AI",
+          "country": "GLOBAL",
+          "status": "failed",
+          "items_returned": 0,
+          "elapsed_seconds": 10.065,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "source": "Official China investigations search",
+          "country": "CN",
+          "status": "ok",
+          "items_returned": 171,
+          "elapsed_seconds": 0.853,
           "error": null
         }
       ]
