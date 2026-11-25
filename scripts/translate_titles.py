@@ -22,6 +22,9 @@ GOOGLE_BLOCKED = threading.Event()
 _ARGOS_TRANSLATOR = None
 
 MANUAL_TRANSLATIONS = {
+    "Muse: Would you let Meta's AI agent run parts of your life? - BBC": "BBC：你愿意让 Meta 的 AI 智能体介入你生活的哪些方面？",
+    "Introducing Muse in the UK: A Personal AI Agent You Control - Facebook": "Facebook 在英国推出 Muse：由用户掌控的个人 AI 智能体",
+    "Italy Warns of Autonomous AI Agents in Cyberattacks | Technology News - Yeni Safak English": "《Yeni Şafak》：意大利警告自主 AI 智能体可能被用于网络攻击",
     "Trump administration imposes new sanctions on Rwanda over war in Congo - The Washington Post": "特朗普政府因刚果战争对卢旺达实施新制裁",
     "Iran warns U.S. and Israel against new attacks after Trump and Netanyahu threats": "伊朗警告美国和以色列不要在特朗普和内塔尼亚胡发出威胁后发动新一轮袭击",
     "Persian Gulf scrambling to prevent Iran war from again hitting its doorstep - The Washington Post": "波斯湾国家正紧急斡旋，避免伊朗战争再次波及本地区",
