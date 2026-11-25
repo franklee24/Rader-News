@@ -1,4 +1,5 @@
 name: Deploy Pages on Push
+# Redeploy current main, including data commits created by the daily workflow.
 
 on:
   push:
