@@ -73,7 +73,7 @@ jobs:
 
           # Primary production schedule is daily.yml's native GitHub cron (Beijing 06:00 and 17:00).
           # Keep only an 08:00 recovery dispatch if the scheduled morning edition did not update today's snapshot.
-          if [ "$checkpoint_minutes" -eq 480 ] || { [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ] && [ "$generated_date" != "$today" ]; }; then
+          if [ "$beijing_hour" = "08" ] && [ "$beijing_minute" -lt 10 ] && [ "$generated_date" != "$today" ]; then
             gh workflow run daily.yml --repo franklee24/Rader-News --ref main
             echo "Daily radar update dispatched."
           else
