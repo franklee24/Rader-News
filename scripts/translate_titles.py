@@ -22,6 +22,10 @@ GOOGLE_BLOCKED = threading.Event()
 _ARGOS_TRANSLATOR = None
 
 MANUAL_TRANSLATIONS = {
+    "What would happen if an AI agent interfered with a Canadian election? - CBC": "CBC：如果 AI 智能体干预加拿大选举，会发生什么？",
+    "Switzerland reports five cyberattacks involving AI agents - The News International": "《The News International》：瑞士报告了五起涉及 AI 智能体的网络攻击事件",
+    "AI agents used in five cyber attacks in Switzerland, government says - Yahoo News Canada": "雅虎加拿大：瑞士政府称，AI 智能体被用于五起网络攻击",
+    "Where scientists draw the line on AI agents": "科学家如何划定 AI 智能体的使用边界",
     "Muse: Would you let Meta's AI agent run parts of your life? - BBC": "BBC：你愿意让 Meta 的 AI 智能体介入你生活的哪些方面？",
     "Introducing Muse in the UK: A Personal AI Agent You Control - Facebook": "Facebook 在英国推出 Muse：由用户掌控的个人 AI 智能体",
     "Italy Warns of Autonomous AI Agents in Cyberattacks | Technology News - Yeni Safak English": "《Yeni Şafak》：意大利警告自主 AI 智能体可能被用于网络攻击",
