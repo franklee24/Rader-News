@@ -318,14 +318,23 @@ jobs:
                   matches.append(p)
           if len(matches) != 1:
               raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: expected one snapshot for {stamp}, found {len(matches)}')
+          # Repair any AI/LLM item omitted by the broad translation pass before syncing history.
+          import sys
+          sys.path.insert(0, 'scripts')
+          from translate_titles import translate, translation_is_usable
+          repaired=0
+          for e in d.get('ai_news', []):
+              title=str(e.get('title','')).strip()
+              if title and not translation_is_usable(title, e.get('title_zh','')):
+                  e['title_zh']=translate(title)
+                  repaired += 1
           target=matches[0]
           target.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          # Verify the persisted snapshot has translations for the AI/LLM section too.
           saved=json.loads(target.read_text(encoding='utf-8'))
-          missing=[e.get('title','') for e in saved.get('ai_news',[]) if e.get('title') and not e.get('title_zh')]
+          missing=[e.get('title','') for e in saved.get('ai_news',[]) if e.get('title') and not translation_is_usable(e.get('title',''),e.get('title_zh',''))]
           if missing:
-              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: {len(missing)} AI/LLM titles lack title_zh')
-          print(f'Persisted translated daily snapshot to {target}; AI/LLM untranslated titles: {len(missing)}')
+              raise SystemExit(f'HISTORY TRANSLATION SYNC FAILED: {len(missing)} AI/LLM titles lack usable title_zh: {missing[:3]}')
+          print(f'Persisted translated daily snapshot to {target}; repaired AI/LLM titles: {repaired}; untranslated: {len(missing)}')
           PY
       - name: Validate headline translations
         run: |
