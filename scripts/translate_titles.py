@@ -374,3 +374,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Force a production workflow run to refresh the stale 2026-11-26 snapshot (2026-11-27).
