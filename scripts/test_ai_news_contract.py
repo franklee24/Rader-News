@@ -14,7 +14,7 @@ assert len(feeds) >= 25, f"AI/LLM source pool unexpectedly shrank: {len(feeds)}"
 for expected in ("OpenAI News", "Google DeepMind", "Anthropic News Watch",
                  "NVIDIA AI Blog", "Alibaba Qwen", "DeepSeek",
                  "Reuters AI", "Financial Times AI", "TechCrunch AI",
-                 "arXiv cs.AI", "arXiv cs.CL"):
+                 "arXiv cs.AI", "arXiv cs.CL", "小互 AI 解读"):
     assert expected in feed_names, f"AI/LLM source missing: {expected}"
 
 is_ai_related = build["is_ai_related"]
