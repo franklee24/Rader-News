@@ -91,6 +91,8 @@ print('[SOURCE-COVERAGE] added free country discovery feeds:',len(_COUNTRY_DISCO
 
 # 独立 AI/LLM 新闻池：官方一手发布 + 权威科技媒体交叉报道
 AI_FEEDS=[
+ # XiaoHu.AI's public RSS: curated AI product releases, research explainers, practical workflows and industry analysis.
+ ('小互 AI 解读','GLOBAL','https://xiaohu.ai/rss.xml','cn'),
  # Official company announcements, model releases and first-party research.
  ('OpenAI News','GLOBAL','https://openai.com/news/rss.xml','en'),
  ('Google AI Blog','GLOBAL','https://blog.google/innovation-and-ai/technology/ai/rss/','en'),
